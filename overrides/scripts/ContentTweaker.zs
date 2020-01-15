@@ -427,7 +427,9 @@ hotdraconiumingot.rarity = "rare";
 hotdraconiumingot.maxStackSize = 16;
 
 hotdraconiumingot.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
-    owner.attackEntityFrom(<damageSource:heat>.setDamageBypassesArmor(), 3.0);
+    if (world.getWorldTime() % 20 == 0) {
+        owner.attackEntityFrom(<damageSource:heat>.setDamageBypassesArmor(), 3.0);
+    }
     return;
 };
 
