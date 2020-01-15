@@ -1,0 +1,9 @@
+This file is for the VanillaQuartzGenerator. This is the vanilla nether quartz generator. 
+Generates nether quartz clusters in netherrack.
+
+
+
+Constructor:
+    Notes:
+        This constructs a VanillaQuartzGenerator.
+

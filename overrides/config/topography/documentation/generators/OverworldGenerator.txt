@@ -1,0 +1,52 @@
+This file is for the OverworldGenerator. This generator generates a slightly more 
+configurable version of the vanilla overworld, handling the generation of base terrain/water 
+blocks and biome block replacement. This generator makes use of multithreaded noise 
+generators to improve chunk generation speeds. Unfortunately, using these noise generators 
+means the terrain will be slightly different to vanilla. Created using 'new OverworldGenerator()'.
+
+
+
+Constructor:
+    Notes:
+        This constructs an OverworldGenerator.
+
+setTerrainBlock:
+    Arguments:
+        ItemBlockData
+    Usage:
+        block
+    Notes:
+        Sets the terrain block to be used for the generator.
+
+amplify:
+    Notes:
+        Sets the generator to generate amplified terrain, as per the vanilla amplified WorldType.
+
+setSeaLevel:
+    Arguments:
+        int
+    Usage:
+        sea level
+    Notes:
+        Sets the sea level for the generator.
+
+setOceanBlock:
+    Arguments:
+        ItemBlockData
+    Usage:
+        block
+    Notes:
+        Sets the ocean block to be used for the generator.
+
+setGeneratorString:
+    Arguments:
+        String
+    Usage:
+        generator string
+    Notes:
+        Sets the vanilla generator settings string for the generator.
+
+disableBiomeBlockReplacement:
+    Notes:
+        Disables the generators biome block replacement.
+

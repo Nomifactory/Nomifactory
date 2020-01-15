@@ -1,0 +1,43 @@
+This file is for the SkyIslandType. This data object is for creating island types 
+for the SkyIslandGenerator. These can be created in a dimension file using 'new SkyIslandType(biomeID)', 
+with the biome id being the biome you want the island to be, or 'new SkyIslandType()' 
+to default to the void biome.
+
+
+
+setBlockInRange:
+    Arguments:
+        ItemBlockData, MinMaxBounds
+    Usage:
+        block, bounds
+    Notes:
+        Sets a block to be used for generation within a range of distance from the center of the island type. 0.0 being the center of the island, 1.0 being the outermost possible blocks.
+
+disableAnimals:
+    Notes:
+        Disables initial animal spawning for the island type.
+
+setMainBlock:
+    Arguments:
+        ItemBlockData
+    Usage:
+        block
+    Notes:
+        Sets the main block for the island type to be made of.
+
+setBiome:
+    Arguments:
+        Non_Null_Biome_ID
+    Usage:
+        biome id
+    Notes:
+        Sets the biome to be used for the island type.
+
+disableDecorations:
+    Notes:
+        Disables decorations for the island type.
+
+disableBiomeBlockReplacement:
+    Notes:
+        Disables biome block replacement for the island type.
+

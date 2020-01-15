@@ -1,0 +1,16 @@
+This file is for the SkyRendererCustom. This is for making a custom sky renderer.
+
+
+
+addSkybox:
+    Arguments:
+        String
+    Usage:
+        texture location
+    Notes:
+        Adds a SkyboxRenderer to the sky renderer with the provided texture location and returns it. The texture is used to generate a skybox in the standard format.
+
+addSunMoon:
+    Notes:
+        Adds the vanilla sun and moon to the sky renderer. Currently cannot set a custom sun/moon texture except by making it part of the skybox texture.
+

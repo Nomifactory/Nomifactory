@@ -1,0 +1,9 @@
+//If this file is deleted, a new set of default configs will be generated.
+
+//Registers a preset. First argument is name, second is the image name, third is a description.
+omnifactory = registerPreset("Omnifactory", "images/omnifactory", "An Endless Urban Expanse, Or A Void Dimension, Your Choice! Eventually, both.", "lostcities")
+omnifactory.registerDimension(119, "omnifactory/skyblock_tree")
+omnifactory.disableNetherPortal()
+
+setAsDefaultWorldType()
+printDocumentation(false)

@@ -1,0 +1,827 @@
+{
+    "registryname": "medium_microverse",
+    "localizedname": "Medium Microverse Projector",
+	"color": "837793",
+    "parts": [
+        
+		{
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 1,
+            "y": 4,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 1,
+            "y": 4,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@1"
+        },
+		        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@1"
+        },
+		{
+            "x": 1,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": -1,
+            "y": 4,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -1,
+            "y": 4,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@1"
+        },
+		{
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@1"
+        },
+		{
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": -2,
+            "y": 4,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 4,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 2,
+            "y": 4,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 4,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		{
+            "x": 0,
+            "y": 3,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": 1,
+            "y": 3,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": -1,
+            "y": 3,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": -2,
+            "y": 3,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 3,
+            "z": 3,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 3,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 3,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 2,
+            "y": 3,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 3,
+            "z": 3,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 3,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 3,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		
+		
+		
+		
+		{
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": "extendedcrafting:compressor"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": 1,
+            "y": 2,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": -1,
+            "y": 2,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": -2,
+            "y": 2,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 2,
+            "z": 3,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 2,
+            "y": 2,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		
+		
+		
+		
+		
+		{
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": "chisel:diamond@3"
+        },
+		{
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		
+		
+		{
+            "x": -2,
+            "y": 1,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 2,
+            "y": 1,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+		{
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		
+		
+		
+		
+		
+		{
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": "modularmachinery:blockenergyinputhatch"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": "modularmachinery:blockoutputbus"
+        },
+		{
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockinputbus"
+        },
+		
+		
+		{
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		{
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		{
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        }
+
+
+
+    ]
+}

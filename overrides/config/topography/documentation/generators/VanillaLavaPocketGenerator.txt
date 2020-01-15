@@ -1,0 +1,9 @@
+This file is for the VanillaLavaPocketGenerator. This is the vanilla lava pocket 
+generator. Generates pockets of lava in netherrack.
+
+
+
+Constructor:
+    Notes:
+        This constructs a VanillaLavaPocketGenerator.
+

@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- 
+
+These are the built-in recipes. You cannot change this file, it is a
+reference for you only and will be generated every time the game starts.
+
+To make changes to the recipes, copy the recipes you want to change to
+a file in the 'user' folder. To disable a recipe, add an attribute "disabled"
+and set it to true, e.g.: <recipe name="Gear" disabled="true" />
+
+You can also disable all built-in recipes with the setting "loadCoreRecipes"
+in the Ender IO config file, so that only your files in the 'user' folder will
+be loaded. Please be advised that a number of recipes are absolutely needed,
+so you will have to copy those over into a 'user' file for the game to load.
+
+Item specifications can reference an alias, an ore dictionary name, a
+block or an item. You can force the type by prefixing the value with
+"oredict:", "block:" or "item:". Recipes that have items that cannot be
+found in-game are either skipped or an error, depending on their "required"
+attribute.
+
+More information on the syntax can be found in the recipes.xsd file. An
+XML editor will display that as tooltips when editing this file.
+
+ -->
+
+  <recipe name="Compatibility: Glass 2 Glass" required="false">
+    <crafting>
+      <shapeless>
+        <item name="FUSED_GLASS"/>
+      </shapeless>
+      <output name="minecraft:glass"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Compatibility: End Crystal" disabled="true" />
+
+  <recipe name="Compatibility: Beacon" disabled="true" />
+
+  <recipe name="Compatibility: Bottle" disabled="true" />
+
+  <recipe name="Compatibility: Glass Pane" required="false">
+    <crafting>
+      <grid size="3x2">
+        <item name="blockGlassColorless"/><item name="blockGlassColorless"/><item name="blockGlassColorless"/>
+        <item name="blockGlassColorless"/><item name="blockGlassColorless"/><item name="blockGlassColorless"/>
+      </grid>
+      <output name="minecraft:glass_pane" amount="16"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Compatibility: Daylight Sensor" disabled="true" />
+
+  <recipe name="Binder Composite" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="oredict:gravel" /><item name="oredict:itemClay" /><item name="oredict:gravel" />
+        <item name="oredict:sand" /><item name="oredict:gravel" /><item name="oredict:sand" />
+        <item name="oredict:gravel" /><item name="oredict:itemClay" /><item name="oredict:gravel" />
+      </grid>
+      <output name="BINDER_COMPOSITE" amount="8" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit Binder" required="true">
+    <smelting exp="0">
+      <input name="BINDER_COMPOSITE"/>
+      <output name="CONDUIT_BINDER" amount="2" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Pulsating Crystal" required="true">
+    <crafting>
+      <grid>
+        <item name="PULSATING_IRON_NUGGET"/><item name="PULSATING_IRON_NUGGET"/><item name="PULSATING_IRON_NUGGET"/>
+        <item name="PULSATING_IRON_NUGGET"/><item name="gemDiamond"/><item name="PULSATING_IRON_NUGGET"/>
+        <item name="PULSATING_IRON_NUGGET"/><item name="PULSATING_IRON_NUGGET"/><item name="PULSATING_IRON_NUGGET"/>
+      </grid>
+      <output name="PULSATING_CRYSTAL"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Pulsating Crystal, casting">
+    <casting>
+      <input name="PULSATING_IRON_NUGGET" amount="8"/>
+      <cast name="gemDiamond" consumed="true"/>
+      <output name="PULSATING_CRYSTAL"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Vibrant Crystal" required="true">
+    <crafting>
+      <grid>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="gemEmerald"/><item name="VIBRANT_ALLOY_NUGGET"/>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/>
+      </grid>
+      <output name="VIBRANT_CRYSTAL"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Vibrant Crystal, casting">
+    <casting>
+      <input name="VIBRANT_ALLOY_NUGGET" amount="8"/>
+      <cast name="gemEmerald" consumed="true"/>
+      <output name="VIBRANT_CRYSTAL"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Gear Reverse Casting, 1" required="true">
+    <dependency item="tconstruct:cast_custom:4"/>
+    <casting>
+      <input name="ingotGold" amount="2"/>
+      <cast name="GEAR_STONE" consumed="true"/>
+      <output name="tconstruct:cast_custom:4"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Gear Reverse Casting, 2" required="true">
+    <dependency item="tconstruct:cast_custom:4"/>
+    <casting>
+      <input name="ingotGold" amount="2"/>
+      <cast name="GEAR_ENERGIZED" consumed="true"/>
+      <output name="tconstruct:cast_custom:4"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Gear Reverse Casting, 3" required="true">
+    <dependency item="tconstruct:cast_custom:4"/>
+    <casting>
+      <input name="ingotGold" amount="2"/>
+      <cast name="GEAR_VIBRANT" consumed="true"/>
+      <output name="tconstruct:cast_custom:4"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Ender Pearl Nuggets" required="true">
+    <alloying energy="2000">
+      <input name="nuggetEnderpearl" amount="9"/>
+      <output name="oredict:enderpearl"/>
+    </alloying>
+    <!-- Note: The same inputs as a 'crafting' gives dustEnderPearl, see sagmill.xml -->
+  </recipe>
+
+  <recipe name="Dark Iron Bars" required="true">
+    <crafting>
+      <grid size="3x2">
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+      </grid>
+      <output name="enderio:block_dark_iron_bars" amount="16"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="End Iron Bars" required="true">
+    <crafting>
+      <grid size="3x2">
+        <item name="END_STEEL"/><item name="END_STEEL"/><item name="END_STEEL"/>
+        <item name="END_STEEL"/><item name="END_STEEL"/><item name="END_STEEL"/>
+      </grid>
+      <output name="enderio:block_end_iron_bars" amount="16"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Simple Chassis" required="true">
+    <crafting>
+      <grid>
+        <item name="barsIron"/><item name="IRON"/><item name="barsIron"/>
+        <item name="IRON"/><item name="POWDER_INFINITY"/><item name="IRON"/>
+        <item name="barsIron"/><item name="IRON"/><item name="barsIron"/>
+      </grid>
+      <output name="SIMPLE_CHASSIS"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Chassis">
+    <alloying energy="3600" exp="1">
+      <input name="SIMPLE_CHASSIS"/>
+      <input name="dyeMachine"/>
+      <output name="CHASSIS"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Enhanced Chassis">
+    <alloying energy="3600" exp="1">
+      <input name="END_STEEL_CHASSIS"/>
+      <input name="dyeEnhancedMachine"/>
+      <output name="ENHANCED_CHASSIS"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Soul Chassis">
+    <alloying energy="3600" exp="1">
+      <input name="SIMPLE_CHASSIS"/>
+      <input name="dyeSoulMachine"/>
+      <output name="SOUL_CHASSIS"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="End Steel Chassis" required="true">
+    <crafting>
+      <grid>
+        <item name="enderio:block_end_iron_bars"/><item name="ingotEndSteel"/><item name="enderio:block_end_iron_bars"/>
+        <item name="ingotEndSteel"/><item name="POWDER_INFINITY"/><item name="ingotEndSteel"/>
+        <item name="enderio:block_end_iron_bars"/><item name="ingotEndSteel"/><item name="enderio:block_end_iron_bars"/>
+      </grid>
+      <output name="END_STEEL_CHASSIS"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Unsouled Chassis" required="true">
+    <crafting>
+      <grid>
+        <item name="INDUSTRIAL_INSULATION"/><item name="GUARDIAN_DIODE"/><item name="INDUSTRIAL_INSULATION"/>
+        <item name="INDUSTRIAL_INSULATION"/><item name="SOUL_CHASSIS"/><item name="INDUSTRIAL_INSULATION"/>
+        <item name="INDUSTRIAL_INSULATION"/><item name="GUARDIAN_DIODE"/><item name="INDUSTRIAL_INSULATION"/>
+      </grid>
+      <output name="UNSOULED_CHASSIS"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Machine Dye">
+    <crafting>
+      <grid>
+        <item name="dustLapis"/><item name="POWDER_QUARTZ"/><item name="ORGANIC_GREEN_DYE"/>
+        <item name="POWDER_QUARTZ"/><item name="ORGANIC_BLACK_DYE"/><item name="POWDER_QUARTZ"/>
+        <item name="ORGANIC_GREEN_DYE"/><item name="POWDER_QUARTZ"/><item name="dustLapis"/>
+      </grid>
+      <output name="dyeMachine" amount="6"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Enhanced Machine Dye">
+    <crafting>
+      <grid>
+        <item name="POWDER_PULSATING"/><item name="POWDER_QUARTZ"/><item name="POWDER_PULSATING"/>
+        <item name="POWDER_QUARTZ"/><item name="ORGANIC_BLACK_DYE"/><item name="POWDER_QUARTZ"/>
+        <item name="POWDER_PULSATING"/><item name="POWDER_QUARTZ"/><item name="POWDER_PULSATING"/>
+      </grid>
+      <output name="dyeEnhancedMachine" amount="4"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Soul Machine Dye">
+    <crafting>
+      <grid>
+        <item name="dustSoularium"/><item name="POWDER_QUARTZ"/><item name="ORGANIC_BROWN_DYE"/>
+        <item name="POWDER_QUARTZ"/><item name="ORGANIC_BLACK_DYE"/><item name="POWDER_QUARTZ"/>
+        <item name="ORGANIC_BROWN_DYE"/><item name="POWDER_QUARTZ"/><item name="dustSoularium"/>
+      </grid>
+      <output name="dyeSoulMachine" amount="6"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Wood" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="stickWood"/><item />
+        <item name="stickWood"/><item /><item name="stickWood"/>
+        <item /><item name="stickWood"/><item />
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, ae2 messes things up" required="true">
+    <crafting>
+      <grid>
+        <item name="stickWood"/><item /><item name="stickWood"/>
+        <item /><item /><item />
+        <item name="stickWood"/><item /><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, just to be sure" required="true">
+    <crafting>
+      <grid size="3x2">
+        <item name="stickWood"/><item /><item name="stickWood"/>
+        <item name="stickWood"/><item /><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, better save than sorry" required="true">
+    <crafting>
+      <grid size="2x3">
+        <item name="stickWood"/><item name="stickWood"/>
+        <item /><item />
+        <item name="stickWood"/><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Stone" required="true">
+    <crafting>
+      <grid>
+        <item name="stickWood"/><item name="oredict:cobblestone"/><item name="stickWood"/>
+        <item name="oredict:cobblestone"/><item /><item name="oredict:cobblestone"/>
+        <item name="stickWood"/><item name="oredict:cobblestone"/><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_STONE"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Stone, Upgrade" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="oredict:cobblestone"/><item />
+        <item name="oredict:cobblestone"/><item name="GEAR_WOOD"/><item name="oredict:cobblestone"/>
+        <item /><item name="oredict:cobblestone"/><item />
+      </grid>
+      <output name="GEAR_STONE"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Stone, Casting">
+    <casting>
+      <input name="minecraft:cobblestone" amount="4"/>
+      <cast name="GEAR_WOOD" consumed="true"/>
+      <output name="GEAR_STONE"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Gear, Iron" required="true">
+    <crafting>
+      <grid>
+        <item name="nuggetIron"/><item name="IRON"/><item name="nuggetIron"/>
+        <item name="IRON"/><item name="POWDER_INFINITY"/><item name="IRON"/>
+        <item name="nuggetIron"/><item name="IRON"/><item name="nuggetIron"/>
+      </grid>
+      <output name="GEAR_IRON"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Iron, Casting">
+    <casting>
+      <input name="nuggetIron" amount="40"/>
+      <cast name="POWDER_INFINITY" consumed="true"/>
+      <output name="GEAR_IRON"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Gear, Energized" required="true">
+    <crafting>
+      <grid>
+        <item name="ENERGETIC_ALLOY_NUGGET"/><item name="ENERGETIC_ALLOY_NUGGET"/><item name="ENERGETIC_ALLOY_NUGGET"/>
+        <item name="ENERGETIC_ALLOY_NUGGET"/><item name="GEAR_IRON"/><item name="ENERGETIC_ALLOY_NUGGET"/>
+        <item name="ENERGETIC_ALLOY_NUGGET"/><item name="ENERGETIC_ALLOY_NUGGET"/><item name="ENERGETIC_ALLOY_NUGGET"/>
+      </grid>
+      <output name="GEAR_ENERGIZED"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Energized, Casting">
+    <casting>
+      <input name="ENERGETIC_ALLOY_NUGGET" amount="8"/>
+      <cast name="GEAR_IRON" consumed="true"/>
+      <output name="GEAR_ENERGIZED"/>
+    </casting>
+  </recipe>
+
+  <recipe name="Gear, Vibrant" required="true">
+    <crafting>
+      <grid>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="GEAR_IRON"/><item name="VIBRANT_ALLOY_NUGGET"/>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY_NUGGET"/>
+      </grid>
+      <output name="GEAR_VIBRANT"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Vibrant, Casting">
+    <casting>
+      <input name="VIBRANT_ALLOY_NUGGET" amount="8"/>
+      <cast name="GEAR_IRON" consumed="true"/>
+      <output name="GEAR_VIBRANT"/>
+    </casting>
+  </recipe>
+  
+  <recipe name="Gear, Dark" required="true">
+    <crafting>
+      <grid>
+        <item name="DARK_STEEL_NUGGET"/><item name="DARK_STEEL_NUGGET"/><item name="DARK_STEEL_NUGGET"/>
+        <item name="DARK_STEEL_NUGGET"/><item name="GEAR_IRON"/><item name="DARK_STEEL_NUGGET"/>
+        <item name="DARK_STEEL_NUGGET"/><item name="DARK_STEEL_NUGGET"/><item name="DARK_STEEL_NUGGET"/>
+      </grid>
+      <output name="GEAR_DARKSTEEL"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Dark, Casting">
+    <casting>
+      <input name="DARK_STEEL_NUGGET" amount="8"/>
+      <cast name="GEAR_IRON" consumed="true"/>
+      <output name="GEAR_DARKSTEEL"/>
+    </casting>
+  </recipe>
+  
+  <alias name="CAPACITOR_METAL" item="ingotCopper">
+    <dependency item="ingotCopper" reverse="false"/>
+  </alias>
+  <alias name="CAPACITOR_METAL" item="dustRedstone">
+    <dependency item="ingotCopper" reverse="true"/>
+  </alias>
+
+  <recipe name="Capacitor 1" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="nuggetGold"/><item name="POWDER_INFINITY"/>
+        <item name="nuggetGold"/><item name="CAPACITOR_METAL"/><item name="nuggetGold"/>
+        <item name="POWDER_INFINITY"/><item name="nuggetGold"/><item />
+      </grid>
+      <output name="enderio:item_basic_capacitor:0"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor 2" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="ENERGETIC_ALLOY"/><item />
+        <item name="enderio:item_basic_capacitor:0"/><item name="dustCoal"/><item name="enderio:item_basic_capacitor:0"/>
+        <item /><item name="ENERGETIC_ALLOY"/><item />
+      </grid>
+      <output name="enderio:item_basic_capacitor:1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor 3" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="VIBRANT_ALLOY"/><item />
+        <item name="enderio:item_basic_capacitor:1"/><item name="oredict:glowstone"/><item name="enderio:item_basic_capacitor:1"/>
+        <item /><item name="VIBRANT_ALLOY"/><item />
+      </grid>
+      <output name="enderio:item_basic_capacitor:2"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Weather Crystal" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="PULSATING_CRYSTAL"/><item />
+        <item name="VIBRANT_CRYSTAL"/><item name="ENDER_CRYSTAL"/><item name="VIBRANT_CRYSTAL"/>
+        <item /><item name="PULSATING_CRYSTAL"/><item />
+      </grid>
+      <output name="WEATHER_CRYSTAL"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Reinforced Obsidian" required="true">
+    <crafting>
+      <grid>
+        <item name="POWDER_INFINITY"/><item name="enderio:block_dark_iron_bars"/><item name="POWDER_INFINITY"/>
+        <item name="enderio:block_dark_iron_bars"/><item name="oredict:obsidian"/><item name="enderio:block_dark_iron_bars"/>
+        <item name="POWDER_INFINITY"/><item name="enderio:block_dark_iron_bars"/><item name="POWDER_INFINITY"/>
+      </grid>
+      <output name="enderio:block_reinforced_obsidian"/>
+    </crafting>
+  </recipe>
+
+  <alias name="INSULATION_METAL" item="dustTin">
+    <dependency item="dustTin" reverse="false"/>
+  </alias>
+  <alias name="INSULATION_METAL" item="dustIron">
+    <dependency item="dustTin" reverse="true"/>
+  </alias>
+
+  <recipe name="Alloy: Industrial Insulation" required="true">
+    <alloying energy="5000" exp="0.5">
+      <input name="dustLapis"/>
+      <input name="minecraft:wool"/>
+      <input name="INSULATION_METAL"/>
+      <output name="INDUSTRIAL_INSULATION"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Nethercotta" required="true">
+    <alloying energy="20000" exp="1">
+      <input name="ingotBrickNether"/>
+      <input name="cropNetherWart" amount="4" />
+      <input name="oredict:itemClay" amount="6" />
+      <output name="ingotBrickNetherGlazed"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Dark Steel Anvil" required="true">
+    <crafting>
+      <grid>
+        <item name="DARK_STEEL_BLOCK"/><item name="DARK_STEEL_BLOCK"/><item name="DARK_STEEL_BLOCK"/>
+        <item/><item name="DARK_STEEL"/><item/>
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+      </grid>
+      <output name="enderio:block_dark_steel_anvil"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Dark Steel Ladder" required="true">
+    <crafting>
+      <grid size="1x3">
+        <item name="enderio:block_dark_iron_bars"/>
+        <item name="enderio:block_dark_iron_bars"/>
+        <item name="enderio:block_dark_iron_bars"/>
+      </grid>
+      <output name="enderio:block_dark_steel_ladder" amount="12"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Dark Steel Trap Door" required="true">
+    <crafting>
+      <grid size="2x2">
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+      </grid>
+      <output name="enderio:block_dark_steel_trapdoor" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Dark Steel Door" required="true">
+    <crafting>
+      <grid size="2x3">
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+        <item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+      </grid>
+      <output name="item:enderio:block_dark_steel_door" amount="3"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Bread" required="true">
+    <smelting exp="0.35">
+      <input name="FLOUR"/>
+      <output name="minecraft:bread" amount="1"/>
+    </smelting>
+  </recipe>
+
+  <recipe name="Enderios" required="true">
+    <crafting>
+      <shapeless>
+        <item name="minecraft:bowl"/><item name="minecraft:milk_bucket"/><item name="cropWheat"/><item name="nuggetEnderpearl"/>
+      </shapeless>
+      <output name="enderio:item_ender_food:0"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Copper" required="false">
+    <smelting>
+      <input name="dustCopper"/>
+      <output name="ingotCopper"/>
+    </smelting>
+  </recipe>
+
+  <recipe name="Tin" required="false">
+    <smelting>
+      <input name="dustTin"/>
+      <output name="ingotTin"/>
+    </smelting>
+  </recipe>
+
+  <recipe name="Ardite" required="false">
+    <smelting>
+      <input name="dustArdite"/>
+      <output name="ingotArdite"/>
+    </smelting>
+  </recipe>
+
+  <recipe name="Cobalt" required="false">
+    <smelting>
+      <input name="dustCobalt"/>
+      <output name="ingotCobalt"/>
+    </smelting>
+  </recipe>
+
+  <recipe name="Obsidian Smelting" required="false">
+    <smelting vanilla="false" tinkers="true">
+      <!-- Note: With Dark Steel Balls, one obsidian block will sagmill to 6 powders, so we need to make them smelt that way to avoid duping. -->
+      <input name="POWDER_OBSIDIAN" amount="6"/>
+      <output name="item:obsidian"/>
+    </smelting>
+  </recipe>
+
+  <recipe name="Chassis Parts" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="IRON"/><item name="IRON"/><item name="IRON"/>
+        <item name="IRON"/><item name="CHASSIS"/><item name="IRON"/>
+        <item name="IRON"/><item name="IRON"/><item name="IRON"/>
+      </grid>
+      <output name="CHASSIPARTS" amount="16"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Simple Chassis Parts" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="IRON"/><item name="IRON"/><item name="IRON"/>
+        <item name="IRON"/><item name="SIMPLE_CHASSIS"/><item name="IRON"/>
+        <item name="IRON"/><item name="IRON"/><item name="IRON"/>
+      </grid>
+      <output name="SIMPLE_CHASSIPARTS" amount="16"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Enhanced Chassis Parts" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="IRON"/><item name="IRON"/><item name="IRON"/>
+        <item name="IRON"/><item name="ENHANCED_CHASSIS"/><item name="IRON"/>
+        <item name="IRON"/><item name="IRON"/><item name="IRON"/>
+      </grid>
+      <output name="ENHANCED_CHASSIPARTS" amount="16"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/0" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item /><item name="CHASSIPARTS"/><item />
+        <item name="CHASSIPARTS"/><item /><item name="CHASSIPARTS"/>
+        <item /><item name="CHASSIPARTS"/><item />
+      </grid>
+      <output name="enderio:block_decoration1:0" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/1 a" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item /><item name="ingotIron"/><item />
+        <item name="ingotIron"/><item name="enderio:block_decoration1:0"/><item name="ingotIron"/>
+        <item /><item name="ingotIron"/><item />
+      </grid>
+      <output name="enderio:block_decoration1:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/1 b" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="CHASSIPARTS"/><item name="ingotIron"/><item name="CHASSIPARTS"/>
+        <item name="ingotIron"/><item /><item name="ingotIron"/>
+        <item name="CHASSIPARTS"/><item name="ingotIron"/><item name="CHASSIPARTS"/>
+      </grid>
+      <output name="enderio:block_decoration1:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/1 c" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="ingotIron"/><item name="CHASSIPARTS"/><item name="ingotIron"/>
+        <item name="CHASSIPARTS"/><item /><item name="CHASSIPARTS"/>
+        <item name="ingotIron"/><item name="CHASSIPARTS"/><item name="ingotIron"/>
+      </grid>
+      <output name="enderio:block_decoration1:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/1 d" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:6"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/2" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:2" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/3" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:2"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:3" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/4" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:3"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:4" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/5" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:4"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:5" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/6" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:5"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:6" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/7 a" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item /><item name="SOULARIUM"/><item />
+        <item name="SOULARIUM"/><item name="enderio:block_decoration1:0"/><item name="SOULARIUM"/>
+        <item /><item name="SOULARIUM"/><item />
+      </grid>
+      <output name="enderio:block_decoration1:7" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/7 b" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="CHASSIPARTS"/><item name="SOULARIUM"/><item name="CHASSIPARTS"/>
+        <item name="SOULARIUM"/><item /><item name="SOULARIUM"/>
+        <item name="CHASSIPARTS"/><item name="SOULARIUM"/><item name="CHASSIPARTS"/>
+      </grid>
+      <output name="enderio:block_decoration1:7" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/7 c" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="SOULARIUM"/><item name="CHASSIPARTS"/><item name="SOULARIUM"/>
+        <item name="CHASSIPARTS"/><item /><item name="CHASSIPARTS"/>
+        <item name="SOULARIUM"/><item name="CHASSIPARTS"/><item name="SOULARIUM"/>
+      </grid>
+      <output name="enderio:block_decoration1:7" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/7 d" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:12"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:7" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/8" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:7"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:8" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/9" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:8"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:9" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/10" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:9"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:10" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/11" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:10"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:11" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/12" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:11"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:12" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/13" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="oredict:dyeRed"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:13" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/1 f" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:13"/><item name="minecraft:water_bucket"/>
+      </shapeless>
+      <output name="enderio:block_decoration1:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/14 a" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item /><item name="barsIron"/><item />
+        <item name="barsIron"/><item name="enderio:block_decoration1:0"/><item name="barsIron"/>
+        <item /><item name="barsIron"/><item />
+      </grid>
+      <output name="enderio:block_decoration1:14" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/14 b" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="CHASSIPARTS"/><item name="barsIron"/><item name="CHASSIPARTS"/>
+        <item name="barsIron"/><item /><item name="barsIron"/>
+        <item name="CHASSIPARTS"/><item name="barsIron"/><item name="CHASSIPARTS"/>
+      </grid>
+      <output name="enderio:block_decoration1:14" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/14 c" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="barsIron"/><item name="CHASSIPARTS"/><item name="barsIron"/>
+        <item name="CHASSIPARTS"/><item /><item name="CHASSIPARTS"/>
+        <item name="barsIron"/><item name="CHASSIPARTS"/><item name="barsIron"/>
+      </grid>
+      <output name="enderio:block_decoration1:14" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/15 a" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item /><item name="FUSED_GLASS"/><item />
+        <item name="FUSED_GLASS"/><item name="enderio:block_decoration1:0"/><item name="FUSED_GLASS"/>
+        <item /><item name="FUSED_GLASS"/><item />
+      </grid>
+      <output name="enderio:block_decoration1:15" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/15 b" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="CHASSIPARTS"/><item name="FUSED_GLASS"/><item name="CHASSIPARTS"/>
+        <item name="FUSED_GLASS"/><item /><item name="FUSED_GLASS"/>
+        <item name="CHASSIPARTS"/><item name="FUSED_GLASS"/><item name="CHASSIPARTS"/>
+      </grid>
+      <output name="enderio:block_decoration1:15" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 1/15 c" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="FUSED_GLASS"/><item name="CHASSIPARTS"/><item name="FUSED_GLASS"/>
+        <item name="CHASSIPARTS"/><item /><item name="CHASSIPARTS"/>
+        <item name="FUSED_GLASS"/><item name="CHASSIPARTS"/><item name="FUSED_GLASS"/>
+      </grid>
+      <output name="enderio:block_decoration1:15" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/0" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="minecraft:furnace"/><item name="minecraft:furnace"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:0" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/1" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="chestWood"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/2" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="CHASSIS"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:2" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/3" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration2:1"/><item name="enderio:block_decoration2:2"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:3" amount="2"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/4" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration2:3"/><item name="netherStar"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:4" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/5" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="workbench"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:5" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/6" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="gemDiamond"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:6" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/7" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="POWDER_INFINITY"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:7" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/8" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="itemFlint"/><item name="itemFlint"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:8" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/9" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:7"/><item name="minecraft:iron_axe"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:9" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/10" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="GEAR_ENERGIZED"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:10" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/11" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:15"/><item name="barsIron"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:11" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/12" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:15"/><item name="enderio:block_dark_iron_bars"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:12" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/13" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="CONDUIT_BINDER"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:13" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/14" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="ingotIron"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:14" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 2/15" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="CAPACITOR1"/><item name="CAPACITOR1"/>
+      </shapeless>
+      <output name="enderio:block_decoration2:15" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 3/0" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="minecraft:bucket"/>
+      </shapeless>
+      <output name="enderio:block_decoration3:0" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 3/1" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="minecraft:furnace"/>
+      </shapeless>
+      <output name="enderio:block_decoration3:1" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 3/2" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="GEAR_IRON"/>
+      </shapeless>
+      <output name="enderio:block_decoration3:2" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 3/3" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="CAPACITOR1"/>
+      </shapeless>
+      <output name="enderio:block_decoration3:3" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Deco Block 3/4" required="true">
+    <crafting>
+      <shapeless>
+        <item name="enderio:block_decoration1:1"/><item name="itemFlint"/>
+      </shapeless>
+      <output name="enderio:block_decoration3:4" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Confusion Charge" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="itemConfusingDust"/><item name="oredict:sand"/><item name="itemConfusingDust"/>
+        <item name="oredict:sand"/><item name="gunpowder"/><item name="oredict:sand"/>
+        <item name="itemConfusingDust"/><item name="oredict:sand"/><item name="itemConfusingDust"/>
+      </grid>
+      <output name="enderio:block_confusion_charge" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Concussion Charge" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="itemEnderFragment"/><item name="itemEnderFragment"/><item name="itemEnderFragment"/>
+        <item name="oredict:sand"/><item name="gunpowder"/><item name="oredict:sand"/>
+        <item name="itemConfusingDust"/><item name="itemConfusingDust"/><item name="itemConfusingDust"/>
+      </grid>
+      <output name="enderio:block_concussion_charge" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Ender Charge" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="itemEnderFragment"/><item name="oredict:sand"/><item name="itemEnderFragment"/>
+        <item name="oredict:sand"/><item name="gunpowder"/><item name="oredict:sand"/>
+        <item name="itemEnderFragment"/><item name="oredict:sand"/><item name="itemEnderFragment"/>
+      </grid>
+      <output name="enderio:block_ender_charge" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Ender Defragmentation" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item /><item name="itemEnderFragment"/><item />
+        <item name="itemEnderFragment"/><item name="itemEnderFragment"/><item name="itemEnderFragment"/>
+        <item /><item name="itemEnderFragment"/><item />
+      </grid>
+      <output name="oredict:enderpearl" amount="1"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Awareness Upgrade" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="CONDUIT_BINDER" /><item name="SILICON" /><item name="CONDUIT_BINDER" />
+        <item name="SILICON" /><item name="pearlEnderEye" /><item name="SILICON" />
+        <item name="CONDUIT_BINDER" /><item name="ELECTRICAL_STEEL" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="REMOTE_AWARENESS_UPGRADE" amount="3" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Wireless Energy Transmitter Dish Assembly" required="true">
+    <crafting>
+      <grid>
+        <item name="dyeWhite"/><item name="ELECTRICAL_STEEL"/><item />
+        <item /><item name="dyeWhite"/><item name="ELECTRICAL_STEEL"/>
+        <item name="dyeWhite"/><item name="ELECTRICAL_STEEL"/><item />
+      </grid>
+      <output name="itemWirelessDish"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Rod" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="DARK_STEEL_NUGGET"/><item name="POWDER_INFINITY"/>
+        <item name="DARK_STEEL_NUGGET"/><item name="stickWood"/><item name="DARK_STEEL_NUGGET"/>
+        <item name="POWDER_INFINITY"/><item name="DARK_STEEL_NUGGET"/><item />
+      </grid>
+      <output name="itemInfinityRod"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Goop">
+    <alloying energy="5000">
+      <input name="POWDER_INFINITY"/>
+      <input name="dustCoal"/>
+      <output name="INFINITY_GOOP"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Infinity Goop, Charcoal">
+    <alloying energy="5000">
+      <input name="POWDER_INFINITY"/>
+      <input name="dustCharcoal"/>
+      <output name="INFINITY_GOOP"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 1">
+    <crafting>
+      <grid>
+        <item name="dustBedrock"/><item name="dustBedrock"/><item name="dustBedrock"/>
+        <item name="dustBedrock"/><item name="dustBedrock"/><item name="dustBedrock"/>
+        <item name="dustBedrock"/><item name="dustBedrock"/><item name="dustBedrock"/>
+      </grid>
+      <output name="compressed1xDustBedrock"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 1, Uncrafting">
+    <crafting>
+      <shapeless><item name="compressed1xDustBedrock"/></shapeless>
+      <output name="dustBedrock" amount="9"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 1, Sagmilling">
+    <sagmilling energy="10000" bonus="chance_only">
+      <input name="compressed1xDustBedrock"/>
+      <output name="dustBedrock" amount="9"/>
+      <output name="enderio:block_infinity_fog" amount="1" chance="0.05"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 2">
+    <crafting>
+      <grid>
+        <item name="compressed1xDustBedrock"/><item name="compressed1xDustBedrock"/><item name="compressed1xDustBedrock"/>
+        <item name="compressed1xDustBedrock"/><item name="compressed1xDustBedrock"/><item name="compressed1xDustBedrock"/>
+        <item name="compressed1xDustBedrock"/><item name="compressed1xDustBedrock"/><item name="compressed1xDustBedrock"/>
+      </grid>
+      <output name="compressed2xDustBedrock"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 2, Uncrafting">
+    <crafting>
+      <shapeless><item name="compressed2xDustBedrock"/></shapeless>
+      <output name="compressed1xDustBedrock" amount="9"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 2, Sagmilling">
+    <sagmilling energy="20000" bonus="chance_only">
+      <input name="compressed2xDustBedrock"/>
+      <output name="compressed1xDustBedrock" amount="9"/>
+      <output name="dustBedrock" amount="1" chance="0.05"/>
+      <output name="enderio:block_infinity_fog" amount="1" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 3">
+    <crafting>
+      <grid>
+        <item name="compressed2xDustBedrock"/><item name="compressed2xDustBedrock"/><item name="compressed2xDustBedrock"/>
+        <item name="compressed2xDustBedrock"/><item name="compressed2xDustBedrock"/><item name="compressed2xDustBedrock"/>
+        <item name="compressed2xDustBedrock"/><item name="compressed2xDustBedrock"/><item name="compressed2xDustBedrock"/>
+      </grid>
+      <output name="compressed3xDustBedrock"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 3, Uncrafting">
+    <crafting>
+      <shapeless><item name="compressed3xDustBedrock"/></shapeless>
+      <output name="compressed2xDustBedrock" amount="9"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Infinity Dust Block 3, Sagmilling">
+    <sagmilling energy="30000" bonus="chance_only">
+      <input name="compressed3xDustBedrock"/>
+      <output name="compressed2xDustBedrock" amount="9"/>
+      <output name="compressed1xDustBedrock" amount="1" chance="0.05"/>
+      <output name="dustBedrock" amount="1" chance="0.1"/>
+      <output name="enderio:block_infinity_fog" amount="1" chance="0.2"/>
+    </sagmilling>
+  </recipe>
+
+</enderio:recipes>

@@ -1,0 +1,17 @@
+This file is for the BiomeBlockReplacementGenerator. This generator handles top/filler 
+block replacements for biomes. Not quite the same as the overworld, but similar.
+
+
+
+Constructor:
+    Notes:
+        This constructs a BiomeBlockReplacementGenerator with a sea height of 0.
+
+Constructor:
+    Arguments:
+        int
+    Argument Usage:
+        height of the sea in the dimension
+    Notes:
+        This constructs a BiomeBlockReplacementGenerator. Sea height is required to properly handle replacement above/below the sea.
+

@@ -1,0 +1,9 @@
+This file is for the VanillaDecorationGenerator. This generates vanilla decorations. 
+This includes things like trees and ores.
+
+
+
+Constructor:
+    Notes:
+        This constructs a VanillaDecorationGenerator.
+

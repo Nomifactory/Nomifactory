@@ -1,0 +1,29 @@
+This file is for the FluidPocketGenerator. This generator generates pockets of fluid, 
+similar to lava pockets in the nether.
+
+
+
+Constructor:
+    Arguments:
+        ItemBlockData, int, boolean
+    Argument Usage:
+        block to generate, pockets per chunk, whether it requires air
+    Notes:
+        This constructs a FluidPocketGenerator. The boolean is for if one side of the pocket must have air, not counting the top. This is so the fluid flows prettily.
+
+addRequiredBlock:
+    Arguments:
+        ItemBlockData
+    Usage:
+        required block
+    Notes:
+        Adds a block the generator is allowed to generate a pocket under. By default can generate under any block.
+
+setHeight:
+    Arguments:
+        int, int
+    Usage:
+        min height, max height
+    Notes:
+        Sets the min and max heights this generator can generate at. Default is 4 and 250.
+

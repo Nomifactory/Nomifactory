@@ -1,0 +1,13 @@
+This file is for the SkyIslandData. This data object is for holding size and type 
+data of islands for the SkyIslandGenerator.
+
+
+
+addType:
+    Arguments:
+        SkyIslandType
+    Usage:
+        type
+    Notes:
+        Adds a type of sky island to be generated.
+

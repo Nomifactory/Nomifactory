@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- 
+
+These are the built-in recipes. You cannot change this file, it is a
+reference for you only and will be generated every time the game starts.
+
+To make changes to the recipes, copy the recipes you want to change to
+a file in the 'user' folder.
+
+You can also disable all built-in recipes with the setting "loadCoreRecipes"
+in the Ender IO config file, so that only your files in the 'user' folder will
+be loaded. Please be advised that a number of recipes are absolutely needed,
+so you will have to copy those over into a 'user' file for the game to load.
+
+Recipes that have entities that cannot be
+found in-game are either skipped or an error, depending on their "required"
+attribute.
+
+More information on the syntax can be found in the recipes.xsd file. An
+XML editor will display that as tooltips when editing this file.
+
+ -->
+
+<!-- 
+  Sorry, this config is a mix between Powered Spawner and Soul Vial.
+  "disabled", "costMultiplier" and "clone" are for the Powered Spawner, "soulvial" is for the Soul Vial
+  Bad planning by me
+     -Henry
+ -->
+
+  <recipe name="Spawner, defaults" required="true">
+    <spawning>
+      <!-- This will print out all available mobs: 
+      <entity name="minecraft:herobrine" costMultiplier="1" disabled="false"/>
+      -->
+      <entity name="*"                             costMultiplier="1.0" disabled="false"/> <!-- default -->
+      <entity name="*boss*"                        soulvial="false"/> <!-- all modded bosses -->
+      <entity name="minecraft:bat"                 costMultiplier="0.5" disabled="false"/> <!-- Bat -->
+      <entity name="minecraft:blaze"               costMultiplier="5.0" disabled="false"/> <!-- Blaze -->
+      <entity name="minecraft:cave_spider"         costMultiplier="1.0" disabled="false"/> <!-- Cave Spider -->
+      <entity name="minecraft:chicken"             costMultiplier="0.5" disabled="false"/> <!-- Chicken -->
+      <entity name="minecraft:cow"                 costMultiplier="0.5" disabled="false"/> <!-- Cow -->
+      <entity name="minecraft:creeper"             costMultiplier="1.5" disabled="false"/> <!-- Creeper -->
+      <entity name="minecraft:donkey"              costMultiplier="1.0" disabled="false"/> <!-- Donkey -->
+      <entity name="minecraft:elder_guardian"      costMultiplier="10"  disabled="true" soulvial="false"/> <!-- Elder Guardian -->
+      <entity name="minecraft:enderman"            costMultiplier="10"  disabled="false"/> <!-- Enderman -->
+      <entity name="minecraft:endermite"           costMultiplier="0.3" disabled="false"/> <!-- Endermite -->
+      <entity name="minecraft:evocation_illager"   costMultiplier="25"  disabled="true"/> <!-- Evoker -->
+      <entity name="minecraft:ghast"               costMultiplier="10"  disabled="false"/> <!-- Ghast -->
+      <entity name="minecraft:giant"               costMultiplier="100" disabled="false"/> <!-- Giant -->
+      <entity name="minecraft:guardian"            costMultiplier="5.0" disabled="false"/> <!-- Guardian -->
+      <entity name="minecraft:horse"               costMultiplier="1.0" disabled="false"/> <!-- Horse -->
+      <entity name="minecraft:husk"                costMultiplier="2.0" disabled="false"/> <!-- Husk -->
+      <entity name="minecraft:llama"               costMultiplier="1.0" disabled="false"/> <!-- Llama -->
+      <entity name="minecraft:magma_cube"          costMultiplier="2.0" disabled="false"/> <!-- Magma Cube -->
+      <entity name="minecraft:mooshroom"           costMultiplier="1.0" disabled="false"/> <!-- Mooshroom -->
+      <entity name="minecraft:mule"                costMultiplier="1.0" disabled="false"/> <!-- Mule -->
+      <entity name="minecraft:ocelot"              costMultiplier="1.0" disabled="false"/> <!-- Ocelot -->
+      <entity name="minecraft:pig"                 costMultiplier="0.5" disabled="false"/> <!-- Pig -->
+      <entity name="minecraft:polar_bear"          costMultiplier="2.0" disabled="false"/> <!-- Polar Bear -->
+      <entity name="minecraft:rabbit"              costMultiplier="0.1" disabled="false"/> <!-- Rabbit -->
+      <entity name="minecraft:sheep"               costMultiplier="0.5" disabled="false"/> <!-- Sheep -->
+      <entity name="minecraft:shulker"             costMultiplier="10"  disabled="false"/> <!-- Shulker -->
+      <entity name="minecraft:silverfish"          costMultiplier="1.0" disabled="false"/> <!-- Silverfish -->
+      <entity name="minecraft:skeleton"            costMultiplier="2.0" disabled="false"/> <!-- Skeleton -->
+      <entity name="minecraft:skeleton_horse"      costMultiplier="2.0" disabled="false"/> <!-- Skeleton Horse -->
+      <entity name="minecraft:slime"               costMultiplier="5.0" disabled="false"/> <!-- Slime -->
+      <entity name="minecraft:snowman"             costMultiplier="1.0" disabled="true"/> <!-- Snow Golem -->
+      <entity name="minecraft:spider"              costMultiplier="1.0" disabled="false"/> <!-- Spider -->
+      <entity name="minecraft:squid"               costMultiplier="0.5" disabled="false"/> <!-- Squid -->
+      <entity name="minecraft:stray"               costMultiplier="3.0" disabled="false"/> <!-- Stray -->
+      <entity name="minecraft:vex"                 costMultiplier="1.0" disabled="false"/> <!-- Vex -->
+      <entity name="minecraft:villager"            costMultiplier="1.0" disabled="true"/> <!-- Villager -->
+      <entity name="minecraft:villager_golem"      costMultiplier="10"  disabled="true"/> <!-- Iron Golem -->
+      <entity name="minecraft:vindication_illager" costMultiplier="15"  disabled="false"/> <!-- Vindicator -->
+      <entity name="minecraft:witch"               costMultiplier="5.0" disabled="false"/> <!-- Witch -->
+      <entity name="minecraft:wither"              costMultiplier="50"  disabled="true" soulvial="false"/> <!-- Wither -->
+      <entity name="minecraft:wither_skeleton"     costMultiplier="20"  disabled="false"/> <!-- Wither Skeleton -->
+      <entity name="minecraft:wolf"                costMultiplier="1.0" disabled="false"/> <!-- Wolf -->
+      <entity name="minecraft:zombie"              costMultiplier="1.0" disabled="false"/> <!-- Zombie -->
+      <entity name="minecraft:zombie_horse"        costMultiplier="2.0" disabled="false"/> <!-- Zombie Horse -->
+      <entity name="minecraft:zombie_pigman"       costMultiplier="5.0" disabled="false"/> <!-- Zombie Pigman -->
+      <entity name="minecraft:zombie_villager"     costMultiplier="2.5" disabled="false"/> <!-- Zombie Villager -->
+      <!-- Note: All unconfigured mobs will have a costMultiplier of 1.0 -->
+    </spawning>
+  </recipe>
+
+<!-- TODO 1.13: Remove the old zoo -->
+  <recipe name="Spawner, Ender Zoo" required="false">
+    <spawning>
+      <entity name="enderzoo:concussioncreeper"    costMultiplier="1.5" disabled="false"/>
+      <entity name="enderzoo:direslime"            costMultiplier="0.9" disabled="false"/>
+      <entity name="enderzoo:direwolf"             costMultiplier="1.5" disabled="false"/>
+      <entity name="enderzoo:enderminy"            costMultiplier="9.0" disabled="false"/>
+      <entity name="enderzoo:fallenknight"         costMultiplier="1.0" disabled="false"/>
+      <entity name="enderzoo:fallenmount"          costMultiplier="1.5" disabled="false"/>
+      <entity name="enderzoo:owl"                  costMultiplier="1.0" disabled="false"/>
+      <entity name="enderzoo:withercat"            costMultiplier="1.0" disabled="false"/>
+      <entity name="enderzoo:witherwitch"          costMultiplier="3.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Chickens" required="false">
+    <spawning>
+      <entity name="chickens:chickenschicken"      costMultiplier="30" disabled="false" clone="true"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Thermal Foundation" required="false">
+    <spawning>
+      <entity name="thermalfoundation:blizz"       costMultiplier="5.0" disabled="false"/>
+      <entity name="thermalfoundation:basalz"      costMultiplier="5.0" disabled="false"/>
+      <entity name="thermalfoundation:blitz"       costMultiplier="5.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Industrial Foregoing" required="false">
+    <spawning>
+      <entity name="industrialforegoing:pink_slime" costMultiplier="10.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Ice and Fire" required="false">
+    <spawning>
+      <entity name="iceandfire:firedragon" costMultiplier="30.0" disabled="true"/>
+      <entity name="iceandfire:icedragon" costMultiplier="30.0" disabled="true"/>
+      <entity name="iceandfire:icevillager" costMultiplier="1.0" disabled="true"/>
+      <entity name="iceandfire:hippogryph" costMultiplier="2.0" disabled="false"/>
+      <entity name="iceandfire:gorgon" costMultiplier="20.0" disabled="false"/>
+      <entity name="iceandfire:if_pixie" costMultiplier="1.0" disabled="false"/>
+      <entity name="iceandfire:cyclops" costMultiplier="20.0" disabled="false"/>
+      <entity name="iceandfire:hippogryph" costMultiplier="2.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Matter Overdrive" required="false">
+    <spawning>
+      <entity name="matteroverdrive:rogue_android" costMultiplier="20.0" disabled="false"/>
+      <entity name="matteroverdrive:mad_scientist" costMultiplier="1.0" disabled="true"/>
+      <entity name="matteroverdrive:mutant_scientist" costMultiplier="1.0" disabled="true"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Meecreeps" required="false">
+    <spawning>
+      <entity name="meecreeps:meecreeps" costMultiplier="1.0" disabled="true" soulvial="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Primitive Mobs" required="false">
+    <spawning>
+      <entity name="primitivemobs:chameleon" costMultiplier="0.5" disabled="false"/>
+      <entity name="primitivemobs:treasure_slime" costMultiplier="10.0" disabled="false"/>
+      <entity name="primitivemobs:haunted_tool" costMultiplier="1.0" disabled="true"/>
+      <entity name="primitivemobs:grovesprite" costMultiplier="0.5" disabled="false"/>
+      <entity name="primitivemobs:bewitched_tome" costMultiplier="1.0" disabled="true"/>
+      <entity name="primitivemobs:filch_lizard" costMultiplier="0.5" disabled="false"/>
+      <entity name="primitivemobs:brain_slime" costMultiplier="5.0" disabled="false"/>
+      <entity name="primitivemobs:rocket_creeper" costMultiplier="1.5" disabled="false"/>
+      <entity name="primitivemobs:festive_creeper" costMultiplier="1.5" disabled="false"/>
+      <entity name="primitivemobs:support_creeper" costMultiplier="1.5" disabled="false"/>
+      <entity name="primitivemobs:skeleton_warrior" costMultiplier="2.0" disabled="false"/>
+      <entity name="primitivemobs:blazing_juggernaut" costMultiplier="5.0" disabled="false"/>
+      <entity name="primitivemobs:lily_lurker" costMultiplier="1.5" disabled="false"/>
+      <entity name="primitivemobs:mother_spider" costMultiplier="2.0" disabled="false"/>
+      <entity name="primitivemobs:baby_spider" costMultiplier="1.0" disabled="true"/>
+      <entity name="primitivemobs:trollager" costMultiplier="2.0" disabled="false"/>
+      <entity name="primitivemobs:lost_miner" costMultiplier="1.0" disabled="true"/>
+      <entity name="primitivemobs:traveling_merchant" costMultiplier="1.0" disabled="true"/>
+      <entity name="primitivemobs:dodo" costMultiplier="0.5" disabled="false"/>
+      <entity name="primitivemobs:mimic" costMultiplier="5.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Quark" required="false">
+    <spawning>
+      <entity name="quark:pirate" costMultiplier="1.0" disabled="false"/>
+      <entity name="quark:wraith" costMultiplier="2.0" disabled="false"/>
+      <entity name="quark:dweller" costMultiplier="1.5" disabled="false"/>
+      <entity name="quark:ashen" costMultiplier="2.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Tinkers Construct" required="false">
+    <spawning>
+      <entity name="tconstruct:blueslime" costMultiplier="5.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Totemic" required="false">
+    <spawning>
+      <entity name="totemic:buffalo" costMultiplier="1.0" disabled="false"/>
+      <entity name="totemic:baykok" costMultiplier="30.0" disabled="true"/>
+      <entity name="totemic:bald_eagle" costMultiplier="1.0" disabled="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Galacticraft" required="false">
+    <spawning>
+      <entity name="galacticraftcore:evolved_skeleton_boss" costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="galacticraftplanets:creeper_boss"       costMultiplier="20.0" disabled="true" soulvial="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Extra Planets" required="false">
+    <spawning>
+      <entity name="extraplanets:extraplanets.evolvedfirebatboss"     costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="extraplanets:extraplanets.evolvedghastboss"       costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="extraplanets:extraplanets.evolvedgiantzombieboss" costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="extraplanets:extraplanets.evolvediceslimeboss"    costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="extraplanets:extraplanets.evolvedmagmacubeboss"   costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="extraplanets:extraplanets.evolvedsnowmanboss"     costMultiplier="20.0" disabled="true" soulvial="false"/>
+      <entity name="extraplanets:extraplanets.evolvedspacemanboss"    costMultiplier="20.0" disabled="true" soulvial="false"/>
+    </spawning>
+  </recipe>
+
+  <recipe name="Spawner, Pixelmon" required="false">
+    <spawning>
+      <entity name="pixelmon:*"    disabled="true" soulvial="false" clone="true" />
+    </spawning>
+  </recipe>
+
+</enderio:recipes>

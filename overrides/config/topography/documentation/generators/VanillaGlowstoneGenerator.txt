@@ -1,0 +1,9 @@
+This file is for the VanillaGlowstoneGenerator. This is the vanilla glowstone generator. 
+Generates glowstone clusters under netherrack.
+
+
+
+Constructor:
+    Notes:
+        This constructs a VanillaGlowstoneGenerator.
+

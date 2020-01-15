@@ -1,0 +1,822 @@
+{
+	"registryname": "lunarminingstation",
+    "localizedname": "Lunar Mining Station",
+	"color": "dae0eb",
+    "parts": [
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": -1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": -1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "extrautils2:ineffableglass@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "extrautils2:ineffableglass@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "extrautils2:ineffableglass@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+		        {
+            "x": 2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+		        {
+            "x": 1,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": -2,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": -2,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": -2,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_misc@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "extrautils2:ineffableglass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "z": -1,
+            "elements": [
+                "minecraft:beacon@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "enderio:block_alloy_endergy@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": -1,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": -1,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": -1,
+            "elements": [
+                "enderio:block_alloy_endergy@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "gregtech:machine_casing@6"
+            ]
+        }
+    ]}

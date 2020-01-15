@@ -1,0 +1,166 @@
+{
+	"images":
+    {
+        "title":
+        {
+            "image" : "minecraft:textures/gui/title/background/top.png",
+            "posX" : -260,
+            "posY" : -10,
+            "width" : 512,
+            "height" : 412,
+            "alignment" : "top_center"
+        }
+    },
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : 4,
+            "posY" : -46,
+            "width" : 120,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : 125,
+            "posY" : -46,
+            "width" : 120,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "fml.menu.mods",
+            "posX" : 4,
+            "posY" : -22,
+            "width" : 120,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : 125,
+            "posY" : -22,
+            "width" : 120,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 4,
+            "posY" : 74,
+            "width" : 240,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+		
+        "changelog":
+        {
+            "text" : "Changes",
+            "posX" : 125,
+            "posY" : 2,
+            "width" : 120,
+			"height" : 20,
+			"alignment" : "left_center",
+			"wrappedButton" : 401
+        },
+		
+        "reportbug":
+        {
+            "text" : "Issues",
+            "posX" : 4,
+            "posY" : 2,
+            "width" : 120,
+			"height" : 20,
+			"alignment" : "left_center",
+			"wrappedButton" : 402
+        },
+		"discord":
+        {
+            "text" : "Join Us On Discord!",
+            "posX" : 4,
+            "posY" : 26,
+            "width" : 240,
+			"height" : 20,
+			"alignment" : "left_center",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/jEEq7u5"
+            }
+        },
+		"akliz":
+        {
+            "text" : "Rent Your Own Omnifactory Server!",
+            "posX" : 4,
+            "posY" : 50,
+            "width" : 240,
+			"height" : 20,
+			"alignment" : "left_center",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.akliz.net/manage/aff.php?aff=266"
+            }
+        }
+    },
+    "labels":
+    {        
+		
+		"mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
+    
+    "other":
+    {
+        "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["minecraft:textures/gui/title/background/title.png","minecraft:textures/gui/title/background/title2.png","minecraft:textures/gui/title/background/title3.png","minecraft:textures/gui/title/background/title4.png","minecraft:textures/gui/title/background/title5.png","minecraft:textures/gui/title/background/title6.png","minecraft:textures/gui/title/background/title7.png"],
+                "displayDuration" : 100,
+                "fadeDuration" : 40
+            }
+        }
+    }
+}

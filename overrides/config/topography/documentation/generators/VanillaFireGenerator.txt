@@ -1,0 +1,9 @@
+This file is for the VanillaFireGenerator. This is the vanilla fire generator. Generates 
+fire clusters on netherrack.
+
+
+
+Constructor:
+    Notes:
+        This constructs a VanillaFireGenerator.
+

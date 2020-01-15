@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- 
+
+These are the built-in recipes. You cannot change this file, it is a
+reference for you only and will be generated every time the game starts.
+
+To make changes to the recipes, copy the recipes you want to change to
+a file in the 'user' folder. To disable a recipe, add an attribute "disabled"
+and set it to true, e.g.: <recipe name="Gear" disabled="true" />
+
+You can also disable all built-in recipes with the setting "loadCoreRecipes"
+in the Ender IO config file, so that only your files in the 'user' folder will
+be loaded. Please be advised that a number of recipes are absolutely needed,
+so you will have to copy those over into a 'user' file for the game to load.
+
+Item specifications can reference an alias, an ore dictionary name, a
+block or an item. You can force the type by prefixing the value with
+"oredict:", "block:" or "item:". Recipes that have items that cannot be
+found in-game are either skipped or an error, depending on their "required"
+attribute.
+
+More information on the syntax can be found in the recipes.xsd file. An
+XML editor will display that as tooltips when editing this file.
+
+ -->
+
+  <!-- recipes Ender IO needs -->
+
+  <recipe name="Simple SAG Mill" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="itemFlint" /><item name="itemFlint" /><item name="itemFlint" />
+        <item name="IRON" /><item name="SIMPLE_CHASSIS"/><item name="IRON" />
+        <item name="GEAR_STONE" /><item name="minecraft:piston" /><item name="GEAR_STONE" />
+      </grid>
+      <output name="enderio:block_simple_sag_mill" />
+    </crafting>
+  </recipe>
+
+  <recipe name="SAG Mill" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="itemFlint" /><item name="itemFlint" /><item name="itemFlint" />
+        <item name="ingotDarkSteel" /><item name="CHASSIS" /><item name="ingotDarkSteel" />
+        <item name="GEAR_DARKSTEEL" /><item name="minecraft:piston" /><item name="GEAR_DARKSTEEL" />
+      </grid>
+      <output name="enderio:block_sag_mill" />
+    </crafting>
+  </recipe>
+
+  <recipe name="SAG Mill, Upgrade" required="true">
+    <crafting upgrade="true">
+      <grid size="3x2">
+        <item name="ingotDarkSteel" /><item name="enderio:block_simple_sag_mill" /><item name="ingotDarkSteel" />
+        <item name="GEAR_DARKSTEEL" /><item name="CHASSIS" /><item name="GEAR_DARKSTEEL" />
+      </grid>
+      <output name="enderio:block_sag_mill" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Enhanced SAG Mill" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="itemFlint" /><item name="itemFlint" /><item name="itemFlint" />
+        <item name="ingotEndSteel" /><item name="ENHANCED_CHASSIS" /><item name="ingotEndSteel" />
+        <item name="GEAR_VIBRANT" /><item name="minecraft:piston" /><item name="GEAR_VIBRANT" />
+      </grid>
+      <output name="enderio:block_enhanced_sag_mill" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Enhanced SAG Mill, Upgrade" required="true">
+    <crafting upgrade="true">
+      <grid size="3x2">
+        <item name="ingotEndSteel"/><item name="enderio:block_sag_mill" /><item name="ingotEndSteel" />
+        <item name="GEAR_VIBRANT" /><item name="ENHANCED_CHASSIS" /><item name="GEAR_VIBRANT" />
+      </grid>
+      <output name="enderio:block_enhanced_sag_mill" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Sagmill: Silicon" required="true">
+    <sagmilling energy="720">
+      <input name="oredict:sand"/>
+      <output name="itemSilicon" chance="0.5" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Coal" required="true">
+    <sagmilling energy="2400">
+      <input name="minecraft:coal:0"/>
+      <output name="dustCoal" />
+      <output name="dustCoal" chance="0.1" />
+      <output name="dustSulfur" chance="0.1" required="false" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Coal Block" required="true">
+    <sagmilling energy="2400">
+      <input name="blockCoal"/>
+      <output name="dustCoal" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Ender Pearl" required="true">
+    <sagmilling energy="1600" bonus="none">
+      <input name="oredict:enderpearl"/>
+      <output name="nuggetEnderpearl" amount="9"  />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Ender Dust" required="false">
+    <sagmilling energy="800" bonus="none">
+      <input name="dustEnderPearl"/>
+      <output name="nuggetEnderpearl" amount="9"  />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Ender Dust" required="false">
+    <crafting>
+      <grid>
+        <item name="nuggetEnderpearl"/><item name="nuggetEnderpearl"/><item name="nuggetEnderpearl"/>
+        <item name="nuggetEnderpearl"/><item name="nuggetEnderpearl"/><item name="nuggetEnderpearl"/>
+        <item name="nuggetEnderpearl"/><item name="nuggetEnderpearl"/><item name="nuggetEnderpearl"/>
+      </grid>
+      <output name="dustEnderPearl" /><!-- AE2 -->
+    </crafting>
+  </recipe>
+
+  <recipe name="Sagmill: Pulsating Powder" required="true">
+    <sagmilling energy="1600" bonus="none">
+      <input name="itemPulsatingCrystal"/>
+      <output name="itemPulsatingPowder" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Vibrant Powder" required="true">
+    <sagmilling energy="1600" bonus="none">
+      <input name="itemVibrantCrystal"/>
+      <output name="itemVibrantPowder" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: EnderCrystal Powder" required="true">
+    <sagmilling energy="1600" bonus="none">
+      <input name="itemEnderCrystal"/>
+      <output name="itemEnderCrystalPowder" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Precient Powder" required="true">
+    <sagmilling energy="1600" bonus="none">
+      <input name="itemPrecientCrystal"/>
+      <output name="itemPrecientPowder" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Obsidian" required="true">
+    <sagmilling energy="4000">
+      <input name="minecraft:obsidian"/>
+      <output name="POWDER_OBSIDIAN" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Quartz Dust">
+    <sagmilling bonus="chance_only" energy="2400">
+      <input name="gemQuartz"/>
+      <output name="POWDER_QUARTZ"/>
+      <output name="POWDER_QUARTZ" chance=".1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Lapis Dust">
+    <sagmilling bonus="none" energy="2400">
+      <input name="gemLapis"/>
+      <output name="dustLapis"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Lapis Block Dust">
+    <sagmilling bonus="none" energy="3600">
+      <input name="blockLapis"/>
+      <output name="dustLapis" amount="9"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Infinity Dust" required="true">
+    <sagmilling energy="30000" bonus="chance_only">
+      <input name="dustBedrock"/>
+      <output name="enderio:block_infinity_fog"/>
+    </sagmilling>
+  </recipe>
+
+
+</enderio:recipes>

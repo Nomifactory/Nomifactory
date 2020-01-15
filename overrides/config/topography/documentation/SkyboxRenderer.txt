@@ -1,0 +1,12 @@
+This file is for the SkyboxRenderer. This is for making a custom skybox using SkyRendererCustom.
+
+
+
+addAlpha:
+    Arguments:
+        MinMaxBounds, MinMaxBounds
+    Usage:
+        angle bounds, alpha for transition
+    Notes:
+        Adds paired celestial angle bounds and alpha. Used to create a blended skybox transition as time passes.
+

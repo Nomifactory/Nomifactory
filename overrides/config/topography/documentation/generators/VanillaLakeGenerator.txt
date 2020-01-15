@@ -1,0 +1,36 @@
+This file is for the VanillaLakeGenerator. Generates vanilla lakes.
+
+
+
+Constructor:
+    Arguments:
+        ItemBlockData
+    Argument Usage:
+        block to fill with
+    Notes:
+        This constructs a VanillaLakeGenerator. Generates lakes filled with the supplied block.
+
+setSpawnChance:
+    Arguments:
+        int
+    Usage:
+        spawn chance
+    Notes:
+        Sets the 1/chance per chunk for the generator to attempt to generate lakes.
+
+blacklistBiome:
+    Arguments:
+        Non_Null_Biome_ID_Array
+    Usage:
+        biomes to blacklist
+    Notes:
+        Adds biomes that the generator will not attempt to spawn in.
+
+setHeight:
+    Arguments:
+        int, int
+    Usage:
+        min height, max height
+    Notes:
+        Sets the minimum and maximum heights the generator will attempt to spawn in.
+

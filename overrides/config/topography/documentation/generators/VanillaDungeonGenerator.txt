@@ -1,0 +1,16 @@
+This file is for the VanillaDungeonGenerator. This generates vanilla dungeons.
+
+
+
+Constructor:
+    Notes:
+        This constructs a VanillaDungeonGenerator.
+
+setSpawnAttempts:
+    Arguments:
+        int
+    Usage:
+        attempts
+    Notes:
+        Sets the number of attempts the generator should make each chunk to generate a dungeon. Default/vanilla is 8.
+

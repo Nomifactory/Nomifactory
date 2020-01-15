@@ -1,0 +1,32 @@
+This file is for the SkyIslandGenerator. This generator generates sky islands in 
+a pseudo-random pattern within grid regions, allowing for a high level of generation 
+control while giving the appearance of randomness. These can be created in a dimension 
+file using 'new SkyIslandGenerator()'. When a player spawns in a dimension with this 
+generator, they will spawn in the center of the first island to be generated.
+
+
+
+addSkyIslands:
+    Arguments:
+        int, int, boolean, int
+    Usage:
+        radius, count, randomTypes, minCount
+    Notes:
+        Generates a SkyIslandData and returns it. Radius is the radius of the sky islands to be generated, count is the number of times to attempt to generate sky islands, randomTypes is how to use the SkyIslandTypes, minCount is the minimum number of the sky islands which must be generated. If randomTypes is set to true it will randomly choose a SkyIslandType from the list when an island is generated. If it is set to false, then every time an island is generated it will use the next SkyIslandType in the list. This allows you to guarantee certain islands are generated in a region.
+
+addSkyIslands:
+    Arguments:
+        int, int, boolean
+    Usage:
+        radius, count, randomTypes
+    Notes:
+        Generates a SkyIslandData and returns it. Radius is the radius of the sky islands to be generated, count is the number of times to attempt to generate sky islands, randomTypes is how to use the SkyIslandTypes. If randomTypes is set to true it will randomly choose a SkyIslandType from the list when an island is generated. If it is set to false, then every time an island is generated it will use the next SkyIslandType in the list. This allows you to guarantee certain islands are generated in a region.
+
+setRegionSize:
+    Arguments:
+        int
+    Usage:
+        size
+    Notes:
+        Sets the grid region size in chunks. Default is 29.
+

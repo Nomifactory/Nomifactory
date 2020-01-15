@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- 
+
+These are the built-in recipes. You cannot change this file, it is a
+reference for you only and will be generated every time the game starts.
+
+To make changes to the recipes, copy the recipes you want to change to
+a file in the 'user' folder. To disable a recipe, add an attribute "disabled"
+and set it to true, e.g.: <recipe name="Gear" disabled="true" />
+
+You can also disable all built-in recipes with the setting "loadCoreRecipes"
+in the Ender IO config file, so that only your files in the 'user' folder will
+be loaded. Please be advised that a number of recipes are absolutely needed,
+so you will have to copy those over into a 'user' file for the game to load.
+
+Item specifications can reference an alias, an ore dictionary name, a
+block or an item. You can force the type by prefixing the value with
+"oredict:", "block:" or "item:". Recipes that have items that cannot be
+found in-game are either skipped or an error, depending on their "required"
+attribute.
+
+More information on the syntax can be found in the recipes.xsd file. An
+XML editor will display that as tooltips when editing this file.
+
+ -->
+
+  <!-- modded item in, something out -->
+
+  <!-- AE2 -->
+
+  <recipe name="Sagmill: Certus Quartz Crystal" required="false">
+    <sagmilling energy="800" bonus="none">
+      <input name="crystalCertusQuartz"/>
+      <output name="dustCertusQuartz" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Charged Certus Quartz Crystal" required="false">
+    <sagmilling energy="800" bonus="none">
+      <input name="appliedenergistics2:material:1"/>
+      <output name="dustCertusQuartz" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Fluix Crystal" required="false">
+    <sagmilling energy="800" bonus="none">
+      <input name="crystalFluix"/>
+      <output name="dustFluix" />
+    </sagmilling>
+  </recipe>
+
+  <!-- BoP -->
+
+  <recipe name="Sagmill: Small Bone Segment" required="false">
+    <sagmilling energy="2600">
+      <input name="biomesoplenty:bones:0"/>
+      <output name="minecraft:dye:15" amount="8" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Medium Bone Segment" required="false">
+    <sagmilling energy="3200">
+      <input name="biomesoplenty:bones:1"/>
+      <output name="minecraft:dye:15" amount="12" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Large Bone Segment" required="false">
+    <sagmilling energy="4800">
+      <input name="biomesoplenty:bones:2"/>
+      <output name="minecraft:dye:15" amount="24" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Ex Compressum / Ex Nihilo Creatio / ExU2 -->
+
+  <recipe name="Sagmill: Compressed Cobblestone" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed1xCobblestone"/>
+      <output name="compressed1xGravel" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Double Compressed Cobblestone" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed2xCobblestone"/>
+      <output name="compressed2xGravel" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Tripple Compressed Cobblestone" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed3xCobblestone"/>
+      <output name="compressed2xGravel" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Quadruple Compressed Cobblestone" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed4xCobblestone"/>
+      <output name="compressed2xGravel" amount="64" />
+      <output name="compressed2xGravel" amount="17" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Compressed Gravel" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed1xGravel"/>
+      <output name="compressed1xSand" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Double Compressed Gravel" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed2xGravel"/>
+      <output name="compressed2xSand" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Compressed Sand" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed1xSand"/>
+      <output name="compressed1xDust" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Double Compressed Sand" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed2xSand"/>
+      <output name="compressed2xDust" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Compressed Netherrack" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed1xNetherrack"/>
+      <output name="exnihilocreatio:block_netherrack_crushed" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Double Compressed Netherrack" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed2xNetherrack"/>
+      <output name="exnihilocreatio:block_netherrack_crushed" amount="64" />
+      <output name="exnihilocreatio:block_netherrack_crushed" amount="17" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Compressed End Stone" required="false">
+    <sagmilling energy="4800" bonus="none">
+      <input name="compressed1xEndStone"/>
+      <output name="exnihilocreatio:block_endstone_crushed" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Natura -->
+
+  <recipe name="Sagmill: Barley" required="false">
+    <sagmilling energy="800">
+      <input name="cropBarley"/>
+      <output name="natura:materials:1" amount="2" />
+      <output name="seedBarley" chance="0.2" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Bluebells" required="false">
+    <sagmilling energy="900">
+      <input name="natura:bluebells_flower"/>
+      <output name="natura:materials:8" chance="0.8" />
+      <output name="natura:materials:8" chance="0.6" />
+      <output name="natura:materials:8" chance="0.3" />
+      <output name="itemPlantgreen" chance="0.1" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Mystical Agriculture -->
+
+  <recipe name="Sagmill: Soulstone" required="false">
+    <sagmilling energy="2400">
+      <input name="mysticalagriculture:soulstone"/>
+      <output name="mysticalagriculture:crafting:28" />
+      <output name="mysticalagriculture:crafting:28" chance="0.2" />
+    </sagmilling>
+  </recipe>
+
+<!-- Thermal Foundcation -->
+
+  <recipe name="Sagmill: Blizz Powder" required="false">
+    <sagmilling energy="2400">
+      <input name="rodBlizz" />
+      <output name="dustBlizz" amount="4"/>
+      <output name="minecraft:snowball" chance="0.5"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Basalz Powder" required="false">
+    <sagmilling energy="2400">
+      <input name="rodBasalz" />
+      <output name="dustBasalz" amount="4"/>
+      <output name="POWDER_OBSIDIAN" chance="0.5"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Blitz Powder" required="false">
+    <sagmilling energy="2400">
+      <input name="rodBlitz" />
+      <output name="dustBlitz" amount="4"/>
+      <output name="dustSaltpeter" chance="0.5"/>
+    </sagmilling>
+  </recipe>
+
+    <recipe name="Sagmill: Enderium Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotEnderium" />
+      <output name="dustEnderium" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Alloy: Enderium Blend" required="false">
+    <alloying energy="2400">
+      <input name="dustEnderium"/>
+      <input name="ore:sand"/>
+      <output name="ingotEnderium"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Sagmill: Enderium Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockEnderium" />
+      <output name="dustEnderium" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Signalum Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotSignalum" />
+      <output name="dustSignalum" />
+    </sagmilling>
+  </recipe>
+
+    <recipe name="Alloy: Signalum Blend" required="false">
+    <alloying energy="2400">
+      <input name="dustSignalum"/>
+      <input name="ore:sand"/>
+      <output name="ingotSignalum"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Sagmill: Signalum Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockSignalum" />
+      <output name="dustSignalum" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Lumium Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotLumium" />
+      <output name="dustLumium" />
+    </sagmilling>
+  </recipe>
+
+    <recipe name="Alloy: Lumium Blend" required="false">
+    <alloying energy="2400">
+      <input name="dustLumium"/>
+      <input name="ore:sand"/>
+      <output name="ingotLumium"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Sagmill: Lumium Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockLumium" />
+      <output name="dustLumium" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Invar Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotInvar" />
+      <output name="dustInvar" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Alloy: Invar Blend" required="false">
+    <alloying energy="2400">
+      <input name="dustInvar"/>
+      <input name="ore:sand"/>
+      <output name="ingotInvar"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Sagmill: Invar Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockInvar" />
+      <output name="dustInvar" amount="9" />
+    </sagmilling>
+  </recipe>
+
+
+  <!-- Actually Additions -->
+  <recipe name="Sagmill: Black Lotus" required="false">
+    <sagmilling energy="2400">
+      <input name="actuallyadditions:block_black_lotus" />
+      <output name="actuallyadditions:item_misc:17" chance="0.8"/>
+      <output name="actuallyadditions:item_misc:17" chance="0.6"/>
+      <output name="actuallyadditions:item_misc:17" chance="0.3"/>
+      <output name="itemPlantgreen" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+ 
+  <!-- Misc. -->
+  <recipe name="Sagmill: Diamond Dust" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="gemDiamond"/>
+      <output name="dustDiamond" />
+    </sagmilling>
+  </recipe>
+
+</enderio:recipes>

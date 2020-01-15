@@ -1,0 +1,9 @@
+This file is for the IceAndSnowGenerator. This generator generates snow and freezes 
+ice in cold areas.
+
+
+
+Constructor:
+    Notes:
+        This constructs a IceAndSnowGenerator.
+

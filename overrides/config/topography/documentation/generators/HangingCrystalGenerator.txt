@@ -1,0 +1,29 @@
+This file is for the HangingCrystalGenerator. This generator generates hanging clusters 
+of blocks, similar to glowstone.
+
+
+
+Constructor:
+    Arguments:
+        ItemBlockData, int, int
+    Argument Usage:
+        block to generate, clusters per chunk, cluster expansion attempts
+    Notes:
+        This constructs a HangingCrystalGenerator.
+
+addRequiredBlock:
+    Arguments:
+        ItemBlockData
+    Usage:
+        required block
+    Notes:
+        Adds a block the generator is allowed to start generating a cluster under. By default can generate under any block.
+
+setHeight:
+    Arguments:
+        int, int
+    Usage:
+        min height, max height
+    Notes:
+        Sets the min and max heights this generator can generate at. Default is 4 and 250.
+

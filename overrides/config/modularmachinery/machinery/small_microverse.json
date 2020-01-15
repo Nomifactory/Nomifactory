@@ -1,0 +1,178 @@
+{
+    "registryname": "small_microverse",
+    "localizedname": "Small Microverse Projector",
+	"color": "837793",
+    "parts": [
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@1"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		
+		
+		
+		
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": "extrautils2:ineffableglass@2"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": "extendedcrafting:compressor"
+        },
+
+
+		
+		
+
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockenergyinputhatch"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockoutputbus"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockfluidinputhatch"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockinputbus"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        }
+
+    ]
+}

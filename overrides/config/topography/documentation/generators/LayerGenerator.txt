@@ -1,0 +1,13 @@
+This file is for the LayerGenerator. This generator can be created in a dimension 
+file with 'new LayerGenerator()'.
+
+
+
+addLayer:
+    Arguments:
+        MinMaxBounds, ItemBlockData
+    Usage:
+        y axis bounds, block to place
+    Notes:
+        Adds a layer of blocks to be generated within the provided bounds, made of the provided block.
+

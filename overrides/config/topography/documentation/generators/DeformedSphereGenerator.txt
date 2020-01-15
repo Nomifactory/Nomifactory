@@ -1,0 +1,30 @@
+This file is for the DeformedSphereGenerator. This generator generates spheres of 
+blocks, which are then deformed using simplex noise. These spheres generate within 
+grid regions, and can therefore be any size. 
+
+
+
+Constructor:
+    Arguments:
+        ItemBlockData, int, int, int, int
+    Argument Usage:
+        block to generate, grid region size in chunks, radius, generation attempt count, minimum sphere count
+    Notes:
+        This constructs a DeformedSphereGenerator.
+
+addRequiredBlock:
+    Arguments:
+        ItemBlockData
+    Usage:
+        required block
+    Notes:
+        Adds a block the generator is allowed to generate a sphere within. By default can generate within block.
+
+setDeformScale:
+    Arguments:
+        double
+    Usage:
+        scale
+    Notes:
+        Sets the noise scale used to deform the spheres. Default is 16.0. The higher the number, the more the sphere can be deformed.
+

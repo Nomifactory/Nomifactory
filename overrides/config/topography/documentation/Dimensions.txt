@@ -1,0 +1,188 @@
+This file is for the options in dimension script files. These are the files referenced 
+when registering dimensions in the Topography.txt file. These files can be placed 
+anywhere in the config/topography folder, and must end in '.txt'.
+
+
+
+disableClouds:
+    Notes:
+        Disables cloud rendering.
+
+disableSkylight:
+    Notes:
+        Disables the skylight in the dimension. Doesn't effect sky rendering, just makes it not emit light.
+
+vaporizeWater:
+    Notes:
+        This enables the vanilla nether option to have water/ice evaporate when placed in the dimension.
+
+addFogColor:
+    Arguments:
+        int
+    Usage:
+        color
+    Notes:
+        Adds a fog color to the dimension with an alpha of 1 and full celestial angle bounds.
+
+addFogColor:
+    Arguments:
+        int, MinMaxBounds, MinMaxBounds
+    Usage:
+        color, angle bounds, alpha for transition
+    Notes:
+        Adds a fog color to the dimension with the provided angle and alpha bounds.
+
+setSingleBiome:
+    Arguments:
+        Non_Null_Biome_ID
+    Usage:
+        biome id
+    Notes:
+        Sets a single biome for the dimension to be. Supports all types of biome id format.
+
+addEntityEffect:
+    Arguments:
+        int
+    Usage:
+        frequency
+    Notes:
+        Adds an EntityEffect to the dimension which runs every frequency ticks, and returns it.
+
+addEntityEffect:
+    Notes:
+        Adds an EntityEffect with a frequency of 0 to the dimension, and returns it.
+
+generateVillage:
+    Notes:
+        Adds villages to the dimension.
+
+generateMansion:
+    Arguments:
+        Generator
+    Notes:
+        Adds mansions to the dimension, using the supplied Generator to find acceptable spawn locations. It's suggested to use an OverworldGenerator.
+
+generateMonument:
+    Notes:
+        Adds ocean monuments to the dimension.
+
+captureTeleports:
+    Notes:
+        If this dimension has a spawn structure set, then when teleporting to the dimension, this option cancels the dimension change and has Topography transfer the player itself, placing them in the spawn position on the spawn structure.
+
+generateEndCity:
+    Notes:
+        Adds end cities to the dimension with 3, 16, 4 rarity settings. It's nearly impossible to compare these settings to vanilla, so these are approximately the same as vanilla nether fortress.
+
+generateEndCity:
+    Arguments:
+        int, int, int
+    Usage:
+        spawn chance, area, random area
+    Notes:
+        Adds end cities to the dimension. Once in every area*area chunk area there is a 1/spawn chance for an end city to spawn, with a random*random area being used for randomly placing the city in the total area.
+
+generateTemple:
+    Notes:
+        Adds scattered features to the dimension. This includes swamp huts, igloos, desert pyramids and jungle pyramids.
+
+addGenerator:
+    Arguments:
+        IGenerator
+    Usage:
+        generator
+    Notes:
+        Adds the generator to the dimension.
+
+setCloudHeight:
+    Arguments:
+        int
+    Usage:
+        height
+    Notes:
+        Sets the cloud render height for the dimension.
+
+disableSky:
+    Notes:
+        Disables all sky rendering in the dimension. No stars, no sun, no moon, just black.
+
+setSkyRenderer:
+    Notes:
+        Sets a SkyRendererCustom for the dimension, and returns it.
+
+generateMineshaft:
+    Notes:
+        Adds mineshafts to the dimension.
+
+setSpawnStructure:
+    Arguments:
+        String
+    Usage:
+        structure file path
+    Notes:
+        Sets the spawn structure for the dimension, at height 64. The file path is relative to the config/topography/structures folder and does not use the file extension.
+
+setSpawnStructure:
+    Arguments:
+        String, int
+    Usage:
+        structure file path, height
+    Notes:
+        Sets the spawn structure for the dimension, at the provided height. The file path is relative to the config/topography/structures folder and does not use the file extension.
+
+generateStronghold:
+    Notes:
+        Adds strongholds to the dimension.
+
+disableNetherPortal:
+    Notes:
+        Disables the creation of a nether portal in the dimension.
+
+enableEnviromentalFog:
+    Notes:
+        Enables enviromental fog. This is the short distance spherical fog used in the nether in vanilla.
+
+generateNetherFortress:
+    Notes:
+        Adds nether fortresses to the dimension with rarity settings approximately the same as vanilla.
+
+generateNetherFortress:
+    Arguments:
+        int, int, int
+    Usage:
+        spawn chance, area, random area
+    Notes:
+        Adds nether fortresses to the dimension. Once in every area*area chunk area there is a 1/spawn chance for a nether fortress to spawn, with a random*random area being used for randomly placing the fortress in the total area. Approximate vanilla values are 3, 16, 4.
+
+setCelestialAngle:
+    Arguments:
+        float
+    Usage:
+        celestial angle
+    Notes:
+        Sets a static celestial angle for the dimension. Useful for forcing it to always be day or not.
+
+enableRelightChecks:
+    Notes:
+        Enables a very large number of relight checks to be done on each chunk after generation is complete, spread out over a small number of ticks. This causes a very large amount of lag, but is required in dimensions like a lava based nether in order to get the lava to actually emit light.
+
+disableRespawning:
+    Notes:
+        Disables respawning in the dimension.
+
+setLightBrightnessTable:
+    Arguments:
+        float array
+    Usage:
+        brightness table
+    Notes:
+        Sets an array used for how bright light appears in the dimension. Does not effect the actual light level, just how bright that light appers in the rendering. This array must have 16 values between 0 and 1. In vanilla this is used in the nether to increase the brightness of low light values, making the dimension not as dark while also hiding the large number of lighting errors. The array used for the nether is [0.1, 0.11578947, 0.13333333, 0.15294117, 0.175, 0.20000002, 0.22857141, 0.26153848, 0.3, 0.34545457, 0.4, 0.46666667, 0.5500001, 0.6571429, 0.79999995, 1.0]
+
+setSpawnStructureSpacing:
+    Arguments:
+        int
+    Usage:
+        spacing
+    Notes:
+        Sets the space between spawn structures, in chunks. Default is 65.
+

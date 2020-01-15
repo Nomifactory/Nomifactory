@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- 
+
+These are the built-in recipes. You cannot change this file, it is a
+reference for you only and will be generated every time the game starts.
+
+To make changes to the recipes, copy the recipes you want to change to
+a file in the 'user' folder. To disable a recipe, add an attribute "disabled"
+and set it to true, e.g.: <recipe name="Gear" disabled="true" />
+
+You can also disable all built-in recipes with the setting "loadCoreRecipes"
+in the Ender IO config file, so that only your files in the 'user' folder will
+be loaded. Please be advised that a number of recipes are absolutely needed,
+so you will have to copy those over into a 'user' file for the game to load.
+
+Item specifications can reference an alias, an ore dictionary name, a
+block or an item. You can force the type by prefixing the value with
+"oredict:", "block:" or "item:". Recipes that have items that cannot be
+found in-game are either skipped or an error, depending on their "required"
+attribute.
+
+More information on the syntax can be found in the recipes.xsd file. An
+XML editor will display that as tooltips when editing this file.
+
+ -->
+
+  <recipe name="Alloy: Endergy Crude Steel" required="true">
+    <alloying energy="5000" exp="0.5">
+      <input name="oredict:gravel"/>
+      <input name="itemClay"/>
+      <input name="oredict:cobblestone"/>
+      <output name="ingotCrudeSteel"/>
+    </alloying>
+  </recipe>
+
+  <!-- <recipe name="Alloy: Endergy Combustive Metal" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="minecraft:fire_charge"/>
+      <input name="ingotIron"/>
+      <output name="ingotCombustiveMetal"/>
+    </alloying>
+  </recipe> -->
+
+  <recipe name="Alloy: Endergy Crystalline Alloy" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="itemPulsatingPowder"/>
+      <input name="ingotGold"/>
+      <output name="ingotCrystallineAlloy"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Endergy Crystalline Pink Slime" required="false">
+    <alloying energy="10000" exp="0.5">
+      <input name="itemPulsatingPowder"/>
+      <input name="industrialforegoing:pink_slime_ingot"/>
+      <output name="ingotCrystallinePinkSlime"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Endergy Melodic Alloy" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="minecraft:chorus_fruit_popped"/>
+      <input name="END_STEEL"/>
+      <output name="ingotMelodicAlloy"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Endergy Stellar Alloy" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="minecraft:nether_star"/>
+      <input name="ingotMelodicAlloy"/>
+      <input name="oredict:itemClay" amount="4" />
+      <output name="ingotStellarAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Capacitor Crystalline" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="ingotCrystallineAlloy"/><item />
+        <item name="CAPACITOR3"/><item name="dustPrismarine"/><item name="CAPACITOR3"/>
+        <item /><item name="ingotCrystallineAlloy"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_crystalline"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Crystalline, Alt" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="ingotCrystallineAlloy"/><item />
+        <item name="enderio:item_capacitor_vivid"/><item name="dustPrismarine"/><item name="enderio:item_capacitor_vivid"/>
+        <item /><item name="ingotCrystallineAlloy"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_crystalline"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Melodic" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="ingotMelodicAlloy"/><item />
+        <item name="enderio:item_capacitor_crystalline"/><item name="END_STEEL"/><item name="enderio:item_capacitor_crystalline"/>
+        <item /><item name="ingotMelodicAlloy"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_melodic"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Stellar" required="true">
+    <crafting>
+      <grid>
+        <item /><item name="ingotStellarAlloy"/><item />
+        <item name="enderio:item_capacitor_melodic"/><item name="minecraft:shulker_shell"/><item name="enderio:item_capacitor_melodic"/>
+        <item /><item name="ingotStellarAlloy"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_stellar"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Silver" required="false">
+    <crafting>
+      <grid>
+        <item /><item name="nuggetSilver"/><item name="POWDER_INFINITY" />
+        <item name="nuggetSilver"/><item name="ingotLead"/><item name="nuggetSilver"/>
+        <item name="POWDER_INFINITY"/><item name="nuggetSilver"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_silver"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Energetic Silver" required="false">
+    <crafting>
+      <grid>
+        <item /><item name="ingotEnergeticSilver"/><item />
+        <item name="enderio:item_capacitor_silver"/><item name="dustCoal"/><item name="enderio:item_capacitor_silver"/>
+        <item /><item name="ingotEnergeticSilver"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_energetic_silver"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Vivid" required="false">
+    <crafting>
+      <grid>
+        <item /><item name="ingotVividAlloy"/><item />
+        <item name="enderio:item_capacitor_energetic_silver"/><item name="oredict:glowstone"/><item name="enderio:item_capacitor_energetic_silver"/>
+        <item /><item name="ingotVividAlloy"/><item />
+      </grid>
+      <output name="enderio:item_capacitor_vivid"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Capacitor Grainy" required="true">
+    <crafting>
+      <grid size="2x3">
+        <item /><item name="POWDER_INFINITY"/><item />
+        <item name="nuggetIron"/><item /><item name="nuggetIron"/>
+      </grid>
+      <output name="enderio:item_capacitor_grainy"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Totemic Capacitor">
+    <slicing energy="20000">
+      <input name="SOULARIUM"/><input name="minecraft:totem_of_undying"/><input name="SOULARIUM"/>
+      <input name="VIBRANT_POWDER"/><input name="enderio:item_capacitor_crystalline"/><input name="VIBRANT_POWDER"/>
+      <output name="enderio:item_capacitor_totemic"/>
+    </slicing>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Cobble" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotCrudeSteel" /><item name="ingotCrudeSteel" /><item name="ingotCrudeSteel" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:0" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Iron" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="IRON" /><item name="INFINITY_GOOP" /><item name="IRON" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:1" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Gold" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotGold" /><item name="INFINITY_GOOP" /><item name="ingotGold" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:3" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Silver" required="false">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotSilver" /><item name="INFINITY_GOOP" /><item name="ingotSilver" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:5" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Alloy: Energetic Silver Alloy" required="false">
+    <!-- mirroring energetic alloy recipe -->
+    <alloying energy="10000" exp="0.7">
+      <input name="dustRedstone"/>
+      <input name="ingotSilver"/>
+      <input name="dustGlowstone"/>
+      <output name="ingotEnergeticSilver"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Vivid Alloy" required="false">
+    <!-- mirroring vibrant alloy recipe -->
+    <alloying energy="10000" exp="0.7">
+      <input name="minecraft:ender_pearl"/>
+      <input name="ingotEnergeticSilver"/>
+      <output name="ingotVividAlloy"/>
+    </alloying>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Energetic Silver" required="false">
+    <crafting>
+      <grid>
+        <!-- mirroring energetic alloy conduit recipe -->
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotEnergeticSilver" /><item name="ingotEnergeticSilver" /><item name="ingotEnergeticSilver" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:7" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Electrum" required="false">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotElectrum" /><item name="INFINITY_GOOP" /><item name="ingotElectrum" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:6" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Aluminum" required="false">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotAluminum" /><item name="INFINITY_GOOP" /><item name="ingotAluminum" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:2" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Aluminium" required="false">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotAluminium" /><item name="INFINITY_GOOP" /><item name="ingotAluminium" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:2" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Copper" required="false">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotCopper" /><item name="INFINITY_GOOP" /><item name="ingotCopper" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:4" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Crystalline" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotCrystallineAlloy" /><item name="ingotCrystallineAlloy" /><item name="ingotCrystallineAlloy" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:8" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Crystalline Pink Slime" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotCrystallinePinkSlime" /><item name="ingotCrystallinePinkSlime" /><item name="ingotCrystallinePinkSlime" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:9" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Melodic" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="ingotMelodicAlloy" /><item name="ingotMelodicAlloy" /><item name="ingotMelodicAlloy" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:10" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <recipe name="Conduit, Endergy, Stellar" required="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="INFINITY_GOOP" /><item name="ingotStellarAlloy" /><item name="INFINITY_GOOP" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_endergy_conduit:11" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  <!-- Tools and Armour -->
+  <recipe name="Stellar Steel Helmet" required="true">
+    <crafting>
+      <grid size="3x2">
+        <item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item name="skullSentientEnder" /><item name="ingotStellarAlloy" />
+      </grid>
+      <output name="enderio:item_stellar_alloy_helmet" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Stellar Steel Chestplate" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="ingotStellarAlloy" /><item name="skullSentientEnder" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" />
+      </grid>
+      <output name="enderio:item_stellar_alloy_chestplate" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Stellar Steel Leggings" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item name="skullSentientEnder" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item /><item name="ingotStellarAlloy" />
+      </grid>
+      <output name="enderio:item_stellar_alloy_leggings" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Stellar Steel Boots" required="true">
+    <crafting>
+      <grid size="3x2">
+        <item name="ingotStellarAlloy" /><item name="skullSentientEnder" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item /><item name="ingotStellarAlloy" />
+      </grid>
+      <output name="enderio:item_stellar_alloy_boots" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Stellar Alloy Sword" required="true">
+    <crafting>
+      <grid size="1x3">
+        <item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" />
+        <item name="skullSentientEnder" />
+      </grid>
+      <output name="enderio:item_stellar_alloy_sword" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Stellar Alloy Pickaxe" required="true">
+    <crafting>
+      <grid size="3x3">
+        <item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" />
+        <item /><item name="skullSentientEnder" /><item />
+        <item /><item name="itemInfinityRod" /><item />
+      </grid>
+      <output name="enderio:item_stellar_alloy_pickaxe" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Stellar Alloy Axe" required="true">
+    <crafting>
+      <grid size="2x3">
+        <item name="ingotStellarAlloy" /><item name="ingotStellarAlloy" />
+        <item name="ingotStellarAlloy" /><item name="skullSentientEnder" />
+        <item /><item name="itemInfinityRod" />
+      </grid>
+      <output name="enderio:item_stellar_alloy_axe" />
+    </crafting>
+  </recipe>
+
+</enderio:recipes>

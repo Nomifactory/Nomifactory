@@ -1,0 +1,312 @@
+{
+    "registryname": "naquadahreactormk1",
+    "localizedname": "Naquadah Reactor Mk1",
+	"color": "25193d",
+    "parts": [
+        {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+		
+		
+		
+		
+		
+		
+		
+		
+		{
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": "extendedcrafting:trimmed@5"
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+		
+		
+		
+		
+		
+		
+		{
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": "extendedcrafting:trimmed@5"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+		
+		
+		
+		
+		{
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": "extendedcrafting:trimmed@5"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": "nuclearcraft:reactor_casing_transparent@0"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": "appliedenergistics2:spatial_pylon@0"
+        },
+		
+		
+
+
+		
+		
+
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockinputbus"
+        },
+
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": "modularmachinery:blockoutputbus"
+        },
+
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockenergyoutputhatch"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@0"
+        }
+
+    ]
+}
