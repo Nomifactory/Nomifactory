@@ -16,7 +16,7 @@ recipes.remove(<modularmachinery:blockcontroller>);
 recipes.addShaped(<modularmachinery:blockcontroller>, [[<ore:circuitAdvanced>, <modularmachinery:itemmodularium>, <ore:circuitAdvanced>],[<modularmachinery:itemmodularium>, <extrautils2:screen>, <modularmachinery:itemmodularium>], [<ore:circuitAdvanced>, <modularmachinery:itemmodularium>, <ore:circuitAdvanced>]]);
 <modularmachinery:blockcontroller>.displayName = "Modular Machine Controller";
 
-//Item Input	
+//Item Input
 recipes.addShaped(<modularmachinery:blockinputbus:2>, [[null, <minecraft:hopper>, null], [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus:1>, <modularmachinery:itemmodularium>], [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>]]);
 recipes.addShaped(<modularmachinery:blockinputbus:3>, [[null, <minecraft:hopper>, null], [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus:2>, <modularmachinery:itemmodularium>], [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>]]);
 recipes.addShaped(<modularmachinery:blockinputbus:4>, [[null, <minecraft:hopper>, null], [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus:3>, <modularmachinery:itemmodularium>], [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>]]);
@@ -44,7 +44,7 @@ recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [[<minecraft:bucke
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:4>, [[<minecraft:bucket>, <modularmachinery:itemmodularium>, <minecraft:bucket>], [<modularmachinery:itemmodularium>, <modularmachinery:blockfluidoutputhatch:3>, <modularmachinery:itemmodularium>], [null, <minecraft:hopper>, null]]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:5>, [[<minecraft:bucket>, <modularmachinery:itemmodularium>, <minecraft:bucket>], [<modularmachinery:itemmodularium>, <modularmachinery:blockfluidoutputhatch:4>, <modularmachinery:itemmodularium>], [null, <minecraft:hopper>, null]]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:6>, [[<minecraft:bucket>, <modularmachinery:itemmodularium>, <minecraft:bucket>], [<modularmachinery:itemmodularium>, <modularmachinery:blockfluidoutputhatch:5>, <modularmachinery:itemmodularium>], [null, <minecraft:hopper>, null]]);
-	
+
 //Energy Input Hatch
 
 recipes.remove(<modularmachinery:blockenergyinputhatch>);
@@ -67,7 +67,7 @@ recipes.addShaped(<modularmachinery:blockenergyinputhatch:7>, [[null, <modularma
 <modularmachinery:blockenergyinputhatch:5>.displayName = "Modularium LuV Energy Input";
 <modularmachinery:blockenergyinputhatch:6>.displayName = "Modularium ZPM Energy Input";
 <modularmachinery:blockenergyinputhatch:7>.displayName = "Modularium UV Energy Input";
-	
+
 //Energy Output Hatch
 
 recipes.remove(<modularmachinery:blockenergyoutputhatch>);
@@ -81,7 +81,7 @@ recipes.addShaped(<modularmachinery:blockenergyoutputhatch:4>, [[null, <modularm
 recipes.addShaped(<modularmachinery:blockenergyoutputhatch:5>, [[null, <modularmachinery:itemmodularium>, null],[<modularmachinery:itemmodularium>, <gregtech:machine:765>, <modularmachinery:itemmodularium>], [null, <modularmachinery:itemmodularium>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyoutputhatch:6>, [[null, <modularmachinery:itemmodularium>, null],[<modularmachinery:itemmodularium>, <gregtech:machine:775>, <modularmachinery:itemmodularium>], [null, <modularmachinery:itemmodularium>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyoutputhatch:7>, [[null, <modularmachinery:itemmodularium>, null],[<modularmachinery:itemmodularium>, <gregtech:machine:785>, <modularmachinery:itemmodularium>], [null, <modularmachinery:itemmodularium>, null]]);
-	
+
 <modularmachinery:blockenergyoutputhatch>.displayName = "Modularium LV Energy Output";
 <modularmachinery:blockenergyoutputhatch:1>.displayName = "Modularium MV Energy Output";
 <modularmachinery:blockenergyoutputhatch:2>.displayName = "Modularium HV Energy Output";
@@ -91,27 +91,11 @@ recipes.addShaped(<modularmachinery:blockenergyoutputhatch:7>, [[null, <modularm
 <modularmachinery:blockenergyoutputhatch:6>.displayName = "Modularium ZPM Energy Output";
 <modularmachinery:blockenergyoutputhatch:7>.displayName = "Modularium UV Energy Output";
 
-	
+
 //Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 2, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<ore:craftingToolWrench>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
 assembler.recipeBuilder().inputs([<modularmachinery:itemmodularium> * 4]).outputs([<modularmachinery:blockcasing>]).duration(200).EUt(30).buildAndRegister();
-
-
-var basiccell = <thermalexpansion:cell>.withTag({Recv: 10000, Level: 0 as byte, Send: 10000});
-var hardenedcell = <thermalexpansion:cell>.withTag({Recv: 40000, Level: 1 as byte, Send: 40000});
-var reinforcedcell = <thermalexpansion:cell>.withTag({Recv: 90000, Level: 2 as byte, Send: 90000});
-var signalumcell = <thermalexpansion:cell>.withTag({Recv: 160000, Level: 3 as byte, Send: 160000});
-var enderiumcell = <thermalexpansion:cell>.withTag({Recv: 250000, Level: 4 as byte, Send: 250000});
-
-recipes.addShapeless(hardenedcell, [basiccell,<thermalfoundation:upgrade>]);
-recipes.addShapeless(reinforcedcell, [basiccell,<thermalfoundation:upgrade:33>]);
-recipes.addShapeless(reinforcedcell, [hardenedcell,<thermalfoundation:upgrade:1>]);
-recipes.addShapeless(signalumcell, [basiccell,<thermalfoundation:upgrade:34>]);
-recipes.addShapeless(signalumcell, [reinforcedcell,<thermalfoundation:upgrade:2>]);
-recipes.addShapeless(enderiumcell, [basiccell,<thermalfoundation:upgrade:35>]);
-recipes.addShapeless(enderiumcell, [signalumcell,<thermalfoundation:upgrade:3>]);
-
 
 // Machine Vent
 recipes.addShaped(<modularmachinery:blockcasing:1>, [[null, <modularmachinery:itemmodularium>, null],[<modularmachinery:itemmodularium>, <gregtech:multiblock_casing:1>, <modularmachinery:itemmodularium>], [null, <modularmachinery:itemmodularium>, null]]);
@@ -130,17 +114,17 @@ recipes.addShaped(<contenttweaker:tieroneship>, [
 recipes.addShaped(<contenttweaker:t1guidance>,
 	[[<gregtech:meta_item_1:32690>, <contenttweaker:steelplating>, <gregtech:meta_item_1:32690>],
 	[<contenttweaker:steelplating>, <ore:circuitGood>, <contenttweaker:steelplating>],
-	[<ore:circuitGood>,<ore:circuitGood>,<ore:circuitGood>]]);	
+	[<ore:circuitGood>,<ore:circuitGood>,<ore:circuitGood>]]);
 
-//Tier 1 Laser	
+//Tier 1 Laser
 recipes.addShaped(<contenttweaker:t1laser>,[
 	[null, <minecraft:redstone_block>, null],
 	[<minecraft:quartz>, <minecraft:glass>, <minecraft:quartz>],
-	[<minecraft:quartz>, <minecraft:glass>, <minecraft:quartz>]]); 
+	[<minecraft:quartz>, <minecraft:glass>, <minecraft:quartz>]]);
 
-	
-	
-/////////////	 Tier Two Space Ship  	  //////////////////	
+
+
+/////////////	 Tier Two Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiertwoship>, [
 [null, null, <contenttweaker:t1guidance>, null, null],
@@ -150,9 +134,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiertwoship>, [
 [null, <simplyjetpacks:metaitemmods:8>,<simplyjetpacks:metaitemmods:8>,<simplyjetpacks:metaitemmods:8>, null]]);
 
 <contenttweaker:tiertwoship>.addTooltip(format.white(format.italic("Harvests Tungsten and other heavy metals from asteroids in the microverse.")));
-	
 
-/////////////	 Tier Three Space Ship  	  //////////////////	
+
+/////////////	 Tier Three Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tierthreeship>,
 [[null, null, <contenttweaker:t1guidance>, null, <contenttweaker:t1guidance>, null, null],
@@ -161,82 +145,82 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tierthreeship>,
 [null, <contenttweaker:t2laser>, <contenttweaker:tungstencarbideplating>, <gregtech:machine:805>, <contenttweaker:tungstencarbideplating>, <contenttweaker:t2laser>, null],
 [<contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>,<thermalexpansion:frame:146>, <gregtech:machine:805>, <thermalexpansion:frame:146>, <contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>],
 [<contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>, <gregtech:machine:482>, <contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>],
-[null, null, <simplyjetpacks:metaitemmods:28>,<simplyjetpacks:metaitemmods:28>,<simplyjetpacks:metaitemmods:28>, null, null]]); 
+[null, null, <simplyjetpacks:metaitemmods:28>,<simplyjetpacks:metaitemmods:28>,<simplyjetpacks:metaitemmods:28>, null, null]]);
 
-//Tier 2 Laser	
+//Tier 2 Laser
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:t2laser>,[
 	[null, <minecraft:redstone_block>, null,<minecraft:redstone_block>,null],
 	[<minecraft:glass>, <contenttweaker:solidifiedargon>, <minecraft:glass>,<contenttweaker:solidifiedargon>,<minecraft:glass>],
 	[<minecraft:glass>, <contenttweaker:solidifiedargon>, <minecraft:glass>,<contenttweaker:solidifiedargon>,<minecraft:glass>],
 	[<minecraft:glass>, <minecraft:quartz_block>, <minecraft:glass>, <minecraft:quartz_block>,<minecraft:glass>],
-	[<minecraft:quartz>, <ore:circuitAdvanced>, <enderio:block_cap_bank:1>, <ore:circuitAdvanced>, <minecraft:quartz>]]); 
+	[<minecraft:quartz>, <ore:circuitAdvanced>, <enderio:block_cap_bank:1>, <ore:circuitAdvanced>, <minecraft:quartz>]]);
 
-<contenttweaker:tierthreeship>.addTooltip(format.white(format.italic("Harvests ultra hot metals and gems from Nether microverses.")));	
-	
+<contenttweaker:tierthreeship>.addTooltip(format.white(format.italic("Harvests ultra hot metals and gems from Nether microverses.")));
+
 //Rocket Engine
 recipes.remove(<advancedrocketry:advrocketmotor>);
 recipes.addShaped(<advancedrocketry:advrocketmotor>, [
 	[null, <contenttweaker:tungstencarbideplating>, null],
 	[<contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>, <contenttweaker:tungstencarbideplating>],
-	[<simplyjetpacks:metaitemmods:8>,<simplyjetpacks:metaitemmods:8>,<simplyjetpacks:metaitemmods:8>]]); 	
+	[<simplyjetpacks:metaitemmods:8>,<simplyjetpacks:metaitemmods:8>,<simplyjetpacks:metaitemmods:8>]]);
 
-/////////////	 Tier Four Space Ship  	  //////////////////	
+/////////////	 Tier Four Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tierfourship>,
-[[null, null, null, <contenttweaker:t1guidance>, null, null, null], 
-[null, null, <contenttweaker:t2laser>, <contenttweaker:tungstencarbideplating>, <contenttweaker:t2laser>, null, null], 
-[null, <contenttweaker:signalumplating>, <gregtech:machine:806>, <contenttweaker:tungstencarbideplating>, <gregtech:machine:806>, <contenttweaker:signalumplating>, null], 
-[null, <contenttweaker:signalumplating>, <gregtech:meta_item_1:32672>, <contenttweaker:tungstencarbideplating>, <gregtech:meta_item_1:32672>, <contenttweaker:signalumplating>, null], 
-[null, <contenttweaker:signalumplating>, <thermalexpansion:frame:147>, <contenttweaker:tungstencarbideplating>, <thermalexpansion:frame:147>, <contenttweaker:signalumplating>, null], 
-[null, <simplyjetpacks:metaitemmods:9>, <thermalexpansion:dynamo:3>, <contenttweaker:tungstencarbideplating>, <thermalexpansion:dynamo:3>, <simplyjetpacks:metaitemmods:9>, null], 
-[null, null, <simplyjetpacks:metaitemmods:9>, null, <simplyjetpacks:metaitemmods:9>, null, null]]); 
-		
-	
-//Tier 2 Guidance	
+[[null, null, null, <contenttweaker:t1guidance>, null, null, null],
+[null, null, <contenttweaker:t2laser>, <contenttweaker:tungstencarbideplating>, <contenttweaker:t2laser>, null, null],
+[null, <contenttweaker:signalumplating>, <gregtech:machine:806>, <contenttweaker:tungstencarbideplating>, <gregtech:machine:806>, <contenttweaker:signalumplating>, null],
+[null, <contenttweaker:signalumplating>, <gregtech:meta_item_1:32672>, <contenttweaker:tungstencarbideplating>, <gregtech:meta_item_1:32672>, <contenttweaker:signalumplating>, null],
+[null, <contenttweaker:signalumplating>, <thermalexpansion:frame:147>, <contenttweaker:tungstencarbideplating>, <thermalexpansion:frame:147>, <contenttweaker:signalumplating>, null],
+[null, <simplyjetpacks:metaitemmods:9>, <thermalexpansion:dynamo:3>, <contenttweaker:tungstencarbideplating>, <thermalexpansion:dynamo:3>, <simplyjetpacks:metaitemmods:9>, null],
+[null, null, <simplyjetpacks:metaitemmods:9>, null, <simplyjetpacks:metaitemmods:9>, null, null]]);
+
+
+//Tier 2 Guidance
 recipes.addShaped(<contenttweaker:t2guidance>, [
 	[<gregtech:meta_item_1:32693>, <contenttweaker:tungstencarbideplating>, <gregtech:meta_item_1:32693>],
 	[<contenttweaker:tungstencarbideplating>, <ore:circuitExtreme>, <contenttweaker:tungstencarbideplating>],
-	[<ore:circuitExtreme>,<ore:circuitExtreme>,<ore:circuitExtreme>]]);		
-	
-	
-	
-	
-/////////////	 Tier Five Space Ship  	  //////////////////	
+	[<ore:circuitExtreme>,<ore:circuitExtreme>,<ore:circuitExtreme>]]);
+
+
+
+
+/////////////	 Tier Five Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tierfiveship>,[
-[null, null, <contenttweaker:t2guidance>, null, <contenttweaker:t2guidance>, null, null], 
-[null, null, <contenttweaker:iridiumalloyplating>, null, <contenttweaker:iridiumalloyplating>, null, null], 
-[null, <contenttweaker:signalumplating>, <contenttweaker:iridiumalloyplating>, <contenttweaker:t3laser>, <contenttweaker:iridiumalloyplating>, <contenttweaker:signalumplating>, null], 
-[<contenttweaker:signalumplating>, <contenttweaker:signalumplating>, <gregtech:meta_item_1:32673>, <gregtech:machine:1010>, <gregtech:meta_item_1:32673>, <contenttweaker:signalumplating>, <contenttweaker:signalumplating>], 
-[null, <contenttweaker:iridiumalloyplating>, <thermalexpansion:frame:147>, <nuclearcraft:fission_controller_new_fixed>, <thermalexpansion:frame:147>, <contenttweaker:iridiumalloyplating>, null], 
-[<contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>, <nuclearcraft:fission_port>, <contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>], 
-[null, null, <simplyjetpacks:metaitemmods:10>,<simplyjetpacks:metaitemmods:10>,<simplyjetpacks:metaitemmods:10>, null, null]]); 
-	
+[null, null, <contenttweaker:t2guidance>, null, <contenttweaker:t2guidance>, null, null],
+[null, null, <contenttweaker:iridiumalloyplating>, null, <contenttweaker:iridiumalloyplating>, null, null],
+[null, <contenttweaker:signalumplating>, <contenttweaker:iridiumalloyplating>, <contenttweaker:t3laser>, <contenttweaker:iridiumalloyplating>, <contenttweaker:signalumplating>, null],
+[<contenttweaker:signalumplating>, <contenttweaker:signalumplating>, <gregtech:meta_item_1:32673>, <gregtech:machine:1010>, <gregtech:meta_item_1:32673>, <contenttweaker:signalumplating>, <contenttweaker:signalumplating>],
+[null, <contenttweaker:iridiumalloyplating>, <thermalexpansion:frame:147>, <nuclearcraft:fission_controller_new_fixed>, <thermalexpansion:frame:147>, <contenttweaker:iridiumalloyplating>, null],
+[<contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>, <nuclearcraft:fission_port>, <contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>, <contenttweaker:iridiumalloyplating>],
+[null, null, <simplyjetpacks:metaitemmods:10>,<simplyjetpacks:metaitemmods:10>,<simplyjetpacks:metaitemmods:10>, null, null]]);
 
-	
+
+
 //Tier 3 Engine
 
 
-/////////////	 Tier Six Space Ship  	  //////////////////	
+/////////////	 Tier Six Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiersixship>,[
-[null, <contenttweaker:t3laser>, <contenttweaker:t2guidance>, null, <contenttweaker:t2guidance>, <contenttweaker:t3laser>, null], 
-[<contenttweaker:t3laser>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, null, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:t3laser>], 
-[<contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>,<contenttweaker:enderiumplating>], 
-[null, <contenttweaker:enderiumplating>, <gregtech:machine:1010>, <thermalexpansion:frame:148>, <gregtech:machine:1010>, <contenttweaker:enderiumplating>, null], 
-[<contenttweaker:enderiumplating>, <gregtech:meta_item_1:32674>, <thermalexpansion:frame:148>, <nuclearcraft:fission_controller_new_fixed>, <thermalexpansion:frame:148>, <gregtech:meta_item_1:32674>, <contenttweaker:enderiumplating>], 
-[null, <contenttweaker:enderiumplating>, <nuclearcraft:fission_port>,<nuclearcraft:fission_port>,<nuclearcraft:fission_port>, <contenttweaker:enderiumplating>, null], 
-[null, <contenttweaker:enderiumplating>, <simplyjetpacks:metaitemmods:29>,<simplyjetpacks:metaitemmods:29>,<simplyjetpacks:metaitemmods:29>, <contenttweaker:enderiumplating>, null]]); 
-	
+[null, <contenttweaker:t3laser>, <contenttweaker:t2guidance>, null, <contenttweaker:t2guidance>, <contenttweaker:t3laser>, null],
+[<contenttweaker:t3laser>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, null, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:t3laser>],
+[<contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>, <contenttweaker:enderiumplating>,<contenttweaker:enderiumplating>],
+[null, <contenttweaker:enderiumplating>, <gregtech:machine:1010>, <thermalexpansion:frame:148>, <gregtech:machine:1010>, <contenttweaker:enderiumplating>, null],
+[<contenttweaker:enderiumplating>, <gregtech:meta_item_1:32674>, <thermalexpansion:frame:148>, <nuclearcraft:fission_controller_new_fixed>, <thermalexpansion:frame:148>, <gregtech:meta_item_1:32674>, <contenttweaker:enderiumplating>],
+[null, <contenttweaker:enderiumplating>, <nuclearcraft:fission_port>,<nuclearcraft:fission_port>,<nuclearcraft:fission_port>, <contenttweaker:enderiumplating>, null],
+[null, <contenttweaker:enderiumplating>, <simplyjetpacks:metaitemmods:29>,<simplyjetpacks:metaitemmods:29>,<simplyjetpacks:metaitemmods:29>, <contenttweaker:enderiumplating>, null]]);
+
 <gregtech:meta_item_1:32724>.displayName = "Quantum Eye";
 <gregtech:meta_item_1:32724>.clearTooltip();
 <gregtech:meta_item_1:32724>.addTooltip(format.darkPurple("Quantum Eye"));
 
-	
+
 //Tier 3 Laser
 
 
-/////////////	 Tier Seven Space Ship  	  //////////////////	
+/////////////	 Tier Seven Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiersevenship>, [
 [null, <contenttweaker:t3laser>, null, null, <contenttweaker:draconiumplating>, null, null, <contenttweaker:t3laser>, null],
@@ -252,11 +236,11 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiersevenship>, [
 recipes.addShaped(<contenttweaker:warpengine>, [
 	[<moreplates:crystal_matrix_plate>,<draconicevolution:item_dislocation_inhibitor>,<moreplates:crystal_matrix_plate>],
 	[<draconicevolution:dislocator_advanced>, <thermalfoundation:storage_alloy:7>, <draconicevolution:dislocator_advanced>],
-	[<simplyjetpacks:metaitemmods:30>,<simplyjetpacks:metaitemmods:11>,<simplyjetpacks:metaitemmods:30>]]); 
+	[<simplyjetpacks:metaitemmods:30>,<simplyjetpacks:metaitemmods:11>,<simplyjetpacks:metaitemmods:30>]]);
 
 
 
-/////////////	 Tier Eight Space Ship  	  //////////////////	
+/////////////	 Tier Eight Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiereightship>, [
 [null, <contenttweaker:t2guidance>, null, <contenttweaker:crystalmatrixplating>, null, <contenttweaker:crystalmatrixplating>, null, <contenttweaker:t2guidance>, null],
@@ -271,7 +255,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiereightship>, [
 
 
 
-/////////////	 Tier Nine Space Ship  	  //////////////////	
+/////////////	 Tier Nine Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiernineship>, [
 [null, null, null, null, <contenttweaker:quantumfluxedeterniumplating>, null, null, null, null],
@@ -287,10 +271,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiernineship>, [
 recipes.addShaped(<contenttweaker:universalnavigator>, [
 	[<gregtech:meta_item_1:12308>, <gtadditions:ga_meta_item:32015>, <gregtech:meta_item_1:12308>],
 	[<gtadditions:ga_meta_item:32015>, <gregtech:meta_item_2:32501>, <gtadditions:ga_meta_item:32015>],
-	[<gregtech:meta_item_1:12308>,<gtadditions:ga_meta_item:32015>,<gregtech:meta_item_1:12308>]]); 
+	[<gregtech:meta_item_1:12308>,<gtadditions:ga_meta_item:32015>,<gregtech:meta_item_1:12308>]]);
 
 
-/////////////	 Tier Ten Space Ship  	  //////////////////	
+/////////////	 Tier Ten Space Ship  	  //////////////////
 
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiertenship>, [
 [null, null, <contenttweaker:neutroniumplating>, null, null, null, <contenttweaker:neutroniumplating>,null, null],
@@ -315,11 +299,11 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:tiertenship>, [
 
 
 // Small Dimensional Projector Recipes
-	
-	
-	
+
+
+
 //Tier 1 Steel Microminer
-	
+
 val steel1 = mods.modularmachinery.RecipeBuilder.newBuilder("small_microverse_steel_1", "small_microverse", 500);
 steel1.addEnergyPerTickInput(2000);
 steel1.addItemInput(<contenttweaker:tieroneship>);
@@ -338,11 +322,11 @@ steel1.addItemOutput(<gregtech:ore_galena_0> *64);
 steel1.addItemOutput(<advancedrocketry:moonturf> * 64);
 steel1.addItemOutput(<libvulpes:ore0> * 64);
 steel1.addItemOutput(<gregtech:ore_salt_0> * 64);
-steel1.build();	
+steel1.build();
 
 
 //Tier 1 Steel Microminer
-	
+
 val steel2 = mods.modularmachinery.RecipeBuilder.newBuilder("small_microverse_steel_2", "small_microverse", 500);
 steel2.addEnergyPerTickInput(2000);
 steel2.addItemInput(<contenttweaker:tieroneship>);
@@ -355,17 +339,17 @@ steel2.addItemOutput(<gregtech:meta_item_2:25111> * 16);
 steel2.addItemOutput(<gregtech:meta_item_2:25111> * 16);
 steel2.addItemOutput(<gregtech:ore_apatite_0> * 64);
 steel2.addItemOutput(<gregtech:ore_phosphor_0> * 64);
-steel2.build();	
+steel2.build();
 
 //Tier 1 Steel Microminer
-	
+
 val steel3 = mods.modularmachinery.RecipeBuilder.newBuilder("small_microverse_steel_3", "small_microverse", 100);
 steel3.addEnergyPerTickInput(2000);
 steel3.addItemInput(<contenttweaker:tieroneship>);
 steel3.addItemInput(<contenttweaker:ultradensehydrogen>);
 steel3.addFluidInput(<liquid:rocket_fuel> * 2000);
 steel3.addItemOutput(<contenttweaker:stellarcreationdata>);
-steel3.build();	
+steel3.build();
 
 
 //Tier 2 Titanium Microminer
@@ -390,7 +374,7 @@ titanium1.addItemOutput(<gregtech:ore_tungstate_0:1> * 64);
 titanium1.addItemOutput(<contenttweaker:radiumsalt> * 64);
 titanium1.addItemOutput(<contenttweaker:radiumsalt> * 64);
 titanium1.addItemOutput(<gregtech:ore_cassiterite_0:1> *64);
-titanium1.build();	
+titanium1.build();
 
 //Tier 2 Titanium Microminer
 
@@ -400,7 +384,7 @@ titanium2.addItemInput(<contenttweaker:tiertwoship>);
 titanium2.addItemInput(<contenttweaker:ultradensehydrogen> * 4);
 titanium2.addFluidInput(<liquid:rocket_fuel> * 3000);
 titanium2.addItemOutput(<contenttweaker:stellarcreationdata> * 4);
-titanium2.build();	
+titanium2.build();
 
 
 
@@ -427,7 +411,7 @@ tungsten1.addItemOutput(<gregtech:meta_item_2:25154> * 16);
 tungsten1.addItemOutput(<gregtech:ore_gold_0:6> * 64);
 tungsten1.addItemOutput(<gregtech:ore_gold_0:6> * 64);
 tungsten1.addItemOutput(<gregtech:ore_silver_0:6> * 64);
-tungsten1.build();	
+tungsten1.build();
 
 val tungsten2 = mods.modularmachinery.RecipeBuilder.newBuilder("small_microverse_tungsten_2", "small_microverse", 700);
 tungsten2.addEnergyPerTickInput(8000);
@@ -448,7 +432,7 @@ tungsten2.addItemOutput(<gregtech:ore_cassiterite_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_tin_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_redstone_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_certus_quartz_0:6> * 64);
-tungsten2.build();	
+tungsten2.build();
 
 
 
@@ -462,10 +446,10 @@ signalum1.addItemInput(<advancedrocketry:satelliteprimaryfunction:1>);
 signalum1.addItemInput(<thermalfoundation:material:1027> * 64);
 signalum1.addItemOutput(<contenttweaker:denseoilshale> * 64);
 signalum1.addItemOutput(<contenttweaker:denseoilshale> * 64);
-signalum1.build();	
+signalum1.build();
 
 
-	
+
 //Tier 4: Signalum Microminer
 
 val signalum2 = mods.modularmachinery.RecipeBuilder.newBuilder("medium_microverse_signalum_2", "medium_microverse", 800);
@@ -480,7 +464,7 @@ signalum2.addItemOutput(<densemetals:dense_diamond_ore> * 64);
 signalum2.addItemOutput(<densemetals:dense_coal_ore>  * 64);
 signalum2.addItemOutput(<densemetals:dense_emerald_ore> * 32);
 signalum2.addItemOutput(<densemetals:dense_redstone_ore> * 16);
-signalum2.build();	
+signalum2.build();
 
 //Tier 4: Signalum Microminer
 
@@ -493,7 +477,7 @@ signalum3.addItemInput(<thermalfoundation:material:1027> * 64);
 signalum3.addItemOutput(<gregtech:ore_iridium_0> * 64);
 signalum3.addItemOutput(<gregtech:ore_iridium_0> * 64);
 signalum3.addItemOutput(<gregtech:ore_osmium_0> * 16);
-signalum3.build();	
+signalum3.build();
 
 
 
@@ -516,7 +500,7 @@ iridium1.addItemOutput(<gregtech:meta_item_1:2009> * 64);
 iridium1.addItemOutput(<gregtech:ore_molybdenite_0:12> * 64);
 iridium1.addItemOutput(<gregtech:ore_beryllium_0:12> * 64);
 iridium1.addItemOutput(<gregtech:ore_beryllium_0:12> * 64);
-iridium1.build();	
+iridium1.build();
 
 val iridium3 = mods.modularmachinery.RecipeBuilder.newBuilder("medium_microverse_iridium_3", "medium_microverse", 1000);
 iridium3.addEnergyPerTickInput(30000);
@@ -558,7 +542,7 @@ enderium2.addItemInput(<contenttweaker:quantumflux> * 16);
 enderium2.addItemInput(<contenttweaker:stabilizedplutonium> * 32);
 enderium2.addItemInput(<contenttweaker:witherrealmdata> * 64);
 enderium2.addItemOutput(<contenttweaker:stabilizedeinsteinium> * 32);
-enderium2.build();	
+enderium2.build();
 
 //Tier 6: Enderium Microminer
 val enderium3 = mods.modularmachinery.RecipeBuilder.newBuilder("medium_microverse_enderium_3", "medium_microverse", 1250);
@@ -568,7 +552,7 @@ enderium3.addItemInput(<contenttweaker:quantumflux> * 16);
 enderium3.addItemInput(<contenttweaker:stabilizedplutonium> * 32);
 enderium3.addItemInput(<contenttweaker:dragonlairdata> * 16);
 enderium3.addItemOutput(<minecraft:dragon_egg> * 32);
-enderium3.build();	
+enderium3.build();
 
 
 //Tier 7: Draconium Microminer
@@ -595,7 +579,7 @@ draconium1.addItemOutput(<gregtech:compressed_3> * 64);
 draconium1.addItemOutput(<minecraft:diamond_block> * 64);
 draconium1.addItemOutput(<minecraft:diamond_block> * 64);
 draconium1.addItemOutput(<gregtech:compressed_2:6> * 64);
-draconium1.build();	
+draconium1.build();
 
 //Tier 7: Draconium Microminer
 val draconium2 = mods.modularmachinery.RecipeBuilder.newBuilder("large_microverse_draconium_2", "large_microverse", 1500);
@@ -609,7 +593,7 @@ draconium2.addItemInput(<contenttweaker:dragonlairdata> * 64);
 draconium2.addItemInput(<contenttweaker:dragonlairdata> * 64);
 draconium2.addItemInput(<contenttweaker:dragonlairdata> * 64);
 draconium2.addItemOutput(<contenttweaker:lairofthechaosguardiandata>);
-draconium2.build();	
+draconium2.build();
 
 recipes.removeByRecipeName("avaritia:items/resource/neutron_nugget");
 
@@ -664,7 +648,7 @@ qfe1.addItemOutput(<avaritia:resource:3> * 64);
 qfe1.addItemOutput(<avaritia:resource:3> * 64);
 qfe1.addItemOutput(<avaritia:resource:3> * 64);
 qfe1.addItemOutput(<avaritia:resource:3> * 64);
-qfe1.build();	
+qfe1.build();
 
 //Tier 9: QFE Microminer
 val qfe2 = mods.modularmachinery.RecipeBuilder.newBuilder("large_microverse_qfe_2", "large_microverse", 3000);
@@ -686,7 +670,7 @@ neutronium1.addItemInput(<contenttweaker:tiertenship>);
 neutronium1.addItemInput(<contenttweaker:universecreationdata>);
 neutronium1.addItemInput(<draconicevolution:draconic_block> * 8);
 neutronium1.addItemOutput(<contenttweaker:heartofauniverse>);
-neutronium1.build();	
+neutronium1.build();
 
 recipes.addShaped(<contenttweaker:impossiblerealmdata>, [
 	[<deepmoblearning:living_matter_overworldian>,<actuallyadditions:item_solidified_experience>,<deepmoblearning:living_matter_overworldian>],
@@ -712,11 +696,11 @@ recipes.addShaped(<contenttweaker:quantumflux>, [
 	[<contenttweaker:moondust>,<minecraft:diamond>,<contenttweaker:moondust>],
 	[null,<contenttweaker:moondust>,null]]);
 
-	
+
 recipes.remove(<actuallyadditions:block_xp_solidifier>);
 recipes.addShaped(<actuallyadditions:block_xp_solidifier>, [
 	[<gregtech:meta_item_1:12702>, <gregtech:meta_item_1:12702>, <gregtech:meta_item_1:12702>],
-	[<gregtech:meta_item_1:12702>, <gregtech:machine:322>, <gregtech:meta_item_1:12702>], 
+	[<gregtech:meta_item_1:12702>, <gregtech:machine:322>, <gregtech:meta_item_1:12702>],
 	[<gregtech:meta_item_1:12702>, <gregtech:meta_item_1:12702>, <gregtech:meta_item_1:12702>]]);
 <actuallyadditions:item_solidified_experience>.addTooltip(format.green("Can be made in an Experience Solidifier."));
 
@@ -819,10 +803,10 @@ lunarminingstationb.build();
 
 recipes.addShaped(<contenttweaker:helium3rover> * 16, [
 	[<solarflux:solar_panel_3>, <solarflux:solar_panel_3>, <gregtech:meta_item_1:32693>],
-	[<gregtech:meta_item_1:12072>, <gregtech:machine:504>, <gregtech:meta_item_1:32653>], 
+	[<gregtech:meta_item_1:12072>, <gregtech:machine:504>, <gregtech:meta_item_1:32653>],
 	[<gregtech:meta_item_1:32633>, null, <gregtech:meta_item_1:32633>]]);
 recipes.addShaped(<contenttweaker:deuteriumrover> * 16, [
 	[<solarflux:solar_panel_2>, <solarflux:solar_panel_2>, <gregtech:meta_item_1:32692>],
-	[<gregtech:meta_item_1:12183>, <gregtech:machine:503>, <gregtech:meta_item_1:32652>], 
+	[<gregtech:meta_item_1:12183>, <gregtech:machine:503>, <gregtech:meta_item_1:32652>],
 	[<gregtech:meta_item_1:32632>, null, <gregtech:meta_item_1:32632>]]);
 

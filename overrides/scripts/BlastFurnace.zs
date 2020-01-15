@@ -193,7 +193,7 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2307>], [null]).remove();
 furnace.addRecipe(<gregtech:meta_item_1:10307>, <gregtech:meta_item_1:2307>, 0.0);
 
 //Enriched Naquadah
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2307>,<enderio:item_material:20>,<enderio:item_material:37>,<enderio:item_material:36>,<enderio:item_material:35>,<enderio:item_material:34>,<contenttweaker:grainsofinnocence>]).fluidInputs([<liquid:ender_distillation> * 1000]).outputs([<gregtech:meta_item_1:2309>]).property("temperature", 5400).duration(3600).EUt(120).buildAndRegister();
+//FIXME: [ERROR] Invalid amount of recipe inputs. Actual: 7. Should be between 1 and 3 inclusive. // blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2307>,<enderio:item_material:20>,<enderio:item_material:37>,<enderio:item_material:36>,<enderio:item_material:35>,<enderio:item_material:34>,<contenttweaker:grainsofinnocence>]).fluidInputs([<liquid:ender_distillation> * 1000]).outputs([<gregtech:meta_item_1:2309>]).property("temperature", 5400).duration(3600).EUt(120).buildAndRegister();
 
 //Naquadah Doped Boule [tier 11]
 blast_furnace.findRecipe(1920, [<gregtech:compressed_2:15> * 9, <gregtech:meta_item_1:10307>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:argon> * 8000]).remove();	

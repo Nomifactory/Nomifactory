@@ -650,7 +650,7 @@ assembler.recipeBuilder().inputs([<gregtech:cable:706> * 2, <enderio:item_enderg
 //x4 IV ceu
 recipes.addShaped(<gregtech:machine:10692>, [[<ore:wireGtQuadrupleLumium>, <ore:circuitElite>, <ore:wireGtQuadrupleLumium>], [<enderio:item_endergy_conduit:6>, <gregtech:machine:505>, <enderio:item_endergy_conduit:6>], [<ore:wireGtQuadrupleLumium>, <ore:chestWood>, <ore:wireGtQuadrupleLumium>]]);
 //x4 IV cef
-recipes.addShaped(<gregtech:machine:10693>, [[<enderio:item_endergy_conduit:6>, <ore:circuitElite>, <enderio:item_endergy_conduit:6>], [<ore:wireGtQuadrupleLumium>, <gregtech:machine:505>, <ore:wireGtQuadrupleLumium>], [<enderio:item_power_conduit:2>, <ore:chestWood>,<enderio:item_endergy_conduit:6>]]);
+recipes.addShaped(<gregtech:machine:10693>, [[<enderio:item_endergy_conduit:6>, <ore:circuitElite>, <enderio:item_endergy_conduit:6>], [<ore:wireGtQuadrupleLumium>, <gregtech:machine:505>, <ore:wireGtQuadrupleLumium>], [<enderio:item_endergy_conduit:6>, <ore:chestWood>,<enderio:item_endergy_conduit:6>]]);
 //x16 IV ceu
 recipes.addShaped(<gregtech:machine:10696>, [[<ore:wireGtHexLumium>, <ore:circuitElite>, <ore:wireGtHexLumium>], [<enderio:item_endergy_conduit:6>, <gregtech:machine:505>, <enderio:item_endergy_conduit:6>], [<ore:wireGtHexLumium>, <ore:chestWood>, <ore:wireGtHexLumium>]]);
 //x16 IV cef

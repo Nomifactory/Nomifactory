@@ -7,18 +7,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val fluidextractor = RecipeMap.getByName("fluid_extractor");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val freezer = RecipeMap.getByName("vacuum_freezer");
-val compressor = RecipeMap.getByName("compressor");
-val extruder = RecipeMap.getByName("extruder");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val extractor = RecipeMap.getByName("extractor");
-val macerator = RecipeMap.getByName("macerator");
-val wiremill = RecipeMap.getByName("wiremill");
-
 print("-------------- Ore Dictionary Start --------------");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -41,7 +29,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:metal0:9>,
 		<nuclearcraft:ingot_block:12>
 	],
-	
+
 	#blockApatite
 	<ore:blockApatite>: [
 		<forestry:resource_storage>
@@ -51,7 +39,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:blockBeryllium> : [
 		<nuclearcraft:ingot_block:9>
 	],
-	
+
 	#blockBronze
 	<ore:blockBronze> : [
 		<thermalfoundation:storage_alloy:3>
@@ -81,7 +69,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:blockGraphite> : [
 		<nuclearcraft:ingot_block:8>
 	],
-	
+
 	#blockInvar
 	<ore:blockInvar> : [
 		<thermalfoundation:storage_alloy:2>
@@ -100,20 +88,20 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockManganese
 	<ore:blockManganese> : [
-		<nuclearcraft:ingot_block:11>	
+		<nuclearcraft:ingot_block:11>
 	],
 
-	
+
 	#blockNickel
 	<ore:blockNickel> : [
 		<thermalfoundation:storage:5>
 	],
-	
+
 	#blockNeutronium
 	<ore:blockNeutronium> : [
 		<gregtech:compressed_18>
 	],
-	
+
 	#blockNetherstar
 	<ore:blockNetherstar> : [
 		<gregtech:compressed_15>
@@ -188,7 +176,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustBeryllium> : [
 		<nuclearcraft:dust:9>
 	],
-	
+
 	#dustBronze
 	<ore:dustBronze> : [
 		<thermalfoundation:material:99>
@@ -249,7 +237,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustEmerald> : [
 		<actuallyadditions:item_dust:3>
 	],
-	
+
 	#dustGraphite
 	<ore:dustGraphite> : [
 		<nuclearcraft:dust:8>
@@ -294,7 +282,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productdust:10>,
 		<thermalfoundation:material:71>
 	],
-	
+
 	#dustManganese
 	<ore:dustManganese> : [
 		<nuclearcraft:dust:11>
@@ -319,7 +307,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:770>,
 		<nuclearcraft:gem_dust:3>
 	],
-	
+
 	#dustPlatinum
 	<ore:dustPlatinum> : [
 		<thermalfoundation:material:70>
@@ -345,7 +333,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#dustSilicon
 	<ore:dustSilicon>: [
 		<libvulpes:productdust:3>
-	],	
+	],
 
 	#dustSteel
 	<ore:dustSteel> : [
@@ -415,12 +403,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productingot:9>,
 		<thermalfoundation:material:132>
 	],
-	
+
 	#ingotBeryllium
 	<ore:ingotBeryllium> : [
 		<nuclearcraft:ingot:9>
 	],
-	
+
 	#ingotBronze
 	<ore:ingotBronze> : [
 		<thermalfoundation:material:163>,
@@ -443,23 +431,23 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotElectrum> : [
 		<thermalfoundation:material:161>
 	],
-	
-	
+
+
 	#ingotEnderium
 	<ore:ingotEnderium> : [
 		<gregtech:meta_item_1:10708>
 	],
-	
+
 	#ingotGraphite
 	<ore:ingotGraphite> : [
 		<nuclearcraft:ingot:8>
 	],
-	
+
 	#ingotLead
 	<ore:ingotLead> : [
 		<thermalfoundation:material:131>
 	],
-	
+
 	#ingotLumium
 	<ore:ingotLumium> : [
 		<gregtech:meta_item_1:10706>
@@ -484,12 +472,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotManganese> : [
 		<nuclearcraft:ingot:11>
 	],
-	
+
 	#ingotNeutronium
 	<ore:ingotNeutronium> : [
 		<gregtech:meta_item_1:10972>
 	],
-	
+
 	#ingotNickel
 	<ore:ingotNickel> : [
 		<thermalfoundation:material:133>
@@ -511,7 +499,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotTitanium> : [
 		<libvulpes:productingot:7>
 	],
-	
+
 	#ingotThorium
 	<ore:ingotThorium> : [
 		<nuclearcraft:ingot:3>
@@ -527,7 +515,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotSilicon>: [
 		<libvulpes:productingot:3>
 	],
-	
+
 	#ingotSignalum
 	<ore:ingotSignalum>: [
 		<gregtech:meta_item_1:10707>
@@ -539,7 +527,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:160>,
 		<nuclearcraft:alloy:5>
 	]
-	
+
 };
 
 for oreDictEntry, items in ingotsDisabled {
@@ -558,22 +546,22 @@ var sticksDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:stickIron> : [
 		<libvulpes:productrod:1>
 	],
-	
+
 	#stickCopper
 	<ore:stickCopper> : [
 		<libvulpes:productrod:4>
 	],
-	
+
 	#stickSteel
 	<ore:stickSteel> : [
 		<libvulpes:productrod:6>
 	],
-	
+
 	#stickTitanium
 	<ore:stickTitanium> : [
 		<libvulpes:productrod:7>
 	],
-	
+
 	#stickIridium
 	<ore:stickIridium> : [
 		<libvulpes:productrod:10>
@@ -630,7 +618,7 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:nuggetTin> : [
 		<libvulpes:productnugget:5>
 	],
-	
+
 	<ore:nuggetTitanium> : [
 		<libvulpes:productnugget:7>
 	],
@@ -638,7 +626,7 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:nuggetNeutronium> : [
 		<gregtech:meta_item_1:9972>,
 	],
-	
+
 	<ore:nuggetNickel> : [
 		<thermalfoundation:material:197>,
 	],
@@ -786,7 +774,7 @@ var platesDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:plateLead> : [
 		<thermalfoundation:material:323>
 	],
-	
+
 	#plateNickel
 	<ore:plateNickel> : [
 		<thermalfoundation:material:325>
@@ -952,14 +940,14 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:gemApatite> : [
 		<forestry:apatite>
 	],
-	
+
 	#Silicon
 	<ore:itemSilicon> : [
 		<enderio:item_material:5>,
 		<nuclearcraft:gem:6>,
 		<appliedenergistics2:material:5>
 	],
-	
+
 	#Arsenic
 	<ore:dustArsenic> : [
 		<nuclearcraft:gem_dust:10>
@@ -997,6 +985,7 @@ mods.jei.JEI.hideCategory("minecraft.anvil");
 mods.jei.JEI.hideCategory("Painter");
 mods.jei.JEI.hideCategory("extrautils2.blockPatterns");
 mods.jei.JEI.hideCategory("Avatitia.Compressor");
+
 mods.jei.JEI.hideCategory("actuallyadditions.compost");
 mods.jei.JEI.hideCategory("actuallyadditions.crushing");
 mods.jei.JEI.hideCategory("actuallyadditions.booklet");
@@ -1012,7 +1001,7 @@ mods.jei.JEI.hideCategory("xu2_machine_extrautils2:furnace");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:crusher");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator_survival");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator");
-mods.jei.JEI.hide(<appliedenergistics2:facade>); 
+mods.jei.JEI.hide(<appliedenergistics2:facade>);
 
 //Forestry Removals
 mods.jei.JEI.removeAndHide(<forestry:phosphor>);
@@ -1360,7 +1349,7 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:120>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:121>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:122>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:123>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:232>);
+//mods.jei.JEI.removeAndHide(<gregtech:machine:232>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:250>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:251>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:252>);
@@ -1704,6 +1693,11 @@ solidifier.recipeBuilder().fluidInputs(<liquid:moltenempoweredemeradic> * 1296).
 solidifier.recipeBuilder().fluidInputs(<liquid:moltenempoweredemeradic> * 576).notConsumable(<gregtech:meta_item_1:32303>).outputs([<moreplates:empowered_emeradic_gear>]).duration(200).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<actuallyadditions:block_crystal_empowered:4>).fluidOutputs([<liquid:moltenempoweredemeradic> * 1296]).duration(200).EUt(30).buildAndRegister();
 
+//Molten Empowered Void
+solidifier.recipeBuilder().fluidInputs(<liquid:moltenempoweredvoid> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<actuallyadditions:block_crystal_empowered:3>]).duration(400).EUt(30).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs(<liquid:moltenempoweredvoid> * 576).notConsumable(<gregtech:meta_item_1:32303>).outputs([<moreplates:empowered_void_gear>]).duration(200).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<actuallyadditions:block_crystal_empowered:3>).fluidOutputs([<liquid:moltenempoweredvoid> * 1296]).duration(200).EUt(30).buildAndRegister();
+
 //Molten Dark Soularium
 solidifier.recipeBuilder().fluidInputs(<liquid:moltendarksoularium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<simplyjetpacks:metaitemmods:3>]).duration(40).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<simplyjetpacks:metaitemmods:3>).fluidOutputs([<liquid:moltendarksoularium> * 144]).duration(20).EUt(30).buildAndRegister();
@@ -1742,6 +1736,7 @@ solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:omnium> * 1296
 solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 144).notConsumable(<gregtech:meta_item_1:32309>).outputs([<extendedcrafting:material:33> * 9]).duration(200).EUt(30).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<extendedcrafting:material:32>]).duration(200).EUt(30).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<extendedcrafting:storage:4>]).duration(200).EUt(30).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 16).notConsumable(<gregtech:meta_item_1:32307>).outputs([<extendedcrafting:singularity_ultimate>]).duration(200).EUt(30).buildAndRegister();
 furnace.remove(<gregtech:meta_item_1:10709>);
 furnace.addRecipe(<extendedcrafting:material:32>, <gregtech:meta_item_1:2709>, 0.0);
 recipes.addShapeless(<extendedcrafting:material:32>, [<gregtech:meta_item_1:10709>]);
@@ -1916,7 +1911,7 @@ recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate
 recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
 recipes.addShaped(<gregtech:frame_neutronium> * 4, [
 	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>], 
+	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>],
 	[<gregtech:meta_item_1:14972>, <gregtech:meta_tool:8>, <gregtech:meta_item_1:14972>]]);
 
 

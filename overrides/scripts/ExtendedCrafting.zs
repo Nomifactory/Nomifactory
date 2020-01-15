@@ -1,35 +1,5 @@
 import mods.gregtech.recipe.RecipeMap;
-
-val compressor = RecipeMap.getByName("compressor");
-val macerator = RecipeMap.getByName("macerator");
-val assembler = RecipeMap.getByName("assembler");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val extractor = RecipeMap.getByName("extractor");
-val lathe = RecipeMap.getByName("lathe");
-val canner = RecipeMap.getByName("canner");
-val fluid_canner = RecipeMap.getByName("fluid_canner");
-val fluid_extractor = RecipeMap.getByName("fluid_extractor");
-val freezer = RecipeMap.getByName("vacuum_freezer");
-val mixer = RecipeMap.getByName("mixer");
-val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
-val sifter = RecipeMap.getByName("sifter");
-val autoclave = RecipeMap.getByName("autoclave");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val saw = RecipeMap.getByName("cutting_saw");
-val forming = RecipeMap.getByName("forming_press");
-val electrolyzer = RecipeMap.getByName("electrolyzer");
-val circuit_assembler = RecipeMap.getByName("circuit_assembler");
-val implosion = RecipeMap.getByName("implosion_compressor");
-val engraver = RecipeMap.getByName("laser_engraver");
-val attractor = RecipeMap.getByName("attractor");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-
-
-
-
-
+import crafttweaker.item.IItemStack;
 
 fluid_extractor.recipeBuilder().inputs([<ore:dustCryotheum>]).fluidOutputs([<liquid:cryotheum>*250]).duration(40).EUt(32).buildAndRegister();
 fluid_extractor.recipeBuilder().inputs([<ore:dustPyrotheum>]).fluidOutputs([<liquid:pyrotheum>*250]).duration(40).EUt(32).buildAndRegister();
@@ -169,7 +139,7 @@ recipes.removeByRecipeName("gregtech:nugget_assembling_235");
 
 //Noble Gasses
 centrifuge.findRecipe(30, [], [<liquid:liquid_air> * 53000]).remove();
-centrifuge.findRecipe(30, [], [<liquid:noble_gases> * 43000]).remove();	
+centrifuge.findRecipe(30, [], [<liquid:noble_gases> * 43000]).remove();
 
 var bsingot = <gregtech:meta_item_1:10231>;
 var bsplate = <gregtech:meta_item_1:12231>;
@@ -181,52 +151,52 @@ mods.jei.JEI.removeAndHide(<extendedcrafting:table_basic>);
 
 recipes.remove(<extendedcrafting:compressor>);
 recipes.addShaped(<extendedcrafting:compressor>, [
-	[bsingot, <extendedcrafting:material:16>, bsingot], 
-	[<extendedcrafting:material:10>, <extendedcrafting:frame>, <extendedcrafting:material:10>], 
+	[bsingot, <extendedcrafting:material:16>, bsingot],
+	[<extendedcrafting:material:10>, <extendedcrafting:frame>, <extendedcrafting:material:10>],
 	[bsingot, bsplate, bsingot]]);
 
 recipes.remove(<extendedcrafting:guide>);
 recipes.remove(<extendedcrafting:frame>);
 recipes.addShaped(<extendedcrafting:frame>, [
-	[bsingot, <minecraft:glass>, bsingot], 
-	[<minecraft:glass>, bsplate, <minecraft:glass>], 
+	[bsingot, <minecraft:glass>, bsingot],
+	[<minecraft:glass>, bsplate, <minecraft:glass>],
 	[bsingot, <minecraft:glass>, bsingot]]);
 
 recipes.remove(<extendedcrafting:interface>);
 recipes.addShaped(<extendedcrafting:interface>, [
-	[bsingot, <extendedcrafting:material:10>, bsingot], 
-	[<extendedcrafting:material:18>, <extendedcrafting:frame>, <extendedcrafting:material:18>], 
+	[bsingot, <extendedcrafting:material:10>, bsingot],
+	[<extendedcrafting:material:18>, <extendedcrafting:frame>, <extendedcrafting:material:18>],
 	[bsingot, bsplate, bsingot]]);
 
 recipes.addShaped(<extendedcrafting:pedestal>, [
-	[null, bsingot, null], 
-	[null, bsingot, null], 
+	[null, bsingot, null],
+	[null, bsingot, null],
 	[bsplate, <gregtech:compressed_10:11>, bsplate]]);
 
 <extendedcrafting:material:19>.displayName = "Conflux Component";
-recipes.remove(<extendedcrafting:material:19>);	
+recipes.remove(<extendedcrafting:material:19>);
 recipes.addShaped(<extendedcrafting:material:19>, [
-	[null, <extendedcrafting:material:14>, null], 
-	[<extendedcrafting:material:15>, <extendedcrafting:material:18>, <extendedcrafting:material:16>], 
+	[null, <extendedcrafting:material:14>, null],
+	[<extendedcrafting:material:15>, <extendedcrafting:material:18>, <extendedcrafting:material:16>],
 	[null, <extendedcrafting:material:17>, null]]);
 <extendedcrafting:material:13>.displayName = "Conflux Catalyst";
-recipes.remove(<extendedcrafting:material:13>);	
+recipes.remove(<extendedcrafting:material:13>);
 recipes.addShaped(<extendedcrafting:material:13>, [
-	[null, <extendedcrafting:material:8>, null], 
-	[<extendedcrafting:material:9>, <extendedcrafting:material:12>, <extendedcrafting:material:10>], 
+	[null, <extendedcrafting:material:8>, null],
+	[<extendedcrafting:material:9>, <extendedcrafting:material:12>, <extendedcrafting:material:10>],
 	[null, <extendedcrafting:material:11>, null]]);
 
 <extendedcrafting:material:19>.displayName = "Conflux Component";
-recipes.remove(<extendedcrafting:material:19>);	
+recipes.remove(<extendedcrafting:material:19>);
 recipes.addShaped(<extendedcrafting:material:19>, [
-	[null, <extendedcrafting:material:14>, null], 
-	[<extendedcrafting:material:15>, <extendedcrafting:material:18>, <extendedcrafting:material:16>], 
+	[null, <extendedcrafting:material:14>, null],
+	[<extendedcrafting:material:15>, <extendedcrafting:material:18>, <extendedcrafting:material:16>],
 	[null, <extendedcrafting:material:17>, null]]);
 <extendedcrafting:material:13>.displayName = "Conflux Catalyst";
-recipes.remove(<extendedcrafting:material:13>);	
+recipes.remove(<extendedcrafting:material:13>);
 recipes.addShaped(<extendedcrafting:material:13>, [
-	[null, <extendedcrafting:material:8>, null], 
-	[<extendedcrafting:material:9>, <extendedcrafting:material:12>, <extendedcrafting:material:10>], 
+	[null, <extendedcrafting:material:8>, null],
+	[<extendedcrafting:material:9>, <extendedcrafting:material:12>, <extendedcrafting:material:10>],
 	[null, <extendedcrafting:material:11>, null]]);
 
 recipes.removeByRecipeName("extrautils2:angel_ring_0");
@@ -241,7 +211,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:angelring>,[
 	[<ore:ingotRoseGold>,null,<simplyjetpacks:itemjetpack:12>,null,<ore:ingotRoseGold>],
 	[<ore:ingotRoseGold>,<simplyjetpacks:itemjetpack:4>,null,<simplyjetpacks:itemjetpack:4>,<ore:ingotRoseGold>],
 	[<ore:ingotRoseGold>,null,<simplyjetpacks:itemjetpack:12>,null,<ore:ingotRoseGold>],
-	[null,<ore:ingotRoseGold>,<ore:ingotRoseGold>,<ore:ingotRoseGold>,null]]);	
+	[null,<ore:ingotRoseGold>,<ore:ingotRoseGold>,<ore:ingotRoseGold>,null]]);
 
 ///////////////////////// ZPM  ///////////////////////////////
 
@@ -256,20 +226,20 @@ mods.extendedcrafting.TableCrafting.addShaped(<gregtech:meta_item_1:32599>, [
 [null,	null,	null,					<ore:circuitUltimate>,					<ore:circuitUltimate>,						<ore:circuitUltimate>,						null, 						null,	null],
 [null,	null,	null,					<nuclearcraft:part:3>,					<nuclearcraft:part:3>,						<nuclearcraft:part:3>,						null,						null,	null]]);
 
-	
 
 
-	
+
+
 //Luminescence
 recipes.remove(<extendedcrafting:material:7>);
 reactor.recipeBuilder().inputs([<nuclearcraft:compound:2>]).inputs([<gregtech:meta_item_1:2001>]).fluidInputs([<liquid:phosphoric_acid> * 2000]).outputs(<extendedcrafting:material:7> * 4).EUt(30).duration(20).buildAndRegister();
 
 // Extended Crafting Components
-recipes.remove(<extendedcrafting:material:14>);	
-recipes.remove(<extendedcrafting:material:15>);	
-recipes.remove(<extendedcrafting:material:16>);	
-recipes.remove(<extendedcrafting:material:17>);	
-recipes.remove(<extendedcrafting:material:18>);	
+recipes.remove(<extendedcrafting:material:14>);
+recipes.remove(<extendedcrafting:material:15>);
+recipes.remove(<extendedcrafting:material:16>);
+recipes.remove(<extendedcrafting:material:17>);
+recipes.remove(<extendedcrafting:material:18>);
 recipes.addShaped(<extendedcrafting:material:18>, [[<gregtech:meta_item_1:12231>, <extendedcrafting:material:7>],[<gregtech:meta_item_1:12207>, <extendedcrafting:material:24>]]);
 recipes.addShaped(<extendedcrafting:material:17>, [[<gregtech:meta_item_1:12231>, <extendedcrafting:material:7>],[<gregtech:meta_item_1:12076>, <gregtech:meta_item_1:12113>]]);
 recipes.addShaped(<extendedcrafting:material:16>, [[<gregtech:meta_item_1:12231>, <extendedcrafting:material:7>],[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12218>]]);
@@ -277,11 +247,11 @@ recipes.addShaped(<extendedcrafting:material:15>, [[<gregtech:meta_item_1:12231>
 recipes.addShaped(<extendedcrafting:material:14>, [[<gregtech:meta_item_1:12231>, <extendedcrafting:material:7>],[<gregtech:meta_item_1:12201>, <gregtech:meta_item_1:12033>]]);
 
 // Extended Crafting Catalysts
-recipes.remove(<extendedcrafting:material:8>);	
-recipes.remove(<extendedcrafting:material:9>);	
-recipes.remove(<extendedcrafting:material:10>);	
-recipes.remove(<extendedcrafting:material:11>);	
-recipes.remove(<extendedcrafting:material:12>);	
+recipes.remove(<extendedcrafting:material:8>);
+recipes.remove(<extendedcrafting:material:9>);
+recipes.remove(<extendedcrafting:material:10>);
+recipes.remove(<extendedcrafting:material:11>);
+recipes.remove(<extendedcrafting:material:12>);
 recipes.addShaped(<extendedcrafting:material:12>, [[null, <extendedcrafting:material:18>, null],[<extendedcrafting:material:18>, <gregtech:meta_item_1:12231>, <extendedcrafting:material:18>], [null, <extendedcrafting:material:18>, null]]);
 recipes.addShaped(<extendedcrafting:material:11>, [[null, <extendedcrafting:material:17>, null],[<extendedcrafting:material:17>, <gregtech:meta_item_1:12231>, <extendedcrafting:material:17>], [null, <extendedcrafting:material:17>, null]]);
 recipes.addShaped(<extendedcrafting:material:10>, [[null, <extendedcrafting:material:16>, null],[<extendedcrafting:material:16>, <gregtech:meta_item_1:12231>, <extendedcrafting:material:16>], [null, <extendedcrafting:material:16>, null]]);
@@ -322,6 +292,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:table_ultimate>,
 <extendedcrafting:table_ultimate>.displayName = "Ultimate Extended Crafting Table";
 
 <extendedcrafting:singularity_ultimate>.displayName = "Mote of Omnium";
+// FIXME: [ERROR] Input cannot contain null or empty ItemStacks. Inputs: [0xtile.air@32629] //
 implosion.recipeBuilder().inputs([<extendedcrafting:singularity_ultimate>]).outputs(<extendedcrafting:material:33>).EUt(30).duration(20).buildAndRegister();
 <extendedcrafting:material:33>.displayName = "Omnium Nugget";
 <extendedcrafting:material:32>.displayName = "Omnium Ingot";
@@ -334,44 +305,44 @@ recipes.addShaped(<minecraft:end_crystal>, [
 	[<minecraft:glass_pane>,<minecraft:glass_pane>,<minecraft:glass_pane>],
 	[<minecraft:glass_pane>,<gregtech:meta_item_1:32725>,<minecraft:glass_pane>],
 	[<minecraft:glass_pane>,<minecraft:glass_pane>,<minecraft:glass_pane>]]);
-	
-	
-	
+
+
+
 ///////////////////////// Nether Star  ///////////////////////////////
 recipes.remove(<minecraft:nether_star>);
 recipes.addShaped(<minecraft:nether_star>, [
 	[null, <cns:star_fragment>, null],
-	[<contenttweaker:netherstarwest>, <cns:star_core>, <contenttweaker:netherstareast>], 
+	[<contenttweaker:netherstarwest>, <cns:star_core>, <contenttweaker:netherstareast>],
 	[null, <contenttweaker:netherstarsouth>, null]]);
-	
+
 <cns:star_fragment>.displayName = "Nether Star Tip North";
 recipes.remove(<cns:star_fragment>);
 recipes.addShaped(<cns:star_fragment>, [
 	[null, <minecraft:quartz>, null],
-	[<minecraft:quartz>, <thermalfoundation:material:1026>, <minecraft:quartz>], 
+	[<minecraft:quartz>, <thermalfoundation:material:1026>, <minecraft:quartz>],
 	[<minecraft:quartz>, <thermalfoundation:material:1026>, <minecraft:quartz>]]);
-	
+
 recipes.addShaped(<contenttweaker:netherstarsouth>, [
 	[<minecraft:quartz>, <thermalfoundation:material:1027>, <minecraft:quartz>],
-	[<minecraft:quartz>, <thermalfoundation:material:1027>, <minecraft:quartz>], 
+	[<minecraft:quartz>, <thermalfoundation:material:1027>, <minecraft:quartz>],
 	[null, <minecraft:quartz>, null]]);
 
 recipes.addShaped(<contenttweaker:netherstareast>, [
 	[<minecraft:quartz>, <minecraft:quartz>, null],
-	[<thermalfoundation:material:1024>, <thermalfoundation:material:1024>, <minecraft:quartz>], 
+	[<thermalfoundation:material:1024>, <thermalfoundation:material:1024>, <minecraft:quartz>],
 	[<minecraft:quartz>, <minecraft:quartz>, null]]);
 
 recipes.addShaped(<contenttweaker:netherstarwest>, [
 	[null, <minecraft:quartz>, <minecraft:quartz>],
-	[<minecraft:quartz>, <thermalfoundation:material:1025>, <thermalfoundation:material:1025>], 
+	[<minecraft:quartz>, <thermalfoundation:material:1025>, <thermalfoundation:material:1025>],
 	[null, <minecraft:quartz>, <minecraft:quartz>]]);
 
 recipes.remove(<cns:star_core>);
 recipes.addShaped(<cns:star_core> * 4, [
 	[<minecraft:quartz>, <thermalfoundation:material:2050>, <minecraft:quartz>],
-	[<thermalfoundation:material:2048>, <extendedcrafting:storage:1>, <minecraft:blaze_rod>], 
-	[<minecraft:quartz>, <thermalfoundation:material:2052>, <minecraft:quartz>]]);	
-	
+	[<thermalfoundation:material:2048>, <extendedcrafting:storage:1>, <minecraft:blaze_rod>],
+	[<minecraft:quartz>, <thermalfoundation:material:2052>, <minecraft:quartz>]]);
+
 // Basalz Powder
 reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2101>]).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2053>).EUt(90).duration(160).buildAndRegister();
 reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2106>]).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2053>).EUt(90).duration(160).buildAndRegister();
@@ -379,10 +350,10 @@ reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2106>]).fluidInputs([<liqu
 //Blitz Powder
 reactor.recipeBuilder().inputs(<contenttweaker:endstonedust>).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2051>).EUt(90).duration(160).buildAndRegister();
 
-//Blizz Powder	
+//Blizz Powder
 reactor.recipeBuilder().inputs(<minecraft:snow>).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2049>).EUt(90).duration(160).buildAndRegister();
 
-//Blaze Powder	
+//Blaze Powder
 reactor.recipeBuilder().inputs(<gregtech:meta_item_1:2333>).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<minecraft:blaze_powder>).EUt(90).duration(160).buildAndRegister();
 
 //Elemental Reduction
@@ -437,15 +408,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<avaritia:resource:1>, [
 [<minecraft:diamond>,	<minecraft:nether_star>,		<avaritia:resource>,			<avaritia:resource>,			<minecraft:nether_star>,		<avaritia:resource>,			<minecraft:diamond>,			<minecraft:diamond>,			<minecraft:diamond>],
 [<minecraft:diamond>,	<avaritia:resource>,			<minecraft:nether_star>,		<minecraft:diamond>,			<minecraft:diamond>,			<minecraft:diamond>,			<thermalfoundation:material:16>,null,							null],
 [<minecraft:diamond>,	<minecraft:diamond>,			<minecraft:diamond>,			<thermalfoundation:material:16>,null,							null,							null,							null,							null],
-[null,					null,							null,							null,							null,							null,							null,							null,							null]]);  
+[null,					null,							null,							null,							null,							null,							null,							null,							null]]);
 
 
 recipes.remove(<avaritia:resource>);
 recipes.addShaped(<avaritia:resource>, [
 	[<gregtech:meta_item_1:12111>, <minecraft:diamond_block>, <gregtech:meta_item_1:12111>],
-	[<minecraft:diamond_block>, <gregtech:meta_item_2:25111>, <minecraft:diamond_block>], 
-	[<gregtech:meta_item_1:12111>, <minecraft:diamond_block>, <gregtech:meta_item_1:12111>]]);	
-	
+	[<minecraft:diamond_block>, <gregtech:meta_item_2:25111>, <minecraft:diamond_block>],
+	[<gregtech:meta_item_1:12111>, <minecraft:diamond_block>, <gregtech:meta_item_1:12111>]]);
+
 
 
 ////////////////////////// Ultimate Material ///////////////////////
@@ -468,7 +439,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:eternalcatalyst>, 
 [null, null, <extendedcrafting:singularity_ultimate>, <moreplates:empowered_emeradic_gear>, <gregtech:meta_item_1:32725>, <moreplates:empowered_restonia_gear>, <extendedcrafting:singularity_ultimate>, null, null],
 [null, null, <extendedcrafting:singularity_ultimate>, <extendedcrafting:singularity_ultimate>, <moreplates:empowered_enori_gear>, <extendedcrafting:singularity_ultimate>, <extendedcrafting:singularity_ultimate>, null, null],
 [null, <extendedcrafting:singularity_ultimate>, null, null, <extendedcrafting:singularity_ultimate>, null, null, <extendedcrafting:singularity_ultimate>, null],
-[null, null, null, null, <extendedcrafting:singularity_ultimate>, null, null, null, null]]);  
+[null, null, null, null, <extendedcrafting:singularity_ultimate>, null, null, null, null]]);
 <contenttweaker:eternalcatalyst>.addTooltip(format.darkGray(format.italic("Gaze into the Abyss...")));
 <gregtech:meta_item_1:32725>.clearTooltip();
 <gregtech:meta_item_1:32725>.addTooltip(format.darkPurple("Quantum Star"));
@@ -489,7 +460,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<avaritia:resource:6>, [
 [<avaritia:resource:4>,	<contenttweaker:eternalcatalyst>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,	<contenttweaker:eternalcatalyst>,<extendedcrafting:material:32>,<avaritia:resource:4>,			<avaritia:resource:4>,			<avaritia:resource:4>],
 [<avaritia:resource:4>,	<extendedcrafting:material:32>,	<contenttweaker:eternalcatalyst>,<avaritia:resource:4>,			<avaritia:resource:4>,			<avaritia:resource:4>,			<avaritia:resource:3>,			null,							null],
 [<avaritia:resource:4>,	<avaritia:resource:4>,			<avaritia:resource:4>,			<avaritia:resource:3>,			null,							null,							null,							null,							null],
-[null,					null,							null,							null,							null,							null,							null,							null,							null]]);  
+[null,					null,							null,							null,							null,							null,							null,							null,							null]]);
 
 
 
@@ -506,7 +477,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<avaritia:resource:5>, [
 [<avaritia:resource:2>, <avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <contenttweaker:eternalcatalyst>, <draconicevolution:chaotic_core>, <contenttweaker:eternalcatalyst>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>, <avaritia:resource:2>],
 [<avaritia:resource:2>, <avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <contenttweaker:eternalcatalyst>, <contenttweaker:eternalcatalyst>, <contenttweaker:eternalcatalyst>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>, <avaritia:resource:2>],
 [<avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>, <avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>, <avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>],
-[<avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>]]);  
+[<avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <contenttweaker:eternalcatalyst>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>]]);
 
 
 
@@ -526,7 +497,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>, 
 
 
 ////////////////////////// Creative Vending Upgrade ///////////////////////
-var creativecell = <thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 50000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 25000});
+var creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 500000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 250000});
 var creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte});
 var creativebuffer = <appliedenergistics2:creative_energy_cell>;
 
@@ -557,7 +528,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<avaritia:skullfire_sword>, [
 [null,null,<armorplus:material:2>,<armorplus:redstone_sword>,<avaritia:resource:1>,null,null,null,null],
 [null,null,<minecraft:log>,<armorplus:material:2>,null,null,null,null,null],
 [null,<minecraft:log>,null,null,<armorplus:material:2>,null,null,null,null],
-[<minecraft:nether_star>,null,null,null,null,null,null,null,null]]); 
+[<minecraft:nether_star>,null,null,null,null,null,null,null,null]]);
 
 //Blade Of The Cosmos
 mods.extendedcrafting.TableCrafting.addShaped(<avaritia:infinity_sword>, [
@@ -569,7 +540,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<avaritia:infinity_sword>, [
 [null,null,<avaritia:resource:1>,<armorplus:super_star_sword>,<avaritia:resource:6>,null,null,null,null],
 [null,null,<avaritia:resource:4>,<avaritia:resource:1>,null,null,null,null,null],
 [null,<avaritia:resource:4>,null,null,<avaritia:resource:1>,null,null,null,null],
-[<avaritia:resource:5>,null,null,null,null,null,null,null,null]]); 
+[<avaritia:resource:5>,null,null,null,null,null,null,null,null]]);
 
 mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:creative_rf_source>, [
 [<contenttweaker:ultimate_generator>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<draconicevolution:energy_storage_core>,<draconicevolution:particle_generator>,<draconicevolution:energy_storage_core>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<contenttweaker:ultimate_generator>],
@@ -580,13 +551,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:creative_rf_sou
 [<draconicevolution:energy_storage_core>,<draconicevolution:particle_generator>,<draconicevolution:particle_generator:2>,<draconicevolution:reactor_component>,<draconicevolution:reactor_core>,<draconicevolution:reactor_component>,<draconicevolution:particle_generator:2>,<draconicevolution:particle_generator>,<draconicevolution:energy_storage_core>],
 [<draconicevolution:energy_pylon>,<draconicevolution:energy_storage_core>,<draconicevolution:particle_generator>,<draconicevolution:particle_generator:2>,<draconicevolution:reactor_component>,<draconicevolution:particle_generator:2>,<draconicevolution:particle_generator>,<draconicevolution:energy_storage_core>,<draconicevolution:energy_pylon>],
 [<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<draconicevolution:energy_storage_core>,<draconicevolution:particle_generator>,<draconicevolution:particle_generator:2>,<draconicevolution:particle_generator>,<draconicevolution:energy_storage_core>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>],
-[<contenttweaker:ultimate_generator>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<draconicevolution:energy_storage_core>,<draconicevolution:particle_generator>,<draconicevolution:energy_storage_core>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<contenttweaker:ultimate_generator>]]); 
+[<contenttweaker:ultimate_generator>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<draconicevolution:energy_storage_core>,<draconicevolution:particle_generator>,<draconicevolution:energy_storage_core>,<draconicevolution:energy_pylon>,<draconicevolution:energy_pylon>,<contenttweaker:ultimate_generator>]]);
 
-var hardenedtank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 1 as byte});
-var reinforcedtank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 2 as byte});
-var signalumtank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 3 as byte});
-var resonanttank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 4 as byte});
-	
+// Exa: snip
+
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:passivegenerator:6>, [
 [<extrautils2:ingredients:16>,<extrautils2:ingredients:16>,<extrautils2:passivegenerator:4>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:4>,<extrautils2:ingredients:16>,<extrautils2:ingredients:16>],
 [<extrautils2:ingredients:16>,<extrautils2:passivegenerator:4>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:2>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:4>,<extrautils2:ingredients:16>],
@@ -596,23 +564,23 @@ mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:passivegenerator:6>, 
 [<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:2>,<extrautils2:passivegenerator:8>,<contenttweaker:ultimate_generator>,<extrautils2:passivegenerator:8>,<extrautils2:passivegenerator:2>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>],
 [<extrautils2:passivegenerator:4>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:2>,<extrautils2:passivegenerator:8>,<extrautils2:passivegenerator:2>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:4>],
 [<extrautils2:ingredients:16>,<extrautils2:passivegenerator:4>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:2>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:4>,<extrautils2:ingredients:16>],
-[<extrautils2:ingredients:16>,<extrautils2:ingredients:16>,<extrautils2:passivegenerator:4>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:4>,<extrautils2:ingredients:16>,<extrautils2:ingredients:16>]]); 
+[<extrautils2:ingredients:16>,<extrautils2:ingredients:16>,<extrautils2:passivegenerator:4>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:3>,<extrautils2:passivegenerator:5>,<extrautils2:passivegenerator:4>,<extrautils2:ingredients:16>,<extrautils2:ingredients:16>]]);
 
-var hardenedcell = <thermalexpansion:cell>.withTag({Recv: 4000, RSControl: 0 as byte, Facing: 3 as byte, Creative: 0 as byte, Energy: 0, Level: 1 as byte, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Send: 4000});
-var reinforcedcell = <thermalexpansion:cell>.withTag({Recv: 9000, RSControl: 0 as byte, Facing: 3 as byte, Creative: 0 as byte, Energy: 0, Level: 2 as byte, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Send: 9000});
-var signalumcell = <thermalexpansion:cell>.withTag({Recv: 16000, RSControl: 0 as byte, Facing: 5 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Send: 16000});
-var resonantcell = <thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 5 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Send: 25000});
+//Exa: snip
+
+var ups = <contenttweaker:ultimate_power_storage>;
+var infcata = <avaritia:resource:5>;
 
 mods.extendedcrafting.TableCrafting.addShaped(creativecell, [
-[<thermalexpansion:cell>,<thermalexpansion:cell>,<thermalexpansion:cell>,hardenedcell,reinforcedcell,hardenedcell,<thermalexpansion:cell>,<thermalexpansion:cell>,<thermalexpansion:cell>],
-[<thermalexpansion:cell>,<thermalexpansion:cell>,hardenedcell,reinforcedcell,signalumcell,reinforcedcell,hardenedcell,<thermalexpansion:cell>,<thermalexpansion:cell>],
-[<thermalexpansion:cell>,hardenedcell,reinforcedcell,signalumcell,resonantcell,signalumcell,reinforcedcell,hardenedcell,<thermalexpansion:cell>],
-[hardenedcell,reinforcedcell,signalumcell,resonantcell,<contenttweaker:ultimate_power_storage>,resonantcell,signalumcell,reinforcedcell,hardenedcell],
-[reinforcedcell,signalumcell,resonantcell,<contenttweaker:ultimate_power_storage>,<avaritia:resource:5>,<contenttweaker:ultimate_power_storage>,resonantcell,signalumcell,reinforcedcell],
-[hardenedcell,reinforcedcell,signalumcell,resonantcell,<contenttweaker:ultimate_power_storage>,resonantcell,signalumcell,reinforcedcell,hardenedcell],
-[<thermalexpansion:cell>,hardenedcell,reinforcedcell,signalumcell,resonantcell,signalumcell,reinforcedcell,hardenedcell,<thermalexpansion:cell>],
-[<thermalexpansion:cell>,<thermalexpansion:cell>,hardenedcell,reinforcedcell,signalumcell,reinforcedcell,hardenedcell,<thermalexpansion:cell>,<thermalexpansion:cell>],
-[<thermalexpansion:cell>,<thermalexpansion:cell>,<thermalexpansion:cell>,hardenedcell,reinforcedcell,hardenedcell,<thermalexpansion:cell>,<thermalexpansion:cell>,<thermalexpansion:cell>]]); 
+[basiccell,     basiccell,      basiccell,      hardenedcell,   reinforcedcell, hardenedcell,   basiccell,      basiccell,      basiccell],
+[basiccell,     basiccell,      hardenedcell,   reinforcedcell, signalumcell,   reinforcedcell, hardenedcell,   basiccell,      basiccell],
+[basiccell,     hardenedcell,   reinforcedcell, signalumcell,   resonantcell,   signalumcell,   reinforcedcell, hardenedcell,   basiccell],
+[hardenedcell,  reinforcedcell, signalumcell,   resonantcell,   ups,            resonantcell,   signalumcell,   reinforcedcell, hardenedcell],
+[reinforcedcell,signalumcell,   resonantcell,   ups,            infcata,        ups,            resonantcell,   signalumcell,   reinforcedcell],
+[hardenedcell,  reinforcedcell, signalumcell,   resonantcell,   ups,            resonantcell,   signalumcell,   reinforcedcell, hardenedcell],
+[basiccell,     hardenedcell,   reinforcedcell, signalumcell,   resonantcell,   signalumcell,   reinforcedcell, hardenedcell,   basiccell],
+[basiccell,     basiccell,      hardenedcell,   reinforcedcell, signalumcell,   reinforcedcell, hardenedcell,   basiccell,      basiccell],
+[basiccell,     basiccell,      basiccell,      hardenedcell,   reinforcedcell, hardenedcell,   basiccell,      basiccell,      basiccell]]);
 
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>, [
 [<extrautils2:opinium:3>,<extrautils2:opinium:4>,<extrautils2:opinium:5>,<extrautils2:opinium:6>,<extrautils2:opinium:7>,<extrautils2:opinium:6>,<extrautils2:opinium:5>,<extrautils2:opinium:4>,<extrautils2:opinium:3>],
@@ -623,7 +591,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>, [
 [<extrautils2:opinium:6>,<extrautils2:opinium:7>,<extrautils2:opinium:8>,<extrautils2:rainbowgenerator>,<contenttweaker:ultimate_generator>,<extrautils2:rainbowgenerator>,<extrautils2:opinium:8>,<extrautils2:opinium:7>,<extrautils2:opinium:6>],
 [<extrautils2:opinium:5>,<extrautils2:opinium:6>,<extrautils2:opinium:7>,<extrautils2:opinium:8>,<extrautils2:rainbowgenerator>,<extrautils2:opinium:8>,<extrautils2:opinium:7>,<extrautils2:opinium:6>,<extrautils2:opinium:5>],
 [<extrautils2:opinium:4>,<extrautils2:opinium:5>,<extrautils2:opinium:6>,<extrautils2:opinium:7>,<extrautils2:opinium:8>,<extrautils2:opinium:7>,<extrautils2:opinium:6>,<extrautils2:opinium:5>,<extrautils2:opinium:4>],
-[<extrautils2:opinium:3>,<extrautils2:opinium:4>,<extrautils2:opinium:5>,<extrautils2:opinium:6>,<extrautils2:opinium:7>,<extrautils2:opinium:6>,<extrautils2:opinium:5>,<extrautils2:opinium:4>,<extrautils2:opinium:3>]]);  
+[<extrautils2:opinium:3>,<extrautils2:opinium:4>,<extrautils2:opinium:5>,<extrautils2:opinium:6>,<extrautils2:opinium:7>,<extrautils2:opinium:6>,<extrautils2:opinium:5>,<extrautils2:opinium:4>,<extrautils2:opinium:3>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:drum:4>, [
 [<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2197>,<gregtech:machine:2198>,<gregtech:machine:2197>,<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2196>],
@@ -634,11 +602,11 @@ mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:drum:4>, [
 [<gregtech:machine:2197>,<gregtech:machine:2198>,<gregtech:machine:2199>,<gregtech:machine:2200>,<gregtech:machine:2200>,<gregtech:machine:2200>,<gregtech:machine:2199>,<gregtech:machine:2198>,<gregtech:machine:2197>],
 [<gregtech:machine:2196>,<gregtech:machine:2197>,<gregtech:machine:2198>,<gregtech:machine:2199>,<gregtech:machine:2200>,<gregtech:machine:2199>,<gregtech:machine:2198>,<gregtech:machine:2197>,<gregtech:machine:2196>],
 [<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2197>,<gregtech:machine:2198>,<gregtech:machine:2199>,<gregtech:machine:2198>,<gregtech:machine:2197>,<gregtech:machine:2196>,<gregtech:machine:2196>],
-[<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2197>,<gregtech:machine:2198>,<gregtech:machine:2197>,<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2196>]]); 
- 
+[<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2197>,<gregtech:machine:2198>,<gregtech:machine:2197>,<gregtech:machine:2196>,<gregtech:machine:2196>,<gregtech:machine:2196>]]);
+
 
 mods.extendedcrafting.TableCrafting.addShaped(creativebuffer, [
-[<contenttweaker:ultimate_power_storage>,<gregtech:machine:625>,<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>,<gregtech:machine:625>,<contenttweaker:ultimate_power_storage>],
+[ups,<gregtech:machine:625>,<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>,<gregtech:machine:625>,ups],
 [<gregtech:machine:625>,<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:641>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>,<gregtech:machine:625>],
 [<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:641>,<gregtech:machine:645>,<gregtech:machine:641>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>],
 [<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:641>,<gregtech:machine:645>,<gregtech:machine:649>,<gregtech:machine:645>,<gregtech:machine:641>,<gregtech:machine:637>,<gregtech:machine:633>],
@@ -646,9 +614,9 @@ mods.extendedcrafting.TableCrafting.addShaped(creativebuffer, [
 [<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:641>,<gregtech:machine:645>,<gregtech:machine:649>,<gregtech:machine:645>,<gregtech:machine:641>,<gregtech:machine:637>,<gregtech:machine:633>],
 [<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:641>,<gregtech:machine:645>,<gregtech:machine:641>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>],
 [<gregtech:machine:625>,<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:641>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>,<gregtech:machine:625>],
-[<contenttweaker:ultimate_power_storage>,<gregtech:machine:625>,<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>,<gregtech:machine:625>,<contenttweaker:ultimate_power_storage>]]); 
-  
-  
+[ups,<gregtech:machine:625>,<gregtech:machine:629>,<gregtech:machine:633>,<gregtech:machine:637>,<gregtech:machine:633>,<gregtech:machine:629>,<gregtech:machine:625>,ups]]);
+
+
 mods.extendedcrafting.TableCrafting.addShaped(<thermalcultivation:watering_can:32000>, [
 [null,null,null,null,null,null,null,null,null],
 [<thermalcultivation:watering_can:4>,null,null,null,<thermalcultivation:watering_can:2>,<thermalcultivation:watering_can:2>,<thermalcultivation:watering_can:2>,null,null],
@@ -658,7 +626,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalcultivation:watering_can:3
 [null,null,null,<thermalcultivation:watering_can:3>,<thermalcultivation:watering_can:3>,<thermalcultivation:watering_can:1>,<thermalcultivation:watering_can>,<thermalcultivation:watering_can>,<thermalcultivation:watering_can>],
 [null,null,null,<thermalcultivation:watering_can:3>,<thermalcultivation:watering_can:3>,<thermalcultivation:watering_can:1>,<thermalcultivation:watering_can:1>,<thermalcultivation:watering_can:1>,null],
 [null,null,null,null,<thermalcultivation:watering_can:2>,<thermalcultivation:watering_can:2>,<thermalcultivation:watering_can:2>,null,null],
-[null,null,null,null,null,null,null,null,null]]); 
+[null,null,null,null,null,null,null,null,null]]);
 
 
 mods.extendedcrafting.TableCrafting.addShaped(<solarflux:solar_panel_infinity>, [
@@ -673,7 +641,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<solarflux:solar_panel_infinity>, 
 [<solarflux:solar_panel_neutronium>,<moreplates:neutronium_plate>,<moreplates:neutronium_plate>,<moreplates:neutronium_plate>,<moreplates:neutronium_plate>,<moreplates:neutronium_plate>,<moreplates:neutronium_plate>,<moreplates:neutronium_plate>,<solarflux:solar_panel_neutronium>]]);
 
 
-  
+
 //Jetpack
 recipes.remove(<simplyjetpacks:metaitemmods:12>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:12>, [
@@ -700,17 +668,17 @@ recipes.remove(<simplyjetpacks:metaitemmods:22>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:22>, [
 	[null, <ore:plateIron>, null],
 	[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
-	[null, <ore:plateIron>, null]]);	
+	[null, <ore:plateIron>, null]]);
 recipes.remove(<simplyjetpacks:metaitemmods:23>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:23>, [
 	[null, <ore:plateBronze>, null],
 	[<ore:plateBronze>,<ore:plateBronze>,<ore:plateBronze>],
-	[null, <ore:plateBronze>, null]]);	
+	[null, <ore:plateBronze>, null]]);
 recipes.remove(<simplyjetpacks:metaitemmods:24>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:24>, [
 	[null, <ore:plateInvar>, null],
 	[<ore:plateInvar>,<ore:plateInvar>,<ore:plateInvar>],
-	[null, <ore:plateInvar>, null]]);	
+	[null, <ore:plateInvar>, null]]);
 recipes.remove(<simplyjetpacks:metaitemmods:25>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:25>, [
 	[null, <ore:plateEnderium>, null],
@@ -726,7 +694,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemjetpack>, [
 [null,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:8>,<simplyjetpacks:itemjetpack:5>,null,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:17>,<simplyjetpacks:itemjetpack:14>,null],
 [null,<simplyjetpacks:itemjetpack:6>,<simplyjetpacks:itemjetpack:6>,<simplyjetpacks:itemjetpack:6>,null,<simplyjetpacks:itemjetpack:15>,<simplyjetpacks:itemjetpack:15>,<simplyjetpacks:itemjetpack:15>,null],
 [null,null,<simplyjetpacks:itemjetpack:7>,null,null,null,<simplyjetpacks:itemjetpack:16>,null,null],
-[null,<simplyjetpacks:itemjetpack:7>,<simplyjetpacks:itemjetpack:7>,<simplyjetpacks:itemjetpack:7>,null,<simplyjetpacks:itemjetpack:16>,<simplyjetpacks:itemjetpack:16>,<simplyjetpacks:itemjetpack:16>,null]]); 
+[null,<simplyjetpacks:itemjetpack:7>,<simplyjetpacks:itemjetpack:7>,<simplyjetpacks:itemjetpack:7>,null,<simplyjetpacks:itemjetpack:16>,<simplyjetpacks:itemjetpack:16>,<simplyjetpacks:itemjetpack:16>,null]]);
 
 
 
@@ -739,7 +707,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>
 [<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<contenttweaker:ultimate_power_storage>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>],
 [<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>],
 [<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>],
-[<thermalexpansion:capacitor>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor>]]); 
+[<thermalexpansion:capacitor>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative>, [
 [<storagedrawers:upgrade_storage:4>,<actuallyadditions:block_giant_chest_medium>,<actuallyadditions:block_giant_chest_large>,<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:806>,<actuallyadditions:block_giant_chest_large>,<actuallyadditions:block_giant_chest_medium>,<storagedrawers:upgrade_storage:4>],
@@ -750,7 +718,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative>,
 [<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:1011>,<gregtech:machine:1012>,<gregtech:machine:1013>,<gregtech:machine:1012>,<gregtech:machine:1011>,<gregtech:machine:1010>,<gregtech:machine:806>],
 [<actuallyadditions:block_giant_chest_large>,<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:1011>,<gregtech:machine:1012>,<gregtech:machine:1011>,<gregtech:machine:1010>,<gregtech:machine:806>,<actuallyadditions:block_giant_chest_large>],
 [<actuallyadditions:block_giant_chest_medium>,<actuallyadditions:block_giant_chest_large>,<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:1011>,<gregtech:machine:1010>,<gregtech:machine:806>,<actuallyadditions:block_giant_chest_large>,<actuallyadditions:block_giant_chest_medium>],
-[<storagedrawers:upgrade_storage:4>,<actuallyadditions:block_giant_chest_medium>,<actuallyadditions:block_giant_chest_large>,<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:806>,<actuallyadditions:block_giant_chest_large>,<actuallyadditions:block_giant_chest_medium>,<storagedrawers:upgrade_storage:4>]]); 
+[<storagedrawers:upgrade_storage:4>,<actuallyadditions:block_giant_chest_medium>,<actuallyadditions:block_giant_chest_large>,<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:806>,<actuallyadditions:block_giant_chest_large>,<actuallyadditions:block_giant_chest_medium>,<storagedrawers:upgrade_storage:4>]]);
 
 
 
@@ -809,9 +777,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:ultimate_power_sto
 [<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32599>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>],
 [<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>],
 [<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>],
-[<contenttweaker:doublecompressedoctadiccapacitor>,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>,<contenttweaker:doublecompressedoctadiccapacitor>]]); 
+[<contenttweaker:doublecompressedoctadiccapacitor>,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>,<contenttweaker:doublecompressedoctadiccapacitor>]]);
 
 <gregtech:turbine_casing:3>.displayName = "Magnalium Turbine Casing";
-	
-	
-	
+

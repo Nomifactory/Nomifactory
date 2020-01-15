@@ -222,7 +222,7 @@ block_dust.maxStackSize = 64;
 block_dust.register();
 
 var endstonedust = VanillaFactory.createItem("endstonedust");
-endstonedust.maxStackSize = 64; 
+endstonedust.maxStackSize = 64;
 endstonedust.register();
 
 var knightslimeingot = VanillaFactory.createItem("knightslimeingot");
@@ -309,6 +309,7 @@ var moltenempoweredpalis = VanillaFactory.createFluid("moltenempoweredpalis", Co
 var moltenempoweredenori = VanillaFactory.createFluid("moltenempoweredenori", Color.fromHex("e6e6e6"));
 var moltenempowereddiamatine = VanillaFactory.createFluid("moltenempowereddiamatine", Color.fromHex("00fbff"));
 var moltenempoweredemeradic = VanillaFactory.createFluid("moltenempoweredemeradic", Color.fromHex("00ff00"));
+var moltenempoweredvoid = VanillaFactory.createFluid("moltenempoweredvoid", Color.fromHex("e0e0e0"));
 var moltensoularium = VanillaFactory.createFluid("moltensoularium", Color.fromHex("6b4411"));
 var moltendarksoularium = VanillaFactory.createFluid("moltendarksoularium", Color.fromHex("422805"));
 krypton.register();
@@ -331,6 +332,7 @@ moltenempoweredpalis.register();
 moltenempoweredenori.register();
 moltenempowereddiamatine.register();
 moltenempoweredemeradic.register();
+moltenempoweredvoid.register();
 moltensoularium.register();
 moltendarksoularium.register();
 
@@ -633,3 +635,4 @@ var ultradensehydrogen = VanillaFactory.createItem("ultradensehydrogen");
 ultradensehydrogen.maxStackSize = 64;
 ultradensehydrogen.rarity = "rare";
 ultradensehydrogen.register();
+
