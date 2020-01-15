@@ -424,7 +424,13 @@ ultimate_generator.register();
 
 var hotdraconiumingot = VanillaFactory.createItem("hotdraconiumingot");
 hotdraconiumingot.rarity = "rare";
-hotdraconiumingot.maxStackSize = 64;
+hotdraconiumingot.maxStackSize = 16;
+
+hotdraconiumingot.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
+    owner.attackEntityFrom(<damageSource:heat>.setDamageBypassesArmor(), 3.0);
+    return;
+};
+
 hotdraconiumingot.register();
 
 
