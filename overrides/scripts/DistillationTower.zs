@@ -47,6 +47,9 @@ function increaseBatchSize(recipe as Recipe, reqDuration as int, rmap as RecipeM
 }
 
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil> * 50]),1200,DT);
+increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil_light> * 150]),1200,DT);
+increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil_medium> * 100]),1200,DT);//Raw Oil
+increaseBatchSize(DT.findRecipe(288, null, [<liquid:oil_heavy> * 150]),1200,DT);
 
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:creosote> * 24]),1200,DT);
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:seed_oil> * 24]),1200,DT);
