@@ -45,19 +45,20 @@ function increaseBatchSize(recipe as Recipe, reqDuration as int, rmap as RecipeM
 		.buildAndRegister();
 		}
 }
-
+//durations chosen to be close to 1m,
+//but low enough for all inputs/outputs to fit into 8bucket ULV hatches
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil> * 50]),1200,DT);
-increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil_light> * 150]),1200,DT);
+increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil_light> * 150]),600,DT);
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:oil_medium> * 100]),1200,DT);//Raw Oil
-increaseBatchSize(DT.findRecipe(288, null, [<liquid:oil_heavy> * 150]),1200,DT);
+increaseBatchSize(DT.findRecipe(288, null, [<liquid:oil_heavy> * 150]),240,DT);
 
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:creosote> * 24]),1200,DT);
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:seed_oil> * 24]),1200,DT);
 increaseBatchSize(DT.findRecipe(96, null, [<liquid:fish_oil> * 24]),1200,DT);
 
-increaseBatchSize(DT.findRecipe(256, null, [<liquid:charcoal_byproducts> * 1000]),1200,DT);
-increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_tar> * 1000]),1200,DT);
-increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_gas> * 1000]),1200,DT);
-increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_vinegar> * 1000]),1200,DT);
+increaseBatchSize(DT.findRecipe(256, null, [<liquid:charcoal_byproducts> * 1000]),320,DT);
+increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_tar> * 1000]),320,DT);
+increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_gas> * 1000]),320,DT);
+increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_vinegar> * 1000]),320,DT);
 
-increaseBatchSize(DT.findRecipe(180, null, [<liquid:fermented_biomass> * 1000]),1200,DT);
+increaseBatchSize(DT.findRecipe(180, null, [<liquid:fermented_biomass> * 1000]),600,DT);
