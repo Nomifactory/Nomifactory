@@ -2,9 +2,9 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
-
 import mods.gregtech.recipe.RecipeMap;
 
+val fluid_extractor = RecipeMap.getByName("fluid_extractor");
 val macerator = RecipeMap.getByName("macerator");
 val mixer = RecipeMap.getByName("mixer");
 val alloy = RecipeMap.getByName("alloy_smelter");
@@ -177,6 +177,18 @@ recipes.addShaped(<nuclearcraft:part:5>, [
 
 thermal_sep.recipeBuilder().inputs([<gregtech:meta_item_1:2076>]).outputs(<nuclearcraft:uranium:4>).EUt(48).duration(3200).buildAndRegister();
 thermal_sep.recipeBuilder().inputs([<gregtech:meta_item_1:10076>]).outputs(<nuclearcraft:uranium:4>).EUt(48).duration(3200).buildAndRegister();
+
+fluidextractor.findRecipe(32, [<nuclearcraft:thorium:4>], null).remove();
+fluidextractor.findRecipe(32, [<nuclearcraft:thorium:0>], null).remove();
+fluidextractor.findRecipe(32, [<nuclearcraft:thorium:2>], null).remove();
+fluidextractor.findRecipe(32, [<nuclearcraft:thorium:6>], null).remove();
+
+mixer.recipeBuilder()
+	.inputs(<ore:nuggetThorium230> * 1, <ore:nuggetThorium232> * 9)
+	.outputs(<gregtech:meta_item_1:2069)
+	.duration(160)
+    .EUt(32)
+    .buildAndRegister();
 
 
 
