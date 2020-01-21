@@ -239,7 +239,7 @@ recipes.addShaped(<simplyjetpacks:itemjetpack:18>, [
 	[<simplyjetpacks:metaitemmods:21>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:metaitemmods:21>],
 	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>, <simplyjetpacks:metaitemmods:30>]]);
 
-recipes.addShaped(<contenttweaker:compressedoctadiccapacitor>.withTag({display: {Lore:["This is what is known as compressed octadic capacitor", "Can be inserted into enderio machines", "Level 4"]},eiocap: {level: 4 as float}}), [
+recipes.addShaped(<contenttweaker:compressedoctadiccapacitor>.withTag({display: {Lore:["This is what is known as a compressed octadic capacitor", "Or, you could just call this an octadic capacitor two", "Can be inserted into enderio machines", "Level 4"]},eiocap: {level: 4 as float}}), [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>]]);
