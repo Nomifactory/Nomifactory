@@ -239,12 +239,12 @@ recipes.addShaped(<simplyjetpacks:itemjetpack:18>, [
 	[<simplyjetpacks:metaitemmods:21>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:metaitemmods:21>],
 	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>, <simplyjetpacks:metaitemmods:30>]]);
 
-recipes.addShaped(<contenttweaker:compressedoctadiccapacitor>, [
+recipes.addShaped(<contenttweaker:compressedoctadiccapacitor>.withTag({display: {Lore:["This is what is known as compressed octadic capacitor", "Can be inserted into enderio machines", "Level 4"]},eiocap: {level: 4 as float}}), [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>]]);
 
-recipes.addShaped(<contenttweaker:doublecompressedoctadiccapacitor>, [
+recipes.addShaped(<contenttweaker:doublecompressedoctadiccapacitor>.withTag({display: {Lore:["AND THIS IS TO GO EVEN FURTHER BEYOND", "Can be inserted into enderio machines", "Level 9.001", "Just kidding, it's only 5"]},eiocap: {level: 5 as float}}), [
 	[<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>],
 	[<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>],
 	[<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>]]);
