@@ -4,16 +4,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
 import mods.gregtech.recipe.RecipeMap;
 
-val fluid_extractor = RecipeMap.getByName("fluid_extractor");
-val macerator = RecipeMap.getByName("macerator");
-val mixer = RecipeMap.getByName("mixer");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
-val compressor = RecipeMap.getByName("compressor");
-val canner = RecipeMap.getByName("canner");
-val fluid_canner = RecipeMap.getByName("fluid_canner");
-val reactor = RecipeMap.getByName("chemical_reactor");
-
 /*
 [[<>, <>, <>, <>, <>, <>],
 [<>, <>, <>, <>, <>, <>],
