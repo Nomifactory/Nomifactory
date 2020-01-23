@@ -30,6 +30,13 @@ recipes.addShaped(<gregtech:meta_item_2:32570>, [
 	[<ore:treeSapling>,<ore:treeSapling>,<ore:treeSapling>]]);
 furnace.addRecipe(<minecraft:slime_ball> * 2, <gregtech:meta_item_2:32570>, 0.0);
 
+
+//Add in a new dirt recipe
+recipes.addShaped(<minecraft:dirt> * 16, [
+	[<ore:treeSapling>,<ore:treeSapling>,null],
+	[<minecraft:clay>,<deepmoblearning:living_matter_overworldian>,null],
+	[null,null,null]]);
+
 //Mining Hammers
 <thermalfoundation:tool.hammer_stone>.displayName = "Stone Mining Hammer";
 <thermalfoundation:tool.hammer_stone>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
