@@ -431,6 +431,8 @@ tungsten2.addItemOutput(<gregtech:ore_cassiterite_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_tin_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_redstone_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_certus_quartz_0:6> * 64);
+tungsten2.addItemOutput(<gregtech:ore_sapphire_0:6> * 64);
+tungsten2.addItemOutput(<gregtech:ore_sapphire_0:6> * 64);
 tungsten2.build();
 
 
