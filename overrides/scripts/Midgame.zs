@@ -18,6 +18,7 @@ val centrifuge = RecipeMap.getByName("centrifuge");
 val assembler = RecipeMap.getByName("assembler");
 val saw = RecipeMap.getByName("cutting_saw");
 val extruder = RecipeMap.getByName("extruder");
+val alloy = RecipeMap.getByName("alloy_smelter");
 
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
@@ -354,6 +355,17 @@ recipes.addShaped(<enderio:item_material:41>, [
 	[<enderio:item_alloy_ingot:7>,<minecraft:skull:2>,<enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
 	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);
+
+//Extra Enderio Glasses
+
+//Enlightened Quite Clear Glass
+alloy.recipeBuilder().inputs([<enderio:block_fused_glass:0>, <minecraft:glowstone>]).outputs([<enderio:block_enlightened_fused_glass:0>]).duration(160).EUt(16).buildAndRegister();	
+
+//Enlightened Fused Quartz
+alloy.recipeBuilder().inputs([<enderio:block_fused_quartz:0>, <minecraft:glowstone>]).outputs([<enderio:block_enlightened_fused_quartz:0>]).duration(160).EUt(16).buildAndRegister();
+
+//Dark Fused Quarz
+alloy.recipeBuilder().inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>]).outputs([<enderio:block_dark_fused_quartz:0>]).duration(200).EUt(32).buildAndRegister();		
 
 
 
