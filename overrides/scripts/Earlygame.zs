@@ -30,6 +30,8 @@ recipes.addShaped(<gregtech:meta_item_2:32570>, [
 	[<ore:treeSapling>,<ore:treeSapling>,<ore:treeSapling>]]);
 furnace.addRecipe(<minecraft:slime_ball> * 2, <gregtech:meta_item_2:32570>, 0.0);
 
+//Removes the unobtainable dirt recipe
+recipes.removeByRecipeName("thermalfoundation:block_dirt");
 
 //Add in a new dirt recipe
 recipes.addShaped(<minecraft:dirt> * 16, [
