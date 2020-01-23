@@ -112,7 +112,7 @@ recipes.addShaped(<contenttweaker:tieroneship>, [
 
 //Tier 1 Guidance
 recipes.addShaped(<contenttweaker:t1guidance>,
-	[[<gregtech:meta_item_1:32690>, <contenttweaker:steelplating>, <gregtech:meta_item_1:32690>],
+	[[<gregtech:meta_item_1:32691>, <contenttweaker:steelplating>, <gregtech:meta_item_1:32691>],
 	[<contenttweaker:steelplating>, <ore:circuitGood>, <contenttweaker:steelplating>],
 	[<ore:circuitGood>,<ore:circuitGood>,<ore:circuitGood>]]);
 
