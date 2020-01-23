@@ -203,7 +203,7 @@ recipes.remove(<gregtech:machine_casing:6>);
 recipes.remove(<gregtech:machine:506>);
 recipes.addShaped(<gregtech:machine_casing:6>, [
 	[<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>], 
-	[<ore:plateLumium>, <ore:craftingToolWrench>, <ore:plateLumium>], 
+	[<ore:plateLumium>, <gregtech:meta_tool:8>, <ore:plateLumium>], 
 	[<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
 recipes.addShaped(<gregtech:machine:506>, [
 	[<ore:platePlastic>, <ore:plateLumium>, <ore:platePlastic>], 
