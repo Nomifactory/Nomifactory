@@ -963,6 +963,7 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:itemSilicon>.add(<gregtech:meta_item_2:32440>);
 <ore:dustQuartz>.add(<gregtech:meta_item_1:2201>);
+<ore:dustBone>.add(<minecraft:dye:15>);
 
 //Ores
 <ore:oreIron>.add(<minecraft:iron_ore>);
