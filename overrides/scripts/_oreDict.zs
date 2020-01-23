@@ -974,7 +974,7 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreEmerald>.add(<minecraft:emerald_ore>);
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
-
+<ore:blockAluminum>.add(<gregtech:compressed_0:0>);
 
 ////////////////////////////////
 //			Removals          //
