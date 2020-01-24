@@ -18,7 +18,6 @@ val centrifuge = RecipeMap.getByName("centrifuge");
 val assembler = RecipeMap.getByName("assembler");
 val saw = RecipeMap.getByName("cutting_saw");
 val extruder = RecipeMap.getByName("extruder");
-val alloy = RecipeMap.getByName("alloy_smelter");
 
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
