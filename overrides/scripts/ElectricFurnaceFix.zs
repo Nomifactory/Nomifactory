@@ -1,3 +1,4 @@
+#priority -10
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.recipes.IFurnaceRecipe;
 
