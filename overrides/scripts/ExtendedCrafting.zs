@@ -144,7 +144,6 @@ centrifuge.findRecipe(30, [], [<liquid:noble_gases> * 43000]).remove();
 var bsingot = <gregtech:meta_item_1:10231>;
 var bsplate = <gregtech:meta_item_1:12231>;
 mods.jei.JEI.removeAndHide(<extendedcrafting:material>);
-mods.jei.JEI.removeAndHide(bsplate);
 mods.jei.JEI.removeAndHide(<extendedcrafting:storage>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:3>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:table_basic>);
