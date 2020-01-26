@@ -173,12 +173,34 @@ recipes.addShaped(<packagedauto:me_package_component>, [
 	[<gregtech:meta_item_1:12072>, <appliedenergistics2:quartz_glass>, <gregtech:meta_item_1:12072>]]);
 
 
-recipes.remove(<packagedavaritia:extreme_crafter>);
-recipes.addShaped(<packagedavaritia:extreme_crafter>, [
-	[<moreplates:crystal_matrix_plate>, <packagedauto:me_package_component>, <moreplates:crystal_matrix_plate>],
-	[<moreplates:crystal_matrix_plate>, <extendedcrafting:table_ultimate>, <moreplates:crystal_matrix_plate>],
-	[<moreplates:crystal_matrix_plate>, <moreplates:crystal_matrix_plate>, <moreplates:crystal_matrix_plate>]]);
+//PackagedExCrafting
 
+// Advanced 
+recipes.remove(<packagedexcrafting:advanced_crafter>);
+recipes.addShaped(<packagedexcrafting:advanced_crafter>, [
+	[<extendedcrafting:material:15> , <extendedcrafting:interface>                         , <extendedcrafting:material:15>],
+	[<gregtech:meta_item_1:12231>   , <extendedcrafting:table_advanced>.transformDamage(0) , <gregtech:meta_item_1:12231>  ],
+	[<extendedcrafting:material:15> , <packagedauto:me_package_component>                  , <extendedcrafting:material:15>]
+]);
+
+// Elite
+recipes.remove(<packagedexcrafting:elite_crafter>);
+recipes.addShaped(<packagedexcrafting:elite_crafter>, [
+	[<extendedcrafting:material:16> , <extendedcrafting:interface>                      , <extendedcrafting:material:16>],
+	[<gregtech:meta_item_1:12231>   , <extendedcrafting:table_elite>.transformDamage(0) , <gregtech:meta_item_1:12231>  ],
+	[<extendedcrafting:material:16> , <packagedauto:me_package_component>               , <extendedcrafting:material:16>]
+]);
+
+// Ultimate
+recipes.remove(<packagedexcrafting:ultimate_crafter>);
+recipes.addShaped(<packagedexcrafting:ultimate_crafter>, [
+	[<extendedcrafting:material:17> , <extendedcrafting:interface>                         , <extendedcrafting:material:17>],
+	[<gregtech:meta_item_1:12231>   , <extendedcrafting:table_ultimate>.transformDamage(0) , <gregtech:meta_item_1:12231>  ],
+	[<extendedcrafting:material:17> , <packagedauto:me_package_component>                  , <extendedcrafting:material:17>]
+]);
+
+recipes.remove(<packagedexcrafting:ender_crafter>);
+mods.jei.JEI.removeAndHide(<packagedexcrafting:ender_crafter>);
 
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:2035>,<gregtech:meta_item_1:2138> * 4]).outputs([<thermalfoundation:glass:3>]).duration(100).EUt(30).buildAndRegister();
 
