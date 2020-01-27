@@ -159,9 +159,8 @@ recipes.removeByRecipeName("thermalfoundation:block_dirt");
 
 //Add in a new dirt recipe
 recipes.addShapeless(<minecraft:dirt> * 16, [
-	[<ore:treeSapling>,<ore:treeSapling>,null],
-	[<minecraft:clay>,<deepmoblearning:living_matter_overworldian>,null],
-	[null,null,null]]);
+	<ore:treeSapling>,<ore:treeSapling>,
+	<minecraft:clay>,<deepmoblearning:living_matter_overworldian>]);
 
 
 
