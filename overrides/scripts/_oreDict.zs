@@ -918,7 +918,6 @@ var gearsDisabled as IItemStack[][IOreDictEntry] = {
 	#gearWood
 	<ore:gearWood> : [
 		<appliedenergistics2:material:40>,
-		<enderio:item_material:9>,
 		<thermalfoundation:material:22>
 	]
 };
