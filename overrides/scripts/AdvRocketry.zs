@@ -199,9 +199,6 @@ recipes.addShaped(<packagedexcrafting:ultimate_crafter>, [
 	[<extendedcrafting:material:17> , <packagedauto:me_package_component>                  , <extendedcrafting:material:17>]
 ]);
 
-recipes.remove(<packagedexcrafting:ender_crafter>);
-mods.jei.JEI.removeAndHide(<packagedexcrafting:ender_crafter>);
-
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:2035>,<gregtech:meta_item_1:2138> * 4]).outputs([<thermalfoundation:glass:3>]).duration(100).EUt(30).buildAndRegister();
 
 //Suit Workstation
