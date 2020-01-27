@@ -17,7 +17,7 @@ rh(<enderio:item_material:75>); // Infinity Goop
 rh(<enderio:item_material:76>); // Clay-Coated Glowstone
 rh(<enderio:item_material:21>); // Flour
 rh(<enderio:item_species_item_filter>); // Species Filter (Forestry)
-<ore:dustFlour>.remove(<enderio:item_material:21>); // Flour
+<ore:dustWheat>.remove(<enderio:item_material:21>); // Flour
 
 rh(<enderio:item_material:67>); // Enhanced Dye Blend
 rh(<enderio:item_material:52>); // Soul-Attuned Dye
