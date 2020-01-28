@@ -918,7 +918,6 @@ var gearsDisabled as IItemStack[][IOreDictEntry] = {
 	#gearWood
 	<ore:gearWood> : [
 		<appliedenergistics2:material:40>,
-		<enderio:item_material:9>,
 		<thermalfoundation:material:22>
 	]
 };
@@ -963,6 +962,7 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:itemSilicon>.add(<gregtech:meta_item_2:32440>);
 <ore:dustQuartz>.add(<gregtech:meta_item_1:2201>);
+<ore:dustBone>.add(<minecraft:dye:15>);
 
 //Ores
 <ore:oreIron>.add(<minecraft:iron_ore>);
@@ -974,7 +974,7 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreEmerald>.add(<minecraft:emerald_ore>);
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
-
+<ore:blockAluminum>.add(<gregtech:compressed_0:0>);
 
 ////////////////////////////////
 //			Removals          //

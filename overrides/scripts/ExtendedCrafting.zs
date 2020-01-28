@@ -144,7 +144,6 @@ centrifuge.findRecipe(30, [], [<liquid:noble_gases> * 43000]).remove();
 var bsingot = <gregtech:meta_item_1:10231>;
 var bsplate = <gregtech:meta_item_1:12231>;
 mods.jei.JEI.removeAndHide(<extendedcrafting:material>);
-mods.jei.JEI.removeAndHide(bsplate);
 mods.jei.JEI.removeAndHide(<extendedcrafting:storage>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:3>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:table_basic>);
@@ -513,7 +512,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1
 [<storagedrawers:upgrade_creative>, 	<avaritia:resource:6>, 				<avaritia:resource:6>, 				<avaritia:resource:6>, 						<avaritia:resource:6>, 						<avaritia:resource:6>, 						<avaritia:resource:6>, 					<avaritia:resource:6>, 							<storagedrawers:upgrade_creative>]]);
 
 solidifier.recipeBuilder().fluidInputs([<liquid:moltencreativeportabletank> * 144]).notConsumable(<contenttweaker:creativeportabletankmold>).outputs(creativetank).duration(500).EUt(100000).buildAndRegister();
-fluid_extractor.recipeBuilder().inputs([<contenttweaker:heartofauniverse>]).fluidOutputs([<liquid:moltencreativeportabletank>*288]).duration(500).EUt(100000).buildAndRegister();
+fluid_extractor.recipeBuilder().inputs([<contenttweaker:heartofauniverse>]).fluidOutputs([<liquid:moltencreativeportabletank>*145]).duration(500).EUt(100000).buildAndRegister();
 
 
 ////////////////////////// Creative Items ///////////////////////
