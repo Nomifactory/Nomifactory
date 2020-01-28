@@ -123,6 +123,7 @@ recipes.addShapeless(
     , [<enderio:item_dark_steel_upgrade>, <solarflux:solar_panel_4>]
 );
 
+
 //Extra Enderio Glasses
 
 //Enlightened Quite Clear Glass
