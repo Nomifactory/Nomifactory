@@ -355,8 +355,6 @@ recipes.addShaped(<enderio:item_material:41>, [
 	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
 	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);
 
-	
-
 
 
 
