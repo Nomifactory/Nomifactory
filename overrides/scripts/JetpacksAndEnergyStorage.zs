@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
+import crafttweaker.item.IItemStack;
 
 //Conductive Iron Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:7>);
@@ -214,7 +215,7 @@ recipes.addShaped(<simplyjetpacks:itemjetpack:12>, [
 //Vibrant Alloy Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe4");
 recipes.addShaped(<simplyjetpacks:itemjetpack:4>, [
-	[<gregtech:meta_item_1:12702>, <contenttweaker:compressedoctadiccapacitor>, <gregtech:meta_item_1:12702>],
+	[<gregtech:meta_item_1:12702>, compressedoctadiccap, <gregtech:meta_item_1:12702>],
 	[<gregtech:meta_item_1:12702>, <simplyjetpacks:itemjetpack:3>, <gregtech:meta_item_1:12702>],
 	[<simplyjetpacks:metaitemmods:10>, null, <simplyjetpacks:metaitemmods:10>]]);
 
@@ -231,23 +232,35 @@ recipes.removeByRecipeName("simplyjetpacks:upgraderecipe5");
 recipes.addShaped(<simplyjetpacks:itemjetpack:9>, [
 	[<enderio:item_material:16>, <extrautils2:angelring:*>, <enderio:item_material:16>],
 	[<simplyjetpacks:metaitemmods:4>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:metaitemmods:4>],
-	[<simplyjetpacks:metaitemmods:11>, <contenttweaker:doublecompressedoctadiccapacitor>, <simplyjetpacks:metaitemmods:11>]]);
+	[<simplyjetpacks:metaitemmods:11>, doublecompressedoctadiccap, <simplyjetpacks:metaitemmods:11>]]);
 
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe34");
 recipes.addShaped(<simplyjetpacks:itemjetpack:18>, [
-	[<contenttweaker:compressedoctadiccapacitor>, <extrautils2:angelring:*>, <contenttweaker:compressedoctadiccapacitor>],
+	[compressedoctadiccap, <extrautils2:angelring:*>, compressedoctadiccap],
 	[<simplyjetpacks:metaitemmods:21>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:metaitemmods:21>],
 	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>, <simplyjetpacks:metaitemmods:30>]]);
 
-recipes.addShaped(<contenttweaker:compressedoctadiccapacitor>.withTag({display: {Lore:["This is what is known as a compressed octadic capacitor", "Or, you could just call this an octadic capacitor two", "Can be inserted into enderio machines", "Level 4"]},eiocap: {level: 4 as float}}), [
+recipes.addShaped(compressedoctadiccap, [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>]]);
 
-recipes.addShaped(<contenttweaker:doublecompressedoctadiccapacitor>.withTag({display: {Lore:["AND THIS IS TO GO EVEN FURTHER BEYOND", "Can be inserted into enderio machines", "Level 9.001", "Just kidding, it's only 5"]},eiocap: {level: 5 as float}}), [
-	[<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>],
-	[<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>],
-	[<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>,<contenttweaker:compressedoctadiccapacitor>]]);
+recipes.addShaped(doublecompressedoctadiccap, [
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap]]);
+	
+//Replace old compressed capacitors with functional ones
+recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccapacitor>]);
+recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
+
+//An attempt to do the same in JEI
+//mods.jei.JEI.hide(<contenttweaker:compressedoctadiccapacitor>);
+//mods.jei.JEI.addItem(compressedoctadiccap);
+//mods.jei.JEI.hide(<contenttweaker:doublecompressedoctadiccapacitor>);
+//mods.jei.JEI.addItem(doublecompressedoctadiccap);
+<contenttweaker:compressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
+<contenttweaker:doublecompressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
 
 recipes.remove(<openglider:hang_glider_part:2>);
 recipes.addShaped(<openglider:hang_glider_part:2>, [
@@ -670,4 +683,3 @@ mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_soul_binder>, [
 	[<enderio:item_alloy_ingot:7>, <minecraft:skull:4>,          <ore:itemSoulMachineChassi>,   <minecraft:skull:2>,         <enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>, <gregtech:meta_item_1:12235>, <minecraft:skull>,             <gregtech:meta_item_1:12235>,<enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:7>,  <enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>]]);
-

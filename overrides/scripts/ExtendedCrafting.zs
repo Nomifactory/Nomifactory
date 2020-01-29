@@ -768,7 +768,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_genera
 
 //Ultimate Power Storage
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:ultimate_power_storage>, [
-[<contenttweaker:doublecompressedoctadiccapacitor>,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>,<contenttweaker:doublecompressedoctadiccapacitor>],
+[doublecompressedoctadiccap,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>,doublecompressedoctadiccap],
 [<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>],
 [<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>],
 [<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32599>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>],
@@ -776,7 +776,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:ultimate_power_sto
 [<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32599>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>],
 [<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>, <gregtech:meta_item_1:32598>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>],
 [<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32597>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>],
-[<contenttweaker:doublecompressedoctadiccapacitor>,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>,<contenttweaker:doublecompressedoctadiccapacitor>]]);
+[doublecompressedoctadiccap,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32538>,<metaitem:lapotron_crystal>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32518>,doublecompressedoctadiccap]]);
 
 <gregtech:turbine_casing:3>.displayName = "Magnalium Turbine Casing";
 
