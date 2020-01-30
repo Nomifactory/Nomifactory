@@ -123,3 +123,14 @@ recipes.addShapeless(
     , [<enderio:item_dark_steel_upgrade>, <solarflux:solar_panel_4>]
 );
 
+
+//Extra Enderio Glasses
+
+//Enlightened Quite Clear Glass
+alloy.recipeBuilder().inputs([<enderio:block_fused_glass:0>, <minecraft:glowstone>]).outputs([<enderio:block_enlightened_fused_glass:0>]).duration(160).EUt(16).buildAndRegister();	
+
+//Enlightened Fused Quartz
+alloy.recipeBuilder().inputs([<enderio:block_fused_quartz:0>, <minecraft:glowstone>]).outputs([<enderio:block_enlightened_fused_quartz:0>]).duration(160).EUt(16).buildAndRegister();
+
+//Dark Fused Quarz
+alloy.recipeBuilder().inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>]).outputs([<enderio:block_dark_fused_quartz:0>]).duration(200).EUt(32).buildAndRegister();	

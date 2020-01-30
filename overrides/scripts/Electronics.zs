@@ -912,8 +912,8 @@ pyro.recipeBuilder().inputs([<gregtech:meta_item_1:2106> * 16]).notConsumable(<g
 
 reactor.recipeBuilder().inputs(<metaitem:board.coated>).fluidInputs([<liquid:phenol> * 100]).outputs([<metaitem:board.phenolic>]).duration(100).EUt(8).buildAndRegister();
 
-assembler.findRecipe(8, [<thermalfoundation:material:800>, <gregtech:meta_item_1:32301>], [<liquid:glue> * 100]).remove();	
-assembler.findRecipe(8, [<thermalfoundation:material:800>, <gregtech:meta_item_1:32301>], [<liquid:bisphenol_a> * 100]).remove();	
+assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>], [<liquid:glue> * 100]).remove();	
+assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>], [<liquid:bisphenol_a> * 100]).remove();	
 
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_steel");
 recipes.removeByRecipeName("gregtech:small_coil_copper_ferrite");
