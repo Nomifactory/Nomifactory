@@ -357,6 +357,16 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#dustTitanium
 	<ore:dustTitanium> : [
 		<libvulpes:productdust:7>
+	],
+
+	#dustWood
+	<ore:dustWood>: [
+		<thermalfoundation:material:800>
+	],
+
+	#itemSawdust
+	<ore:itemSawdust>: [
+		<thermalfoundation:material:800>
 	]
 
 };
@@ -1593,7 +1603,6 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:upgrade:256>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:23>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:27>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:802>);
-mods.jei.JEI.removeAndHide(<thermalfoundation:material:800>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:801>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:657>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_silver>);
@@ -1653,7 +1662,7 @@ recipes.addShapeless(<thermalfoundation:material:166>, [<gregtech:meta_item_1:10
 recipes.addShapeless(<thermalfoundation:material:165>, [<gregtech:meta_item_1:10707>]);
 recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10710>]);
 recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:2710>]);
-
+recipes.addShapeless(<ore:dustWood>.firstItem, [<thermalfoundation:material:800>]);
 
 
 
