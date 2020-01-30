@@ -1003,18 +1003,6 @@ mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator_survival");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator");
 mods.jei.JEI.hide(<appliedenergistics2:facade>);
 
-//Forestry Removals
-mods.jei.JEI.removeAndHide(<forestry:phosphor>);
-mods.jei.JEI.removeAndHide(<forestry:ash>);
-mods.jei.JEI.removeAndHide(<forestry:wood_pulp>);
-mods.jei.JEI.removeAndHide(<forestry:mulch>);
-mods.jei.JEI.removeAndHide(<forestry:beeswax>);
-mods.jei.JEI.removeAndHide(<forestry:refractory_wax>);
-mods.jei.JEI.removeAndHide(<forestry:fertilizer_bio>);
-mods.jei.JEI.removeAndHide(<forestry:soldering_iron>);
-mods.jei.JEI.removeAndHide(<forestry:ash_brick>);
-mods.jei.JEI.removeAndHide(<forestry:ash_stairs>);
-
 
 //Actually Additions Removals
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_battery_box>);
