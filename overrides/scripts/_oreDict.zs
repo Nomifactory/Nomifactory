@@ -1589,12 +1589,6 @@ mods.jei.JEI.removeAndHide(<theoneprobe:creativeprobe>);
 //Thermal Removals
 mods.jei.JEI.removeAndHide(<thermalexpansion:satchel:32000>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:frame:129>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:130>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:131>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:132>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:146>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:147>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:148>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:upgrade:256>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:23>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:27>);
