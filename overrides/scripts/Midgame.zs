@@ -355,7 +355,8 @@ recipes.addShaped(<enderio:item_material:41>, [
 	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
 	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);
 
-
+//Rose Gold Plate
+compressor.recipeBuilder().inputs([<gregtech:meta_item_1:10228>]).outputs([<gregtech:meta_item_1:12228>]).duration(100).EUt(10).buildAndRegister();
 
 
 
