@@ -173,6 +173,9 @@ recipes.addShaped(<extendedcrafting:interface>, [
 	[<extendedcrafting:material:18>, <extendedcrafting:frame>, <extendedcrafting:material:18>],
 	[bsingot, bsplate, bsingot]]);
 
+//Remove the unavailable pedestal
+recipes.removeByRecipeName("extendedcrafting:pedestal");
+
 recipes.addShaped(<extendedcrafting:pedestal>, [
 	[null, bsingot, null],
 	[null, bsingot, null],
