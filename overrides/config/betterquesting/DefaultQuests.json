@@ -565,7 +565,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Cables",
-          "desc:8": "The most basic cables, such as these §6Red Alloy Cables§f, can be wrapped in their §6Rubber§f insulation by hand.\n\nMore advanced types of cables will require an §3Assembler§f and liquid §9Rubber§f, but you can do it the simple way for now."
+          "desc:8": "The most basic cables, such as these §6Red Alloy Cables§f, can be wrapped in their §6Rubber§f insulation by hand.\n\nMore advanced types of cables will require an §3Assembling Machine§f and liquid §9Rubber§f, but you can do it the simple way for now."
         }
       },
       "tasks:9": {
@@ -2752,7 +2752,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Item Conduits",
-          "desc:8": "Item conduits are useful for moving items between inventories over moderate distances.\n\nCrafting them in an Assembler instead of by hand gives twice as many conduits."
+          "desc:8": "Item conduits are useful for moving items between inventories over moderate distances.\n\nCrafting them in an Assembling Machine instead of by hand gives twice as many conduits."
         }
       },
       "tasks:9": {
@@ -6177,7 +6177,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "MV Assembler",
+          "name:8": "MV Assembling Machine",
           "desc:8": ""
         }
       },
@@ -9209,7 +9209,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Small Coils",
-          "desc:8": "Another electronic component.\n\nMaking it inside an Assembler is much, much cheaper than by hand."
+          "desc:8": "Another electronic component.\n\nMaking it inside an Assembling Machine is much, much cheaper than by hand."
         }
       },
       "tasks:9": {
@@ -19295,7 +19295,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "LuV Assembler",
+          "name:8": "LuV Assembling Machine",
           "desc:8": "The next step in the circuit grind.\n\nYou\u0027ll also need access to HSS-G ingots to make this machine."
         }
       },
@@ -27073,7 +27073,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "NORMAL",
@@ -28178,7 +28178,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Soldering Alloy",
-          "desc:8": "When making circuits, you\u0027ll need either molten Tin, or molten Soldering Alloy in the Assembler. Soldering Alloy is just Tin alloyed with Antimony, and the Assembler will only consume half as much Soldering Alloy as it would have consumed Tin per craft.\n\nTiny Piles of Antimony can be obtained by centrifuging Impure Tetrahedrite Dust or Impure Stibnite Dust. 9 tiny piles makes a dust."
+          "desc:8": "When making circuits, you\u0027ll need either molten Tin, or molten Soldering Alloy in the Assembling Machine. Soldering Alloy is just Tin alloyed with Antimony, and the Assembling Machine will only consume half as much Soldering Alloy as it would have consumed Tin per craft.\n\nTiny Piles of Antimony can be obtained by centrifuging Impure Tetrahedrite Dust or Impure Stibnite Dust. 9 tiny piles makes a dust."
         }
       },
       "tasks:9": {
@@ -28853,7 +28853,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "MV Lossless Cables",
-          "desc:8": "EnderIO and Thermal alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being lossless. Lossy cables like Tin and Copper will bleed out energy for every block they travel, but lossless ones do not.\n\nThe lossless cables for each tier are:\n\nLV -    Conductive Iron Cables\nMV -    Energetic Alloy Cables\nHV -    Vibrant Alloy Cables\nEV -    End Steel Cables\nIV -     Lumium Cables\nLuV -   Signalum Cables\nZPMV - Enderium Cables\nUV -    Draconium Cables\nMaxV - Omnium Cables\n\nMV and higher cables are made in an Assembler. They\u0027re made with liquid Rubber and Wires, plus a reusable programmed circuit that tells it what thickness of wire to make.\n\nYou can use unshielded Wires, and they\u0027ll conduct just as well as if they were covered. But they\u0027ll kill you if you touch them while power is passing through, so... yeah. Your call."
+          "desc:8": "EnderIO and Thermal alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being lossless. Lossy cables like Tin and Copper will bleed out energy for every block they travel, but lossless ones do not.\n\nThe lossless cables for each tier are:\n\nLV -    Conductive Iron Cables\nMV -    Energetic Alloy Cables\nHV -    Vibrant Alloy Cables\nEV -    End Steel Cables\nIV -     Lumium Cables\nLuV -   Signalum Cables\nZPMV - Enderium Cables\nUV -    Draconium Cables\nMaxV - Omnium Cables\n\nMV and higher cables are made in an Assembling Machine. They\u0027re made with liquid Rubber and Wires, plus a reusable programmed circuit that tells it what thickness of wire to make.\n\nYou can use unshielded Wires, and they\u0027ll conduct just as well as if they were covered. But they\u0027ll kill you if you touch them while power is passing through, so... yeah. Your call."
         }
       },
       "tasks:9": {
@@ -29789,7 +29789,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "EV Assembler",
+          "name:8": "EV Assembling Machine",
           "desc:8": ""
         }
       },
@@ -29982,7 +29982,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "IV Assembler",
+          "name:8": "IV Assembling Machine",
           "desc:8": ""
         }
       },
@@ -30200,7 +30200,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "HV Assembler",
+          "name:8": "HV Assembling Machine",
           "desc:8": ""
         }
       },
@@ -30265,7 +30265,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "ZPM Assembler",
+          "name:8": "ZPM Assembling Machine",
           "desc:8": "End of the line.\n\nZPM stands for Zero Point Module."
         }
       },
