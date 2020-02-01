@@ -355,9 +355,6 @@ recipes.addShaped(<enderio:item_material:41>, [
 	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
 	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);
 
-solidifier.recipeBuilder().fluidInputs([<liquid:lapis>*144]).notConsumable(<gregtech:meta_item_1:32301>).outputs([<gregtech:meta_item_1:12216>]).duration(40).EUt(8).buildAndRegister();
-
-solidifier.recipeBuilder().fluidInputs([<liquid:lapis>*1296]).notConsumable(<gregtech:meta_item_1:32308>).outputs([<minecraft:lapis_block>]).duration(360).EUt(8).buildAndRegister();
 
 
 
