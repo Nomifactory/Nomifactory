@@ -322,7 +322,7 @@ recipes.addShaped(<advancedrocketry:fuelingstation>, [
 <advancedrocketry:fuelingstation>.displayName = "Fueling Station";
 
 macerator.recipeBuilder().inputs([<libvulpes:ore0>]).outputs([<libvulpes:productdust> * 2]).duration(200).EUt(420).buildAndRegister();
-autoclave.recipeBuilder().inputs([<libvulpes:productdust> * 4]).fluidInputs(<liquid:deuterium> * 1000).outputs([<libvulpes:productcrystal> * 4]).duration(400).EUt(110).buildAndRegister();
+autoclave.recipeBuilder().inputs([<libvulpes:productdust> * 4]).fluidInputs(<liquid:deuterium> * 1000).outputs([<ore:gemDilithium>.firstItem * 4]).duration(400).EUt(110).buildAndRegister();
 
 recipes.remove(<advancedrocketry:stationbuilder>);
 mods.extendedcrafting.TableCrafting.addShaped(<advancedrocketry:stationbuilder>, [
@@ -362,3 +362,34 @@ recipes.addShaped(<advancedrocketry:warpcore>, [
 	[<gregtech:compressed_3:10>, <extendedcrafting:storage:2>, <gregtech:compressed_3:10>],
 	[<thermalfoundation:storage_alloy:6>, <gregtech:compressed_3:10>, <thermalfoundation:storage_alloy:6>]]);
 
+/*
+
+  Removals
+
+*/
+
+recipes.remove(<advancedrocketry:blockpump>);             // Fluid Pump
+mods.jei.JEI.removeAndHide(<advancedrocketry:blockpump>); // Fluid Pump
+recipes.remove(<advancedrocketry:centrifuge>);             // Centrifuge
+mods.jei.JEI.removeAndHide(<advancedrocketry:centrifuge>); // Centrifuge
+mods.jei.JEI.removeAndHide(<advancedrocketry:basalt>);       // Basalt
+mods.jei.JEI.removeAndHide(<advancedrocketry:landingfloat>); // Landing Float
+mods.jei.JEI.removeAndHide(<advancedrocketry:airlock_door>); // Airlock Door (Technical Block)
+mods.jei.JEI.removeAndHide(<advancedrocketry:lightsource>);  // Light source (Technical Block)
+mods.jei.JEI.removeAndHide(<advancedrocketry:astrobed>);     // Astrobed     (Technical Block)
+
+// Various unused satellite sensors
+mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:2>);
+mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:3>);
+mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:4>);
+mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:5>);
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:2>);
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:3>);
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:4>);
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:5>);
+
+// Unused Chips
+mods.jei.JEI.removeAndHide(<advancedrocketry:ic:1>);
+mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteidchip>);
+recipes.remove(<advancedrocketry:ic:1>);
+recipes.remove(<advancedrocketry:satelliteidchip>);
