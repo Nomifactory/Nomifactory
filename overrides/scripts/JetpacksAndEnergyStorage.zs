@@ -240,28 +240,6 @@ recipes.addShaped(<simplyjetpacks:itemjetpack:18>, [
 	[<simplyjetpacks:metaitemmods:21>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:metaitemmods:21>],
 	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>, <simplyjetpacks:metaitemmods:30>]]);
 
-recipes.addShaped(compressedoctadiccap, [
-	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
-	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
-	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>]]);
-
-recipes.addShaped(doublecompressedoctadiccap, [
-	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
-	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
-	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap]]);
-	
-//Replace old compressed capacitors with functional ones
-recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccapacitor>]);
-recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
-
-//An attempt to do the same in JEI
-//mods.jei.JEI.hide(<contenttweaker:compressedoctadiccapacitor>);
-mods.jei.JEI.addItem(compressedoctadiccap);
-//mods.jei.JEI.hide(<contenttweaker:doublecompressedoctadiccapacitor>);
-mods.jei.JEI.addItem(doublecompressedoctadiccap);
-<contenttweaker:compressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
-<contenttweaker:doublecompressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
-
 recipes.remove(<openglider:hang_glider_part:2>);
 recipes.addShaped(<openglider:hang_glider_part:2>, [
 	[null, <gregtech:meta_item_1:14033>, null],
