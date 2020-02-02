@@ -2,9 +2,116 @@
     "registryname": "cryogenicairdistillation",
     "localizedname": "Cryogenic Air Distillation",
 	"color": "4fbaef",
+    "modifiers": [
+		{
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": "modularmachinery:blockenergyinputhatch@3",
+            "description": "EV Hatch overclocks once.",
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.4285714285714
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.3571428571428
+                }
+            ]
+        },
+		{
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": "modularmachinery:blockenergyinputhatch@4",
+            "description": "IV Hatch overclocks twice.",
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 2.0408163265306
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.1275510204081
+                }
+            ]
+        },
+		{
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": "modularmachinery:blockenergyinputhatch@5",
+            "description": "LuV Hatch overclocks thrice.",
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 2.9154518950437
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.04555393586
+                }
+            ]
+        },
+		{
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": "modularmachinery:blockenergyinputhatch@6",
+            "description": "ZPM Hatch overclocks four times.",
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 4.1649312786339
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.0162692628071
+                }
+            ]
+        },
+		{
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": "modularmachinery:blockenergyinputhatch@7",
+            "description": "UV Hatch overclocks five times.",
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 5.9499018266198
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.0058104510025
+                }
+            ]
+        }
+    ],
     "parts": [
-	
-	
+
+
 		{
             "x": 0,
             "y": 11,
@@ -29,9 +136,9 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
-	
+
+
+
 		{
             "x": 0,
             "y": 10,
@@ -80,7 +187,7 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
+
 	{
             "x": 0,
             "y": 9,
@@ -129,8 +236,8 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
+
+
 	{
             "x": 0,
             "y": 8,
@@ -179,8 +286,8 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
+
+
 	{
             "x": 0,
             "y": 7,
@@ -229,8 +336,8 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
+
+
 	{
             "x": 0,
             "y": 6,
@@ -279,8 +386,8 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
+
+
 	{
             "x": 0,
             "y": 5,
@@ -329,8 +436,8 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
+
+
 	{
             "x": 0,
             "y": 4,
@@ -379,9 +486,9 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
-	
+
+
+
 		{
             "x": 0,
             "y": 3,
@@ -430,11 +537,11 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
-	
-	
-	
+
+
+
+
+
 		{
             "x": 0,
             "y": 2,
@@ -483,10 +590,10 @@
             "z": 2,
             "elements": "gregtech:metal_casing@4"
         },
-	
-	
-	
-	
+
+
+
+
 		{
             "x": 0,
             "y": 1,
@@ -680,14 +787,14 @@
             "elements": "gregtech:metal_casing@3"
         },
 
-		
-		
+
+
 
 		{
             "x": 0,
             "y": 0,
             "z": 5,
-            "elements": "modularmachinery:blockenergyinputhatch"
+            "elements": "modularmachinery:blockenergyinputhatch@2"
         },
 		{
             "x": 0,
