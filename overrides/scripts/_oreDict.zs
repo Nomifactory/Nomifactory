@@ -1252,7 +1252,6 @@ mods.jei.JEI.removeAndHide(<extrautils2:user>);
 mods.jei.JEI.removeAndHide(<extrautils2:contract>);
 mods.jei.JEI.removeAndHide(<enderio:block_cap_bank>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_grainy>);
-mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_stellar>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_melodic>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_crystalline>);

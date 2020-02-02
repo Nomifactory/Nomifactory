@@ -87,7 +87,10 @@ for item in teBalls {
 
 // Slice'n'Splice dead-ends
 mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:40>);       // Zombie Electrode
+mods.jei.JEI.removeAndHide(<enderio:item_material:40>);                   // Zombie Electrode
+
 mods.enderio.SliceNSplice.removeRecipe(<enderio:item_capacitor_totemic>); // Totemic Capacitor
+mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);             // Totemic Capacitor
 
 /*
 
