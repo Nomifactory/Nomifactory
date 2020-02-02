@@ -208,31 +208,34 @@ mods.jei.JEI.addItem(doublecompressedoctadiccap);
 
 */
 
-var bonus = 4 as int;
+var bonus = 1 as int;
+var cost  = 20000 as int;
+
 for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IItemStack[] {
+    bonus = bonus * 2;
+    cost  = cost  * 2;
+
     // Z-Logic Controller
     mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:41> * bonus, [
         <enderio:item_alloy_ingot:7> , <minecraft:skull:2>  , <enderio:item_alloy_ingot:7>
         , wafer                      , <minecraft:redstone> , wafer
-    ], 20000);
+    ], cost);
 
     // Ender Resonator
     mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:43> * bonus, [
         <enderio:item_alloy_ingot:7> , <enderio:block_enderman_skull> , <enderio:item_alloy_ingot:7>
         , wafer                      , <enderio:item_alloy_ingot:2>   , wafer
-    ], 20000);
+    ], cost);
 
-    // Skeleton Contractor
+    // Skeletal Contractor
     mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45> * bonus, [
         <enderio:item_alloy_ingot:7> , <minecraft:skull> , <enderio:item_alloy_ingot:7>
         , <minecraft:rotten_flesh>   , wafer             , <minecraft:rotten_flesh>
-    ], 20000);
+    ], cost);
 
     // Guardian Diode
     mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56> * bonus, [
         <enderio:item_alloy_ingot:1>      , <minecraft:prismarine_shard> , <enderio:item_alloy_ingot:1>
         , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
-    ], 20000);
-
-    bonus = bonus * 2;
+    ], cost);
 }
