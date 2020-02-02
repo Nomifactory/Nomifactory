@@ -1,15 +1,23 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 
-// Construction Alloy
-recipes.remove(<enderio:block_alloy:9>);
+/*
+
+  EnderIO Removals
+
+*/
+
+// Construction Alloy Block
 rh(<enderio:block_alloy:9>);
+recipes.remove(<enderio:block_alloy:9>);
 
-recipes.remove(<enderio:item_alloy_ingot:9>);
+// Construction Alloy Ingot
 rh(<enderio:item_alloy_ingot:9>);
+recipes.remove(<enderio:item_alloy_ingot:9>);
 
-recipes.remove(<enderio:item_alloy_nugget:9>);
+// Construction Alloy Nugget
 rh(<enderio:item_alloy_nugget:9>);
+recipes.remove(<enderio:item_alloy_nugget:9>);
 
 rh(<enderio:item_material:46>); // Clippings and Trimmings
 rh(<enderio:item_material:47>); // Twigs and Prunings
@@ -28,8 +36,8 @@ rh(<enderio:item_material:51>); // Industrial Dye Blend
 recipes.remove(<enderio:item_material:67>); // Enhanced Dye Blend
 recipes.remove(<enderio:item_material:51>); // Industrial Dye Blend
 
-recipes.remove(<enderio:item_material:55>); // Soulless Chassis
 rh(<enderio:item_material:55>);             // Soulless Chassis
+recipes.remove(<enderio:item_material:55>); // Soulless Chassis
 rh(<enderio:block_industrial_insulation>);  // Industrial Insulation
 
 rh(<enderio:item_material:69>);             // Simple Chassis Parts
@@ -77,6 +85,12 @@ for item in teBalls {
     recipes.remove(item);
 }
 
+/*
+
+  EnderIO Additions
+
+*/
+
 // Blank Dark Steel Upgrade
 alloy.recipeBuilder()
     .inputs([<gregtech:meta_item_1:12704>, <forestry:crafting_material>])
@@ -93,7 +107,11 @@ macerator.recipeBuilder()
     .EUt(20)
     .buildAndRegister();
 
-// Solar Upgrades
+/*
+
+  Solar Upgrades (Helmet)
+
+*/
 
 // Simple Solar
 recipes.remove(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiomachines:solar"}));
@@ -124,13 +142,32 @@ recipes.addShapeless(
 );
 
 
-//Extra Enderio Glasses
+/*
 
-//Enlightened Quite Clear Glass
-alloy.recipeBuilder().inputs([<enderio:block_fused_glass:0>, <minecraft:glowstone>]).outputs([<enderio:block_enlightened_fused_glass:0>]).duration(160).EUt(16).buildAndRegister();	
+  Extra Enderio Glasses
 
-//Enlightened Fused Quartz
-alloy.recipeBuilder().inputs([<enderio:block_fused_quartz:0>, <minecraft:glowstone>]).outputs([<enderio:block_enlightened_fused_quartz:0>]).duration(160).EUt(16).buildAndRegister();
+*/
 
-//Dark Fused Quarz
-alloy.recipeBuilder().inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>]).outputs([<enderio:block_dark_fused_quartz:0>]).duration(200).EUt(32).buildAndRegister();	
+// Enlightened Quite Clear Glass
+alloy.recipeBuilder()
+    .inputs([<enderio:block_fused_glass:0>, <minecraft:glowstone>])
+    .outputs([<enderio:block_enlightened_fused_glass:0>])
+    .duration(160)
+    .EUt(16)
+    .buildAndRegister();
+
+// Enlightened Fused Quartz
+alloy.recipeBuilder()
+    .inputs([<enderio:block_fused_quartz:0>, <minecraft:glowstone>])
+    .outputs([<enderio:block_enlightened_fused_quartz:0>])
+    .duration(160)
+    .EUt(16)
+    .buildAndRegister();
+
+// Dark Fused Quarz
+alloy.recipeBuilder()
+    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
+    .outputs([<enderio:block_dark_fused_quartz:0>])
+    .duration(200)
+    .EUt(32)
+    .buildAndRegister();
