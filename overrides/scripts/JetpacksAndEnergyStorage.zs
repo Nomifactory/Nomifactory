@@ -255,9 +255,7 @@ recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccap
 recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
 
 //An attempt to do the same in JEI
-//mods.jei.JEI.hide(<contenttweaker:compressedoctadiccapacitor>);
 mods.jei.JEI.addItem(compressedoctadiccap);
-//mods.jei.JEI.hide(<contenttweaker:doublecompressedoctadiccapacitor>);
 mods.jei.JEI.addItem(doublecompressedoctadiccap);
 <contenttweaker:compressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
 <contenttweaker:doublecompressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
