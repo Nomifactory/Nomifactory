@@ -134,3 +134,23 @@ alloy.recipeBuilder().inputs([<enderio:block_fused_quartz:0>, <minecraft:glowsto
 
 //Dark Fused Quarz
 alloy.recipeBuilder().inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>]).outputs([<enderio:block_dark_fused_quartz:0>]).duration(200).EUt(32).buildAndRegister();	
+
+recipes.addShaped(compressedoctadiccap, [
+	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
+	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
+	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>]]);
+
+recipes.addShaped(doublecompressedoctadiccap, [
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap]]);
+	
+//Replace old compressed capacitors with functional ones
+recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccapacitor>]);
+recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
+
+//An attempt to do the same in JEI
+mods.jei.JEI.addItem(compressedoctadiccap);
+mods.jei.JEI.addItem(doublecompressedoctadiccap);
+<contenttweaker:compressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
+<contenttweaker:doublecompressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
