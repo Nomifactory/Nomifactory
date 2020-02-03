@@ -55,3 +55,7 @@ global hardenedcell as IItemStack = <thermalexpansion:cell>.withTag({Creative: 0
 global reinforcedcell as IItemStack = <thermalexpansion:cell>.withTag({Creative: 0 as byte, Level: 2 as byte});
 global signalumcell as IItemStack = <thermalexpansion:cell>.withTag({Creative: 0 as byte, Level: 3 as byte});
 global resonantcell as IItemStack = <thermalexpansion:cell>.withTag({Creative: 0 as byte, Level: 4 as byte});
+
+// Compressed capacitors
+global compressedoctadiccap as IItemStack = <contenttweaker:compressedoctadiccapacitor>.withTag({display: {Name: "Compressed Octadic RF Capacitor", Lore: ["This is what is known as a Compressed Octadic Capacitor.", "Or, you could just call this an Octadic Capacitor Two.", "Can be inserted into EnderIO machines.", "Level: 4"]}, eiocap: {level: 4 as float}});
+global doublecompressedoctadiccap as IItemStack = <contenttweaker:doublecompressedoctadiccapacitor>.withTag({display: {Name: "Double Compressed Octadic RF Capacitor", Lore: ["AND THIS IS TO GO EVEN FURTHER BEYOND!", "Can be inserted into EnderIO machines.", "Level: 9.001", "Just kidding, it's only 5."]}, eiocap: {level: 5 as float}});
