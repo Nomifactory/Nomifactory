@@ -29,7 +29,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Charging Quartz",
-          "desc:8": "The main purpose for this device is to turn Certus Quartz Crystals into Charged Certus Quartz.\n\nIt accepts power from two sides, and can be powered with both energy and ME conduits.\n\nWhich two sides? It\u0027s pretty easy to guess.\n"
+          "desc:8": "The main purpose for this device is to turn §6Certus Quartz Crystal§r into §6Charged Certus Quartz Crystal§r.\n\nThis device can be powered with RF via energy conduits or use AE energy from a network via ME conduits or cables.\n\nIt accepts power from two sides. Which two sides? It\u0027s pretty easy to guess.\n\n\n\n\n\n\n\n\nOk, ok. It\u0027s the top and bottom.\n\n"
         }
       },
       "tasks:9": {
@@ -105,7 +105,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Crystal Growth Chamber",
-          "desc:8": "Turns crystal seeds into Pure Crystals.\n\nIt can also be used to make regular fluix crystals. While there\u0027s no such recipe in JEI, you can simply put redstone dust, charged certus quartz and nether quartz inside to get fluix crystals.\n\nNo more nasty dropping things in water!"
+          "desc:8": "The §3Crystal Growth Chamber§r allows you to perform §bApplied Energistics§r\u0027s world crafting recipes inside of a machine. Hooray, you never have to drop more things in water again!\n\nIt is used for growing §6Crystal Seeds§r into §6Pure Crystals§r, and also for creating §6Fluix Crystals§r.\n\nJEI doesn\u0027t show the Chamber\u0027s recipes directly, so we\u0027ll explain it here:\n\nSeeds are made by pulverizing any of the three crystal types and mixing the dust with sand. A seed grows into the corresponding Pure Crystal, which is substitutable for the original crystal in most recipes. Using Pure Crystals lets you effectively double your material efficiency, which is nice. And no, you can\u0027t grind down Pure Crystals to further multiply your resources. Sorry.\n\nFluix Crystals you\u0027ve already had to make in a pool of water by now, and it\u0027s the same ingredients here: insert one each of a §6Redstone Dust§r, §6Charged Certus Quartz Crystal§r, and a §6Nether Quartz§r to produce one Fluix Crystal."
         }
       },
       "tasks:9": {
@@ -693,7 +693,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Ore Doubling?",
-          "desc:8": "In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It\u0027s a habit most of us pick up.\n\n§eYou shouldn\u0027t feel any pressure to do that in Omnifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What\u0027s more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.\n\nObvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can\u0027t find it. Those are worth doubling, if possible.\n\nBut at least for now, you shouldn\u0027t feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until MV or even later."
+          "desc:8": "In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It\u0027s a habit most of us pick up.\n\n§eYou shouldn\u0027t feel any pressure to do that in Omnifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What\u0027s more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.\n\nObvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can\u0027t find it. Those are worth doubling, if possible.\n\nBut at least for now, you shouldn\u0027t feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until you have Medium Voltage machines or even later.§r"
         }
       },
       "tasks:9": {
@@ -1011,7 +1011,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Worktables Are Life",
-          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort."
+          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it."
         }
       },
       "tasks:9": {
@@ -1891,7 +1891,7 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
@@ -3568,9 +3568,7 @@
     },
     "52:10": {
       "questID:3": 52,
-      "preRequisites:11": [
-        143
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -3593,7 +3591,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "LV Cluster Mill",
-          "desc:8": "There\u0027s another machine you\u0027ll be needing before you get access to easier circuits, and that\u0027s the Cluster Mill, used to make foils."
+          "desc:8": "Before you get access to easier circuits, you will need to be able to make §6Foils§r.\n\nThat\u0027s the purpose of the §3Cluster Mill§r."
         }
       },
       "tasks:9": {
@@ -3633,7 +3631,7 @@
     "53:10": {
       "questID:3": 53,
       "preRequisites:11": [
-        143
+        56
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3657,7 +3655,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "LV Wiremill",
-          "desc:8": "The Wiremill is a major efficiency boost, giving you a much greater yield of wires for your ingots."
+          "desc:8": "GregTech machines are built from a number of components, many of which are shared between the machines. Motors are used in a great number of recipes, even including other components.\n\nMake sure to encode this recipe into a Worktable. You\u0027ll be making them quite often.\n\nThe Wiremill is a major efficiency boost, giving you a much greater yield of wires for your ingots."
         }
       },
       "tasks:9": {
@@ -3670,6 +3668,12 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 4,
+              "OreDict:8": "",
+              "Damage:3": 32600
+            },
+            "1:10": {
               "id:8": "gregtech:machine",
               "Count:3": 1,
               "OreDict:8": "",
@@ -3686,7 +3690,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "contenttweaker:omnicoin",
-              "Count:3": 5,
+              "Count:3": 10,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -3760,9 +3764,7 @@
     },
     "55:10": {
       "questID:3": 55,
-      "preRequisites:11": [
-        143
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -4104,7 +4106,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Blast Furnace Fun",
-          "desc:8": "The §3Electric Blast Furnace§r is a major, major milestone in your §bGregTech§r career. It has the power to smelt more advanced materials. The first of which, §6Aluminium§r, is going to be important in the immediate future.\n\nThere is a diagram of how to build the EBF in JEI. The second and third levels must be a 3x3 square shape of Coil Blocks (§6Cupronickel§r is the only type of coil block you have access to for now) with an empty center.\n\nHowever, the bottom and top layers are very flexible. The §6EBF Controller§r must be on the §ebottom layer§r of the structure, and on the §emiddle of an outer edge§r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with §6Heatproof Machine Casings§r.\n\nThis quest calls for two energy hatches, a fluid input and output, and an item input and output, which is a total of six positions. Their specific order and placement don\u0027t matter, as long as you can access them. The seventh position is your EBF controller, leaving eleven gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\"\n\nYou\u0027ll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power."
+          "desc:8": "The §3Electric Blast Furnace§r is a major, major milestone in your §bGregTech§r career. It has the power to smelt more advanced materials. The first of which, §6Aluminium§r, is going to be important in the immediate future.\n\nThere is a diagram of how to build the EBF in JEI. The second and third levels must be a 3x3 square shape of Coil Blocks (§6Cupronickel§r is the only type of coil block you have access to for now) with an empty center.\n\nHowever, the bottom and top layers are very flexible. The §6EBF Controller§r must be on the §ebottom layer§r of the structure, and on the §emiddle of an outer edge§r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with §6Heatproof Machine Casings§r. It\u0027s worth noting that you must §euse at least 10 Heatproof Machine Casings in your layout or the structure will not form§r.\n\nThis quest calls for two energy hatches, a fluid input and output, and an item input and output, which is a total of six positions. Their specific order and placement don\u0027t matter, as long as you can access them. The seventh position is your EBF controller, leaving eleven gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\"\n\nYou\u0027ll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power."
         }
       },
       "tasks:9": {
@@ -4275,7 +4277,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Terminal",
-          "desc:8": "Access all of your items on a single screen. Soon, anyway."
+          "desc:8": "Access all of your items on a single screen. Soon, anyway.\n\nPlease note that all four variants of §6ME Terminals§r are §emicroparts§r, which means they need to be attached to an §6ME Cable§r (not conduit) to function."
         }
       },
       "tasks:9": {
@@ -4340,7 +4342,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "ME Chest",
-          "desc:8": "Once you have this and a storage cell, you can start getting digital."
+          "desc:8": "The §aME Chest§r is somewhat impractical to use on its own, but it\u0027s a necessary ingredient for the much more useful §6ME Drive§r.\n\nThis is a rudimentary digital item storage device. By placing a §6Storage Cell§r inside it, you can access the contents as though you were looking through a chest. You can carry the disk to another location and place it down in a different ME Chest if you want, and the items will come with it.\n\n§cDon\u0027t put Storage Cells inside other portable mod inventories like a Satchel, (or vice-versa) as you risk corrupting the contents of the Satchel and the Storage Cell.§r There\u0027s technical reasons why this happens (NBT overflow), and it\u0027s not unique to these items, but that\u0027s not really worth going into.\n\n"
         }
       },
       "tasks:9": {
@@ -4405,7 +4407,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Digital Storage At Last",
-          "desc:8": "A 1k Storage Cell. Unfortunately, its limited to only being able to store 63 types of items, but it will still help with storage issues enormously. If you want more than 63 types, you\u0027ll need to get an ME Drive and multiple Storage Cells.\n\nThe 4k Storage Cell demands Inscribed Processors, which will need to wait for more advanced technology."
+          "desc:8": "§bApplied Energistics§r uses §6Storage Cells§r as its primary means of digital item and fluid storage.\n\nAll unformatted Storage Cells are limited to at most 63 distinct item types, with the first item of each new type taking up a chunk of the total bytes of cell storage, and subsequent items of existing types taking a small amount of bytes thereafter.\n\nA §61k ME Storage Cell§r is the first and smallest cell for storing items. If you are going to be storing many different kinds of items in your network, you will need to make an §6ME Drive§r and fill it with multiple Storage Cells.\n\nThe §64k ME Storage Cell§r is the next size up. With four times the bytes it holds substantially more items per type, but it requires a more advanced technology than you currently have available: AE §6Processors§r made in an §3Inscriber§r."
         }
       },
       "tasks:9": {
@@ -5043,7 +5045,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "ME Conduit",
-          "desc:8": "ME Conduits have the advantage of being able to share a block space with other conduit types.\n\nOh, and they\u0027re relatively cheaper to make."
+          "desc:8": "§6ME Conduits§r have the advantage of being able to share a block space with other conduit types. Oh, and they\u0027re relatively cheaper to make.\n\nThe only downside is that §ethey will not connect to §bApplied Energistics§r §emicroparts§r like slab-form §6Interfaces§r or §6Level Emitters§r, so you have to use AE cables like §6Fluix Cable§r for those."
         }
       },
       "tasks:9": {
@@ -5633,7 +5635,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Phenol Coated Substrate",
-          "desc:8": "Phenol is produced as a byproduct from making Coal Coke in a Pyrolyse Oven.\n\nThese boards will enable a much cheaper method of circuit production."
+          "desc:8": "§9Phenol§r is produced as a byproduct from making §6Coal Coke§r in a §3Pyrolyse Oven§r.\n\nThese boards will enable a much cheaper method of circuit production."
         }
       },
       "tasks:9": {
@@ -5905,7 +5907,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier One Circuits",
-          "desc:8": "Much easier to mass produce than Primitive Circuits, and fulfill the same function in nearly all cases.\n\nYou should be batch crafting these."
+          "desc:8": "Much easier to mass produce than §6Primitive Circuits§r, and they fulfill the same function in nearly all cases.\n\nYou should be batch crafting these."
         }
       },
       "tasks:9": {
@@ -5970,7 +5972,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier Two Circuit",
-          "desc:8": "Three Electronic Circuits and various other components will create an Electronic Processor."
+          "desc:8": "Three §6Electronic Circuits§r and various other components will create an §6Electronic Processor§r."
         }
       },
       "tasks:9": {
@@ -6112,7 +6114,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "First Tier Three Circuit",
-          "desc:8": "Your first tier three circuit.\n\nAs you\u0027ll realize is the pattern, it is expensive and unwieldy to make, but this incentivises getting access to the later tier three circuits, which are much easier to mass produce."
+          "desc:8": "Your first tier three circuit.\n\nAs you\u0027ll realize is the pattern, it is expensive and unwieldy to make, but this incentivizes getting access to the later tier three circuits, which are much easier to mass produce."
         }
       },
       "tasks:9": {
@@ -6178,7 +6180,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "MV Assembling Machine",
-          "desc:8": ""
+          "desc:8": "The §3Advanced Assembling Machine§r, or MV Assembler for short, allows you to craft recipes that require up to 128 EU/t instead of 32. Plus, any recipe that was at most 32 EU/t can §eoverclock§r, crafting up to 2.8 times faster for 4 times the original energy per tick.\n\nA host of new recipes are now achievable, including more advanced types of Circuits!"
         }
       },
       "tasks:9": {
@@ -6282,7 +6284,7 @@
     "92:10": {
       "questID:3": 92,
       "preRequisites:11": [
-        107
+        233
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6370,7 +6372,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "HV Machine Hulls",
-          "desc:8": ""
+          "desc:8": "With §6HV Machine Hulls§r made, you\u0027ve made your first step towards §eHigh Voltage (HV)§r power machinery!\n\nWhile you can make these in a crafting table, §9Polyethylene§r"
         }
       },
       "tasks:9": {
@@ -6398,8 +6400,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:omnicoin",
-              "Count:3": 100,
+              "id:8": "contenttweaker:omnicoin100",
+              "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -6793,7 +6795,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Synthesizing Your First Omnium",
-          "desc:8": "With Einsteinium, you\u0027ve got everything you need to make a few peices of Omnium."
+          "desc:8": "With the §6Stabilized Einsteinium§r you harvested from a microverse, you should now have access to everything you need to synthesize your first §5Mote of Omnium§r.\n\nYou\u0027re gonna need to make a lot of these as you push into the End Game, so make sure your §eautomation is supplying you with a stock of all of the ingredients§r. That\u0027s what those quests in the End Game tab have been about about all along!"
         }
       },
       "tasks:9": {
@@ -6827,8 +6829,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:omnicoin",
-              "Count:3": 100,
+              "id:8": "contenttweaker:omnicoin100",
+              "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -6930,7 +6932,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Digital Storage For Days",
-          "desc:8": "With this bad boy, you can store a virtually unlimited number of items inside a single block, and search through them all. You might need more Storage Cells though."
+          "desc:8": "*Slaps §6ME Drive§r* this bad boy can fit so many §6Storage Cells§r in it!\n\nWith ten slots for Storage Cells, you can store a huge amount of items inside this single block, and search through them all with a §6Terminal§r. You just gotta make all those Storage Cells.\n\nIf you somehow run out of room, you can make another ME Drive for even more slots! So many cells, so many items!"
         }
       },
       "tasks:9": {
@@ -8270,7 +8272,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "122:10": {
       "questID:3": 122,
@@ -9273,7 +9288,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Signalum",
-          "desc:8": "Not glowing."
+          "desc:8": "Not glowing.\n\nThis one takes a significant amount of time to cook, so make sure to have it going constantly."
         }
       },
       "tasks:9": {
@@ -9636,7 +9651,8 @@
     "143:10": {
       "questID:3": 143,
       "preRequisites:11": [
-        56
+        26,
+        71
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9648,9 +9664,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:meta_item_1",
+            "id:8": "enderio:block_enchanter",
             "Count:3": 1,
-            "Damage:2": 32600,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -9659,8 +9675,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "LV Motors",
-          "desc:8": "GregTech machines are built from a number of components, many of which are shared between the machines. Motors are used in a great number of recipes, even including other components.\n\nMake sure to encode this recipe into a Worktable. You\u0027ll be making them quite often."
+          "name:8": "Dark Steel Enchanter",
+          "desc:8": "No description."
         }
       },
       "tasks:9": {
@@ -9673,10 +9689,10 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:meta_item_1",
-              "Count:3": 2,
+              "id:8": "enderio:block_enchanter",
+              "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 32600
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -9981,7 +9997,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Titanium",
-          "desc:8": "A perfect material to make chopsticks."
+          "desc:8": "A perfect material to make chopsticks of.\n\nIf you\u0027re having issues with patterning Hot Titanium Ingots, make sure to manually put the hot ingot into the output of the pattern and hit save."
         }
       },
       "tasks:9": {
@@ -10045,7 +10061,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Hot Titanium",
-          "desc:8": "Combining Titanium Tetrachloride with Magnesium in a Blast Furnace will net you your first Titanium Ingot.\n\nBut you\u0027ll need to cool it for it to be useful."
+          "desc:8": "Combining Titanium Tetrachloride with Magnesium in a Blast Furnace will net you your first Titanium Ingot.\n\nBut you\u0027ll need to cool it for it to be useful.\n\nIf you\u0027re having issues with patterning Hot Titanium Ingots, make sure to manually put the hot ingot into the output of the pattern and hit save."
         }
       },
       "tasks:9": {
@@ -10996,7 +11012,7 @@
       "questID:3": 163,
       "preRequisites:11": [
         162,
-        170
+        416
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11018,7 +11034,7 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
@@ -11635,7 +11651,8 @@
     "172:10": {
       "questID:3": 172,
       "preRequisites:11": [
-        163
+        163,
+        170
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12014,7 +12031,7 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Nitric Acid",
           "desc:8": "Don\u0027t let the EPA catch you making this stuff."
         }
@@ -12701,7 +12718,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "MV Energy Input And MV CEF",
-          "desc:8": "With Aluminium, you can replace the three LV Energy Input Hatches on your Electric Blast Furnace with a single MV one, if you want. When you\u0027re ready to move on to HV recipes in the EBF, you\u0027ll want to move up to HV Energy Input Hatches, and so on.\n\nHowever, remember to keep the MV area seperate from your LV area. Hooking up an LV machine to MV current will result in the machine being destroyed! Also LV cables will burn up if you put MV current through them. That\u0027s why its probably best to keep the areas separate until you\u0027re comfortable and confident with voltages. Eventually you can use transformers to switch voltages within a single setup, but don\u0027t feel forced to try that until you\u0027ve got a grasp on the basics.\n\nAll RF power is the same (it has no voltages), so you can use RF cables to route power from whereever you\u0027re generating and storing it to CEFs for each voltage. You don\u0027t have to use this setup, but its the most foolproof one for a beginner. And if you\u0027re an expert, well... you don\u0027t need my advice.\n\nFor your MV cables, you can use Copper to start with. Energetic Alloy cables are lossless, though, so consider them if you\u0027re able to mass produce those ingots."
+          "desc:8": "With Aluminium, you can replace the two LV Energy Input Hatches on your Electric Blast Furnace with a single MV one, if you want. When you\u0027re ready to move on to HV recipes in the EBF, you\u0027ll want to move up to HV Energy Input Hatches, and so on.\n\nHowever, remember to keep the MV area seperate from your LV area. Hooking up an LV machine to MV current will result in the machine being destroyed! Also LV cables will burn up if you put MV current through them. That\u0027s why its probably best to keep the areas separate until you\u0027re comfortable and confident with voltages. Eventually you can use transformers to switch voltages within a single setup, but don\u0027t feel forced to try that until you\u0027ve got a grasp on the basics.\n\nAll RF power is the same (it has no voltages), so you can use RF cables to route power from wherever you\u0027re generating and storing it to CEFs for each voltage. You don\u0027t have to use this setup, but its the most foolproof one for a beginner. And if you\u0027re an expert, well... you don\u0027t need my advice.\n\nFor your MV cables, you can use Copper to start with. Energetic Alloy cables are lossless, though, so consider them if you\u0027re able to mass produce those ingots."
         }
       },
       "tasks:9": {
@@ -13561,7 +13578,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Enderium Ingot",
-          "desc:8": "Pretty slow to cook."
+          "desc:8": "Not sure if glowing or not.\n\nThis one takes even more time to cook, so make sure to have it going constantly."
         }
       },
       "tasks:9": {
@@ -14796,7 +14813,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "First Foray Into The Microverse",
-          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, although probably less efficiently compared to the next tier."
+          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nYou won\u0027t be able to auto-craft Micro Miners until the Tier Four Micro Miner, so keep tables close.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, although probably less efficiently compared to the next tier."
         }
       },
       "tasks:9": {
@@ -15585,7 +15602,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Snad",
-          "desc:8": "Yes, Snad.\n\nThis pack has §aSnad§r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block, or a redstone update.\n\nThe cane it procudes can be used as a fuel for your dynamos, and later you can even brew it for biomass.\n\nThis quest calls for a Redstone Timer, but there are other ways to make it grow sugar cane even faster, make sure to set it to pulse as fast as possible. To collect the cane, you can use a piston and an observer. Later you can make an Auto-Breaker from Actually Additions, which works even better and doesn\u0027t spill cane everywhere.\n\nAs for now, having a Vacuum Chest should suffice.\n\nTry plugging a redstone conduit directly to a block of Snad.\n"
+          "desc:8": "Yes, Snad.\n\nThis pack has §aSnad§r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update.\n\nThe sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for §9Biomass§r.\n\nThis quest calls for a §aRedstone Timer§r, but there are other ways to make snad grow sugar cane even faster (like wrenching a redstone conduit to connect it to a block of Snad). Make sure to set the timer to pulse as fast as possible.\n\nTo collect the sugar cane, you can use a piston and an observer. Later you can make an §6Auto-Breaker§r from §bActually Additions§r, which works even better and doesn\u0027t spill sugar cane everywhere.\n\nFor now, a §3Vacuum Chest§r should help keep the floor clean, and causes less lag than Hoppers. A §aVoid Upgrade§r in a §6Storage Drawer§r will automatically delete any items that overflow the drawer\u0027s capacity, so it\u0027s a good way to ensure you don\u0027t crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
         }
       },
       "tasks:9": {
@@ -15611,6 +15628,12 @@
             },
             "2:10": {
               "id:8": "darkutils:timer",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "3:10": {
+              "id:8": "storagedrawers:upgrade_void",
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
@@ -15713,7 +15736,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Oops... A Blackout!",
-          "desc:8": "Soon you might notice your network shutting down randomly, seemingly on its own, or when trying to drop or retrieve large amounts of items/fluid in a short time window.\n\nTo solve this issue, you\u0027ll need to connect an ME Energy Cell to your network.\n\nTo explain simply, the network has internal power buffer that only gets refilled every so often and not per tick. Every item or fluid I/O operation drains power, and the only way to expand the buffer is to add Energy Cells."
+          "desc:8": "If you\u0027ve tried to insert or remove a lot of items quickly, you might notice your ME network\n§eflickers offline§r briefly. This is because digitizing and re-materializing items requires energy!\n\nYour network doesn\u0027t naturally store very much energy and the §6Energy Acceptor§r only intermittently refills the network\u0027s power. To keep things stable, you will need to add some energy storage in your network using §6Energy Cells§r.\n\nJust place one anywhere in your network and it will fill up with AE energy received from the Energy Acceptor. Now, you should have enough energy in your network to prevent these power losses. Feel free to add more energy cells, or upgrade to §6Dense Energy Cells§r, if you continue to experience problems.\n\nIf you\u0027ve opted to enable channels in your AE2 configs, you will innately have some energy storage from the §3ME Controller§r, but we assume you know what you\u0027re doing at that point. §eAE2 Channels mechanics are outside the scope of the quest book, and this is the only time it will be mentioned."
         }
       },
       "tasks:9": {
@@ -16102,7 +16125,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Transistor",
-          "desc:8": "The next electronic component. This one is a bit pricey, requiring Aluminium."
+          "desc:8": "The next electronic component for circuits. This one is a bit pricey, requiring §6Aluminium Foil§r and §6Fine Silver Wire§r."
         }
       },
       "tasks:9": {
@@ -17836,7 +17859,8 @@
     "262:10": {
       "questID:3": 262,
       "preRequisites:11": [
-        389
+        385,
+        387
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18384,7 +18408,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Macerator",
-          "desc:8": "Macerators are useful for grinding things down. The best application for one right now would be grinding down clay or terracotta into §6Clay Dust§f.\n\nLV Macerators lack byproduct slots. MV Macerators get one byproduct slot, but unfortunately Stone Dust byproduct is prioritized so in practice you get a bit less than advertised. HV Macerators and better have all three slots.\n\nMacerator byproduct chances are doubled for each tier after MV. Here\u0027s the list of chances for ore byproducts for a quick reference:\n§a§r• LV: §c0%\n§r• MV: §a14%§c*\n§r• HV: §a28%\n§r• EV: §a56%\n§r• IV and better: §a100%§r"
+          "desc:8": "Macerators are useful for grinding things down. The best application for one right now would be grinding down clay or terracotta into §6Clay Dust§f.\n\nLV Macerators lack byproduct slots. MV Macerators get one byproduct slot, but unfortunately the §6Stone Dust§r byproduct is prioritized so in practice you get a bit less than advertised. HV Macerators and better have all three slots.\n\nMacerator byproduct chances are doubled for each tier after MV. Here\u0027s the list of chances for ore byproducts for a quick reference:\n§a§r• LV: §c0%\n§r• MV: §a14%§c*\n§r• HV: §a28%\n§r• EV: §a56%\n§r• IV and better: §a100%§r"
         }
       },
       "tasks:9": {
@@ -18911,7 +18935,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Simulated Mobs",
-          "desc:8": "You can combine various items with a Blank Data Module for a completed Data Model that you can run inside the Simulation Chamber."
+          "desc:8": "You can combine various items with a §6Blank Data Model§r for a completed §6Data Model§r that you can run inside the §3Simulation Chamber§r."
         }
       },
       "tasks:9": {
@@ -19223,7 +19247,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Energy Acceptor",
-          "desc:8": "Fluix is made the normal way by dropping pieces of §cRedstone Dust§r, §7Nether Quartz§r and §bCharged Certus Quartz§r in a puddle of water next to each other.\n\nThe Energy Acceptor turns RF power into something that Applied Energistics can use. This power transmitted along all connected ME Cables and ME Conduits, as well as through Quartz Fibers. \n\nQuartz Fibers doesn\u0027t transmit information or count as a network connection, however. Useful for having separate networks sharing the same power source."
+          "desc:8": "Fluix is initially made via in-world crafting, by dropping §6Redstone Dust§r, §6Nether Quartz§r, and a §6Charged Certus Quartz Crystal§r in the same block of §9Water§r. You\u0027ll see some sparks then the items will merge into a §6Fluix Crystal§r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process.\n\nThe §3Energy Acceptor§r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected §6ME Cables§r, §6ME Conduits§r, and §6Quartz Fiber§r. \n\nQuartz Fiber are §emicroparts§r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
         }
       },
       "tasks:9": {
@@ -19364,7 +19388,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Inspector Gadget",
-          "desc:8": "This pack has Building Gadgets.\n\nThese good stuffs can help you building, destroy massive areas or even copy-paste blocks. The latter won\u0027t make blocks out of thin air though, so you have to have them in your inventory.\n\nBy default, the config GUI is bound to G."
+          "desc:8": "This pack has §bBuilding Gadgets§r.\n\nThese good stuffs can help you building, destroy massive areas or even copy-paste blocks. The latter won\u0027t make blocks out of thin air though, so you have to have them in your inventory.\n\nBy default, the config GUI is bound to §6G§r."
         }
       },
       "tasks:9": {
@@ -19707,7 +19731,8 @@
       "questID:3": 288,
       "preRequisites:11": [
         336,
-        324
+        324,
+        179
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19731,7 +19756,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Draconium Ingots",
-          "desc:8": "You\u0027ll need at least Naquadrah Coil Blocks in your blast furnace to smelt Draconium."
+          "desc:8": "You\u0027ll need at least §6Naquadah Coil Blocks§r in your blast furnace to smelt §6Draconium§r, as well as a healthy supply of §9Cetane Diesel§r to reach the immense heat it takes to liquefy.\n\nDraconium gets so hot that it requires the potent coolant §9Gelid Cryotheum§r to aid your §3Vacuum Freezer§r in turning it into usable ingots."
         }
       },
       "tasks:9": {
@@ -21683,7 +21708,7 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Epoxy Production",
           "desc:8": "There are at least three different ways to produce Epoxy, with the common factor being Epichlorohydrin.\n\nBisphenol A can be produced from either petrochem products, or via pyrolyzing wood to distill Charcoal Byproducts into useful components. Alternatively, you can pyrolyze coal for just Phenol.\nYou might also be interested in distilling Fermented Biomass as it provides a considerable amount of products.\n\nOr you can just straight mix Naphtha with Nitrogen Dioxide and Epichlorohydrin. This is easier overall but yields less epoxy in comparison, however if you\u0027re producing a lot of oil then it\u0027s a viable choice.\n\nThe final decision is down to you make. Check out recipes in JEI."
         }
@@ -23623,7 +23648,7 @@
             "id:8": "forge:bucketfilled",
             "Count:3": 1,
             "tag:10": {
-              "FluidName:8": "ender_distillation",
+              "FluidName:8": "fire_water",
               "Amount:3": 1000
             },
             "Damage:2": 0,
@@ -25793,7 +25818,7 @@
     "389:10": {
       "questID:3": 389,
       "preRequisites:11": [
-        388
+        262
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -26142,7 +26167,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Flux Capacitors",
-          "desc:8": "Basic §aFlux Capacitors§r hold a whopping lot of energy - §a10 million RF§r - and are useful for keeping your §aRF-powered§r equipment and tools charged.\n\nPut one into your newly crafted §3CEF§r to charge it. You can then put it in your inventory to charge your items with §aRF§r, or you can leave it in the CEF to act as a §a2.5 million EU§r battery!\n\nFinally you can charge up all those depleted §6Dark Boots§r and §6The Ender§r swords you\u0027ve looted."
+          "desc:8": "Basic §aFlux Capacitors§r hold a whopping lot of energy - §a10 million RF§r - and are useful for keeping your §aRF-powered§r equipment and tools charged.\n\nPut one into your newly crafted §3CEF§r to charge it. You can then put it in your inventory to charge your items with §aRF§r, or you can leave it in the CEF to act as a §a2.5 million EU§r battery!\n\nFlux Capacitor is a §bBauble§r, open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish.\n\nFinally you can charge up all those depleted §6Dark Boots§r and §6The Ender§r swords you\u0027ve looted."
         }
       },
       "tasks:9": {
@@ -27492,7 +27517,7 @@
     "414:10": {
       "questID:3": 414,
       "preRequisites:11": [
-        143
+        53
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -27554,6 +27579,221 @@
       }
     },
     "415:10": {
+      "questID:3": 415,
+      "preRequisites:11": [
+        394
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thermalinnovation:magnet",
+            "Count:3": 1,
+            "tag:10": {
+              "Energy:3": 40000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Fluxomagnet",
+          "desc:8": "Now that you have a §aFlux Capacitor§r to keep things charged, you might consider making yourself a §aFluxomagnet§r.\n\nThis relatively inexpensive bauble will suck nearby items into your inventory."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thermalinnovation:magnet",
+              "Count:3": 1,
+              "tag:10": {
+                "Energy:3": 40000
+              },
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin",
+              "Count:3": 5,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "416:10": {
+      "questID:3": 416,
+      "preRequisites:11": [
+        413
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:fish",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 1,
+          "name:8": "Fish Oil",
+          "desc:8": "Fish Oil comes from, surprisingly, fish.\n\nAeügh."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "forge:bucketfilled",
+              "Count:3": 1,
+              "tag:10": {
+                "FluidName:8": "fish_oil",
+                "Amount:3": 1000
+              },
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin",
+              "Count:3": 5,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "minecraft:carrot",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "417:10": {
+      "questID:3": 417,
+      "preRequisites:11": [
+        288,
+        344
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:draconium_ingot",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 1,
+          "name:8": "Crafting Core",
+          "desc:8": "A much more efficient version of the Empowerer."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "packagedexcrafting:combination_crafter",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "packagedexcrafting:marked_pedestal",
+              "Count:3": 4,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin",
+              "Count:3": 5,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "418:10": {
       "questID:3": 488,
       "preRequisites:11": [
         6
@@ -27623,7 +27863,7 @@
         }
       }
     },
-    "416:10": {
+    "419:10": {
       "questID:3": 489,
       "preRequisites:11": [
         145
@@ -27687,7 +27927,7 @@
         }
       }
     },
-    "417:10": {
+    "420:10": {
       "questID:3": 490,
       "preRequisites:11": [
         146
@@ -27713,8 +27953,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "Autoclave",
-          "desc:8": "You\u0027ll need an autoclave for many recipes involving gems. Certus Quartz Crystals are made here."
+          "name:8": "LV Autoclave",
+          "desc:8": "An §3Autoclave§r is a machine that uses liquids (usually water) to polish stones, carve gems into lenses, infuse gems with special liquids, and crystallize various dusts.\n\nYou\u0027ll need an Autoclave for many recipes, but right now you want it to make §6Certus Quartz Crystals§r for §bApplied Energistics§r out of the §bGregTech§r §6Certus Quartz§r and its dust you get from mining and ore processing."
         }
       },
       "tasks:9": {
@@ -27751,7 +27991,7 @@
         }
       }
     },
-    "418:10": {
+    "421:10": {
       "questID:3": 491,
       "preRequisites:11": [
         4
@@ -27815,10 +28055,10 @@
         }
       }
     },
-    "419:10": {
+    "422:10": {
       "questID:3": 492,
       "preRequisites:11": [
-        107
+        233
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -27885,7 +28125,7 @@
         }
       }
     },
-    "420:10": {
+    "423:10": {
       "questID:3": 494,
       "preRequisites:11": [
         102
@@ -27949,7 +28189,7 @@
         }
       }
     },
-    "421:10": {
+    "424:10": {
       "questID:3": 495,
       "preRequisites:11": [
         530
@@ -28013,7 +28253,7 @@
         }
       }
     },
-    "422:10": {
+    "425:10": {
       "questID:3": 496,
       "preRequisites:11": [
         3
@@ -28083,7 +28323,7 @@
         }
       }
     },
-    "423:10": {
+    "426:10": {
       "questID:3": 497,
       "preRequisites:11": [
         145
@@ -28147,7 +28387,7 @@
         }
       }
     },
-    "424:10": {
+    "427:10": {
       "questID:3": 498,
       "preRequisites:11": [
         55
@@ -28219,7 +28459,7 @@
         }
       }
     },
-    "425:10": {
+    "428:10": {
       "questID:3": 499,
       "preRequisites:11": [
         53
@@ -28283,7 +28523,7 @@
         }
       }
     },
-    "426:10": {
+    "429:10": {
       "questID:3": 500,
       "preRequisites:11": [
         183,
@@ -28349,7 +28589,7 @@
         }
       }
     },
-    "427:10": {
+    "430:10": {
       "questID:3": 501,
       "preRequisites:11": [
         503,
@@ -28424,7 +28664,7 @@
       },
       "rewards:9": {}
     },
-    "428:10": {
+    "431:10": {
       "questID:3": 502,
       "preRequisites:11": [
         19,
@@ -28452,7 +28692,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Capacitors",
-          "desc:8": "Distinctly different from EnderIO\u0027s RF Capacitors, these are only useful as circuit components."
+          "desc:8": "Distinctly different from §bEnderIO§r\u0027s §6RF Capacitors§r, these are only useful as circuit components."
         }
       },
       "tasks:9": {
@@ -28489,7 +28729,7 @@
         }
       }
     },
-    "429:10": {
+    "432:10": {
       "questID:3": 503,
       "preRequisites:11": [
         313
@@ -28553,7 +28793,7 @@
         }
       }
     },
-    "430:10": {
+    "433:10": {
       "questID:3": 504,
       "preRequisites:11": [
         146
@@ -28617,7 +28857,7 @@
         }
       }
     },
-    "431:10": {
+    "434:10": {
       "questID:3": 505,
       "preRequisites:11": [
         154,
@@ -28690,7 +28930,7 @@
         }
       }
     },
-    "432:10": {
+    "435:10": {
       "questID:3": 507,
       "preRequisites:11": [
         260
@@ -28762,7 +29002,7 @@
         }
       }
     },
-    "433:10": {
+    "436:10": {
       "questID:3": 508,
       "preRequisites:11": [
         153
@@ -28826,7 +29066,7 @@
         }
       }
     },
-    "434:10": {
+    "437:10": {
       "questID:3": 509,
       "preRequisites:11": [
         34
@@ -28890,7 +29130,7 @@
         }
       }
     },
-    "435:10": {
+    "438:10": {
       "questID:3": 510,
       "preRequisites:11": [
         511
@@ -28974,7 +29214,7 @@
         }
       }
     },
-    "436:10": {
+    "439:10": {
       "questID:3": 511,
       "preRequisites:11": [
         67
@@ -29038,7 +29278,7 @@
         }
       }
     },
-    "437:10": {
+    "440:10": {
       "questID:3": 512,
       "preRequisites:11": [
         197
@@ -29089,7 +29329,7 @@
       },
       "rewards:9": {}
     },
-    "438:10": {
+    "441:10": {
       "questID:3": 513,
       "preRequisites:11": [
         60
@@ -29153,10 +29393,10 @@
         }
       }
     },
-    "439:10": {
+    "442:10": {
       "questID:3": 516,
       "preRequisites:11": [
-        143
+        53
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -29217,7 +29457,7 @@
         }
       }
     },
-    "440:10": {
+    "443:10": {
       "questID:3": 517,
       "preRequisites:11": [
         145
@@ -29281,7 +29521,7 @@
         }
       }
     },
-    "441:10": {
+    "444:10": {
       "questID:3": 519,
       "preRequisites:11": [
         99
@@ -29375,7 +29615,7 @@
         }
       }
     },
-    "442:10": {
+    "445:10": {
       "questID:3": 520,
       "preRequisites:11": [
         8,
@@ -29440,7 +29680,7 @@
         }
       }
     },
-    "443:10": {
+    "446:10": {
       "questID:3": 521,
       "preRequisites:11": [
         200,
@@ -29505,7 +29745,7 @@
         }
       }
     },
-    "444:10": {
+    "447:10": {
       "questID:3": 522,
       "preRequisites:11": [
         286,
@@ -29561,8 +29801,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:omnicoin",
-              "Count:3": 100,
+              "id:8": "contenttweaker:omnicoin100",
+              "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -29570,7 +29810,7 @@
         }
       }
     },
-    "445:10": {
+    "448:10": {
       "questID:3": 523,
       "preRequisites:11": [
         525
@@ -29634,7 +29874,7 @@
         }
       }
     },
-    "446:10": {
+    "449:10": {
       "questID:3": 524,
       "preRequisites:11": [
         523
@@ -29698,7 +29938,7 @@
         }
       }
     },
-    "447:10": {
+    "450:10": {
       "questID:3": 525,
       "preRequisites:11": [
         500
@@ -29762,7 +30002,7 @@
         }
       }
     },
-    "448:10": {
+    "451:10": {
       "questID:3": 526,
       "preRequisites:11": [
         192,
@@ -29827,7 +30067,7 @@
         }
       }
     },
-    "449:10": {
+    "452:10": {
       "questID:3": 527,
       "preRequisites:11": [
         311
@@ -29854,7 +30094,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Lumium",
-          "desc:8": "Glowing!"
+          "desc:8": "Glowing!\n\nThis one takes a significant amount of time to cook, so make sure to have it going constantly."
         }
       },
       "tasks:9": {
@@ -29891,7 +30131,7 @@
         }
       }
     },
-    "450:10": {
+    "453:10": {
       "questID:3": 528,
       "preRequisites:11": [
         30
@@ -29955,7 +30195,7 @@
         }
       }
     },
-    "451:10": {
+    "454:10": {
       "questID:3": 529,
       "preRequisites:11": [
         198,
@@ -30020,7 +30260,7 @@
         }
       }
     },
-    "452:10": {
+    "455:10": {
       "questID:3": 530,
       "preRequisites:11": [
         7,
@@ -30109,7 +30349,7 @@
         }
       }
     },
-    "453:10": {
+    "456:10": {
       "questID:3": 531,
       "preRequisites:11": [
         269,
@@ -30174,7 +30414,7 @@
         }
       }
     },
-    "454:10": {
+    "457:10": {
       "questID:3": 532,
       "preRequisites:11": [
         132
@@ -30238,7 +30478,7 @@
         }
       }
     },
-    "455:10": {
+    "458:10": {
       "questID:3": 533,
       "preRequisites:11": [
         535,
@@ -30303,7 +30543,7 @@
         }
       }
     },
-    "456:10": {
+    "459:10": {
       "questID:3": 534,
       "preRequisites:11": [
         292
@@ -30367,7 +30607,7 @@
         }
       }
     },
-    "457:10": {
+    "460:10": {
       "questID:3": 535,
       "preRequisites:11": [
         534
@@ -30431,7 +30671,7 @@
         }
       }
     },
-    "458:10": {
+    "461:10": {
       "questID:3": 536,
       "preRequisites:11": [
         253
@@ -30480,9 +30720,22 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 2,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin100",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
-    "459:10": {
+    "462:10": {
       "questID:3": 537,
       "preRequisites:11": [
         279
@@ -30554,7 +30807,7 @@
         }
       }
     },
-    "460:10": {
+    "463:10": {
       "questID:3": 538,
       "preRequisites:11": [],
       "properties:10": {
@@ -30603,7 +30856,7 @@
         }
       }
     },
-    "461:10": {
+    "464:10": {
       "questID:3": 539,
       "preRequisites:11": [
         260
@@ -30673,7 +30926,7 @@
         }
       }
     },
-    "462:10": {
+    "465:10": {
       "questID:3": 540,
       "preRequisites:11": [
         187
@@ -30743,7 +30996,7 @@
         }
       }
     },
-    "463:10": {
+    "466:10": {
       "questID:3": 541,
       "preRequisites:11": [
         60
@@ -30807,7 +31060,7 @@
         }
       }
     },
-    "464:10": {
+    "467:10": {
       "questID:3": 542,
       "preRequisites:11": [
         197
@@ -30858,7 +31111,7 @@
       },
       "rewards:9": {}
     },
-    "465:10": {
+    "468:10": {
       "questID:3": 543,
       "preRequisites:11": [
         60
@@ -30922,7 +31175,7 @@
         }
       }
     },
-    "466:10": {
+    "469:10": {
       "questID:3": 544,
       "preRequisites:11": [
         488,
@@ -31005,7 +31258,7 @@
         }
       }
     },
-    "467:10": {
+    "470:10": {
       "questID:3": 545,
       "preRequisites:11": [
         544
@@ -31087,7 +31340,7 @@
         }
       }
     },
-    "468:10": {
+    "471:10": {
       "questID:3": 546,
       "preRequisites:11": [
         146
@@ -31151,7 +31404,7 @@
         }
       }
     },
-    "469:10": {
+    "472:10": {
       "questID:3": 547,
       "preRequisites:11": [
         37
@@ -31215,7 +31468,7 @@
         }
       }
     },
-    "470:10": {
+    "473:10": {
       "questID:3": 548,
       "preRequisites:11": [
         21
@@ -31291,7 +31544,7 @@
         }
       }
     },
-    "471:10": {
+    "474:10": {
       "questID:3": 549,
       "preRequisites:11": [
         154
@@ -31322,7 +31575,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Oil Drilling Rig",
-          "desc:8": "If you don\u0027t like the idea of mining out Oilsands veins, you can build an Oil Drilling Rig.\n\nYou\u0027ll need to provide it with power, Drilling Fluid, and a steady supply of pipes. The Pipes only have a 1% chance to have one be used up per bucket."
+          "desc:8": "If you don\u0027t like the idea of mining out Oilsands veins, you can build an §3Oil Drilling Rig§r.\n\nYou\u0027ll need to provide it with power, §9Drilling Fluid§r, and a steady supply of §6Pipes§r. The Pipes only have a 1% chance to have one be used up per bucket of §9Oil§r drilled."
         }
       },
       "tasks:9": {
@@ -31393,6 +31646,16 @@
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
+            },
+            "10:10": {
+              "id:8": "forge:bucketfilled",
+              "Count:3": 1,
+              "tag:10": {
+                "FluidName:8": "drilling_fluid",
+                "Amount:3": 1000
+              },
+              "OreDict:8": "",
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -31400,10 +31663,12 @@
       },
       "rewards:9": {}
     },
-    "472:10": {
+    "475:10": {
       "questID:3": 550,
       "preRequisites:11": [
-        98
+        98,
+        233,
+        492
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31464,10 +31729,10 @@
         }
       }
     },
-    "473:10": {
+    "476:10": {
       "questID:3": 551,
       "preRequisites:11": [
-        107
+        233
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31528,7 +31793,7 @@
         }
       }
     },
-    "474:10": {
+    "477:10": {
       "questID:3": 552,
       "preRequisites:11": [
         394
@@ -31600,7 +31865,7 @@
         }
       }
     },
-    "475:10": {
+    "478:10": {
       "questID:3": 553,
       "preRequisites:11": [
         552,
@@ -31673,7 +31938,7 @@
         }
       }
     },
-    "476:10": {
+    "479:10": {
       "questID:3": 554,
       "preRequisites:11": [
         553
@@ -31745,7 +32010,7 @@
         }
       }
     },
-    "477:10": {
+    "480:10": {
       "questID:3": 555,
       "preRequisites:11": [
         390
@@ -31809,7 +32074,7 @@
         }
       }
     },
-    "478:10": {
+    "481:10": {
       "questID:3": 556,
       "preRequisites:11": [
         53,
@@ -31861,7 +32126,7 @@
         }
       }
     },
-    "479:10": {
+    "482:10": {
       "questID:3": 558,
       "preRequisites:11": [
         24
@@ -31925,7 +32190,7 @@
         }
       }
     },
-    "480:10": {
+    "483:10": {
       "questID:3": 559,
       "preRequisites:11": [
         34
@@ -31951,8 +32216,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Auxilliary Transmission Coils",
-          "desc:8": "This is an augment that will work in all dynamos. It greatly increases the rate at which the dynamo generates electricity, while also increasing fuel consumption at the same rate. In theory, the same effect could be achieved simply by building additional dynamos, but using Auxilliary Transmission Coils is cheap and effective way to greatly boost your power production, so long as you don\u0027t mind losing out on the small efficiency boost to the fuel provided by Fuel Catalyzers.\n\nEach Auxilliary Transmission Coil increases both base power production and fuel consumption by 100%, additively (so the second is 200%, third is 300%, etc)."
+          "name:8": "Auxiliary Transmission Coils",
+          "desc:8": "The §aAuxiliary Transmission Coil §ris an augment that will work in all types of dynamos. It will consume fuel faster to produce a correspondingly higher RF per tick.\n\nEach augment increases both base power production and fuel consumption by 100%, additively (so the second is 200%, third is 300%, etc).\n\nConsider the tradeoffs however, as you could just make another dynamo, and you miss out on §aFuel Catalyzer§r augments that make fuels burn longer for more total RF generated. The Auxiliary Transmission Coil will put additional stress your fuel production infrastructure.\n\nIf that\u0027s an acceptable tradeoff, then Auxiliary Transmission Coils are a cheap and effective way to boost your power production."
         }
       },
       "tasks:9": {
@@ -31976,7 +32241,7 @@
       },
       "rewards:9": {}
     },
-    "481:10": {
+    "484:10": {
       "questID:3": 560,
       "preRequisites:11": [
         326
@@ -32040,7 +32305,7 @@
         }
       }
     },
-    "482:10": {
+    "485:10": {
       "questID:3": 564,
       "preRequisites:11": [
         331,
@@ -32105,7 +32370,7 @@
         }
       }
     },
-    "483:10": {
+    "486:10": {
       "questID:3": 580,
       "preRequisites:11": [
         541
@@ -32169,7 +32434,7 @@
         }
       }
     },
-    "484:10": {
+    "487:10": {
       "questID:3": 582,
       "preRequisites:11": [
         315
@@ -32233,7 +32498,7 @@
         }
       }
     },
-    "485:10": {
+    "488:10": {
       "questID:3": 583,
       "preRequisites:11": [
         315
@@ -32297,7 +32562,7 @@
         }
       }
     },
-    "486:10": {
+    "489:10": {
       "questID:3": 584,
       "preRequisites:11": [
         316
@@ -32361,7 +32626,7 @@
         }
       }
     },
-    "487:10": {
+    "490:10": {
       "questID:3": 585,
       "preRequisites:11": [
         29
@@ -32425,7 +32690,7 @@
         }
       }
     },
-    "488:10": {
+    "491:10": {
       "questID:3": 586,
       "preRequisites:11": [
         150
@@ -32489,7 +32754,7 @@
         }
       }
     },
-    "489:10": {
+    "492:10": {
       "questID:3": 587,
       "preRequisites:11": [
         311
@@ -32553,7 +32818,7 @@
         }
       }
     },
-    "490:10": {
+    "493:10": {
       "questID:3": 588,
       "preRequisites:11": [
         150
@@ -32617,7 +32882,7 @@
         }
       }
     },
-    "491:10": {
+    "494:10": {
       "questID:3": 589,
       "preRequisites:11": [
         389
@@ -32681,7 +32946,7 @@
         }
       }
     },
-    "492:10": {
+    "495:10": {
       "questID:3": 591,
       "preRequisites:11": [
         91
@@ -32745,7 +33010,7 @@
         }
       }
     },
-    "493:10": {
+    "496:10": {
       "questID:3": 592,
       "preRequisites:11": [
         30
@@ -32809,7 +33074,7 @@
         }
       }
     },
-    "494:10": {
+    "497:10": {
       "questID:3": 593,
       "preRequisites:11": [
         19
@@ -32873,7 +33138,7 @@
         }
       }
     },
-    "495:10": {
+    "498:10": {
       "questID:3": 594,
       "preRequisites:11": [
         216
@@ -32937,7 +33202,7 @@
         }
       }
     },
-    "496:10": {
+    "499:10": {
       "questID:3": 595,
       "preRequisites:11": [
         297
@@ -33001,7 +33266,7 @@
         }
       }
     },
-    "497:10": {
+    "500:10": {
       "questID:3": 596,
       "preRequisites:11": [
         26
@@ -33065,7 +33330,7 @@
         }
       }
     },
-    "498:10": {
+    "501:10": {
       "questID:3": 597,
       "preRequisites:11": [
         35
@@ -33129,7 +33394,7 @@
         }
       }
     },
-    "499:10": {
+    "502:10": {
       "questID:3": 598,
       "preRequisites:11": [
         34
@@ -33193,7 +33458,7 @@
         }
       }
     },
-    "500:10": {
+    "503:10": {
       "questID:3": 599,
       "preRequisites:11": [
         19,
@@ -33258,7 +33523,7 @@
         }
       }
     },
-    "501:10": {
+    "504:10": {
       "questID:3": 600,
       "preRequisites:11": [
         59
@@ -33322,7 +33587,7 @@
         }
       }
     },
-    "502:10": {
+    "505:10": {
       "questID:3": 601,
       "preRequisites:11": [
         69
@@ -33386,7 +33651,7 @@
         }
       }
     },
-    "503:10": {
+    "506:10": {
       "questID:3": 602,
       "preRequisites:11": [
         156
@@ -33450,7 +33715,7 @@
         }
       }
     },
-    "504:10": {
+    "507:10": {
       "questID:3": 603,
       "preRequisites:11": [
         158
@@ -33514,7 +33779,7 @@
         }
       }
     },
-    "505:10": {
+    "508:10": {
       "questID:3": 604,
       "preRequisites:11": [
         605
@@ -33565,7 +33830,7 @@
       },
       "rewards:9": {}
     },
-    "506:10": {
+    "509:10": {
       "questID:3": 605,
       "preRequisites:11": [
         564,
@@ -33618,7 +33883,7 @@
       },
       "rewards:9": {}
     },
-    "507:10": {
+    "510:10": {
       "questID:3": 606,
       "preRequisites:11": [
         607
@@ -33669,7 +33934,7 @@
       },
       "rewards:9": {}
     },
-    "508:10": {
+    "511:10": {
       "questID:3": 607,
       "preRequisites:11": [
         195,
@@ -33734,7 +33999,7 @@
         }
       }
     },
-    "509:10": {
+    "512:10": {
       "questID:3": 608,
       "preRequisites:11": [
         288
@@ -33798,7 +34063,7 @@
         }
       }
     },
-    "510:10": {
+    "513:10": {
       "questID:3": 609,
       "preRequisites:11": [
         528
@@ -33862,7 +34127,7 @@
         }
       }
     },
-    "511:10": {
+    "514:10": {
       "questID:3": 610,
       "preRequisites:11": [
         328
@@ -33926,7 +34191,7 @@
         }
       }
     },
-    "512:10": {
+    "515:10": {
       "questID:3": 611,
       "preRequisites:11": [
         610
@@ -33990,7 +34255,7 @@
         }
       }
     },
-    "513:10": {
+    "516:10": {
       "questID:3": 612,
       "preRequisites:11": [
         536
@@ -34054,7 +34319,7 @@
         }
       }
     },
-    "514:10": {
+    "517:10": {
       "questID:3": 613,
       "preRequisites:11": [
         260
@@ -34118,7 +34383,7 @@
         }
       }
     },
-    "515:10": {
+    "518:10": {
       "questID:3": 614,
       "preRequisites:11": [
         175
@@ -34182,7 +34447,7 @@
         }
       }
     },
-    "516:10": {
+    "519:10": {
       "questID:3": 615,
       "preRequisites:11": [
         58
@@ -34246,7 +34511,7 @@
         }
       }
     },
-    "517:10": {
+    "520:10": {
       "questID:3": 616,
       "preRequisites:11": [
         5
@@ -34310,7 +34575,7 @@
         }
       }
     },
-    "518:10": {
+    "521:10": {
       "questID:3": 617,
       "preRequisites:11": [
         328
@@ -34374,7 +34639,7 @@
         }
       }
     },
-    "519:10": {
+    "522:10": {
       "questID:3": 618,
       "preRequisites:11": [
         260
@@ -34438,7 +34703,7 @@
         }
       }
     },
-    "520:10": {
+    "523:10": {
       "questID:3": 619,
       "preRequisites:11": [
         55
@@ -34502,7 +34767,7 @@
         }
       }
     },
-    "521:10": {
+    "524:10": {
       "questID:3": 620,
       "preRequisites:11": [
         55
@@ -34566,7 +34831,7 @@
         }
       }
     },
-    "522:10": {
+    "525:10": {
       "questID:3": 621,
       "preRequisites:11": [
         71
@@ -34630,7 +34895,7 @@
         }
       }
     },
-    "523:10": {
+    "526:10": {
       "questID:3": 622,
       "preRequisites:11": [
         175
@@ -34694,7 +34959,7 @@
         }
       }
     },
-    "524:10": {
+    "527:10": {
       "questID:3": 623,
       "preRequisites:11": [
         58
@@ -34758,7 +35023,7 @@
         }
       }
     },
-    "525:10": {
+    "528:10": {
       "questID:3": 624,
       "preRequisites:11": [
         149
@@ -34822,7 +35087,7 @@
         }
       }
     },
-    "526:10": {
+    "529:10": {
       "questID:3": 625,
       "preRequisites:11": [
         69
@@ -34886,7 +35151,7 @@
         }
       }
     },
-    "527:10": {
+    "530:10": {
       "questID:3": 626,
       "preRequisites:11": [
         80
@@ -34950,7 +35215,7 @@
         }
       }
     },
-    "528:10": {
+    "531:10": {
       "questID:3": 627,
       "preRequisites:11": [],
       "properties:10": {
@@ -35012,7 +35277,7 @@
         }
       }
     },
-    "529:10": {
+    "532:10": {
       "questID:3": 628,
       "preRequisites:11": [
         94
@@ -35076,7 +35341,7 @@
         }
       }
     },
-    "530:10": {
+    "533:10": {
       "questID:3": 629,
       "preRequisites:11": [
         131
@@ -35140,7 +35405,7 @@
         }
       }
     },
-    "531:10": {
+    "534:10": {
       "questID:3": 630,
       "preRequisites:11": [
         175
@@ -35204,7 +35469,7 @@
         }
       }
     },
-    "532:10": {
+    "535:10": {
       "questID:3": 631,
       "preRequisites:11": [
         71
@@ -35268,7 +35533,7 @@
         }
       }
     },
-    "533:10": {
+    "536:10": {
       "questID:3": 632,
       "preRequisites:11": [
         71
@@ -35332,7 +35597,7 @@
         }
       }
     },
-    "534:10": {
+    "537:10": {
       "questID:3": 633,
       "preRequisites:11": [
         139
@@ -35396,7 +35661,7 @@
         }
       }
     },
-    "535:10": {
+    "538:10": {
       "questID:3": 634,
       "preRequisites:11": [
         148
@@ -35460,7 +35725,7 @@
         }
       }
     },
-    "536:10": {
+    "539:10": {
       "questID:3": 635,
       "preRequisites:11": [
         285
@@ -35524,7 +35789,7 @@
         }
       }
     },
-    "537:10": {
+    "540:10": {
       "questID:3": 636,
       "preRequisites:11": [
         91
@@ -35588,7 +35853,7 @@
         }
       }
     },
-    "538:10": {
+    "541:10": {
       "questID:3": 637,
       "preRequisites:11": [
         98
@@ -35652,7 +35917,7 @@
         }
       }
     },
-    "539:10": {
+    "542:10": {
       "questID:3": 638,
       "preRequisites:11": [
         4
@@ -35716,7 +35981,7 @@
         }
       }
     },
-    "540:10": {
+    "543:10": {
       "questID:3": 639,
       "preRequisites:11": [
         59
@@ -35780,7 +36045,7 @@
         }
       }
     },
-    "541:10": {
+    "544:10": {
       "questID:3": 640,
       "preRequisites:11": [
         59
@@ -35844,7 +36109,7 @@
         }
       }
     },
-    "542:10": {
+    "545:10": {
       "questID:3": 641,
       "preRequisites:11": [
         6
@@ -35908,7 +36173,7 @@
         }
       }
     },
-    "543:10": {
+    "546:10": {
       "questID:3": 642,
       "preRequisites:11": [
         78
@@ -35972,7 +36237,7 @@
         }
       }
     },
-    "544:10": {
+    "547:10": {
       "questID:3": 643,
       "preRequisites:11": [
         78
@@ -36036,7 +36301,7 @@
         }
       }
     },
-    "545:10": {
+    "548:10": {
       "questID:3": 644,
       "preRequisites:11": [
         266
@@ -36100,7 +36365,7 @@
         }
       }
     },
-    "546:10": {
+    "549:10": {
       "questID:3": 645,
       "preRequisites:11": [
         175
@@ -36164,7 +36429,7 @@
         }
       }
     },
-    "547:10": {
+    "550:10": {
       "questID:3": 646,
       "preRequisites:11": [
         144
@@ -36228,7 +36493,7 @@
         }
       }
     },
-    "548:10": {
+    "551:10": {
       "questID:3": 647,
       "preRequisites:11": [
         169
@@ -36292,7 +36557,7 @@
         }
       }
     },
-    "549:10": {
+    "552:10": {
       "questID:3": 648,
       "preRequisites:11": [
         59
@@ -36356,7 +36621,7 @@
         }
       }
     },
-    "550:10": {
+    "553:10": {
       "questID:3": 649,
       "preRequisites:11": [
         263
@@ -36420,7 +36685,7 @@
         }
       }
     },
-    "551:10": {
+    "554:10": {
       "questID:3": 650,
       "preRequisites:11": [
         6
@@ -36484,7 +36749,7 @@
         }
       }
     },
-    "552:10": {
+    "555:10": {
       "questID:3": 651,
       "preRequisites:11": [
         2,
@@ -36549,7 +36814,7 @@
         }
       }
     },
-    "553:10": {
+    "556:10": {
       "questID:3": 652,
       "preRequisites:11": [
         175
@@ -36613,7 +36878,7 @@
         }
       }
     },
-    "554:10": {
+    "557:10": {
       "questID:3": 653,
       "preRequisites:11": [
         201
@@ -36677,7 +36942,7 @@
         }
       }
     },
-    "555:10": {
+    "558:10": {
       "questID:3": 654,
       "preRequisites:11": [
         254
@@ -36741,7 +37006,7 @@
         }
       }
     },
-    "556:10": {
+    "559:10": {
       "questID:3": 655,
       "preRequisites:11": [
         251
@@ -36805,7 +37070,7 @@
         }
       }
     },
-    "557:10": {
+    "560:10": {
       "questID:3": 656,
       "preRequisites:11": [
         169
@@ -36869,7 +37134,7 @@
         }
       }
     },
-    "558:10": {
+    "561:10": {
       "questID:3": 657,
       "preRequisites:11": [
         6
@@ -36933,7 +37198,7 @@
         }
       }
     },
-    "559:10": {
+    "562:10": {
       "questID:3": 658,
       "preRequisites:11": [
         71
@@ -36997,7 +37262,7 @@
         }
       }
     },
-    "560:10": {
+    "563:10": {
       "questID:3": 659,
       "preRequisites:11": [
         267
@@ -37061,7 +37326,7 @@
         }
       }
     },
-    "561:10": {
+    "564:10": {
       "questID:3": 660,
       "preRequisites:11": [
         5
@@ -37125,7 +37390,7 @@
         }
       }
     },
-    "562:10": {
+    "565:10": {
       "questID:3": 661,
       "preRequisites:11": [
         669
@@ -37189,7 +37454,7 @@
         }
       }
     },
-    "563:10": {
+    "566:10": {
       "questID:3": 662,
       "preRequisites:11": [
         673
@@ -37253,7 +37518,7 @@
         }
       }
     },
-    "564:10": {
+    "567:10": {
       "questID:3": 663,
       "preRequisites:11": [
         675
@@ -37317,7 +37582,7 @@
         }
       }
     },
-    "565:10": {
+    "568:10": {
       "questID:3": 664,
       "preRequisites:11": [
         677
@@ -37381,7 +37646,7 @@
         }
       }
     },
-    "566:10": {
+    "569:10": {
       "questID:3": 665,
       "preRequisites:11": [
         676
@@ -37445,7 +37710,7 @@
         }
       }
     },
-    "567:10": {
+    "570:10": {
       "questID:3": 666,
       "preRequisites:11": [
         678
@@ -37509,7 +37774,7 @@
         }
       }
     },
-    "568:10": {
+    "571:10": {
       "questID:3": 667,
       "preRequisites:11": [
         679
@@ -37573,7 +37838,7 @@
         }
       }
     },
-    "569:10": {
+    "572:10": {
       "questID:3": 668,
       "preRequisites:11": [
         287
@@ -37637,7 +37902,7 @@
         }
       }
     },
-    "570:10": {
+    "573:10": {
       "questID:3": 669,
       "preRequisites:11": [
         672
@@ -37707,7 +37972,7 @@
         }
       }
     },
-    "571:10": {
+    "574:10": {
       "questID:3": 670,
       "preRequisites:11": [
         4
@@ -37758,7 +38023,7 @@
         }
       }
     },
-    "572:10": {
+    "575:10": {
       "questID:3": 671,
       "preRequisites:11": [
         672
@@ -37821,7 +38086,7 @@
       },
       "rewards:9": {}
     },
-    "573:10": {
+    "576:10": {
       "questID:3": 672,
       "preRequisites:11": [
         350
@@ -37891,7 +38156,7 @@
         }
       }
     },
-    "574:10": {
+    "577:10": {
       "questID:3": 673,
       "preRequisites:11": [
         671
@@ -37960,7 +38225,7 @@
       },
       "rewards:9": {}
     },
-    "575:10": {
+    "578:10": {
       "questID:3": 674,
       "preRequisites:11": [
         671
@@ -38017,7 +38282,7 @@
       },
       "rewards:9": {}
     },
-    "576:10": {
+    "579:10": {
       "questID:3": 675,
       "preRequisites:11": [
         669,
@@ -38087,7 +38352,7 @@
       },
       "rewards:9": {}
     },
-    "577:10": {
+    "580:10": {
       "questID:3": 676,
       "preRequisites:11": [
         675,
@@ -38115,7 +38380,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Curium Fission",
-          "desc:8": "Depleted Curium results in Berklium and Californium."
+          "desc:8": "Depleted Curium results in Berkelium and Californium."
         }
       },
       "tasks:9": {
@@ -38157,7 +38422,7 @@
       },
       "rewards:9": {}
     },
-    "578:10": {
+    "581:10": {
       "questID:3": 677,
       "preRequisites:11": [
         673
@@ -38226,7 +38491,7 @@
       },
       "rewards:9": {}
     },
-    "579:10": {
+    "582:10": {
       "questID:3": 678,
       "preRequisites:11": [
         676
@@ -38252,14 +38517,50 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Berklium Fission",
-          "desc:8": " "
+          "name:8": "Berkelium Fission",
+          "desc:8": " Depleted LECm-243 results in Berkelium, Curium and Californium."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:curium",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:curium",
+              "Count:3": 8,
+              "OreDict:8": "",
+              "Damage:3": 9
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:fuel_curium",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:depleted_fuel_curium",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
-    "580:10": {
+    "583:10": {
       "questID:3": 679,
       "preRequisites:11": [
         676
@@ -38286,13 +38587,49 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Californium Fission",
-          "desc:8": " "
+          "desc:8": "Depleted LECf-249 results in Californium."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:californium",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:californium",
+              "Count:3": 8,
+              "OreDict:8": "",
+              "Damage:3": 12
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:fuel_californium",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:depleted_fuel_californium",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
-    "581:10": {
+    "584:10": {
       "questID:3": 680,
       "preRequisites:11": [
         678,
@@ -38335,8 +38672,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:omnicoin",
-              "Count:3": 1000,
+              "id:8": "contenttweaker:omnicoin100",
+              "Count:3": 10,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -38344,7 +38681,7 @@
         }
       }
     },
-    "582:10": {
+    "585:10": {
       "questID:3": 681,
       "preRequisites:11": [
         89
@@ -38408,7 +38745,7 @@
         }
       }
     },
-    "583:10": {
+    "586:10": {
       "questID:3": 682,
       "preRequisites:11": [
         26,
@@ -38473,7 +38810,7 @@
         }
       }
     },
-    "584:10": {
+    "587:10": {
       "questID:3": 683,
       "preRequisites:11": [
         278
@@ -38500,7 +38837,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Overworldian Matter",
-          "desc:8": "Provide your Simulation Chamber with RF power and Pulsating Polymer Clay. Then insert a Data Module of your choice. The Simulation Chamber will consume Polymer Clay and a decent amount of power to begin simulating mob kills. This will generate Overworldian Matter and may occasionally provide you with Pristine Matter.\n\nOverworldian Matter can be eaten to gain experience, or can be combined with other materials to obtain drops from Overworld mobs. With these drops, you can then create Data Modules for other mob types as well."
+          "desc:8": "Provide your §3Simulation Chamber§r with RF power and §6Pulsating Polymer Clay§r. Then insert a §6Data Model§r of your choice. The Simulation Chamber will consume Polymer Clay and a decent amount of power to begin simulating mob kills. This will generate §6Overworldian Matter§r and may occasionally provide you with §6Pristine Matter§r.\n\n§6Overworldian Matter§r can be eaten to gain experience, or can be combined with other materials to obtain drops from Overworld mobs. With these drops, you can then create Data Models for other mob types as well."
         }
       },
       "tasks:9": {
@@ -38537,7 +38874,7 @@
         }
       }
     },
-    "585:10": {
+    "588:10": {
       "questID:3": 684,
       "preRequisites:11": [
         28
@@ -38607,7 +38944,7 @@
         }
       }
     },
-    "586:10": {
+    "589:10": {
       "questID:3": 685,
       "preRequisites:11": [
         682
@@ -38634,7 +38971,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Loot Fabricator",
-          "desc:8": "Simulating mob kills will occasionally result in Pristine matter of that mob\u0027s type. Putting Pristine mob matter into a Loot Fabricator will allow you to obtain mob drops from that mob."
+          "desc:8": "Simulating mob kills will occasionally result in §6Pristine Matter§r of that mob\u0027s type.\n\nPutting Pristine matter into a §3Loot Fabricator§r will allow you to obtain one of various items related to that mob."
         }
       },
       "tasks:9": {
@@ -38671,7 +39008,7 @@
         }
       }
     },
-    "587:10": {
+    "590:10": {
       "questID:3": 686,
       "preRequisites:11": [
         683
@@ -38698,7 +39035,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Overworldian Mobs",
-          "desc:8": "There\u0027s no rush to get these all done and leveled up. But they do provide a good source of some of the basic resources in exchange for RF. Look at what the Pristine Matter for each mob provides and let the ones you\u0027re interested in run when you have extra power and are doing something else."
+          "desc:8": "There\u0027s no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF.\n\nLook at what the §6Pristine Matter§r for each mob provides, and set up simulators for all the ones you\u0027re interested in. If you your power can handle it, it can even be advantageous to run several of the same model."
         }
       },
       "tasks:9": {
@@ -38771,7 +39108,7 @@
         }
       }
     },
-    "588:10": {
+    "591:10": {
       "questID:3": 687,
       "preRequisites:11": [
         4
@@ -38835,7 +39172,7 @@
         }
       }
     },
-    "589:10": {
+    "592:10": {
       "questID:3": 688,
       "preRequisites:11": [
         683
@@ -38862,7 +39199,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Hellish Matter",
-          "desc:8": "Overworldian Matter and Netherrack can be crafted into Hellish Matter.\n\nNetherrack is obtained by combining a Dust Block and Lava in a Chemical Reactor."
+          "desc:8": "§6Overworldian Matter§r and §6Netherrack§r can be crafted into §6Hellish Matter§r.\n\nNetherrack can be obtained by combining a §6Dust Block§r and §cLava§r in a §3Chemical Reactor§r."
         }
       },
       "tasks:9": {
@@ -38899,7 +39236,7 @@
         }
       }
     },
-    "590:10": {
+    "593:10": {
       "questID:3": 689,
       "preRequisites:11": [
         688
@@ -38975,7 +39312,7 @@
         }
       }
     },
-    "591:10": {
+    "594:10": {
       "questID:3": 690,
       "preRequisites:11": [
         688
@@ -39002,7 +39339,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Extraterrestrial Matter",
-          "desc:8": "Hellish Matter and Ender Pearl can be crafted into Extraterrestrial Matter."
+          "desc:8": "§6Hellish Matter§r and §6Ender Pearl§r can be crafted into Extraterrestrial Matter."
         }
       },
       "tasks:9": {
@@ -39039,7 +39376,7 @@
         }
       }
     },
-    "592:10": {
+    "595:10": {
       "questID:3": 691,
       "preRequisites:11": [
         690
@@ -39121,10 +39458,11 @@
         }
       }
     },
-    "593:10": {
+    "596:10": {
       "questID:3": 692,
       "preRequisites:11": [
-        4
+        4,
+        12
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39202,7 +39540,7 @@
         }
       }
     },
-    "594:10": {
+    "597:10": {
       "questID:3": 693,
       "preRequisites:11": [
         47,
@@ -39275,7 +39613,7 @@
         }
       }
     },
-    "595:10": {
+    "598:10": {
       "questID:3": 694,
       "preRequisites:11": [
         693,
@@ -39340,7 +39678,7 @@
         }
       }
     },
-    "596:10": {
+    "599:10": {
       "questID:3": 695,
       "preRequisites:11": [
         313,
@@ -39400,7 +39738,7 @@
       },
       "rewards:9": {}
     },
-    "597:10": {
+    "600:10": {
       "questID:3": 696,
       "preRequisites:11": [
         519
@@ -39518,7 +39856,7 @@
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -624,
+          "x:3": -684,
           "y:3": 144,
           "id:3": 26,
           "sizeY:3": 24
@@ -39596,7 +39934,7 @@
         "17:10": {
           "sizeX:3": 24,
           "x:3": -744,
-          "y:3": 276,
+          "y:3": 288,
           "id:3": 59,
           "sizeY:3": 24
         },
@@ -39664,18 +40002,18 @@
           "sizeY:3": 24
         },
         "27:10": {
-          "sizeX:3": 36,
-          "x:3": -870,
-          "y:3": 234,
+          "sizeX:3": 24,
+          "x:3": -684,
+          "y:3": 96,
           "id:3": 143,
-          "sizeY:3": 36
+          "sizeY:3": 24
         },
         "28:10": {
-          "sizeX:3": 24,
-          "x:3": -864,
-          "y:3": 144,
+          "sizeX:3": 30,
+          "x:3": -879,
+          "y:3": 189,
           "id:3": 145,
-          "sizeY:3": 24
+          "sizeY:3": 30
         },
         "29:10": {
           "sizeX:3": 24,
@@ -39713,251 +40051,258 @@
           "sizeY:3": 24
         },
         "34:10": {
+          "sizeX:3": 24,
+          "x:3": -708,
+          "y:3": 222,
+          "id:3": 247,
+          "sizeY:3": 24
+        },
+        "35:10": {
           "sizeX:3": 48,
           "x:3": -576,
           "y:3": 384,
           "id:3": 259,
           "sizeY:3": 48
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -624,
           "y:3": 240,
           "id:3": 260,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
-          "x:3": -912,
-          "y:3": 204,
+          "x:3": -876,
+          "y:3": 144,
           "id:3": 270,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 192,
           "id:3": 272,
           "sizeY:3": 24
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": -792,
           "y:3": 384,
           "id:3": 273,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": -624,
           "y:3": 48,
           "id:3": 278,
           "sizeY:3": 24
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 48,
           "x:3": -456,
           "y:3": 132,
           "id:3": 282,
           "sizeY:3": 48
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 240,
           "id:3": 296,
           "sizeY:3": 24
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": -792,
           "y:3": 96,
           "id:3": 352,
           "sizeY:3": 24
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 36,
-          "x:3": -888,
-          "y:3": 24,
+          "x:3": -882,
+          "y:3": 66,
           "id:3": 402,
           "sizeY:3": 36
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 36,
-          "x:3": -888,
-          "y:3": 72,
+          "x:3": -882,
+          "y:3": 18,
           "id:3": 403,
           "sizeY:3": 36
         },
-        "45:10": {
-          "sizeX:3": 24,
-          "x:3": -828,
-          "y:3": 108,
-          "id:3": 413,
-          "sizeY:3": 24
-        },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": -912,
-          "y:3": 240,
-          "id:3": 414,
+          "x:3": -828,
+          "y:3": 144,
+          "id:3": 413,
           "sizeY:3": 24
         },
         "47:10": {
           "sizeX:3": 24,
-          "x:3": -864,
-          "y:3": 204,
-          "id:3": 489,
+          "x:3": -876,
+          "y:3": 240,
+          "id:3": 414,
           "sizeY:3": 24
         },
         "48:10": {
+          "sizeX:3": 24,
+          "x:3": -924,
+          "y:3": 192,
+          "id:3": 489,
+          "sizeY:3": 24
+        },
+        "49:10": {
           "sizeX:3": 24,
           "x:3": -528,
           "y:3": 144,
           "id:3": 490,
           "sizeY:3": 24
         },
-        "49:10": {
-          "sizeX:3": 24,
-          "x:3": -828,
-          "y:3": 144,
-          "id:3": 497,
-          "sizeY:3": 24
-        },
         "50:10": {
           "sizeX:3": 24,
-          "x:3": -840,
-          "y:3": 324,
-          "id:3": 499,
+          "x:3": -828,
+          "y:3": 192,
+          "id:3": 497,
           "sizeY:3": 24
         },
         "51:10": {
           "sizeX:3": 24,
-          "x:3": -912,
+          "x:3": -828,
           "y:3": 288,
-          "id:3": 516,
+          "id:3": 499,
           "sizeY:3": 24
         },
         "52:10": {
           "sizeX:3": 24,
-          "x:3": -912,
+          "x:3": -876,
+          "y:3": 288,
+          "id:3": 516,
+          "sizeY:3": 24
+        },
+        "53:10": {
+          "sizeX:3": 24,
+          "x:3": -924,
           "y:3": 144,
           "id:3": 517,
           "sizeY:3": 24
         },
-        "53:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": -672,
           "y:3": 192,
           "id:3": 528,
           "sizeY:3": 24
         },
-        "54:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 276,
           "id:3": 539,
           "sizeY:3": 24
         },
-        "55:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": -708,
-          "y:3": 294,
+          "y:3": 288,
           "id:3": 544,
           "sizeY:3": 24
         },
-        "56:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": -672,
-          "y:3": 294,
+          "y:3": 288,
           "id:3": 545,
           "sizeY:3": 24
         },
-        "57:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": -744,
           "y:3": 96,
           "id:3": 548,
           "sizeY:3": 24
         },
-        "58:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": -708,
           "y:3": 258,
           "id:3": 553,
           "sizeY:3": 24
         },
-        "59:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": -672,
           "y:3": 258,
           "id:3": 554,
           "sizeY:3": 24
         },
-        "60:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": -708,
           "y:3": 420,
           "id:3": 559,
           "sizeY:3": 24
         },
-        "61:10": {
+        "62:10": {
           "sizeX:3": 48,
           "x:3": -636,
           "y:3": 84,
           "id:3": 682,
           "sizeY:3": 48
         },
-        "62:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 48,
           "id:3": 683,
           "sizeY:3": 24
         },
-        "63:10": {
+        "64:10": {
           "sizeX:3": 24,
           "x:3": -684,
           "y:3": 48,
           "id:3": 684,
           "sizeY:3": 24
         },
-        "64:10": {
+        "65:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 96,
           "id:3": 685,
           "sizeY:3": 24
         },
-        "65:10": {
+        "66:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 12,
           "id:3": 686,
           "sizeY:3": 24
         },
-        "66:10": {
+        "67:10": {
           "sizeX:3": 24,
           "x:3": -534,
           "y:3": 48,
           "id:3": 688,
           "sizeY:3": 24
         },
-        "67:10": {
+        "68:10": {
           "sizeX:3": 24,
           "x:3": -534,
           "y:3": 12,
           "id:3": 689,
           "sizeY:3": 24
         },
-        "68:10": {
+        "69:10": {
           "sizeX:3": 24,
           "x:3": -492,
           "y:3": 48,
           "id:3": 690,
           "sizeY:3": 24
         },
-        "69:10": {
+        "70:10": {
           "sizeX:3": 24,
           "x:3": -492,
           "y:3": 12,
@@ -40058,7 +40403,7 @@
         "10:10": {
           "sizeX:3": 24,
           "x:3": -120,
-          "y:3": 252,
+          "y:3": 258,
           "id:3": 51,
           "sizeY:3": 24
         },
@@ -40114,7 +40459,7 @@
         "18:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": 84,
+          "y:3": 132,
           "id:3": 74,
           "sizeY:3": 24
         },
@@ -40219,7 +40564,7 @@
         "33:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": 228,
+          "y:3": 168,
           "id:3": 92,
           "sizeY:3": 24
         },
@@ -40281,8 +40626,8 @@
         },
         "42:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 180,
+          "x:3": -90,
+          "y:3": 204,
           "id:3": 103,
           "sizeY:3": 24
         },
@@ -40309,7 +40654,7 @@
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": -168,
+          "x:3": -120,
           "y:3": 132,
           "id:3": 107,
           "sizeY:3": 24
@@ -40344,7 +40689,7 @@
         },
         "51:10": {
           "sizeX:3": 24,
-          "x:3": -120,
+          "x:3": -72,
           "y:3": 132,
           "id:3": 112,
           "sizeY:3": 24
@@ -40359,7 +40704,7 @@
         "53:10": {
           "sizeX:3": 24,
           "x:3": -120,
-          "y:3": 84,
+          "y:3": 36,
           "id:3": 114,
           "sizeY:3": 24
         },
@@ -40428,8 +40773,8 @@
         },
         "63:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 84,
+          "x:3": -24,
+          "y:3": 36,
           "id:3": 125,
           "sizeY:3": 24
         },
@@ -40491,488 +40836,495 @@
         },
         "72:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 252,
+          "x:3": -84,
+          "y:3": 258,
           "id:3": 140,
           "sizeY:3": 24
         },
         "73:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": 84,
+          "id:3": 143,
+          "sizeY:3": 24
+        },
+        "74:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 288,
           "id:3": 147,
           "sizeY:3": 24
         },
-        "74:10": {
+        "75:10": {
           "sizeX:3": 48,
           "x:3": -264,
           "y:3": 276,
           "id:3": 154,
           "sizeY:3": 48
         },
-        "75:10": {
+        "76:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 84,
           "id:3": 187,
           "sizeY:3": 24
         },
-        "76:10": {
+        "77:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 180,
           "id:3": 202,
           "sizeY:3": 24
         },
-        "77:10": {
+        "78:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 480,
           "id:3": 203,
           "sizeY:3": 24
         },
-        "78:10": {
+        "79:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 180,
           "id:3": 204,
           "sizeY:3": 24
         },
-        "79:10": {
+        "80:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 180,
           "id:3": 205,
           "sizeY:3": 24
         },
-        "80:10": {
+        "81:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 132,
           "id:3": 206,
           "sizeY:3": 24
         },
-        "81:10": {
+        "82:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 132,
           "id:3": 207,
           "sizeY:3": 24
         },
-        "82:10": {
+        "83:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 180,
           "id:3": 208,
           "sizeY:3": 24
         },
-        "83:10": {
+        "84:10": {
           "sizeX:3": 48,
           "x:3": 120,
           "y:3": 120,
           "id:3": 209,
           "sizeY:3": 48
         },
-        "84:10": {
+        "85:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 216,
           "id:3": 210,
           "sizeY:3": 24
         },
-        "85:10": {
+        "86:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 216,
           "id:3": 211,
           "sizeY:3": 24
         },
-        "86:10": {
+        "87:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 180,
           "id:3": 212,
           "sizeY:3": 24
         },
-        "87:10": {
+        "88:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 480,
           "id:3": 213,
           "sizeY:3": 24
         },
-        "88:10": {
+        "89:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 336,
           "id:3": 214,
           "sizeY:3": 24
         },
-        "89:10": {
+        "90:10": {
           "sizeX:3": 48,
           "x:3": 264,
           "y:3": 372,
           "id:3": 216,
           "sizeY:3": 48
         },
-        "90:10": {
+        "91:10": {
           "sizeX:3": 72,
           "x:3": 216,
           "y:3": 432,
           "id:3": 217,
           "sizeY:3": 72
         },
-        "91:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 360,
           "id:3": 219,
           "sizeY:3": 24
         },
-        "92:10": {
+        "93:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 144,
           "id:3": 220,
           "sizeY:3": 24
         },
-        "93:10": {
+        "94:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 108,
           "id:3": 221,
           "sizeY:3": 24
         },
-        "94:10": {
+        "95:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": 108,
           "id:3": 222,
           "sizeY:3": 24
         },
-        "95:10": {
+        "96:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 108,
           "id:3": 223,
           "sizeY:3": 24
         },
-        "96:10": {
+        "97:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 72,
           "id:3": 224,
           "sizeY:3": 24
         },
-        "97:10": {
+        "98:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": 72,
           "id:3": 225,
           "sizeY:3": 24
         },
-        "98:10": {
+        "99:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 72,
           "id:3": 226,
           "sizeY:3": 24
         },
-        "99:10": {
+        "100:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 36,
           "id:3": 227,
           "sizeY:3": 24
         },
-        "100:10": {
+        "101:10": {
           "sizeX:3": 24,
           "x:3": -120,
-          "y:3": 36,
+          "y:3": 84,
           "id:3": 229,
           "sizeY:3": 24
         },
-        "101:10": {
+        "102:10": {
           "sizeX:3": 72,
           "x:3": 216,
           "y:3": 252,
           "id:3": 232,
           "sizeY:3": 72
         },
-        "102:10": {
+        "103:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": 252,
+          "y:3": 204,
           "id:3": 233,
           "sizeY:3": 24
         },
-        "103:10": {
+        "104:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 180,
           "id:3": 236,
           "sizeY:3": 24
         },
-        "104:10": {
+        "105:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 180,
+          "x:3": -48,
+          "y:3": 204,
           "id:3": 237,
           "sizeY:3": 24
         },
-        "105:10": {
+        "106:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 84,
           "id:3": 275,
           "sizeY:3": 24
         },
-        "106:10": {
+        "107:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 36,
           "id:3": 276,
           "sizeY:3": 24
         },
-        "107:10": {
+        "108:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 324,
           "id:3": 281,
           "sizeY:3": 24
         },
-        "108:10": {
+        "109:10": {
           "sizeX:3": 36,
           "x:3": -552,
           "y:3": 168,
           "id:3": 319,
           "sizeY:3": 36
         },
-        "109:10": {
+        "110:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": 432,
           "id:3": 338,
           "sizeY:3": 24
         },
-        "110:10": {
+        "111:10": {
           "sizeX:3": 24,
-          "x:3": -24,
+          "x:3": 36,
           "y:3": 180,
           "id:3": 343,
           "sizeY:3": 24
         },
-        "111:10": {
+        "112:10": {
           "sizeX:3": 24,
-          "x:3": -24,
+          "x:3": 84,
           "y:3": 228,
           "id:3": 348,
           "sizeY:3": 24
         },
-        "112:10": {
+        "113:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": 324,
           "id:3": 349,
           "sizeY:3": 24
         },
-        "113:10": {
+        "114:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 228,
           "id:3": 369,
           "sizeY:3": 24
         },
-        "114:10": {
+        "115:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 276,
           "id:3": 372,
           "sizeY:3": 24
         },
-        "115:10": {
+        "116:10": {
           "sizeX:3": 48,
           "x:3": 132,
           "y:3": 264,
           "id:3": 373,
           "sizeY:3": 48
         },
-        "116:10": {
+        "117:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 360,
           "id:3": 374,
           "sizeY:3": 24
         },
-        "117:10": {
+        "118:10": {
           "sizeX:3": 48,
           "x:3": 192,
           "y:3": 372,
           "id:3": 395,
           "sizeY:3": 48
         },
-        "118:10": {
+        "119:10": {
           "sizeX:3": 36,
           "x:3": -486,
           "y:3": 222,
           "id:3": 398,
           "sizeY:3": 36
         },
-        "119:10": {
+        "120:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 336,
           "id:3": 400,
           "sizeY:3": 24
         },
-        "120:10": {
+        "121:10": {
           "sizeX:3": 36,
           "x:3": -126,
           "y:3": 438,
           "id:3": 404,
           "sizeY:3": 36
         },
-        "121:10": {
+        "122:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": 204,
+          "y:3": 240,
           "id:3": 492,
           "sizeY:3": 24
         },
-        "122:10": {
+        "123:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": 300,
           "id:3": 494,
           "sizeY:3": 24
         },
-        "123:10": {
+        "124:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": 36,
           "id:3": 498,
           "sizeY:3": 24
         },
-        "124:10": {
+        "125:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 132,
           "id:3": 502,
           "sizeY:3": 24
         },
-        "125:10": {
+        "126:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 288,
           "id:3": 504,
           "sizeY:3": 24
         },
-        "126:10": {
+        "127:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 336,
           "id:3": 505,
           "sizeY:3": 24
         },
-        "127:10": {
+        "128:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 384,
           "id:3": 507,
           "sizeY:3": 24
         },
-        "128:10": {
+        "129:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 36,
           "id:3": 509,
           "sizeY:3": 24
         },
-        "129:10": {
+        "130:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 324,
           "id:3": 510,
           "sizeY:3": 24
         },
-        "130:10": {
+        "131:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": 360,
           "id:3": 511,
           "sizeY:3": 24
         },
-        "131:10": {
+        "132:10": {
           "sizeX:3": 24,
           "x:3": -354,
           "y:3": 84,
           "id:3": 516,
           "sizeY:3": 24
         },
-        "132:10": {
+        "133:10": {
           "sizeX:3": 24,
           "x:3": -390,
           "y:3": 84,
           "id:3": 517,
           "sizeY:3": 24
         },
-        "133:10": {
+        "134:10": {
           "sizeX:3": 36,
           "x:3": -552,
           "y:3": 120,
           "id:3": 538,
           "sizeY:3": 36
         },
-        "134:10": {
+        "135:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": 132,
           "id:3": 540,
           "sizeY:3": 24
         },
-        "135:10": {
+        "136:10": {
           "sizeX:3": 36,
           "x:3": -552,
           "y:3": 216,
           "id:3": 541,
           "sizeY:3": 36
         },
-        "136:10": {
+        "137:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 288,
           "id:3": 546,
           "sizeY:3": 24
         },
-        "137:10": {
+        "138:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": 240,
           "id:3": 550,
           "sizeY:3": 24
         },
-        "138:10": {
+        "139:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 180,
+          "x:3": -132,
+          "y:3": 204,
           "id:3": 551,
           "sizeY:3": 24
         },
-        "139:10": {
+        "140:10": {
           "sizeX:3": 36,
           "x:3": -552,
           "y:3": 72,
           "id:3": 556,
           "sizeY:3": 36
         },
-        "140:10": {
+        "141:10": {
           "sizeX:3": 36,
           "x:3": -552,
           "y:3": 24,
           "id:3": 609,
           "sizeY:3": 36
         },
-        "141:10": {
+        "142:10": {
           "sizeX:3": 24,
           "x:3": 204,
           "y:3": 336,
@@ -41016,7 +41368,7 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -336,
+          "x:3": -372,
           "y:3": -36,
           "id:3": 49,
           "sizeY:3": 24
@@ -41059,7 +41411,7 @@
         "8:10": {
           "sizeX:3": 24,
           "x:3": -564,
-          "y:3": 264,
+          "y:3": 276,
           "id:3": 137,
           "sizeY:3": 24
         },
@@ -41170,15 +41522,15 @@
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -264,
-          "y:3": -36,
+          "x:3": -282,
+          "y:3": 0,
           "id:3": 162,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
           "x:3": -300,
-          "y:3": 12,
+          "y:3": 36,
           "id:3": 163,
           "sizeY:3": 24
         },
@@ -41226,8 +41578,8 @@
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": -36,
+          "x:3": -336,
+          "y:3": 42,
           "id:3": 170,
           "sizeY:3": 24
         },
@@ -41247,7 +41599,7 @@
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": -336,
+          "x:3": -372,
           "y:3": 12,
           "id:3": 173,
           "sizeY:3": 24
@@ -41268,22 +41620,22 @@
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": -336,
-          "y:3": 48,
+          "x:3": -330,
+          "y:3": -36,
           "id:3": 176,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": -264,
-          "y:3": 48,
+          "x:3": -270,
+          "y:3": -36,
           "id:3": 177,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
           "x:3": -228,
-          "y:3": 48,
+          "y:3": 36,
           "id:3": 178,
           "sizeY:3": 24
         },
@@ -41297,7 +41649,7 @@
         "42:10": {
           "sizeX:3": 24,
           "x:3": -228,
-          "y:3": 12,
+          "y:3": 0,
           "id:3": 180,
           "sizeY:3": 24
         },
@@ -41479,417 +41831,431 @@
         "68:10": {
           "sizeX:3": 24,
           "x:3": -564,
-          "y:3": 300,
+          "y:3": 312,
           "id:3": 261,
           "sizeY:3": 24
         },
         "69:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": 276,
+          "id:3": 262,
+          "sizeY:3": 24
+        },
+        "70:10": {
           "sizeX:3": 24,
           "x:3": -828,
           "y:3": -36,
           "id:3": 290,
           "sizeY:3": 24
         },
-        "70:10": {
+        "71:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 108,
           "id:3": 297,
           "sizeY:3": 24
         },
-        "71:10": {
+        "72:10": {
           "sizeX:3": 24,
           "x:3": -828,
           "y:3": 72,
           "id:3": 298,
           "sizeY:3": 24
         },
-        "72:10": {
+        "73:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 144,
           "id:3": 299,
           "sizeY:3": 24
         },
-        "73:10": {
+        "74:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 180,
           "id:3": 300,
           "sizeY:3": 24
         },
-        "74:10": {
+        "75:10": {
           "sizeX:3": 24,
           "x:3": -792,
           "y:3": 36,
           "id:3": 301,
           "sizeY:3": 24
         },
-        "75:10": {
+        "76:10": {
           "sizeX:3": 24,
           "x:3": -828,
           "y:3": 36,
           "id:3": 302,
           "sizeY:3": 24
         },
-        "76:10": {
+        "77:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 36,
           "id:3": 303,
           "sizeY:3": 24
         },
-        "77:10": {
+        "78:10": {
           "sizeX:3": 24,
           "x:3": -912,
           "y:3": 36,
           "id:3": 304,
           "sizeY:3": 24
         },
-        "78:10": {
+        "79:10": {
           "sizeX:3": 24,
           "x:3": -912,
           "y:3": 0,
           "id:3": 305,
           "sizeY:3": 24
         },
-        "79:10": {
+        "80:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 0,
           "id:3": 306,
           "sizeY:3": 24
         },
-        "80:10": {
+        "81:10": {
           "sizeX:3": 24,
           "x:3": -828,
           "y:3": 0,
           "id:3": 307,
           "sizeY:3": 24
         },
-        "81:10": {
+        "82:10": {
           "sizeX:3": 24,
           "x:3": -792,
           "y:3": 0,
           "id:3": 308,
           "sizeY:3": 24
         },
-        "82:10": {
+        "83:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": -36,
           "id:3": 309,
           "sizeY:3": 24
         },
-        "83:10": {
+        "84:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 216,
           "id:3": 310,
           "sizeY:3": 24
         },
-        "84:10": {
+        "85:10": {
           "sizeX:3": 24,
           "x:3": -528,
-          "y:3": 204,
+          "y:3": 222,
           "id:3": 311,
           "sizeY:3": 24
         },
-        "85:10": {
+        "86:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 72,
           "id:3": 318,
           "sizeY:3": 24
         },
-        "86:10": {
+        "87:10": {
           "sizeX:3": 24,
           "x:3": -180,
-          "y:3": 180,
+          "y:3": 192,
           "id:3": 328,
           "sizeY:3": 24
         },
-        "87:10": {
+        "88:10": {
           "sizeX:3": 24,
           "x:3": -708,
           "y:3": 168,
           "id:3": 339,
           "sizeY:3": 24
         },
-        "88:10": {
+        "89:10": {
           "sizeX:3": 24,
           "x:3": -708,
           "y:3": 204,
           "id:3": 340,
           "sizeY:3": 24
         },
-        "89:10": {
+        "90:10": {
           "sizeX:3": 24,
           "x:3": -420,
           "y:3": 204,
           "id:3": 341,
           "sizeY:3": 24
         },
-        "90:10": {
+        "91:10": {
           "sizeX:3": 24,
           "x:3": -564,
           "y:3": 168,
           "id:3": 344,
           "sizeY:3": 24
         },
-        "91:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": -408,
           "y:3": 132,
           "id:3": 346,
           "sizeY:3": 24
         },
-        "92:10": {
+        "93:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": 132,
           "id:3": 347,
           "sizeY:3": 24
         },
-        "93:10": {
+        "94:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 156,
           "id:3": 350,
           "sizeY:3": 24
         },
-        "94:10": {
+        "95:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": 228,
           "id:3": 384,
           "sizeY:3": 24
         },
-        "95:10": {
+        "96:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": 228,
           "id:3": 385,
           "sizeY:3": 24
         },
-        "96:10": {
+        "97:10": {
           "sizeX:3": 48,
           "x:3": -144,
           "y:3": 216,
           "id:3": 386,
           "sizeY:3": 48
         },
-        "97:10": {
-          "sizeX:3": 24,
-          "x:3": -132,
-          "y:3": 288,
-          "id:3": 387,
-          "sizeY:3": 24
-        },
         "98:10": {
           "sizeX:3": 24,
           "x:3": -192,
-          "y:3": 288,
-          "id:3": 388,
+          "y:3": 276,
+          "id:3": 387,
           "sizeY:3": 24
         },
         "99:10": {
-          "sizeX:3": 48,
-          "x:3": -252,
+          "sizeX:3": 24,
+          "x:3": -132,
           "y:3": 276,
+          "id:3": 388,
+          "sizeY:3": 24
+        },
+        "100:10": {
+          "sizeX:3": 48,
+          "x:3": -204,
+          "y:3": 312,
           "id:3": 389,
           "sizeY:3": 48
         },
-        "100:10": {
+        "101:10": {
           "sizeX:3": 24,
           "x:3": -912,
           "y:3": 216,
           "id:3": 390,
           "sizeY:3": 24
         },
-        "101:10": {
+        "102:10": {
           "sizeX:3": 24,
           "x:3": -876,
           "y:3": 72,
           "id:3": 391,
           "sizeY:3": 24
         },
-        "102:10": {
+        "103:10": {
+          "sizeX:3": 24,
+          "x:3": -318,
+          "y:3": 0,
+          "id:3": 416,
+          "sizeY:3": 24
+        },
+        "104:10": {
           "sizeX:3": 24,
           "x:3": -648,
           "y:3": 276,
           "id:3": 500,
           "sizeY:3": 24
         },
-        "103:10": {
+        "105:10": {
           "sizeX:3": 24,
           "x:3": -492,
           "y:3": 204,
           "id:3": 512,
           "sizeY:3": 24
         },
-        "104:10": {
+        "106:10": {
           "sizeX:3": 24,
           "x:3": -648,
           "y:3": 156,
           "id:3": 520,
           "sizeY:3": 24
         },
-        "105:10": {
+        "107:10": {
           "sizeX:3": 48,
           "x:3": -660,
           "y:3": 216,
           "id:3": 526,
           "sizeY:3": 48
         },
-        "106:10": {
+        "108:10": {
           "sizeX:3": 24,
           "x:3": -528,
-          "y:3": 264,
+          "y:3": 276,
           "id:3": 527,
           "sizeY:3": 24
         },
-        "107:10": {
+        "109:10": {
           "sizeX:3": 48,
           "x:3": -660,
           "y:3": 0,
           "id:3": 532,
           "sizeY:3": 48
         },
-        "108:10": {
+        "110:10": {
           "sizeX:3": 24,
           "x:3": -492,
           "y:3": 240,
           "id:3": 542,
           "sizeY:3": 24
         },
-        "109:10": {
+        "111:10": {
           "sizeX:3": 36,
           "x:3": -96,
           "y:3": 72,
           "id:3": 549,
           "sizeY:3": 36
         },
-        "110:10": {
+        "112:10": {
           "sizeX:3": 24,
           "x:3": -912,
           "y:3": 252,
           "id:3": 555,
           "sizeY:3": 24
         },
-        "111:10": {
+        "113:10": {
           "sizeX:3": 36,
           "x:3": -96,
           "y:3": 120,
           "id:3": 580,
           "sizeY:3": 36
         },
-        "112:10": {
+        "114:10": {
           "sizeX:3": 24,
           "x:3": -216,
-          "y:3": 180,
+          "y:3": 192,
           "id:3": 610,
           "sizeY:3": 24
         },
-        "113:10": {
+        "115:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": 180,
+          "y:3": 192,
           "id:3": 611,
           "sizeY:3": 24
         },
-        "114:10": {
+        "116:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 192,
           "id:3": 669,
           "sizeY:3": 24
         },
-        "115:10": {
+        "117:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 192,
           "id:3": 671,
           "sizeY:3": 24
         },
-        "116:10": {
+        "118:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 156,
           "id:3": 672,
           "sizeY:3": 24
         },
-        "117:10": {
+        "119:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 192,
           "id:3": 673,
           "sizeY:3": 24
         },
-        "118:10": {
+        "120:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 228,
           "id:3": 674,
           "sizeY:3": 24
         },
-        "119:10": {
+        "121:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 228,
           "id:3": 675,
           "sizeY:3": 24
         },
-        "120:10": {
+        "122:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 264,
           "id:3": 676,
           "sizeY:3": 24
         },
-        "121:10": {
+        "123:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 228,
           "id:3": 677,
           "sizeY:3": 24
         },
-        "122:10": {
+        "124:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 264,
           "id:3": 678,
           "sizeY:3": 24
         },
-        "123:10": {
+        "125:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 264,
           "id:3": 679,
           "sizeY:3": 24
         },
-        "124:10": {
+        "126:10": {
           "sizeX:3": 48,
           "x:3": -348,
           "y:3": 300,
           "id:3": 680,
           "sizeY:3": 48
         },
-        "125:10": {
+        "127:10": {
           "sizeX:3": 24,
           "x:3": -456,
           "y:3": 204,
           "id:3": 693,
           "sizeY:3": 24
         },
-        "126:10": {
+        "128:10": {
           "sizeX:3": 24,
           "x:3": -456,
           "y:3": 240,
           "id:3": 694,
           "sizeY:3": 24
         },
-        "127:10": {
+        "129:10": {
           "sizeX:3": 24,
           "x:3": -456,
           "y:3": 276,
@@ -42801,332 +43167,332 @@
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 384,
-          "id:3": 262,
-          "sizeY:3": 24
-        },
-        "25:10": {
-          "sizeX:3": 24,
           "x:3": -468,
           "y:3": 48,
           "id:3": 263,
           "sizeY:3": 24
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 96,
           "id:3": 264,
           "sizeY:3": 24
         },
-        "27:10": {
+        "26:10": {
           "sizeX:3": 36,
           "x:3": -426,
           "y:3": 90,
           "id:3": 265,
           "sizeY:3": 36
         },
-        "28:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -420,
           "y:3": 48,
           "id:3": 266,
           "sizeY:3": 24
         },
-        "29:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -468,
           "y:3": 96,
           "id:3": 267,
           "sizeY:3": 24
         },
-        "30:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 144,
           "id:3": 268,
           "sizeY:3": 24
         },
-        "31:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 168,
           "id:3": 269,
           "sizeY:3": 24
         },
-        "32:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 140,
           "y:3": 324,
           "id:3": 271,
           "sizeY:3": 24
         },
-        "33:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 288,
           "id:3": 274,
           "sizeY:3": 24
         },
-        "34:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 288,
           "id:3": 279,
           "sizeY:3": 24
         },
-        "35:10": {
+        "34:10": {
           "sizeX:3": 48,
           "x:3": -384,
           "y:3": 228,
           "id:3": 283,
           "sizeY:3": 48
         },
-        "36:10": {
+        "35:10": {
           "sizeX:3": 48,
           "x:3": -324,
           "y:3": 36,
           "id:3": 286,
           "sizeY:3": 48
         },
-        "37:10": {
+        "36:10": {
           "sizeX:3": 48,
           "x:3": 72,
           "y:3": 36,
           "id:3": 287,
           "sizeY:3": 48
         },
-        "38:10": {
+        "37:10": {
           "sizeX:3": 24,
-          "x:3": -24,
+          "x:3": -12,
           "y:3": 96,
           "id:3": 288,
           "sizeY:3": 24
         },
-        "39:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -420,
           "y:3": 240,
           "id:3": 289,
           "sizeY:3": 24
         },
-        "40:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": -420,
           "y:3": 288,
           "id:3": 291,
           "sizeY:3": 24
         },
-        "41:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": -372,
           "y:3": 348,
           "id:3": 292,
           "sizeY:3": 24
         },
-        "42:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 132,
           "id:3": 295,
           "sizeY:3": 24
         },
-        "43:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 66,
           "id:3": 312,
           "sizeY:3": 24
         },
-        "44:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 66,
           "id:3": 313,
           "sizeY:3": 24
         },
-        "45:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": -204,
           "y:3": 192,
           "id:3": 314,
           "sizeY:3": 24
         },
-        "46:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": 192,
           "id:3": 315,
           "sizeY:3": 24
         },
-        "47:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 192,
           "id:3": 316,
           "sizeY:3": 24
         },
-        "48:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": 324,
           "id:3": 317,
           "sizeY:3": 24
         },
-        "49:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 96,
           "id:3": 323,
           "sizeY:3": 24
         },
-        "50:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 96,
           "id:3": 324,
           "sizeY:3": 24
         },
-        "51:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 96,
           "id:3": 325,
           "sizeY:3": 24
         },
-        "52:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 240,
           "id:3": 326,
           "sizeY:3": 24
         },
-        "53:10": {
+        "52:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 336,
           "id:3": 327,
           "sizeY:3": 24
         },
-        "54:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 140,
           "y:3": 132,
           "id:3": 329,
           "sizeY:3": 24
         },
-        "55:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": 264,
           "y:3": 132,
           "id:3": 330,
           "sizeY:3": 24
         },
-        "56:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 264,
           "y:3": 324,
           "id:3": 331,
           "sizeY:3": 24
         },
-        "57:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": 288,
           "id:3": 332,
           "sizeY:3": 24
         },
-        "58:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": 312,
           "id:3": 333,
           "sizeY:3": 24
         },
-        "59:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": 336,
           "id:3": 334,
           "sizeY:3": 24
         },
-        "60:10": {
+        "59:10": {
           "sizeX:3": 48,
           "x:3": -60,
           "y:3": 372,
           "id:3": 335,
           "sizeY:3": 48
         },
-        "61:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": -66,
           "y:3": 96,
           "id:3": 336,
           "sizeY:3": 24
         },
-        "62:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 96,
           "id:3": 337,
           "sizeY:3": 24
         },
-        "63:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 132,
           "id:3": 345,
           "sizeY:3": 24
         },
-        "64:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 324,
           "id:3": 351,
           "sizeY:3": 24
         },
-        "65:10": {
+        "64:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 0,
           "id:3": 399,
           "sizeY:3": 24
         },
-        "66:10": {
+        "65:10": {
           "sizeX:3": 36,
           "x:3": -210,
           "y:3": 294,
           "id:3": 406,
           "sizeY:3": 36
         },
-        "67:10": {
+        "66:10": {
           "sizeX:3": 36,
           "x:3": -324,
           "y:3": 234,
           "id:3": 407,
           "sizeY:3": 36
         },
-        "68:10": {
+        "67:10": {
           "sizeX:3": 36,
           "x:3": -270,
           "y:3": 294,
           "id:3": 408,
           "sizeY:3": 36
         },
-        "69:10": {
+        "68:10": {
           "sizeX:3": 36,
           "x:3": 111,
           "y:3": 234,
           "id:3": 411,
           "sizeY:3": 36
         },
-        "70:10": {
+        "69:10": {
           "sizeX:3": 48,
           "x:3": -480,
           "y:3": 240,
           "id:3": 412,
           "sizeY:3": 48
+        },
+        "70:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 132,
+          "id:3": 417,
+          "sizeY:3": 24
         },
         "71:10": {
           "sizeX:3": 24,
@@ -43235,7 +43601,7 @@
         },
         "86:10": {
           "sizeX:3": 24,
-          "x:3": -24,
+          "x:3": -12,
           "y:3": 48,
           "id:3": 608,
           "sizeY:3": 24
@@ -44173,8 +44539,8 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": 0,
+          "x:3": -60,
+          "y:3": 18,
           "id:3": 25,
           "sizeY:3": 24
         },
@@ -44257,8 +44623,8 @@
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 18,
+          "x:3": -96,
+          "y:3": 0,
           "id:3": 353,
           "sizeY:3": 24
         },
@@ -44327,78 +44693,85 @@
         },
         "38:10": {
           "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 288,
+          "id:3": 415,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
           "x:3": 24,
           "y:3": 162,
           "id:3": 488,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": 78,
+          "x:3": 84,
+          "y:3": 72,
           "id:3": 491,
           "sizeY:3": 24
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 216,
           "id:3": 495,
           "sizeY:3": 24
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 18,
           "id:3": 496,
           "sizeY:3": 24
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 216,
           "id:3": 530,
           "sizeY:3": 24
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 144,
           "id:3": 547,
           "sizeY:3": 24
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": 324,
           "id:3": 552,
           "sizeY:3": 24
         },
-        "45:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": -90,
           "y:3": 180,
           "id:3": 558,
           "sizeY:3": 24
         },
-        "46:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": -138,
           "y:3": 54,
           "id:3": 670,
           "sizeY:3": 24
         },
-        "47:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": 78,
           "id:3": 687,
           "sizeY:3": 24
         },
-        "48:10": {
+        "49:10": {
           "sizeX:3": 24,
-          "x:3": 84,
-          "y:3": 72,
+          "x:3": 12,
+          "y:3": 78,
           "id:3": 692,
           "sizeY:3": 24
         }
