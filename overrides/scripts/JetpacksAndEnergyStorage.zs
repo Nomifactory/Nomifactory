@@ -526,13 +526,6 @@ recipes.addShaped(<thermalexpansion:frame:132>, [
 	[<gregtech:meta_item_1:14708>, null, <gregtech:meta_item_1:14708>],
 	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14708>, <thermalfoundation:material:359>]]);
 
-mods.jei.JEI.addItem(<thermalexpansion:frame:130>);
-mods.jei.JEI.addItem(<thermalexpansion:frame:131>);
-mods.jei.JEI.addItem(<thermalexpansion:frame:132>);
-mods.jei.JEI.addItem(<thermalexpansion:frame:146>);
-mods.jei.JEI.addItem(<thermalexpansion:frame:147>);
-mods.jei.JEI.addItem(<thermalexpansion:frame:148>);
-
 // redstone cell frame (filled) => "microminer engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:130>, <minecraft:redstone_block> * 2])

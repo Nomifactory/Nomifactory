@@ -66,6 +66,12 @@ solidifier.recipeBuilder().fluidInputs([<liquid:moltencrystalmatrix> * 144]).not
 fluid_extractor.recipeBuilder().inputs([<minecraft:dye:4>]).fluidOutputs([<liquid:lapis>*144]).duration(180).EUt(16).buildAndRegister();
 fluid_extractor.recipeBuilder().inputs([<gregtech:meta_item_1:2216>]).fluidOutputs([<liquid:lapis>*144]).duration(180).EUt(16).buildAndRegister();
 
+//Add in solidifier recipe for lapis
+solidifier.recipeBuilder().fluidInputs([<liquid:lapis>*144]).notConsumable(<gregtech:meta_item_1:32301>).outputs([<gregtech:meta_item_1:12216>]).duration(40).EUt(8).buildAndRegister();
+
+solidifier.recipeBuilder().fluidInputs([<liquid:lapis>*1296]).notConsumable(<gregtech:meta_item_1:32308>).outputs([<minecraft:lapis_block>]).duration(360).EUt(8).buildAndRegister();
+
+
 fluid_extractor.recipeBuilder().inputs([<minecraft:quartz>]).fluidOutputs([<liquid:quartz>*144]).duration(180).EUt(16).buildAndRegister();
 fluid_extractor.recipeBuilder().inputs([<gregtech:meta_item_1:2201>]).fluidOutputs([<liquid:quartz>*144]).duration(180).EUt(16).buildAndRegister();
 
@@ -166,6 +172,9 @@ recipes.addShaped(<extendedcrafting:interface>, [
 	[bsingot, <extendedcrafting:material:10>, bsingot],
 	[<extendedcrafting:material:18>, <extendedcrafting:frame>, <extendedcrafting:material:18>],
 	[bsingot, bsplate, bsingot]]);
+
+//Remove the unavailable pedestal
+recipes.removeByRecipeName("extendedcrafting:pedestal");
 
 recipes.addShaped(<extendedcrafting:pedestal>, [
 	[null, bsingot, null],

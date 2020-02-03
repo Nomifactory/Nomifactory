@@ -251,7 +251,6 @@ recipes.addShaped(<enderio:item_liquid_conduit:1> * 4, [
 	[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>],
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 assembler.recipeBuilder().inputs([<minecraft:glass> * 3, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_liquid_conduit:1> * 8]).duration(80).EUt(16).buildAndRegister();
-macerator.recipeBuilder().inputs([<ore:logWood>]).outputs([<thermalfoundation:material:800> * 2]).duration(80).EUt(8).buildAndRegister();
 macerator.recipeBuilder().inputs([<minecraft:diamond>]).outputs([<gregtech:meta_item_1:2111>]).duration(80).EUt(8).buildAndRegister();
 macerator.recipeBuilder().inputs([<appliedenergistics2:material:7>]).outputs([<appliedenergistics2:material:8>]).duration(80).EUt(8).buildAndRegister();
 macerator.recipeBuilder().inputs([<enderio:item_material:16>]).outputs([<enderio:item_material:37>]).duration(500).EUt(16).buildAndRegister();
