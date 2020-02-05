@@ -788,11 +788,7 @@ furnace.addRecipe(<gregtech:meta_item_1:10197>, <minecraft:iron_ingot>, 0.0);
 	
 //LV Casing
 recipes.remove(<gregtech:machine_casing:1>);	
-recipes.addShaped(<gregtech:machine_casing:1>, [
-	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>], 
-	[<ore:plateWroughtIron>, <gregtech:meta_tool:8>, <ore:plateWroughtIron>], 
-	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
-recipes.addShaped(<gregtech:machine_casing:1>, [
+recipes.addShaped("of_lv_machine_casing", <gregtech:machine_casing:1>, [
 	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>], 
 	[<ore:plateWroughtIron>, <ore:craftingToolWrench>, <ore:plateWroughtIron>], 
 	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
@@ -801,11 +797,7 @@ assembler.recipeBuilder().inputs(<ore:plateWroughtIron> * 8).notConsumable(<greg
 assembler.recipeBuilder().inputs(<ore:plateIron> * 3).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3})).outputs([<minecraft:bucket>]).duration(30).EUt(16).buildAndRegister();
 
 //MAX Casing
-recipes.addShaped(<gregtech:machine_casing:9>, [
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>,<moreplates:neutronium_plate>], 
-	[<moreplates:neutronium_plate>, <gregtech:meta_tool:8>, <moreplates:neutronium_plate>], 
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>,<moreplates:neutronium_plate>]]);
-recipes.addShaped(<gregtech:machine_casing:9>, [
+recipes.addShaped("of_max_machine_casing", <gregtech:machine_casing:9>, [
 	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>,<moreplates:neutronium_plate>], 
 	[<moreplates:neutronium_plate>, <ore:craftingToolWrench>, <moreplates:neutronium_plate>], 
 	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>,<moreplates:neutronium_plate>]]);
@@ -873,11 +865,7 @@ recipes.addShaped(<gregtech:machine:514>, [
 	
 //ULV Casing
 recipes.remove(<gregtech:machine_casing>);
-recipes.addShaped(<gregtech:machine_casing>, [
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], 
-	[<ore:plateIron>, <gregtech:meta_tool:8>, <ore:plateIron>], 
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
-recipes.addShaped(<gregtech:machine_casing>, [
+recipes.addShaped("of_ulv_machine_casing", <gregtech:machine_casing>, [
 	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
 	[<ore:plateIron>, <ore:craftingToolWrench>, <ore:plateIron>], 
 	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
