@@ -158,7 +158,7 @@ alloy.recipeBuilder().inputs([<thermalfoundation:material:166>,<nuclearcraft:ing
 reactor.recipeBuilder().inputs([<ore:orePyrolusite> * 6]).fluidInputs([<liquid:sulfuric_acid> * 3000]).outputs(<nuclearcraft:gem_dust:1>).fluidOutputs([<liquid:manganese> * 4320]).EUt(2000).duration(200).buildAndRegister();
 reactor.recipeBuilder().inputs([<ore:oreRedstone> * 12]).fluidInputs([<liquid:sulfuric_acid> * 6000]).outputs(<nuclearcraft:gem_dust:1>).fluidOutputs([<liquid:redstone> * 19008]).EUt(2000).duration(200).buildAndRegister();
 reactor.recipeBuilder().inputs([<contenttweaker:t2laser>]).fluidInputs([<liquid:radon> * 1000]).outputs(<contenttweaker:t3laser>).EUt(2000).duration(200).buildAndRegister();
-
+reactor.recipeBuilder().inputs([<nuclearcraft:thorium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:thorium:1>).EUt(500).duration(100).buildAndRegister();
 recipes.remove(<nuclearcraft:fission_port>);
 recipes.remove(<nuclearcraft:part:4>);
 recipes.remove(<nuclearcraft:part:5>);
