@@ -913,6 +913,18 @@ for i, wrench in wrenches {
         [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>], 
         [<moreplates:neutronium_plate>,             wrench           , <moreplates:neutronium_plate>], 
         [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>]]);
+
+    // Modularium Machine Casing
+    recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
+        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>], 
+        [<modularmachinery:itemmodularium>,               wrench             , <modularmachinery:itemmodularium>], 
+        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]]);
+
+    // LuV Machine Casing
+    recipes.addShaped("of_luv_casing_wrench"+i, <gregtech:machine_casing:6>, [
+        [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>], 
+        [<ore:plateLumium>,       wrench     , <ore:plateLumium>], 
+        [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
 }
 
 //MAX Casing - Assembler

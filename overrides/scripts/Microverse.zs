@@ -94,7 +94,6 @@ recipes.addShaped(<modularmachinery:blockenergyoutputhatch:7>, [[null, <modularm
 
 //Casing
 recipes.remove(<modularmachinery:blockcasing>);
-recipes.addShaped(<modularmachinery:blockcasing> * 2, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<gregtech:meta_tool:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
 assembler.recipeBuilder().inputs([<modularmachinery:itemmodularium> * 4]).outputs([<modularmachinery:blockcasing>]).duration(200).EUt(30).buildAndRegister();
 
 // Machine Vent
