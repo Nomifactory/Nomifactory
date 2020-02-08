@@ -158,7 +158,33 @@ alloy.recipeBuilder().inputs([<thermalfoundation:material:166>,<nuclearcraft:ing
 reactor.recipeBuilder().inputs([<ore:orePyrolusite> * 6]).fluidInputs([<liquid:sulfuric_acid> * 3000]).outputs(<nuclearcraft:gem_dust:1>).fluidOutputs([<liquid:manganese> * 4320]).EUt(2000).duration(200).buildAndRegister();
 reactor.recipeBuilder().inputs([<ore:oreRedstone> * 12]).fluidInputs([<liquid:sulfuric_acid> * 6000]).outputs(<nuclearcraft:gem_dust:1>).fluidOutputs([<liquid:redstone> * 19008]).EUt(2000).duration(200).buildAndRegister();
 reactor.recipeBuilder().inputs([<contenttweaker:t2laser>]).fluidInputs([<liquid:radon> * 1000]).outputs(<contenttweaker:t3laser>).EUt(2000).duration(200).buildAndRegister();
+
+//NC oxydes
 reactor.recipeBuilder().inputs([<nuclearcraft:thorium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:thorium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:thorium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:thorium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:uranium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:uranium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:uranium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:uranium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:uranium:8>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:uranium:9>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:neptunium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:neptunium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:neptunium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:neptunium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:plutonium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:plutonium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:plutonium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:plutonium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:plutonium:8>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:plutonium:9>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:plutonium:12>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:plutonium:13>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:americium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:americium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:americium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:americium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:americium:8>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:americium:9>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:curium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:curium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:curium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:curium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:curium:8>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:curium:9>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:curium:12>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:curium:13>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:berkelium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:berkelium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:berkelium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:berkelium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:californium>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:californium:1>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:californium:4>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:californium:5>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:californium:8>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:californium:9>).EUt(500).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<nuclearcraft:californium:12>]).fluidInputs([<liquid:oxygen> * 16000]).outputs(<nuclearcraft:californium:13>).EUt(500).duration(100).buildAndRegister();
+
 recipes.remove(<nuclearcraft:fission_port>);
 recipes.remove(<nuclearcraft:part:4>);
 recipes.remove(<nuclearcraft:part:5>);
