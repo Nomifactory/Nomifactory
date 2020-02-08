@@ -12,6 +12,7 @@ import crafttweaker.item.IItemStack;
 
 global alloy as RecipeMap = RecipeMap.getByName("alloy_smelter");
 global assembler as RecipeMap = RecipeMap.getByName("assembler");
+global assembly_line = RecipeMap.getByName("assembly_line");
 global attractor as RecipeMap = RecipeMap.getByName("attractor");
 global autoclave as RecipeMap = RecipeMap.getByName("autoclave");
 global blast_furnace as RecipeMap = RecipeMap.getByName("blast_furnace");

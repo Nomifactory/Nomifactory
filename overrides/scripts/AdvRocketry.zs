@@ -92,7 +92,7 @@ compressor.recipeBuilder().inputs([<gregtech:compressed_3:10>]).outputs(<gregtec
 compressor.recipeBuilder().inputs([<gregtech:compressed_10:14>]).outputs(<gregtech:meta_item_1:13235>).duration(200).EUt(300).buildAndRegister();
 
 blast_furnace.recipeBuilder().inputs([<redstonearsenal:material:224> * 10,<moreplates:awakened_draconium_plate>,<contenttweaker:quantumflux> * 16]).fluidInputs([<liquid:krypton> * 1000]).outputs(<contenttweaker:quantumfluxedeterniumplating>).property("temperature", 9000).duration(200).EUt(250000).buildAndRegister();
-blast_furnace.recipeBuilder().inputs([<moreplates:neutronium_plate> * 2]).fluidInputs([<liquid:einsteinium> * 144]).outputs(<contenttweaker:neutroniumplating>).property("temperature", 9600).duration(200).EUt(500000).buildAndRegister();
+blast_furnace.recipeBuilder().inputs([<ore:plateNeutronium> * 2]).fluidInputs([<liquid:einsteinium> * 144]).outputs(<contenttweaker:neutroniumplating>).property("temperature", 9600).duration(200).EUt(500000).buildAndRegister();
 
 //Field Generators
 recipes.remove(<gregtech:meta_item_1:32670>);
