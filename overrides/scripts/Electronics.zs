@@ -908,11 +908,6 @@ for i, wrench in wrenches {
         [<ore:plateWroughtIron>,          wrench       , <ore:plateWroughtIron>],
         [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
 
-    // MAX Machine Casing
-    recipes.addShaped("of_max_casing_wrench"+i, <gregtech:machine_casing:9>, [
-        [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>], 
-        [<moreplates:neutronium_plate>,             wrench           , <moreplates:neutronium_plate>], 
-        [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>]]);
 
     // Modularium Machine Casing
     recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
@@ -927,8 +922,7 @@ for i, wrench in wrenches {
         [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
 }
 
-//MAX Casing - Assembler
-assembler.recipeBuilder().inputs(<moreplates:neutronium_plate> * 8).outputs([<gregtech:machine_casing:9>]).duration(30).EUt(16).buildAndRegister();
+
 
 assembler.findRecipe(16,[<gregtech:meta_item_1:12197> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12197> * 2, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	

@@ -820,6 +820,11 @@ var platesDisabled as IItemStack[][IOreDictEntry] = {
 	#plateTitanium
 	<ore:plateTitanium> : [
 		<libvulpes:productplate:7>
+	],
+
+	#plateNeutronium
+	<ore:plateNeutronium> : [
+		<gregtech:meta_item_1:12972>
 	]
 };
 
@@ -985,6 +990,10 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
 <ore:blockAluminum>.add(<gregtech:compressed_0:0>);
+
+//Add moreplates neutronium plate to gtce neutronium ore dict
+<ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
+
 
 ////////////////////////////////
 //			Removals          //
@@ -1913,13 +1922,8 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
-recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate>]);		//neutronium plate exchange
-recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
-recipes.addShaped(<gregtech:frame_neutronium> * 4, [
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_tool:8>, <gregtech:meta_item_1:14972>]]);
 
+recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
 
 
 
