@@ -291,7 +291,7 @@ assembly_line.recipeBuilder().inputs(<gtadditions:ga_meta_item:2972>*32, <gregte
 
 
 //UV Field Generator
-assembly_line.findRecipe(491520, [<gregtech:meta_item_2:32466>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:cable:7135>*8, <gregtech:meta_item_1:12972>*6, <gregtech:meta_item_1:32687>*4, <gregtech:frame_neutronium>, <gregtech:meta_item_1:32726>], [<liquid:soldering_alloy>*2304]).remove();
+assembly_line.findRecipe(491520, [<gregtech:meta_item_2:32446>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:cable:7135>*8, <gregtech:meta_item_1:12972>*6, <gregtech:meta_item_1:32687>*4, <gregtech:frame_neutronium>, <gregtech:meta_item_1:32726>], [<liquid:soldering_alloy>*2304]).remove();
 assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32466>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:meta_item_2:16047>*64, <gregtech:cable:7135>*8, <ore:plateNeutronium>*6, <gregtech:meta_item_1:32687>*4, <gregtech:frame_neutronium>, <gregtech:meta_item_1:32726>).fluidInputs(<liquid:soldering_alloy>*2304).outputs(<gregtech:meta_item_1:32677>).duration(600).EUt(491520).buildAndRegister();
 
 //MAX Battery
