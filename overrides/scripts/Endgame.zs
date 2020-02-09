@@ -277,7 +277,7 @@ extruder.findRecipe(64,[<avaritia:resource:4>, <gregtech:meta_item_1:32350>], [n
 extruder.recipeBuilder().inputs(<avaritia:resource:4>).notConsumable(<gregtech:meta_item_1:32350>).outputs(<moreplates:neutronium_plate>).duration(5000).EUt(64).buildAndRegister();
 
 //Alloy Smelter recipes
-alloy.findRecipe(16, [<avaritia:resource:4>, <gregtech:meta_item_1:32301>.withTag({not_consumed: 1b})], [null]).remove();
+alloy.findRecipe(16, [<avaritia:resource:4>*2, <gregtech:meta_item_1:32301>], [null]).remove();
 alloy.recipeBuilder().inputs(<ore:ingotNeutronium>*2).notConsumable(<gregtech:meta_item_1:32301>).outputs(<moreplates:neutronium_plate>).duration(10000).EUt(16).buildAndRegister();
 
 //Assembly Line Recipes
