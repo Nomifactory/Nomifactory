@@ -1906,7 +1906,7 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
-recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate>]);		//neutronium plate exchange
+
 recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
 
 
