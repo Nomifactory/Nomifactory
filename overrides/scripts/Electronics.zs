@@ -911,11 +911,8 @@ for i, wrench in wrenches {
         [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
 
 <<<<<<< HEAD
-    // MAX Machine Casing
-    recipes.addShaped("of_max_casing_wrench"+i, <gregtech:machine_casing:9>, [
-        [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>], 
-        [<moreplates:neutronium_plate>,             wrench           , <moreplates:neutronium_plate>], 
-        [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>]]);
+<<<<<<< HEAD
+
 
     // Modularium Machine Casing
     recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
@@ -930,6 +927,8 @@ for i, wrench in wrenches {
         [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
 =======
 >>>>>>> Unify Neutronium Plates
+=======
+>>>>>>> f073123c11882e5bdd7eb8bbdd880077e0e72570
 }
 
 
