@@ -2207,7 +2207,7 @@
       "questID:3": 31,
       "preRequisites:11": [
         32,
-        67
+        35
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2234,7 +2234,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Vibrant Capacitor Bank",
-          "desc:8": "Stores a huge amount of RF power."
+          "desc:8": "Two §aAdvanced Capacitor Banks§r can be grafted together with a §6Vibrant Crystal§r and §6Vibrant Alloy Plates§r to create a §aVibrant Capacitor Bank§r, which stores five times as much RF as the advanced bank, for a total of twenty-five times as much as the basic bank."
         }
       },
       "tasks:9": {
@@ -2302,7 +2302,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Advanced Capacitor Bank",
-          "desc:8": "Stores a large amount of RF power."
+          "desc:8": "Two §aCapacitor Banks§r can be grafted together with a §6Double-Layer Capacitor§r and §6Electrical Steel§r to create an §aAdvanced Capacitor Bank§r, which stores five times as much RF as the basic bank."
         }
       },
       "tasks:9": {
@@ -2945,7 +2945,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Vibrant Alloy Energy Conduits",
-          "desc:8": "Conduits to carry even MORE RF power."
+          "desc:8": "Conduits to carry even MORE RF power.\n\nYou\u0027re making these in the §3Assembling Machine§r, right?"
         }
       },
       "tasks:9": {
@@ -3056,7 +3056,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Double Capacitor",
-          "desc:8": "A tier two capacitor. Makes machines its put in run faster than just a basic capacitor."
+          "desc:8": "Combining §6Basic RF Capacitors§r with some §6Coal Dust§r and §6Energetic Alloy§r produces a §6Double-Layer RF Capacitor§r.\n\nThis is a tier two capacitor. Higher tier RF Capacitors will make §bEnderIO§r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
         }
       },
       "tasks:9": {
@@ -3271,7 +3271,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Ironman 3",
-          "desc:8": "Flying even faster is nice."
+          "desc:8": "Flying faster, even nicer."
         }
       },
       "tasks:9": {
@@ -3511,7 +3511,9 @@
     "51:10": {
       "questID:3": 51,
       "preRequisites:11": [
-        259
+        259,
+        103,
+        282
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3773,6 +3775,7 @@
     "55:10": {
       "questID:3": 55,
       "preRequisites:11": [
+        53,
         727
       ],
       "properties:10": {
@@ -3912,7 +3915,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Ender Fluid Conduits",
-          "desc:8": "Not only are these faster than regular fluid conduits, they also have multiple channels. This makes it possible to have a large number of fluids moving over a single line. That will be useful for the more complicated chemistry projects later on."
+          "desc:8": "§aEnder Fluid Conduits§r are the most powerful fluid transportation mechanism offered by §bEnderIO§r.\n\nNot only are these faster than §aPressurized Fluid Conduits§r, but because they teleport fluids instead of flowing them in the conduits, it possible to have a large number of fluids moving through a single line.\n\nIn addition to §aFilters§r they also have multiple channels which can be used to direct fluids through the same conduits to various destinations.\n\nIf you don\u0027t want to (or haven\u0027t unlocked access to) routing fluids through §bAE§r, these are your best alternative."
         }
       },
       "tasks:9": {
@@ -4677,7 +4680,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Octadic Capacitor",
-          "desc:8": "A tier three capacitor."
+          "desc:8": "A pair of §6Double-Layer RF Capacitors§r combined with some §6Vibrant Alloy§r and §6Glowstone§r creates an §6Octadic RF Capacitor§r, which is a tier three §bEnderIO§r capacitor."
         }
       },
       "tasks:9": {
@@ -5189,7 +5192,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Machine Block",
-          "desc:8": "The Machine Block is the first step towards opening up a mod called Extra Utilities 2."
+          "desc:8": "The §6Machine Block§r is the first step into a mod called §bExtra Utilities 2§r."
         }
       },
       "tasks:9": {
@@ -6355,7 +6358,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "HV Machine Hulls",
-          "desc:8": "With §6HV Machine Hulls§r made, you\u0027ve made your first step towards §eHigh Voltage (HV)§r power machinery!\n\nWhile you can make these in a crafting table, §9Polyethylene§r"
+          "desc:8": "With §6HV Machine Hulls§r made, you\u0027ve made your first step towards §eHigh Voltage (HV)§r power machinery!\n\nWhile you can make these in a crafting table with §6Polyethylene Sheets§r, liquid §9Polyethylene§r can be used to craft these directly in an §3Assembling Machine§r."
         }
       },
       "tasks:9": {
@@ -6604,7 +6607,7 @@
     "97:10": {
       "questID:3": 97,
       "preRequisites:11": [
-        100
+        109
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6628,7 +6631,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Keeping Stuff In Stock",
-          "desc:8": "If you didn\u0027t know, you can have stacks of items stored inside of an Interface. Placing a Storage Bus onto the Interface lets you access and use those items in recipes. And putting a Crafting Card inside the Interface will let the Interface automatically place autocraft orders for items it is lacking. This is the best way to keep basic components in stock so you don\u0027t have to wait for them to be crafted, especially things like wafers, circuits and rods."
+          "desc:8": "If you didn\u0027t know, you can have stacks of items stored inside of an §aME Interface§r. Placing a §aStorage Bus§r onto the ME Interface lets you access and use those items in recipes. Putting a §aCrafting Card§r inside the Interface will let the Interface automatically place autocraft orders for items it should stock but you don\u0027t have.\n\nThis approach can be used for autocrafting to some extent, but proceed with caution as crafting cards can produce a great deal of lag on larger ME Networks. AE calculates the full crafting tree of these items every time a request is made, even if you have enough items already in stock.\n\nThus, it is strongly recommended to limit Crafting Cards to simple recipes (ones without many dependent recipes) and ideally on smaller purpose-built networks. \n\nPrefer passive autocrafting methods on your main network, or if things are gonna get complicated."
         }
       },
       "tasks:9": {
@@ -6838,7 +6841,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Engineering Processor",
-          "desc:8": "Diamond Plate, Silicon Plate and a basic Circuit."
+          "desc:8": "§6Engineering Processors§r are made from a §6Diamond Plate§r, a §6Silicon Plate§r, and any tier one circuit.\n\nRun the plates through the respective §3Inscribers§r with §aPresses§r to make the printed plates, then combine the plates and circuit to form the Engineering Processor."
         }
       },
       "tasks:9": {
@@ -6969,7 +6972,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Logic Processor",
-          "desc:8": "Gold Plate, Silicon Plate and a basic Circuit."
+          "desc:8": "§6Logic Processors§r are made from a §6Gold Plate§r, a §6Silicon Plate§r, and any tier one circuit.\n\nRun the plates through the respective §3Inscribers§r with §aPresses§r to make the printed plates, then combine the plates and circuit to form the Logic Processor."
         }
       },
       "tasks:9": {
@@ -7008,10 +7011,7 @@
     },
     "103:10": {
       "questID:3": 103,
-      "preRequisites:11": [
-        112,
-        51
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -7093,7 +7093,8 @@
       "questID:3": 104,
       "preRequisites:11": [
         96,
-        110
+        110,
+        109
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7117,7 +7118,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Autocrafting Patterns",
-          "desc:8": "Encode recipes into these for automation."
+          "desc:8": "§aPatterns§r are used to encode a single crafting table or processing recipes for on-demand automation with §bApplied Energistics§r.\n\nEncode them in a §aPattern Terminal§r.\n\nNote that recipes encoded with Substitutions on will use existing equivalent items, but §ewill only automatically craft the exact item specified in the recipe.§r\n\nIt is also a §cvery bad idea§r to encode recipes that require GregTech hand tools (even worse with Substitutions on). They are not handled gracefully, causing your crafting computations to explode in complexity and memory requirement.\n\nUse recipes that use machines instead!\n\n"
         }
       },
       "tasks:9": {
@@ -7181,7 +7182,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Calculation Processor",
-          "desc:8": "Certus Plate, Silicon Plate and a basic Circuit."
+          "desc:8": "§6Calculation Processors§r are made from a §6Certus Plate§r, a §6Silicon Plate§r, and any §6tier one circuit§r.\n\nRun the plates through the respective §3Inscribers§r with §aPresses§r to make the printed plates, then combine the plates and circuit to form the Calculation Processor."
         }
       },
       "tasks:9": {
@@ -7221,6 +7222,7 @@
     "106:10": {
       "questID:3": 106,
       "preRequisites:11": [
+        104,
         100
       ],
       "properties:10": {
@@ -7245,7 +7247,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Pattern Terminal",
-          "desc:8": "Terminal to encode patterns."
+          "desc:8": "As the name suggests, this terminal lets you encode recipes onto §aBlank Patterns§r.\n\nIt\u0027s a micropart, so you need to place it on §6ME Cable§r (not a conduit)."
         }
       },
       "tasks:9": {
@@ -7349,8 +7351,7 @@
     "108:10": {
       "questID:3": 108,
       "preRequisites:11": [
-        109,
-        100
+        109
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7374,7 +7375,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Interface Terminal",
-          "desc:8": "So you don\u0027t have to run to your Interfaces each time you make a new pattern."
+          "desc:8": "This handy terminal allows you to see the pattern slots of all §aME Interfaces§r in your network in one place.\n\nThis means you don\u0027t have to run to your ME Interfaces each time you make a new pattern for them."
         }
       },
       "tasks:9": {
@@ -7414,7 +7415,6 @@
     "109:10": {
       "questID:3": 109,
       "preRequisites:11": [
-        100,
         102
       ],
       "properties:10": {
@@ -7439,7 +7439,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "ME Interfaces",
-          "desc:8": "You\u0027ll be making a lot of these, if you\u0027re playing the pack right."
+          "desc:8": "§aME Interfaces§r are extremely important for automation. You\u0027ll be making a lot of these, if you\u0027re playing the pack right.\n\nThese can be filled with encoded §aPatterns§r to perform on-demand autocrafting, and can be configured to stock up to 9 stacks of items for passive autocrafting, Any item pushed into an ME Interface is digitized and placed in your ME Network storage.\n\nWhen adjacent to one or more §aMolecular Assemblers§r, crafting table patterns can be crafted. It will use as many adjacent Molecular Assemblers as possible, restricted by availability and number of §aCo-processors§r in your crafting CPU multiblock.\n\nWhen adjacent to any other block, you can use processing patterns with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network by way of an ME Interface (though it doesn\u0027t need to be the same ME Interface the Pattern is in).\n\nME Interfaces can be wrenched to ensure they only communicate with a particular adjacent block, or can be crafted into a micropart form to fit multiple in the same block space (each micropart only interacting with the adjacent block face).\n\n"
         }
       },
       "tasks:9": {
@@ -7479,7 +7479,8 @@
     "110:10": {
       "questID:3": 110,
       "preRequisites:11": [
-        105
+        105,
+        102
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7549,7 +7550,7 @@
     "111:10": {
       "questID:3": 111,
       "preRequisites:11": [
-        110
+        105
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7573,7 +7574,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Crafting Terminal",
-          "desc:8": "Crafting in a digital grid is heaven after using primitive wooden tables for however long."
+          "desc:8": "Crafting in a digital grid is heaven after using primitive wooden tables for so long.\n\nIt\u0027s a micropart, so you need to place it on §6ME Cable§r (not a conduit)."
         }
       },
       "tasks:9": {
@@ -7707,7 +7708,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Resonator",
-          "desc:8": "The Resonator is one of the primary crafting methods for Extra Utilties 2. It requires Grid Power in order to function."
+          "desc:8": "The §3Resonator§r is one of the primary crafting machines from §bExtra Utilties 2§r. It requires Grid Power in order to function, and produces special items like §6Stoneburnt§r and §6Red Coal§r."
         }
       },
       "tasks:9": {
@@ -7771,7 +7772,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Manual Mill",
-          "desc:8": "Grid Power explanation.\n\nA Manual Mill is your only way of generating Grid Power at first."
+          "desc:8": "§eGrid Power§r, or GP for short, is a power system used by §bExtra Utilities§r. It is generated by using a variety of §3Mills§r.\n\nIt deviates from most power systems in that Mills and GP consumers can be placed anywhere. It is globally available. However, Mills of each type incur §cdiminishing returns§r to massively punish excessive spamming of the same kind of Mills. Diversify!\n\nThe first Mill available is the §3Manual Mill§r, which is a hand crank that generates up to 15 GP. This is enough to get started so you can make better Mill types. Place it down and wind it up by holding right-click to generate GP.\n\n"
         }
       },
       "tasks:9": {
@@ -7836,7 +7837,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Red Coal",
-          "desc:8": "Careful with making an AE2 pattern with this one, you\u0027ll have to craft a piece of Red Coal yourself and put into the pattern manually."
+          "desc:8": "§6Red Coal§r is an important ingredient for §6Black Steel Dust§r.\n\nCareful with making an AE2 pattern with this one; due to the way §bExtra Utilities§r item generation works, you\u0027ll have to craft a piece of Red Coal to put into relevant §aPatterns§r manually."
         }
       },
       "tasks:9": {
@@ -7966,7 +7967,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "1k Fluid Storage",
-          "desc:8": "Digital fluid storage."
+          "desc:8": "Digital fluid storage. Provides space for up to "
         }
       },
       "tasks:9": {
@@ -8031,7 +8032,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "4k Item Storage",
-          "desc:8": "Digital storage."
+          "desc:8": "A component used primarily for making bigger §6Storage Cells§r.\n\nUnformatted disks always have a hard limit of 63 distinct types of items, but each step up has roughly four times the total storage space of the prior disk."
         }
       },
       "tasks:9": {
@@ -8095,7 +8096,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "16k Item Storage",
-          "desc:8": "Digital storage."
+          "desc:8": "The penultimate component for AE item §6Storage Cells§r."
         }
       },
       "tasks:9": {
@@ -8159,7 +8160,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "64k Item Storage",
-          "desc:8": "Digital storage."
+          "desc:8": "The ultimate item storage component in §bApplied Energistics§r.\n\nUsed for storing really big amounts of things, like in a §664k ME Storage Cell§r."
         }
       },
       "tasks:9": {
@@ -8946,7 +8947,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third And Final Tier One Circuits",
-          "desc:8": "With all the SMD components ready, you can start to churn out Refined Circuits. These will be the tier one circuits you\u0027ll be using into the endgame, so get them fully automated and be ready to make them very easily in large numbers."
+          "desc:8": "With all the SMD components ready, you can start to churn out §6Refined Circuits§r. These are the best kind of Tier One circuits you can make, and you won\u0027t unlock the better recipes for quite a while.\n\nYou should absolutely automate the production of these circuits, and §ekeep a stockpile automatically crafted§r so you don\u0027t have to wait around for them or bloat your crafting orders making them on-demand through AE."
         }
       },
       "tasks:9": {
@@ -9076,7 +9077,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third Tier Two Circuits",
-          "desc:8": ""
+          "desc:8": "Using SMD components (or leftover non-SMD versions), you can combine §6Refined Circuits§r into the third type of Tier Two circuit: the §6Refined Processor§r."
         }
       },
       "tasks:9": {
@@ -9373,7 +9374,7 @@
     "140:10": {
       "questID:3": 140,
       "preRequisites:11": [
-        51
+        100
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9397,7 +9398,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Advanced Inscriber",
-          "desc:8": "These Inscribers are much easier to work with for automation purposes than the usual ones, but might take a bit of experiementation to figure out how they work on your part.\n\nTo say the least, these can be automated by just plopping an ME Interface. Just don\u0027t forget to pull products."
+          "desc:8": "§3Advanced Inscribers§r are much easier to work with for automation purposes, since you can insert more than a single item at a time and you can lock §aPresses§r in place.\n\nYou can automate these nicely with processing patterns in an §aME Interface§r. They don\u0027t auto-eject items though, so you will need to pull the finished items out."
         }
       },
       "tasks:9": {
@@ -9568,7 +9569,7 @@
       "questID:3": 143,
       "preRequisites:11": [
         26,
-        71
+        75
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13707,7 +13708,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier Three Circuits",
-          "desc:8": "Marginally cheaper to make than Electronic Processor Arrays, and also the only way to make Refined Processor Mainframes."
+          "desc:8": "Marginally cheaper to make than §6Electronic Processor Arrays§r, and also the only way to make §6Refined Processor Mainframes§r, which is the first Tier Four circuit."
         }
       },
       "tasks:9": {
@@ -14411,7 +14412,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Staff of Traveling",
-          "desc:8": "Shift + right-click to warp forward a distance. Works through walls.\n\nPowered with RF, and can be further enchanted with a Darksteel Anvil.\n\nIf you don\u0027t have one already, you\u0027ll need an Autoclave for the gem."
+          "desc:8": "Holding one of these reveals §aTravel Anchors§r and §aTelepads§r in range.\n\nShift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls).\n\nThese are powered with RF, and can be further enchanted through §bEnderIO§r\u0027s enchanting mechanics.\n\nThe §6Vibrant Crystal§r will require an §3Autoclave§r."
         }
       },
       "tasks:9": {
@@ -15456,7 +15457,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "MV Chemical Reactor",
-          "desc:8": "Here comes the chemistry.\n\nIt might seem crazy right now, but at some point you\u0027ll want a dedicated Chemical Reactor for pretty much every chemical. You probably want to hold off on doing that until you\u0027ve got a solid base of autocrafting though... it stings a lot less when you can just request 10 MV Chem Reactors from your AE2 system.\n\nFluid Export Busses are great for dumping the ingredients into the reactor. A Capacity Card will let you export five chemcials through a single bus.\n\nYou can slap a Fluid Storage Bus on the machine and just let it back up. It will end up with 64 buckets of each ingredient in the inputs, and 64 buckets of the output, then stop processing. Whenver you need some, your AE2 system will pull the needed fluid out and the machine will resume processing.\n\nThat sounds great (and it is, honestly) but there\u0027s a few things you need to remember. One, always reduce the priority of your Fluid Storage Busses, otherwise AE2 will put other random stuff inside the chemical reactor if there is ever room. And secondly, your AE2 system will SEE the inputs inside the chemical reactors, but not be able to access them (no more than you can pull any fluids in the input slots out using a bucket). This can be vexing for a few reasons, but its something you can work around."
+          "desc:8": "Here comes the chemistry.\n\nIt might seem crazy right now, but at some point you\u0027ll want a dedicated §3Chemical Reactor§r for pretty much every chemical. You probably want to hold off on doing that until you\u0027ve got a solid base of autocrafting though... it stings a lot less when you can just request 10 MV Chem Reactors from your AE2 system.\n\n§aFluid Export Busses§r are great for dumping the ingredients into the reactor. A §aCapacity Card§r will let you export five chemcials through a single bus.\n\nYou can slap a §aFluid Storage Bus§r on the machine and just let it back up. It will end up with 64 buckets of each ingredient in the inputs, and 64 buckets of the output, then stop processing. Whenver you need some, your AE2 system will pull the needed fluid out and the machine will resume processing.\n\nThat sounds great (and it is, honestly) but there\u0027s a few things you need to remember. One, always reduce the priority of your Fluid Storage Busses, otherwise AE2 will put other random stuff inside the chemical reactor if there is ever room. And secondly, your AE2 system will SEE the inputs inside the chemical reactors, but not be able to access them (no more than you can pull any fluids in the input slots out using a bucket). This can be vexing for a few reasons, but its something you can work around."
         }
       },
       "tasks:9": {
@@ -15602,7 +15603,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Explore Extra Utilities 2",
-          "desc:8": "There\u0027s a great deal of interesting content within Extra Utilities 2, and although most of it is not required for progression, you should still look through what it offers and build what interests you. In particular, the Angel Ring offers creative flight, and although some of the RF generators are not particularly good, others are quite competitive with the Dynamos. And of course, you can aim for the all powerful Rainbow Generator as you work towards endgame. All that and much more await, so explore away!"
+          "desc:8": "There\u0027s a great deal of interesting content within §bExtra Utilities 2§r, and although most of it is not required for progression, you should still look through what it offers and build what interests you.\n\nIn particular, the §aAngel Ring§r bauble offers creative flight, and although some of the RF generators are not particularly good, others are quite competitive with the Dynamos. And of course, you can aim for the all powerful §aRainbow Generator§r as you work towards endgame. All that and much more await, so explore away!"
         }
       },
       "tasks:9": {
@@ -23579,7 +23580,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Fire Water",
-          "desc:8": "Fire Water is a great way of producing Grains of Infinity. Spill a bucket over a patch of bedrock and watch it drop grains every so often. Make sure to chunkload the area.\n\nYes, just spill it."
+          "desc:8": "§9Fire Water§r is a great way of producing §6Grains of Infinity§r. Spill a bucket over a patch of bare bedrock and watch it drop grains every so often. There\u0027s a 2% chance per tick for one to be generated on each block of bedrock the Fire Water is flowing on.\n\nMake sure to chunkload the area."
         }
       },
       "tasks:9": {
@@ -25018,7 +25019,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Interdimensional Transport",
-          "desc:8": "It\u0027s required to have at least some way of interdimensional transport before you get to the Moon!"
+          "desc:8": "Now that you have §einterdimensional teleportation§r, you can travel to and from the Moon without launching a rocket each way."
         }
       },
       "tasks:9": {
@@ -26018,7 +26019,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "UHV Circuit...s?",
-          "desc:8": "Congratulations! You\u0027ve reached the end of the circuit progression.\n\nThe only UHV circuit is the Wetware Mainframe, it\u0027s almost entirely used in crafting high tiers micro miners among some endgame stuff."
+          "desc:8": "Congratulations! You\u0027ve reached the end of the circuit progression.\n\nThe only UHV circuit is the §6Wetware Mainframe§r, which is used for crafting high-tier micro miners among some endgame stuff."
         }
       },
       "tasks:9": {},
@@ -26717,7 +26718,6 @@
       "questID:3": 404,
       "preRequisites:11": [
         403,
-        109,
         104
       ],
       "properties:10": {
@@ -26742,7 +26742,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Simple GregTech Automation",
-          "desc:8": "You can easily automate GregTech machines with ME Interfaces and patterns early on by abusing the auto-output feature.\n\nUse a §aGregTech Wrench§r to relocate the output side of a machine where you want it to be, right-click it with a §aGregTech Screwdriver§r and put an ME Interface right onto the output side.\n\nRight-click the machine and enable item auto-output (§6orange box§r in the bottom-left corner).\n\nNow, stuff the ME Interface with patterns. The next time you\u0027ll order an item, the ME Interface will push ingredients into the machine, and the machine will push products back into the Interface once they\u0027re ready. No need to use conduits or import buses!"
+          "desc:8": "You can easily automate most §bGregTech§r machines with §aME Interfaces§r and processing §aPatterns§r early on by using the machines\u0027s auto-output feature.\n\nUse a §aGregTech Wrench§r to relocate the output side of a machine where you want it to be, right-click it with a §aGregTech Screwdriver§r to permit input on the output face, then put an ME Interface on that side of the machine.\n\nRight-click the machine and enable item auto-output (§6orange box§r in the bottom-left corner of the GUI).\n\nNow, stuff the ME Interface with processing patterns. The next time you order an item, the ME Interface will push ingredients into the machine, and the machine will push outputs back into the Interface once they\u0027re ready, completing the craft. No need to use conduits or import buses!"
         }
       },
       "tasks:9": {
@@ -30317,7 +30317,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Fluid Terminal",
-          "desc:8": "Click a fluid with a single empty bucket on your cursor to fill it up with the fluid.\n\nAlso works with cells."
+          "desc:8": "This terminal allows you to interact with fluid storage on your ME Network, like §aFluid Storage Disks§r.\n\nPut fluids in or remove fluids via this terminal with any GUI-compatible container, by clicking on a fluid to fill it, or an empty space to drain into the network.\n\nIt\u0027s a micropart, so you need to place it on §6ME Cable§r (not a conduit)."
         }
       },
       "tasks:9": {
@@ -31000,7 +31000,7 @@
             "0:10": {
               "id:8": "gregtech:machine",
               "Count:3": 1,
-              "OreDict:8": "",
+              "OreDict:8": "questbookBrewery",
               "Damage:3": 130
             }
           },
@@ -31054,7 +31054,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ethanol",
-          "desc:8": "§9Ethanol§r is alcohol, which you can first produce from distilling §9Biomass§r.\n\nBoiling §6Sugar Cane§r in a §3Boiler§r is a great way to get Biomass, but you can also get it from other crops and saplings if you want.\n\nOnce you have a hefty starting stock of Ethanol, consider making and distilling §9Fermented Biomass§r in a §3Distillation Tower§r for extra chemicals."
+          "desc:8": "§9Ethanol§r is alcohol, which you can first produce from distilling §9Biomass§r.\n\nBoiling §6Sugar Cane§r in a §3Brewery§r is a great way to get Biomass, but you can also get it from other crops and saplings if you want.\n\nOnce you have a hefty starting stock of Ethanol, consider making and distilling §9Fermented Biomass§r in a §3Distillation Tower§r for extra chemicals."
         }
       },
       "tasks:9": {
@@ -31437,7 +31437,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "The Vat",
-          "desc:8": "An RF powered Chemical Reactor of sorts, used to produce EnderIO liquids."
+          "desc:8": "§bEnderIO§r\u0027s equivalent of a §3Chemical Reactor§r, roughly speaking.\n\nThe only way to make several important liquids from EnderIO."
         }
       },
       "tasks:9": {
@@ -43715,6 +43715,70 @@
         }
       },
       "rewards:9": {}
+    },
+    "728:10": {
+      "questID:3": 728,
+      "preRequisites:11": [
+        227
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thermalfoundation:material",
+            "Count:3": 1,
+            "Damage:2": 895,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Resonant Clathrate",
+          "desc:8": "...alternatively, \"Self-Sufficient Deep Mob Learning\".\n\nWhile spending Uraninite Ore on §6Pulsating Dust§r is fine during the very early game, it\u0027s manual effort and requires you to either mine or buy the ore and process it...\n\nA good option would be to §ause Enderman Models exclusively for §6Ender Pearls§r to produce §6Pulsating Polymer Clay§r in a self-sufficient manner.\n\nPair them with a §3Fluid Extractor§r to melt pearls into §9Resonant Ender§r, then combine the fluid with §6Nether Quartz§r in at least an §3MV Chemical Reactor§r to make §aResonant Clathrates§r. Nether Quartz itself is easily renewable, but requires a good infrastructure.\n\nThe only step left to do is to smelt Clathrates into Pulsating Dust."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thermalfoundation:material",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 895
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -44240,24 +44304,24 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -300,
+          "x:3": -372,
           "y:3": 36,
           "id:3": 2,
           "sizeY:3": 24
         },
         "1:10": {
-          "sizeX:3": 48,
-          "x:3": -540,
-          "y:3": 24,
+          "sizeX:3": 30,
+          "x:3": -558,
+          "y:3": 36,
           "id:3": 22,
-          "sizeY:3": 48
+          "sizeY:3": 30
         },
         "2:10": {
-          "sizeX:3": 24,
-          "x:3": -480,
+          "sizeX:3": 30,
+          "x:3": -504,
           "y:3": 36,
           "id:3": 27,
-          "sizeY:3": 24
+          "sizeY:3": 30
         },
         "3:10": {
           "sizeX:3": 24,
@@ -44310,8 +44374,8 @@
         },
         "10:10": {
           "sizeX:3": 36,
-          "x:3": -126,
-          "y:3": 138,
+          "x:3": -66,
+          "y:3": 163,
           "id:3": 51,
           "sizeY:3": 36
         },
@@ -44324,7 +44388,7 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -264,
+          "x:3": -414,
           "y:3": 36,
           "id:3": 55,
           "sizeY:3": 24
@@ -44366,548 +44430,569 @@
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -216,
+          "x:3": -228,
           "y:3": 132,
           "id:3": 74,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 84,
+          "id:3": 75,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
           "x:3": -384,
           "y:3": 84,
           "id:3": 79,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 84,
           "id:3": 80,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 132,
           "id:3": 81,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -528,
           "y:3": 84,
           "id:3": 82,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": 132,
           "id:3": 83,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 180,
           "id:3": 84,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 48,
           "x:3": -540,
           "y:3": 120,
           "id:3": 86,
           "sizeY:3": 48
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -528,
           "y:3": 180,
           "id:3": 87,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": 180,
           "id:3": 88,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -528,
           "y:3": 228,
           "id:3": 89,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 48,
           "x:3": -540,
           "y:3": 276,
           "id:3": 90,
           "sizeY:3": 48
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 132,
           "id:3": 91,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 312,
+          "x:3": -248,
+          "y:3": 324,
           "id:3": 92,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 48,
           "x:3": -348,
           "y:3": 324,
           "id:3": 93,
           "sizeY:3": 48
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 252,
           "id:3": 94,
           "sizeY:3": 24
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 36,
           "x:3": -438,
           "y:3": 330,
           "id:3": 95,
           "sizeY:3": 36
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": 384,
           "id:3": 96,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 180,
+          "x:3": -24,
+          "y:3": 324,
           "id:3": 97,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 36,
           "x:3": -282,
           "y:3": 222,
           "id:3": 98,
           "sizeY:3": 36
         },
-        "38:10": {
-          "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 180,
-          "id:3": 100,
-          "sizeY:3": 24
-        },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 144,
-          "id:3": 102,
+          "x:3": -132,
+          "y:3": 216,
+          "id:3": 100,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 144,
-          "id:3": 103,
+          "x:3": 12,
+          "y:3": 216,
+          "id:3": 102,
           "sizeY:3": 24
         },
         "41:10": {
+          "sizeX:3": 28,
+          "x:3": -62,
+          "y:3": 121,
+          "id:3": 103,
+          "sizeY:3": 28
+        },
+        "42:10": {
           "sizeX:3": 48,
-          "x:3": -132,
+          "x:3": -72,
           "y:3": 372,
           "id:3": 104,
           "sizeY:3": 48
         },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 180,
-          "id:3": 105,
-          "sizeY:3": 24
-        },
         "43:10": {
           "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 180,
-          "id:3": 106,
+          "x:3": -60,
+          "y:3": 216,
+          "id:3": 105,
           "sizeY:3": 24
         },
         "44:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": 180,
-          "id:3": 107,
+          "x:3": -132,
+          "y:3": 324,
+          "id:3": 106,
           "sizeY:3": 24
         },
         "45:10": {
           "sizeX:3": 24,
-          "x:3": 48,
+          "x:3": -228,
           "y:3": 180,
-          "id:3": 108,
+          "id:3": 107,
           "sizeY:3": 24
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 180,
-          "id:3": 109,
+          "x:3": 12,
+          "y:3": 360,
+          "id:3": 108,
           "sizeY:3": 24
         },
         "47:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 228,
-          "id:3": 110,
+          "x:3": 12,
+          "y:3": 324,
+          "id:3": 109,
           "sizeY:3": 24
         },
         "48:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 228,
-          "id:3": 111,
+          "x:3": -60,
+          "y:3": 324,
+          "id:3": 110,
           "sizeY:3": 24
         },
         "49:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 180,
-          "id:3": 112,
+          "x:3": -96,
+          "y:3": 288,
+          "id:3": 111,
           "sizeY:3": 24
         },
         "50:10": {
           "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 108,
-          "id:3": 117,
+          "x:3": -180,
+          "y:3": 180,
+          "id:3": 112,
           "sizeY:3": 24
         },
         "51:10": {
           "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 144,
-          "id:3": 118,
+          "x:3": 84,
+          "y:3": 252,
+          "id:3": 117,
           "sizeY:3": 24
         },
         "52:10": {
           "sizeX:3": 24,
-          "x:3": 6,
-          "y:3": 144,
-          "id:3": 119,
+          "x:3": 48,
+          "y:3": 252,
+          "id:3": 118,
           "sizeY:3": 24
         },
         "53:10": {
           "sizeX:3": 24,
           "x:3": 48,
-          "y:3": 144,
-          "id:3": 120,
+          "y:3": 294,
+          "id:3": 119,
           "sizeY:3": 24
         },
         "54:10": {
           "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 108,
-          "id:3": 122,
+          "x:3": 48,
+          "y:3": 336,
+          "id:3": 120,
           "sizeY:3": 24
         },
         "55:10": {
           "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 108,
-          "id:3": 123,
+          "x:3": 84,
+          "y:3": 280,
+          "id:3": 122,
           "sizeY:3": 24
         },
         "56:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 108,
-          "id:3": 124,
+          "x:3": 84,
+          "y:3": 308,
+          "id:3": 123,
           "sizeY:3": 24
         },
         "57:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 336,
+          "id:3": 124,
+          "sizeY:3": 24
+        },
+        "58:10": {
           "sizeX:3": 36,
           "x:3": -534,
           "y:3": 378,
           "id:3": 126,
           "sizeY:3": 36
         },
-        "58:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 384,
           "id:3": 130,
           "sizeY:3": 24
         },
-        "59:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 384,
           "id:3": 131,
           "sizeY:3": 24
         },
-        "60:10": {
+        "61:10": {
           "sizeX:3": 48,
           "x:3": -540,
           "y:3": 468,
           "id:3": 133,
           "sizeY:3": 48
         },
-        "61:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 432,
           "id:3": 134,
           "sizeY:3": 24
         },
-        "62:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": -468,
           "y:3": 480,
           "id:3": 135,
           "sizeY:3": 24
         },
-        "63:10": {
+        "64:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 108,
+          "x:3": -96,
+          "y:3": 252,
           "id:3": 140,
           "sizeY:3": 24
         },
-        "64:10": {
+        "65:10": {
           "sizeX:3": 24,
-          "x:3": -216,
+          "x:3": -180,
           "y:3": 84,
           "id:3": 143,
           "sizeY:3": 24
         },
-        "65:10": {
+        "66:10": {
           "sizeX:3": 24,
           "x:3": -576,
           "y:3": 288,
           "id:3": 147,
           "sizeY:3": 24
         },
-        "66:10": {
+        "67:10": {
           "sizeX:3": 48,
           "x:3": -348,
           "y:3": 216,
           "id:3": 154,
           "sizeY:3": 48
         },
-        "67:10": {
+        "68:10": {
           "sizeX:3": 36,
           "x:3": -342,
           "y:3": 78,
           "id:3": 187,
           "sizeY:3": 36
         },
-        "68:10": {
+        "69:10": {
           "sizeX:3": 24,
           "x:3": -420,
           "y:3": 480,
           "id:3": 203,
           "sizeY:3": 24
         },
-        "69:10": {
+        "70:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": 444,
           "id:3": 213,
           "sizeY:3": 24
         },
-        "70:10": {
+        "71:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 36,
+          "id:3": 227,
+          "sizeY:3": 24
+        },
+        "72:10": {
           "sizeX:3": 36,
-          "x:3": -222,
-          "y:3": 258,
+          "x:3": -234,
+          "y:3": 270,
           "id:3": 233,
           "sizeY:3": 36
         },
-        "71:10": {
+        "73:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 180,
           "id:3": 236,
           "sizeY:3": 24
         },
-        "72:10": {
+        "74:10": {
           "sizeX:3": 24,
-          "x:3": -168,
+          "x:3": -180,
           "y:3": 216,
           "id:3": 237,
           "sizeY:3": 24
         },
-        "73:10": {
+        "75:10": {
           "sizeX:3": 36,
-          "x:3": 0,
-          "y:3": 48,
+          "x:3": 24,
+          "y:3": 28,
           "id:3": 319,
           "sizeY:3": 36
         },
-        "74:10": {
+        "76:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 288,
           "id:3": 338,
           "sizeY:3": 24
         },
-        "75:10": {
+        "77:10": {
           "sizeX:3": 36,
           "x:3": -582,
           "y:3": 222,
           "id:3": 398,
           "sizeY:3": 36
         },
-        "76:10": {
-          "sizeX:3": 36,
-          "x:3": -42,
-          "y:3": 378,
-          "id:3": 404,
-          "sizeY:3": 36
-        },
-        "77:10": {
-          "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": 312,
-          "id:3": 492,
-          "sizeY:3": 24
-        },
         "78:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 108,
-          "id:3": 494,
+          "x:3": -60,
+          "y:3": 432,
+          "id:3": 404,
           "sizeY:3": 24
         },
         "79:10": {
           "sizeX:3": 24,
-          "x:3": -228,
+          "x:3": -276,
+          "y:3": 300,
+          "id:3": 492,
+          "sizeY:3": 24
+        },
+        "80:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 216,
+          "id:3": 494,
+          "sizeY:3": 24
+        },
+        "81:10": {
+          "sizeX:3": 24,
+          "x:3": -456,
           "y:3": 36,
           "id:3": 498,
           "sizeY:3": 24
         },
-        "80:10": {
+        "82:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 84,
           "id:3": 502,
           "sizeY:3": 24
         },
-        "81:10": {
+        "83:10": {
           "sizeX:3": 24,
           "x:3": -480,
           "y:3": 288,
           "id:3": 504,
           "sizeY:3": 24
         },
-        "82:10": {
+        "84:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 288,
           "id:3": 505,
           "sizeY:3": 24
         },
-        "83:10": {
+        "85:10": {
           "sizeX:3": 24,
           "x:3": -432,
           "y:3": 384,
           "id:3": 507,
           "sizeY:3": 24
         },
-        "84:10": {
+        "86:10": {
           "sizeX:3": 24,
-          "x:3": -384,
+          "x:3": -288,
           "y:3": 36,
           "id:3": 509,
           "sizeY:3": 24
         },
-        "85:10": {
+        "87:10": {
           "sizeX:3": 24,
           "x:3": -588,
           "y:3": 84,
           "id:3": 516,
           "sizeY:3": 24
         },
-        "86:10": {
+        "88:10": {
           "sizeX:3": 24,
           "x:3": -636,
           "y:3": 84,
           "id:3": 517,
           "sizeY:3": 24
         },
-        "87:10": {
+        "89:10": {
           "sizeX:3": 36,
-          "x:3": -48,
-          "y:3": 48,
+          "x:3": -24,
+          "y:3": 28,
           "id:3": 538,
           "sizeY:3": 36
         },
-        "88:10": {
+        "90:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 132,
           "id:3": 540,
           "sizeY:3": 24
         },
-        "89:10": {
+        "91:10": {
           "sizeX:3": 36,
-          "x:3": 48,
-          "y:3": 48,
+          "x:3": 72,
+          "y:3": 28,
           "id:3": 541,
           "sizeY:3": 36
         },
-        "90:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": 288,
           "id:3": 546,
           "sizeY:3": 24
         },
-        "91:10": {
+        "93:10": {
           "sizeX:3": 24,
           "x:3": -276,
-          "y:3": 288,
+          "y:3": 264,
           "id:3": 550,
           "sizeY:3": 24
         },
-        "92:10": {
+        "94:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 264,
+          "x:3": -208,
+          "y:3": 324,
           "id:3": 551,
           "sizeY:3": 24
         },
-        "93:10": {
+        "95:10": {
           "sizeX:3": 36,
-          "x:3": -96,
-          "y:3": 48,
+          "x:3": -72,
+          "y:3": 28,
           "id:3": 556,
           "sizeY:3": 36
         },
-        "94:10": {
+        "96:10": {
           "sizeX:3": 36,
-          "x:3": -144,
-          "y:3": 48,
+          "x:3": -120,
+          "y:3": 28,
           "id:3": 609,
           "sizeY:3": 36
         },
-        "95:10": {
+        "97:10": {
           "sizeX:3": 24,
-          "x:3": -264,
+          "x:3": -414,
           "y:3": 0,
           "id:3": 727,
+          "sizeY:3": 24
+        },
+        "98:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": 36,
+          "id:3": 728,
           "sizeY:3": 24
         }
       },
