@@ -239,3 +239,29 @@ for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IIt
         , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
     ], cost);
 }
+
+//Ensure correct solidification
+//Vibrant Alloy
+
+//Ingots
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:vibrant_alloy>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:vibrant_alloy>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<enderio:item_alloy_ingot:2>).duration(20).EUt(8).buildAndRegister();
+//Nuggets
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:vibrant_alloy>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:vibrant_alloy>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<enderio:item_alloy_nugget:2>*9).duration(98).EUt(8).buildAndRegister();
+
+//Pulsating Iron
+//Ingots
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:pulsating_iron>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:pulsating_iron>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<enderio:item_alloy_ingot:5>).duration(20).EUt(8).buildAndRegister();
+//Nuggets
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:pulsating_iron>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:pulsating_iron>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<enderio:item_alloy_nugget:5>*9).duration(98).EUt(8).buildAndRegister();
+
+//Energetic Alloy
+//Ingots
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:energetic_alloy>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:energetic_alloy>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<enderio:item_alloy_ingot:1>).duration(20).EUt(8).buildAndRegister();
+//Nuggets
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:energetic_alloy>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:energetic_alloy>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<enderio:item_alloy_nugget:1>*9).duration(98).EUt(8).buildAndRegister();
