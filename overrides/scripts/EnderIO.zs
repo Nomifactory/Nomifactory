@@ -307,3 +307,14 @@ solidifier.recipeBuilder().fluidInputs(<liquid:conductive_iron>*144).notConsumab
 //Blocks
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:conductive_iron>*1296]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:conductive_iron>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<enderio:block_alloy:4>).duration(98).EUt(8).buildAndRegister();
+
+//Dark Steel
+//Ingots
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:dark_steel>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:dark_steel>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<enderio:item_alloy_ingot:6>).duration(20).EUt(8).buildAndRegister();
+//Nuggets
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:dark_steel>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:dark_steel>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<enderio:item_alloy_nugget:6>*9).duration(98).EUt(8).buildAndRegister();
+//Blocks
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:dark_steel>*1296]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:dark_steel>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<enderio:block_alloy:6>).duration(98).EUt(8).buildAndRegister();
