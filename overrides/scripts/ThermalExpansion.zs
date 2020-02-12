@@ -390,17 +390,43 @@ recipes.addShaped(<thermalexpansion:frame:64>, [
 	[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>]]);
 <thermalexpansion:frame:64>.displayName = "Thermal Device Casing";
 
-//Ensure Proper Enderium Ingots
+//Ensure Proper Enderium/Lumium/Signalum Ingots
 
 //Ingots
+//Enderium
 solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:enderium>*144]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:enderium>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<thermalfoundation:material:167>).duration(20).EUt(8).buildAndRegister();
 
+//Signalium
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:signalum>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:signalum>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<thermalfoundation:material:165>).duration(20).EUt(8).buildAndRegister();
+
+//Lumium
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:lumium>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:lumium>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<thermalfoundation:material:166>).duration(20).EUt(8).buildAndRegister();
+
 //Blocks
+//Enderium
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:enderium>*1296]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:enderium>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<thermalfoundation:storage_alloy:7>).duration(98).EUt(8).buildAndRegister();
 
+//Signalum
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:signalum>*1296]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:signalum>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<thermalfoundation:storage_alloy:5>).duration(98).EUt(8).buildAndRegister();
+
+//Lumium
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:lumium>*1296]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:lumium>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<thermalfoundation:storage_alloy:6>).duration(98).EUt(8).buildAndRegister();
+
 //Nuggets
+//Enderium
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:enderium>*144]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:enderium>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<thermalfoundation:material:231>*9).duration(98).EUt(8).buildAndRegister();
 
+//Signalum
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:signalum>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:signalum>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<thermalfoundation:material:229>*9).duration(98).EUt(8).buildAndRegister();
+
+//Lumium
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:lumium>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:lumium>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<thermalfoundation:material:230>*9).duration(98).EUt(8).buildAndRegister();
