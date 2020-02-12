@@ -390,3 +390,17 @@ recipes.addShaped(<thermalexpansion:frame:64>, [
 	[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>]]);
 <thermalexpansion:frame:64>.displayName = "Thermal Device Casing";
 
+//Ensure Proper Enderium Ingots
+
+//Ingots
+solidifier.findRecipe(8,[<gregtech:meta_item_1:32306>],[<liquid:enderium>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:enderium>*144).notConsumable(<gregtech:meta_item_1:32306>).outputs(<thermalfoundation:material:167>).duration(20).EUt(8).buildAndRegister();
+
+//Blocks
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:enderium>*1296]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:enderium>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<thermalfoundation:storage_alloy:7>).duration(98).EUt(8).buildAndRegister();
+
+//Nuggets
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:enderium>*144]).remove();
+solidifier.recipeBuilder().fluidInputs(<liquid:enderium>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<thermalfoundation:material:231>*9).duration(98).EUt(8).buildAndRegister();
+
