@@ -646,7 +646,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<armorplus:the_ultimate_part:9>, [
 mods.extendedcrafting.TableCrafting.addShaped(<armorplus:the_ultimate_boots>, [
 [null,<armorplus:material:4>,<armorplus:material:4>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<armorplus:material:4>,<armorplus:material:4>,null],
 [null,<armorplus:material:4>,<armorplus:the_ultimate_part:10>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<armorplus:super_star_boots>,<armorplus:material:4>,null],
-[null,<armorplus:material:4>,<draconicevolution:draconic_boots>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<draconicevolution:wyvern_boots>,<armorplus:material:4>,null],
+[null,<armorplus:material:4>,<contenttweaker:ultimate_gem>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<contenttweaker:ultimate_gem>,<armorplus:material:4>,null],
 [<armorplus:material:4>,<armorplus:material:4>,<contenttweaker:ultimate_gem>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<contenttweaker:ultimate_gem>,<armorplus:material:4>,<armorplus:material:4>],
 [<armorplus:material:4>,<armorplus:the_ultimate_part:11>,<contenttweaker:ultimate_gem>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<contenttweaker:ultimate_gem>,<armorplus:the_ultimate_part:9>,<armorplus:material:4>],
 [<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:3>,null,<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:3>],
