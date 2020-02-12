@@ -7118,7 +7118,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Autocrafting Patterns",
-          "desc:8": "§aPatterns§r are used to encode a single crafting table or processing recipes for on-demand automation with §bApplied Energistics§r.\n\nEncode them in a §aPattern Terminal§r.\n\nNote that recipes encoded with Substitutions on will use existing equivalent items, but §ewill only automatically craft the exact item specified in the recipe.§r\n\nIt is also a §cvery bad idea§r to encode recipes that require GregTech hand tools (even worse with Substitutions on). They are not handled gracefully, causing your crafting computations to explode in complexity and memory requirement.\n\nUse recipes that use machines instead!\n\n"
+          "desc:8": "§aPatterns§r are used to encode a single crafting table or processing recipe for on-demand automation with §bApplied Energistics§r.\n\nEncode them in a §aPattern Terminal§r.\n\nNote that recipes encoded with Substitutions on will use existing equivalent items, but §ewill only automatically craft the exact item specified in the recipe.§r\n\nIt is also a §cvery bad idea§r to encode recipes that require GregTech hand tools (even worse with Substitutions on). They are not handled gracefully, causing your crafting computations to explode in complexity and memory requirement.\n\nUse recipes that use machines instead!\n\n"
         }
       },
       "tasks:9": {
@@ -7902,7 +7902,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Black Steel",
-          "desc:8": "Black Steel will be used to make various items within Extended Crafting."
+          "desc:8": "§6Black Steel§r will be used to make various items from §bExtended Crafting§r. It will also be the basis of other Steel types later on."
         }
       },
       "tasks:9": {
@@ -7967,7 +7967,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "1k Fluid Storage",
-          "desc:8": "Digital fluid storage. Provides space for up to "
+          "desc:8": "The first digital fluid storage component, used to make §a1k Fluid Storage Cells§r.\n\nFluid cells can store up to five fluid types, but it\u0027s better to format all your disks to a single fluid each. This avoids the scenario where one fluid fills up a cell, preventing the other fluids from being stocked. Extra types also use up a chunk of storage, resulting in less overall storage per cell."
         }
       },
       "tasks:9": {
@@ -8288,7 +8288,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "4k Fluid Storage",
-          "desc:8": "Digital fluid storage."
+          "desc:8": "The second fluid storage component, used for §a4k Fluid Storage Cells§r."
         }
       },
       "tasks:9": {
@@ -8352,7 +8352,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "16k Fluid Storage",
-          "desc:8": "Digital fluid storage."
+          "desc:8": "The third fluid storage component, used for §a16k Fluid Storage Cells§r."
         }
       },
       "tasks:9": {
@@ -8416,7 +8416,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "64k Fluid Storage",
-          "desc:8": "Digital fluid storage."
+          "desc:8": "The largest fluid storage component, used for §a64k Fluid Storage Cells§r."
         }
       },
       "tasks:9": {
@@ -8480,7 +8480,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "GP Generation",
-          "desc:8": "There are multiple ways to generate GP, which are all down to you to choose. Look up \"Mill\" in JEI for all possible mills.\n\nNote that the individual generators have been balanced differently than normal, so take that into account before building 16 Watermills."
+          "desc:8": "§6Stoneburnt§r is a key ingredient in crafting many things from Extra Utilities.\n\nBesides the Manual Mill, there are multiple ways to generate GP. Look up \"Mill\" in JEI for all possible mills.\n\nNote that the individual generators have been balanced differently than normal, so take that into account before building 16 Water Mills. It is a good idea to use several different kinds due to §bExtra Utilities§r implementing diminishing returns to prevent spamming one kind of Mill.\n\n"
         }
       },
       "tasks:9": {
@@ -13625,7 +13625,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Apollo Program",
-          "desc:8": "This is one of the simpler rockets you can build. The specifics of the shape don\u0027t really matter, as long as the rocket engines are on the bottom and all the parts are added. It also needs to be inside the edges of the Launch Pad and not taller than the Structure Tower.\n\n§aIn order to progress this quest chain further, you\u0027ll first need to complete the Interdimensional Transport (either Dislocators or Telepad) questline and the Rocket Fuel questline, both which are nearby on this page."
+          "desc:8": "This is one of the simpler rockets you can build. The specifics of the shape don\u0027t really matter, as long as the rocket engines are on the bottom and all the parts are added. It also needs to be inside the edges of the Launch Pad and not taller than the Structure Tower.\n\n§aIn order to progress this quest chain further, you\u0027ll first need to complete the Interdimensional Transport (either Dislocators or Telepad) questline and the Rocket Fuel questline, both of which are nearby on this quest tab."
         }
       },
       "tasks:9": {
@@ -13932,7 +13932,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Advanced Component",
-          "desc:8": "Extended Crafting parts."
+          "desc:8": "A common component used by §bExtended Crafting§r."
         }
       },
       "tasks:9": {
@@ -13996,7 +13996,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Advanced Catalyst",
-          "desc:8": "Extended Crafting parts."
+          "desc:8": "Combine several components into a catalyst."
         }
       },
       "tasks:9": {
@@ -14060,8 +14060,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "Assembly",
-          "desc:8": "At some point you might consider venturing into the space, and the Moon. While it\u0027s not at all required for the progression, you might find it valuable: to say the least, the Moon contains ore veins which are otherwise very rare to find in the Overworld. And for this, you\u0027ll need a rocket and a whole lot of preparations.\n\nBefore you can build the rocket itself, you\u0027ll need a launch pad. The concrete part goes in a 3x3 flat on the ground. The Structure Tower is stacked in a column up into the air, with the lowest Structure Tower block being on the same Y-level as the launch pad blocks. With 6 blocks, you can only build a rocket 5 blocks high, due to having room for 5 blocks before hitting the top of the Structure Tower. This limitation can be bypassed by building more Structure Towers and stacking them even higher.\n\nThe Rocket Assembly Machine needs to go 1 block higher than the launch pad, so that the bottom of the Rocket Assemblyer is flush with the top of the launch pad. It also needs to be supplied with RF power to function."
+          "name:8": "Launch Pad and Rocket Assembly Machine",
+          "desc:8": "At some point you might consider venturing into the space, like the Moon. While it\u0027s not at all required for the progression, you might find it valuable: to say the least, the Moon contains ore veins which are otherwise very rare to find in the Overworld. And for this, you\u0027ll need a rocket and a whole lot of preparations.\n\nBefore you can build the rocket itself, you\u0027ll need to create a launch pad. The §6Launch Pad§r blocks go in a 3x3 layout flat on the ground to form the platform.\n\nThe Structure Tower§r is formed from a column of §6Structure Tower§r blocks that holds your rocket upright. The first block goes adjacent to any side of the launch pad platform (on the same Y-level as the launch pad blocks).\n\nWith 6 Structure Tower blocks, you can only build a rocket 5 blocks high, since any higher would exceed the height of the tower. To build a taller rocket, you\u0027ll need to build a taller tower using more Structure Tower blocks.\n\nThe §3Rocket Assembly Machine§r needs to be placed next to the launch pad (not on it) 1 block higher than the platform, so that the bottom of the Rocket Assembler is flush with the top of the launch pad. It also needs to be supplied with RF power to function.\n\n"
         }
       },
       "tasks:9": {
@@ -14201,7 +14201,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Steel Heavy Plates",
-          "desc:8": "Even simple rockets demand Heavy Plates for their construction. In this case, made out of Steel."
+          "desc:8": "Even simple rockets demand §6Heavy Plates§r for their construction. In this case, made out of §6Steel§r."
         }
       },
       "tasks:9": {
@@ -14954,7 +14954,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Rocket Fuel",
-          "desc:8": "Oxygen and Hydrazine combine together into Rocket Fuel."
+          "desc:8": "Mix §9Oxygen§r and §91,1-Dimethylhydrazine§r together to make §9Rocket Fuel§r.\n\nAwesome!\n\nWhen you have stable sourcing for Nitrogen and Oxygen, you can make and use §9Dinitrogen Tetroxide§r in the recipe instead of Oxygen. It doubles the efficiency of your Hydrazine when making Rocket Fuel."
         }
       },
       "tasks:9": {
@@ -15026,8 +15026,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "Hydrazine",
-          "desc:8": "Dimethylmine and Chloramine combine together into Hydrazine."
+          "name:8": "1,1-Dimethylhydrazine",
+          "desc:8": "§9Dimethylamine§r and §9Chloramine§r combine together into §91,1-Dimethylhydrazine§r."
         }
       },
       "tasks:9": {
@@ -15100,7 +15100,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Dimethylamine",
-          "desc:8": "Methanol and Ammonia combine together to make Dimethylamine.\n\nI know you\u0027re expecting a Breaking Bad joke here, but I don\u0027t walt to go for such low hanging fruit."
+          "desc:8": "§9Methanol§r and §9Ammonia§r combine together to make §9Dimethylamine§r.\n\nI know you\u0027re expecting a Breaking Bad joke here, but I don\u0027t walt to go for such low hanging fruit."
         }
       },
       "tasks:9": {
@@ -15173,7 +15173,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Chloramine",
-          "desc:8": "Hypochlorous Acid and Ammonia combine together to make Chloramine."
+          "desc:8": "§9Hypochlorous Acid§r and §9Ammonia§r combine together to make §9Chloramine§r."
         }
       },
       "tasks:9": {
@@ -15245,7 +15245,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ammonia",
-          "desc:8": "Hydrogen and Nitrogen combine together to make Ammonia.\n\nEasiest way to get Nitrogen is to centrifuge Air, which will require you to build an Air Collector."
+          "desc:8": "§9Hydrogen§r and §9Nitrogen§r combine together to make §9Ammonia§r.\n\nAn easy way to get Nitrogen is to centrifuge §9Air§r, which will require you to build an §3Air Collector§r. You could also electrolyze §6Saltpeter§r, distill §9Fermented Biomass§r in a §3Distillation Tower§r, or get huge amounts from a §3Cryogenic Air Distillation§r Tower§r."
         }
       },
       "tasks:9": {
@@ -15317,7 +15317,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Methanol",
-          "desc:8": "Oxygen, Hydrogen and Carbon combine together in a Chemical Reactor to make Methanol."
+          "desc:8": "§9Oxygen§r, §9Hydrogen§r, and §6Carbon§r combine together in a §3Chemical Reactor§r to make §9Methanol§r.\n\nYou can also use a §3Distillation Tower§r to get Methanol from §9Wood Vinegar§r and §9Fermented Biomass§r."
         }
       },
       "tasks:9": {
@@ -15389,7 +15389,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Hypochlorous Acid",
-          "desc:8": "Water and Chlorine make Hypochlorous Acid. If you add Mercury, the yeild is much better.\n\n§6Please note that Hypochlorous Acid and Hydrochloric Acid are different things.§r\n\nEasiest source of Chlorine is electrolyzing Salt.\n\nEasiest source of Mercury is electrolyzing Redstone."
+          "desc:8": "§9Water§r and §9Chlorine§r can be combined to make §9Hypochlorous Acid§r. If you add §9Mercury§r to catalyze the reaction, the yield is much better.\n\n§ePlease note that Hypochlorous Acid and Hydrochloric Acid are different things.§r\n\nYou\u0027re already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is electrolyzing §6Redstone§r."
         }
       },
       "tasks:9": {
@@ -18635,7 +18635,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Luminessence",
-          "desc:8": "Luminessence is used in a number of things, but right now, it will be a component in your Extended Crafting Tables."
+          "desc:8": "§6Luminessence§r is used in a number of things, but right now, it will be a component in your §aExtended Crafting Tables§r."
         }
       },
       "tasks:9": {
@@ -18703,7 +18703,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Phosphoric Acid",
-          "desc:8": "Phosphorus, Oxygen, and Water combine together into Phosphoric Acid."
+          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r."
         }
       },
       "tasks:9": {
@@ -19089,7 +19089,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Telepad",
-          "desc:8": "Before you travel to the Moon, you\u0027ll want to set up a way to easily return.\n\nLay out nine of the Telepads in a 3x3 pattern. They should turn into a multiblock. While having some Paper in your inventory, use the Coordinate Selector to create a Location Printout of an area near the Telepad. Keep track of this Printout and make sure to bring it with you to the Moon!\n\nMake sure the Telepad on the Overworld is ready to go. It needs power, a tank of Dew of the Void, and a Chunk Loading Ward (so it stays loaded while you\u0027re on the Moon). Bring the other nine Telepads with you when you go to the Moon, and once there, set up a similar layout. The one on the Moon will also need power, Dew of the Void and its chunk loaded. Bring a solar panel as well to make sure it stays powered.\n\nOnce your Moon Telepad is up and running, put your Overworld coordinates into it. Then record your current location on the Moon with the Coordinate Selector. Teleport home, and put those coordinates into the Overworld Telepad. Now you can travel back and forth easily!\n\nYou might consider building a room dedicated to Telepad transit, both on the Overworld and to other Planets, and label them. You\u0027ll be visiting many other worlds soon enough."
+          "desc:8": "Before you travel to the Moon, you\u0027ll want to set up a way to easily return.\n\nLay out nine of the §6Telepad Blocks§r in a 3x3 pattern. They should turn into a multiblock. While having some §6Paper§r in your inventory, use the §aCoordinate Selector§r to create a §6Location Printout§r of an area near the Telepad. Keep track of this Printout and make sure to bring it with you to the Moon!\n\nMake sure the Telepad on the Overworld is ready to go. It needs power, a tank of §9Dew of the Void§r, and the chunk it\u0027s in needs to be §eChunkloaded§r. Bring the other nine Telepad Blocks with you when you go to the Moon, and once there, set up a similar layout. The one on the Moon will also need power, Dew of the Void and its chunk loaded. Consider making a solar panel and a capacitor bank to keep it powered.\n\nOnce your Moon Telepad is up and running, put your Overworld coordinates into it. Then record your current location on the Moon with the Coordinate Selector. Teleport home, and put those coordinates into the Overworld Telepad. Now you can travel back and forth easily!\n\nYou might consider building a room dedicated to Telepad transit, both on the Overworld and to other Planets, and label them. You\u0027ll be visiting many other worlds soon enough."
         }
       },
       "tasks:9": {
@@ -23178,7 +23178,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "The End...?",
-          "desc:8": "The End portals in Strongholds are disabled.\n\nThe only way to access The End is to... bake a cake. You can refill it with Eyes of Ender.\n\nPrepare some gear and get ready for a fight!"
+          "desc:8": "You may have noticed that The End portals in Strongholds are disabled.\n\nThe only way to access The End is to... §ebake a cake§r. You can refill it with §6Eyes of Ender§r.\n\nPrepare some gear, eat a slice, and get ready for a fight!"
         }
       },
       "tasks:9": {
@@ -23506,7 +23506,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Egg Thief",
-          "desc:8": "Find a clever way to make the Egg to fall onto a torch.\n\nYou might be interested in getting yourself a Dragon Egg Mill afterwards for free 500 GP."
+          "desc:8": "Find a clever way to make the Ender Dragon\u0027s Egg to fall onto a torch. This neat trick will turn it into a collectible item so you can bring it home with you.\n\nYou might be interested in getting yourself a §3Dragon Egg Mill§r to place it on for free 500 GP."
         }
       },
       "tasks:9": {
@@ -24758,7 +24758,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "The Outer Islands",
-          "desc:8": "Now that you\u0027ve dealt with the dragon, seek the bedrock structure floating mid-air around the edge of the main island.\n\nBuild your way to it and carefully throw an enderpearl inside to teleport to a distant island.\n\nThen, gather some chorus flowers. You\u0027ll have to smash the flower itself to get it dropped, simply breaking the stem of a plant will not drop any.\n\nAnd finally, obtain some draconium dust. It\u0027s pretty rare, but should be everywhere.\n\nTo get back, seek for a similar structure nearby and throw an enderpearl at it."
+          "desc:8": "Now that you\u0027ve dealt with the dragon, seek the bedrock structure floating mid-air around the edge of the main island.\n\nCarefully throw an §6Ender Pearl§r inside one (where there\u0027s a portal-looking texture) to teleport to a distant island.\n\nOnce there, gather some §6Chorus Flowers§r. You\u0027ll have to smash the flower itself to get it: simply breaking the stem of a plant will not drop the flower.\n\nAnd finally, obtain some §6Draconium Dust§r. Its ore spawns in small quantities, but should be everywhere.\n\nTo get back to the main island, throw an Ender Pearl into another bedrock portal structure.\n\n"
         }
       },
       "tasks:9": {
@@ -24772,13 +24772,13 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "draconicevolution:draconium_dust",
-              "Count:3": 1,
+              "Count:3": 8,
               "OreDict:8": "",
               "Damage:3": 0
             },
             "1:10": {
               "id:8": "minecraft:chorus_flower",
-              "Count:3": 1,
+              "Count:3": 3,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -25058,7 +25058,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Rod of Return",
-          "desc:8": "A good, but slightly gated way of teleporting back to your telepads."
+          "desc:8": "A good, but slightly gated way of teleporting back to your telepads.\n\nIt won\u0027t be possible to make this until you reach EV tier power."
         }
       },
       "tasks:9": {
@@ -25442,7 +25442,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Elite Component",
-          "desc:8": ""
+          "desc:8": "A component used for more advanced items related to §bExtended Crafting§r."
         }
       },
       "tasks:9": {
@@ -25506,7 +25506,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Elite Catalyst",
-          "desc:8": ""
+          "desc:8": "Again, combining a few Components will make a Catalyst."
         }
       },
       "tasks:9": {
@@ -25571,7 +25571,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Elite Extended Crafting Table",
-          "desc:8": ""
+          "desc:8": "This table allows you to craft 7x7 Extended Crafting Table recipes."
         }
       },
       "tasks:9": {
@@ -25766,7 +25766,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ultimate Extended Crafting Table",
-          "desc:8": ""
+          "desc:8": "This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
         }
       },
       "tasks:9": {
@@ -26159,7 +26159,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Quantum Flux",
-          "desc:8": "Very fluxy.\n\nA reagent used in the majority of Micro Miner missions.\n\nThere are several ways to produce it, which one is better is down to you to decide."
+          "desc:8": "Very fluxy.\n\nA reagent used in the majority of §6Micro Miner§r missions.\n\nThere are several ways to produce §6Quantum Flux§r. All are viable, so figure out which one works best for you."
         }
       },
       "tasks:9": {
@@ -31357,7 +31357,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Dew Of The Void",
-          "desc:8": "Mix together these two crushed gems along with Resonant Ender to make Dew of the Void, the fluid that will power interdimensional teleportation.\n\nPlease note that Dew of the Void goes great with Doritos."
+          "desc:8": "Mix together these two crushed gems along with §9Resonant Ender§r to make §9Dew of the Void§r, the fluid that will power §bEnderIO§r interdimensional teleportation.\n\nPlease note that Dew of the Void goes great with Doritos."
         }
       },
       "tasks:9": {
