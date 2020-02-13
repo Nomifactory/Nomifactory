@@ -13772,7 +13772,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Space Suit",
-          "desc:8": "Making yourself a space suit is the most important step towards your space adventures."
+          "desc:8": "Making yourself a space suit is the most important step towards your space adventures.\n\nThis suit lets you breathe in space, which is kind of important."
         }
       },
       "tasks:9": {
@@ -13855,7 +13855,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Suit Workstation",
-          "desc:8": "The Suit Workstation is needed to install Low Pressure Tanks (or a larger tank if you like) onto your Space Suit Chest-Piece.\n\nOnce installed, you can stand on a Gas Charging Pad to fill up the tanks with air. Of course, you\u0027ll need to fill the Gas Charging Pad with Oxygen first, probably via conduits."
+          "desc:8": "The Suit Workstation is needed to install §6Low Pressure Tanks§r (or a larger tank if you like) onto your Space Suit Chest-Piece.\n\nOnce installed, you can stand on a §aGas Charging Pad§r to fill up the tanks with §9Oxygen§r. Of course, you\u0027ll need to fill the Gas Charging Pad with Oxygen first."
         }
       },
       "tasks:9": {
@@ -14271,7 +14271,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Flightplan To The Moon",
-          "desc:8": "You\u0027ll need this to set the Guidance Computer\u0027s destination to the Moon."
+          "desc:8": "You\u0027ll need this to set the §aGuidance Computer\u0027s§r destination to the Moon (Luna).\n\nIn your assembled Rocket, press the Rocket GUI Hotkey (default is §eC§r but you may need to rebind it). Click the little square that says \"Guidance Computer\" to pull up the Guidance Computer inventory. Then, place the blank chip into the Guidance Computer. Back out of this menu (§eEsc§r or §eE§r) to get back to the main Rocket GUI.\n\nClick the §cSelect Dst§r button, choose Luna, and click the Select button to assign the destination to the chip.\n\n§eNote: if you want to return your rocket to Earth, you will need to change the destination in this manner again to Earth before launching.§r"
         }
       },
       "tasks:9": {
@@ -14336,7 +14336,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Fuel Loading",
-          "desc:8": "Fueling Station is how rockets get fuel.\n\nRight-click the Fueling Sation with the Linker in your hand, then right-click the Rocket Assembling Machine to link them together. Once the rocket is assembled (turned into an entity), it will start accepting fuel.\n\nUse fluid conduits to pipe rocket fuel inside the Fueling Station.\n"
+          "desc:8": "The §3Fueling Station§r is how rockets get fuel.\n\nFirst, put together your Rocket, then §aScan§r and §cBuild§r the Rocket in the §3Rocket Assembling Machine§r to assemble it (which turns it into an entity). Next, with the §aLinker§r in your hand, right-click the Fueling Station then the Rocket to link them together. \n\nYou\u0027ll get a confirmation message when you do it right, and a little line will appear between the fuel loader and the rocket.\n\nNow just get §9Rocket Fuel§r into the Fueling Station and it will transfer to the Rocket automatically.\n"
         }
       },
       "tasks:9": {
@@ -14482,7 +14482,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Deuterium",
-          "desc:8": "There isn\u0027t a ton going on, on the Moon\u0027s surface. You might be wondering why you bothered.\n\nThe biggest draw is that the blocks that make up the Moon\u0027s surface (Moon Turf) contains Deuterium, a substance otherwise difficult to get ahold of in large amounts. It will be very useful for the Modularium you\u0027ll need to make, as well as a good source of fuel for fusion reactions.\n\nThere are also several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of Titanium (in the form of Rutile Ore and Ilmenite Ore) and Tungsten (in the form of Scheelite Ore and Tungstate Ore)."
+          "desc:8": "The Moon is a barren, lifeless rock... So why did you want to come here?\n\nOne major draw is that §6Moon Turf§r, which makes up the surface of the Moon, is an efficient means of obtaining §9Deuterium§r. It will be useful for producing §9Modularium§r, §9Tritium§r, plasmas from fusion, and crystallizing §6Dilithium§r.\n\nThere are also several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of §6Titanium§r (in the form of §6Rutile Ore§r and §6Ilmenite Ore§r) and §6Tungsten§r (in the form of §6Scheelite Ore§r and §6Tungstate Ore§r).\n\nMuch later you will also gain access to the §3Lunar Mining Station§r, which as the name suggests only works on the Moon.\n\n"
         }
       },
       "tasks:9": {
@@ -14732,7 +14732,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "First Foray Into The Microverse",
-          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, although probably less efficiently compared to the next tier."
+          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, but less efficiently than the Tier Three.\n\n"
         }
       },
       "tasks:9": {
@@ -15457,7 +15457,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "MV Chemical Reactor",
-          "desc:8": "Here comes the chemistry.\n\nIt might seem crazy right now, but at some point you\u0027ll want a dedicated §3Chemical Reactor§r for pretty much every chemical. You probably want to hold off on doing that until you\u0027ve got a solid base of autocrafting though... it stings a lot less when you can just request 10 MV Chem Reactors from your AE2 system.\n\n§aFluid Export Busses§r are great for dumping the ingredients into the reactor. A §aCapacity Card§r will let you export five chemcials through a single bus.\n\nYou can slap a §aFluid Storage Bus§r on the machine and just let it back up. It will end up with 64 buckets of each ingredient in the inputs, and 64 buckets of the output, then stop processing. Whenver you need some, your AE2 system will pull the needed fluid out and the machine will resume processing.\n\nThat sounds great (and it is, honestly) but there\u0027s a few things you need to remember. One, always reduce the priority of your Fluid Storage Busses, otherwise AE2 will put other random stuff inside the chemical reactor if there is ever room. And secondly, your AE2 system will SEE the inputs inside the chemical reactors, but not be able to access them (no more than you can pull any fluids in the input slots out using a bucket). This can be vexing for a few reasons, but its something you can work around."
+          "desc:8": "Here comes the chemistry.\n\nIt might seem crazy right now, but you\u0027ll want a dedicated §3Chemical Reactor§r for pretty much every chemical you want to process. You probably want to hold off on doing that until you\u0027ve got a solid base of autocrafting though... it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system.\n"
         }
       },
       "tasks:9": {
@@ -15793,7 +15793,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Fly To The Moon",
-          "desc:8": "Right-click the Rocket Assembling Machine and build the rocket.\n\nThen, mount the rocket with Spacebar, and hit \u0027C\u0027 to view the rocket\u0027s GUI. Click the Guidance Computer to open up its inventory, and put a Planet ID chip inside the computer. Then go to select destination and select Luna (the moon).\n\nYou\u0027re ready to blast off, but run through this checklist before you do.\n\n- Make sure you\u0027re wearing your Space Suit (all four pieces) and that it has a full tank of Oxygen.\n\n- If you decided to go with Dislocators, make sure you took two with you, one bound to the Overworld, and a Pedestal to put on the Moon surface.\n\n- If you decided to go with Telepads, make sure you\u0027ve constructed a Telepad in the Overworld and that you\u0027re carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and a second Telepad setup, also including RF Power, Dew of the Void and something to generate power on-site (a solar panel, or a fully charged Capacitor Bank).\n\nAfter you\u0027ve landed on the Moon\u0027s surface, set up your second Telepad or put down the Dislocator Pedestal. Make sure to chunkload this area right now.\n\nIf you went with Dislocators, put the Overworld one onto the Pedestal and bind the other to the Moon. Teleport back and put the Moon Dislocator onto the pedestal as well.\n\nIf with Telepads, code in the coordinates back to the Overworld into it. Then record your current coordinates. Teleport back home, and encode those coordinates into the Overworld Telepad. \n\nYou can now teleport to the Moon freely!"
+          "desc:8": "With your Rocket built, fuel loaded, and destination set, it\u0027s time for the prelaunch checklist.\n\n- §eMake sure you\u0027re wearing your Space Suit§r (all four pieces) and that it has a full tank of Oxygen. If you plan to stay on the Moon a while, maybe bring a gas charging pad and Ender Tank (being filled with Oxygen) with you.\n\nTeleportation:\n\n- If you decided to go with §aDislocators§r, make sure you take two with you: one bound to the Overworld, the other ready to bind to the Moon. Also bring along a Pedestal to put the Overworld one on the Moon surface.\n\n- If you decided to go with Telepads, make sure you\u0027ve constructed a Telepad in the Overworld and that you\u0027re carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and materials for the second Telepad setup. Bring Dew of the Void and RF power (like a §6Solar Panel§r and a §6Capacitor Bank§r).\n\nIn either case, as soon as you land you will need to prepare the other half of the teleportation route, and chunkload it.\n\nWhen you\u0027re sure you\u0027re prepared, sit in your rocket and press §eSpace§r.\n\nLiftoff!"
         }
       },
       "tasks:9": {
@@ -17803,7 +17803,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Conflux Catalyst",
-          "desc:8": " "
+          "desc:8": "An advanced ingredient used for the §aUltimate Extended Crafting Table§r and other late-game recipes. "
         }
       },
       "tasks:9": {
@@ -25635,7 +25635,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ultimate Catalyst",
-          "desc:8": ""
+          "desc:8": "Combine several components into a catalyst."
         }
       },
       "tasks:9": {
@@ -25700,7 +25700,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ultimate Component",
-          "desc:8": ""
+          "desc:8": "Used for Ultimate tier §bExtended Crafting§r.\n\nDon\u0027t worry if you can\u0027t make these for a while. You\u0027ll probably get to them around IV power."
         }
       },
       "tasks:9": {
@@ -43743,7 +43743,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Resonant Clathrate",
-          "desc:8": "...alternatively, \"Self-Sufficient Deep Mob Learning\".\n\nWhile spending Uraninite Ore on §6Pulsating Dust§r is fine during the very early game, it\u0027s manual effort and requires you to either mine or buy the ore and process it...\n\nA good option would be to §ause Enderman Models exclusively for §6Ender Pearls§r to produce §6Pulsating Polymer Clay§r in a self-sufficient manner.\n\nPair them with a §3Fluid Extractor§r to melt pearls into §9Resonant Ender§r, then combine the fluid with §6Nether Quartz§r in at least an §3MV Chemical Reactor§r to make §aResonant Clathrates§r. Nether Quartz itself is easily renewable, but requires a good infrastructure.\n\nThe only step left to do is to smelt Clathrates into Pulsating Dust."
+          "desc:8": "§6Uraninite Ore§r is the first source of §6Pulsating Dust§r but is not a very good one in the long term. Instead you should make §6Resonant Clathrates§r, which are an infinitely-renewable and effective source of Pulsating Dust.\n\nResonant Clathrates are made by melting §6Ender Pearls§r with a §3Fluid Extractor§r into §9Resonant Ender§r, then mixing that with §6Nether Quartz§r in an MV or better §3Chemical Reactor§r. Smelting this clathrate gives Pulsating Dust.\n\nWith Resonant Clathrates now accessible, everything you need for crafting §6Pulsating Polymer Clay§r can be automated in a net-positive loop.§r Doing so is a boon to automation of §bDeep Mob Learning§r, which is §ea primary source of important materials for the rest of the pack§r.\n\nThe exact implementation is up to you. Make use of the various LV and MV machines you have, and look through §bJEI§r for the automatable infinite sources of each ingredient (like §aEnderman Models§r for pearls).\n\n"
         }
       },
       "tasks:9": {
@@ -43779,6 +43779,146 @@
           }
         }
       }
+    },
+    "729:10": {
+      "questID:3": 729,
+      "preRequisites:11": [
+        102
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:fluid_interface",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Fluid Interface",
+          "desc:8": "This is the fluid counterpart to the standard §aME Interface§r.\n\nFluids inserted into it are automatically digitized into the network, though it does have internal storage that can back up if you run out of space.\n\nYou can configure the interface to stock up to six different fluids (or for faster throughput later on, several tanks of the same fluid). You can use §aPump covers§r on §bGregTech§r machines to pull fluids from or extract fluids into an interface. This is useful for routing fluids if you\u0027re already using the output side for items or a different fluid.\n\nIt is also far more performant and scales better without lag than §aFluid Import/Export Buses§r."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:part",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 520
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin5",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "730:10": {
+      "questID:3": 730,
+      "preRequisites:11": [
+        227
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 32611,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Fluids and Autocrafting",
+          "desc:8": "Working with fluids is a bit tricky. There\u0027s no equivalent to §aRobot Arms§r for fluids, meaning routing precise quantities of fluids is not feasible. AE2 §aPatterns§r have no notion of fluids, meaning that you have to §ededicate separate machines to specific fluid combinations§r, ensuring they remain stocked.\n\nAE2 has a §aFluid Import Bus§r and §aFluid Export Bus§r, and this is the usual go-to for players experienced with AE2. A §aCapacity Card§r will let you export or import five specific chemicals through a single bus, which is enough for, say, §3Chemical Reactors§r. However, §cexcessive use of AE2 buses will cause lag§r.\n\nA better approach for §bGregTech§r machines is using a stocked §aFluid Interface§r and a §aPump cover§r. This works almost identically to passive autocrafting with Robot Arms, and using §aFluid Filters§r with the pumps can allow routing up to six distinct fluids to adjacent machines. This method is much more performant, scaling without causing lag like buses. For other mods, you can route fluids from a Fluid Interface with conduits.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "731:10": {
+      "questID:3": 731,
+      "preRequisites:11": [
+        227
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 32611,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Fluid Logistics",
+          "desc:8": "Your §3Chemical Reactors§r will be making a lot of different fluids. You\u0027ll need to manage the logistics of routing and storing all the different fluids you\u0027re automating.\n\nWherever possible, having one Chemical Reactor output directly into another machine that needs its output chemical saves you from having to figure out additional storage and routing. §aFluid Filters§r and §aPump covers§r are very useful for moving fluids around a compact processing pipeline.\n\nBut what about the final output fluids that you need elsewhere?\n\nOne option is to use the output tanks of the Chemical Reactors as a small storage buffer, letting it back up and stop crafting automatically. A §aFluid Storage Bus§r on the machine will expose the fluid to your ME Network. Whenever you need some of this fluid, your AE2 system will pull the needed fluid out and the machine will resume processing.\n\nThere\u0027s some catches with this approach though. First is that the inaccessible input tanks will also show up in AE but you won\u0027t be able to access them. You will want to set the Storage Bus to §eExport Only§r so AE doesn\u0027t try to store random fluids in the Chemical Reactor, and you may want to §ereduce the priority§r of the Storage Bus as well: this will signal to AE that you want it to remove fluids from that location first. Also, if multiple fluids are produced, §ethe machine will not resume processing if it doesn\u0027t have room for all fluid outputs§r.\n\nWhen you get access to them, it\u0027s probably just better to use single-fluid-formatted §aFluid Storage Cells§r and dump outputs into AE via Fluid Interfaces. You can fill up the cells, then pull the fluids out wherever else you need them.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -44993,6 +45133,27 @@
           "x:3": -180,
           "y:3": 36,
           "id:3": 728,
+          "sizeY:3": 24
+        },
+        "99:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 180,
+          "id:3": 729,
+          "sizeY:3": 24
+        },
+        "100:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 0,
+          "id:3": 730,
+          "sizeY:3": 24
+        },
+        "101:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": 0,
+          "id:3": 731,
           "sizeY:3": 24
         }
       },
