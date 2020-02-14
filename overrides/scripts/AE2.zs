@@ -338,7 +338,7 @@ recipes.addShaped(<appliedenergistics2:material:38>, [
 //AE2 Wireless Terminal, Infinity Booster Card
 recipes.removeByRecipeName("ae2wtlib:booster_card_old");
 recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
-	[<draconicevolution:awakened_core>, null, <draconicevolution:awakened_core>],
+	[<ore:circuitElite>, null, <ore:circuitElite>],
 	[null, <appliedenergistics2:material:41>, null],
 	[null, null, null]
 	]);
