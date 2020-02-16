@@ -629,7 +629,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third Tier Three Circuits",
-          "desc:8": "With all of the many components in place, its time to merge them together into a single circuit. Go ahead and craft a§e Microprocessor§r."
+          "desc:8": "With three §6Microcircuits§r and some standard components, you can upgrade to the penultimate Tier Three circuit: a §6Microprocessor§r."
         }
       },
       "tasks:9": {
@@ -731,7 +731,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tier Two Micro Miner",
-          "desc:8": "The Second Micro Miner!\n\nYou won\u0027t be able to automate it with §bApplied Energistics 2§r fully just yet, until at least the Tier Four Micro Miner. Keep the §bExtended Crafting§r tables close!\n\nThis one can get you:§6\n* Bauxite Ore\n* Copper Ore\n* Tungstate Ore\n* Scheelite Ore\n* Cassiterite Ore\n* Radium Salt§r\n\nAs well as the §6Stellar Creation Data§r, which will be useful much, much later."
+          "desc:8": "The Second Micro Miner!\n\nThis uses an §bExtended Crafting§r table so it\u0027s not possible to automate the Miner itself with §bApplied Energistics 2§r just yet (this requires more advanced technology not easy to access until the Tier Four Micro Miner). You can make it semi-automatically by prestocking the components you need, and filling up the Extended Crafting Table with §bJEI§r!\n\nThis Micro Miner can get you:§6\n* Bauxite Ore\n* Copper Ore\n* Tungstate Ore\n* Scheelite Ore\n* Cassiterite Ore\n* Radium Salt§r\n\nAs well as the §6Stellar Creation Data§r, which will be useful much, much later."
         }
       },
       "tasks:9": {
@@ -3407,7 +3407,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Air Centrifuging",
-          "desc:8": "Note: this quest accepts LV/MV/HV Centrifuge.\n\nA quick solution for nitrogen."
+          "desc:8": "Note: this quest accepts LV/MV/HV Centrifuge.\n\nCentrifuging air is a reliable way to get §9Nitrogen§r before you have access to §3Cryogenic Distillation§r.\n\n"
         }
       },
       "tasks:9": {
@@ -8686,7 +8686,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "SMD Diodes",
-          "desc:8": "Next up are SMD Diodes, which are fairly simple."
+          "desc:8": "Next up are §6SMD Diodes§r, which are fairly simple.\n\nA §6Small Pile of Gallium Dust§r and four §6Fine Electrum Wire§r net you half a stack."
         }
       },
       "tasks:9": {
@@ -8881,7 +8881,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "First Tier Four Circuit",
-          "desc:8": ""
+          "desc:8": "This is the first Tier Four circuit, which is used for EV-tier machinery.\n\nThis is the first kind of mainframe you\u0027ll have made, and as you can see it\u0027s extraordinarily expensive. Fortunately, you don\u0027t have to make too many of these.\n\nInvest in the §3HV Assembling Machine§r to unlock the next theme of circuits, which use Epoxy substrates and span tiers two through five."
         }
       },
       "tasks:9": {
@@ -9141,7 +9141,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Small Coils",
-          "desc:8": "Another electronic component.\n\nMaking it inside an Assembling Machine is much, much cheaper than by hand."
+          "desc:8": "Another electronic component.\n\nMaking it inside an §3Assembling Machine§r is much, much cheaper than by hand, and using §6Nickel Zinc Ferrite§r bolts gives even better returns."
         }
       },
       "tasks:9": {
@@ -9205,7 +9205,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Signalum",
-          "desc:8": "Not glowing.\n\nThis one takes a significant amount of time to cook, so make sure to have it going constantly."
+          "desc:8": "Not glowing.\n\nThis one takes a significant amount of time to cook, so make sure to have it going constantly.\n\n§6Signalum§r is noteworthy as the long-awaited next tier upgrade for your §bThermal Expansion§r machines and dynamos following \"Reinforced\" back in MV."
         }
       },
       "tasks:9": {
@@ -9514,7 +9514,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Compactor",
-          "desc:8": "Makes things compact."
+          "desc:8": "A very power-efficient, if slow before upgrades, means of creating plates. Also the only way to directly make plates from single gems.\n\nUpgrading the machine tier with §aUpgrade Kits§r and applying §aAugments§r to boost its crafting speed is a good idea.\n\nPlates and Platings that are gated specifically by later §bGregTech§r voltage tiers are not craftable in these (instead requiring a §3Compressor§r), but almost every single-ingredient recipe made in a Compressor is available."
         }
       },
       "tasks:9": {
@@ -9914,7 +9914,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Titanium",
-          "desc:8": "A perfect material to make chopsticks of.\n\nIf you\u0027re having issues with patterning Hot Titanium Ingots, make sure to manually put the hot ingot into the output of the pattern and hit save."
+          "desc:8": "A perfect material for making chopsticks.\n\nAlso the tier material for Extreme Voltage (EV)."
         }
       },
       "tasks:9": {
@@ -9978,7 +9978,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Hot Titanium",
-          "desc:8": "Combining Titanium Tetrachloride with Magnesium in a Blast Furnace will net you your first Titanium Ingot.\n\nBut you\u0027ll need to cool it for it to be useful.\n\nIf you\u0027re having issues with patterning Hot Titanium Ingots, make sure to manually put the hot ingot into the output of the pattern and hit save."
+          "desc:8": "Combining §9Titanium Tetrachloride§r with §6Magnesium§r in an §3Electronic Blast Furnace§r (approximating the Kroll process) will net you your first Titanium.\n\nUnfortunately, it is super hot. You\u0027ll need to cool it in a §3Vacuum Freezer§r for it to be usable.\n\nIf you are autocrafting on-demand, it\u0027s better to not have your ME network know about this intermediate state. Outputting the §6Hot Titanium Ingot§r directly into a Vacuum Freezer avoids extra computations and item types.\n\nIf you absolutely insist on putting hot ingots in your network, you\u0027ll have to manually encode the §aPattern§r with an ingot that §cdamages you while you hold it§r. Your call.\n\n"
         }
       },
       "tasks:9": {
@@ -10029,7 +10029,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Vacuum Freezer",
-          "desc:8": "Vacuum Freezers are primarily used to cool down hot ingots.\n\nThey\u0027re also capable of freezing air and making superconductors."
+          "desc:8": "§3Vacuum Freezers§r are primarily used to cool down hot ingots.\n\nThey\u0027re also capable of freezing air into a liquid, and making superconductors.\n\nAt minimum you will need an energy input hatch, an input bus, an output bus, and 22 §6Frost Proof Machine Casings§r for forming the multiblock for processing Hot Ingots.\n\nIf you want to deal with fluids as well, subtract two casings and use a fluid input and fluid output in their place.\n\nBesides the controller placement, as usual the hatches/buses can go anywhere. Use the building guide in §bJEI§r which can be pulled up from the controller block."
         }
       },
       "tasks:9": {
@@ -10094,7 +10094,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Early Rutile",
-          "desc:8": "Rutile is not common on the Overworld, being containe inside Ilmenite Ore, and some in Bauxite Ore. Its found in much larger quantities on the Moon and other planets."
+          "desc:8": "§6Rutile§r is a §6Titanium§r precursor found in §6Ilmenite Ore§r and §6Bauxite Ore§r, which spawn uncommonly in the Overworld.\n\n§6Rutile Ore§r (the richest source), as well as larger quantities of Ilmenite and Bauxite, may be found on the Moon and other planets.\n\n"
         }
       },
       "tasks:9": {
@@ -10163,7 +10163,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Titanium Tetrachloride",
-          "desc:8": "Rutile, Carbon and Chlorine makes Titanium Tetrachloride."
+          "desc:8": "§6Rutile§r, §6Carbon§r, and §9Chlorine§r may be chemically reacted to form §9Titanium Tetrachloride§r.\n\nThis fluid is a precursor for metallic §6Titanium§r, as well as a titanium halide useful for catalyzing various polymer reactions (like plastics) for greater yields."
         }
       },
       "tasks:9": {
@@ -10231,7 +10231,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "HV Chemical Reactor",
-          "desc:8": "You\u0027ll need the higher tier Chemical Reactors to process Titanium."
+          "desc:8": "You\u0027ll need an §3HV Chemical Reactor§r for processing §6Titanium§r."
         }
       },
       "tasks:9": {
@@ -10458,7 +10458,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Kanthal Ingots",
-          "desc:8": ""
+          "desc:8": "§6Kanthal§r is an alloy of §6Iron§r, §6Aluminium§r, and §6Chrome§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
         }
       },
       "tasks:9": {
@@ -10522,7 +10522,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Kanthal Coil Blocks",
-          "desc:8": ""
+          "desc:8": "§6Kanthal§r is the second coil material available, increasing your EBF\u0027s operating temperature to 2700K so it can process more advanced materials."
         }
       },
       "tasks:9": {
@@ -10586,7 +10586,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Nichrome Ingots",
-          "desc:8": ""
+          "desc:8": "§6Nichrome§r is an alloy of §6Nickel§r and §6Chrome§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
         }
       },
       "tasks:9": {
@@ -10650,7 +10650,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Nichrome Coil Blocks",
-          "desc:8": ""
+          "desc:8": "§6Nichrome§r is the third coil material available, increasing your EBF\u0027s operating temperature to 3600K so it can process more advanced materials."
         }
       },
       "tasks:9": {
@@ -10888,7 +10888,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Canola Press",
-          "desc:8": "One of the easier ways to start getting Bio Diesel, the Canola Press uses RF power, unlike everything else in this area of the quest tree. Canola Oil can be burned for more RF power in an Oil Generator, or fermented into Refined Canola Oil in a Fermenter, or turned into Bio Diesel in a Chemical Reactor."
+          "desc:8": "The §3Canola Press§r is a machine that uses RF power to extract §9Canola Oil§r from §6Canola§r.\n\nCanola Oil can be turned into §9Glycerol§r and §9Bio Diesel§r in a §3Chemical Reactor§r.\n\nRefining, Crystallizing, or Empowering the Canola Oil first allows you to make Glycerol and Bio Diesel more efficiently."
         }
       },
       "tasks:9": {
@@ -10957,7 +10957,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Seed Oil, Fish Oil, Canola Oil",
-          "desc:8": "A whole host of fluids can be used as the feedstock for your Biodiesel, including Seed Oil, Fish Oil, and the various tiers of Canola Oils.\n\nFish Oil and Canola Oil are probably the easiest, but it\u0027s up to you to choose.\n\nThe former comes from Guardian Models."
+          "desc:8": "A whole host of fluids can be used as the feedstock for your §9Bio Diesel§r, including §9Seed Oil§r, §9Fish Oil§r, and the various tiers of §9Canola Oils§r.\n\nFish Oil and Canola Oil are probably the easiest, but it\u0027s up to you to choose.\n\nFish are easiest to get from §aGuardian Models§r from §bDML§r."
         }
       },
       "tasks:9": {
@@ -11369,7 +11369,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Palladium",
-          "desc:8": "An element paired exclusively with Platinum. If you haven\u0027t found a vein of Platinum yet, you\u0027ll need to buy Palladium as well.\n\nIts smelted in the blast furnace, and it takes a while. Luckily you only need a tiny bit of it for now."
+          "desc:8": "§6Palladium§r is found in §6Palladium Ore§r, which is found alongside §6Platinum Ore§r. If you haven\u0027t found a vein yet, you should buy some.\n\nPalladium is smelted in the §3Electronic Blast Furnace§r. It takes a while but each ingot goes pretty far for what you\u0027ll need it for."
         }
       },
       "tasks:9": {
@@ -11433,7 +11433,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Sodium Hydroxide",
-          "desc:8": "Water and Sodium make Sodium Hydroxide, an ingredient in Bio Diesel."
+          "desc:8": "§6Sodium Hydroxide§r is an ingredient in §9Bio Diesel§r.\n\nThe primary sources are:\n\n- Combining §9Water§r and §6Sodium§r in a §3Chemical Reactor§r (also a good source of §9Hydrogen§r)\n- Splitting §9Salt Water§r in an §3Electrolyzer§r (also the best source of §9Chlorine§r)."
         }
       },
       "tasks:9": {
@@ -11498,7 +11498,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Cryogenic Air Distillation",
-          "desc:8": "Air can be sent into the Vacuum Freezer to turn it into Liquid Air.\n\nLiquid Air can be sent into a Cryogenic Distillation Tower to break it down into its components. Keep in mind that Modular Machines output fluids into the first Fluid Hatch possible, so expect outputs appearing in different hatches every time.\n\nNote that despite accepting EU power, §nModular Machines will not overclock§r.\n\nIt\u0027s also highly advised to feed the tower FE (RF) instead of EU due to Modular Machines not accepting EU power properly."
+          "desc:8": "§9Air§r can be sent into the §3Vacuum Freezer§r to turn it into §9Liquid Air§r.\n\nLiquid Air can be sent into a §3Cryogenic Distillation Tower§r to break it down into its components. Keep in mind that Modular Machines output fluids into the first Fluid Hatch possible, so expect outputs appearing in different hatches every time.\n\nNote that despite accepting EU power, §nModular Machines will not overclock§r.\n\nIt\u0027s also highly advised to feed the tower FE (RF) instead of EU due to Modular Machines having issues with disconnecting from EU cables sometimes."
         }
       },
       "tasks:9": {
@@ -11597,7 +11597,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Bio Diesel and Glycerol",
-          "desc:8": "Bio Diesel is a decent renewable source of power that can potentially run your entire base, given enough crop production.\n\nPlease note that even if you prefer petrochem products to generate power, you\u0027ll need to do some Bio Diesel in order to get Glycerol, which is needed in Epoxy."
+          "desc:8": "The reaction that produces §9Bio Diesel§r is also the only source of §9Glycerol§r, which is an easy way to make §9Epichlorohydrin§r, an important ingredient of §9Epoxy§r.\n\nEven if you\u0027re otherwise going all in on petrochemistry for Epoxy, you\u0027ll probably end up with some Bio Diesel as a result of making Glycerol.\n\nBio Diesel can be used for power, but is probably better to convert to §9Cetane Diesel§r§r."
         }
       },
       "tasks:9": {
@@ -11670,7 +11670,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Nitrogen",
-          "desc:8": "Nitrogen comprises 78% of the atmopshere. Because of this, within the first few loads of liquid air distillation, you\u0027ll have more Nitrogen than you know what to do with. Pretty soon you\u0027ll need to start voiding it.\n\nStill, its quite useful for certain things, so always keep a bank of it around."
+          "desc:8": "§9Nitrogen§r comprises 78% of the atmosphere. Because of this, after the first few processes of §9Liquid Air§r in a §3Cryogenic Distillation Tower§r, you\u0027ll probably have more Nitrogen than you know what to do with.\n\nIf you got here centrifuging air, then it\u0027s gonna take you longer to get to that point.\n\nEven so, don\u0027t void it unless you have secured a very large stockpile. Storage is cheap and Nitrogen is used in sizeable quantities for several notable things, one of which you\u0027ll be needing very soon."
         }
       },
       "tasks:9": {
@@ -11738,7 +11738,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Basic Air Collection",
-          "desc:8": "Note: this quest accepts LV/MV/HV/EV §3Air Collectors§r.\n\nIV and LuV air collectors are called §3Atmosphere Collectors§r.\n\nAn §3Air Colllector§r will suck up air at a decent rate, and you can then collect it as a fluid with a bucket or conduits. Make sure the top side is unobstructed."
+          "desc:8": "Note: this quest accepts LV/MV/HV/EV §3Air Collectors§r.\n\nAn §3Air Colllector§r will suck up air at a decent rate, provided the top side is unobstructed. The collected Air is automatically ejected into an adjacent tank via the output face.\n\nIV and LuV air collectors are not part of this quest, but for reference they exist and are called §3Atmosphere Collectors§r.\n\n"
         }
       },
       "tasks:9": {
@@ -11806,7 +11806,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Noble Gasses",
-          "desc:8": "Breaking down Noble Gasses into their components will require 53 full loads of Liquid Air to be processed. You\u0027ll be needing large quantities of the various Noble Gasses so you should get this automated and running now."
+          "desc:8": "Breaking down §9Noble Gasses§r into their components will require 53 iterations of distilling §9Liquid Air§r to acquire the buckets needed for one batch. Running multiple towers (if you can generate Liquid Air fast enough) is not a bad idea.\n\nYou\u0027ll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. \n\n§9Aargon§r, for example, is important for production of advanced §6Silicon Boules§r."
         }
       },
       "tasks:9": {
@@ -11878,7 +11878,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Nitrogen Dioxide",
-          "desc:8": "A simple combination of Nitrogen and Oxygen, the two most common elements in the air, yet this substance is very toxic. Chemistry is wierd."
+          "desc:8": "A simple combination of §9Nitrogen§r and §9Oxygen§r, the two most common elements in the air, yet this substance is very toxic. Chemistry is wierd."
         }
       },
       "tasks:9": {
@@ -11950,7 +11950,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Nitric Acid",
-          "desc:8": "Don\u0027t let the EPA catch you making this stuff."
+          "desc:8": "Don\u0027t let the EPA catch you making this stuff.\n\n§9Nitrogen Dioxide§r, §9Oxygen§r, and §9Water§r will create §9Nitric Acid§r, the next step in your chemical journey."
         }
       },
       "tasks:9": {
@@ -12023,7 +12023,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tetranitromethane",
-          "desc:8": "This is the additive that will bring our diesel fuel to the next level."
+          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Ethenone§r and §9Nitric Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r."
         }
       },
       "tasks:9": {
@@ -12169,7 +12169,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ethenone",
-          "desc:8": "Acetic Acid and Sulfuric Acid make Ethenone."
+          "desc:8": "§9Acetic Acid§r and §9Sulfuric Acid§r make §9Ethenone§r.\n\nOr you can heat §9Acetone§r, or a few other approaches. Check out §bJEI§r for the various options."
         }
       },
       "tasks:9": {
@@ -12241,7 +12241,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Acetic Acid",
-          "desc:8": "There are several paths to Acetic Acid... probably the simplest is combining Oxygen, Hydrogen and Carbon, but one of the several other methods may appeal to you more. Check JEI."
+          "desc:8": "There are several paths to §9Acetic Acid§r... probably the simplest is combining §9Oxygen§r, §9Hydrogen§r, and §6Carbon§r, but one of the several other methods may appeal to you more.\n\nLook through §bJEI§r for the various options."
         }
       },
       "tasks:9": {
@@ -12571,7 +12571,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Carbon Fibers",
-          "desc:8": ""
+          "desc:8": "§6Carbon Fibers§r are useful for a variety of things.\n\nTo make them, you should use an §3HV Autoclave§r or better to ensure a 100% chance of producing them, as they are a chanced output with a base success rate of 85% at MV.\n\nBecause they are a chanced output, you also need to §etake care not to let this machine\u0027s output fill up: it will continue to process, §cvoiding any outputs §ethere isn\u0027t room for!"
         }
       },
       "tasks:9": {
@@ -12764,7 +12764,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Gearworking Die",
-          "desc:8": "Required for some gears, most notably the gemstone ones."
+          "desc:8": "A §3Compactor§r§r§r specialized to a §aGear Press§r is a very power efficient way to make gears. It is slower than its overclocking GTCE counterparts, but is required for some gears, most notably the crystal and gemstone ones.\n\nLike all §aAugments§r, the Gear Press specialization takes up an upgrade slot, but you can still use the rest of the slots for other ones like speed upgrades."
         }
       },
       "tasks:9": {
@@ -12828,8 +12828,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "NanoCPUs",
-          "desc:8": ""
+          "name:8": "Nano CPUs",
+          "desc:8": "§6Nano CPUs§r are advanced §6Circuit Wafers§r made from infusing a §6CPU Wafer§r with §6Carbon Fibers§r and §9Energized Glowstone§r in a §3Chemical Reactor§r.\n\nThen, cut the resulting wafer into dies using a §3Cutting Machine§r."
         }
       },
       "tasks:9": {
@@ -12894,7 +12894,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Final Tier Two Circuits",
-          "desc:8": ""
+          "desc:8": "Using your new §6Epoxy Circuit Boards§r and some familiar components, you can now make the final form of Tier Two Circuit: the §6Microcircuit§r.\n\nYou craft four of these at once, and they\u0027re pretty cheap. Consider that you used to have to make §6Primitive Processors§r for this tier, and realize how far you\u0027ve come.\n\nAs with the final form of any tier of circuits, be sure to set up automation to stockpile these. You won\u0027t get to the §6System-on-Chip§r variant recipe for a while yet."
         }
       },
       "tasks:9": {
@@ -12958,7 +12958,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The First Tier Five Circuit",
-          "desc:8": ""
+          "desc:8": "The second Mainframe you\u0027ll have to contend with.\n\nThis is the first Tier Five circuit available, and consequently the most expensive to make. as always, invest in the next circuit theme to get to cheaper recipes as soon as possible."
         }
       },
       "tasks:9": {
@@ -13105,7 +13105,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Glowstone Doped Silicon Boule",
-          "desc:8": ""
+          "desc:8": "A more advanced type of §6Silicon Boule§r, formed by doping the §6Silicon§r crystal lattice with §6Glowstone§r.\n\nThese are made in an §3EBF§r with §6Nichrome§r or better coils, and need §9Argon§r for the process. It needs twice as much Silicon as the basic boules, but also results in twice as many doped Silicon Wafers when sliced.\n\nCircuit Wafers can be made far more efficiently with these doped Silicon Wafers, but they are also needed for some more advanced types of Circuit Wafers that can\u0027t be engraved onto the basic ones."
         }
       },
       "tasks:9": {
@@ -13303,7 +13303,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tungstensteel",
-          "desc:8": ""
+          "desc:8": "§6Tungstensteel§r is an alloy of §6Tungsten§r and §6Steel§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
         }
       },
       "tasks:9": {
@@ -14732,7 +14732,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "First Foray Into The Microverse",
-          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, but less efficiently than the Tier Three.\n\n"
+          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, but less efficiently than the Tier Two.\n\n"
         }
       },
       "tasks:9": {
@@ -14809,7 +14809,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Infinitest Water",
-          "desc:8": "Aqueous Accumulators have been severely buffed in Omnifactory, and act like truly infinite water sources and §l§ndo not§r require any water blocks nearby.\n\nA single AqAc can produce water as fast as you can possibly pull out. At the cost of making annoying noises.\n\nFriendship with Endervoirs ended."
+          "desc:8": "§3Aqueous Accumulators§r in §5Omnifactory§r are infinite water sources; they §l§ndo not§r require any water blocks nearby.\n\nThis machine can produce §9Water§r as fast as you can extract it (the only downside being that it makes some annoying noises).\n\nFriendship with §aEndervoirs§r ended."
         }
       },
       "tasks:9": {
@@ -15976,7 +15976,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Primal Mana",
-          "desc:8": " "
+          "desc:8": "Melting §6Mana Dust§r in a §3Fluid Extractor§r produces §9Primal Mana§r, which is needed for smelting various alloys from §bThermal Expansion§r."
         }
       },
       "tasks:9": {
@@ -16626,7 +16626,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Titanium Heavy Plating",
-          "desc:8": "Heavy.\n\nAvoid dropping it on your foot."
+          "desc:8": "Heavy: avoid dropping it on your foot.\n\nThis special plating is used for two things-- Tier Two Micro Miners and the Space Station Assembler."
         }
       },
       "tasks:9": {
@@ -16902,7 +16902,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Warp Core",
-          "desc:8": "§aWarp Core§r is a multiblock structure that you can build on the space station. Use the Holo-Projector for a building guide.\n\nWhile it\u0027s not required for the progression, you can spend some resources to travel to distant planets, either to explore them or just to change the background of your space station.\n\nThe Input Hatch must be filled with Dilithium."
+          "desc:8": "The §3Warp Core§r is a multiblock structure that you can build on the space station. Use the Holo-Projector for a building guide.\n\nWhile it\u0027s not required for the progression, you can spend some resources to travel to distant planets, either to explore them or just to change the background of your space station.\n\nThe Input Hatch must be filled with §6Dilithium§r."
         }
       },
       "tasks:9": {
@@ -17002,7 +17002,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Dilithium",
-          "desc:8": "Dilithium Crystals are used to power Warp Cores, and are also a key component in several Micro Miner missions."
+          "desc:8": "§6Dilithium Crystals§r are used to power Warp Cores, and are also a key component in several Micro Miner missions.\n\nThey are made by crystallizing §6Dilithium Dust§r with §9Deuterium§r in an §3Autoclave§r."
         }
       },
       "tasks:9": {
@@ -17738,7 +17738,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Signalum Upgrade Kit",
-          "desc:8": "Provides more augment slots to machines and dynamos.\n\nDynamos operate at §a500% of base power and fuel burn rate§r.\n\nPortable Tanks hold §a800 buckets§r.\n\nMachines operate at §a400% of base speed§r.\n"
+          "desc:8": "Having unlocked §6Signalum§r and §6Lumium§r, at long last you can now make §aSignalum Upgrade Kits§r!\n\nProvides more augment slots to machines and dynamos.\n\nDynamos operate at §a500% of base power and fuel burn rate§r.\n\nPortable Tanks hold §a800 buckets§r.\n\nMachines operate at §a400% of base speed§r."
         }
       },
       "tasks:9": {
@@ -19307,7 +19307,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Inspector Gadget",
-          "desc:8": "This pack has §bBuilding Gadgets§r.\n\nThese good stuffs can help you building, destroy massive areas or even copy-paste blocks. The latter won\u0027t make blocks out of thin air though, so you have to have them in your inventory.\n\nBy default, the config GUI is bound to §6G§r."
+          "desc:8": "This pack has §bBuilding Gadgets§r.\n\nThese devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn\u0027t make them from nothing.\n\nAlso important to note that it won\u0027t work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines).\n\nBy default, the config GUI is bound to §6G§r."
         }
       },
       "tasks:9": {
@@ -19801,7 +19801,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "I Don\u0027t Like Chemistry",
-          "desc:8": "...or, well, you might just do some exploration and kill a wild thermal elemental for a rod.\n\nSpend it well to craft a thermal elemental model. The rest of dusts can be crafted from pristine matter.\n\nSaves you from getting knee-deep into chemistry for a bucket of Elemental Reduction Fluid if you\u0027re not playing on Peaceful."
+          "desc:8": "...or, well, you might just do some exploration and kill a wild thermal elemental for a rod.\n\nUse it to craft a §aThermal Elemental Model§r. The rest of the dusts can be crafted from pristine matter.\n\nSaves you from having to make a bucket of §9Elemental Reduction Fluid§r if you\u0027re not playing on Peaceful."
         }
       },
       "tasks:9": {
@@ -20222,7 +20222,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Mana Infused Ingot",
-          "desc:8": ""
+          "desc:8": "Mixing §6Titanium§r with §6Mana Dust§r creates §6Mana Infused Metal Dust§r. This can be smelted into ingots in an §3Electronic Blast Furnace§r equipped with §6Kanthal Coils§r or better.\n\nMana Infused Metal is the basis of §bThermal Expansion§r device casings, and is used for many advanced §aAugments§r."
         }
       },
       "tasks:9": {
@@ -20295,7 +20295,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Mana Dust",
-          "desc:8": "ASSEMBLE!"
+          "desc:8": "ASSEMBLE!\n\n§6Mana Dust§r is an important material. It is needed for a variety of materials related to §bThermal Expansion§r."
         }
       },
       "tasks:9": {
@@ -20358,8 +20358,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Thermal Device Frame",
-          "desc:8": ""
+          "name:8": "Thermal Device Casing",
+          "desc:8": "This casing is the structure for §bThermal Expansion§r\u0027s devices, which are simpler machines.\n\n"
         }
       },
       "tasks:9": {
@@ -20423,7 +20423,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Thermal Machine Frame",
-          "desc:8": ""
+          "desc:8": "§6Thermal Device Casings§r are upgradable to a §6Machine Frame§r with some §6Stainless Steel Plates§r.\n\nThese frames form the basis of §bThermal Expansion§r\u0027s more advanced machinery."
         }
       },
       "tasks:9": {
@@ -20487,7 +20487,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Cryotheum",
-          "desc:8": ""
+          "desc:8": "§6§6Redstone§r, a §6Snowball§r, and §6Blizz Powder§r creates §6Cryotheum Dust§r, a mixture imbued with potent elemental frost."
         }
       },
       "tasks:9": {
@@ -20551,7 +20551,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Aerotheum",
-          "desc:8": ""
+          "desc:8": "§6§6Redstone§r, §6Saltpeter§r, and §6Blitz Powder§r creates §6Aerotheum Dust§r, a mixture imbued with potent elemental air."
         }
       },
       "tasks:9": {
@@ -20615,7 +20615,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Petrotheum",
-          "desc:8": ""
+          "desc:8": "§6§6Redstone§r, §6Obsidian Dust§r, and §6Basalz Powder§r creates §6Petrotheum Dust§r, a mixture imbued with potent elemental earth."
         }
       },
       "tasks:9": {
@@ -20679,7 +20679,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Pyrotheum",
-          "desc:8": ""
+          "desc:8": "§6§6Redstone§r, §6Sulfur§r, and §6Blaze Powder§r creates §6Pyrotheum Dust§r, a mixture imbued with potent elemental flame."
         }
       },
       "tasks:9": {
@@ -20744,7 +20744,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Blaze Powder",
-          "desc:8": ""
+          "desc:8": "Bits of a §6Blaze Rod§r. Using a §3Macerator§r doubles your yield."
         }
       },
       "tasks:9": {
@@ -20809,7 +20809,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Basalz Powder",
-          "desc:8": ""
+          "desc:8": "Bits of a §6Basalz Rod§r. Using a §3Macerator§r doubles your yield."
         }
       },
       "tasks:9": {
@@ -20874,7 +20874,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Blitz Powder",
-          "desc:8": ""
+          "desc:8": "Bits of a §6Blitz Rod§r. Using a §3Macerator§r doubles your yield."
         }
       },
       "tasks:9": {
@@ -20939,7 +20939,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Blizz Powder",
-          "desc:8": ""
+          "desc:8": "Bits of a §6Blizz Rod§r. Using a §3Macerator§r doubles your yield."
         }
       },
       "tasks:9": {
@@ -21007,7 +21007,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Elemental Reduction Fluid",
-          "desc:8": "If you don\u0027t feel like searching "
+          "desc:8": "If you don\u0027t feel like searching for a Thermal Elemental, or can\u0027t because you\u0027re playing on Peaceful, you will need to make §eone§r batch of §9Elemental Reduction Fluid§r.\n\nThis will bootstrap being able to craft a §aThermal Elemental Model§r for DML, and you can get all of the rods from §6Thermal Elemental Pristine Matter§r going forward."
         }
       },
       "tasks:9": {
@@ -21089,7 +21089,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Phytogenic Insolator",
-          "desc:8": "Praise the sun. \\[T]/"
+          "desc:8": "Praise the sun. \\[T]/\n\nThis machine uses various tiers of §6Phyto-Gro§r and §9Water§r to grow plants.\n\nIt can be customized with various §aAugments§r."
         }
       },
       "tasks:9": {
@@ -21167,7 +21167,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tungstensteel Coil Blocks",
-          "desc:8": ""
+          "desc:8": "§6Tungstensteel§r is the fourth coil material available, increasing your EBF\u0027s operating temperature to 4500K so it can process more advanced materials."
         }
       },
       "tasks:9": {
@@ -21231,7 +21231,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "High Speed Steel Type G",
-          "desc:8": ""
+          "desc:8": "§6HSS-G§r is an alloy of §6Tungstensteel§r, §6Chrome§r, §6Molybdenum§r, and §6Vanadium§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
         }
       },
       "tasks:9": {
@@ -21295,7 +21295,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "HSS-G Coil Block",
-          "desc:8": ""
+          "desc:8": "§6HSS-G§r is the fifth coil material available, increasing your EBF\u0027s operating temperature to 5400K so it can process more advanced materials."
         }
       },
       "tasks:9": {
@@ -22919,7 +22919,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "EV Machine Hulls",
-          "desc:8": ""
+          "desc:8": "With §6Titanium§r smelting automated, you can now build Machine Hulls for Extreme Voltage machines."
         }
       },
       "tasks:9": {
@@ -22986,7 +22986,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "EV Power Storage",
-          "desc:8": ""
+          "desc:8": "The Extreme Voltage tier §bGregTech§r battery. These are upgrades to the High Voltage tier battery, augmenting the §aEnergy Crystal§r with circuits and plates made of §6Lapis§r, §6Lazurite§r, or §6Sodalite§r.\n\nChances are by now you\u0027re not really using anything that needs GregTech batteries. You can safely ignore this quest until much later in the pack if you don\u0027t specifically need them."
         }
       },
       "tasks:9": {
@@ -24582,7 +24582,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Creative Vending Upgrade",
-          "desc:8": "You win.\n\nCongratulations.\n\nI hope you enjoyed playing Omnifactory."
+          "desc:8": "You win.\n\nCongratulations.\n\nI hope you enjoyed playing §5Omnifactory§r."
         }
       },
       "tasks:9": {
@@ -25844,7 +25844,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Energetic Infuser",
-          "desc:8": "Infuses things with Redstone Flux.\n\nCan charge devices, produce phyto-gro and charged quartz."
+          "desc:8": "Infuses things with Redstone Flux.\n\nThis is useful for charging RF-powered devices, but it also can also charge §6Rich Phyto-Gro§r into §6Fluxed Phyto-Gro§r, and charge §6Certus Quartz Crystals§r into §6Charged Certus Quartz Crystals§r."
         }
       },
       "tasks:9": {
@@ -25925,7 +25925,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Craftable Nether Stars",
-          "desc:8": "ASSEMBLE... TOO!"
+          "desc:8": "ASSEMBLE... TOO!\n\nYeah you get to craft §6Nether Stars§r. Cool huh?\n\nOver the course of the pack, Nether Stars are going to be needed in quantities that far exceed a reasonable player\u0027s ability to farm Withers. §eCraft them, don\u0027t bother trying to farm them."
         }
       },
       "tasks:9": {
@@ -30717,7 +30717,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Fourth And Final Tier Three Circuits",
-          "desc:8": "With all of the many components in place, its time to merge them together into a single circuit. Go ahead and craft a §bNanocircuit§r."
+          "desc:8": "With your new §6Fiber-Reinforced Epoxy Circuit Boards§r, §6Nano CPUs§r, and some standard components, you can make the final type of Tier Three Circuit: the §6Nanocircuit§r.\n\nAs the best form of Tier Three circuit, these should be automated and stockpiled. As with the Final Tier Two circuits, the §6System-on-Chip§r variant recipes won\u0027t be available for a while."
         }
       },
       "tasks:9": {
@@ -31932,7 +31932,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier Four Circuits",
-          "desc:8": ""
+          "desc:8": "Four §6Microprocessors§r combined with §6Titanium Plates§r and a few other standard components will make a §6Microprocessor Array§r."
         }
       },
       "tasks:9": {
@@ -32319,7 +32319,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "EV Assembling Machine",
-          "desc:8": ""
+          "desc:8": "With your §6Titanium§r-based machine hulls and §6Microprocessor Mainframes§r squared away, you can finally get on the path to making an Extreme Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Nanocircuits§r, as well as handling crafting recipes up to 2048 EU/t. It can also optionally overclock recipes up to 512 EU/t for improved speed at the cost of relatively more power."
         }
       },
       "tasks:9": {
@@ -32383,7 +32383,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Lumium",
-          "desc:8": "Glowing!\n\nThis one takes a significant amount of time to cook, so make sure to have it going constantly."
+          "desc:8": "Glowing!\n\nThis one takes a significant amount of time to cook, so make sure to have it going constantly.\n\nWires made from §6Lumium§r transmit IV power losslessly, and it forms the basis for §6LuV Machine Hulls§r."
         }
       },
       "tasks:9": {
@@ -32730,7 +32730,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "HV Assembling Machine",
-          "desc:8": ""
+          "desc:8": "The §3HV Assembling Machine§r unlocks §6Microcircuits§r, as well as handling crafting recipes up to 512 EU/t.\n\nIt can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
         }
       },
       "tasks:9": {
@@ -34326,7 +34326,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Fluxed Phyto-Gro",
-          "desc:8": ""
+          "desc:8": "§6Rich Phyto-Gro§r can be further enhanced by infusing it with Redstone Flux in the §3Energetic Infuser§r."
         }
       },
       "tasks:9": {
@@ -35275,7 +35275,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Blast Furnaces Galore",
-          "desc:8": "As you continue to progress, the Blast Furnace crafting times will continue to scale, and more advanced coils do not give speed bonuses, only allowing for the processing of more advanced materials. You\u0027ll need to get your infrastructure for smelting, as well as for power generation, up to snuff.\n\nYou don\u0027t need to get all eight of these multiblocks completed and running just yet, but plan to at some point in the future. You\u0027ll have lots of spare coils soon enough, as you upgrade."
+          "desc:8": "As you continue to progress, crafting times for more advanced §3Electric Blast Furnace§r recipes will continue to increase. More advanced coils do not give speed bonuses, they just increase the operating temperature so you can smelt more advanced materials.\n\nTo compensate, you\u0027ll need to get your infrastructure for smelting, as well as for power generation, up to snuff.\n\nYou don\u0027t need to get all eight of these completed and running just yet, but plan to at some point in the future. Instead of upgrading existing EBFs, have them passively automating a stock of materials and build new EBFs with higher specifications for new materials.\n\n"
         }
       },
       "tasks:9": {
@@ -45788,15 +45788,15 @@
         },
         "87:10": {
           "sizeX:3": 24,
-          "x:3": -708,
-          "y:3": 168,
+          "x:3": -706,
+          "y:3": 162,
           "id:3": 339,
           "sizeY:3": 24
         },
         "88:10": {
           "sizeX:3": 24,
-          "x:3": -708,
-          "y:3": 204,
+          "x:3": -706,
+          "y:3": 198,
           "id:3": 340,
           "sizeY:3": 24
         },
