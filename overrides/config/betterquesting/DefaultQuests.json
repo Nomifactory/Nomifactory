@@ -4744,7 +4744,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Experience Obelisk",
-          "desc:8": "Used to store liquid experience.\n\nYou can set it to auto-output in a direction facing into any machine that needs experience, and it will pump the XP in."
+          "desc:8": "The §3Experience Obelisk§r is a mass storage device for player experience in the form of §9Liquid XP§r.\n\nVia the GUI you can insert or extract levels as needed, as well as configure interactions with neighboring blocks (as is typical of §bEnderIO§r machines).\n\nLiquid XP can also be pumped in directly from your automation such as §3Fluid Extractors§r."
         }
       },
       "tasks:9": {
@@ -4766,7 +4766,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin5",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "69:10": {
       "questID:3": 69,
@@ -6701,7 +6714,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Stainless Steel",
-          "desc:8": "§6Stainless Steel§r will be your primary material for HV, in the same way that §6Aluminium§r was for MV and §6Wrought Iron§r was for LV.\n\n§6Manganese§r comes from electrolyzing §6Tantalite§r, §6Pyrolusite§r, or §6Spessartine Dusts§r. You already have §6Chrome§r.\n\nMix up a bunch of the dust in a §3Mixer§r and begin processing it through the §3Electronic Blast Furnace§r. This may be a good time to reevaluate your power generation and storage infrastructure."
+          "desc:8": "§6Stainless Steel§r will be your primary material for HV, in the same way that §6Aluminium§r was for MV and §6Wrought Iron§r was for LV.\n\n§6Manganese§r comes from electrolyzing §6Tantalite§r, §6Pyrolusite§r, or §6Spessartine Dusts§r. You already have §6Chrome§r.\n\nMix up a bunch of the dust in a §3Mixer§r and begin processing it through the §3Electric Blast Furnace§r. This may be a good time to reevaluate your power generation and storage infrastructure."
         }
       },
       "tasks:9": {
@@ -9334,7 +9347,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Rare Earth",
-          "desc:8": "Rare Earth comes from either centrifuging certain Impure Dusts, or processing those same Purified Dusts. The sources are essentially Redstone, and everything inside of a Bastnasite vein."
+          "desc:8": "§6Rare Earth§r comes from either centrifuging certain Impure Dusts, or processing those same Purified Dusts.\n\nThe sources are essentially §6Redstone§r, and everything inside of §6Bastnasite§r veins."
         }
       },
       "tasks:9": {
@@ -9657,7 +9670,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Yttrium",
-          "desc:8": "Centrifuge enough Rare Earth and you\u0027ll get some Yttrium."
+          "desc:8": "Centrifuge enough §6Rare Earth§r and you\u0027ll get some §6Yttrium§r.\n\nBecause this has chanced outputs, use an §3HV Centrifuge§r or better to guarantee all items, and §eensure the output slots don\u0027t fill up or excess items will be voided§r."
         }
       },
       "tasks:9": {
@@ -9978,7 +9991,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Hot Titanium",
-          "desc:8": "Combining §9Titanium Tetrachloride§r with §6Magnesium§r in an §3Electronic Blast Furnace§r (approximating the Kroll process) will net you your first Titanium.\n\nUnfortunately, it is super hot. You\u0027ll need to cool it in a §3Vacuum Freezer§r for it to be usable.\n\nIf you are autocrafting on-demand, it\u0027s better to not have your ME network know about this intermediate state. Outputting the §6Hot Titanium Ingot§r directly into a Vacuum Freezer avoids extra computations and item types.\n\nIf you absolutely insist on putting hot ingots in your network, you\u0027ll have to manually encode the §aPattern§r with an ingot that §cdamages you while you hold it§r. Your call.\n\n"
+          "desc:8": "Combining §9Titanium Tetrachloride§r with §6Magnesium§r in an §3Electric Blast Furnace§r (approximating the Kroll process) will net you your first Titanium.\n\nUnfortunately, it is super hot. You\u0027ll need to cool it in a §3Vacuum Freezer§r for it to be usable.\n\nIf you are autocrafting on-demand, it\u0027s better to not have your ME network know about this intermediate state. Outputting the §6Hot Titanium Ingot§r directly into a Vacuum Freezer avoids extra computations and item types.\n\nIf you absolutely insist on putting hot ingots in your network, you\u0027ll have to manually encode the §aPattern§r with an ingot that §cdamages you while you hold it§r. Your call.\n\n"
         }
       },
       "tasks:9": {
@@ -10458,7 +10471,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Kanthal Ingots",
-          "desc:8": "§6Kanthal§r is an alloy of §6Iron§r, §6Aluminium§r, and §6Chrome§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
+          "desc:8": "§6Kanthal§r is an alloy of §6Iron§r, §6Aluminium§r, and §6Chrome§r.\n\nThis alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
         }
       },
       "tasks:9": {
@@ -10586,7 +10599,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Nichrome Ingots",
-          "desc:8": "§6Nichrome§r is an alloy of §6Nickel§r and §6Chrome§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
+          "desc:8": "§6Nichrome§r is an alloy of §6Nickel§r and §6Chrome§r.\n\nThis alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
         }
       },
       "tasks:9": {
@@ -10718,7 +10731,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Sulfuric Heavy, Light, Naphtha and Gas",
-          "desc:8": "Start off by running the Raw Oil through the Distillation Tower. This will result in you obtaining Sulfuric Heavy Fuel, Sulfuric Light Fuel, Sulfuric Naphtha, and Sulfuric Gas.\n\nYou\u0027ll need to come up with a system to sort and store these liquids, whether its manual handheld tanks, a system of multiblock tanks, or digital fluid storage."
+          "desc:8": "First, you need some §9Oil§r. Pick your favorite method: you should engineer a renewable automated source, as you will need large quantities.\n\nStart off by running the Oil through the §3Distillation Tower§r. This will result in §9Sulfuric Heavy Fuel§r, §9Sulfuric Light Fuel§r, §9Sulfuric Naphtha§r, and §9Sulfuric Gas§r.\n\nThese will all need to be hydrodesulfurized using §9Hydrogen§r in a §3Chemical Reactor§r, which produces the non-Sulfuric versions.\n\nAll of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
         }
       },
       "tasks:9": {
@@ -10820,7 +10833,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Gas Turbine",
-          "desc:8": "Sulfuric Gas is converted into Refinery Gas by adding Hydrogen to it, just like all the other Sulfuric fuel types.\n\nWhile Refinery Gas can be distilled further to break it down even more, it\u0027s probaby smartest for now to just burn it for power inside of a Gas Turbine.\n\nHowever, you can marginally improve the amount of power you get by centrifuging the Refinery Gas, which will get you LPG (liquefied petroleum gas) and Methane. Both can still be burned inside a Gas Turbine, for more energy than the Refinery Gas would have gotten you. Even better, Methane will be needed for various other chemical reactions as well, so you can consider saving some and using it for that."
+          "desc:8": "Like other petroleum products, §9Sulfuric Gas§r is hydrodesulfurized into §9Refinery Gas§r using §9Hydrogen§r in a §3Chemical Reactor§r.\n\nRefinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for §3Gas Turbines§r. While it can be burned directly, centrifuging Refinery Gas produces §9LPG§r (Liquefied Petroleum Gas), which is the ideal fuel for Gas Turbines, and §9Methane§r which is a potential suboptimal turbine fuel but is also useful for various chemical reactions."
         }
       },
       "tasks:9": {
@@ -11012,7 +11025,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Heavy Fuel",
-          "desc:8": "Sulfuric Heavy Fuel is converted into Heavy Fuel by adding Hydrogen to it in a Chemical Reactor."
+          "desc:8": "§9Heavy Fuel§r is mixed with §9Light Fuel§r to create §9Diesel§r.\n\nSince Diesel requires more Light than Heavy fuel, you should consider Steam-cracking and distilling the excess quantity of Heavy Fuel for its useful constituents."
         }
       },
       "tasks:9": {
@@ -11084,7 +11097,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Light Fuel",
-          "desc:8": "Sulfuric Light Fuel is converted into Light Fuel by adding Hydrogen to it in a Chemical Reactor."
+          "desc:8": "Due to the ratios required, §9Light Fuel§r all goes into the production of §9Diesel§r.\n\nIt\u0027s inadvisable to crack and distill it or burn it directly as fuel."
         }
       },
       "tasks:9": {
@@ -11156,7 +11169,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Naphtha",
-          "desc:8": "Sulfuric Naphtha is turned into Naphtha by adding Hydrogen to it in a Chemical Reactor.\n\nNaphtha can be burned for power, distilled down further into its components, or used to make Epoxy.\n\nPlease note that even if you prefer using Bio Diesel for power generation, you\u0027ll still need to do a bit of petrochem to get Naphtha for Epoxy."
+          "desc:8": "§9Naphtha§r is used in the simple (but highly inefficient) Naphtha route for making §9Epoxy§r, but is best utilized for Steam-Cracking and distilling for its constituents.\n\nNotably it contains §9Light Fuel§r and §9Heavy Fuel§r for making more §9Diesel§r, as well as many other useful chemicals for a variety of purposes."
         }
       },
       "tasks:9": {
@@ -11228,7 +11241,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Hydrogen Sulfide",
-          "desc:8": "Hydrogen Sulfide can be combined with Water to turn it into Sulfuric Acid, useful in many other petrochem reactions.\n\nOr just void it all."
+          "desc:8": "§9Hydrogen Sulfide§r is a byproduct of hydrodesulfurization.\n\nA simple chemical reaction with §9Water§r reprocesses it into the useful §9Sulfuric Acid§r, or it can be electrolyzed for recovering the §9Hydrogen§r."
         }
       },
       "tasks:9": {
@@ -11301,7 +11314,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Diesel",
-          "desc:8": "Diesel is a very popular choice for a primary power source in the midgame. While many of the liquids from previous steps could also potentially be burned for energy, its far more efficient to turn them into Diesel before burning them. And while Nitrodiesel is even better than Diesel, it takes so many extra steps that it might be wise to stop here, at least for now, and tackle Nitrodiesel later.\n\nYou\u0027ll need an MV Mixer to make Diesel, but once you have one, you just need to combine Light Fuel and Heavy Fuel in a 5 to 1 ratio."
+          "desc:8": "§9Diesel§r is a mixture of §9Light Fuel§r and §9Heavy Fuel§r.\n\nWhile it can be used as a fuel, the performance of §3Diesel Generators§r is middling compared to the alternatives.\n\nThe primary use is for making §9Cetane Diesel§r, which you will want to stockpile in large quantities for the later production of §6Draconium§r."
         }
       },
       "tasks:9": {
@@ -11369,7 +11382,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Palladium",
-          "desc:8": "§6Palladium§r is found in §6Palladium Ore§r, which is found alongside §6Platinum Ore§r. If you haven\u0027t found a vein yet, you should buy some.\n\nPalladium is smelted in the §3Electronic Blast Furnace§r. It takes a while but each ingot goes pretty far for what you\u0027ll need it for."
+          "desc:8": "§6Palladium§r is found in §6Palladium Ore§r, which is found alongside §6Platinum Ore§r. If you haven\u0027t found a vein yet, you should buy some.\n\nPalladium is smelted in the §3Electric Blast Furnace§r. It takes a while but each ingot goes pretty far for what you\u0027ll need it for."
         }
       },
       "tasks:9": {
@@ -12097,7 +12110,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "NITRO DIESEL!!",
-          "desc:8": "The best and most powerful of the petrochemical fuels, Nitrodiesel is the premier choice for power in the midgame.\n\nYou\u0027ll need an HV Mixer to make it."
+          "desc:8": "Mixing §9Diesel§r (or less efficiently, §9Bio Diesel§r) with §9Tetranitromethane§r in an §3HV Mixer§r produces §9Cetane-Boosted Diesel§r, an extremely potent fuel needed later for §6Draconium§r production.\n\nIf you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation maximizes the potential of multiblock §3Diesel Generators§r, producing 720 EU/mB of fuel."
         }
       },
       "tasks:9": {
@@ -12313,7 +12326,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Epichlorohydrin",
-          "desc:8": "A colorless liquid with a pungent, garlic-like odor, its needed in the production of Epoxy."
+          "desc:8": "A colorless liquid with a pungent, garlic-like odor. It\u0027s needed in the production of §9Epoxy§r."
         }
       },
       "tasks:9": {
@@ -12455,7 +12468,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Navigating Petrochem",
-          "desc:8": "Its very, very easy to get overwhelmed by all of the petrochemical stuff in Gregtech, but doing the basics isn\u0027t very difficult, with a little bit of guidance. \n\nThere are three types of oil that you\u0027ll find: Heavy Oil, Raw Oil, or Light Oil. Raw Oil (sometimes just called Oil in JEI) is something you can think of as \u0027Medium Oil\u0027. Its a good starting point for Fuel, because it contains the ingredients for Fuel in roughly the correct ratios.\n\nThe next few quests will discuss how to turn Raw Oil into Fuel. Once you\u0027ve mastered that, feel free to explore petrochem mechanics more with the basics down... there\u0027s no \u0027correct\u0027 way to do things in the end, and you can potentially power your base in dozens of different ways."
+          "desc:8": "Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as §9Oil§r.\n\n§bGregTech§r\u0027s petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it\u0027s actually easier to get into than you think.\n\nOil is the starting point, and can be found in several variants which you can pump from finite natural wells on the Overworld, as well as coming renewably from §6Oilsands Ore§r and directly in liquid form from an §3Oil Drilling Rig§r. The variant simply called \"Oil\" is the standard ratio of distillation products and is what you will always get from the latter two sources. §9Light Oil§r and §9Heavy Oil§r are effectively the same as Oil, but with different ratios of distillation products.\n\nThe upcoming quests will guide you through the basics of petrochemistry. Once you\u0027ve mastered that, feel free to explore further.\n"
         }
       },
       "tasks:9": {
@@ -12507,7 +12520,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Epoxy",
-          "desc:8": "Finally, epoxium."
+          "desc:8": "Finally, §6Epoxy Resin Sheets§r.\n\nThese can be made into circuit boards as a substrate for advanced circuits."
         }
       },
       "tasks:9": {
@@ -13303,7 +13316,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tungstensteel",
-          "desc:8": "§6Tungstensteel§r is an alloy of §6Tungsten§r and §6Steel§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
+          "desc:8": "§6Tungstensteel§r is an alloy of §6Tungsten§r and §6Steel§r.\n\nThis alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
         }
       },
       "tasks:9": {
@@ -13560,7 +13573,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tungsten",
-          "desc:8": ""
+          "desc:8": "§6Tungsten§r is a material that requires an §3EV Electrolyzer§r and an §3Electric Blast Furnace§r with at least §6Nichrome Coils§r.\n\nIt is only found from §6Tungstate§r, which is an abundant component of §6Tungstate Ore§r and §6Scheelite Ore§r sent through your ore processing. Tungstate is also obtainable in small quantities from centrifuging §6Endstone Dust§r or extremely small quantities from centrifuging §9Lava§r.\n\nTungstate needs to be electrolyzed with §9Hydrogen§r to get to the Tungsten, which then needs to be cooked in the EBF for Tungsten ingots.\n\n"
         }
       },
       "tasks:9": {
@@ -16690,7 +16703,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Tungsten Carbide Heavy Plating",
-          "desc:8": ""
+          "desc:8": "Heavy Plating for Micro Miners made from §6Tungsten Carbide§r.\n\nYou\u0027ll need an §3EV Compressor§r to make these."
         }
       },
       "tasks:9": {
@@ -17325,7 +17338,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tungsten Carbide",
-          "desc:8": ""
+          "desc:8": "An alloy of equal parts §6Tungsten§r and §6Carbon Dust§r.\n\n§6Tungsten Carbide§r is a very dense, sturdy, and heat-resistant material useful for a variety of applications."
         }
       },
       "tasks:9": {
@@ -20222,7 +20235,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Mana Infused Ingot",
-          "desc:8": "Mixing §6Titanium§r with §6Mana Dust§r creates §6Mana Infused Metal Dust§r. This can be smelted into ingots in an §3Electronic Blast Furnace§r equipped with §6Kanthal Coils§r or better.\n\nMana Infused Metal is the basis of §bThermal Expansion§r device casings, and is used for many advanced §aAugments§r."
+          "desc:8": "Mixing §6Titanium§r with §6Mana Dust§r creates §6Mana Infused Metal Dust§r. This can be smelted into ingots in an §3Electric Blast Furnace§r equipped with §6Kanthal Coils§r or better.\n\nMana Infused Metal is the basis of §bThermal Expansion§r device casings, and is used for many advanced §aAugments§r."
         }
       },
       "tasks:9": {
@@ -21231,7 +21244,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "High Speed Steel Type G",
-          "desc:8": "§6HSS-G§r is an alloy of §6Tungstensteel§r, §6Chrome§r, §6Molybdenum§r, and §6Vanadium§r.\n\nThis alloy is cooked in an §3Electronic Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
+          "desc:8": "§6HSS-G§r is an alloy of §6Tungstensteel§r, §6Chrome§r, §6Molybdenum§r, and §6Vanadium§r.\n\nThis alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r.\n"
         }
       },
       "tasks:9": {
@@ -21629,7 +21642,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Epoxy Production",
-          "desc:8": "There are at least three different ways to produce Epoxy, with the common factor being Epichlorohydrin.\n\nBisphenol A can be produced from either petrochem products, or via pyrolyzing wood to distill Charcoal Byproducts into useful components. Alternatively, you can pyrolyze coal for just Phenol.\nYou might also be interested in distilling Fermented Biomass as it provides a considerable amount of products.\n\nOr you can just straight mix Naphtha with Nitrogen Dioxide and Epichlorohydrin. This is easier overall but yields less epoxy in comparison, however if you\u0027re producing a lot of oil then it\u0027s a viable choice.\n\nThe final decision is down to you make. Check out recipes in JEI."
+          "desc:8": "There are two primary approaches to producing §9Epoxy§r: §9Bisphenol A§r (BPA) and §9Naphtha§r. Both approaches requre §9Epichlorohydrin§r, which itself has a few possible approaches.\n\nNaphtha is the simplest approach, where it is mixed with §9Nitrogen Dioxide§r and Epichlorohydrin to yield Epoxy. This approach is easier but yields less Epoxy. You also forego making more diesel and getting distillation byproducts from Naphtha. If you have an extremely robust §9Oil§r drilling and petrochemistry infrastructure in place, this might be an acceptable choice.\n\nBPA can be produced using petrochemistry distillation products, or via distilling §9Charcoal Byproducts§r from your §3Pyrolyse Oven§r into useful components. Alternatively, you can get §9Phenol§r from §6Coal§r pyrolysis. §9Fermented Biomass§r is also useful to distill as it provides many useful products. Epoxy made from BPA is more complex to set up initially, but also far more efficient.\n\nThe final decision is down to you make. Check out recipes in §bJEI§r."
         }
       },
       "tasks:9": {
@@ -23242,7 +23255,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Empowerer",
-          "desc:8": ""
+          "desc:8": "§3The Empowerer§r is a machine from §bActually Additions§r used to convert its special crystalline materials into empowered variants.\n\nThe Empowerer is placed in the center of a flat 7x7 region. The four §aDisplay Stands§r are placed with a two-block gap from the Empowerer, one in each cardinal direction.\n\nRecipes require specific items to be placed on the Display Stands and the main item on the Empowerer itself. The items on the Display Stands are consumed and the central item is Empowered.\n\nRF power needs to be fed into the Display Stands to infuse the center item with power. The Display Stands have a low per-side power transfer rate so it takes a while. Consider putting energy conduits on multiple sides of each display stand to speed it up a bit.\n\nThis thing\u0027s a bit of a pain. It\u0027s slow, takes up a large space, and it\u0027s cumbersome to automate. Don\u0027t worry, you\u0027ll get access to the §3Crafting Core§r after you get §6Draconium§r, which is vastly faster, more compact, and easier to automate. Even better, that\u0027s pretty much immediately craftable into the §3Combination Package Crafter§r, which can do the Empowerer recipes directly through §bPackagedAuto§r and §bAE2§r."
         }
       },
       "tasks:9": {
@@ -23352,7 +23365,8 @@
     "346:10": {
       "questID:3": 346,
       "preRequisites:11": [
-        201
+        201,
+        611
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -23376,7 +23390,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Basic Reactor Plating",
-          "desc:8": ""
+          "desc:8": "§6Steel Heavy Plating§r can be augmented with §6Tungsten Plates§r and §6Tough Alloy§r to make §6Basic Reactor Plating§r.\n\nThat\u0027s right-- it\u0027s time to get into §bNuclearCraft§r.\n\nTough Alloy is a couple steps to get to, but nothing too serious. Check §bJEI§r for more details."
         }
       },
       "tasks:9": {
@@ -23418,7 +23432,7 @@
       "preRequisites:11": [
         199,
         346,
-        611
+        732
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31500,8 +31514,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "Slice \u0027n Splice",
-          "desc:8": "The first step of soul crafting.\n\nNeeds tools to function placed in the right slots."
+          "name:8": "Slice\u0027N\u0027Splice",
+          "desc:8": "The §3Slice\u0027N\u0027Splice§r is a machine from §bEnderIO§r.\n\nIt is used for making monster-head-related items that are components for various things.\n\nIt needs to be supplied with an Axe and Shears, which are slowly damaged over time as items are crafted."
         }
       },
       "tasks:9": {
@@ -31523,7 +31537,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "513:10": {
       "questID:3": 513,
@@ -33376,7 +33403,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Soul Binder",
-          "desc:8": "For all your soul crafting needs."
+          "desc:8": "The §3Soul Binder§r is an §bEnderIO§r machine which uses §aSoul Vials§r and Experience to enhance specific items.\n\nIt may be prudent to store §9Liquid XP§r in an adjacent §3Obelisk§r, which the Soul Binder can draw from directly, or you can insert it using other standard means of fluid routing."
         }
       },
       "tasks:9": {
@@ -33398,7 +33425,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "543:10": {
       "questID:3": 543,
@@ -42581,7 +42621,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Captain... Marvel? IDK",
-          "desc:8": "I\u0027m running out of MCU puns.\n\nThe Angel Ring actually slower than a jetpack, but its creative flight and requires no fuel (except passive GP). Up to you if you want to use it over a jetpack for day to day stuff, but its an ingredient in the next jetpack, so you\u0027ll need to make it eventually."
+          "desc:8": "I\u0027m running out of MCU puns.\n\nThe §aAngel Ring§r is actually slower than a jetpack, but it grants creative flight and requires no fuel (except a bit of GP).\n\nUp to you if you want to use it over a jetpack for day to day stuff, but it\u0027s an ingredient in the next jetpack, so if you want that you\u0027ll need to make one eventually."
         }
       },
       "tasks:9": {
@@ -43919,6 +43959,68 @@
         }
       },
       "rewards:9": {}
+    },
+    "732:10": {
+      "questID:3": 732,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "nuclearcraft:alloy",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Hard Carbon Alloy",
+          "desc:8": "§6Hard Carbon Alloy§r is an alloy made from §6Graphite§r and §6Diamonds§r.\n\nGraphite is an important ingredient for §bNuclearCraft§r and is found principally as a byproduct of processing §6Diamond Ore§r. §6Graphite Ore§r spawns alongside Diamond Ore, but unlike Diamond Ore it is not renewable through automation (though it can be purchased using §dOmnicoins§r)."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:alloy",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 2
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -45242,8 +45344,8 @@
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -336,
-          "y:3": 216,
+          "x:3": -300,
+          "y:3": 252,
           "id:3": 139,
           "sizeY:3": 24
         },
@@ -45579,7 +45681,7 @@
         "57:10": {
           "sizeX:3": 24,
           "x:3": -264,
-          "y:3": 228,
+          "y:3": 180,
           "id:3": 199,
           "sizeY:3": 24
         },
@@ -45599,8 +45701,8 @@
         },
         "60:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": 252,
+          "x:3": -264,
+          "y:3": 216,
           "id:3": 234,
           "sizeY:3": 24
         },
@@ -45782,7 +45884,7 @@
         "86:10": {
           "sizeX:3": 24,
           "x:3": -372,
-          "y:3": 180,
+          "y:3": 252,
           "id:3": 328,
           "sizeY:3": 24
         },
@@ -45816,14 +45918,14 @@
         },
         "91:10": {
           "sizeX:3": 24,
-          "x:3": -408,
+          "x:3": -372,
           "y:3": 144,
           "id:3": 346,
           "sizeY:3": 24
         },
         "92:10": {
           "sizeX:3": 24,
-          "x:3": -264,
+          "x:3": -300,
           "y:3": 144,
           "id:3": 347,
           "sizeY:3": 24
@@ -45928,14 +46030,14 @@
         },
         "107:10": {
           "sizeX:3": 24,
-          "x:3": -336,
-          "y:3": 180,
+          "x:3": -372,
+          "y:3": 216,
           "id:3": 610,
           "sizeY:3": 24
         },
         "108:10": {
           "sizeX:3": 24,
-          "x:3": -300,
+          "x:3": -372,
           "y:3": 180,
           "id:3": 611,
           "sizeY:3": 24
@@ -46036,6 +46138,13 @@
           "x:3": -528,
           "y:3": 324,
           "id:3": 695,
+          "sizeY:3": 24
+        },
+        "123:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": 180,
+          "id:3": 732,
           "sizeY:3": 24
         }
       },
