@@ -776,12 +776,12 @@ naquadahmk2b.addItemInput(<gregtech:meta_item_1:16310>);
 naquadahmk2b.addItemOutput(<gregtech:meta_item_1:16035>);
 naquadahmk2b.build();
 
-val oildrillingrig = mods.modularmachinery.RecipeBuilder.newBuilder("oildrillingrig", "oildrillingrig", 100);
-oildrillingrig.addEnergyPerTickInput(3500);
-oildrillingrig.addFluidInput(<liquid:drilling_fluid> * 10);
+val oildrillingrig = mods.modularmachinery.RecipeBuilder.newBuilder("oildrillingrig", "oildrillingrig", 80);
+oildrillingrig.addEnergyPerTickInput(17500);
+oildrillingrig.addFluidInput(<liquid:drilling_fluid> * 40);
 oildrillingrig.addItemInput(<inspirations:pipe>);
-oildrillingrig.setChance(0.01);
-oildrillingrig.addFluidOutput(<liquid:oil> * 1000);
+oildrillingrig.setChance(0.04);
+oildrillingrig.addFluidOutput(<liquid:oil> * 4000);
 oildrillingrig.build();
 
 val lunarminingstationa = mods.modularmachinery.RecipeBuilder.newBuilder("lunarminingstationa", "lunarminingstation", 12000);
