@@ -3165,7 +3165,7 @@
     "46:10": {
       "questID:3": 46,
       "preRequisites:11": [
-        188
+        183
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3208,12 +3208,6 @@
               "Damage:3": 19112
             },
             "1:10": {
-              "id:8": "gregtech:meta_item_2",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 32445
-            },
-            "2:10": {
               "id:8": "gregtech:meta_item_2",
               "Count:3": 1,
               "OreDict:8": "",
@@ -3735,7 +3729,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Quantum Eyes",
-          "desc:8": "When Ender Eyes just aren\u0027t creepy enough."
+          "desc:8": "When §6Ender Eyes§r just aren\u0027t creepy enough.\n\nYou\u0027ll need an HV or better §3Chemical Bath§r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe."
         }
       },
       "tasks:9": {
@@ -4225,8 +4219,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "Gem Sensor",
-          "desc:8": "Including a Gem Sensor on a Micro Miner mission will make the machine primarily collect gems instead of ores.\n\nDoesn\u0027t work with all tiers."
+          "name:8": "Gemstone Sensor",
+          "desc:8": "Some Micro Miner missions use a §6Gemstone Sensor§r to scout out gems instead of ores.\n\nSeveral materials like §6Exquisite Gems§r can only be obtained from such missions."
         }
       },
       "tasks:9": {
@@ -5333,7 +5327,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Exquisite Gems",
-          "desc:8": "Exquisite Gems can be cut down into multiple flawless, and then regular gems using the Cutting Machine if so desired."
+          "desc:8": "§6Exquisite Gems§r are mostly needed for crafting special materials.\n\nIf you don\u0027t need them for that though, they can be cut through two cycles in a §3Cutting Machine§r into eight of the basic version of that gem."
         }
       },
       "tasks:9": {
@@ -5350,6 +5344,18 @@
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 25113
+            },
+            "1:10": {
+              "id:8": "gregtech:meta_item_2",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 25111
+            },
+            "2:10": {
+              "id:8": "gregtech:meta_item_2",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 25154
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -9670,7 +9676,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Yttrium",
-          "desc:8": "Centrifuge enough §6Rare Earth§r and you\u0027ll get some §6Yttrium§r.\n\nBecause this has chanced outputs, use an §3HV Centrifuge§r or better to guarantee all items, and §eensure the output slots don\u0027t fill up or excess items will be voided§r."
+          "desc:8": "Centrifuge §6Rare Earth§r, and among other useful materials, you\u0027ll get some §6Yttrium§r.\n\nBecause this recipe has chanced outputs, use an §3HV Centrifuge§r or better to guarantee all items, and §eensure the output slots don\u0027t fill up or excess items will be voided§r."
         }
       },
       "tasks:9": {
@@ -13380,7 +13386,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "IV Machine Hulls",
-          "desc:8": ""
+          "desc:8": "With §6Tungstensteel§r achieved, you can now make hulls for Insane Voltage (IV) §bGregTech§r machines."
         }
       },
       "tasks:9": {
@@ -13445,7 +13451,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Yttrium Barium Cuprate",
-          "desc:8": "An important wire for late game cables.\n\nYou\u0027ll need a Vacuum Freezer to cool the ingots before they can be used."
+          "desc:8": "§6Yttrium Barium Cuprate§r (more accurately, Yttrium Barium Copper Oxide, or YBCO) is, among other things, a high-temperature superconductor material.\n\nThis is used as plates in §bNuclearCraft§r, and will become an important cable material for later tiers of §bGregTech§r components."
         }
       },
       "tasks:9": {
@@ -15921,7 +15927,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Barium",
-          "desc:8": "Barium is a rare ore inside Quartz veins."
+          "desc:8": "§6Barium§r is an element found in §6Barite§r, which may be found as §6Barite Ore§r, inside §6Quartz§r veins.\n\nBarite can also be extracted from other Quartz ores via ore processing."
         }
       },
       "tasks:9": {
@@ -17880,7 +17886,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Indium",
-          "desc:8": "Purified Galena, Purified Sphalerite and Sulfuric Acid can be used to make Tiny Piles of Indium."
+          "desc:8": "§6Indium§r is a rare material requiring specialized bulk ore processing to acquire. It is useful for making §6Indium Gallium Phosphide§r (InGaP).\n\nIf you were enterprising enough to discover and make §6Platinum Group Sludge Dust§r for early §6Osmium§r and §6Iridium§r, you\u0027ll be familiar with the general process.\n\nYou will need to purify (with a §3Washer§r or §3Chemical Bath§r) §6Galena§r and §6Sphalerite§r to get §6Crushed Purified§r dusts. These need to be placed together in a §3Chemical Reactor§r along with §9Sulfuric Acid§r, which will result in §9Indium Concentrate§r.\n\nThis in turn needs to be reacted with §6Aluminium§r in another Chemical Reactor, to create §6Tiny piles of Indium Dust§r and §9Lead-Zinc Solution§r. The latter can be electrolyzed into various useful materials, and the Indium piles can be combined into full dusts.\n\n"
         }
       },
       "tasks:9": {
@@ -17946,7 +17952,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Fourth And Final Tier Four Circuits",
-          "desc:8": "With all of the many components in place, its time to merge them together into a single circuit. Go ahead and craft a §aQuantum Circuit§r."
+          "desc:8": "With your new §6Multi-Layer Fiber-Reinforced Epoxy Circuit Boards§r, §6QBit CPUs§r, and some standard components, you can make the final type of Tier Four Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Four circuit, these should be automated and stockpiled. As with the Final Tier Three circuits, the variant recipe requiring §6Advanced System-on-Chip§r won\u0027t be available for a while."
         }
       },
       "tasks:9": {
@@ -18012,7 +18018,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "QBit Processing Unit",
-          "desc:8": ""
+          "desc:8": "§6QBit CPUs§r are an advanced Circuit Wafer crucial for §6Quantum Circuits§r.\n\nThere are two methods of creating them:\n\nThe simpler recipe uses two §6Quantum Eyes§r and two ingots worth of molten §9Gallium Arsenide§r to enhance a §6NanoCPU Wafer§r. This recipe is slow and requires substantially more §9Radon§r per craft.\n\nThe other route instead uses §6Indium Gallium Phosphide§r and a tiny amount of Radon. This skips the slow-crafting Quantum Eyes, using far less Radon in the process, but requires the infrastructure in place for obtaining §6Indium§r.\n\nThe second route is overall better, and you will need Indium processing to complete the pack so might as well do it."
         }
       },
       "tasks:9": {
@@ -18076,7 +18082,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Arsenic",
-          "desc:8": "Arsenic can be obtained through the electrolysis of Cobaltite."
+          "desc:8": "§6Arsenic§r can be obtained through the electrolysis of §6Cobaltite§r or §6Tennantite§r.\n\nThe latter comes renewably from a Tier Five Micro Miner mission, and Cobaltite can be found or purchased with §dOmnicoins§r."
         }
       },
       "tasks:9": {
@@ -18144,7 +18150,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Radon",
-          "desc:8": "Radon will be needed in large quantities, and for now, you\u0027ll need to obtain it from Tier Two Micro Miner missions."
+          "desc:8": "§9Radon§r will be needed in large quantities.\n\nFor now, you\u0027ll need to obtain it from Tier Two Micro Miner missions, in the form of §6Radium Salt§r. Electrolyze it for Radon and §6Rock Salt§r.\n\nLater it will be possible to make Radon using a §bGregTech§r §3Fusion Reactor§r."
         }
       },
       "tasks:9": {
@@ -18212,7 +18218,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third Tier Five Circuit",
-          "desc:8": "With all of the many components in place, its time to merge them together into a single circuit. Take these parts and combine them with three §aQuantum Circuits§r to craft a §aQuantum Processor§r."
+          "desc:8": "Nothing new here, just use more standard circuit stuff and you can upgrade several §6Quantum Circuits§r into a §6Quantum Processor§r."
         }
       },
       "tasks:9": {
@@ -18276,7 +18282,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier Six Circuit",
-          "desc:8": ""
+          "desc:8": "§6Power IC Wafer§r may be new if you skipped some of the battery quests, but it is now relevant. \n\nUsing these wafers, some §6Chrome Plates§r, a §6Quantum Eye§r, and §6Signalum Wire§r, several §6Quantum Processors§r may be upgraded into a §6Quantum Processor Array§r."
         }
       },
       "tasks:9": {
@@ -19227,7 +19233,6 @@
       "preRequisites:11": [
         138,
         199,
-        286,
         531
       ],
       "properties:10": {
@@ -19473,7 +19478,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Assembly Line",
-          "desc:8": "Not a project for the faint of heart.\n\nMake sure your power and circuit production are up to the challenge before you try to build this.\n\nNotice that all numbers of required items are multiples of 12. This is to make an Assembly Line that\u0027s 12 units long, allowing for 12 inputs. 12 is enough to make a Fusion Reactor Controller Mk1, but you\u0027ll need an even longer Line for later projects.\n\nThe Fluid Input Hatches can replace any of the Steel Casings along the bottom outside except for the Casings touching the Output Bus. The Energy Input Hatches along the top can be replaced by Steel Casings, and you only need the one Energy Input Hatch (although you can add more if you want). The Input Buses along the bottom must be ULV tier, nothing else."
+          "desc:8": "The §3Assembly Line§r is a large multiblock structure that crafts complex materials, similar to an §3Assembling Machine§r. These will be crucial going forward for making a variety of components and machinery.\n\nMake sure your power generation and circuit production are up to the challenge. It is useful to make at least two of these to avoid recipe conflicts and for different programmed circuits.\n\nNotice that all numbers of required items are §emultiples of 12§r. This is to make an Assembly Line that\u0027s 12 units long, allowing for 12 inputs. 12 is enough to make a §aFusion Reactor Controller Mk1§r, but you\u0027ll need an even longer Assembly Line for later projects.\n\n§aFluid Input Hatches§r can replace any of the §6Steel Casings§r along the bottom outside except for the Casings touching the §aOutput Bus§r. For the most part, ULV ones work fine, but a few recipes will need an LV one.\n\nThe §aEnergy Input Hatches§r along the top can be replaced by Steel Casings: you only need the one Energy Input Hatch (although you can add more if you want).\n\nThe §aInput Buses§r along the bottom §emust be ULV tier§r, nothing else. Make sure to spin them all so the hole is on the bottom."
         }
       },
       "tasks:9": {
@@ -19752,7 +19757,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Engraved Crystal Chip",
-          "desc:8": "Another good use for Helium."
+          "desc:8": "By baking an §6Exquisite Emerald§r and §6Emerald Plates§r with §9Helium§r in an §3Electric Blast Furnace§r, you can create an §6Engraved Crystal Chip§r.\n\nThis is a material needed for §6Crystal Circuits§r."
         }
       },
       "tasks:9": {
@@ -19866,7 +19871,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Crystal Processing Unit",
-          "desc:8": "You\u0027ll need an IV Precision Laser Engraver for this craft."
+          "desc:8": "§6Crystal CPUs§r are the cores of §6Crystal Circuits§r.\n\nYou\u0027ll need an §3IV Precision Laser Engraver§r to craft this."
         }
       },
       "tasks:9": {
@@ -22222,7 +22227,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Boron",
-          "desc:8": "Boron is obtained from a side effect of advanced methods of processing Lepidolite."
+          "desc:8": "§6Boron§r is currently obtainable by doing ore processing on §6Lepidolite Ore§r and §6Salt Ore§r (via §6Borax§r)."
         }
       },
       "tasks:9": {
@@ -23063,7 +23068,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "IV Power Storage",
-          "desc:8": ""
+          "desc:8": "An Insane Voltage tier §bGregTech§r battery.\n\nYou\u0027re unlikely to be using EU batteries so it\u0027s safe to skip this for now and do it later, though some of the infrastructure used for these batteries is also used for other things."
         }
       },
       "tasks:9": {
@@ -23456,7 +23461,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Advanced Plating",
-          "desc:8": ""
+          "desc:8": "Enhancing basic plating with §6YBCO§r and §6Hard Carbon alloy§r results in a better plating material for more advanced §bNuclearCraft§r blocks."
         }
       },
       "tasks:9": {
@@ -23674,7 +23679,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Fission Reactor",
-          "desc:8": "The full complexity of Nuclearcraft is far too much for the scope of this quest guide, so you\u0027re encouraged to watch a tutorial or read a guide online. For the purposes of this particular quest, you\u0027ll be building a cheap breeder reactor to works towards Plutonium.\n\nFirst, set up your 56 Reactor Casings to encase a 3x3 cube shape of empty air. The Casings should only cover the faces of the interoir cube, not the edges or corners. You should have exactly the right number of Casings to encase a 3x3 space.\n\nNow open a hole so you can look into the cube and set up the interior. The Reactor Cells will go in all 8 corners. Then the Lapis Coolers will go inbetween them, 4 on top layer and 4 on the bottom layer. At this point, the top and botom layers should have eight blocks each with an empty middle, and the middle layer fully empty. Then in the middle layer, place the 4 Graphite blocks on the corners, and the 4 Glowstone Coolers on the sides (so they touch both Lapis Coolers). Now the cube should be full, except for an empty column in the middle. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior.\n\nFinally, place the Fission Reactor Controller along any edge or corner of the reactor. Opening the Reactor Controller should let you know that the structure was properly formed, if not, go back and check what you did wrong."
+          "desc:8": "The full complexity of §bNuclearCraft§r is far too much for the scope of this quest guide, so §eyou\u0027re encouraged to watch a tutorial or read a guide online§r. For the purposes of this particular quest, you\u0027ll be building a cheap breeder reactor to make §6Plutonium§r.\n\nFirst, set up your 56 §6Reactor Casings§r to encase a 3x3 cube shape of empty air. The Casings should only cover the faces of the interoir cube, not the edges or corners. You should have exactly the right number of Casings to encase a 3x3 space.\n\nNow open a hole so you can look into the cube and set up the interior. The §6Reactor Cells§r will go in all 8 corners. Then the §6Lapis Coolers§r will go inbetween them, 4 on top layer and 4 on the bottom layer. At this point, the top and botom layers should have eight blocks each with an empty middle, and the middle layer fully empty. Then in the middle layer, place the 4 §6Graphite blocks§r on the corners, and the 4 §6Glowstone Coolers§r on the sides (so they touch both Lapis Coolers). Now the cube should be full, except for an empty column in the middle. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior.\n\nFinally, place the §3Fission Reactor Controller§r along any edge or corner of the reactor. Opening the Reactor Controller should let you know that the structure was properly formed, if not, go back and check what you did wrong.\n\nThe lever is placed on the reactor, as a redstone signal is required for it to start working. §cReactors can overheat and melt if the temperature exceeds its ability to cool.§r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a §aRedstone Conduit§r, a §aRedstone Sensor Filter§r (on the input channel), and a §aRedstone NOT Filter§r (on the output channel). Make sure input and output are on the same channel color."
         }
       },
       "tasks:9": {
@@ -32153,7 +32158,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier Five Circuits",
-          "desc:8": ""
+          "desc:8": "Upgrading to the §6Nanoprocessor Array§r requires some standard circuit components, but also some §6Lumium Wire§r and §6Tungstensteel Plates§r."
         }
       },
       "tasks:9": {
@@ -32217,7 +32222,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The First Tier Six Circuits",
-          "desc:8": ""
+          "desc:8": "The first and most expensive Tier Six Circuit, needed for crafting the §3IV Assembling Machine§r.\n\nRequires a bunch of standard circuit components, as well as multiple §6Lumium Wire§r and §6Tungstensteel Frames§r."
         }
       },
       "tasks:9": {
@@ -32281,7 +32286,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third Tier Four Circuits",
-          "desc:8": "With all of the many components in place, its time to merge them together into a single circuit. Take these parts and combine them with three §bNanocircuits§r to craft a §bNanoprocessor."
+          "desc:8": "Nothing you haven\u0027t seen here: just combine some standard circuit components and §6Nanocircuits§r to make a §6Nanoprocessor§r."
         }
       },
       "tasks:9": {
@@ -32539,7 +32544,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "IV Assembling Machine",
-          "desc:8": ""
+          "desc:8": "With your §6Tungstensteel§r-based machine hulls and §6Nanoprocessor Mainframes§r squared away, you can finally get on the path to making an Insane Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Quantum Circuits§r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes up to 2048 EU/t for improved speed at the cost of relatively more power."
         }
       },
       "tasks:9": {
@@ -32669,7 +32674,8 @@
       "questID:3": 531,
       "preRequisites:11": [
         269,
-        391
+        391,
+        286
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -32693,7 +32699,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The First Tier Seven Circuit",
-          "desc:8": ""
+          "desc:8": "Now that you have an §3Assembly Line§r you can craft the §6Quantum Processor Mainframe§r, the first Tier Seven circuit.\n\nThese are required for crafting the Ludicrous Voltage (LuV) §3Assembling Machine§r.\n\nThis recipe requires some §6Quantum Stars§r, which are made in a §3Chemical Bath§r with a §6Nether Star§r and §9Radon§r. It also needs some §6HSS-G Frames§r and significant quantities of §6SMD Components§r."
         }
       },
       "tasks:9": {
@@ -37134,7 +37140,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ferroboron",
-          "desc:8": " "
+          "desc:8": "An alloy of §6Steel§r and §6Boron§r. Pretty simple."
         }
       },
       "tasks:9": {
@@ -37198,7 +37204,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tough Alloy",
-          "desc:8": " "
+          "desc:8": "Alloying some §6Lithium§r into your §6Ferroboron§r results in §6Tough Alloy§r, a common component in §bNuclearCraft§r blocks."
         }
       },
       "tasks:9": {
