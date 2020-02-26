@@ -8243,7 +8243,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "IV Compressor",
-          "desc:8": ""
+          "desc:8": "This compressor is needed for making §6Signalum Heavy Plating§r."
         }
       },
       "tasks:9": {
@@ -10412,7 +10412,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Fourth and Final Tier Five Circuits",
-          "desc:8": ""
+          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r."
         }
       },
       "tasks:9": {
@@ -13041,7 +13041,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Fusion Reactor MK2",
-          "desc:8": "Upgrade time! \n...or build a new one, if you insist.\n\nYet again asking for the minimal amount of casings. Make extra 28 if you don\u0027t want more than 2 inputs and 1 output.\n\nDon\u0027t dismantle the current one before you made sure you\u0027ve got everything you need to upgrade it, as you might end up having to rebuild the MK1 Fusion Reactor again."
+          "desc:8": "Upgrade time! \n...or building a new one, which is probably better.\n\nYet again this quest asks for the minimal amount of casings. Make an extra 28 if you don\u0027t want more than §a2 Fluid Inputs§r§r and §a1 Fluid Output§r.\n\nIf you insist on upgrading instead of making a new one, don\u0027t dismantle the current one before you\u0027re sure you\u0027ve got everything you need to upgrade it, or you might end up having to rebuild the §3Mark 1 Fusion Reactor§r again."
         }
       },
       "tasks:9": {
@@ -13258,7 +13258,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tritanium Ingot",
-          "desc:8": "Looks absolutely identical to Europium."
+          "desc:8": "Looks absolutely identical to Europium, but it\u0027s not the same thing, I promise.\n\nThis is fused in a §3Mark 2 Fusion Reactor§r using molten §9Titanium§r and §9Duranium§r.\n\n§6Tritanium Frames§r are needed for the §6Wetware Processor Mainframe§r."
         }
       },
       "tasks:9": {
@@ -13515,7 +13515,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Enderium Ingot",
-          "desc:8": "Not sure if glowing or not.\n\nThis one takes even more time to cook, so make sure to have it going constantly."
+          "desc:8": "A complex material from §bThermal Expansion§r cooked in an §3Electric Blast Furnace§r.\n\n§6Enderium§r doesn\u0027t require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking.\n\nAs with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile)."
         }
       },
       "tasks:9": {
@@ -16192,7 +16192,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tier Eight Micro Miner",
-          "desc:8": "The Eight Micro Miner.\n\nThe main source of §6Chaos Shards§r, if you\u0027re not crazy to farm Chaos Guardians on your own.\n\nAlso brings negligible amounts of §6Neutronium§r."
+          "desc:8": "The Eighth Micro Miner.\n\nThe main source of §6Chaos Shards§r: as with Nether Stars and Withers, farming these in the needed amounts from Chaos Guardians would be absurd.\n\nThe other mission gives negligible amounts of §6Neutronium§r and some other moderately useful things, but you\u0027re better off making Neutronium in the §3Fusion Reactor Mark 3§r§r and the other items are otherwise craftable."
         }
       },
       "tasks:9": {
@@ -16256,7 +16256,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Chaos Shards",
-          "desc:8": " "
+          "desc:8": "§6Chaos Shards§r are an endgame component for §bDraconic Evolution§r.\n\nThey are the base material for Chaotic Tier materials and come exclusively from Tier Eight Micro Miners.\n\nTechnically they also come from Chaos Guardians, but in the quantities you\u0027ll need these? That would be a silly prospect."
         }
       },
       "tasks:9": {
@@ -16388,7 +16388,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Crystal Matrix Heavy Plating",
-          "desc:8": " "
+          "desc:8": "Heavy plating used exclusively for the Tier Eight Micro Miner. "
         }
       },
       "tasks:9": {
@@ -16516,7 +16516,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Superconducting Coil Block",
-          "desc:8": " "
+          "desc:8": "§6Superconductor coils§r are the eighth coil material available, increasing your EBF\u0027s operating temperature to 9001K so it can process more advanced materials.\n"
         }
       },
       "tasks:9": {
@@ -16581,7 +16581,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Draconic Reactor Core",
-          "desc:8": " "
+          "desc:8": "§6Awakened Draconium§r, §6Chaos Shards§r, and §6Stabilized Einsteinium§r can be used in a Draconic Tier fusion crafting setup to create a §6Draconic Reactor Core§r.\n\nThis is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
         }
       },
       "tasks:9": {
@@ -17087,7 +17087,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tier Four Micro Miner",
-          "desc:8": "The Fourth Micro Miner.\n\nBrings you first bits of §6Osmium and Iridium§r when provided with Wither Realm Data.\n\nWhen equipped with Composition Sensor, brings §6Oilsands Ore§r.\n\nWhen equipped with Gemstone Sensor, brings:\n§6* Dense Redstone Ore\n* Dense Emerald Ore\n* Dense Diamond Ore\n* Dense Lapis Ore\n* Dense Coal Ore§r"
+          "desc:8": "The Fourth Micro Miner.\n\nAll of the Tier Four missions require §68 Quantum Flux§r and a stack of §6Petrotheum Dust§r.\n\nThis miner is the first convenient source of §6Osmium§r and §6Iridium§r, via a mission requiring §6Wither Realm Data§r.\n\nA §6Composition Sensor§r instead directs the miner to obtain §6Dense Oilsands Ore§r, equivalent to 32 stacks of §6Oilsands Ore§r.\n\nWhen equipped with a §6Gemstone Sensor§r:\n§6* Dense Redstone Ore\n* Dense Emerald Ore\n* Dense Diamond Ore\n* Dense Lapis Ore\n* Dense Coal Ore§r"
         }
       },
       "tasks:9": {
@@ -17216,7 +17216,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Iridium",
-          "desc:8": " "
+          "desc:8": "§6Iridium§r is an advanced material used for Micro Miner plating, §6ZPM Machine Hulls§r, and for alloying with §6Osmium§r into §6Osmiridium§r.\n\n§6Iridium Ore§r is available renewably from the Tier Four and Tier Six micro miners.\n\nIt can also be reliably obtained from purifying §6Platinum§r or Osmium§r in a §3Chemical Bath§r, as well as from ore processing Osmium generally."
         }
       },
       "tasks:9": {
@@ -17280,7 +17280,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tier Six Micro Miner",
-          "desc:8": "The Sixth Micro Miner.\n\nThe first decent source of §6Dragon Eggs§r and §6Einsteinium§r.\n\nIs also useful for:\n§6* Uranium 238 Ore\n* Iridium Ore\n* Osmium Ore"
+          "desc:8": "The Sixth Micro Miner.\n\nThe first decent source of §6Dragon Eggs§r and §6Stabilized Einsteinium§r.\n\nIs also useful for:\n§6* Uranium 238 Ore\n* Iridium Ore\n* Osmium Ore"
         }
       },
       "tasks:9": {
@@ -17474,7 +17474,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Draconium Heavy Plating",
-          "desc:8": " "
+          "desc:8": "Heavy plating used exclusively for the Tier Seven Micro Miner. "
         }
       },
       "tasks:9": {
@@ -17539,7 +17539,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Awakened Draconium",
-          "desc:8": " "
+          "desc:8": "§6Awakened Draconium§r is a powerful material used for crafting high-grade components, items, and machines from Draconic Evolution.\n\nFive §6§6Draconium Blocks§r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five §6Awakened Draconium Blocks§r. At §e24 Billion RF per craft§r, you better have a handle on your power infrastructure."
         }
       },
       "tasks:9": {
@@ -17952,7 +17952,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Fourth And Final Tier Four Circuits",
-          "desc:8": "With your new §6Multi-Layer Fiber-Reinforced Epoxy Circuit Boards§r, §6QBit CPUs§r, and some standard components, you can make the final type of Tier Four Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Four circuit, these should be automated and stockpiled. As with the Final Tier Three circuits, the variant recipe requiring §6Advanced System-on-Chip§r won\u0027t be available for a while."
+          "desc:8": "With your new §6Multi-Layer Fiber-Reinforced Epoxy Circuit Boards§r, §6QBit CPUs§r, and some standard components, you can make the final type of Tier Four Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Four circuit, these should be automated and stockpiled. The variant recipe requiring §6Advanced System-on-Chip§r won\u0027t be available until ZPM."
         }
       },
       "tasks:9": {
@@ -18411,7 +18411,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Reactor Stabilizer",
-          "desc:8": " "
+          "desc:8": "The §6Reactor Stabilizer§r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes.\n\nThey are made in a Chaotic Tier fusion crafting setup, requiring a whopping §e53 Billion total RF each§r. You\u0027re gonna need some serious power generation and crafting infrastructure to make everything for these."
         }
       },
       "tasks:9": {
@@ -18603,7 +18603,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Dragon Hearts",
-          "desc:8": " "
+          "desc:8": "§6Dragon Hearts§r are needed for both §6Awoken Draconium§r and §6The Ultimate Material§r."
         }
       },
       "tasks:9": {
@@ -18625,7 +18625,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "275:10": {
       "questID:3": 275,
@@ -18794,7 +18807,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Resonant Satchel",
-          "desc:8": "Carry morest stuff.\n\nWhat more explanation are you expecting?"
+          "desc:8": "Carry the most stuff.\n\nIf you need more space than this, enchant it with §aHolding IV§r."
         }
       },
       "tasks:9": {
@@ -18937,7 +18950,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Breaking Some Eggs",
-          "desc:8": " "
+          "desc:8": "\"§6Dragon Eggs§r?\" You might ask. Yep.\n\nThe final circuit theme, Wetware, will require a lot of them.\n\nTier Six Micro Miners can get some eggs (enough for this quest, as it happens), but Tier Seven miners are a better long-term solution for building up your supply, as they also give §6Dragon Hearts§r.\n\nLater, you\u0027ll also get substantial quantities from Tier Eight Micro Miners, while you are accumulating §6Chaos Shards§r.\n\n"
         }
       },
       "tasks:9": {
@@ -19257,7 +19270,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "LuV Assembling Machine",
-          "desc:8": "The next step in the circuit grind.\n\nYou\u0027ll also need access to HSS-G ingots to make this machine."
+          "desc:8": "With your §6Lumium§r-based machine hulls, Assembling Machine built, and §6Quantum Processor Mainframes§r squared away, you can finally get on the path to making a Ludicrous Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Crystal Circuits§r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes up to 8192 EU/t for improved speed at the cost of relatively more power."
         }
       },
       "tasks:9": {
@@ -19478,7 +19491,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Assembly Line",
-          "desc:8": "The §3Assembly Line§r is a large multiblock structure that crafts complex materials, similar to an §3Assembling Machine§r. These will be crucial going forward for making a variety of components and machinery.\n\nMake sure your power generation and circuit production are up to the challenge. It is useful to make at least two of these to avoid recipe conflicts and for different programmed circuits.\n\nNotice that all numbers of required items are §emultiples of 12§r. This is to make an Assembly Line that\u0027s 12 units long, allowing for 12 inputs. 12 is enough to make a §aFusion Reactor Controller Mk1§r, but you\u0027ll need an even longer Assembly Line for later projects.\n\n§aFluid Input Hatches§r can replace any of the §6Steel Casings§r along the bottom outside except for the Casings touching the §aOutput Bus§r. For the most part, ULV ones work fine, but a few recipes will need an LV one.\n\nThe §aEnergy Input Hatches§r along the top can be replaced by Steel Casings: you only need the one Energy Input Hatch (although you can add more if you want).\n\nThe §aInput Buses§r along the bottom §emust be ULV tier§r, nothing else. Make sure to spin them all so the hole is on the bottom."
+          "desc:8": "The §3Assembly Line§r is a large multiblock structure that crafts complex materials, similar to an §3Assembling Machine§r. These will be crucial going forward for making a variety of components and machinery.\n\nMake sure your power generation and circuit production are up to the challenge. It is useful to make at least two of these to avoid recipe conflicts and for different programmed circuits.\n\nNotice that all numbers of required items are §emultiples of 12§r. This is to make an Assembly Line that\u0027s 12 units long, allowing for 11 inputs and one output. This is a large enough Assembly Line to make a §aFusion Reactor Controller Mk1§r, but you\u0027ll need to expand to more inputs for later projects.\n\n§aFluid Input Hatches§r can replace any of the §6Steel Casings§r along the bottom outside except for the Casings touching the §aOutput Bus§r. For the most part, ULV ones work fine, but a few recipes will need an LV one.\n\nThe §aEnergy Input Hatches§r along the top can be replaced by Steel Casings: you only need the one Energy Input Hatch (although you can add more if you want).\n\nThe §aInput Buses§r along the bottom §emust be ULV tier§r, nothing else. Make sure to spin them all so the hole is on the bottom."
         }
       },
       "tasks:9": {
@@ -19597,7 +19610,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Fusion Reactor MK1",
-          "desc:8": "Time to get fusing!\n\nThe Fusion Reactor is a multiblock that fuses fluids. Some people call it an overpriced Tinker\u0027s smeltery. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows.\n\nThe preview shows §aall valid spots§r, but you don\u0027t actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §aLuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It\u0027s possible to use input/output hatches in every valid location, if you prefer.\n\nBecause of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you\u0027ll need to craft an additional §a28 casings§r.\n\nEach §aEnergy Input Hatch§r increases the reactor\u0027s power buffer. The \"Energy to Start\" value of a recipe is drained instantly when the reactor switches from the previous recipe it ran to a different one. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes.\n\nFusion Reactors don\u0027t overclock, so you will eventually want to make more."
+          "desc:8": "Time to get fusing!\n\nThe §3Fusion Reactor§r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows.\n\nThe preview shows §e§eall valid spots§r, but you don\u0027t actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §6LuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It\u0027s possible to use input/output hatches in every valid location, if you prefer.\n\nBecause of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you\u0027ll need to craft an additional §a28 casings§r.\n\nEach §aEnergy Input Hatch§r increases the reactor\u0027s power buffer. The \"Energy to Start\" value of a recipe is drained instantly when the reactor switches from the previous recipe it ran (or no previous recipe) to a different recipe. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes.\n\nIf you can\u0027t provide sufficient starting power or continuous energy, §cthe craft might be voided§r. Make sure you have enough power to start up the reactor and to run the recipe to completion.\n\nFusion Reactors don\u0027t overclock, and they gate the next tier of materials, so you will eventually want to make more than one."
         }
       },
       "tasks:9": {
@@ -19693,7 +19706,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Draconium Ingots",
-          "desc:8": "You\u0027ll need at least §6Naquadah Coil Blocks§r in your blast furnace to smelt §6Draconium§r, as well as a healthy supply of §9Cetane Diesel§r to reach the immense heat it takes to liquefy.\n\nDraconium gets so hot that it requires the potent coolant §9Gelid Cryotheum§r to aid your §3Vacuum Freezer§r in turning it into usable ingots."
+          "desc:8": "You\u0027ll need at least §6Naquadah Coil Blocks§r in your blast furnace to smelt §6Draconium§r, as well as a healthy supply of §9Cetane Diesel§r to reach the immense heat it takes to liquefy.\n\nDraconium gets so hot that it requires the potent coolant §9Gelid Cryotheum§r to aid your §3Vacuum Freezer§r in turning it into usable ingots.\n\nThere are several ways to make Draconium: dust can be smelted into ingots, but you can also turn §6Ender Dragon Scales§r, which contain Draconium, directly into ingots. It uses a lot of Cetane Diesel, but is the most efficient way to craft Draconium.\n\nYou\u0027ve been stockpiling diesel, right?"
         }
       },
       "tasks:9": {
@@ -19935,7 +19948,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third Tier Six Circuits",
-          "desc:8": ""
+          "desc:8": "With some now-standard components you can upgrade a few §6Crystal Circuits§r into a §6Crystal Processor§r."
         }
       },
       "tasks:9": {
@@ -20105,7 +20118,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Basic Fusion Injectors",
-          "desc:8": ""
+          "desc:8": "§bDraconic Evolution§r features §eFusion Crafting§r, which requires a §6Fusion Crafting Core§r and up to ten injectors of the appropriate tier.\n\nYou\u0027ll need eight §6Basic Fusion Crafting Injectors§r to upgrade any additional injectors you make to Wyvern Tier.\n\nYes, that means you should plan to make more than eight. "
         }
       },
       "tasks:9": {
@@ -20119,6 +20132,12 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 8,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "draconicevolution:fusion_crafting_core",
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
@@ -21353,8 +21372,8 @@
     "314:10": {
       "questID:3": 314,
       "preRequisites:11": [
-        253,
-        522
+        522,
+        253
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21378,7 +21397,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Iridium Heavy Plating",
-          "desc:8": ""
+          "desc:8": "Heavy plating made from §6Iridium§r for Tier Five and Tier Eight Micro Miners."
         }
       },
       "tasks:9": {
@@ -21391,12 +21410,6 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:meta_item_1",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 10032
-            },
-            "1:10": {
               "id:8": "contenttweaker:iridiumalloyplating",
               "Count:3": 1,
               "OreDict:8": "",
@@ -21450,7 +21463,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Signalum Heavy Plating",
-          "desc:8": ""
+          "desc:8": "A heavy plating material required for the next two tiers of Micro Miners."
         }
       },
       "tasks:9": {
@@ -21515,7 +21528,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Enderium Heavy Plating",
-          "desc:8": ""
+          "desc:8": "Heavy plating made from §6Enderium§r used for the Tier Six Micro Miner."
         }
       },
       "tasks:9": {
@@ -21555,7 +21568,8 @@
     "317:10": {
       "questID:3": 317,
       "preRequisites:11": [
-        243
+        243,
+        258
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21579,7 +21593,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Quantum Fluxed Eternium Heavy Plating",
-          "desc:8": " "
+          "desc:8": "A complex plating material used exclusively for the Tier Nine Micro Miner."
         }
       },
       "tasks:9": {
@@ -21907,7 +21921,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Naquadah Ingots",
-          "desc:8": ""
+          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nUnlike most materials at this point, Naquadah can be smelted in a standard furnace.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r."
         }
       },
       "tasks:9": {
@@ -21971,7 +21985,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Naquadah Coil Blocks",
-          "desc:8": ""
+          "desc:8": "§6Naquadah§r is the sixth coil material available, increasing your EBF\u0027s operating temperature to 7200K so it can process more advanced materials.\n\nWhile it\u0027s also possible to make §6Naquadah Alloy Coils§r, you can skip them and go directly to §6Superconducting Coils§r."
         }
       },
       "tasks:9": {
@@ -22035,7 +22049,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Europium Ingot",
-          "desc:8": ""
+          "desc:8": "§6Stabilized Europium§r§r was scavenged from microverses, but now with a §3Fusion Reactor§r, you can make regular Europium!\n\nThis element is needed for making things in §bDraconic Evolution§r§r, as well as the §6Fusion Reactor Computer Mark 2§r and §6Wetware Processor Arrays§r§r.\n\nYou make it by fusing molten §9§9Neodymium§r§r and §9Hydrogen§r."
         }
       },
       "tasks:9": {
@@ -22099,7 +22113,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Naquadah Dust",
-          "desc:8": ""
+          "desc:8": "§6Naquadah§r comes in a dust form and only from the Tier Five micro miner.\n\nGet some, it\u0027s important. More on this later."
         }
       },
       "tasks:9": {
@@ -22163,7 +22177,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Draconic Stem Cells",
-          "desc:8": "Just ignore the protesters outside your base."
+          "desc:8": "Just ignore the protesters outside your base.\n\nEach craft in an §3LuV Chemical Reactor§r takes five minutes, so it\u0027s probably a good idea to have more than one machine running this recipe. At least you get a whole stack from a single egg."
         }
       },
       "tasks:9": {
@@ -22486,7 +22500,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Fourth And Final Tier Six Circuit",
-          "desc:8": ""
+          "desc:8": "The final form of Tier Six circuits, and the final circuit theme.\n\nUsing your §6Wetware Lifesupport Circuit Boards§r, §6Naquadah Alloy wire§r, §6ASoCs§r, and §9Sterilized Growth Medium§r, you can craft (grow?) these circuits in a ZPM or better §3Assembling Machine§r.\n\nThese are fairly slow to craft and you\u0027re going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
         }
       },
       "tasks:9": {
@@ -22550,7 +22564,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Third and Final Tier Seven Circuit",
-          "desc:8": ""
+          "desc:8": "§6Wetware Processors§r are made in an §3Assembly Line§r on ZPM power.\n\nAmong the usual kinds of parts, these require §6Frank\u0027N\u0027Zombies§r from a §3Soul Binder§r and §6Silicone Rubber Foils§r."
         }
       },
       "tasks:9": {
@@ -22614,7 +22628,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second And Final Tier Eight Circuit",
-          "desc:8": ""
+          "desc:8": "§6Wetware Processor Arrays§r are made in an §3Assembly Line§r at ZPM or better power.\n\nYou\u0027ll need §6Sentient Ender§r from §3Soul Binders§r and §6Europium§r from the §3Fusion Reactor§r to craft these."
         }
       },
       "tasks:9": {
@@ -22678,7 +22692,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "The First And Only Tier Nine Circuit",
-          "desc:8": ""
+          "desc:8": "The final circuit.\n\nYou\u0027ll need §6Tritanium§r for §6Tritanium Frames§r, which comes exclusively from the §3Fusion Reactor Mark 2§r or better reactor.\n\nThe §6Duranium§r needed to make Tritanium comes from the §3Fusion Reactor Mark 1§r or better."
         }
       },
       "tasks:9": {
@@ -22742,7 +22756,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Draconium Dust",
-          "desc:8": "Creating Draconium is a complex process, but you\u0027ll want to automate every step of it, since you\u0027ll be needing quite a lot of Draconium in the long run."
+          "desc:8": "Draconium is a complex material needed in vast quantities.\n\nYou\u0027ll likely have come by some dust while mining in the End, but you can also create it with §6Dragon\u0027s Breath§r and §6Manyullyn§r."
         }
       },
       "tasks:9": {
@@ -22782,7 +22796,8 @@
     "337:10": {
       "questID:3": 337,
       "preRequisites:11": [
-        288
+        288,
+        733
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22806,7 +22821,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Draconic Cores",
-          "desc:8": ""
+          "desc:8": "§6Draconic Cores§r are the first crafting step into §bDraconic Evolution§r.\n\nThese serve as the basis for crafting many items and can be upgraded into different tiers of cores via §eFusion Crafting§r."
         }
       },
       "tasks:9": {
@@ -23779,7 +23794,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "The Ultimate Material",
-          "desc:8": "You don\u0027t need it just yet, but you can make it now. "
+          "desc:8": "You don\u0027t need it just yet, but you can make it now.\n\nThis is a critical material for the Endgame."
         }
       },
       "tasks:9": {
@@ -26427,7 +26442,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Plasma Turbine",
-          "desc:8": "§aLarge Plasma Turbines§r are a powerful late game method of generating power. One Large Plasma Turbine can pull out nearly 41800 EU/t when using an §aLuV Rotor Holder§r and equipped with §a100% efficiency§r rotor.\n\nOne Mark 1 Fusion Reactor doing §bOxygen Plasma§r can saturate 16 Large Plasma Turbines, resulting in almost 670000 EU/t of power gen, but it requires quite a decent infrastructure.\n\nDon\u0027t rely on JEI too much when looking for the best plasma, fuels are displayed in a very misleading manner. A Large Plasma Turbine consumes nearly 16 buckets of plasma to run a cycle for the duration specified in JEI, and takes some time to spin up."
+          "desc:8": "§3Large Plasma Turbines§r are a powerful late game method of generating power. One Large Plasma Turbine can produce nearly 41800 EU/t when using an §aLuV Rotor Holder§r and equipped with §a100% efficiency§r rotor.\n\nOne §3Mark 1 Fusion Reactor§r dedicated to producing §bOxygen Plasma§r can provide suffient fuel for continuously operating 16 Large Plasma Turbines, resulting in a combined production of roughly 670000 EU/t. Granted, this is a decent amount of infrastructure.\n\nDon\u0027t rely on §bJEI§r too much when looking for the best plasma: fuels are displayed in a very misleading manner. A Large Plasma Turbine consumes nearly 16 buckets of plasma to run a cycle for the duration specified in JEI, and takes some time to spin up to full power."
         }
       },
       "tasks:9": {
@@ -26652,7 +26667,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Machine Covers",
-          "desc:8": "GregTech adds a very versatile way of augmenting machines with §aMachine Covers§r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. To work with covers, you\u0027ll need to make yourself a §aScrewdriver§r to configure covers, and a §aCrowbar§r to remove covers without having to break the machine.\n\nHere\u0027s a quick list of what covers there are in the game, and what they do:\n\n- §a§lFilter§r: controls what items can enter or leave through a particular side, with 9 configurable slots and whitelist/blacklist modes. You can also put a filter into a §aConveyor§r or §aRobotic Arm§r to customize what items they will move. There\u0027s also a §9Fluid§r variant of the filter, which offers the same controls and can be placed in §aPumps§f.\n\n- §a§lOre Dictionary Filter§r: a specialized filter that uses ore dictionary entries and supports \"*\" as a wildcard, e. g. \"§6ingotHot*§r\" will match all ingots, and \"§6dustTiny*§r\" will match all tiny piles.\n\n- §a§lConveyor§r: transfers items to or from an adjacent inventory.\n\n- §a§lRobotic Arm§r: is much like §aConveyor§r, but has two additional modes: §6Keep Exact§r, which keeps the exact amount of items in the inventory, and §6Supply Exact§r which transfers the exact amount of items per operation (useful for packaging tiny piles when used with §aOre Dictionary Filter§f!). This cover is very useful for crafting automation.\n\n- §a§lPump§r: is much like a §aConveyor§f, but for fluids.\n\n- §a§lShutter§r: prevents any interactions with a side.\n\n- §a§lMachine Controller§r: enables or disables a machine and/or its covers depending on whether it is receiving a redstone signal. Useful when paired with §6ME level emitters§f to keep resources in stock."
+          "desc:8": "GregTech adds a very versatile way of augmenting machines with §aMachine Covers§r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. To work with covers, you\u0027ll need to make yourself a §aScrewdriver§r to configure covers, and a §aCrowbar§r to remove covers without having to break the machine.\n\nHere\u0027s a quick list of what covers there are in the game, and what they do:\n\n- §a§lFilter§r: controls what items can enter or leave through a particular side, with 9 configurable slots and whitelist/blacklist modes. You can also put a filter into a §aConveyor§r or §aRobotic Arm§r to customize what items they will move. There\u0027s also a §9Fluid§r variant of the filter, which offers the same controls and can be placed in §aPumps§f.\n\n- §a§lOre Dictionary Filter§r: a specialized filter that uses ore dictionary entries and supports \"*\" as a wildcard, e. g. \"§6ingotHot*§r\" will match all hot ingots, and \"§6dustTiny*§r\" will match all tiny piles.\n\n- §a§lConveyor§r: transfers items to or from an adjacent inventory.\n\n- §a§lRobotic Arm§r: is much like §aConveyor§r, but has two additional modes: §6Keep Exact§r, which keeps the exact amount of items in the inventory, and §6Supply Exact§r which transfers the exact amount of items per operation (useful for packaging tiny piles when used with §aOre Dictionary Filter§f!). This cover is very useful for crafting automation.\n\n- §a§lPump§r: is much like a §aConveyor§f, but for fluids.\n\n- §a§lShutter§r: prevents any interactions with a side.\n\n- §a§lMachine Controller§r: enables or disables a machine and/or its covers depending on whether it is receiving a redstone signal. Useful when paired with §6ME level emitters§f to keep resources in stock."
         }
       },
       "tasks:9": {
@@ -26837,7 +26852,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "extendedcrafting:interface",
@@ -26852,7 +26867,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Automating Extended Crafting",
-          "desc:8": "Now that you have Osmium and Iridium from the §6Tier Four Micro Miner§r, you can begin automating §bExtended Crafting§r recipes. While it is possible to use §6Automation Interfaces§r for this task, you have access to something §nvastly§r better§r: §bPackagedExCrafting§r.\n\nTo begin, you\u0027ll need to craft one of each extended §3Package Crafter§r listed on the right. Put an §3Unpackager§r on top of each one, and then a §3Packager§r on top of each Unpackager. These are all AE2 devices, so you\u0027ll need to connect them to an ME Network.\n\nNext, right-click the §3Recipe Package Encoder§r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You\u0027ll have to choose the appropriate table for the recipe you want to encode.\n\n§6Holders§r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press §6[+]§r in §bJEI§r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines.\n\nIf you\u0027ve done everything correctly, you should see the item appear as craftable in a Terminal.\n\nWhile it might seem that the crafting process is slow, §ePackagedAuto is excellent at parallelizing§r. You can surround an Unpackager with Crafters and it will use all of them. It\u0027s also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
+          "desc:8": "Now that you have §6Osmium§r and §6Iridium§r from the §6Tier Four Micro Miner§r, you can begin automating §bExtended Crafting§r recipes. While it is possible to use §6Automation Interfaces§r for this task, you have access to something §nvastly§r better§r: §bPackagedExCrafting§r.\n\nTo begin, you\u0027ll need to craft one of each extended §3Package Crafter§r listed on the right. Put an §3Unpackager§r on top of each one, and then a §3Packager§r on top of each Unpackager. These are all AE2 devices, so you\u0027ll need to connect them to an ME Network.\n\nNext, right-click the §3Package Recipe Encoder§r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You\u0027ll have to choose the appropriate table for the recipe you want to encode.\n\n§6Holders§r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press §6[+]§r in §bJEI§r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines.\n\nIf you\u0027ve done everything correctly, you should see the item appear as craftable in a Terminal.\n\nWhile it might seem that the crafting process is slow, §ePackagedAuto is excellent at parallelizing§r. You can surround an Unpackager with Crafters and it will use all of them. It\u0027s also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same.\n\n"
         }
       },
       "tasks:9": {
@@ -26946,7 +26961,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Medium Microverse Projector",
-          "desc:8": "required for the progression\n\nobligatory reminder to use appropriate energy hatches\n\nquantum compressor must face the controller"
+          "desc:8": "The §3Medium Microverse Projector§r is a more powerful projector required for sending Tier Four through Tier Six Micro Miners into microverses.\n\nWhile some of the miners run on IV power, make a §6LuV Energy Input§r so you don\u0027t have to replace it later or accidentally try to run a Tier Six on IV power. Always check the voltage required on a recipe, as you will §close a miner§r if you can\u0027t supply enough power to complete the mission; ModMachines will continue to eat incoming power without making progress.\n\nWhen building the multiblock, be sure to place the §6Quantum Compressors§r to face the same direction as the controller block (this is the usual reason for the structure not forming)."
         }
       },
       "tasks:9": {
@@ -27044,7 +27059,7 @@
           "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "packagedauto:package",
@@ -27059,7 +27074,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "PackagedAuto",
-          "desc:8": "§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in Omnifactory is to allow you to automate extended crafting recipes.\n\nApplied Energistics 2 stores recipes in §6Patterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §6Holders§r, which don\u0027t have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Recipe Package Encoder§r.\n\nIn the vast majority of situations you\u0027ll need two identically-encoded Holders, as the following machines work together.\n\nThe §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).\n\nThe §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.\n\nWhen both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your Terminal."
+          "desc:8": "§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in §5Omnifactory§r is to allow you to automate extended crafting recipes.\n\nApplied Energistics 2 stores recipes in §aPatterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §aPackage Recipe Holders§r, which don\u0027t have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Package Recipe Encoder§r.\n\nIn the vast majority of situations you\u0027ll need two identically-encoded Holders, as the following machines work together.\n\nThe §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).\n\nThe §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.\n\nWhen both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your §aTerminal§r.\n\n"
         }
       },
       "tasks:9": {
@@ -27244,7 +27259,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Large Microverse Projector",
-          "desc:8": "obligatory reminder to check energy hatches\n\nquantum compressors must all be facing the controller\n\nyour ad here"
+          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending Tier Seven through Tier Ten Micro Miners into microverses.\n\nWhile some of the miners run on lower power, make a §6UV Energy Input§r so you don\u0027t have to replace it later or accidentally run something on insufficient power. Always check the voltage required on a recipe, as you will §close a miner§r if you can\u0027t supply enough power to complete the mission; ModMachines will continue to eat incoming power without making progress and breaking the structure voids the current craft.\n\nWhen building the multiblock, be sure to place the §6Quantum Compressors§r to face the same direction as the controller block (this is the usual reason for the structure not forming)."
         }
       },
       "tasks:9": {
@@ -27733,7 +27748,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Combination Package Crafter",
-          "desc:8": "A much more efficient version of the Empowerer."
+          "desc:8": "A much more efficient version of the §3Empowerer§r.\n\nThis is a digital upgrade to the §3Crafting Core§r, allowing you to craft Empowerer recipes directly through §bPackagedAuto§r.\n\nThe §aMarked Pedestals§r can be placed freely within three blocks distance of the Crafting block, as long as they are on the same Y-level."
         }
       },
       "tasks:9": {
@@ -27767,7 +27782,7 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:omnicoin5",
+              "id:8": "contenttweaker:omnicoin25",
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
@@ -31869,7 +31884,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Naquadah Reactor Mk1",
-          "desc:8": ""
+          "desc:8": "The §3Naquadah Reactor Mk1§r is a structure used to generate considerable amounts of RF power from decaying §6Enriched Naquadah§r or §6Naquadria§r into §6Lead§r.\n\n§eKnown issue: Modular Machine energy output hatches cause a lot of lag by scanning a large region around it for the presence of a Draconic Evolution Energy Core to output into. This will hopefully be addressed in a future update."
         }
       },
       "tasks:9": {
@@ -31915,7 +31930,7 @@
               "id:8": "modularmachinery:blockenergyoutputhatch",
               "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:3": 7
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -32094,7 +32109,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "LuV Compressor",
-          "desc:8": ""
+          "desc:8": "This compressor is needed for making §6Iridium Heavy Plating§r and §6Enderium Heavy Plating§r."
         }
       },
       "tasks:9": {
@@ -32828,7 +32843,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "ZPM Assembling Machine",
-          "desc:8": "End of the line.\n\nZPM stands for Zero Point Module."
+          "desc:8": "With your §6Iridium§r-based machine hulls and §6Crystal Processor Mainframes§r squared away, you can finally get on the path to making a ZPM §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Wetware Circuits§r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes up to 32768 EU/t for improved speed at the cost of relatively more power."
         }
       },
       "tasks:9": {
@@ -32868,7 +32883,9 @@
     "534:10": {
       "questID:3": 534,
       "preRequisites:11": [
-        292
+        292,
+        200,
+        288
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -32892,7 +32909,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The Second Tier Seven Circuits",
-          "desc:8": ""
+          "desc:8": "With §6Draconium§r, §6Enderium§r, and some §6HPICs§r, you can assemble a §6Crystal Processor Array§r."
         }
       },
       "tasks:9": {
@@ -32956,7 +32973,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "The First Tier Eight Circuits",
-          "desc:8": ""
+          "desc:8": "The §6Crystal Processor Mainframe§r is the first Tier Eight circuit.\n\nAlong with things you already know how to make, this needs §6HSS-E Frames§r.\n\nThese are required for crafting the §3ZPM Assembling Machine§r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these.\n"
         }
       },
       "tasks:9": {
@@ -33020,7 +33037,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "ZPM Machine Hulls",
-          "desc:8": ""
+          "desc:8": "§6ZPM Machine Hulls§r are made with §6Iridium Plates§r, but you\u0027ll notice they also need §9Polytetrafluoroethylene§r (more commonly known as Teflon™), a special plastic which will be required for all machine hulls going forward.\n\nZPM stands for Zero Point Module.\n\nThis is the last tier of machine that\u0027s sensible to produce before you reach the §dCreative Portable Tank§r. Multiblock hatches are a different matter- feel free to upgrade your §3EBF§rs to Ultimate Voltage, if you can handle the power drain. There\u0027s no usable tier above that, though."
         }
       },
       "tasks:9": {
@@ -33088,7 +33105,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Sterilized Growth Medium",
-          "desc:8": "No Description"
+          "desc:8": "§9Sterilized Growth Medium§r is needed for §6Wetware Circuits§r.\n\nYou\u0027ll need to mix §6Mincemeat§r, §6Sugar§r, and §6Tiny piles of Salt§r with water in a mixer to make §9Raw Growth Medium§r, then use a §3Fluid Heater§r to sterilize it.\n\nMincemeat comes from pulverizing any kind of animal meat. A §aPowered Spawner§r might be useful for this endeavor."
         }
       },
       "tasks:9": {
@@ -33541,7 +33558,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Hardened Satchel",
-          "desc:8": "Carry more stuff.\n\nWhat more explanation are you expecting?"
+          "desc:8": "Carry even more stuff."
         }
       },
       "tasks:9": {
@@ -33623,7 +33640,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Reinforced Satchel",
-          "desc:8": "Carry even more stuff.\n\nWhat more explanation are you expecting?"
+          "desc:8": "Carry §oeven more§r stuff."
         }
       },
       "tasks:9": {
@@ -37012,7 +37029,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Superconductor Wire",
-          "desc:8": " "
+          "desc:8": "Coating §6Draconium Wire§r with §9Molten Nether Star§r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy.\n\nThese wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps.\n\nThese can also be made into RF conduits that can transmit a whopping 134 Million RF/t."
         }
       },
       "tasks:9": {
@@ -37268,7 +37285,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "ZPM Compressor",
-          "desc:8": ""
+          "desc:8": "The ZPM tier §3Compressor§r is needed for the most advanced heavy plating types: §6Draconium§r and §6Crystal Matrix§r."
         }
       },
       "tasks:9": {
@@ -42751,7 +42768,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Naquadah Reactor Mk2",
-          "desc:8": ""
+          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of RF energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?"
         }
       },
       "tasks:9": {
@@ -42764,12 +42781,6 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "modularmachinery:blockenergyoutputhatch",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
-            },
-            "1:10": {
               "id:8": "extendedcrafting:storage",
               "Count:3": 5,
               "OreDict:8": "",
@@ -44008,6 +44019,70 @@
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 2
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:omnicoin25",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "733:10": {
+      "questID:3": 733,
+      "preRequisites:11": [
+        336
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:info_tablet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 1,
+          "name:8": "Draconic Evolution Information Tablet",
+          "desc:8": "The §aDraconic Evolution Information Tablet§r contains useful information about the mod as well as diagrams for valid Fusion Crafting block placement.\n\nYou might also be interested in the §oDraconic Evolution Fusion Core Automation§r guide linked to in §9#omnicompendium§r in the official §5Omnifactory§r Discord server."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:info_tablet",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -46881,7 +46956,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress.\n\n"
+          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress."
         }
       },
       "order:3": 7
@@ -47227,7 +47302,7 @@
         "48:10": {
           "sizeX:3": 24,
           "x:3": -12,
-          "y:3": 324,
+          "y:3": 288,
           "id:3": 317,
           "sizeY:3": 24
         },
@@ -47530,6 +47605,13 @@
           "x:3": -66,
           "y:3": 450,
           "id:3": 696,
+          "sizeY:3": 24
+        },
+        "92:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 96,
+          "id:3": 733,
           "sizeY:3": 24
         }
       },
@@ -50030,7 +50112,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "party_enable:1": 1,
