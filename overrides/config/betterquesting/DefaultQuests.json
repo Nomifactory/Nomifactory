@@ -5228,7 +5228,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "First Tier Two Circuits",
+          "name:8": "The First Tier Two Circuits",
           "desc:8": "Your first §6Tier Two Circuits§r will require four §6Tier One Circuits§r plus a §6Diode§r made with §6Gallium§r to craft.\n\nThese are rather expensive... Always be on the lookout for a cheaper way to make your circuits- new sets of recipes become available each time you make a new tier of §3Assembling Machine§r."
         }
       },
@@ -5947,7 +5947,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Second Tier Two Circuit",
+          "name:8": "The Second Tier Two Circuits",
           "desc:8": "Three §6Electronic Circuits§r and various other components will create an §6Electronic Processor§r."
         }
       },
@@ -6089,7 +6089,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "First Tier Three Circuit",
+          "name:8": "The First Tier Three Circuits",
           "desc:8": "Your first tier three circuit, formed from four §6Electronic Processors§r and §6Transistors§r, among other ingredients.\n\nAs you\u0027ll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don\u0027t have to make many of them.\n\nPrioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through six will have a circuit recipe instead of requiring processors, arrays, or mainframes.\n\n"
         }
       },
@@ -8880,7 +8880,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "First Tier Four Circuit",
+          "name:8": "The First Tier Four Circuits",
           "desc:8": "This is the first Tier Four circuit, which is used for EV-tier machinery.\n\nThis is the first kind of mainframe you\u0027ll have made, and as you can see it\u0027s extraordinarily expensive. Fortunately, you don\u0027t have to make too many of these.\n\nInvest in the §3HV Assembling Machine§r to unlock the next theme of circuits, which use Epoxy substrates and span tiers two through five."
         }
       },
@@ -17964,7 +17964,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Second Tier Six Circuit",
+          "name:8": "The Second Tier Six Circuits",
           "desc:8": "§6Power IC Wafer§r may be new if you skipped some of the battery quests, but it is now relevant. \n\nUsing these wafers, some §6Chrome Plates§r, a §6Quantum Eye§r, and §6Signalum Wire§r, several §6Quantum Processors§r may be upgraded into a §6Quantum Processor Array§r."
         }
       },
@@ -22024,7 +22024,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Fourth And Final Tier Six Circuit",
+          "name:8": "The Fourth And Final Tier Six Circuits",
           "desc:8": "The final form of Tier Six circuits, and the final circuit theme.\n\nUsing your §6Wetware Lifesupport Circuit Boards§r, §6Naquadah Alloy wire§r, §6ASoCs§r, and §9Sterilized Growth Medium§r, you can craft (grow?) these circuits in a ZPM or better §3Assembling Machine§r.\n\nThese are fairly slow to craft and you\u0027re going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
         }
       },
@@ -22088,7 +22088,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Third and Final Tier Seven Circuit",
+          "name:8": "The Third and Final Tier Seven Circuits",
           "desc:8": "§6Wetware Processors§r are made in an §3Assembly Line§r on ZPM power.\n\nAmong the usual kinds of parts, these require §6Frank\u0027N\u0027Zombies§r from a §3Soul Binder§r and §6Silicone Rubber Foils§r."
         }
       },
@@ -22152,7 +22152,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Second And Final Tier Eight Circuit",
+          "name:8": "The Second And Final Tier Eight Circuits",
           "desc:8": "§6Wetware Processor Arrays§r are made in an §3Assembly Line§r at ZPM or better power.\n\nYou\u0027ll need §6Sentient Ender§r from §3Soul Binders§r and §6Europium§r from the §3Fusion Reactor§r to craft these."
         }
       },
@@ -26117,7 +26117,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Crafting Calculator",
-          "desc:8": "This modpack has §aCrafting Calculators§r. It has a steep learning curve, but once you manage to learn how to use it, it\u0027s going to be your trusty companion in calculating recipe costs.\n\nCraft yourself one and hit the book button in the top-left corner for a quick overview how it works."
+          "desc:8": "This modpack has §aCrafting Calculators§r. It has a steep learning curve, but once you manage to learn how to use it, it\u0027s going to be your trusty companion in calculating recipe costs.\n\nCraft yourself one and hit the book button in the top-left corner for a quick overview of how it works."
         }
       },
       "tasks:9": {
@@ -32380,7 +32380,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The First Tier Seven Circuit",
+          "name:8": "The First Tier Seven Circuits",
           "desc:8": "Now that you have an §3Assembly Line§r you can craft the §6Quantum Processor Mainframe§r, the first Tier Seven circuit.\n\nThese are required for crafting the Ludicrous Voltage (LuV) §3Assembling Machine§r.\n\nThis recipe requires some §6Quantum Stars§r, which are made in a §3Chemical Bath§r with a §6Nether Star§r and §9Radon§r. It also needs some §6HSS-G Frames§r and significant quantities of §6SMD Components§r."
         }
       },
@@ -32826,8 +32826,8 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "questbook:itemquestbook",
-            "Count:3": 1,
+            "id:8": "minecraft:air",
+            "Count:3": 0,
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -32836,9 +32836,9 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 1,
-          "name:8": "Circuit Progression",
-          "desc:8": "There is a §eProgression tab§f that outlines the entire circuit progression of §5Omnifactory§f. Take a look if you haven\u0027t yet!\n\nIt is also recommended that you bookmark this link, which is a chart listing all of the circuits. It will likely help you as you continue to progress through the circuits.\n\n§9§nhttps://i.imgur.com/vF5EDEi.png§r\n\nType it in your browser, keeping in mind that it\u0027s case-sensitive."
+          "ismain:1": 0,
+          "name:8": "Gap",
+          "desc:8": ""
         }
       },
       "tasks:9": {
@@ -32847,20 +32847,7 @@
           "taskID:8": "bq_standard:checkbox"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "contenttweaker:omnicoin5",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "539:10": {
       "questID:3": 539,
@@ -44754,7 +44741,7 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 1,
+          "ismain:1": 0,
           "name:8": "Dark Steel Enchanter",
           "desc:8": "Vanilla enchanting mechanics are just so tedious. Don\u0027t you wish you could just make a specific enchant instead of grinding levels and rolling the dice?\n\n§eOh wait- you can!§r\n\nThe §3Dark Steel Enchanter§r is a device that uses §6Book and Quill§r, experience levels, lapis, and enchant-specific items to create an §6Enchanted Book§r with an enchantment of your choosing. Then you can just use an Anvil to enchant your item like usual.\n\nThis is a good time to bring up the §dHolding§r enchant, which can be applied to most items from §bThermal Foundation§r and its related mods. Holding can be crafted up to level IV, which massively boosts the storage capacity of items like §aSatchels§r, §aFlux Capacitors§r, and §aPortable Tanks§r.\n\nYou can also make the §dMending§r enchant which allows you to infinitely repair the item when damaged using §9Liquid XP§r in an §bEnderIO §aFluid Tank§r or §aPressurized Fluid Tank§r.\n\n"
         }
@@ -45106,7 +45093,7 @@
           "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thermalexpansion:augment",
@@ -46239,377 +46226,6 @@
     "0:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 48,
-          "x:3": -24,
-          "y:3": -24,
-          "id:3": 3,
-          "sizeY:3": 48
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 36,
-          "id:3": 4,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 72,
-          "id:3": 5,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 144,
-          "id:3": 6,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 180,
-          "id:3": 7,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 36,
-          "x:3": -204,
-          "y:3": 72,
-          "id:3": 9,
-          "sizeY:3": 36
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 216,
-          "id:3": 11,
-          "sizeY:3": 24
-        },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 108,
-          "id:3": 12,
-          "sizeY:3": 24
-        },
-        "8:10": {
-          "sizeX:3": 24,
-          "x:3": 114,
-          "y:3": 54,
-          "id:3": 13,
-          "sizeY:3": 24
-        },
-        "9:10": {
-          "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 36,
-          "id:3": 14,
-          "sizeY:3": 24
-        },
-        "10:10": {
-          "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 108,
-          "id:3": 15,
-          "sizeY:3": 24
-        },
-        "11:10": {
-          "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 144,
-          "id:3": 16,
-          "sizeY:3": 24
-        },
-        "12:10": {
-          "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 180,
-          "id:3": 17,
-          "sizeY:3": 24
-        },
-        "13:10": {
-          "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 252,
-          "id:3": 18,
-          "sizeY:3": 24
-        },
-        "14:10": {
-          "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 216,
-          "id:3": 20,
-          "sizeY:3": 24
-        },
-        "15:10": {
-          "sizeX:3": 24,
-          "x:3": -54,
-          "y:3": 180,
-          "id:3": 24,
-          "sizeY:3": 24
-        },
-        "16:10": {
-          "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 18,
-          "id:3": 25,
-          "sizeY:3": 24
-        },
-        "17:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 108,
-          "id:3": 37,
-          "sizeY:3": 24
-        },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 288,
-          "id:3": 38,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 252,
-          "id:3": 40,
-          "sizeY:3": 24
-        },
-        "20:10": {
-          "sizeX:3": 36,
-          "x:3": -204,
-          "y:3": 198,
-          "id:3": 43,
-          "sizeY:3": 36
-        },
-        "21:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 78,
-          "id:3": 50,
-          "sizeY:3": 24
-        },
-        "22:10": {
-          "sizeX:3": 72,
-          "x:3": -36,
-          "y:3": 360,
-          "id:3": 56,
-          "sizeY:3": 72
-        },
-        "23:10": {
-          "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 288,
-          "id:3": 58,
-          "sizeY:3": 24
-        },
-        "24:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 180,
-          "id:3": 66,
-          "sizeY:3": 24
-        },
-        "25:10": {
-          "sizeX:3": 36,
-          "x:3": -204,
-          "y:3": 30,
-          "id:3": 141,
-          "sizeY:3": 36
-        },
-        "26:10": {
-          "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": 0,
-          "id:3": 353,
-          "sizeY:3": 24
-        },
-        "27:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": 0,
-          "id:3": 368,
-          "sizeY:3": 24
-        },
-        "28:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 78,
-          "id:3": 370,
-          "sizeY:3": 24
-        },
-        "29:10": {
-          "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 108,
-          "id:3": 371,
-          "sizeY:3": 24
-        },
-        "30:10": {
-          "sizeX:3": 36,
-          "x:3": -204,
-          "y:3": 114,
-          "id:3": 393,
-          "sizeY:3": 36
-        },
-        "31:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 288,
-          "id:3": 394,
-          "sizeY:3": 24
-        },
-        "32:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 126,
-          "id:3": 401,
-          "sizeY:3": 24
-        },
-        "33:10": {
-          "sizeX:3": 36,
-          "x:3": -204,
-          "y:3": 156,
-          "id:3": 405,
-          "sizeY:3": 36
-        },
-        "34:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 324,
-          "id:3": 409,
-          "sizeY:3": 24
-        },
-        "35:10": {
-          "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 324,
-          "id:3": 410,
-          "sizeY:3": 24
-        },
-        "36:10": {
-          "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 288,
-          "id:3": 415,
-          "sizeY:3": 24
-        },
-        "37:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 162,
-          "id:3": 488,
-          "sizeY:3": 24
-        },
-        "38:10": {
-          "sizeX:3": 24,
-          "x:3": 84,
-          "y:3": 72,
-          "id:3": 491,
-          "sizeY:3": 24
-        },
-        "39:10": {
-          "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 216,
-          "id:3": 495,
-          "sizeY:3": 24
-        },
-        "40:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 18,
-          "id:3": 496,
-          "sizeY:3": 24
-        },
-        "41:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 216,
-          "id:3": 530,
-          "sizeY:3": 24
-        },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 144,
-          "id:3": 547,
-          "sizeY:3": 24
-        },
-        "43:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 324,
-          "id:3": 552,
-          "sizeY:3": 24
-        },
-        "44:10": {
-          "sizeX:3": 24,
-          "x:3": -90,
-          "y:3": 180,
-          "id:3": 558,
-          "sizeY:3": 24
-        },
-        "45:10": {
-          "sizeX:3": 24,
-          "x:3": -138,
-          "y:3": 54,
-          "id:3": 670,
-          "sizeY:3": 24
-        },
-        "46:10": {
-          "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 78,
-          "id:3": 687,
-          "sizeY:3": 24
-        },
-        "47:10": {
-          "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": 78,
-          "id:3": 692,
-          "sizeY:3": 24
-        },
-        "48:10": {
-          "sizeX:3": 36,
-          "x:3": -204,
-          "y:3": -12,
-          "id:3": 743,
-          "sizeY:3": 36
-        },
-        "49:10": {
-          "sizeX:3": 24,
-          "x:3": -90,
-          "y:3": 216,
-          "id:3": 752,
-          "sizeY:3": 24
-        }
-      },
-      "lineID:3": 6,
-      "properties:10": {
-        "betterquesting:10": {
-          "visibility:8": "NORMAL",
-          "name:8": "Genesis",
-          "icon:10": {
-            "id:8": "minecraft:air",
-            "Count:3": 0,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "bg_image:8": "",
-          "bg_size:3": 256,
-          "desc:8": "\n\nWelcome to §5Omnifactory§r, I\u0027ll be your guide."
-        }
-      },
-      "order:3": 0
-    },
-    "1:10": {
-      "quests:9": {
-        "0:10": {
           "sizeX:3": 24,
           "x:3": -492,
           "y:3": 144,
@@ -46905,15 +46521,15 @@
         },
         "42:10": {
           "sizeX:3": 36,
-          "x:3": -882,
-          "y:3": 66,
+          "x:3": -881,
+          "y:3": 52,
           "id:3": 402,
           "sizeY:3": 36
         },
         "43:10": {
           "sizeX:3": 36,
-          "x:3": -882,
-          "y:3": 18,
+          "x:3": -881,
+          "y:3": 12,
           "id:3": 403,
           "sizeY:3": 36
         },
@@ -47098,6 +46714,13 @@
           "y:3": 222,
           "id:3": 752,
           "sizeY:3": 24
+        },
+        "70:10": {
+          "sizeX:3": 35,
+          "x:3": -881,
+          "y:3": 92,
+          "id:3": 755,
+          "sizeY:3": 35
         }
       },
       "lineID:3": 0,
@@ -47118,7 +46741,7 @@
       },
       "order:3": 1
     },
-    "2:10": {
+    "1:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -47640,7 +47263,7 @@
         },
         "74:10": {
           "sizeX:3": 36,
-          "x:3": 24,
+          "x:3": -24,
           "y:3": 28,
           "id:3": 319,
           "sizeY:3": 36
@@ -47737,97 +47360,90 @@
           "sizeY:3": 24
         },
         "88:10": {
-          "sizeX:3": 36,
-          "x:3": -24,
-          "y:3": 28,
-          "id:3": 538,
-          "sizeY:3": 36
-        },
-        "89:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 132,
           "id:3": 540,
           "sizeY:3": 24
         },
-        "90:10": {
+        "89:10": {
           "sizeX:3": 36,
-          "x:3": 72,
+          "x:3": 24,
           "y:3": 28,
           "id:3": 541,
           "sizeY:3": 36
         },
-        "91:10": {
+        "90:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": 288,
           "id:3": 546,
           "sizeY:3": 24
         },
-        "92:10": {
+        "91:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 264,
           "id:3": 550,
           "sizeY:3": 24
         },
-        "93:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": -208,
           "y:3": 324,
           "id:3": 551,
           "sizeY:3": 24
         },
-        "94:10": {
+        "93:10": {
           "sizeX:3": 36,
           "x:3": -72,
           "y:3": 28,
           "id:3": 556,
           "sizeY:3": 36
         },
-        "95:10": {
+        "94:10": {
           "sizeX:3": 36,
           "x:3": -120,
           "y:3": 28,
           "id:3": 609,
           "sizeY:3": 36
         },
-        "96:10": {
+        "95:10": {
           "sizeX:3": 24,
           "x:3": -414,
           "y:3": 0,
           "id:3": 727,
           "sizeY:3": 24
         },
-        "97:10": {
+        "96:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 36,
           "id:3": 728,
           "sizeY:3": 24
         },
-        "98:10": {
+        "97:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 180,
           "id:3": 729,
           "sizeY:3": 24
         },
-        "99:10": {
+        "98:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": 0,
           "id:3": 730,
           "sizeY:3": 24
         },
-        "100:10": {
+        "99:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 0,
           "id:3": 731,
           "sizeY:3": 24
         },
-        "101:10": {
+        "100:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 84,
@@ -47853,406 +47469,7 @@
       },
       "order:3": 2
     },
-    "3:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 24,
-          "x:3": 504,
-          "y:3": 300,
-          "id:3": 67,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 408,
-          "id:3": 75,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 552,
-          "id:3": 113,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 456,
-          "id:3": 114,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 600,
-          "id:3": 115,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 36,
-          "x:3": 282,
-          "y:3": 594,
-          "id:3": 116,
-          "sizeY:3": 36
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 600,
-          "id:3": 125,
-          "sizeY:3": 24
-        },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": 636,
-          "y:3": 420,
-          "id:3": 202,
-          "sizeY:3": 24
-        },
-        "8:10": {
-          "sizeX:3": 24,
-          "x:3": 672,
-          "y:3": 456,
-          "id:3": 204,
-          "sizeY:3": 24
-        },
-        "9:10": {
-          "sizeX:3": 24,
-          "x:3": 672,
-          "y:3": 420,
-          "id:3": 205,
-          "sizeY:3": 24
-        },
-        "10:10": {
-          "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 504,
-          "id:3": 206,
-          "sizeY:3": 24
-        },
-        "11:10": {
-          "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 420,
-          "id:3": 207,
-          "sizeY:3": 24
-        },
-        "12:10": {
-          "sizeX:3": 24,
-          "x:3": 600,
-          "y:3": 420,
-          "id:3": 208,
-          "sizeY:3": 24
-        },
-        "13:10": {
-          "sizeX:3": 36,
-          "x:3": 474,
-          "y:3": 414,
-          "id:3": 209,
-          "sizeY:3": 36
-        },
-        "14:10": {
-          "sizeX:3": 24,
-          "x:3": 636,
-          "y:3": 384,
-          "id:3": 210,
-          "sizeY:3": 24
-        },
-        "15:10": {
-          "sizeX:3": 24,
-          "x:3": 600,
-          "y:3": 456,
-          "id:3": 211,
-          "sizeY:3": 24
-        },
-        "16:10": {
-          "sizeX:3": 24,
-          "x:3": 636,
-          "y:3": 456,
-          "id:3": 212,
-          "sizeY:3": 24
-        },
-        "17:10": {
-          "sizeX:3": 24,
-          "x:3": 636,
-          "y:3": 552,
-          "id:3": 214,
-          "sizeY:3": 24
-        },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": 600,
-          "y:3": 600,
-          "id:3": 216,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 48,
-          "x:3": 624,
-          "y:3": 636,
-          "id:3": 217,
-          "sizeY:3": 48
-        },
-        "20:10": {
-          "sizeX:3": 24,
-          "x:3": 576,
-          "y:3": 372,
-          "id:3": 219,
-          "sizeY:3": 24
-        },
-        "21:10": {
-          "sizeX:3": 24,
-          "x:3": 636,
-          "y:3": 336,
-          "id:3": 220,
-          "sizeY:3": 24
-        },
-        "22:10": {
-          "sizeX:3": 24,
-          "x:3": 684,
-          "y:3": 336,
-          "id:3": 221,
-          "sizeY:3": 24
-        },
-        "23:10": {
-          "sizeX:3": 24,
-          "x:3": 708,
-          "y:3": 300,
-          "id:3": 222,
-          "sizeY:3": 24
-        },
-        "24:10": {
-          "sizeX:3": 24,
-          "x:3": 708,
-          "y:3": 372,
-          "id:3": 223,
-          "sizeY:3": 24
-        },
-        "25:10": {
-          "sizeX:3": 24,
-          "x:3": 732,
-          "y:3": 336,
-          "id:3": 224,
-          "sizeY:3": 24
-        },
-        "26:10": {
-          "sizeX:3": 24,
-          "x:3": 756,
-          "y:3": 300,
-          "id:3": 225,
-          "sizeY:3": 24
-        },
-        "27:10": {
-          "sizeX:3": 24,
-          "x:3": 756,
-          "y:3": 372,
-          "id:3": 226,
-          "sizeY:3": 24
-        },
-        "28:10": {
-          "sizeX:3": 24,
-          "x:3": 780,
-          "y:3": 336,
-          "id:3": 227,
-          "sizeY:3": 24
-        },
-        "29:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 504,
-          "id:3": 229,
-          "sizeY:3": 24
-        },
-        "30:10": {
-          "sizeX:3": 48,
-          "x:3": 624,
-          "y:3": 492,
-          "id:3": 232,
-          "sizeY:3": 48
-        },
-        "31:10": {
-          "sizeX:3": 24,
-          "x:3": 408,
-          "y:3": 552,
-          "id:3": 262,
-          "sizeY:3": 24
-        },
-        "32:10": {
-          "sizeX:3": 36,
-          "x:3": 282,
-          "y:3": 498,
-          "id:3": 275,
-          "sizeY:3": 36
-        },
-        "33:10": {
-          "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 456,
-          "id:3": 276,
-          "sizeY:3": 24
-        },
-        "34:10": {
-          "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 600,
-          "id:3": 384,
-          "sizeY:3": 24
-        },
-        "35:10": {
-          "sizeX:3": 24,
-          "x:3": 480,
-          "y:3": 600,
-          "id:3": 385,
-          "sizeY:3": 24
-        },
-        "36:10": {
-          "sizeX:3": 48,
-          "x:3": 468,
-          "y:3": 492,
-          "id:3": 386,
-          "sizeY:3": 48
-        },
-        "37:10": {
-          "sizeX:3": 24,
-          "x:3": 372,
-          "y:3": 552,
-          "id:3": 387,
-          "sizeY:3": 24
-        },
-        "38:10": {
-          "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 552,
-          "id:3": 388,
-          "sizeY:3": 24
-        },
-        "39:10": {
-          "sizeX:3": 48,
-          "x:3": 396,
-          "y:3": 492,
-          "id:3": 389,
-          "sizeY:3": 48
-        },
-        "40:10": {
-          "sizeX:3": 24,
-          "x:3": 672,
-          "y:3": 600,
-          "id:3": 395,
-          "sizeY:3": 24
-        },
-        "41:10": {
-          "sizeX:3": 24,
-          "x:3": 600,
-          "y:3": 552,
-          "id:3": 400,
-          "sizeY:3": 24
-        },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": 528,
-          "y:3": 372,
-          "id:3": 510,
-          "sizeY:3": 24
-        },
-        "43:10": {
-          "sizeX:3": 24,
-          "x:3": 504,
-          "y:3": 336,
-          "id:3": 511,
-          "sizeY:3": 24
-        },
-        "44:10": {
-          "sizeX:3": 24,
-          "x:3": 672,
-          "y:3": 552,
-          "id:3": 690,
-          "sizeY:3": 24
-        },
-        "45:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 408,
-          "id:3": 747,
-          "sizeY:3": 24
-        },
-        "46:10": {
-          "sizeX:3": 24,
-          "x:3": 552,
-          "y:3": 456,
-          "id:3": 754,
-          "sizeY:3": 24
-        },
-        "47:10": {
-          "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 648,
-          "id:3": 757,
-          "sizeY:3": 24
-        },
-        "48:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 648,
-          "id:3": 758,
-          "sizeY:3": 24
-        },
-        "49:10": {
-          "sizeX:3": 24,
-          "x:3": 480,
-          "y:3": 372,
-          "id:3": 759,
-          "sizeY:3": 24
-        },
-        "50:10": {
-          "sizeX:3": 24,
-          "x:3": 552,
-          "y:3": 648,
-          "id:3": 760,
-          "sizeY:3": 24
-        },
-        "51:10": {
-          "sizeX:3": 24,
-          "x:3": 552,
-          "y:3": 552,
-          "id:3": 761,
-          "sizeY:3": 24
-        },
-        "52:10": {
-          "sizeX:3": 36,
-          "x:3": 546,
-          "y:3": 498,
-          "id:3": 762,
-          "sizeY:3": 36
-        },
-        "53:10": {
-          "sizeX:3": 18,
-          "x:3": 529,
-          "y:3": 459,
-          "id:3": 763,
-          "sizeY:3": 18
-        }
-      },
-      "lineID:3": 7,
-      "properties:10": {
-        "betterquesting:10": {
-          "visibility:8": "ALWAYS",
-          "name:8": "Into The Microverse",
-          "icon:10": {
-            "id:8": "minecraft:air",
-            "Count:3": 0,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "bg_image:8": "",
-          "bg_size:3": 256,
-          "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\nEither way, it\u0027s time to start mining §emicroverses§r."
-        }
-      },
-      "order:3": 3
-    },
-    "4:10": {
+    "2:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -49141,7 +48358,721 @@
       },
       "order:3": 4
     },
-    "5:10": {
+    "3:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 188,
+          "id:3": 8,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 97,
+          "id:3": 10,
+          "sizeY:3": 32
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 60,
+          "id:3": 11,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 60,
+          "id:3": 45,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 132,
+          "id:3": 47,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 96,
+          "id:3": 48,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 60,
+          "id:3": 60,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 134,
+          "id:3": 65,
+          "sizeY:3": 32
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": 96,
+          "id:3": 72,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 160,
+          "id:3": 76,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": 60,
+          "id:3": 82,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": 132,
+          "id:3": 86,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": 160,
+          "id:3": 87,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": 188,
+          "id:3": 89,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 96,
+          "id:3": 90,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 216,
+          "id:3": 132,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 132,
+          "id:3": 133,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 60,
+          "id:3": 134,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 160,
+          "id:3": 135,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 244,
+          "id:3": 155,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 60,
+          "id:3": 156,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 96,
+          "id:3": 157,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 96,
+          "id:3": 158,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 132,
+          "id:3": 159,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 60,
+          "id:3": 183,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 60,
+          "id:3": 188,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 160,
+          "id:3": 191,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 244,
+          "id:3": 192,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 132,
+          "id:3": 197,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 188,
+          "id:3": 203,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 396,
+          "id:3": 213,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 60,
+          "id:3": 217,
+          "sizeY:3": 32
+        },
+        "32:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 316,
+          "id:3": 238,
+          "sizeY:3": 32
+        },
+        "33:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 352,
+          "id:3": 240,
+          "sizeY:3": 32
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 60,
+          "id:3": 242,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 276,
+          "id:3": 243,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 170,
+          "id:3": 251,
+          "sizeY:3": 32
+        },
+        "37:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 206,
+          "id:3": 252,
+          "sizeY:3": 32
+        },
+        "38:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 243,
+          "id:3": 254,
+          "sizeY:3": 32
+        },
+        "39:10": {
+          "sizeX:3": 36,
+          "x:3": 402,
+          "y:3": 280,
+          "id:3": 256,
+          "sizeY:3": 32
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 132,
+          "id:3": 261,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 216,
+          "id:3": 264,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 244,
+          "id:3": 268,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 272,
+          "id:3": 269,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 96,
+          "id:3": 283,
+          "sizeY:3": 24
+        },
+        "45:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 240,
+          "id:3": 288,
+          "sizeY:3": 24
+        },
+        "46:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 272,
+          "id:3": 292,
+          "sizeY:3": 24
+        },
+        "47:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 168,
+          "id:3": 311,
+          "sizeY:3": 24
+        },
+        "48:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 168,
+          "id:3": 312,
+          "sizeY:3": 24
+        },
+        "49:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 204,
+          "id:3": 313,
+          "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 204,
+          "id:3": 323,
+          "sizeY:3": 24
+        },
+        "51:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 240,
+          "id:3": 324,
+          "sizeY:3": 24
+        },
+        "52:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 272,
+          "id:3": 332,
+          "sizeY:3": 24
+        },
+        "53:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 300,
+          "id:3": 333,
+          "sizeY:3": 24
+        },
+        "54:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 328,
+          "id:3": 334,
+          "sizeY:3": 24
+        },
+        "55:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 356,
+          "id:3": 335,
+          "sizeY:3": 24
+        },
+        "56:10": {
+          "sizeX:3": 20,
+          "x:3": -10,
+          "y:3": 358,
+          "id:3": 392,
+          "sizeY:3": 20
+        },
+        "57:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 60,
+          "id:3": 488,
+          "sizeY:3": 24
+        },
+        "58:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 396,
+          "id:3": 492,
+          "sizeY:3": 24
+        },
+        "59:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 188,
+          "id:3": 500,
+          "sizeY:3": 24
+        },
+        "60:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 216,
+          "id:3": 520,
+          "sizeY:3": 24
+        },
+        "61:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 168,
+          "id:3": 521,
+          "sizeY:3": 24
+        },
+        "62:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 244,
+          "id:3": 523,
+          "sizeY:3": 24
+        },
+        "63:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 272,
+          "id:3": 524,
+          "sizeY:3": 24
+        },
+        "64:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 216,
+          "id:3": 525,
+          "sizeY:3": 24
+        },
+        "65:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 96,
+          "id:3": 526,
+          "sizeY:3": 24
+        },
+        "66:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 60,
+          "id:3": 528,
+          "sizeY:3": 24
+        },
+        "67:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 96,
+          "id:3": 529,
+          "sizeY:3": 24
+        },
+        "68:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 132,
+          "id:3": 530,
+          "sizeY:3": 24
+        },
+        "69:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 300,
+          "id:3": 531,
+          "sizeY:3": 24
+        },
+        "70:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 96,
+          "id:3": 532,
+          "sizeY:3": 24
+        },
+        "71:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 96,
+          "id:3": 533,
+          "sizeY:3": 24
+        },
+        "72:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 300,
+          "id:3": 534,
+          "sizeY:3": 24
+        },
+        "73:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 328,
+          "id:3": 535,
+          "sizeY:3": 24
+        },
+        "74:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 96,
+          "id:3": 544,
+          "sizeY:3": 24
+        },
+        "75:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 132,
+          "id:3": 545,
+          "sizeY:3": 24
+        },
+        "76:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 60,
+          "id:3": 552,
+          "sizeY:3": 24
+        },
+        "77:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 96,
+          "id:3": 553,
+          "sizeY:3": 24
+        },
+        "78:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 132,
+          "id:3": 554,
+          "sizeY:3": 24
+        },
+        "79:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 396,
+          "id:3": 556,
+          "sizeY:3": 24
+        },
+        "80:10": {
+          "sizeX:3": 48,
+          "x:3": 396,
+          "y:3": 388,
+          "id:3": 605,
+          "sizeY:3": 48
+        },
+        "81:10": {
+          "sizeX:3": 24,
+          "x:3": 360,
+          "y:3": 240,
+          "id:3": 608,
+          "sizeY:3": 24
+        },
+        "82:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 96,
+          "id:3": 609,
+          "sizeY:3": 24
+        },
+        "83:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 396,
+          "id:3": 692,
+          "sizeY:3": 24
+        },
+        "84:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 168,
+          "id:3": 693,
+          "sizeY:3": 24
+        },
+        "85:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 168,
+          "id:3": 694,
+          "sizeY:3": 24
+        },
+        "86:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 204,
+          "id:3": 695,
+          "sizeY:3": 24
+        },
+        "87:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 60,
+          "id:3": 744,
+          "sizeY:3": 24
+        },
+        "88:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 168,
+          "id:3": 753,
+          "sizeY:3": 24
+        },
+        "89:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 396,
+          "id:3": 755,
+          "sizeY:3": 24
+        },
+        "90:10": {
+          "sizeX:3": 20,
+          "x:3": -264,
+          "y:3": 134,
+          "id:3": 764,
+          "sizeY:3": 20
+        },
+        "91:10": {
+          "sizeX:3": 24,
+          "x:3": -264,
+          "y:3": 60,
+          "id:3": 765,
+          "sizeY:3": 24
+        },
+        "92:10": {
+          "sizeX:3": 20,
+          "x:3": -264,
+          "y:3": 162,
+          "id:3": 766,
+          "sizeY:3": 20
+        },
+        "93:10": {
+          "sizeX:3": 20,
+          "x:3": -226,
+          "y:3": 190,
+          "id:3": 767,
+          "sizeY:3": 20
+        },
+        "94:10": {
+          "sizeX:3": 20,
+          "x:3": -190,
+          "y:3": 218,
+          "id:3": 768,
+          "sizeY:3": 20
+        },
+        "95:10": {
+          "sizeX:3": 20,
+          "x:3": -154,
+          "y:3": 246,
+          "id:3": 769,
+          "sizeY:3": 20
+        },
+        "96:10": {
+          "sizeX:3": 20,
+          "x:3": -118,
+          "y:3": 274,
+          "id:3": 770,
+          "sizeY:3": 20
+        },
+        "97:10": {
+          "sizeX:3": 20,
+          "x:3": -82,
+          "y:3": 302,
+          "id:3": 771,
+          "sizeY:3": 20
+        },
+        "98:10": {
+          "sizeX:3": 20,
+          "x:3": -46,
+          "y:3": 330,
+          "id:3": 772,
+          "sizeY:3": 20
+        }
+      },
+      "lineID:3": 3,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "ALWAYS",
+          "name:8": "Progression",
+          "icon:10": {
+            "id:8": "minecraft:air",
+            "Count:3": 0,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress."
+        }
+      },
+      "order:3": 7
+    },
+    "4:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -49793,6 +49724,13 @@
           "y:3": 156,
           "id:3": 750,
           "sizeY:3": 24
+        },
+        "93:10": {
+          "sizeX:3": 20,
+          "x:3": -183,
+          "y:3": 158,
+          "id:3": 753,
+          "sizeY:3": 20
         }
       },
       "lineID:3": 4,
@@ -49813,7 +49751,7 @@
       },
       "order:3": 5
     },
-    "6:10": {
+    "5:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 48,
@@ -50583,707 +50521,357 @@
       },
       "order:3": 6
     },
-    "7:10": {
+    "6:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 188,
-          "id:3": 8,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": -24,
+          "y:3": -24,
+          "id:3": 3,
+          "sizeY:3": 48
         },
         "1:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 97,
-          "id:3": 10,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 36,
+          "id:3": 4,
+          "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 60,
-          "id:3": 11,
+          "x:3": -108,
+          "y:3": 72,
+          "id:3": 5,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 60,
-          "id:3": 45,
+          "x:3": -12,
+          "y:3": 144,
+          "id:3": 6,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 132,
-          "id:3": 47,
+          "x:3": 96,
+          "y:3": 180,
+          "id:3": 7,
           "sizeY:3": 24
         },
         "5:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 96,
-          "id:3": 48,
-          "sizeY:3": 24
+          "sizeX:3": 36,
+          "x:3": -204,
+          "y:3": 72,
+          "id:3": 9,
+          "sizeY:3": 36
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 60,
-          "id:3": 60,
+          "x:3": -12,
+          "y:3": 216,
+          "id:3": 11,
           "sizeY:3": 24
         },
         "7:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 134,
-          "id:3": 65,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 108,
+          "id:3": 12,
+          "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": 96,
-          "id:3": 72,
+          "x:3": 114,
+          "y:3": 54,
+          "id:3": 13,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 160,
-          "id:3": 76,
+          "x:3": 168,
+          "y:3": 36,
+          "id:3": 14,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": 60,
-          "id:3": 82,
+          "x:3": 168,
+          "y:3": 108,
+          "id:3": 15,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": 132,
-          "id:3": 86,
+          "x:3": 168,
+          "y:3": 144,
+          "id:3": 16,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": 160,
-          "id:3": 87,
+          "x:3": 168,
+          "y:3": 180,
+          "id:3": 17,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": 188,
-          "id:3": 89,
+          "x:3": 168,
+          "y:3": 252,
+          "id:3": 18,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 96,
-          "id:3": 90,
+          "x:3": 168,
+          "y:3": 216,
+          "id:3": 20,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 216,
-          "id:3": 132,
+          "x:3": -54,
+          "y:3": 180,
+          "id:3": 24,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 132,
-          "id:3": 133,
+          "x:3": -60,
+          "y:3": 18,
+          "id:3": 25,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 60,
-          "id:3": 134,
+          "x:3": 96,
+          "y:3": 108,
+          "id:3": 37,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 160,
-          "id:3": 135,
+          "x:3": -12,
+          "y:3": 288,
+          "id:3": 38,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
           "x:3": -12,
-          "y:3": 244,
-          "id:3": 155,
+          "y:3": 252,
+          "id:3": 40,
           "sizeY:3": 24
         },
         "20:10": {
-          "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 60,
-          "id:3": 156,
-          "sizeY:3": 24
+          "sizeX:3": 36,
+          "x:3": -204,
+          "y:3": 198,
+          "id:3": 43,
+          "sizeY:3": 36
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 96,
-          "id:3": 157,
+          "x:3": -36,
+          "y:3": 78,
+          "id:3": 50,
           "sizeY:3": 24
         },
         "22:10": {
-          "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 96,
-          "id:3": 158,
-          "sizeY:3": 24
+          "sizeX:3": 72,
+          "x:3": -36,
+          "y:3": 360,
+          "id:3": 56,
+          "sizeY:3": 72
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 132,
-          "id:3": 159,
+          "x:3": -48,
+          "y:3": 288,
+          "id:3": 58,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 60,
-          "id:3": 183,
+          "x:3": -12,
+          "y:3": 180,
+          "id:3": 66,
           "sizeY:3": 24
         },
         "25:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 60,
-          "id:3": 188,
-          "sizeY:3": 24
+          "sizeX:3": 36,
+          "x:3": -204,
+          "y:3": 30,
+          "id:3": 141,
+          "sizeY:3": 36
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 160,
-          "id:3": 191,
+          "x:3": -96,
+          "y:3": 0,
+          "id:3": 353,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 244,
-          "id:3": 192,
+          "x:3": 72,
+          "y:3": 0,
+          "id:3": 368,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 132,
-          "id:3": 197,
+          "x:3": 48,
+          "y:3": 78,
+          "id:3": 370,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 188,
-          "id:3": 203,
+          "x:3": 132,
+          "y:3": 108,
+          "id:3": 371,
           "sizeY:3": 24
         },
         "30:10": {
-          "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 396,
-          "id:3": 213,
-          "sizeY:3": 24
+          "sizeX:3": 36,
+          "x:3": -204,
+          "y:3": 114,
+          "id:3": 393,
+          "sizeY:3": 36
         },
         "31:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 60,
-          "id:3": 217,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 288,
+          "id:3": 394,
+          "sizeY:3": 24
         },
         "32:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 316,
-          "id:3": 238,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 126,
+          "id:3": 401,
+          "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 352,
-          "id:3": 240,
-          "sizeY:3": 32
+          "x:3": -204,
+          "y:3": 156,
+          "id:3": 405,
+          "sizeY:3": 36
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 60,
-          "id:3": 242,
+          "x:3": -12,
+          "y:3": 324,
+          "id:3": 409,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 276,
-          "id:3": 243,
+          "x:3": -48,
+          "y:3": 324,
+          "id:3": 410,
           "sizeY:3": 24
         },
         "36:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 170,
-          "id:3": 251,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 288,
+          "id:3": 415,
+          "sizeY:3": 24
         },
         "37:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 206,
-          "id:3": 252,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 162,
+          "id:3": 488,
+          "sizeY:3": 24
         },
         "38:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 243,
-          "id:3": 254,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 72,
+          "id:3": 491,
+          "sizeY:3": 24
         },
         "39:10": {
-          "sizeX:3": 36,
-          "x:3": 402,
-          "y:3": 280,
-          "id:3": 256,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 216,
+          "id:3": 495,
+          "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 132,
-          "id:3": 261,
+          "x:3": 36,
+          "y:3": 18,
+          "id:3": 496,
           "sizeY:3": 24
         },
         "41:10": {
           "sizeX:3": 24,
-          "x:3": -48,
+          "x:3": 96,
           "y:3": 216,
-          "id:3": 264,
+          "id:3": 530,
           "sizeY:3": 24
         },
         "42:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 244,
-          "id:3": 268,
+          "x:3": 132,
+          "y:3": 144,
+          "id:3": 547,
           "sizeY:3": 24
         },
         "43:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 272,
-          "id:3": 269,
+          "x:3": 24,
+          "y:3": 324,
+          "id:3": 552,
           "sizeY:3": 24
         },
         "44:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 96,
-          "id:3": 283,
+          "x:3": -90,
+          "y:3": 180,
+          "id:3": 558,
           "sizeY:3": 24
         },
         "45:10": {
           "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 240,
-          "id:3": 288,
+          "x:3": -138,
+          "y:3": 54,
+          "id:3": 670,
           "sizeY:3": 24
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 272,
-          "id:3": 292,
+          "x:3": -72,
+          "y:3": 78,
+          "id:3": 687,
           "sizeY:3": 24
         },
         "47:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 168,
-          "id:3": 311,
-          "sizeY:3": 24
-        },
-        "48:10": {
-          "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 168,
-          "id:3": 312,
-          "sizeY:3": 24
-        },
-        "49:10": {
-          "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 204,
-          "id:3": 313,
-          "sizeY:3": 24
-        },
-        "50:10": {
-          "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 204,
-          "id:3": 323,
-          "sizeY:3": 24
-        },
-        "51:10": {
-          "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 240,
-          "id:3": 324,
-          "sizeY:3": 24
-        },
-        "52:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 272,
-          "id:3": 332,
-          "sizeY:3": 24
-        },
-        "53:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 300,
-          "id:3": 333,
-          "sizeY:3": 24
-        },
-        "54:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 328,
-          "id:3": 334,
-          "sizeY:3": 24
-        },
-        "55:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 356,
-          "id:3": 335,
-          "sizeY:3": 24
-        },
-        "56:10": {
-          "sizeX:3": 20,
-          "x:3": -10,
-          "y:3": 358,
-          "id:3": 392,
-          "sizeY:3": 20
-        },
-        "57:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 60,
-          "id:3": 488,
-          "sizeY:3": 24
-        },
-        "58:10": {
-          "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 396,
-          "id:3": 492,
-          "sizeY:3": 24
-        },
-        "59:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 188,
-          "id:3": 500,
-          "sizeY:3": 24
-        },
-        "60:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 216,
-          "id:3": 520,
-          "sizeY:3": 24
-        },
-        "61:10": {
-          "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 168,
-          "id:3": 521,
-          "sizeY:3": 24
-        },
-        "62:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 244,
-          "id:3": 523,
-          "sizeY:3": 24
-        },
-        "63:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 272,
-          "id:3": 524,
-          "sizeY:3": 24
-        },
-        "64:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 216,
-          "id:3": 525,
-          "sizeY:3": 24
-        },
-        "65:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 96,
-          "id:3": 526,
-          "sizeY:3": 24
-        },
-        "66:10": {
-          "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 60,
-          "id:3": 528,
-          "sizeY:3": 24
-        },
-        "67:10": {
-          "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 96,
-          "id:3": 529,
-          "sizeY:3": 24
-        },
-        "68:10": {
-          "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 132,
-          "id:3": 530,
-          "sizeY:3": 24
-        },
-        "69:10": {
-          "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 300,
-          "id:3": 531,
-          "sizeY:3": 24
-        },
-        "70:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 96,
-          "id:3": 532,
-          "sizeY:3": 24
-        },
-        "71:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 96,
-          "id:3": 533,
-          "sizeY:3": 24
-        },
-        "72:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 300,
-          "id:3": 534,
-          "sizeY:3": 24
-        },
-        "73:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 328,
-          "id:3": 535,
-          "sizeY:3": 24
-        },
-        "74:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 96,
-          "id:3": 544,
-          "sizeY:3": 24
-        },
-        "75:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 132,
-          "id:3": 545,
-          "sizeY:3": 24
-        },
-        "76:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 60,
-          "id:3": 552,
-          "sizeY:3": 24
-        },
-        "77:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 96,
-          "id:3": 553,
-          "sizeY:3": 24
-        },
-        "78:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 132,
-          "id:3": 554,
-          "sizeY:3": 24
-        },
-        "79:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 396,
-          "id:3": 556,
-          "sizeY:3": 24
-        },
-        "80:10": {
-          "sizeX:3": 48,
-          "x:3": 396,
-          "y:3": 388,
-          "id:3": 605,
-          "sizeY:3": 48
-        },
-        "81:10": {
-          "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 240,
-          "id:3": 608,
-          "sizeY:3": 24
-        },
-        "82:10": {
-          "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 96,
-          "id:3": 609,
-          "sizeY:3": 24
-        },
-        "83:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 396,
+          "x:3": 12,
+          "y:3": 78,
           "id:3": 692,
           "sizeY:3": 24
         },
-        "84:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 168,
-          "id:3": 693,
-          "sizeY:3": 24
-        },
-        "85:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 168,
-          "id:3": 694,
-          "sizeY:3": 24
-        },
-        "86:10": {
-          "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 204,
-          "id:3": 695,
-          "sizeY:3": 24
-        },
-        "87:10": {
-          "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 60,
-          "id:3": 744,
-          "sizeY:3": 24
-        },
-        "88:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 168,
-          "id:3": 753,
-          "sizeY:3": 24
-        },
-        "89:10": {
-          "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 396,
-          "id:3": 755,
-          "sizeY:3": 24
-        },
-        "90:10": {
-          "sizeX:3": 20,
-          "x:3": -264,
-          "y:3": 134,
-          "id:3": 764,
-          "sizeY:3": 20
-        },
-        "91:10": {
-          "sizeX:3": 24,
-          "x:3": -264,
-          "y:3": 60,
-          "id:3": 765,
-          "sizeY:3": 24
-        },
-        "92:10": {
-          "sizeX:3": 20,
-          "x:3": -264,
-          "y:3": 162,
-          "id:3": 766,
-          "sizeY:3": 20
-        },
-        "93:10": {
-          "sizeX:3": 20,
-          "x:3": -226,
-          "y:3": 190,
-          "id:3": 767,
-          "sizeY:3": 20
-        },
-        "94:10": {
-          "sizeX:3": 20,
-          "x:3": -190,
-          "y:3": 218,
-          "id:3": 768,
-          "sizeY:3": 20
-        },
-        "95:10": {
-          "sizeX:3": 20,
-          "x:3": -154,
-          "y:3": 246,
-          "id:3": 769,
-          "sizeY:3": 20
-        },
-        "96:10": {
-          "sizeX:3": 20,
-          "x:3": -118,
-          "y:3": 274,
-          "id:3": 770,
-          "sizeY:3": 20
-        },
-        "97:10": {
-          "sizeX:3": 20,
-          "x:3": -82,
-          "y:3": 302,
-          "id:3": 771,
-          "sizeY:3": 20
-        },
-        "98:10": {
-          "sizeX:3": 20,
-          "x:3": -46,
-          "y:3": 330,
-          "id:3": 772,
-          "sizeY:3": 20
+        "48:10": {
+          "sizeX:3": 36,
+          "x:3": -204,
+          "y:3": -12,
+          "id:3": 743,
+          "sizeY:3": 36
         }
       },
-      "lineID:3": 3,
+      "lineID:3": 6,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "ALWAYS",
-          "name:8": "Progression",
+          "visibility:8": "NORMAL",
+          "name:8": "Genesis",
           "icon:10": {
             "id:8": "minecraft:air",
             "Count:3": 0,
@@ -51292,10 +50880,402 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress."
+          "desc:8": "\n\nWelcome to §5Omnifactory§r, I\u0027ll be your guide."
         }
       },
-      "order:3": 7
+      "order:3": 0
+    },
+    "7:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": 504,
+          "y:3": 300,
+          "id:3": 67,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 408,
+          "id:3": 75,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 552,
+          "id:3": 113,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 456,
+          "id:3": 114,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 600,
+          "id:3": 115,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 36,
+          "x:3": 282,
+          "y:3": 594,
+          "id:3": 116,
+          "sizeY:3": 36
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 600,
+          "id:3": 125,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 636,
+          "y:3": 420,
+          "id:3": 202,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 672,
+          "y:3": 456,
+          "id:3": 204,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 672,
+          "y:3": 420,
+          "id:3": 205,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 336,
+          "y:3": 504,
+          "id:3": 206,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": 336,
+          "y:3": 420,
+          "id:3": 207,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": 600,
+          "y:3": 420,
+          "id:3": 208,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 36,
+          "x:3": 474,
+          "y:3": 414,
+          "id:3": 209,
+          "sizeY:3": 36
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": 636,
+          "y:3": 384,
+          "id:3": 210,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": 600,
+          "y:3": 456,
+          "id:3": 211,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 636,
+          "y:3": 456,
+          "id:3": 212,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 636,
+          "y:3": 552,
+          "id:3": 214,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": 600,
+          "y:3": 600,
+          "id:3": 216,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 48,
+          "x:3": 624,
+          "y:3": 636,
+          "id:3": 217,
+          "sizeY:3": 48
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": 576,
+          "y:3": 372,
+          "id:3": 219,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 636,
+          "y:3": 336,
+          "id:3": 220,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": 684,
+          "y:3": 336,
+          "id:3": 221,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": 708,
+          "y:3": 300,
+          "id:3": 222,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 708,
+          "y:3": 372,
+          "id:3": 223,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": 732,
+          "y:3": 336,
+          "id:3": 224,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": 756,
+          "y:3": 300,
+          "id:3": 225,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 756,
+          "y:3": 372,
+          "id:3": 226,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": 780,
+          "y:3": 336,
+          "id:3": 227,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 504,
+          "id:3": 229,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 48,
+          "x:3": 624,
+          "y:3": 492,
+          "id:3": 232,
+          "sizeY:3": 48
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": 408,
+          "y:3": 552,
+          "id:3": 262,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 36,
+          "x:3": 282,
+          "y:3": 498,
+          "id:3": 275,
+          "sizeY:3": 36
+        },
+        "33:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 456,
+          "id:3": 276,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": 336,
+          "y:3": 600,
+          "id:3": 384,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 480,
+          "y:3": 600,
+          "id:3": 385,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 48,
+          "x:3": 468,
+          "y:3": 492,
+          "id:3": 386,
+          "sizeY:3": 48
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 372,
+          "y:3": 552,
+          "id:3": 387,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 336,
+          "y:3": 552,
+          "id:3": 388,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 48,
+          "x:3": 396,
+          "y:3": 492,
+          "id:3": 389,
+          "sizeY:3": 48
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 672,
+          "y:3": 600,
+          "id:3": 395,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": 600,
+          "y:3": 552,
+          "id:3": 400,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": 528,
+          "y:3": 372,
+          "id:3": 510,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
+          "x:3": 504,
+          "y:3": 336,
+          "id:3": 511,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "sizeX:3": 24,
+          "x:3": 672,
+          "y:3": 552,
+          "id:3": 690,
+          "sizeY:3": 24
+        },
+        "45:10": {
+          "sizeX:3": 24,
+          "x:3": 552,
+          "y:3": 456,
+          "id:3": 754,
+          "sizeY:3": 24
+        },
+        "46:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 648,
+          "id:3": 757,
+          "sizeY:3": 24
+        },
+        "47:10": {
+          "sizeX:3": 24,
+          "x:3": 240,
+          "y:3": 648,
+          "id:3": 758,
+          "sizeY:3": 24
+        },
+        "48:10": {
+          "sizeX:3": 24,
+          "x:3": 480,
+          "y:3": 372,
+          "id:3": 759,
+          "sizeY:3": 24
+        },
+        "49:10": {
+          "sizeX:3": 24,
+          "x:3": 552,
+          "y:3": 648,
+          "id:3": 760,
+          "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": 552,
+          "y:3": 552,
+          "id:3": 761,
+          "sizeY:3": 24
+        },
+        "51:10": {
+          "sizeX:3": 36,
+          "x:3": 546,
+          "y:3": 498,
+          "id:3": 762,
+          "sizeY:3": 36
+        },
+        "52:10": {
+          "sizeX:3": 18,
+          "x:3": 529,
+          "y:3": 459,
+          "id:3": 763,
+          "sizeY:3": 18
+        }
+      },
+      "lineID:3": 7,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "ALWAYS",
+          "name:8": "Into The Microverse",
+          "icon:10": {
+            "id:8": "minecraft:air",
+            "Count:3": 0,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\nEither way, it\u0027s time to start mining §emicroverses§r."
+        }
+      },
+      "order:3": 3
     }
   },
   "questSettings:10": {
