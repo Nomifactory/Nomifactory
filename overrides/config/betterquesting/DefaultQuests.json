@@ -43903,10 +43903,10 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:part",
+              "id:8": "appliedenergistics2:fluid_interface",
               "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 520
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
