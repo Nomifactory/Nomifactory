@@ -5262,7 +5262,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "First Tier Two Circuits",
+          "name:8": "The First Tier Two Circuits",
           "desc:8": "Your first §6Tier Two Circuits§r will require four §6Tier One Circuits§r plus a §6Diode§r made with §6Gallium§r to craft.\n\nThese are rather expensive... Always be on the lookout for a cheaper way to make your circuits- new sets of recipes become available each time you make a new tier of §3Assembling Machine§r."
         }
       },
@@ -5976,7 +5976,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Second Tier Two Circuit",
+          "name:8": "The Second Tier Two Circuits",
           "desc:8": "Three §6Electronic Circuits§r and various other components will create an §6Electronic Processor§r."
         }
       },
@@ -6118,7 +6118,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "First Tier Three Circuit",
+          "name:8": "The First Tier Three Circuits",
           "desc:8": "Your first tier three circuit, formed from four §6Electronic Processors§r and §6Transistors§r, among other ingredients.\n\nAs you\u0027ll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don\u0027t have to make many of them.\n\nPrioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through six will have a circuit recipe instead of requiring processors, arrays, or mainframes.\n\n"
         }
       },
@@ -8899,7 +8899,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "First Tier Four Circuit",
+          "name:8": "The First Tier Four Circuits",
           "desc:8": "This is the first Tier Four circuit, which is used for EV-tier machinery.\n\nThis is the first kind of mainframe you\u0027ll have made, and as you can see it\u0027s extraordinarily expensive. Fortunately, you don\u0027t have to make too many of these.\n\nInvest in the §3HV Assembling Machine§r to unlock the next theme of circuits, which use Epoxy substrates and span tiers two through five."
         }
       },
@@ -18223,7 +18223,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Third Tier Five Circuit",
+          "name:8": "The Third Tier Five Circuits",
           "desc:8": "Nothing new here, just use more standard circuit stuff and you can upgrade several §6Quantum Circuits§r into a §6Quantum Processor§r."
         }
       },
@@ -18287,7 +18287,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Second Tier Six Circuit",
+          "name:8": "The Second Tier Six Circuits",
           "desc:8": "§6Power IC Wafer§r may be new if you skipped some of the battery quests, but it is now relevant. \n\nUsing these wafers, some §6Chrome Plates§r, a §6Quantum Eye§r, and §6Signalum Wire§r, several §6Quantum Processors§r may be upgraded into a §6Quantum Processor Array§r."
         }
       },
@@ -22505,7 +22505,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Fourth And Final Tier Six Circuit",
+          "name:8": "The Fourth And Final Tier Six Circuits",
           "desc:8": "The final form of Tier Six circuits, and the final circuit theme.\n\nUsing your §6Wetware Lifesupport Circuit Boards§r, §6Naquadah Alloy wire§r, §6ASoCs§r, and §9Sterilized Growth Medium§r, you can craft (grow?) these circuits in a ZPM or better §3Assembling Machine§r.\n\nThese are fairly slow to craft and you\u0027re going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
         }
       },
@@ -22569,7 +22569,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Third and Final Tier Seven Circuit",
+          "name:8": "The Third and Final Tier Seven Circuits",
           "desc:8": "§6Wetware Processors§r are made in an §3Assembly Line§r on ZPM power.\n\nAmong the usual kinds of parts, these require §6Frank\u0027N\u0027Zombies§r from a §3Soul Binder§r and §6Silicone Rubber Foils§r."
         }
       },
@@ -22633,7 +22633,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The Second And Final Tier Eight Circuit",
+          "name:8": "The Second And Final Tier Eight Circuits",
           "desc:8": "§6Wetware Processor Arrays§r are made in an §3Assembly Line§r at ZPM or better power.\n\nYou\u0027ll need §6Sentient Ender§r from §3Soul Binders§r and §6Europium§r from the §3Fusion Reactor§r to craft these."
         }
       },
@@ -26238,9 +26238,7 @@
     },
     "396:10": {
       "questID:3": 396,
-      "preRequisites:11": [
-        274
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -26262,43 +26260,17 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "The Ultimate Material*",
+          "name:8": "The Ultimate Material - DUPLICATE",
           "desc:8": ""
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "armorplus:material",
-              "Count:3": 12,
-              "OreDict:8": "",
-              "Damage:3": 4
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "contenttweaker:omnicoin100",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "397:10": {
       "questID:3": 397,
@@ -26516,7 +26488,9 @@
     },
     "400:10": {
       "questID:3": 400,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        55
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -26818,7 +26792,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Crafting Calculator",
-          "desc:8": "This modpack has §aCrafting Calculators§r. It has a steep learning curve, but once you manage to learn how to use it, it\u0027s going to be your trusty companion in calculating recipe costs.\n\nCraft yourself one and hit the book button in the top-left corner for a quick overview how it works."
+          "desc:8": "This modpack has §aCrafting Calculators§r. It has a steep learning curve, but once you manage to learn how to use it, it\u0027s going to be your trusty companion in calculating recipe costs.\n\nCraft yourself one and hit the book button in the top-left corner for a quick overview of how it works."
         }
       },
       "tasks:9": {
@@ -27557,7 +27531,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "LV Centrifuge",
+          "name:8": "LV Centrifuge - DUPLICATE",
           "desc:8": "A §3Centrifuge§r is a machine that separates things by spinning them really fast. These can be used on both items and fluids.\n\nNotably, centrifuges can get you byproducts from the §6Impure§r and §6Purified Dusts§r that you get while processing ores. Centrifuges are generally a better alternative to tossing dusts in a Cauldron."
         }
       },
@@ -32719,7 +32693,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "The First Tier Seven Circuit",
+          "name:8": "The First Tier Seven Circuits",
           "desc:8": "Now that you have an §3Assembly Line§r you can craft the §6Quantum Processor Mainframe§r, the first Tier Seven circuit.\n\nThese are required for crafting the Ludicrous Voltage (LuV) §3Assembling Machine§r.\n\nThis recipe requires some §6Quantum Stars§r, which are made in a §3Chemical Bath§r with a §6Nether Star§r and §9Radon§r. It also needs some §6HSS-G Frames§r and significant quantities of §6SMD Components§r."
         }
       },
@@ -33176,7 +33150,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "Circuit Progression",
+          "name:8": "Circuit Progression - DEPRECATED",
           "desc:8": "There is a §eProgression tab§f that outlines the entire circuit progression of §5Omnifactory§f. Take a look if you haven\u0027t yet!\n\nIt is also recommended that you bookmark this link, which is a chart listing all of the circuits. It will likely help you as you continue to progress through the circuits.\n\n§9§nhttps://i.imgur.com/vF5EDEi.png§r\n\nType it in your browser, keeping in mind that it\u0027s case-sensitive."
         }
       },
@@ -44102,7 +44076,9 @@
     },
     "732:10": {
       "questID:3": 732,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        19
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -45268,8 +45244,8 @@
         },
         "75:10": {
           "sizeX:3": 36,
-          "x:3": 24,
-          "y:3": 28,
+          "x:3": -20,
+          "y:3": 32,
           "id:3": 319,
           "sizeY:3": 36
         },
@@ -45365,90 +45341,83 @@
           "sizeY:3": 24
         },
         "89:10": {
-          "sizeX:3": 36,
-          "x:3": -24,
-          "y:3": 28,
-          "id:3": 538,
-          "sizeY:3": 36
-        },
-        "90:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": 132,
           "id:3": 540,
           "sizeY:3": 24
         },
-        "91:10": {
+        "90:10": {
           "sizeX:3": 36,
-          "x:3": 72,
-          "y:3": 28,
+          "x:3": 28,
+          "y:3": 32,
           "id:3": 541,
           "sizeY:3": 36
         },
-        "92:10": {
+        "91:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": 288,
           "id:3": 546,
           "sizeY:3": 24
         },
-        "93:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 264,
           "id:3": 550,
           "sizeY:3": 24
         },
-        "94:10": {
+        "93:10": {
           "sizeX:3": 24,
           "x:3": -208,
           "y:3": 324,
           "id:3": 551,
           "sizeY:3": 24
         },
-        "95:10": {
+        "94:10": {
           "sizeX:3": 36,
-          "x:3": -72,
-          "y:3": 28,
+          "x:3": -68,
+          "y:3": 32,
           "id:3": 556,
           "sizeY:3": 36
         },
-        "96:10": {
+        "95:10": {
           "sizeX:3": 36,
-          "x:3": -120,
-          "y:3": 28,
+          "x:3": -116,
+          "y:3": 32,
           "id:3": 609,
           "sizeY:3": 36
         },
-        "97:10": {
+        "96:10": {
           "sizeX:3": 24,
           "x:3": -414,
           "y:3": 0,
           "id:3": 727,
           "sizeY:3": 24
         },
-        "98:10": {
+        "97:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 36,
           "id:3": 728,
           "sizeY:3": 24
         },
-        "99:10": {
+        "98:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 180,
           "id:3": 729,
           "sizeY:3": 24
         },
-        "100:10": {
+        "99:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": 0,
           "id:3": 730,
           "sizeY:3": 24
         },
-        "101:10": {
+        "100:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 0,
@@ -49853,355 +49822,362 @@
         },
         "80:10": {
           "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 538,
+          "sizeY:3": 24
+        },
+        "81:10": {
+          "sizeX:3": 24,
           "x:3": 408,
           "y:3": 84,
           "id:3": 557,
           "sizeY:3": 24
         },
-        "81:10": {
+        "82:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": 120,
           "id:3": 561,
           "sizeY:3": 24
         },
-        "82:10": {
+        "83:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": 120,
           "id:3": 562,
           "sizeY:3": 24
         },
-        "83:10": {
+        "84:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 12,
           "id:3": 563,
           "sizeY:3": 24
         },
-        "84:10": {
+        "85:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 12,
           "id:3": 565,
           "sizeY:3": 24
         },
-        "85:10": {
+        "86:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 48,
           "id:3": 566,
           "sizeY:3": 24
         },
-        "86:10": {
+        "87:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 48,
           "id:3": 567,
           "sizeY:3": 24
         },
-        "87:10": {
+        "88:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 12,
           "id:3": 568,
           "sizeY:3": 24
         },
-        "88:10": {
+        "89:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 12,
           "id:3": 569,
           "sizeY:3": 24
         },
-        "89:10": {
+        "90:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 48,
           "id:3": 570,
           "sizeY:3": 24
         },
-        "90:10": {
+        "91:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 48,
           "id:3": 571,
           "sizeY:3": 24
         },
-        "91:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 84,
           "id:3": 572,
           "sizeY:3": 24
         },
-        "92:10": {
+        "93:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 84,
           "id:3": 573,
           "sizeY:3": 24
         },
-        "93:10": {
+        "94:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 120,
           "id:3": 574,
           "sizeY:3": 24
         },
-        "94:10": {
+        "95:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 120,
           "id:3": 575,
           "sizeY:3": 24
         },
-        "95:10": {
+        "96:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 84,
           "id:3": 576,
           "sizeY:3": 24
         },
-        "96:10": {
+        "97:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 84,
           "id:3": 577,
           "sizeY:3": 24
         },
-        "97:10": {
+        "98:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 120,
           "id:3": 578,
           "sizeY:3": 24
         },
-        "98:10": {
+        "99:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 120,
           "id:3": 579,
           "sizeY:3": 24
         },
-        "99:10": {
+        "100:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 156,
           "id:3": 581,
           "sizeY:3": 24
         },
-        "100:10": {
+        "101:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": 156,
           "id:3": 590,
           "sizeY:3": 24
         },
-        "101:10": {
+        "102:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 192,
           "id:3": 697,
           "sizeY:3": 24
         },
-        "102:10": {
+        "103:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": 192,
           "id:3": 698,
           "sizeY:3": 24
         },
-        "103:10": {
+        "104:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": 156,
           "id:3": 699,
           "sizeY:3": 24
         },
-        "104:10": {
+        "105:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": 156,
           "id:3": 700,
           "sizeY:3": 24
         },
-        "105:10": {
+        "106:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": 192,
           "id:3": 701,
           "sizeY:3": 24
         },
-        "106:10": {
+        "107:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": 192,
           "id:3": 702,
           "sizeY:3": 24
         },
-        "107:10": {
+        "108:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 228,
           "id:3": 703,
           "sizeY:3": 24
         },
-        "108:10": {
+        "109:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": 228,
           "id:3": 704,
           "sizeY:3": 24
         },
-        "109:10": {
+        "110:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 264,
           "id:3": 705,
           "sizeY:3": 24
         },
-        "110:10": {
+        "111:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": 264,
           "id:3": 706,
           "sizeY:3": 24
         },
-        "111:10": {
+        "112:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": 228,
           "id:3": 707,
           "sizeY:3": 24
         },
-        "112:10": {
+        "113:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": 228,
           "id:3": 708,
           "sizeY:3": 24
         },
-        "113:10": {
+        "114:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": 264,
           "id:3": 709,
           "sizeY:3": 24
         },
-        "114:10": {
+        "115:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": 264,
           "id:3": 710,
           "sizeY:3": 24
         },
-        "115:10": {
+        "116:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 156,
           "id:3": 711,
           "sizeY:3": 24
         },
-        "116:10": {
+        "117:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 156,
           "id:3": 712,
           "sizeY:3": 24
         },
-        "117:10": {
+        "118:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 192,
           "id:3": 713,
           "sizeY:3": 24
         },
-        "118:10": {
+        "119:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 192,
           "id:3": 714,
           "sizeY:3": 24
         },
-        "119:10": {
+        "120:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 156,
           "id:3": 715,
           "sizeY:3": 24
         },
-        "120:10": {
+        "121:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 156,
           "id:3": 716,
           "sizeY:3": 24
         },
-        "121:10": {
+        "122:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 192,
           "id:3": 717,
           "sizeY:3": 24
         },
-        "122:10": {
+        "123:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 192,
           "id:3": 718,
           "sizeY:3": 24
         },
-        "123:10": {
+        "124:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 228,
           "id:3": 719,
           "sizeY:3": 24
         },
-        "124:10": {
+        "125:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 228,
           "id:3": 720,
           "sizeY:3": 24
         },
-        "125:10": {
+        "126:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 264,
           "id:3": 721,
           "sizeY:3": 24
         },
-        "126:10": {
+        "127:10": {
           "sizeX:3": 24,
           "x:3": 480,
           "y:3": 264,
           "id:3": 722,
           "sizeY:3": 24
         },
-        "127:10": {
+        "128:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 228,
           "id:3": 723,
           "sizeY:3": 24
         },
-        "128:10": {
+        "129:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 228,
           "id:3": 724,
           "sizeY:3": 24
         },
-        "129:10": {
+        "130:10": {
           "sizeX:3": 24,
           "x:3": 516,
           "y:3": 264,
           "id:3": 725,
           "sizeY:3": 24
         },
-        "130:10": {
+        "131:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 264,
