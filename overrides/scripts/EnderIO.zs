@@ -29,7 +29,6 @@ rh(<enderio:item_species_item_filter>); // Species Filter (Forestry)
 
 rh(<enderio:item_material:67>); // Enhanced Dye Blend
 rh(<enderio:item_material:52>); // Soul-Attuned Dye
-rh(<enderio:item_material:50>); // Organic Black Dye
 rh(<enderio:item_material:49>); // Organic Brown Dye
 rh(<enderio:item_material:48>); // Organic Green Dye
 rh(<enderio:item_material:51>); // Industrial Dye Blend
@@ -180,7 +179,12 @@ alloy.recipeBuilder()
     .buildAndRegister();
 
 //Dark Fused Quarz
-alloy.recipeBuilder().inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>]).outputs([<enderio:block_dark_fused_quartz:0>]).duration(200).EUt(32).buildAndRegister();	
+alloy.recipeBuilder()
+    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
+    .outputs([<enderio:block_dark_fused_quartz:0>])
+    .duration(200)
+    .EUt(32)
+    .buildAndRegister();	
 
 recipes.addShaped(compressedoctadiccap, [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
@@ -239,3 +243,12 @@ for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IIt
         , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
     ], cost);
 }
+
+
+//Alloy Smelter recipe for Organic Black Dye
+alloy.recipeBuilder()
+    .inputs(<minecraft:slime_ball>,<gregtech:meta_item_1:2012>)
+    .outputs(<enderio:item_material:50>)
+    .duration(100)
+    .EUt(16)
+    .buildAndRegister();
