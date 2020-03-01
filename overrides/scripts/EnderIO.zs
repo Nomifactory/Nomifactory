@@ -170,14 +170,6 @@ alloy.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-// Dark Fused Quarz
-alloy.recipeBuilder()
-    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
-    .outputs([<enderio:block_dark_fused_quartz:0>])
-    .duration(200)
-    .EUt(32)
-    .buildAndRegister();
-
 //Dark Fused Quarz
 alloy.recipeBuilder()
     .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
