@@ -6324,7 +6324,8 @@
     "93:10": {
       "questID:3": 93,
       "preRequisites:11": [
-        95
+        95,
+        98
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9777,7 +9778,8 @@
       "questID:3": 148,
       "preRequisites:11": [
         149,
-        150
+        150,
+        157
       ],
       "properties:10": {
         "betterquesting:10": {
