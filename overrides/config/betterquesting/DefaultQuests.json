@@ -605,7 +605,8 @@
     "8:10": {
       "questID:3": 8,
       "preRequisites:11": [
-        191
+        191,
+        136
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -731,7 +732,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tier Two Micro Miner",
-          "desc:8": "The Second Micro Miner!\n\nThis uses an §bExtended Crafting§r table so it\u0027s not possible to automate the Miner itself with §bApplied Energistics 2§r just yet (this requires more advanced technology not easy to access until the Tier Four Micro Miner). You can make it semi-automatically by prestocking the components you need, and filling up the Extended Crafting Table with §bJEI§r!\n\nThis Micro Miner can get you:§6\n* Bauxite Ore\n* Copper Ore\n* Tungstate Ore\n* Scheelite Ore\n* Cassiterite Ore\n* Radium Salt§r\n\nAs well as the §6Stellar Creation Data§r, which will be useful much, much later."
+          "desc:8": "The Second Micro Miner!\n\nThis uses an §bExtended Crafting§r table so it\u0027s not possible to automate the Miner itself with §bApplied Energistics 2§r just yet (this requires more advanced technology not easy to access until the Tier Four Micro Miner). You can make it semi-automatically by prestocking the components you need, and filling up the Extended Crafting Table with §bJEI§r!\n\nThis Micro Miner can get you:§6\n* Bauxite Ore\n* Niobium Ore\n* Copper Ore\n* Tungstate Ore\n* Scheelite Ore\n* Cassiterite Ore\n* Radium Salt§r\n\nAs well as the §6Stellar Creation Data§r, which will be useful much, much later."
         }
       },
       "tasks:9": {
@@ -4457,7 +4458,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Tier Three Micro Miner",
-          "desc:8": "The Third Micro Miner.\n\nThis one can get you:\n§6* Tetrahedrite Ore\n* Cassiterite Ore\n* Tungstate Ore\n* Scheelite Ore\n* Redstone Ore\n* Quartz Ore\n* Copper Ore\n* Rutile Ore\n* Tin Ore§r\n\nWhen equipped with Gemstone Sensor:\n§6* Exquisite Emeralds\n* Exquisite Diamonds\n* Exquisite Rubies\n* Silver Ore\n* Gold Ore§r"
+          "desc:8": "The Third Micro Miner.\n\nThis one can get you:\n§6* Tetrahedrite Ore\n* Cassiterite Ore\n* Tungstate Ore\n* Scheelite Ore\n* Redstone Ore\n* Quartz Ore\n* Vanadium Magnetite Ore\n* Rutile Ore\n* Tin Ore\n* Sapphire Ore§r\n\nWhen equipped with Gemstone Sensor:\n§6* Exquisite Emeralds\n* Exquisite Diamonds\n* Exquisite Rubies\n* Silver Ore\n* Gold Ore\n* Almandine Ore§r"
         }
       },
       "tasks:9": {
@@ -8856,7 +8857,6 @@
     "132:10": {
       "questID:3": 132,
       "preRequisites:11": [
-        136,
         203,
         129
       ],
@@ -14525,7 +14525,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "First Foray Into The Microverse",
-          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, but less efficiently than the Tier Two.\n\n"
+          "desc:8": "This is your first Micro Miner ever.\nYes, not the last: these things aren\u0027t reusable.\n\nThis one can get you:\n§6* Cassiterite Ore\n* Dense Iron Ore\n* Uraninite Ore\n* Redstone Ore\n* Nickel Ore\n* Rutile Ore\n* Galena Ore\n* Moon Turf\n* Dilithium\n* Salt Ore§r\n\nWhen equipped with a Gemstone Sensor (which may currently not be available to you yet):\n§6* Exquisite Diamond\n* Apatite Ore\n* Phosphor Ore\n* Quartzite Ore§r\n\nCan also be used to bring §bStellar Creation Data§r, but less efficiently than the Tier Two.\n\n"
         }
       },
       "tasks:9": {
@@ -25819,7 +25819,9 @@
     },
     "400:10": {
       "questID:3": 400,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        55
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -37984,7 +37986,9 @@
     },
     "627:10": {
       "questID:3": 627,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        539
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -38047,7 +38051,7 @@
     "628:10": {
       "questID:3": 628,
       "preRequisites:11": [
-        94
+        539
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -44010,7 +44014,9 @@
     },
     "732:10": {
       "questID:3": 732,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        19
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -45411,7 +45417,9 @@
     },
     "756:10": {
       "questID:3": 756,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        270
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -47513,22 +47521,22 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -528,
+          "x:3": -556,
           "y:3": -36,
           "id:3": 129,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -588,
+          "x:3": -616,
           "y:3": -36,
           "id:3": 132,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -648,
-          "y:3": -36,
+          "x:3": -684,
+          "y:3": 132,
           "id:3": 136,
           "sizeY:3": 24
         },
