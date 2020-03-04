@@ -359,28 +359,18 @@ recipes.addShaped(<enderio:item_material:41>, [
 compressor.recipeBuilder().inputs([<gregtech:meta_item_1:10228>]).outputs([<gregtech:meta_item_1:12228>]).duration(100).EUt(10).buildAndRegister();
 
 
+// Fixes #357: CO2 output should be 4 buckets
+reactor.findRecipe(480,
+    [<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>],
+    [<liquid:chlorine> * 4000])
+    .remove();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+reactor.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>])
+    .fluidInputs([<liquid:chlorine> * 4000])
+    .fluidOutputs([<liquid:carbon_monoxide> * 4000, <liquid:titanium_tetrachloride> * 1000])
+    .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+// end Fix for #357
 
