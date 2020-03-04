@@ -1056,9 +1056,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:22>);
 
 
 mods.jei.JEI.removeAndHide(<advancedrocketry:charcoallog>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:datapipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:energypipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:liquidpipe>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satellitebuilder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:loader>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:precisionassemblingmachine>);
