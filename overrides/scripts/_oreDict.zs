@@ -1133,8 +1133,6 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:asteroidchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:elevatorchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:lens>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:basiclasergun>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:beaconfinder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:thermite>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:unlittorch>);
