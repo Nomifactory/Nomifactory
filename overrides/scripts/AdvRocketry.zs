@@ -393,3 +393,22 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:ic:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteidchip>);
 recipes.remove(<advancedrocketry:ic:1>);
 recipes.remove(<advancedrocketry:satelliteidchip>);
+
+//Space Suit Upgrades
+//Hover Upgrade
+assembler.recipeBuilder().inputs(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:bat"}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>).fluidInputs(<liquid:glowstone>*1296).outputs(<advancedrocketry:itemupgrade:0>).duration(400).EUt(100).buildAndRegister();
+
+//Bionic Leg upgrade
+assembler.recipeBuilder().inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:jumpboost3", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>).outputs(<advancedrocketry:itemupgrade:2>).duration(400).EUt(100).buildAndRegister();
+
+//Flight Speed Control Upgrade
+assembler.recipeBuilder().inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:glide", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>).outputs(<advancedrocketry:itemupgrade:1>).duration(400).EUt(100).buildAndRegister();
+
+//Anti Fog visor
+assembler.recipeBuilder().inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:nightvision", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>).outputs(<advancedrocketry:itemupgrade:4>).duration(400).EUt(100).buildAndRegister();
+
+//Padded Landing Boots
+assembler.recipeBuilder().inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade4", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>).outputs(<advancedrocketry:itemupgrade:3>).duration(400).EUt(100).buildAndRegister();
+
+//Atmospheric sensor
+assembler.recipeBuilder().inputs(<gregtech:meta_item_1:32691>, <enderio:item_dark_steel_upgrade>).fluidInputs(<liquid:soldering_alloy>*288).outputs(<advancedrocketry:atmanalyser>).duration(200).EUt(100).buildAndRegister();
