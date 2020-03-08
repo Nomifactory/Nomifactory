@@ -1056,9 +1056,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:22>);
 
 
 mods.jei.JEI.removeAndHide(<advancedrocketry:charcoallog>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:datapipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:energypipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:liquidpipe>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satellitebuilder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:loader>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:precisionassemblingmachine>);
@@ -1133,8 +1130,6 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:asteroidchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:elevatorchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:lens>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:basiclasergun>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:beaconfinder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:thermite>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:unlittorch>);
