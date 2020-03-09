@@ -393,3 +393,52 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:ic:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteidchip>);
 recipes.remove(<advancedrocketry:ic:1>);
 recipes.remove(<advancedrocketry:satelliteidchip>);
+
+//Space Suit Upgrades
+//Hover Upgrade
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:glide", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:0>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+//Bionic Leg upgrade
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost3", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:2>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+//Flight Speed Control Upgrade
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:travel", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:1>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+//Anti Fog visor
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:nightvision", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:4>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+//Padded Landing Boots
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade4", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:3>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+//Atmospheric sensor
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:32691>)
+	.outputs(<advancedrocketry:atmanalyser>)
+	.duration(200)
+	.EUt(100)
+	.buildAndRegister();
