@@ -1056,9 +1056,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:22>);
 
 
 mods.jei.JEI.removeAndHide(<advancedrocketry:charcoallog>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:datapipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:energypipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:liquidpipe>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satellitebuilder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:loader>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:precisionassemblingmachine>);
@@ -1133,8 +1130,6 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:asteroidchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:elevatorchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:lens>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:basiclasergun>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:beaconfinder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:thermite>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:unlittorch>);
@@ -1817,6 +1812,27 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:dustEnderium>.remove(<thermalfoundation:material:103>);
 <ore:dustSignalum>.remove(<thermalfoundation:material:101>);
 
+//Questbook things
+<ore:questbookBrewery>.add(<gregtech:machine:130>); // LV Brewery
+<ore:questbookBrewery>.add(<gregtech:machine:131>); // MV Brewery
+
+<ore:questbookDistillery>.add(<gregtech:machine:230>); // LV Distillery
+<ore:questbookDistillery>.add(<gregtech:machine:231>); // MV Distillery
+
+<ore:questbookCentrifuge>.add(<gregtech:machine:150>); // LV Centrifuge
+<ore:questbookCentrifuge>.add(<gregtech:machine:151>); // MV Centrifuge
+<ore:questbookCentrifuge>.add(<gregtech:machine:152>); // HV Centrifuge
+
+<ore:questbookPolarizer>.add(<gregtech:machine:420>); // LV Polarizer
+<ore:questbookPolarizer>.add(<gregtech:machine:421>); // MV Polarizer (why)
+
+<ore:questbookAirCollector>.add(<gregtech:machine:950>); // LV Air Succ
+<ore:questbookAirCollector>.add(<gregtech:machine:960>); // MV Air Succ
+<ore:questbookAirCollector>.add(<gregtech:machine:970>); // HV Air Succ
+<ore:questbookAirCollector>.add(<gregtech:machine:980>); // EV Air Succ
+
+<ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
+<ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
 
 //Extra EnderIO Stuff
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);

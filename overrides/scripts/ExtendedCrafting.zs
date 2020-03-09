@@ -493,7 +493,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<avaritia:resource:5>, [
 /////////// Ultimate Gem ////////////
 
 mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>, [
-<thermalfoundation:material:893>,<actuallyadditions:item_crystal_empowered:5>,<enderio:item_material:16>,<enderio:item_material:15>,<libvulpes:productcrystal>,
+<thermalfoundation:material:893>,<actuallyadditions:item_crystal_empowered:5>,<enderio:item_material:16>,<enderio:item_material:15>,<ore:gemDilithium>.firstItem,
 <enderio:item_material:17>,<enderio:item_material:18>,<enderio:item_material:19>,<enderio:item_material:14>,<minecraft:prismarine_shard>,
 <gregtech:meta_item_1:8103>,<thermalfoundation:material:894>,<appliedenergistics2:material:11>,<appliedenergistics2:material:10>,<appliedenergistics2:material:12>,
 <actuallyadditions:item_crystal_empowered>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:3>,

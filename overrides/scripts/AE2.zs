@@ -335,3 +335,9 @@ recipes.addShaped(<appliedenergistics2:material:38>, [
 	[<appliedenergistics2:material:37>, <ore:circuitExtreme>, <appliedenergistics2:material:37>],
 	[<appliedenergistics2:material:22>, <appliedenergistics2:material:37>, <appliedenergistics2:material:22>]]);
 	
+//AE2 Wireless Terminal, Infinity Booster Card
+recipes.removeByRecipeName("ae2wtlib:booster_card_old");
+recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
+	[<gregtech:meta_item_1:32724>, null, <gregtech:meta_item_1:32724>],
+	[null, <appliedenergistics2:material:41>, null],
+	[null, null, null]]);

@@ -29,7 +29,6 @@ rh(<enderio:item_species_item_filter>); // Species Filter (Forestry)
 
 rh(<enderio:item_material:67>); // Enhanced Dye Blend
 rh(<enderio:item_material:52>); // Soul-Attuned Dye
-rh(<enderio:item_material:50>); // Organic Black Dye
 rh(<enderio:item_material:49>); // Organic Brown Dye
 rh(<enderio:item_material:48>); // Organic Green Dye
 rh(<enderio:item_material:51>); // Industrial Dye Blend
@@ -171,16 +170,13 @@ alloy.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-// Dark Fused Quarz
+//Dark Fused Quarz
 alloy.recipeBuilder()
     .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
     .outputs([<enderio:block_dark_fused_quartz:0>])
     .duration(200)
     .EUt(32)
-    .buildAndRegister();
-
-//Dark Fused Quarz
-alloy.recipeBuilder().inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>]).outputs([<enderio:block_dark_fused_quartz:0>]).duration(200).EUt(32).buildAndRegister();	
+    .buildAndRegister();	
 
 recipes.addShaped(compressedoctadiccap, [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
@@ -239,6 +235,7 @@ for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IIt
         , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
     ], cost);
 }
+
 
 //Ensure correct solidification
 //Vibrant Alloy
@@ -318,3 +315,13 @@ solidifier.recipeBuilder().fluidInputs(<liquid:dark_steel>*144).notConsumable(<g
 //Blocks
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:dark_steel>*1296]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:dark_steel>*1296).notConsumable(<gregtech:meta_item_1:32308>).outputs(<enderio:block_alloy:6>).duration(98).EUt(8).buildAndRegister();
+
+
+//Alloy Smelter recipe for Organic Black Dye
+alloy.recipeBuilder()
+    .inputs(<minecraft:slime_ball>,<gregtech:meta_item_1:2012>)
+    .outputs(<enderio:item_material:50>)
+    .duration(100)
+    .EUt(16)
+    .buildAndRegister();
+

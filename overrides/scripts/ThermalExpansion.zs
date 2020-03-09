@@ -390,6 +390,7 @@ recipes.addShaped(<thermalexpansion:frame:64>, [
 	[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>]]);
 <thermalexpansion:frame:64>.displayName = "Thermal Device Casing";
 
+
 //Ensure Proper Enderium/Lumium/Signalum Ingots
 
 //Ingots
@@ -430,3 +431,9 @@ solidifier.recipeBuilder().fluidInputs(<liquid:signalum>*144).notConsumable(<gre
 //Lumium
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:lumium>*144]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:lumium>*144).notConsumable(<gregtech:meta_item_1:32309>).outputs(<thermalfoundation:material:230>*9).duration(98).EUt(8).buildAndRegister();
+
+//Add Black Lotus to Phytogenic Insolator for black dye
+mods.thermalexpansion.Insolator.addRecipe(<actuallyadditions:block_black_lotus>*3,<actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:0>, 4800);
+mods.thermalexpansion.Insolator.addRecipe(<actuallyadditions:block_black_lotus>*6,<actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:1>, 7200);
+mods.thermalexpansion.Insolator.addRecipe(<actuallyadditions:block_black_lotus>*9,<actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:2>, 9600);
+
