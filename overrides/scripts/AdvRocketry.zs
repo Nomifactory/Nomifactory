@@ -12,7 +12,7 @@ val compressor = RecipeMap.getByName("compressor");
 val macerator = RecipeMap.getByName("macerator");
 
 
-//Machine Structure
+// Machine Structure
 recipes.remove(<libvulpes:structuremachine>);
 recipes.addShaped(<libvulpes:structuremachine>, [
 	[null,<gregtech:meta_item_1:12183>,null],
@@ -34,23 +34,22 @@ recipes.addShapeless(<libvulpes:forgepowerinput>, [<libvulpes:structuremachine>,
 recipes.addShaped(<advancedrocketry:loader:4>, [[<libvulpes:hatch:3>,<gregtech:meta_item_1:32612>]]);
 recipes.addShaped(<advancedrocketry:loader:5>, [[<libvulpes:hatch:2>,<gregtech:meta_item_1:32612>]]);
 
-
-//Rocket Engine
+// Rocket Engine
 recipes.remove(<advancedrocketry:rocketmotor>);
 recipes.addShaped(<advancedrocketry:rocketmotor>, [
 	[null, <contenttweaker:steelplating>, null],
 	[<contenttweaker:steelplating>, <contenttweaker:steelplating>, <contenttweaker:steelplating>],
 	[<simplyjetpacks:metaitemmods:7>, <simplyjetpacks:metaitemmods:7>, <simplyjetpacks:metaitemmods:7>]]);
 
-//Seat
+// Seat
 recipes.remove(<advancedrocketry:seat>);
 recipes.addShaped(<advancedrocketry:seat>, [[<minecraft:wool>,<minecraft:wool>,<minecraft:wool>],[<gregtech:meta_item_1:12183>,<gregtech:meta_item_1:12183>,<gregtech:meta_item_1:12183>]]);
 
-//Structure Tower
+// Structure Tower
 recipes.remove(<advancedrocketry:structuretower>);
 recipes.addShaped(<advancedrocketry:structuretower> * 3, [[<gregtech:frame_stainless_steel>],[<gregtech:frame_stainless_steel>],[<gregtech:frame_stainless_steel>]]);
 
-//Tanks
+// Tanks
 
 // Exa: snipped, use global defs
 
@@ -94,7 +93,7 @@ compressor.recipeBuilder().inputs([<gregtech:compressed_10:14>]).outputs(<gregte
 blast_furnace.recipeBuilder().inputs([<redstonearsenal:material:224> * 10,<moreplates:awakened_draconium_plate>,<contenttweaker:quantumflux> * 16]).fluidInputs([<liquid:krypton> * 1000]).outputs(<contenttweaker:quantumfluxedeterniumplating>).property("temperature", 9000).duration(200).EUt(250000).buildAndRegister();
 blast_furnace.recipeBuilder().inputs([<moreplates:neutronium_plate> * 2]).fluidInputs([<liquid:einsteinium> * 144]).outputs(<contenttweaker:neutroniumplating>).property("temperature", 9600).duration(200).EUt(500000).buildAndRegister();
 
-//Field Generators
+// Field Generators
 recipes.remove(<gregtech:meta_item_1:32670>);
 recipes.remove(<gregtech:meta_item_1:32671>);
 recipes.remove(<gregtech:meta_item_1:32672>);
@@ -127,9 +126,7 @@ recipes.addShaped(<gregtech:meta_item_1:32674>, [
 	[<ore:circuitElite>, <gregtech:meta_item_1:32725>, <ore:circuitElite>],
 	[<gregtech:cable:706>, <ore:circuitElite>, <gregtech:cable:706>]]);
 
-
-
-//AutoPackage
+// PackagedAuto
 recipes.remove(<packagedauto:package_component>);
 recipes.addShaped(<packagedauto:package_component>, [
 	[<gregtech:meta_item_1:12702>,<gregtech:meta_item_1:12072>,<gregtech:meta_item_1:12702>],
@@ -201,14 +198,14 @@ recipes.addShaped(<packagedexcrafting:ultimate_crafter>, [
 
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:2035>,<gregtech:meta_item_1:2138> * 4]).outputs([<thermalfoundation:glass:3>]).duration(100).EUt(30).buildAndRegister();
 
-//Suit Workstation
+// Suit Workstation
 recipes.remove(<advancedrocketry:suitworkstation>);
 recipes.addShaped(<advancedrocketry:suitworkstation>, [
 	[<gregtech:meta_item_1:32651>,<avaritia:compressed_crafting_table>,<gregtech:meta_item_1:32651>],
 	[<ore:circuitGood>, <gregtech:machine:502>, <ore:circuitGood>],
 	[<forestry:worktable>,<forestry:worktable>,<forestry:worktable>]]);
 
-//Gas Charger
+// Gas Charger
 recipes.remove(<advancedrocketry:oxygencharger>);
 recipes.addShaped(<advancedrocketry:oxygencharger>, [
 	[<contenttweaker:steelplating>, <gregtech:fluid_pipe:2183>, <contenttweaker:steelplating>],
@@ -247,7 +244,6 @@ assembler.recipeBuilder().inputs([<contenttweaker:unpreparedspacechestpiece>,<co
 assembler.recipeBuilder().inputs([<contenttweaker:unpreparedspaceleggings>,<contenttweaker:pressurelayer>*3,<contenttweaker:radiationlayer>*3]).outputs([<advancedrocketry:spaceleggings>]).duration(600).EUt(30).buildAndRegister();
 assembler.recipeBuilder().inputs([<contenttweaker:unpreparedspaceboots>,<contenttweaker:pressurelayer>,<contenttweaker:radiationlayer>]).outputs([<advancedrocketry:spaceboots>]).duration(400).EUt(30).buildAndRegister();
 
-
 recipes.addShaped(<contenttweaker:pressurelayer>, [
 	[<contenttweaker:cloth>, <gregtech:meta_item_1:12231>, <contenttweaker:cloth>],
 	[<contenttweaker:cloth>, <gregtech:meta_item_1:12231>, <contenttweaker:cloth>],
@@ -258,7 +254,7 @@ recipes.addShaped(<contenttweaker:radiationlayer>, [
 	[<contenttweaker:cloth>, <gregtech:meta_item_1:12035>, <contenttweaker:cloth>],
 	[<contenttweaker:cloth>, <gregtech:meta_item_1:12035>, <contenttweaker:cloth>]]);
 
-//Liquid Fuel Tank
+// Liquid Fuel Tank
 recipes.remove(<advancedrocketry:fueltank>);
 recipes.addShaped(<advancedrocketry:fueltank>, [
 [<gregtech:meta_item_1:12183>,<thermalexpansion:tank>,<gregtech:meta_item_1:12183>],
@@ -267,7 +263,7 @@ recipes.addShaped(<advancedrocketry:fueltank>, [
 
 mixer.recipeBuilder().inputs([<minecraft:gravel> * 3,<gregtech:meta_item_1:2105>]).fluidInputs([<liquid:water> * 500]).fluidOutputs(<liquid:concrete> * 1000).EUt(16).duration(200).buildAndRegister();
 
-//Guidance Computer
+// Guidance Computer
 recipes.remove(<advancedrocketry:guidancecomputer>);
 mods.extendedcrafting.TableCrafting.addShaped(<advancedrocketry:guidancecomputer>, [
 	[<appliedenergistics2:quartz_vibrant_glass>,<contenttweaker:steelplating>,<contenttweaker:steelplating>,<contenttweaker:steelplating>,<appliedenergistics2:quartz_vibrant_glass>],
@@ -276,7 +272,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<advancedrocketry:guidancecomputer
 	[<contenttweaker:steelplating>,<gregtech:meta_item_1:32682>,<ore:circuitAdvanced>,<gregtech:meta_item_1:32692>,<contenttweaker:steelplating>],
 	[<appliedenergistics2:quartz_vibrant_glass>,<contenttweaker:steelplating>,<contenttweaker:steelplating>,<contenttweaker:steelplating>,<appliedenergistics2:quartz_vibrant_glass>]]);
 
-//rocket builder
+// Rocket Builder
 recipes.remove(<advancedrocketry:rocketbuilder>);
 mods.extendedcrafting.TableCrafting.addShaped(<advancedrocketry:rocketbuilder>, [
 	[<gregtech:meta_item_1:32651>,<contenttweaker:steelplating>,<gregtech:meta_item_1:32681>,<contenttweaker:steelplating>,<gregtech:meta_item_1:32651>],
@@ -285,7 +281,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<advancedrocketry:rocketbuilder>, 
 	[<contenttweaker:steelplating>,<libvulpes:structuremachine>,<ore:circuitGood>,<libvulpes:structuremachine>,<contenttweaker:steelplating>],
 	[<gregtech:meta_item_1:32651>,<contenttweaker:steelplating>,<gregtech:meta_item_1:32681>,<contenttweaker:steelplating>,<gregtech:meta_item_1:32651>]]);
 
-//planet id chip
+// Planet ID Chip
 recipes.remove(<advancedrocketry:planetidchip>);
 recipes.addShaped(<advancedrocketry:planetidchip>, [
 [<gregtech:meta_item_2:16183>,<gregtech:meta_item_1:12702>,<gregtech:meta_item_2:16183>],
@@ -298,14 +294,14 @@ macerator.recipeBuilder().inputs([<gregtech:ore_copper_0>]).outputs([<gregtech:m
 macerator.recipeBuilder().inputs([<appliedenergistics2:material>]).outputs([<gregtech:meta_item_1:2202>]).duration(20).EUt(16).buildAndRegister();
 macerator.recipeBuilder().inputs([<draconicevolution:draconium_ore:2>]).outputs([<draconicevolution:draconium_dust> * 3]).duration(40).EUt(500).buildAndRegister();
 
-//Launch Pad
+// Launch Pad
 recipes.remove(<advancedrocketry:launchpad>);
 recipes.addShaped(<advancedrocketry:launchpad> * 9, [
 [<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
 [<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
 [<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>]]);
 
-//Linker
+// Linker
 recipes.remove(<libvulpes:linker>);
 recipes.addShaped(<libvulpes:linker>, [
 	[null,<gregtech:meta_item_1:32682>,null],
@@ -362,6 +358,55 @@ recipes.addShaped(<advancedrocketry:warpcore>, [
 	[<gregtech:compressed_3:10>, <extendedcrafting:storage:2>, <gregtech:compressed_3:10>],
 	[<thermalfoundation:storage_alloy:6>, <gregtech:compressed_3:10>, <thermalfoundation:storage_alloy:6>]]);
 
+// Space Suit Upgrades
+// Hover Upgrade
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:glide", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:0>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+// Bionic Leg upgrade
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost3", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:2>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+// Flight Speed Control Upgrade
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:travel", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:1>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+// Anti Fog visor
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:nightvision", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:4>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+// Padded Landing Boots
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade4", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
+	.outputs(<advancedrocketry:itemupgrade:3>)
+	.duration(400)
+	.EUt(100)
+	.buildAndRegister();
+
+// Atmospheric sensor
+assembler.recipeBuilder()
+	.inputs(<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:32691>)
+	.outputs(<advancedrocketry:atmanalyser>)
+	.duration(200)
+	.EUt(100)
+	.buildAndRegister();
+
 /*
 
   Removals
@@ -393,52 +438,3 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:ic:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteidchip>);
 recipes.remove(<advancedrocketry:ic:1>);
 recipes.remove(<advancedrocketry:satelliteidchip>);
-
-//Space Suit Upgrades
-//Hover Upgrade
-assembler.recipeBuilder()
-	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:glide", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
-	.outputs(<advancedrocketry:itemupgrade:0>)
-	.duration(400)
-	.EUt(100)
-	.buildAndRegister();
-
-//Bionic Leg upgrade
-assembler.recipeBuilder()
-	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost3", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
-	.outputs(<advancedrocketry:itemupgrade:2>)
-	.duration(400)
-	.EUt(100)
-	.buildAndRegister();
-
-//Flight Speed Control Upgrade
-assembler.recipeBuilder()
-	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:travel", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
-	.outputs(<advancedrocketry:itemupgrade:1>)
-	.duration(400)
-	.EUt(100)
-	.buildAndRegister();
-
-//Anti Fog visor
-assembler.recipeBuilder()
-	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:nightvision", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
-	.outputs(<advancedrocketry:itemupgrade:4>)
-	.duration(400)
-	.EUt(100)
-	.buildAndRegister();
-
-//Padded Landing Boots
-assembler.recipeBuilder()
-	.inputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade4", "enderio:enabled": 1 as byte}), <contenttweaker:radiationlayer>, <contenttweaker:pressurelayer>)
-	.outputs(<advancedrocketry:itemupgrade:3>)
-	.duration(400)
-	.EUt(100)
-	.buildAndRegister();
-
-//Atmospheric sensor
-assembler.recipeBuilder()
-	.inputs(<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:32691>)
-	.outputs(<advancedrocketry:atmanalyser>)
-	.duration(200)
-	.EUt(100)
-	.buildAndRegister();
