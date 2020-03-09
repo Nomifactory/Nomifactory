@@ -358,6 +358,65 @@ recipes.addShaped(<advancedrocketry:warpcore>, [
 	[<gregtech:compressed_3:10>, <extendedcrafting:storage:2>, <gregtech:compressed_3:10>],
 	[<thermalfoundation:storage_alloy:6>, <gregtech:compressed_3:10>, <thermalfoundation:storage_alloy:6>]]);
 
+// Altitude Controller
+recipes.remove(<advancedrocketry:altitudecontroller>);
+recipes.addShapeless(<advancedrocketry:altitudecontroller>, [
+	<libvulpes:structuremachine>, <extrautils2:screen>, <ore:circuitGood>
+]);
+
+// Orientation Controller
+recipes.remove(<advancedrocketry:orientationcontroller>);
+recipes.addShapeless(<advancedrocketry:orientationcontroller>, [
+	<libvulpes:structuremachine>, <extrautils2:screen>, <minecraft:compass>
+]);
+
+// Docking Pad
+recipes.remove(<advancedrocketry:landingpad>);
+recipes.addShapeless(<advancedrocketry:landingpad>, [
+	<advancedrocketry:launchpad>, <ore:circuitGood>
+]);
+
+// Station Light
+recipes.remove(<advancedrocketry:circlelight>);
+recipes.addShapeless(<advancedrocketry:circlelight>, [
+	<gregtech:meta_item_1:12033>, <minecraft:glowstone>
+]);
+
+// Atmosphere Detector
+recipes.remove(<advancedrocketry:oxygendetection>);
+recipes.addShaped(<advancedrocketry:oxygendetection>, [
+	[<gregtech:meta_item_1:12184>   , <extrautils2:screen>         , <gregtech:meta_item_1:12184>]
+	, [<minecraft:iron_bars>        , <libvulpes:structuremachine> , <gregtech:meta_item_2:18184>]
+	, [<gregtech:meta_item_1:12184> , <ore:circuitGood>            , <gregtech:meta_item_1:12184>]
+]);
+
+// Area Gravity Controller
+recipes.remove(<advancedrocketry:gravitymachine>);
+recipes.addShaped(<advancedrocketry:gravitymachine>, [
+	[null                           , <extrautils2:screen>         , null                        ]
+	, [<gregtech:meta_item_1:12072> , <advancedrocketry:warpcore>  , <gregtech:meta_item_1:12072>]
+	, [<gregtech:meta_item_1:12072> , <ore:circuitExtreme>         , <gregtech:meta_item_1:12072>]
+]);
+
+// Seal Detector
+recipes.remove(<advancedrocketry:sealdetector>);
+recipes.addShaped(<advancedrocketry:sealdetector>, [
+	[null   , <gregtech:meta_item_1:32691> , null]
+	, [null , <extrautils2:screen>         , null]
+	, [null , <minecraft:comparator>       , null]
+]);
+
+// HoverCraft (lul)
+recipes.remove(<advancedrocketry:hovercraft>);
+recipes.addShaped(<advancedrocketry:hovercraft>, [
+	[<ore:circuitGood>, <extrautils2:screen>, <ore:circuitGood>]
+	, [<ore:gemDilithium>.firstItem
+		, <advancedrocketry:structuretower>
+		, <ore:gemDilithium>.firstItem
+	]
+	, [<advancedrocketry:rocketmotor>, null, <advancedrocketry:rocketmotor>]
+]);
+
 // Space Suit Upgrades
 // Hover Upgrade
 assembler.recipeBuilder()
