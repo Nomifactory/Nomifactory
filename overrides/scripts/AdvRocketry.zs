@@ -437,8 +437,7 @@ assembler.recipeBuilder()
 
 //Atmospheric sensor
 assembler.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:32691>, <enderio:item_dark_steel_upgrade>)
-	.fluidInputs(<liquid:soldering_alloy>*288)
+	.inputs(<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:32691>)
 	.outputs(<advancedrocketry:atmanalyser>)
 	.duration(200)
 	.EUt(100)
