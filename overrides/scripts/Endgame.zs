@@ -1,35 +1,5 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val lathe = RecipeMap.getByName("lathe");
-val autoclave = RecipeMap.getByName("autoclave");
-val engraver = RecipeMap.getByName("laser_engraver");
-val brewer = RecipeMap.getByName("brewer");
-val tower = RecipeMap.getByName("distillation_tower");
-val distillery = RecipeMap.getByName("distillery");
-val fermenter = RecipeMap.getByName("fermenter");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val macerator = RecipeMap.getByName("macerator");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val assembler = RecipeMap.getByName("assembler");
-val fluidextractor = RecipeMap.getByName("fluid_extractor");
-val saw = RecipeMap.getByName("cutting_saw");
-val electrolyzer = RecipeMap.getByName("electrolyzer");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val freezer = RecipeMap.getByName("vacuum_freezer");
-val compressor = RecipeMap.getByName("compressor");
-val implosion = RecipeMap.getByName("implosion_compressor");
-val wiremill = RecipeMap.getByName("wiremill");
-val extruder = RecipeMap.getByName("extruder");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val assembly_line = RecipeMap.getByName("assembly_line");
-val extractor = RecipeMap.getByName("extractor");
-var fusion_reactor = mods.gregtech.recipe.RecipeMap.getByName("fusion_reactor");
-val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
-val chemical_bath = RecipeMap.getByName("chemical_bath");
-
-
-
 //Dense Ores
 reactor.recipeBuilder().inputs(<densemetals:dense_redstone_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_redstone_0> * 16]).duration(200).EUt(500).buildAndRegister();
 reactor.recipeBuilder().inputs(<densemetals:dense_emerald_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_emerald_0> * 16]).duration(200).EUt(500).buildAndRegister();
