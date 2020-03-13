@@ -1,5 +1,10 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import scripts.CommonVars.makeShaped as makeShaped;
+import scripts.CommonVars.makeExtremeRecipe5 as makeExtremeRecipe5;
+import scripts.CommonVars.makeExtremeRecipe7 as makeExtremeRecipe7;
+import scripts.CommonVars.makeExtremeRecipe9 as makeExtremeRecipe9;
 
 fluid_extractor.recipeBuilder().inputs([<ore:dustCryotheum>]).fluidOutputs([<liquid:cryotheum>*250]).duration(40).EUt(32).buildAndRegister();
 fluid_extractor.recipeBuilder().inputs([<ore:dustPyrotheum>]).fluidOutputs([<liquid:pyrotheum>*250]).duration(40).EUt(32).buildAndRegister();
@@ -214,12 +219,16 @@ recipes.removeByRecipeName("extrautils2:angel_ring_3");
 recipes.removeByRecipeName("extrautils2:angel_ring_4");
 recipes.removeByRecipeName("extrautils2:angel_ring_5");
 
-mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:angelring>,[
-	[null,<ore:ingotRoseGold>,<ore:ingotRoseGold>,<ore:ingotRoseGold>,null],
-	[<ore:ingotRoseGold>,null,<simplyjetpacks:itemjetpack:12>,null,<ore:ingotRoseGold>],
-	[<ore:ingotRoseGold>,<simplyjetpacks:itemjetpack:4>,null,<simplyjetpacks:itemjetpack:4>,<ore:ingotRoseGold>],
-	[<ore:ingotRoseGold>,null,<simplyjetpacks:itemjetpack:12>,null,<ore:ingotRoseGold>],
-	[null,<ore:ingotRoseGold>,<ore:ingotRoseGold>,<ore:ingotRoseGold>,null]]);
+
+makeExtremeRecipe5(<extrautils2:angelring>,
+    [" GGG ",
+     "G R G",
+     "GV VG",
+     "G R G",
+     " GGG "],
+    { G : <ore:ingotRoseGold>,
+      R : reinforcedjetpack,
+      V : vibrantjetpack });
 
 ///////////////////////// ZPM  ///////////////////////////////
 
@@ -651,71 +660,93 @@ mods.extendedcrafting.TableCrafting.addShaped(<solarflux:solar_panel_infinity>, 
 
 
 //Jetpack
+val plateShape as string[] = [" P ",
+                              "PPP",
+                              " P "];
+
 recipes.remove(<simplyjetpacks:metaitemmods:12>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:12>, [
-	[null, <ore:plateWroughtIron>, null],
-	[<ore:plateWroughtIron>,<ore:plateWroughtIron>,<ore:plateWroughtIron>],
-	[null, <ore:plateWroughtIron>, null]]);
+makeShaped("sj2_wroughtiron_plate",
+           <simplyjetpacks:metaitemmods:12>,
+           plateShape, { P : <ore:plateWroughtIron> });
 <simplyjetpacks:metaitemmods:12>.displayName = "Wrought Iron Armor Plating";
+
 recipes.remove(<simplyjetpacks:metaitemmods:13>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:13>, [
-	[null, <ore:plateConductiveIron>, null],
-	[<ore:plateConductiveIron>,<ore:plateConductiveIron>,<ore:plateConductiveIron>],
-	[null, <ore:plateConductiveIron>, null]]);
+makeShaped("sj2_ConductiveIron_plating",
+           <simplyjetpacks:metaitemmods:13>,
+           plateShape, { P : <ore:plateConductiveIron> });
+
 recipes.remove(<simplyjetpacks:metaitemmods:14>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:14>, [
-	[null, <ore:plateElectricalSteel>, null],
-	[<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>],
-	[null, <ore:plateElectricalSteel>, null]]);
+makeShaped("sj2_ElectricalSteel_plating",
+           <simplyjetpacks:metaitemmods:14>,
+          plateShape, { P : <ore:plateElectricalSteel> });
+
 recipes.remove(<simplyjetpacks:metaitemmods:15>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:15>, [
-	[null, <ore:plateDarkSteel>, null],
-	[<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>],
-	[null, <ore:plateDarkSteel>, null]]);
+makeShaped("sj2_DarkSteel_plating",
+           <simplyjetpacks:metaitemmods:15>,
+           plateShape, { P : <ore:plateDarkSteel> });
+
 recipes.remove(<simplyjetpacks:metaitemmods:22>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:22>, [
-	[null, <ore:plateIron>, null],
-	[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
-	[null, <ore:plateIron>, null]]);
+makeShaped("sj2_Iron_plating",
+           <simplyjetpacks:metaitemmods:22>,
+           plateShape, { P : <ore:plateIron> });
+
 recipes.remove(<simplyjetpacks:metaitemmods:23>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:23>, [
-	[null, <ore:plateBronze>, null],
-	[<ore:plateBronze>,<ore:plateBronze>,<ore:plateBronze>],
-	[null, <ore:plateBronze>, null]]);
+makeShaped("sj2_Bronze_plating",
+           <simplyjetpacks:metaitemmods:23>,
+           plateShape, { P : <ore:plateBronze> });
+
 recipes.remove(<simplyjetpacks:metaitemmods:24>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:24>, [
-	[null, <ore:plateInvar>, null],
-	[<ore:plateInvar>,<ore:plateInvar>,<ore:plateInvar>],
-	[null, <ore:plateInvar>, null]]);
+makeShaped("sj2_Invar_plating", <simplyjetpacks:metaitemmods:24>,
+           plateShape, { P : <ore:plateInvar> });
+
 recipes.remove(<simplyjetpacks:metaitemmods:25>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:25>, [
-	[null, <ore:plateEnderium>, null],
-	[<ore:plateEnderium>,<ore:plateEnderium>,<ore:plateEnderium>],
-	[null, <ore:plateEnderium>, null]]);
+makeShaped("sj2_Enderium_plating",
+           <simplyjetpacks:metaitemmods:25>,
+           plateShape, { P : <ore:plateEnderium> });
 
-mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemjetpack>, [
-[null,null,<simplyjetpacks:itemjetpack:5>,null,null,null,<simplyjetpacks:itemjetpack:14>,null,null],
-[null,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:5>,null,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:14>,null],
-[null,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:8>,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:18>,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:17>,<simplyjetpacks:itemjetpack:14>,null],
-[null,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:8>,<simplyjetpacks:itemjetpack:5>,<avaritia:resource:5>,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:17>,<simplyjetpacks:itemjetpack:14>,null],
-[null,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:8>,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:9>,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:17>,<simplyjetpacks:itemjetpack:14>,null],
-[null,<simplyjetpacks:itemjetpack:5>,<simplyjetpacks:itemjetpack:8>,<simplyjetpacks:itemjetpack:5>,null,<simplyjetpacks:itemjetpack:14>,<simplyjetpacks:itemjetpack:17>,<simplyjetpacks:itemjetpack:14>,null],
-[null,<simplyjetpacks:itemjetpack:6>,<simplyjetpacks:itemjetpack:6>,<simplyjetpacks:itemjetpack:6>,null,<simplyjetpacks:itemjetpack:15>,<simplyjetpacks:itemjetpack:15>,<simplyjetpacks:itemjetpack:15>,null],
-[null,null,<simplyjetpacks:itemjetpack:7>,null,null,null,<simplyjetpacks:itemjetpack:16>,null,null],
-[null,<simplyjetpacks:itemjetpack:7>,<simplyjetpacks:itemjetpack:7>,<simplyjetpacks:itemjetpack:7>,null,<simplyjetpacks:itemjetpack:16>,<simplyjetpacks:itemjetpack:16>,<simplyjetpacks:itemjetpack:16>,null]]);
+// Creative Jetpack
+makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
+    ["  A   E  ",
+     " AAA EEE ",
+     " ABAIEFE ",
+     " ABAJEFE ",
+     " ABAKEFE ",
+     " ABA EFE ",
+     " CCC GGG ",
+     "  D   H  ",
+     " DDD HHH "],
+    {A: armoredconductiveironjetpack,
+     B: armoredvibrantjetpack,
+     C: armoredelectricalsteeljetpack,
+     D: armoredenergeticjetpack,
+     E: armoredleadstonejetpack,
+     F: armoredresonantjetpack,
+     G: armoredhardenedjetpack,
+     H: armoredreinforcedjetpack,
+     I: fluxinfusedjetplate,
+     J: <avaritia:resource:5>,
+     K: darksoulariumjetplate });
 
-
-
-mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>, [
-[<thermalexpansion:capacitor>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor>],
-[<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>],
-[<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>],
-[<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<contenttweaker:ultimate_power_storage>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>],
-[<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<contenttweaker:ultimate_power_storage>,<avaritia:resource:5>,<contenttweaker:ultimate_power_storage>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>],
-[<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<contenttweaker:ultimate_power_storage>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>],
-[<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<draconicevolution:draconium_capacitor:1>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>],
-[<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<draconicevolution:draconium_capacitor>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>],
-[<thermalexpansion:capacitor>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:4>,<thermalexpansion:capacitor:3>,<thermalexpansion:capacitor:2>,<thermalexpansion:capacitor:1>,<thermalexpansion:capacitor>]]);
+// Creative Flux Capacitor
+makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
+    ["ABCDEDCBA",
+     "BCDEFEDCB",
+     "CDEFGFEDC",
+     "DEFGHGFED",
+     "EFGHIHGFE",
+     "DEFGHGFED",
+     "CDEFGFEDC",
+     "BCDEFEDCB",
+     "ABCDEDCBA"],
+    { A: <thermalexpansion:capacitor>,
+      B: <thermalexpansion:capacitor:1>,
+      C: <thermalexpansion:capacitor:2>,
+      D: <thermalexpansion:capacitor:3>,
+      E: <thermalexpansion:capacitor:4>,
+      F: <draconicevolution:draconium_capacitor>,
+      G: <draconicevolution:draconium_capacitor:1>,
+      H: <contenttweaker:ultimate_power_storage>,
+      I: <avaritia:resource:5> });
 
 mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative>, [
 [<storagedrawers:upgrade_storage:4>,<actuallyadditions:block_giant_chest_medium>,<actuallyadditions:block_giant_chest_large>,<gregtech:machine:806>,<gregtech:machine:1010>,<gregtech:machine:806>,<actuallyadditions:block_giant_chest_large>,<actuallyadditions:block_giant_chest_medium>,<storagedrawers:upgrade_storage:4>],
