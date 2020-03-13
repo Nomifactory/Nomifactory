@@ -21,7 +21,8 @@ import mods.gregtech.recipe.RecipeMap;
 	]
 
 	cuttingFluidTypes defines cutting fluids.
-	cuttingFluidDurations defines durations for the aforementioned fluids.
+	cuttingFluidDurations defines recipe durations for said fluids.
+	cuttingFluidAmounts defines amounts of said fluids per recipe.
 	cuttingRecipeEUt defines... guess what.
 */
 
