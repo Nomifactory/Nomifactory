@@ -29,7 +29,6 @@ rh(<enderio:item_species_item_filter>); // Species Filter (Forestry)
 
 rh(<enderio:item_material:67>); // Enhanced Dye Blend
 rh(<enderio:item_material:52>); // Soul-Attuned Dye
-rh(<enderio:item_material:50>); // Organic Black Dye
 rh(<enderio:item_material:49>); // Organic Brown Dye
 rh(<enderio:item_material:48>); // Organic Green Dye
 rh(<enderio:item_material:51>); // Industrial Dye Blend
@@ -171,10 +170,77 @@ alloy.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-// Dark Fused Quarz
+//Dark Fused Quarz
 alloy.recipeBuilder()
     .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
     .outputs([<enderio:block_dark_fused_quartz:0>])
     .duration(200)
     .EUt(32)
+    .buildAndRegister();	
+
+recipes.addShaped(compressedoctadiccap, [
+	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
+	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
+	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>]]);
+
+recipes.addShaped(doublecompressedoctadiccap, [
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
+	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap]]);
+	
+//Replace old compressed capacitors with functional ones
+recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccapacitor>]);
+recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
+
+//An attempt to do the same in JEI
+mods.jei.JEI.addItem(compressedoctadiccap);
+mods.jei.JEI.addItem(doublecompressedoctadiccap);
+<contenttweaker:compressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
+<contenttweaker:doublecompressedoctadiccapacitor>.addTooltip(format.white("Put the item into a crafting window if it has no lore"));
+
+/*
+
+  Extra Slice'n'Splice Recipes
+
+*/
+
+var bonus = 1 as int;
+var cost  = 20000 as int;
+
+for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IItemStack[] {
+    bonus = bonus * 2;
+    cost  = cost  * 2;
+
+    // Z-Logic Controller
+    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:41> * bonus, [
+        <enderio:item_alloy_ingot:7> , <minecraft:skull:2>  , <enderio:item_alloy_ingot:7>
+        , wafer                      , <minecraft:redstone> , wafer
+    ], cost);
+
+    // Ender Resonator
+    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:43> * bonus, [
+        <enderio:item_alloy_ingot:7> , <enderio:block_enderman_skull> , <enderio:item_alloy_ingot:7>
+        , wafer                      , <enderio:item_alloy_ingot:2>   , wafer
+    ], cost);
+
+    // Skeletal Contractor
+    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45> * bonus, [
+        <enderio:item_alloy_ingot:7> , <minecraft:skull> , <enderio:item_alloy_ingot:7>
+        , <minecraft:rotten_flesh>   , wafer             , <minecraft:rotten_flesh>
+    ], cost);
+
+    // Guardian Diode
+    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56> * bonus, [
+        <enderio:item_alloy_ingot:1>      , <minecraft:prismarine_shard> , <enderio:item_alloy_ingot:1>
+        , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
+    ], cost);
+}
+
+
+//Alloy Smelter recipe for Organic Black Dye
+alloy.recipeBuilder()
+    .inputs(<minecraft:slime_ball>,<gregtech:meta_item_1:2012>)
+    .outputs(<enderio:item_material:50>)
+    .duration(100)
+    .EUt(16)
     .buildAndRegister();

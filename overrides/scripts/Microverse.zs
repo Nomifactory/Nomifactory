@@ -4,9 +4,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMap;
 import mods.modularmachinery.RecipePrimer;
 
-val assembler = RecipeMap.getByName("assembler");
-
-
 //////////////////////////////////////////////////////////////
 /////////////	    Modular Machinery	    //////////////////
 //////////////////////////////////////////////////////////////
@@ -94,7 +91,6 @@ recipes.addShaped(<modularmachinery:blockenergyoutputhatch:7>, [[null, <modularm
 
 //Casing
 recipes.remove(<modularmachinery:blockcasing>);
-recipes.addShaped(<modularmachinery:blockcasing> * 2, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<gregtech:meta_tool:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
 assembler.recipeBuilder().inputs([<modularmachinery:itemmodularium> * 4]).outputs([<modularmachinery:blockcasing>]).duration(200).EUt(30).buildAndRegister();
 
 // Machine Vent
@@ -339,6 +335,7 @@ steel2.addItemOutput(<gregtech:meta_item_2:25111> * 16);
 steel2.addItemOutput(<gregtech:meta_item_2:25111> * 16);
 steel2.addItemOutput(<gregtech:ore_apatite_0> * 64);
 steel2.addItemOutput(<gregtech:ore_phosphor_0> * 64);
+steel2.addItemOutput(<gregtech:ore_quartzite_0> * 64);
 steel2.build();
 
 //Tier 1 Steel Microminer
@@ -361,7 +358,7 @@ titanium1.addItemInput(<contenttweaker:quantumflux> * 2);
 titanium1.addFluidInput(<liquid:rocket_fuel> * 12000);
 titanium1.addItemOutput(<gregtech:ore_bauxite_0:1> * 64);
 titanium1.addItemOutput(<gregtech:ore_bauxite_0:1> * 64);
-titanium1.addItemOutput(<gregtech:ore_copper_0:1> * 64);
+titanium1.addItemOutput(<gregtech:ore_niobium_0:1> * 64);
 titanium1.addItemOutput(<gregtech:ore_copper_0:1> * 64);
 titanium1.addItemOutput(<gregtech:ore_copper_0:1> * 64);
 titanium1.addItemOutput(<gregtech:ore_copper_0:1> * 64);
@@ -408,7 +405,7 @@ tungsten1.addItemOutput(<gregtech:meta_item_2:25154> * 16);
 tungsten1.addItemOutput(<gregtech:meta_item_2:25154> * 16);
 tungsten1.addItemOutput(<gregtech:meta_item_2:25154> * 16);
 tungsten1.addItemOutput(<gregtech:meta_item_2:25154> * 16);
-tungsten1.addItemOutput(<gregtech:ore_gold_0:6> * 64);
+tungsten1.addItemOutput(<gregtech:ore_almandine_0:6> * 64);
 tungsten1.addItemOutput(<gregtech:ore_gold_0:6> * 64);
 tungsten1.addItemOutput(<gregtech:ore_silver_0:6> * 64);
 tungsten1.build();
@@ -426,12 +423,13 @@ tungsten2.addItemOutput(<gregtech:ore_tungstate_0:6>* 64);
 tungsten2.addItemOutput(<gregtech:ore_tungstate_0:6>* 64);
 tungsten2.addItemOutput(<gregtech:ore_tungstate_0:6>* 64);
 tungsten2.addItemOutput(<gregtech:ore_rutile_0:6> * 64);
-tungsten2.addItemOutput(<gregtech:ore_copper_0:6> * 64);
+tungsten2.addItemOutput(<gregtech:ore_vanadium_magnetite_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_tetrahedrite_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_cassiterite_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_tin_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_redstone_0:6> * 64);
 tungsten2.addItemOutput(<gregtech:ore_certus_quartz_0:6> * 64);
+tungsten2.addItemOutput(<gregtech:ore_sapphire_0:6> * 64);
 tungsten2.build();
 
 

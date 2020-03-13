@@ -2,19 +2,6 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
 
-val alloy = RecipeMap.getByName("alloy_smelter");
-val wiremill = RecipeMap.getByName("wiremill");
-val assembler = RecipeMap.getByName("assembler");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val mixer = RecipeMap.getByName("mixer");
-val autoclave = RecipeMap.getByName("autoclave");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val macerator = RecipeMap.getByName("macerator");
-val electrolyzer = RecipeMap.getByName("electrolyzer");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val compressor = RecipeMap.getByName("compressor");
-val centrifuge = RecipeMap.getByName("centrifuge");
-
 //Plantball
 recipes.addShaped(<gregtech:meta_item_2:32570>, [
 	[<ore:treeLeaves>,<ore:treeLeaves>,<ore:treeLeaves>],

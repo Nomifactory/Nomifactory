@@ -1,18 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val alloy = RecipeMap.getByName("alloy_smelter");
-val wiremill = RecipeMap.getByName("wiremill");
-val assembler = RecipeMap.getByName("assembler");
-val hammer = RecipeMap.getByName("forge_hammer");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val mixer = RecipeMap.getByName("mixer");
-val autoclave = RecipeMap.getByName("autoclave");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val compressor = RecipeMap.getByName("compressor");
-val macerator = RecipeMap.getByName("macerator");
-
-
-// Machine Structure
+//Machine Structure
 recipes.remove(<libvulpes:structuremachine>);
 recipes.addShaped(<libvulpes:structuremachine>, [
 	[null,<gregtech:meta_item_1:12183>,null],
@@ -50,8 +38,6 @@ recipes.remove(<advancedrocketry:structuretower>);
 recipes.addShaped(<advancedrocketry:structuretower> * 3, [[<gregtech:frame_stainless_steel>],[<gregtech:frame_stainless_steel>],[<gregtech:frame_stainless_steel>]]);
 
 // Tanks
-
-// Exa: snipped, use global defs
 
 recipes.remove(<advancedrocketry:pressuretank>);
 recipes.addShaped(<advancedrocketry:pressuretank>, [

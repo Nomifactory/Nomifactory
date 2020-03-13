@@ -1,17 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.appliedenergistics2.Inscriber;
 
-val fluid_extractor = RecipeMap.getByName("fluid_extractor");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val assembler = RecipeMap.getByName("assembler");
-val circuit_assembler = RecipeMap.getByName("circuit_assembler");
-val wiremill = RecipeMap.getByName("wiremill");
-val engraver = RecipeMap.getByName("laser_engraver");
-val compressor = RecipeMap.getByName("compressor");
-val alloy = RecipeMap.getByName("alloy_smelter");
-
-
-
 //Silicon
 Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
 Inscriber.addRecipe(<appliedenergistics2:material:20>, <gregtech:meta_item_1:12061>, true, <appliedenergistics2:material:19>);	
@@ -335,3 +324,9 @@ recipes.addShaped(<appliedenergistics2:material:38>, [
 	[<appliedenergistics2:material:37>, <ore:circuitExtreme>, <appliedenergistics2:material:37>],
 	[<appliedenergistics2:material:22>, <appliedenergistics2:material:37>, <appliedenergistics2:material:22>]]);
 	
+//AE2 Wireless Terminal, Infinity Booster Card
+recipes.removeByRecipeName("ae2wtlib:booster_card_old");
+recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
+	[<gregtech:meta_item_1:32724>, null, <gregtech:meta_item_1:32724>],
+	[null, <appliedenergistics2:material:41>, null],
+	[null, null, null]]);
