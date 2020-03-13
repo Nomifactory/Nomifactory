@@ -616,6 +616,11 @@ autoclave.recipeBuilder().inputs([<ore:dustQuartzite>]).fluidInputs([<liquid:wat
 	<ore:gemExquisiteGreenSapphire>);mods.jei.JEI.removeAndHide(
 	<ore:gemExquisiteRutile>);mods.jei.JEI.removeAndHide(
 	<ore:gemExquisiteLazurite>);
+
+mods.jei.JEI.removeAndHide(<ore:gemFlawlessLapis>);
+mods.jei.JEI.removeAndHide(<ore:gemFlawlessCoke>);
+mods.jei.JEI.removeAndHide(<ore:gemExquisiteLapis>);
+mods.jei.JEI.removeAndHide(<ore:gemExquisiteCoke>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:8209>);
 
 furnace.setFuel(<gregtech:meta_item_1:10204>, 1200);
