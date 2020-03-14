@@ -365,7 +365,7 @@ reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2101>]).fluidInputs([<liqu
 reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2106>]).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2053>).EUt(90).duration(160).buildAndRegister();
 
 //Blitz Powder
-reactor.recipeBuilder().inputs(<contenttweaker:endstonedust>).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2051>).EUt(90).duration(160).buildAndRegister();
+reactor.recipeBuilder().inputs(<ore:dustEndstone>).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2051>).EUt(90).duration(160).buildAndRegister();
 
 //Blizz Powder
 reactor.recipeBuilder().inputs(<minecraft:snow>).fluidInputs([<liquid:elementalreduction> * 100]).outputs(<thermalfoundation:material:2049>).EUt(90).duration(160).buildAndRegister();
@@ -382,8 +382,6 @@ reactor.recipeBuilder().inputs(<minecraft:slime>).fluidInputs([<liquid:titanium>
 <extendedcrafting:storage:6>.displayName = "Block of Endest Stars";
 <extendedcrafting:material:40>.displayName = "Endest Star";
 <extendedcrafting:material:41>.displayName = "Endest Star Nugget";
-
-macerator.findRecipe(8, [<minecraft:end_stone>], [null]).remove();
 
 ///////////////////////// Omnium  ///////////////////////////////
 
