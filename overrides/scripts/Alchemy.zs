@@ -46,7 +46,7 @@ recipes.addShaped(<dimensionaledibles:nether_cake>, [[<gregtech:meta_item_1:2333
 <dimensionaledibles:nether_cake>.addTooltip(format.darkAqua(format.italic("Refill using Obsidian.")));
 
 //End Cake
-recipes.addShaped(<dimensionaledibles:end_cake>, [[<contenttweaker:endstonedust>,<contenttweaker:endstonedust>,<contenttweaker:endstonedust>], [<minecraft:ender_eye>, <enderio:item_material:70>, <minecraft:ender_eye>],[<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>]]);
+recipes.addShaped(<dimensionaledibles:end_cake>, [[<ore:dustEndstone>,<ore:dustEndstone>,<ore:dustEndstone>], [<minecraft:ender_eye>, <enderio:item_material:70>, <minecraft:ender_eye>],[<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>]]);
 <dimensionaledibles:end_cake>.addTooltip(format.darkAqua(format.italic("Refill using Eyes of Ender.")));
 
 //Voidworld Cake

@@ -184,7 +184,7 @@ alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>, <minecraft:obsidian>
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>, <actuallyadditions:item_crystal:3>]).outputs([<enderio:item_alloy_ingot:6>]).duration(240).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>, <gregtech:meta_item_1:2061>]).outputs([<enderio:item_alloy_ingot>]).duration(120).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<minecraft:gold_ingot>, <minecraft:soul_sand>]).outputs([<enderio:item_alloy_ingot:7>]).duration(120).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<enderio:item_alloy_ingot:6>, <contenttweaker:endstonedust>]).outputs([<enderio:item_alloy_ingot:8>]).duration(300).EUt(120).buildAndRegister();
+alloy.recipeBuilder().inputs([<enderio:item_alloy_ingot:6>, <ore:dustEndstone>]).outputs([<enderio:item_alloy_ingot:8>]).duration(300).EUt(120).buildAndRegister();
 alloy.recipeBuilder().inputs([<minecraft:glass>, <gregtech:meta_item_1:2202>]).outputs([<appliedenergistics2:quartz_glass> * 2]).duration(100).EUt(16).buildAndRegister();
 
 //Ender Chest
@@ -380,7 +380,9 @@ macerator.recipeBuilder().inputs([<minecraft:cobblestone>]).outputs([<minecraft:
 macerator.recipeBuilder().inputs([<minecraft:gravel>]).outputs([<minecraft:sand>]).duration(16).EUt(10).buildAndRegister();
 macerator.recipeBuilder().inputs([<minecraft:sand>]).outputs([<contenttweaker:block_dust>]).duration(16).EUt(10).buildAndRegister();
 macerator.recipeBuilder().inputs([<minecraft:netherrack>]).outputs([<gregtech:meta_item_1:2333>]).duration(16).EUt(10).buildAndRegister();
-macerator.recipeBuilder().inputs([<minecraft:end_stone>]).outputs([<contenttweaker:endstonedust>]).duration(16).EUt(10).buildAndRegister();
+
+macerator.findRecipe(8, [<minecraft:end_stone>], [null]).remove();
+macerator.recipeBuilder().inputs([<ore:endstone>.firstItem]).outputs([<ore:dustEndstone>.firstItem]).duration(16).EUt(10).buildAndRegister();
 
 //Copper Furnace
 recipes.remove(<morefurnaces:furnaceblock:5>);
