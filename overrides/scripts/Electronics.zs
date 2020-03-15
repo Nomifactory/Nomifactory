@@ -827,11 +827,6 @@ recipes.addShaped(<gregtech:machine:501>, [
 	[<ore:cableGtSingleTin>, <gregtech:machine_casing:1>, <ore:cableGtSingleTin>]]);	
 assembler.findRecipe(16, [<gregtech:cable:5071> * 2, <gregtech:machine_casing:1>], [<liquid:plastic> * 288]).remove();	
 
-//Max Machine Hull	
-recipes.addShaped(<gregtech:machine:509>, [
-	[<gregtech:meta_item_1:12145>, <ore:plateNeutronium>, <gregtech:meta_item_1:12145>], 
-	[<ore:wireGtSingleSuperconductor>, <gregtech:machine_casing:9>, <ore:wireGtSingleSuperconductor>]]);	
-	
 recipes.addShaped(<gregtech:meta_item_1:32600>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_2:16018>, <ore:stickIron>], 
 	[<gregtech:meta_item_2:16018>, <ore:stickIronMagnetic>, <gregtech:meta_item_2:16018>],

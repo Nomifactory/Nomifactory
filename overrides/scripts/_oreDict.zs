@@ -1932,17 +1932,15 @@ recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust
 <contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
 <contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
 
-recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate>]);		//neutronium plate exchange
-recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
 recipes.addShaped(<gregtech:frame_neutronium> * 4, [
 	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>],
 	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>],
 	[<gregtech:meta_item_1:14972>, <gregtech:meta_tool:8>, <gregtech:meta_item_1:14972>]]);
 
-recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
-
-
-
+//neutronium plate exchange
+recipes.addShapeless("of_exchange_neutronium_plate",
+    <gregtech:meta_item_1:12972>,
+    [<moreplates:neutronium_plate>]);
 
 /////////////////////////////////
 //  One Ingot To Rule Them All //
