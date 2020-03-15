@@ -9,14 +9,6 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.Material;
 
-val alloy = RecipeMap.getByName("alloy_smelter");
-val wiremill = RecipeMap.getByName("wiremill");
-val assembler = RecipeMap.getByName("assembler");
-val autoclave = RecipeMap.getByName("autoclave");
-val pyro = RecipeMap.getByName("pyro");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val assembly_line = RecipeMap.getByName("assembly_line");
-
 /////////////////   Tier One Circuits | Basic Tier   ///////////////////////	
 
 

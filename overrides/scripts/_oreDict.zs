@@ -367,6 +367,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#itemSawdust
 	<ore:itemSawdust>: [
 		<thermalfoundation:material:800>
+	],
+
+	#dustEndstone
+	<ore:dustEndstone>: [
+		<nuclearcraft:gem_dust:11>
 	]
 
 };
@@ -1922,6 +1927,17 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
+// Temporary recipe to convert endstone dusts
+recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
+<contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
+
+recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate>]);		//neutronium plate exchange
+recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
+recipes.addShaped(<gregtech:frame_neutronium> * 4, [
+	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>],
+	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>],
+	[<gregtech:meta_item_1:14972>, <gregtech:meta_tool:8>, <gregtech:meta_item_1:14972>]]);
 
 recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
 

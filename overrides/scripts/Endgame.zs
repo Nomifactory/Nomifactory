@@ -1,45 +1,5 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val lathe = RecipeMap.getByName("lathe");
-val autoclave = RecipeMap.getByName("autoclave");
-val engraver = RecipeMap.getByName("laser_engraver");
-val brewer = RecipeMap.getByName("brewer");
-val tower = RecipeMap.getByName("distillation_tower");
-val distillery = RecipeMap.getByName("distillery");
-val fermenter = RecipeMap.getByName("fermenter");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val macerator = RecipeMap.getByName("macerator");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val assembler = RecipeMap.getByName("assembler");
-val fluidextractor = RecipeMap.getByName("fluid_extractor");
-val saw = RecipeMap.getByName("cutting_saw");
-val electrolyzer = RecipeMap.getByName("electrolyzer");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val freezer = RecipeMap.getByName("vacuum_freezer");
-val compressor = RecipeMap.getByName("compressor");
-val implosion = RecipeMap.getByName("implosion_compressor");
-val wiremill = RecipeMap.getByName("wiremill");
-val extruder = RecipeMap.getByName("extruder");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val assembly_line = RecipeMap.getByName("assembly_line");
-val extractor = RecipeMap.getByName("extractor");
-var fusion_reactor = mods.gregtech.recipe.RecipeMap.getByName("fusion_reactor");
-val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
-val chemical_bath = RecipeMap.getByName("chemical_bath");
-
-
-
-//Dense Ores
-reactor.recipeBuilder().inputs(<densemetals:dense_redstone_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_redstone_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<densemetals:dense_emerald_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_emerald_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<densemetals:dense_diamond_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_diamond_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<densemetals:dense_iron_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_iron_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<densemetals:dense_lapis_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_lapis_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<densemetals:dense_gold_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_gold_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<densemetals:dense_coal_ore>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_coal_0> * 16]).duration(200).EUt(500).buildAndRegister();
-reactor.recipeBuilder().inputs(<contenttweaker:denseoilshale>).fluidInputs(<liquid:nitric_acid> * 1000).outputs([<gregtech:ore_oilsands_0:2> * 16]).duration(200).EUt(500).buildAndRegister();
-
 <deepmoblearning:glitch_fragment>.addTooltip(format.aqua(format.italic("Obtained by crushing Glitch Hearts against Obsidian.")));
 <appliedenergistics2:material:1>.addTooltip(format.aqua(format.italic("Obtained by charging with RF power in the AE2 Charger.")));
 
@@ -83,40 +43,6 @@ recipes.addShaped(<advancedrocketry:satelliteprimaryfunction:1>, [
 	[null,<advancedrocketry:satelliteprimaryfunction>,null],
 	[<ore:plateStainlessSteel>,<metaitem:sensor.hv>,<ore:plateStainlessSteel>],
 	[null,<ore:plateStainlessSteel>,null]]);	
-	
-//Cutting Gemstones
-
-saw.recipeBuilder().inputs([<ore:gemExquisiteEmerald>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemFlawlessEmerald>.firstItem * 2]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteEmerald>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemFlawlessEmerald>.firstItem * 2]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteEmerald>]).fluidInputs([<liquid:lubricant> * 22]).outputs(<ore:gemFlawlessEmerald>.firstItem * 2).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemFlawlessEmerald>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemEmerald>.firstItem * 4]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessEmerald>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemEmerald>.firstItem * 4]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessEmerald>]).fluidInputs([<liquid:lubricant> * 22]).outputs([<ore:gemEmerald>.firstItem * 4]).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemExquisiteDiamond>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemFlawlessDiamond>.firstItem * 2]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteDiamond>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemFlawlessDiamond>.firstItem * 2]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteDiamond>]).fluidInputs([<liquid:lubricant> * 22]).outputs(<ore:gemFlawlessDiamond>.firstItem * 2).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemFlawlessDiamond>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemDiamond>.firstItem * 4]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessDiamond>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemDiamond>.firstItem * 4]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessDiamond>]).fluidInputs([<liquid:lubricant> * 22]).outputs([<ore:gemDiamond>.firstItem * 4]).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemExquisiteRuby>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemFlawlessRuby>.firstItem * 2]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteRuby>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemFlawlessRuby>.firstItem * 2]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteRuby>]).fluidInputs([<liquid:lubricant> * 22]).outputs(<ore:gemFlawlessRuby>.firstItem * 2).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemFlawlessRuby>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemRuby>.firstItem * 4]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessRuby>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemRuby>.firstItem * 4]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessRuby>]).fluidInputs([<liquid:lubricant> * 22]).outputs([<ore:gemRuby>.firstItem * 4]).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemExquisiteLapis>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemFlawlessLapis>.firstItem * 2]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteLapis>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemFlawlessLapis>.firstItem * 2]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemExquisiteLapis>]).fluidInputs([<liquid:lubricant> * 22]).outputs(<ore:gemFlawlessLapis>.firstItem * 2).duration(30).EUt(300).buildAndRegister();
-
-saw.recipeBuilder().inputs([<ore:gemFlawlessLapis>]).fluidInputs([<liquid:water> * 90]).outputs([<ore:gemLapis>.firstItem * 12]).duration(120).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessLapis>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<ore:gemLapis>.firstItem * 12]).duration(78).EUt(300).buildAndRegister();
-saw.recipeBuilder().inputs([<ore:gemFlawlessLapis>]).fluidInputs([<liquid:lubricant> * 22]).outputs([<ore:gemLapis>.firstItem * 12]).duration(30).EUt(300).buildAndRegister();
 
 //Wetware Boards
 

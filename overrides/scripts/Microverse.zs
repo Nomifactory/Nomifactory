@@ -4,9 +4,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMap;
 import mods.modularmachinery.RecipePrimer;
 
-val assembler = RecipeMap.getByName("assembler");
-
-
 //////////////////////////////////////////////////////////////
 /////////////	    Modular Machinery	    //////////////////
 //////////////////////////////////////////////////////////////
