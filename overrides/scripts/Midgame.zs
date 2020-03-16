@@ -2,23 +2,6 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 
-
-val circuit_assembler = RecipeMap.getByName("circuit_assembler");
-val lathe = RecipeMap.getByName("lathe");
-val autoclave = RecipeMap.getByName("autoclave");
-val engraver = RecipeMap.getByName("laser_engraver");
-val brewer = RecipeMap.getByName("brewer");
-val tower = RecipeMap.getByName("distillation_tower");
-val distillery = RecipeMap.getByName("distillery");
-val fermenter = RecipeMap.getByName("fermenter");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val macerator = RecipeMap.getByName("macerator");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val assembler = RecipeMap.getByName("assembler");
-val saw = RecipeMap.getByName("cutting_saw");
-val extruder = RecipeMap.getByName("extruder");
-
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
 furnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass>, 0.0);

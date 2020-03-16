@@ -1,9 +1,5 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val mixer = RecipeMap.getByName("mixer");
-
 //Removed From Furnace Smelting
 furnace.remove(<ore:ingotIridium>);
 furnace.remove(<ore:ingotTungsten>);
