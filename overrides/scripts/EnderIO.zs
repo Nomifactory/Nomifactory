@@ -248,51 +248,40 @@ alloy.recipeBuilder()
 
 //Ensure Correct Solidification
 
-val liquidList as ILiquidStack[] = [<liquid:vibrant_alloy>, <liquid:pulsating_iron>, <liquid:energetic_alloy>,<liquid:electrical_steel>,<liquid:end_steel>,<liquid:conductive_iron>,<liquid:dark_steel>];
-for liquidItem in liquidList {
-    
-    //Nugget
-    solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [liquidItem*144]).remove();
-    //Ingot
-    solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [liquidItem*144]).remove();
-    //Block
-    solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [liquidItem*1296]).remove();
-}
+val liquidMap as IItemStack[][ILiquidStack] = {
+    <liquid:electrical_steel> : [<enderio:item_alloy_ingot:0>, <enderio:block_alloy:0>, <enderio:item_alloy_nugget:0>],
+    <liquid:energetic_alloy>  : [<enderio:item_alloy_ingot:1>, <enderio:block_alloy:1>, <enderio:item_alloy_nugget:1>],
+    <liquid:vibrant_alloy>    : [<enderio:item_alloy_ingot:2>, <enderio:block_alloy:2>, <enderio:item_alloy_nugget:2>],
+    <liquid:conductive_iron>  : [<enderio:item_alloy_ingot:4>, <enderio:block_alloy:4>, <enderio:item_alloy_nugget:4>],
+    <liquid:pulsating_iron>   : [<enderio:item_alloy_ingot:5>, <enderio:block_alloy:5>, <enderio:item_alloy_nugget:5>],
+    <liquid:dark_steel>       : [<enderio:item_alloy_ingot:6>, <enderio:block_alloy:6>, <enderio:item_alloy_nugget:6>],
+    <liquid:end_steel>        : [<enderio:item_alloy_ingot:8>, <enderio:block_alloy:8>, <enderio:item_alloy_nugget:8>]
+};
 
+for liquid, items in liquidMap {
 
-
-//ingot, block, nugget
-val itemAdd as IItemStack[][] = 
-
-    [[<enderio:item_alloy_ingot:2>, <enderio:block_alloy:2>,<enderio:item_alloy_nugget:2>],
-    [<enderio:item_alloy_ingot:5>, <enderio:block_alloy:5>, <enderio:item_alloy_nugget:5>],
-    [<enderio:item_alloy_ingot:1>, <enderio:block_alloy:1>, <enderio:item_alloy_nugget:1>],
-    [<enderio:item_alloy_ingot:0>, <enderio:block_alloy:0>, <enderio:item_alloy_nugget:0>],
-    [<enderio:item_alloy_ingot:8>, <enderio:block_alloy:8>, <enderio:item_alloy_nugget:8>],
-    [<enderio:item_alloy_ingot:4>, <enderio:block_alloy:4>, <enderio:item_alloy_nugget:4>],
-    [<enderio:item_alloy_ingot:6>, <enderio:block_alloy:6>, <enderio:item_alloy_nugget:6>]];
-
-for i in 0 to 7 {
-    
     //Ingots
+    solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [liquid * 144]).remove();
     solidifier.recipeBuilder()
-        .fluidInputs(liquidList[i]*144)
+        .fluidInputs(liquid * 144)
         .notConsumable(<gregtech:meta_item_1:32306>)
-        .outputs(itemAdd[i][0])
+        .outputs(items[0])
         .duration(20).EUt(8).buildAndRegister();
 
     //Blocks
+    solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [liquid * 1296]).remove();
     solidifier.recipeBuilder()
-        .fluidInputs(liquidList[i]*1296)
+        .fluidInputs(liquid * 1296)
         .notConsumable(<gregtech:meta_item_1:32308>)
-        .outputs(itemAdd[i][1])
+        .outputs(items[1])
         .duration(98).EUt(8).buildAndRegister();
 
     //Nuggets
+    solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [liquid * 144]).remove();
     solidifier.recipeBuilder()
-        .fluidInputs(liquidList[i]*144)
+        .fluidInputs(liquid * 144)
         .notConsumable(<gregtech:meta_item_1:32309>)
-        .outputs(itemAdd[i][2]*9)
+        .outputs(items[2] * 9)
         .duration(98).EUt(8).buildAndRegister();
 }
 
@@ -301,18 +290,23 @@ for i in 0 to 7 {
 //End Steel
 furnace.remove(<gregtech:meta_item_1:10712>, <gregtech:meta_item_1:2712>);
 furnace.addRecipe(<enderio:item_alloy_ingot:8>, <gregtech:meta_item_1:2712>);
+
 //Vibrant Alloy
 furnace.remove(<gregtech:meta_item_1:10702>, <gregtech:meta_item_1:2702>);
 furnace.addRecipe(<enderio:item_alloy_ingot:2>, <gregtech:meta_item_1:2702>);
+
 //Pulsating Iron
 furnace.remove(<gregtech:meta_item_1:10703>, <gregtech:meta_item_1:2703>);
 furnace.addRecipe(<enderio:item_alloy_ingot:5>, <gregtech:meta_item_1:2703>);
+
 //Energetic Alloy
 furnace.remove(<gregtech:meta_item_1:10701>, <gregtech:meta_item_1:2701>);
 furnace.addRecipe(<enderio:item_alloy_ingot:1>, <gregtech:meta_item_1:2701>);
+
 //Electrical Steel
 furnace.remove(<gregtech:meta_item_1:10705>, <gregtech:meta_item_1:2705>);
 furnace.addRecipe(<enderio:item_alloy_ingot:0>, <gregtech:meta_item_1:2705>);
+
 //Dark Steel
 furnace.remove(<gregtech:meta_item_1:10704>, <gregtech:meta_item_1:2704>);
 furnace.addRecipe(<enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:2704>);

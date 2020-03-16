@@ -400,58 +400,51 @@ mods.thermalexpansion.Insolator.addRecipe(<actuallyadditions:block_black_lotus>*
 //Ensure Proper Enderium/Lumium/Signalum Ingots
 
 
-val liquidList as ILiquidStack[] = [<liquid:enderium>, <liquid:signalum>, <liquid:lumium>];
-for liquidItem in liquidList {
-	
-	//Nugget
-	solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [liquidItem*144]).remove();
-	//Ingot
-	solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [liquidItem*144]).remove();
-	//Block
-	solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [liquidItem*1296]).remove();
-}
-
+val liquidMap as IItemStack[][ILiquidStack] = {
+    <liquid:signalum> : [<thermalfoundation:material:165>, <thermalfoundation:storage_alloy:5>, <thermalfoundation:material:229>],
+    <liquid:lumium>   : [<thermalfoundation:material:166>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:material:230>],
+    <liquid:enderium> : [<thermalfoundation:material:167>, <thermalfoundation:storage_alloy:7>, <thermalfoundation:material:231>]
+};
 
 
 //ingot, block, nugget
-val itemAdd as IItemStack[][] = 
 
-	[[<thermalfoundation:material:167>, <thermalfoundation:storage_alloy:7>,<thermalfoundation:material:231>],
-	[<thermalfoundation:material:165>,<thermalfoundation:storage_alloy:5>,<thermalfoundation:material:229>],
-	[<thermalfoundation:material:166>,<thermalfoundation:storage_alloy:6>,<thermalfoundation:material:230>]];
-
-for i in 0 to 3 {
+for liquid,items in liquidMap {
 	
 	//Ingots
+	solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [liquid * 144]).remove();
 	solidifier.recipeBuilder()
-		.fluidInputs(liquidList[i]*144)
+		.fluidInputs(liquid * 144)
 		.notConsumable(<gregtech:meta_item_1:32306>)
-		.outputs(itemAdd[i][0])
+		.outputs(items[0])
 		.duration(20).EUt(8).buildAndRegister();
 
 	//Blocks
+	solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [liquid * 1296]).remove();
 	solidifier.recipeBuilder()
-		.fluidInputs(liquidList[i]*1296)
+		.fluidInputs(liquid * 1296)
 		.notConsumable(<gregtech:meta_item_1:32308>)
-		.outputs(itemAdd[i][1])
+		.outputs(items[1])
 		.duration(98).EUt(8).buildAndRegister();
 
 	//Nuggets
+	solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [liquid * 144]).remove();
 	solidifier.recipeBuilder()
-		.fluidInputs(liquidList[i]*144)
+		.fluidInputs(liquid * 144)
 		.notConsumable(<gregtech:meta_item_1:32309>)
-		.outputs(itemAdd[i][2]*9)
+		.outputs(items[2] * 9)
 		.duration(98).EUt(8).buildAndRegister();
 }
-
 
 //Furnace Recipes
 //Enderium
 furnace.remove(<gregtech:meta_item_1:10708>, <gregtech:meta_item_1:2708>);
 furnace.addRecipe(<thermalfoundation:material:167>, <gregtech:meta_item_1:2708>);
+
 //Signalum
 furnace.remove(<gregtech:meta_item_1:10707>, <gregtech:meta_item_1:2707>);
 furnace.addRecipe(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
+
 //Lumium
 furnace.remove(<gregtech:meta_item_1:10706>, <gregtech:meta_item_1:2706>);
 furnace.addRecipe(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>);
