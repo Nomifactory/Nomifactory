@@ -315,9 +315,6 @@ implosion.recipeBuilder()
 	.outputs(<extendedcrafting:material:33>)
 	.EUt(30).duration(20).buildAndRegister();
 
-//Remove the recipe for omnium nugget with gtce explosives
-implosion.findRecipe(600, [<extendedcrafting:singularity_ultimate>, <gregtech:meta_item_1:32629>*4], [null]).remove();
-
 <extendedcrafting:material:33>.displayName = "Omnium Nugget";
 <extendedcrafting:material:32>.displayName = "Omnium Ingot";
 <extendedcrafting:storage:4>.displayName = "Block of Omnium";
