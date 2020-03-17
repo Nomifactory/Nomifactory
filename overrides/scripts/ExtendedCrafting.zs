@@ -309,8 +309,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:table_ultimate>,
 <extendedcrafting:table_ultimate>.displayName = "Ultimate Extended Crafting Table";
 
 <extendedcrafting:singularity_ultimate>.displayName = "Mote of Omnium";
-// FIXME: [ERROR] Input cannot contain null or empty ItemStacks. Inputs: [0xtile.air@32629] //
-implosion.recipeBuilder().inputs([<extendedcrafting:singularity_ultimate>]).outputs(<extendedcrafting:material:33>).EUt(30).duration(20).buildAndRegister();
+implosion.recipeBuilder()
+	.inputs([<extendedcrafting:singularity_ultimate>])
+	.property("explosives", 1)
+	.outputs(<extendedcrafting:material:33>)
+	.EUt(30).duration(20).buildAndRegister();
+
+//Remove the recipe for omnium nugget with gtce explosives
+implosion.findRecipe(600, [<extendedcrafting:singularity_ultimate>, <gregtech:meta_item_1:32629>*4], [null]).remove();
+
 <extendedcrafting:material:33>.displayName = "Omnium Nugget";
 <extendedcrafting:material:32>.displayName = "Omnium Ingot";
 <extendedcrafting:storage:4>.displayName = "Block of Omnium";
