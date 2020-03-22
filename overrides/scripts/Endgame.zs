@@ -490,7 +490,7 @@ assembly_line.findRecipe(491520,
     [<liquid:soldering_alloy> * 2304]).remove();
 
 assembly_line.recipeBuilder()
-    .inputs(<gregtech:meta_item_2:32466> * 64, <gregtech:meta_item_2:16047> * 64,
+    .inputs(<gregtech:meta_item_2:32446> * 64, <gregtech:meta_item_2:16047> * 64,
             <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
             <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
             <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
