@@ -1794,6 +1794,10 @@ mods.jei.JEI.removeAndHide(<enderio:item_alloy_nugget:3>);
 
 recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>]);
 
+//Molten Infinity Dust
+solidifier.recipeBuilder().fluidInputs(<liquid:molteninfinitydust> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<enderio:block_infinity:0>]).duration(400).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<enderio:block_infinity:0>).fluidOutputs([<liquid:molteninfinitydust> * 1296]).duration(200).EUt(30).buildAndRegister();
+
 //Circuits
 <ore:lvcef>.add(<gregtech:machine:10661>);
 <ore:lvcef>.add(<gregtech:machine:10665>);

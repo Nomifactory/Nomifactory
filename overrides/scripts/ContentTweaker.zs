@@ -312,6 +312,7 @@ var moltenempoweredemeradic = VanillaFactory.createFluid("moltenempoweredemeradi
 var moltenempoweredvoid = VanillaFactory.createFluid("moltenempoweredvoid", Color.fromHex("e0e0e0"));
 var moltensoularium = VanillaFactory.createFluid("moltensoularium", Color.fromHex("6b4411"));
 var moltendarksoularium = VanillaFactory.createFluid("moltendarksoularium", Color.fromHex("422805"));
+var molteninfinitydust = VanillaFactory.createFluid("molteninfinitydust", Color.fromHex("979797"));
 krypton.register();
 neon.register();
 xenon.register();
@@ -335,6 +336,7 @@ moltenempoweredemeradic.register();
 moltenempoweredvoid.register();
 moltensoularium.register();
 moltendarksoularium.register();
+molteninfinitydust.register();
 
 
 
