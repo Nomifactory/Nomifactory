@@ -858,12 +858,12 @@ implosion.recipeBuilder()
 
 
 recipes.remove(<minecraft:end_crystal>);
-recipes.addShaped(<minecraft:end_crystal>, [
-    [<minecraft:glass_pane>,<minecraft:glass_pane>,<minecraft:glass_pane>],
-    [<minecraft:glass_pane>,<gregtech:meta_item_1:32725>,<minecraft:glass_pane>],
-    [<minecraft:glass_pane>,<minecraft:glass_pane>,<minecraft:glass_pane>]]);
-
-
+makeShaped("of_end_crystal", <minecraft:end_crystal>,
+    ["AAA",
+     "ABA",
+     "AAA"],
+    { A : <minecraft:glass_pane>,
+      B : <gregtech:meta_item_1:32725> });
 
 ///////////////////////// Nether Star  ///////////////////////////////
 recipes.remove(<minecraft:nether_star>);
