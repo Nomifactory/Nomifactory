@@ -287,6 +287,7 @@ assembler.findRecipe(16,
 assembler.recipeBuilder()
     .inputs(<ore:plateLumium> * 8)
     .outputs([<gregtech:machine_casing:6>])
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8}))
     .duration(30).EUt(16).buildAndRegister();
 
 //Rare Earth
