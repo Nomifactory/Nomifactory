@@ -381,3 +381,16 @@ reactor.recipeBuilder()
     .buildAndRegister();
 // end Fix for #357
 
+alloy.recipeBuilder()
+	.inputs([<minecraft:chorus_fruit>, <minecraft:glowstone>])
+	.outputs([<armorplus:ender_glowstone>])
+	.duration(200).EUt(16).buildAndRegister();
+
+alloy.recipeBuilder()
+	.inputs(<minecraft:stone>, <minecraft:chorus_fruit>)
+	.outputs([<armorplus:ender_stone>])
+	.duration(200).EUt(16).buildAndRegister();
+
+recipes.addShapeless(<armorplus:ender_stone_bricks>, 
+	[<armorplus:ender_stone>,<armorplus:ender_stone>,
+	<armorplus:ender_stone>,<armorplus:ender_stone>]);
