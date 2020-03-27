@@ -809,3 +809,9 @@ furnace.addRecipe(<enderio:item_alloy_ingot:4>, <gregtech:meta_item_1:2700>, 0.0
 
 recipes.addShaped(<gregtech:meta_item_2:26033>, [[<gregtech:meta_item_1:14033>, <gregtech:meta_item_1:12033>, <gregtech:meta_item_1:14033>],[<gregtech:meta_item_1:12033>, <gregtech:meta_tool:11>, <gregtech:meta_item_1:12033>], [<gregtech:meta_item_1:14033>, <gregtech:meta_item_1:12033>, <gregtech:meta_item_1:14033>]]);
 
+//Fix Light Gray Spray Can being uncraftable
+assembler.findRecipe(8, [<gregtech:meta_item_1:32402>, <gregtech:meta_item_2:32422>], [null]).remove();
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32402>, <ore:dyeLightGray>)
+	.outputs(<gregtech:meta_item_1:32446>)
+	.duration(200).EUt(8).buildAndRegister();
