@@ -1,3 +1,9 @@
+dist: xenial
+addons:
+  snaps:
+  - name: hub
+    confinement: classic
+
 language: node_js
 node_js:
   - 13
