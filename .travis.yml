@@ -1,0 +1,34 @@
+language: node_js
+node_js:
+  - 13
+
+before_install:
+  - cd ./buildtools
+
+script:
+  - . ../.travis.sh
+  - cd ../
+
+deploy:
+  - provider: releases
+    skip_cleanup: true
+    token: "$GITHUB_TOKEN"
+    file:
+      - ./build/$SERVER_ARCHIVE.zip
+      - ./build/$CLIENT_ARCHIVE.zip
+    on:
+      tags: true
+      condition: $TAGGED_RELEASE = true
+
+  - provider: releases
+    overwrite: true
+    skip_cleanup: true
+    token: "$GITHUB_TOKEN"
+    tag_name: "latest-dev-preview"
+    prerelease: true
+    file:
+      - ./build/$SERVER_ARCHIVE.zip
+      - ./build/$CLIENT_ARCHIVE.zip
+    on:
+      all_branches: true
+      condition: $TAGGED_RELEASE = false
