@@ -386,8 +386,8 @@ function zipServer() {
 module.exports = [
 	createServerDirs,
 	downloadForge,
-	// downloadMinecraftServer,
-	// downloadMods,
+	downloadMinecraftServer,
+	downloadMods,
 	copyServerOverrides,
 	copyServerfiles,
 	copyServerLicense,
