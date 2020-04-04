@@ -4,6 +4,12 @@ const log = require("fancy-log");
 /** @type {InstanceType<typeof Octokit>} */
 var octokit;
 
+const REGEX_SLUG = /(.+)\/(.+)/;
+
+/**
+ * Setup Octokit so we can remove the pre-release tag before
+ * pushing a new release so Travis doesn't complain.
+ */
 async function setupOctokit(cb) {
 	if (!process.env.GITHUB_TOKEN) {
 		cb("No GitHub token provided.");
@@ -24,11 +30,16 @@ async function setupOctokit(cb) {
 	cb();
 }
 
-const REGEX_SLUG = /(.+)\/(.+)/;
-
+/**
+ * Remove the pre-release release.
+ * 
+ * Does nothing if the current build is tagged or the
+ * pre-release release doesn't exist.
+ *
+ */
 async function fetchAndRemovePrereleaseRelease(cb) {
 	if (process.env.TRAVIS_TAG) {
-		log("Tagged release, bailing out.");
+		log("Tagged build, bailing out.");
 		cb();
 	}
 
@@ -54,9 +65,16 @@ async function fetchAndRemovePrereleaseRelease(cb) {
 	cb();
 }
 
+/**
+ * Remove the pre-release tag.
+ * 
+ * Does nothing if the current build is tagged or the
+ * pre-release tag doesn't exist.
+ *
+ */
 async function fetchAndRemovePrereleaseTag(cb) {
 	if (process.env.TRAVIS_TAG) {
-		log("Tagged release, bailing out.");
+		log("Tagged build, bailing out.");
 		cb();
 	}
 

@@ -1,32 +1,8 @@
 set -e
 
-if [ -z "$TRAVIS_REPO_SLUG" ]
-then
-	echo "Invalid repository slug."
-	exit 1
-fi
-
-if [ -z "$TRAVIS_COMMIT" ]
-then
-	echo "Invalid commit hash."
-	exit 1
-fi
-
-if [ -z "$TRAVIS_BRANCH" ]
-then
-	echo "Invalid branch."
-	exit 1
-fi
-
 REGEX_SLUG="(.+)/(.+)"
 [[ $TRAVIS_REPO_SLUG =~ $REGEX_SLUG ]]
 REPO_NAME=${BASH_REMATCH[2]}
-
-if [ -z "$REPO_NAME" ]
-then
-	echo "Malformed repository name."
-	exit 1
-fi
 
 releaseName=""
 

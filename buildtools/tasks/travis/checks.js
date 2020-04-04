@@ -5,6 +5,10 @@ const vars = [
 	"TRAVIS_BRANCH",
 ]
 
+/**
+ * Check required env. variables for vailidity and cancel
+ * the build if something is unset.
+ */
 function checkEnvironmentalVariables(cb) {
 	vars.forEach(vari => {
 		if (!process.env[vari] || process.env[vari] == "") {
