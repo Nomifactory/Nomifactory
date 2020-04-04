@@ -68,7 +68,7 @@ async function fetchAndRemovePrereleaseTag(cb) {
 	const prereleaseTag = tags.data.find(x => x.name == "latest-dev-preview");
 
 	if (prereleaseTag) {
-		log(`Removing pre-release tag ${prerelease.tag_name}...`)
+		log(`Removing pre-release tag ${prereleaseTag.name}...`)
 
 		await octokit.git.deleteRef({
 			owner: LOCAL_STORAGE.GITHUB_OWNER,
@@ -76,7 +76,7 @@ async function fetchAndRemovePrereleaseTag(cb) {
 			ref: `tags/${prereleaseTag.name}`
 		});
 
-		log(`Removed pre-release tag ${prerelease.tag_name}.`)
+		log(`Removed pre-release tag ${prereleaseTag.name}.`)
 	}
 
 	cb();
