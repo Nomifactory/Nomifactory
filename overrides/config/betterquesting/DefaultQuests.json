@@ -40612,6 +40612,7 @@
     "668:10": {
       "questID:3": 668,
       "preRequisites:11": [
+        254,
         287
       ],
       "properties:10": {
@@ -40630,7 +40631,7 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
