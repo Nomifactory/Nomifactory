@@ -24,6 +24,8 @@ function postCleanup(cb) {
 
 const serverTasks = require("./tasks/server");
 const clientTasks = require("./tasks/client");
+const travisTasks = require("./tasks/travis");
+const travisChecksTasks = require("./tasks/travis/checks");
 
 const buildServer = series(
 	cleanup,
@@ -44,8 +46,18 @@ const buildAll = series(
 	postCleanup
 )
 
+const travis = series(
+	...travisTasks
+)
+
+const travisChecks = series(
+	...travisChecksTasks
+)
+
 module.exports = {
 	buildServer: buildServer,
 	buildClient: buildClient,
-	buildAll: buildAll
+	buildAll: buildAll,
+	travis: travis,
+	travisChecks: travisChecks
 }

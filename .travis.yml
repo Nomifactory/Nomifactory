@@ -1,8 +1,6 @@
-dist: xenial
-addons:
-  snaps:
-  - name: hub
-    confinement: classic
+branches:
+  except:
+    - latest-dev-preview
 
 language: node_js
 node_js:
@@ -12,7 +10,7 @@ before_install:
   - cd ./buildtools
 
 script:
-  - . ../.travis.sh
+  - gulp travisChecks && . ../.travis.sh && gulp travis
   - cd ../
 
 deploy:
@@ -30,11 +28,11 @@ deploy:
     overwrite: true
     skip_cleanup: true
     token: "$GITHUB_TOKEN"
-    tag_name: "latest-dev-preview"
+    tag_name: latest-dev-preview
     prerelease: true
     file:
       - ./build/$SERVER_ARCHIVE.zip
       - ./build/$CLIENT_ARCHIVE.zip
     on:
-      all_branches: true
+      branch: 1.3-PR
       condition: $TAGGED_RELEASE = false

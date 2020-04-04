@@ -50,15 +50,5 @@ gulp buildAll
 mv ../build/client.zip ../build/$CLIENT_ARCHIVE.zip
 mv ../build/server.zip ../build/$SERVER_ARCHIVE.zip
 
-if [ $TAGGED_RELEASE = false ]
-then
-    git config --local user.name $GITHUB_USER
-    git config --local user.password $GITHUB_TOKEN
-	set +e
-	hub release delete latest-dev-preview
-	git push --delete origin latest-dev-preview
-	set -e
-fi
-
 echo "Release = ${releaseName}"
 echo "Tagged release = ${TAGGED_RELEASE}"
