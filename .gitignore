@@ -1,3 +1,5 @@
 *.pdf
 overrides/config/brandon3055/ProjectIntelligence
 overrides/config/brandon3055/ResourceCache
+/.vs/Omnifactory/v16/.suo
+/.vs

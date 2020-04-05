@@ -644,3 +644,16 @@ ultradensehydrogen.maxStackSize = 64;
 ultradensehydrogen.rarity = "rare";
 ultradensehydrogen.register();
 
+
+var dopedinfinitydust = VanillaFactory.createBlock("dopedinfinitydust", <blockmaterial:sand>);
+dopedinfinitydust.setLightValue(15);
+dopedinfinitydust.setToolClass("shovel");
+dopedinfinitydust.setToolLevel(3);
+dopedinfinitydust.setBlockSoundType(<soundtype:sand>);
+dopedinfinitydust.setDropHandler(function(drops, world, position, state, fortune) {
+	drops.add((<item:enderio:item_material:20>) % 20);
+	drops.add((<item:enderio:block_infinity>) % 0.01);
+    return;
+});
+dopedinfinitydust.setGravity(true);
+dopedinfinitydust.register();

@@ -519,3 +519,13 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:water> * 16000, <liquid:soldering_alloy> * 2880)
     .outputs(<gtadditions:ga_meta_item:32124>)
     .duration(2000).EUt(300000).buildAndRegister();
+
+
+//Doped Infinty Dust
+reactor.recipeBuilder()
+	.inputs(<item:enderio:block_infinity:2>)
+	.fluidInputs([<liquid:moltencreativeportabletank> * 1000])
+	.outputs([<item:contenttweaker:dopedinfinitydust>])
+	.duration(1000).EUt(500000).buildAndRegister();
+<item:contenttweaker:dopedinfinitydust>.addTooltip(
+	format.aqua(format.italic("Will sometimes drop Grains of Infinity when mined")));
