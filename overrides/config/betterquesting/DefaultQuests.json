@@ -21576,7 +21576,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Europium Ingot",
-          "desc:8": "§6Stabilized Europium§r§r was scavenged from microverses, but now with a §3Fusion Reactor§r, you can make regular Europium!\n\nThis element is needed for making things in §bDraconic Evolution§r§r, as well as the §6Fusion Reactor Computer Mark 2§r and §6Wetware Processor Arrays§r§r.\n\nYou make it by fusing molten §9§9Neodymium§r§r and §9Hydrogen§r."
+          "desc:8": "With a §3Fusion Reactor§r, you can make Europium!\n\nThis element is needed for making things in §bDraconic Evolution§r§r, as well as the §6Fusion Reactor Computer Mark 2§r and §6Wetware Processor Arrays§r§r.\n\nYou make it by fusing molten §9§9Neodymium§r§r and §9Hydrogen§r."
         }
       },
       "tasks:9": {
