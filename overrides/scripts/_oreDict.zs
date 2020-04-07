@@ -1937,6 +1937,9 @@ recipes.addShapeless("of_exchange_neutronium_plate",
     <moreplates:neutronium_plate>,
     [<gregtech:meta_item_1:12972>]);
 
+// Workaround for DE Fusion Custom recipe not liking strings in the NBT
+<ore:compressedoctadiccap>.add(compressedoctadiccap);
+
 /////////////////////////////////
 //  One Ingot To Rule Them All //
 /////////////////////////////////
