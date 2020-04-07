@@ -5,7 +5,7 @@ const path     = require("path").posix;
 
 const { series } = require("gulp");
 
-const DEST_FOLDER        = CONFIG.buildDestinationDirectory;
+const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
 
 /**
@@ -13,14 +13,14 @@ const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
  */
 function cleanup(cb) {
 	del(DEST_FOLDER, { force: true }).then(() => cb());
-};
+}
 
 /**
  * Post-cleanups.
  */
 function postCleanup(cb) {
 	del(TEMP_FOLDER, { force: true }).then(() => cb());
-};
+}
 
 const serverTasks = require("./tasks/server");
 const clientTasks = require("./tasks/client");

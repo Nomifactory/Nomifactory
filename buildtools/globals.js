@@ -25,11 +25,11 @@ if (fs.existsSync(CUSTOM_CONFIG_PATH)) {
 		throw new Error(`Fatal Error: malformed ${CUSTOM_CONFIG_PATH}.`);
 	}
 
-	Object.assign(defaultConfig, customConfig);
+	Object.assign(CONFIG, customConfig);
 }
 
 global.CONFIG = CONFIG;
 global.LOCAL_STORAGE = {};
 
 global.MODPACK_MANIFEST = JSON.parse(fs.readFileSync(path.join(CONFIG.buildSourceDirectory, "manifest.json")));
-global.OVERRIDES_FOLDER = MODPACK_MANIFEST.overrides || "overrides";
+global.OVERRIDES_FOLDER = global.MODPACK_MANIFEST.overrides || "overrides";

@@ -166,7 +166,6 @@ exports.ConcurrentRetryDownloader = ConcurrentRetryDownloader;
  * @typedef {object} ConcurrentRetryDownloaderOptions
  * @property {number} [maxRetries=5] Max retries.
  */
-
 const retryRequest = (maxRetries = 5, ...args) => {
 	return new Promise((resolve, reject) => {
 		const retry = (counter = 0) => {

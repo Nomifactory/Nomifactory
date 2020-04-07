@@ -21,8 +21,8 @@ async function setupOctokit(cb) {
 	
 	const parsedSlug = REGEX_SLUG.exec(process.env.TRAVIS_REPO_SLUG);
 	if (parsedSlug) {
-		LOCAL_STORAGE.GITHUB_OWNER = parsedSlug[1];
-		LOCAL_STORAGE.GITHUB_REPO = parsedSlug[2];
+		global.LOCAL_STORAGE.GITHUB_OWNER = parsedSlug[1];
+		global.LOCAL_STORAGE.GITHUB_REPO = parsedSlug[2];
 	} else {
 		cb("No/malformed GitHub repository slug provided.");
 	}
@@ -44,8 +44,8 @@ async function fetchAndRemovePrereleaseRelease(cb) {
 	}
 
 	const releases = await octokit.repos.listReleases({
-		owner: LOCAL_STORAGE.GITHUB_OWNER,
-		repo: LOCAL_STORAGE.GITHUB_REPO,
+		owner: global.LOCAL_STORAGE.GITHUB_OWNER,
+		repo: global.LOCAL_STORAGE.GITHUB_REPO,
 	});
 
 	const prerelease = releases.data
@@ -54,8 +54,8 @@ async function fetchAndRemovePrereleaseRelease(cb) {
 	if (prerelease) {
 		log(`Removing pre-release with tag ${prerelease.tag_name}...`)
 		await octokit.repos.deleteRelease({
-			owner: LOCAL_STORAGE.GITHUB_OWNER,
-			repo: LOCAL_STORAGE.GITHUB_REPO,
+			owner: global.LOCAL_STORAGE.GITHUB_OWNER,
+			repo: global.LOCAL_STORAGE.GITHUB_REPO,
 			release_id: prerelease.id
 		});
 
@@ -79,8 +79,8 @@ async function fetchAndRemovePrereleaseTag(cb) {
 	}
 
 	const tags = await octokit.repos.listTags({
-		owner: LOCAL_STORAGE.GITHUB_OWNER,
-		repo: LOCAL_STORAGE.GITHUB_REPO,
+		owner: global.LOCAL_STORAGE.GITHUB_OWNER,
+		repo: global.LOCAL_STORAGE.GITHUB_REPO,
 	});
 
 	const prereleaseTag = tags.data.find(x => x.name == "latest-dev-preview");
@@ -89,8 +89,8 @@ async function fetchAndRemovePrereleaseTag(cb) {
 		log(`Removing pre-release tag ${prereleaseTag.name}...`)
 
 		await octokit.git.deleteRef({
-			owner: LOCAL_STORAGE.GITHUB_OWNER,
-			repo: LOCAL_STORAGE.GITHUB_REPO,
+			owner: global.LOCAL_STORAGE.GITHUB_OWNER,
+			repo: global.LOCAL_STORAGE.GITHUB_REPO,
 			ref: `tags/${prereleaseTag.name}`
 		});
 

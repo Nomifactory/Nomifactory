@@ -8,8 +8,8 @@ const { retryRequest } = require("../../util/downloaders.js");
 
 const { src, dest } = require("gulp");
 
-const SRC_FOLDER         = CONFIG.buildSourceDirectory;
-const DEST_FOLDER        = CONFIG.buildDestinationDirectory;
+const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
+const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const CLIENT_DEST_FOLDER = path.join(DEST_FOLDER, "client");
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
 
@@ -33,7 +33,7 @@ function createClientDirs(cb) {
 function copyClientManifest() {
 	return src("../manifest.json")
 		.pipe(dest(CLIENT_DEST_FOLDER));
-};
+}
 
 /**
  * Copies the license file.
@@ -41,16 +41,21 @@ function copyClientManifest() {
 function copyClientLicense() {
 	return src("../LICENSE.md")
 		.pipe(dest(CLIENT_DEST_FOLDER));
-};
+}
 
 /**
  * Copies modpack overrides.
  */
 function copyClientOverrides() {
-	const basedir = path.join(SRC_FOLDER, OVERRIDES_FOLDER);
-	return src(CONFIG.copyOverridesClientGlobs.map(glob => path.join(basedir, glob)), { base: path.join(basedir, "..") })
+	const basedir = path.join(SRC_FOLDER, global.OVERRIDES_FOLDER);
+	return src(
+		global.CONFIG.copyOverridesClientGlobs
+			.map(glob => path.join(basedir, glob))
+
+		, { base: path.join(basedir, "..") }
+	)
 		.pipe(dest(CLIENT_DEST_FOLDER));
-};
+}
 
 /**
  * Fetches mod links and builds modlist.html.
@@ -62,15 +67,15 @@ function fetchModList(cb) {
 	 * Fetch file descriptions for download urls and hashes
 	 * by mapping files to Promises.
 	 */
-	Promise.map(MODPACK_MANIFEST.files, file => {
+	Promise.map(global.MODPACK_MANIFEST.files, file => {
 		return retryRequest(
-			CONFIG.downloaderMaxRetries
+			global.CONFIG.downloaderMaxRetries
 			, {
 				uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${file.projectID}`
 				, json: true
 			}
 		)
-	}, { concurrency: CONFIG.downloaderConcurrency }).then(modInfos => {
+	}, { concurrency: global.CONFIG.downloaderConcurrency }).then(modInfos => {
 		const output = [
 			"<ul>\r\n",
 			...modInfos

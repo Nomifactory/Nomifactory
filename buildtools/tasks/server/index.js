@@ -11,8 +11,8 @@ const { src, dest } = require("gulp");
 
 const { ConcurrentRetryDownloader, retryRequest } = require("../../util/downloaders.js");
 
-const SRC_FOLDER         = CONFIG.buildSourceDirectory;
-const DEST_FOLDER        = CONFIG.buildDestinationDirectory;
+const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
+const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const SERVER_DEST_FOLDER = path.join(DEST_FOLDER, "server");
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
 
@@ -22,9 +22,9 @@ const Promise = require("bluebird");
  * Initialize the file downloader.
  */
 const DOWNLOADER = new ConcurrentRetryDownloader({
-	concurrency  : CONFIG.downloaderConcurrency
-	, checkHashes: CONFIG.downloaderCheckHashes
-	, maxRetries : CONFIG.downloaderMaxRetries
+	concurrency  : global.CONFIG.downloaderConcurrency
+	, checkHashes: global.CONFIG.downloaderCheckHashes
+	, maxRetries : global.CONFIG.downloaderMaxRetries
 })
 .on("start", (args) => {
 	log(`Downloading ${path.basename(args.fileDef.path)}...`)
@@ -138,7 +138,7 @@ const FORGE_MAVEN = "https://files.minecraftforge.net/maven/";
  * Extract, parse the profile data and download required libraries.
  */
 function downloadForge(cb) {
-	const minecraft = MODPACK_MANIFEST.minecraft;
+	const minecraft = global.MODPACK_MANIFEST.minecraft;
 
 	/**
 	 * Break down the Forge version defined in manifest.json.
@@ -200,7 +200,7 @@ function downloadForge(cb) {
 						 * 
 						 * We will need it to process launchscripts.
 						 */
-						LOCAL_STORAGE.forgeJar = forgeUniversalPath;
+						global.LOCAL_STORAGE.forgeJar = forgeUniversalPath;
 
 						log("Fetching server libraries...")
 
@@ -222,7 +222,7 @@ function downloadForge(cb) {
 	} else {
 		cb("Malformed Forge version in manifest.json.")
 	}
-};
+}
 
 const LAUNCHERMETA_VERSION_MANIFEST = "https://launchermeta.mojang.com/mc/game/version_manifest.json";
 
@@ -236,13 +236,13 @@ function downloadMinecraftServer(cb) {
 	 * Fetch the manifest file of all Minecraft versions.
 	 */
 	retryRequest(
-		CONFIG.downloaderMaxRetries
+		global.CONFIG.downloaderMaxRetries
 		, { uri: LAUNCHERMETA_VERSION_MANIFEST, json: true }
 	).then((manifest) => {
 		/**
 		 * Find the version defined in manifest.json.
 		 */
-		const version = manifest.versions.find(x => x.id == MODPACK_MANIFEST.minecraft.version);
+		const version = manifest.versions.find(x => x.id == global.MODPACK_MANIFEST.minecraft.version);
 		if (version) {
 			log(`Fetching the manifest file for Minecraft ${version.id}...`)
 
@@ -250,7 +250,7 @@ function downloadMinecraftServer(cb) {
 			 * Fetch the version manifest file.
 			 */
 			retryRequest(
-				CONFIG.downloaderMaxRetries
+				global.CONFIG.downloaderMaxRetries
 				, { uri: version.url, json: true }
 			).then((versionManifest) => {			
 				if (versionManifest.downloads && versionManifest.downloads.server) {
@@ -271,10 +271,10 @@ function downloadMinecraftServer(cb) {
 				}
 			}).catch(cb);
 		} else {
-			cb(`Couldn't find ${MODPACK_MANIFEST.minecraft.version} in the version manifest.`);
+			cb(`Couldn't find ${global.MODPACK_MANIFEST.minecraft.version} in the version manifest.`);
 		}
 	});
-};
+}
 
 /**
  * Downloads mods according to manifest.json and checks hashes.
@@ -286,15 +286,15 @@ function downloadMods(cb) {
 	 * Fetch file descriptions for download urls and hashes
 	 * by mapping files to Promises.
 	 */
-	Promise.map(MODPACK_MANIFEST.files, file => {
+	Promise.map(global.MODPACK_MANIFEST.files, file => {
 		return retryRequest(
-			CONFIG.downloaderMaxRetries
+			global.CONFIG.downloaderMaxRetries
 			, {
 				uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${file.projectID}/file/${file.fileID}`
 				, json: true
 			}
 		)
-	}, { concurrency: CONFIG.downloaderConcurrency }).then(fileInfos => {
+	}, { concurrency: global.CONFIG.downloaderConcurrency }).then(fileInfos => {
 		log(`Fetched ${fileInfos.length} mods...`);
 
 		/**
@@ -314,16 +314,16 @@ function downloadMods(cb) {
 			}), cb
 		);
 	})
-};
+}
 
 /**
  * Copies modpack overrides.
  */
 function copyServerOverrides() {
-	const basedir = path.join(SRC_FOLDER, OVERRIDES_FOLDER);
-	return src(CONFIG.copyOverridesServerGlobs.map(glob => path.join(basedir, glob)), { base: basedir })
+	const basedir = path.join(SRC_FOLDER, global.OVERRIDES_FOLDER);
+	return src(global.CONFIG.copyOverridesServerGlobs.map(glob => path.join(basedir, glob)), { base: basedir })
 		.pipe(dest(SERVER_DEST_FOLDER));
-};
+}
 
 /**
  * Copies files from ./serverfiles into dest folder.
@@ -331,7 +331,7 @@ function copyServerOverrides() {
 function copyServerfiles() {
 	return src(["../serverfiles/**"])
 		.pipe(dest(SERVER_DEST_FOLDER));
-};
+}
 
 /**
  * Copies the license file.
@@ -339,7 +339,7 @@ function copyServerfiles() {
 function copyServerLicense() {
 	return src("../LICENSE.md")
 		.pipe(dest(SERVER_DEST_FOLDER));
-};
+}
 
 /**
  * Copies files from ./launchscripts into dest folder and processes them using mustache.
@@ -348,13 +348,13 @@ function copyServerLicense() {
  */
 function processLaunchscripts() {
 	const rules = {
-		jvmArgs: CONFIG.launchscriptsJVMArgs
-		, minRAM: CONFIG.launchscriptsMinRAM
-		, maxRAM: CONFIG.launchscriptsMaxRAM
+		jvmArgs: global.CONFIG.launchscriptsJVMArgs
+		, minRAM: global.CONFIG.launchscriptsMinRAM
+		, maxRAM: global.CONFIG.launchscriptsMaxRAM
 	};
 
-	if (LOCAL_STORAGE.forgeJar) {
-		rules.forgeJar = LOCAL_STORAGE.forgeJar;
+	if (global.LOCAL_STORAGE.forgeJar) {
+		rules.forgeJar = global.LOCAL_STORAGE.forgeJar;
 	} else {
 		rules.forgeJar = "";
 		log.warn("No forgeJar specified!");
@@ -372,7 +372,7 @@ function processLaunchscripts() {
 			})
 		)
 		.pipe(dest(SERVER_DEST_FOLDER));
-};
+}
 
 /**
  * Zips the server directory.

@@ -22,7 +22,6 @@ const murmurhashV2 = require('murmurhash').v2;
  * @returns {Number} The MurmurHash hash of file contents.
  */
 exports.murmurhash = (inputBuffer, seed = 1) => {
-	var buff = new Uint8Array(inputBuffer.length);
 	var output = "";
 
 	for (let i = 0; i < inputBuffer.length; i++) {
@@ -33,7 +32,7 @@ exports.murmurhash = (inputBuffer, seed = 1) => {
 		}
 	}
 
-	return murmurhashV2(output, 1);
+	return murmurhashV2(output, seed);
 };
 
 const sha1 = require("sha1");
