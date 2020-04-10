@@ -403,6 +403,21 @@ recipes.addShaped(<advancedrocketry:hovercraft>, [
 	, [<advancedrocketry:rocketmotor>, null, <advancedrocketry:rocketmotor>]
 ]);
 
+// Planet Selector
+recipes.addShaped(<advancedrocketry:planetselector>, [
+	[null, null, null],
+	[<ore:circuitGood>, <advancedrocketry:planetidchip> ,<ore:circuitGood>],
+	[<libvulpes:structuremachine>,<libvulpes:structuremachine>,<libvulpes:structuremachine>]
+	]);
+
+// Holographic Planet Selector
+recipes.remove(<advancedrocketry:planetholoselector>);
+recipes.addShaped(<advancedrocketry:planetholoselector>, [
+	[<ore:circuitAdvanced>, <minecraft:glowstone>, <ore:circuitAdvanced>],
+	[<libvulpes:structuremachine>, <advancedrocketry:planetselector> ,<libvulpes:structuremachine>],
+	[<ore:circuitAdvanced>, <libvulpes:holoprojector>, <ore:circuitAdvanced>]
+]);
+
 // Space Suit Upgrades
 // Hover Upgrade
 assembler.recipeBuilder()
