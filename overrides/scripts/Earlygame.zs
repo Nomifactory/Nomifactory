@@ -440,8 +440,29 @@ recipes.addShapeless(<gregtech:meta_item_1:32517>,[<gregtech:meta_item_1:32500>,
 recipes.addShapeless(<gregtech:meta_item_1:32519>,[<gregtech:meta_item_1:32500>,<gregtech:meta_item_1:2063>,<gregtech:meta_item_1:2063>]);	//Small Sodium
 recipes.addShapeless(<gregtech:meta_item_1:32518>,[<gregtech:meta_item_1:32500>,<gregtech:meta_item_1:2036>,<gregtech:meta_item_1:2036>]);	//Small Lithium
 
+// Small Battery Hull
 recipes.remove(<gregtech:meta_item_1:32500>);
-recipes.addShaped(<gregtech:meta_item_1:32500>, [[<ore:cableGtSingleRedAlloy>], [<gregtech:meta_item_1:12071>], [<gregtech:meta_item_1:12071>]]);
+recipes.addShaped(<gregtech:meta_item_1:32500>, [
+	[<ore:cableGtSingleRedAlloy>], 
+	[<gregtech:meta_item_1:12071>], 
+	[<gregtech:meta_item_1:12071>]]);
+
+// Add Corrected Small Battery Hull recipe to Assembler
+assembler.findRecipe(1, [<gregtech:meta_item_1:12091>, <gregtech:cable:5071>],[<liquid:plastic>*144]).remove();
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:12071>, <gregtech:cable:5237>])
+	.fluidInputs([<liquid:plastic>*144])	
+	.outputs([<gregtech:meta_item_1:32500>])
+	.duration(800).EUt(1).buildAndRegister();
+
+// Correct the Macerating recipe for Small Battery Hull
+macerator.findRecipe(8, [<gregtech:meta_item_1:32500>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32500>)
+	.outputs(<gregtech:meta_item_1:2071>)
+	.duration(30).EUt(8).buildAndRegister();
+
+
 recipes.removeByRecipeName("gregtech:electric_motor/electric_motor_lv_steel");
 
 recipes.remove(<gregtech:machine:210>);
