@@ -324,19 +324,6 @@ fluid_extractor.recipeBuilder()
     .fluidOutputs([<liquid:lapis> * 144])
     .duration(180).EUt(16).buildAndRegister();
 
-//Add in solidifier recipe for lapis
-solidifier.recipeBuilder()
-    .fluidInputs([<liquid:lapis> * 144])
-    .notConsumable(<gregtech:meta_item_1:32301>)
-    .outputs([<gregtech:meta_item_1:12216>])
-    .duration(40).EUt(8).buildAndRegister();
-
-solidifier.recipeBuilder()
-    .fluidInputs([<liquid:lapis> * 1296])
-    .notConsumable(<gregtech:meta_item_1:32308>)
-    .outputs([<minecraft:lapis_block>])
-    .duration(360).EUt(8).buildAndRegister();
-
 
 fluid_extractor.recipeBuilder()
     .inputs([<minecraft:quartz>])
