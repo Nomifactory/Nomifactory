@@ -103,17 +103,6 @@ recipes.addShapeless("gregtech_block_compress_uranium235",
      <gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>]);
 
 /*
-    === Magnesium Chloride Electrolysis ===
-    The stoichiometry of the chem reactor recipe makes no sense, and you just electrolyze it IRL.
- */
-
-electrolyzer.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2125>*3])
-    .outputs([<gregtech:meta_item_1:2038>])
-    .fluidOutputs([<liquid:chlorine>*2000])
-    .duration(720).EUt(30).buildAndRegister();
-
-/*
     === TE to GT Dust shapeless conversions ===
     Thanks Grom PE for these fixes.
  */
