@@ -5,27 +5,33 @@ const path = require("path").posix;
 
 const CURSEFORGE_ENDPOINT = "https://minecraft.curseforge.com/";
 
+const variablesToCheck = [
+	"CURSEFORGE_API_TOKEN",
+	"CURSEFORGE_PROJECT_ID",
+	"CLIENT_ARCHIVE",
+	"SERVER_ARCHIVE",
+]
+
+/**
+ * Uploads build artifacts to CurseForge.
+ */
 async function deployCurseForge(cb) {
-	if (!process.env.CURSEFORGE_API_TOKEN) {
-		return cb("Environmental variable CURSEFORGE_API_TOKEN is unset.");
-	}
-
-	if (!process.env.CURSEFORGE_PROJECT_ID) {
-		return cb("Environmental variable CURSEFORGE_PROJECT_ID is unset.");
-	}
-
-	if (!process.env.CLIENT_ARCHIVE) {
-		return cb("Environmental variable SERVER_ARCHIVE is unset.");
-	}
-
-	if (!process.env.SERVER_ARCHIVE) {
-		return cb("Environmental variable SERVER_ARCHIVE is unset.");
-	}
+	/**
+	 * Obligatory variable check.
+	 */
+	variablesToCheck.forEach(vari => {
+		if (!process.env[vari]) {
+			return cb(`Environmental variable ${vari} is unset.`);
+		}
+	});	
 
 	const tokenHeaders = {
 		"X-Api-Token": process.env.CURSEFORGE_API_TOKEN
 	};
 
+	/**
+	 * Fetch the list of Minecraft versions from CurseForge.
+	 */
 	log("Fetching CurseForge version manifest...");
 	const versionsManifest = await request({
 		uri: CURSEFORGE_ENDPOINT + "api/game/versions",
@@ -38,8 +44,12 @@ async function deployCurseForge(cb) {
 		.find(m => m.name == global.MODPACK_MANIFEST.minecraft.version);
 
 	if (version) {
+		/** @type {number | null} */
 		var clientFileID;
 
+		/**
+		 * Upload artifacts.
+		 */
 		for (const file of [process.env.CLIENT_ARCHIVE, process.env.SERVER_ARCHIVE]) {
 			const options = {
 				uri: CURSEFORGE_ENDPOINT
@@ -55,18 +65,19 @@ async function deployCurseForge(cb) {
 						releaseType: "release",
 						parentFileID: clientFileID,
 						gameVersions: clientFileID ? undefined : [ version.id ],
-					}), 
-					file: fs.createReadStream(path.join(global.CONFIG.buildDestinationDirectory, `${file}.zip`)),
+					}),
+					file: fs.createReadStream(
+						path.join(global.CONFIG.buildDestinationDirectory, `${file}.zip`)
+					),
 				},
 				json: true
 			};
 
-			if (clientFileID) {
-				log(`Uploading ${file} to CurseForge... (child of ${clientFileID})`);
-			} else {
-				log(`Uploading ${file} to CurseForge...`);
-			}
+			log(`Uploading ${file} to CurseForge...`
+				+ (clientFileID ? `(child of ${clientFileID})` : "")
+			);
 
+			/** @type {Object} */
 			const response = await request(options);
 
 			if (response && response.id) {
