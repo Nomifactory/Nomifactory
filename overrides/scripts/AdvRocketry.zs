@@ -353,41 +353,22 @@ recipes.addShaped(<advancedrocketry:warpcore>, [
 	[<thermalfoundation:storage_alloy:6>,<gregtech:compressed_3:10>, <thermalfoundation:storage_alloy:6>],
 	[<gregtech:compressed_3:10>, <extendedcrafting:storage:2>, <gregtech:compressed_3:10>],
 	[<thermalfoundation:storage_alloy:6>, <gregtech:compressed_3:10>, <thermalfoundation:storage_alloy:6>]]);
-	
-// Area Gravity Controller
-recipes.remove(<advancedrocketry:gravitymachine>);
-recipes.addShaped(<advancedrocketry:gravitymachine>, [
-[null,null,null],
-[<gregtech:meta_item_1:12072>,<advancedrocketry:satelliteprimaryfunction:2>,<gregtech:meta_item_1:12072>],
-[<gregtech:meta_item_1:12072>,<advancedrocketry:warpcore>,<gregtech:meta_item_1:12072>]]);
-
-// Station Light
-recipes.remove(<advancedrocketry:circlelight>);
-recipes.addShaped(<advancedrocketry:circlelight>, [
-[<gregtech:meta_item_1:12033>,null,null],
-[null,<minecraft:glowstone>,null],
-[null,null,null]]);
 
 // Rocket Monitoring Station
 recipes.remove(<advancedrocketry:monitoringstation>);
 recipes.addShaped(<advancedrocketry:monitoringstation>, [
-[<gregtech:meta_item_1:14018>,<advancedrocketry:satelliteprimaryfunction>,<gregtech:meta_item_1:14018>],
-[<gregtech:meta_item_1:14018>,<libvulpes:structuremachine>,<gregtech:meta_item_1:14018>],
-[<gregtech:meta_item_1:14018>,<actuallyadditions:item_battery>,<gregtech:meta_item_1:14018>]]);
+	[<gregtech:meta_item_1:14018>, <advancedrocketry:satelliteprimaryfunction>, <gregtech:meta_item_1:14018>],
+	[<gregtech:meta_item_1:14018>, <libvulpes:structuremachine>, <gregtech:meta_item_1:14018>],
+	[<gregtech:meta_item_1:14018>, <actuallyadditions:item_battery>, <gregtech:meta_item_1:14018>]
+]);
 
 // Guidance Computer Access Hatch
 recipes.remove(<advancedrocketry:loader:6>);
 recipes.addShaped(<advancedrocketry:loader:6>, [
-[null,<ore:circuitAdvanced>,null],
-[<gregtech:meta_item_1:14018>,<libvulpes:structuremachine>,<gregtech:meta_item_1:14018>],
-[null,<ore:circuitAdvanced>,null]]);
-
-// Atmosphere Detector
-recipes.remove(<advancedrocketry:oxygendetection>);
-recipes.addShaped(<advancedrocketry:oxygendetection>, [
-[<gregtech:meta_item_1:12184>,<extrautils2:screen>,<gregtech:meta_item_1:12184>],
-[<minecraft:iron_bars>,<libvulpes:structuremachine>,<gregtech:meta_item_2:18184>],
-[<gregtech:meta_item_1:12184>,<ore:circuitBasic>,<gregtech:meta_item_1:12184>]]);
+	[null, <ore:circuitAdvanced>, null],
+	[<gregtech:meta_item_1:14018>, <libvulpes:structuremachine>, <gregtech:meta_item_1:14018>],
+	[null, <ore:circuitAdvanced>, null]
+]);
 
 // Altitude Controller
 recipes.remove(<advancedrocketry:altitudecontroller>);
@@ -395,16 +376,15 @@ recipes.addShapeless(<advancedrocketry:altitudecontroller>, [<libvulpes:structur
 
 // Station Docking Port
 recipes.remove(<advancedrocketry:stationmarker>);
-recipes.addShapeless(<advancedrocketry:stationmarker>, [<actuallyadditions:item_battery>,<ore:circuitGood>,<libvulpes:structuremachine>]);
+recipes.addShapeless(<advancedrocketry:stationmarker>, [
+	<actuallyadditions:item_battery>, <ore:circuitGood>, <libvulpes:structuremachine>
+]);
 
 // Station Gravity Controller
 recipes.remove(<advancedrocketry:gravitycontroller>);
-recipes.addShapeless(<advancedrocketry:gravitycontroller>, [<libvulpes:structuremachine>,<minecraft:piston>,<extrautils2:screen>]);
-
-// Orientation Controller
-recipes.remove(<advancedrocketry:orientationcontroller>);
-recipes.addShapeless(<advancedrocketry:orientationcontroller>, [<libvulpes:structuremachine>,<minecraft:compass>,<extrautils2:screen>]);
-
+recipes.addShapeless(<advancedrocketry:gravitycontroller>, [
+	<libvulpes:structuremachine>, <minecraft:piston>, <extrautils2:screen>
+]);
 
 // Altitude Controller
 recipes.remove(<advancedrocketry:altitudecontroller>);
@@ -546,9 +526,11 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:lightsource>);  // Light source (Te
 mods.jei.JEI.removeAndHide(<advancedrocketry:astrobed>);     // Astrobed     (Technical Block)
 
 // Various unused satellite sensors
+mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:2>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:3>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:4>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:5>);
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:2>);
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:3>);
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:4>);
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:5>);
