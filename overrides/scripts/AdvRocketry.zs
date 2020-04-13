@@ -291,11 +291,6 @@ recipes.addShaped(<advancedrocketry:launchpad> * 9, [
 [<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
 [<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>]]);
 
-recipes.remove(<advancedrocketry:landingpad>);
-recipes.addShaped(<advancedrocketry:landingpad> * 9, [
-[<gregtech:concrete:1>,<gregtech:concrete:1>,<gregtech:concrete:1>],
-[<gregtech:concrete:1>,<gregtech:concrete:1>,<gregtech:concrete:1>],
-[<gregtech:concrete:1>,<gregtech:concrete:1>,<gregtech:concrete:1>]]);
 
 //Linker
 recipes.remove(<libvulpes:linker>);
