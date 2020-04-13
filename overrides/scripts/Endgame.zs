@@ -519,3 +519,18 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:water> * 16000, <liquid:soldering_alloy> * 2880)
     .outputs(<gtadditions:ga_meta_item:32124>)
     .duration(2000).EUt(300000).buildAndRegister();
+
+//Neutronium Round
+recipes.remove(<gtadditions:ga_meta_item:2972>);  
+lathe.findRecipe(8, [<gregtech:meta_item_1:9972>], [null]).remove();  
+lathe.recipeBuilder()
+  .inputs([<avaritia:resource:3>])
+  .outputs([<gtadditions:ga_meta_item:2972>])
+  .duration(5000).EUt(8).buildAndRegister();
+
+//HSS-E Round
+lathe.findRecipe(8, [<gregtech:meta_item_1:9303>], [null]).remove();  
+lathe.recipeBuilder()
+  .inputs([<gregtech:meta_item_1:9303>])
+  .outputs([<gtadditions:ga_meta_item:2303>])
+  .duration(1480).EUt(8).buildAndRegister();

@@ -2,126 +2,41 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 
-recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
-furnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass>, 0.0);
+/* ******* Applied Energistics 2 ******* */
+
+// AE Network Tool
+recipes.addShapeless(<appliedenergistics2:network_tool>, 
+	[<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
+
+// AE Spatial Pylon
 recipes.remove(<appliedenergistics2:spatial_pylon>);
-recipes.addShaped(<appliedenergistics2:spatial_pylon>, [[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>],[<moreplates:draconium_plate>, <draconicevolution:wyvern_energy_core>, <moreplates:draconium_plate>], [<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>]]);
+recipes.addShaped(<appliedenergistics2:spatial_pylon>, 
+	[[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>],
+	[<moreplates:draconium_plate>, <draconicevolution:wyvern_energy_core>, <moreplates:draconium_plate>], 
+	[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>]]);
 
+// Certus Quartz
+autoclave.recipeBuilder().
+	inputs([<appliedenergistics2:material:2>])
+	.fluidInputs([<liquid:water> * 200])
+	.outputs([<appliedenergistics2:material>])
+	.duration(50).EUt(16).buildAndRegister();	
+
+
+/* ******* Enderio ****** */
+
+// Enderio Attractor Obelisk
 recipes.remove(<enderio:block_attractor_obelisk>);
-recipes.addShaped(<enderio:block_attractor_obelisk>, [[null, <ore:itemAttractorCrystal>, null], [<ore:ingotEnergeticAlloy>, <moreplates:restonia_gear>, <ore:ingotEnergeticAlloy>], [<ore:ingotSoularium>, <ore:itemSoulMachineChassi>, <ore:ingotSoularium>]]);
+recipes.addShaped(<enderio:block_attractor_obelisk>, 
+	[[null, <ore:itemAttractorCrystal>, null], 
+	[<ore:ingotEnergeticAlloy>, <moreplates:restonia_gear>, <ore:ingotEnergeticAlloy>], 
+	[<ore:ingotSoularium>, <ore:itemSoulMachineChassi>, <ore:ingotSoularium>]]);
 
-//Tower Processing
-tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
-tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
-tower.recipeBuilder().fluidInputs([<liquid:biomass> * 1000]).fluidOutputs([<liquid:bio.ethanol> * 700, <liquid:water> * 300]).duration(120).EUt(120).buildAndRegister();
+//Fused Glass
+furnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass>, 0.0);
 
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:biomass> * 1000]).remove();	
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:biomass> * 1000]).remove();	
-
-recipes.addShaped(<gregtech:machine:2200>, [[<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>],[<gregtech:meta_item_1:12235>, <minecraft:bucket>, <gregtech:meta_item_1:12235>], [<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>]]);
-recipes.addShaped(<gregtech:machine:2198>, [[<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>],[<gregtech:meta_item_1:12183>, <minecraft:bucket>, <gregtech:meta_item_1:12183>], [<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>]]);
-recipes.addShaped(<gregtech:machine:2199>, [[<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>],[<gregtech:meta_item_1:12072>, <minecraft:bucket>, <gregtech:meta_item_1:12072>], [<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>]]);
-recipes.addShaped(<gregtech:machine:2197>, [[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],[<gregtech:meta_item_1:12184>, <minecraft:bucket>, <gregtech:meta_item_1:12184>], [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>]]);
-recipes.addShaped(<gregtech:machine:2196>, [[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>],[<gregtech:meta_item_1:12095>, <minecraft:bucket>, <gregtech:meta_item_1:12095>], [<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>]]);
-
-recipes.remove(<thermalexpansion:satchel:2>);
-recipes.addShaped("test", <thermalexpansion:satchel:2>, [
-	[null, <gregtech:meta_item_1:9112>, null],
-	[<gregtech:meta_item_1:10001>, <thermalexpansion:satchel:1>.marked("satchel"), <gregtech:meta_item_1:10001>], 
-	[<gregtech:meta_item_1:9112>, null, <gregtech:meta_item_1:9112>]],
-	function(out, ins, cInfo) {
-    var tag = {} as IData;
-    # This if is here to keep the tinkers workbench from screwing up JEI autocomplete
-    if(ins has "satchel" && !isNull(ins.satchel) && ins.satchel.hasTag) {
-        tag = ins.satchel.tag;
-    }
-    return out.withTag(tag);
-}, null);
-
-//red lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12154>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8243>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8154>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8206>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8122>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8085>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<appliedenergistics2:material:2>]).fluidInputs([<liquid:water> * 200]).outputs([<appliedenergistics2:material>]).duration(50).EUt(16).buildAndRegister();
-<gregtech:meta_item_1:15154>.clearTooltip();
-<gregtech:meta_item_1:15154>.displayName = "Red Lens";
-<gregtech:meta_item_1:15154>.addTooltip("Red Lens");
-
-//green lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12219>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8117>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15113>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<minecraft:emerald>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15113>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8212>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15113>]).duration(200).EUt(16).buildAndRegister();
-<gregtech:meta_item_1:15113>.clearTooltip();
-<gregtech:meta_item_1:15113>.displayName = "Green Lens";
-<gregtech:meta_item_1:15113>.addTooltip("Green Lens");
-
-//blue lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12092>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8092>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8213>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<minecraft:dye:4>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8157>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-<gregtech:meta_item_1:15092>.clearTooltip();
-<gregtech:meta_item_1:15092>.displayName = "Blue Lens";
-<gregtech:meta_item_1:15092>.addTooltip("Blue Lens");
-
-//Diamond Lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12111>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<minecraft:diamond>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15111>]).duration(400).EUt(16).buildAndRegister();
-engraver.findRecipe(120, [<metaitem:wafer.silicon>,<gregtech:meta_item_1:15117>], [null]).remove();	
-engraver.findRecipe(480, [<metaitem:wafer.glowstone>,<gregtech:meta_item_1:15117>], [null]).remove();	
-engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15117>], [null]).remove();	
-engraver.recipeBuilder().inputs([<metaitem:wafer.silicon>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<metaitem:wafer.random_access_memory>]).duration(900).EUt(120).buildAndRegister();
-engraver.recipeBuilder().inputs([<metaitem:wafer.glowstone>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<metaitem:wafer.random_access_memory> * 4]).duration(500).EUt(480).buildAndRegister();
-engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<metaitem:wafer.random_access_memory> * 8]).duration(200).EUt(1920).buildAndRegister();
-
-//Netherstar Lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12331>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<minecraft:nether_star>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15331>]).duration(1600).EUt(16).buildAndRegister();
-engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15244>], [null]).remove();	
-engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15331>).outputs([<metaitem:wafer.system_on_chip> * 2]).duration(200).EUt(1920).buildAndRegister();
-
-//Glass Lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12209>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<minecraft:glass>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15209>]).duration(100).EUt(16).buildAndRegister();
-engraver.findRecipe(480, [<metaitem:wafer.glowstone>,<gregtech:meta_item_1:15209>], [null]).remove();	
-engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15209>], [null]).remove();	
-engraver.recipeBuilder().inputs([<metaitem:wafer.glowstone>]).notConsumable(<gregtech:meta_item_1:15209>).outputs([<metaitem:wafer.central_processing_unit> * 4]).duration(500).EUt(480).buildAndRegister();
-engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15209>).outputs([<metaitem:wafer.central_processing_unit> * 16]).duration(200).EUt(1920).buildAndRegister();
-saw.findRecipe(48, [<metaitem:wafer.central_processing_unit>], [<liquid:water> * 90]).remove();	
-saw.findRecipe(48, [<metaitem:wafer.central_processing_unit>], [<liquid:distilled_water> * 67]).remove();	
-saw.findRecipe(48, [<metaitem:wafer.central_processing_unit>], [<liquid:lubricant> * 22]).remove();	
-saw.recipeBuilder().inputs([<metaitem:wafer.central_processing_unit>]).fluidInputs([<liquid:water> * 90]).outputs([<metaitem:plate.central_processing_unit> * 8]).duration(1200).EUt(8).buildAndRegister();
-saw.recipeBuilder().inputs([<metaitem:wafer.central_processing_unit>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<metaitem:plate.central_processing_unit> * 8]).duration(780).EUt(8).buildAndRegister();
-saw.recipeBuilder().inputs([<metaitem:wafer.central_processing_unit>]).fluidInputs([<liquid:lubricant> * 22]).outputs([<metaitem:plate.central_processing_unit> * 8]).duration(300).EUt(8).buildAndRegister();
-
-//Enderpearl Lens
-//lathe.findRecipe(16, [<gregtech:meta_item_1:12218>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<minecraft:ender_pearl>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15218>]).duration(400).EUt(16).buildAndRegister();
-
-//Endereye Lens
-autoclave.recipeBuilder().inputs([<minecraft:ender_eye>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15219>]).duration(800).EUt(16).buildAndRegister();
-
-//Draconium Lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12214>], [null]).remove();	
-engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15190>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<draconicevolution:draconium_block>]).fluidInputs([<liquid:mana> * 1000]).outputs([<gregtech:meta_item_1:15214>]).duration(1200).EUt(1960).buildAndRegister();
-engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15214>).outputs([<metaitem:wafer.advanced_system_on_chip>]).duration(200).EUt(1920).buildAndRegister();
-<gregtech:meta_item_1:15214>.clearTooltip();
-<gregtech:meta_item_1:15214>.displayName = "Draconium Lens";
-<gregtech:meta_item_1:15214>.addTooltip("Draconium Lens");
-
-//Ender Star
-recipes.remove(<actuallyadditions:item_misc:19>);	
-reactor.recipeBuilder().inputs([<minecraft:nether_star>]).fluidInputs([<liquid:ender_distillation> * 8000]).outputs(<actuallyadditions:item_misc:19>).EUt(400).duration(2000).buildAndRegister();
-
+/* ******* GTCE Distillation Tower ******* */
 
 //Distillation Tower
 recipes.remove(<gregtech:machine:515>);
@@ -129,6 +44,244 @@ recipes.addShaped(<gregtech:machine:515>, [
 	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>], 
 	[<ore:circuitAdvanced>, <gregtech:machine:502>, <ore:circuitAdvanced>], 
 	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>]]);
+
+//Tower Processing Recipes - Biomass
+tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
+tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
+tower.recipeBuilder()
+	.fluidInputs([<liquid:biomass> * 1000])
+	.fluidOutputs([<liquid:bio.ethanol> * 700, <liquid:water> * 300])
+	.duration(120).EUt(120).buildAndRegister();
+
+// Distillery Processing Recipes - Biomass
+distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
+distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
+distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:biomass> * 1000]).remove();	
+distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:biomass> * 1000]).remove();	
+
+/* ******* GTCE Drums ******* */
+
+//Tungstensteel Drum
+recipes.addShaped(<gregtech:machine:2200>, 
+	[[<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>],
+	[<gregtech:meta_item_1:12235>, <minecraft:bucket>, <gregtech:meta_item_1:12235>], 
+	[<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>]]);
+
+// Stainless Steel Drum
+recipes.addShaped(<gregtech:machine:2198>, 
+	[[<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>],
+	[<gregtech:meta_item_1:12183>, <minecraft:bucket>, <gregtech:meta_item_1:12183>], 
+	[<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>]]);
+
+// Titanium Drum
+recipes.addShaped(<gregtech:machine:2199>, 
+	[[<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>],
+	[<gregtech:meta_item_1:12072>, <minecraft:bucket>, <gregtech:meta_item_1:12072>], 
+	[<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>]]);
+
+// Steel Drum
+recipes.addShaped(<gregtech:machine:2197>, 
+	[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
+	[<gregtech:meta_item_1:12184>, <minecraft:bucket>, <gregtech:meta_item_1:12184>], 
+	[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>]]);
+
+// Bronze Drum
+recipes.addShaped(<gregtech:machine:2196>, 
+	[[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>],
+	[<gregtech:meta_item_1:12095>, <minecraft:bucket>, <gregtech:meta_item_1:12095>], 
+	[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>]]);
+
+
+/* ******* GTCE Lens ******* */
+
+// Red Lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12154>], [null]).remove();	
+
+val lensRemoval = [<gregtech:meta_item_1:12154>, <gregtech:meta_item_1:12219>, <gregtech:meta_item_1:12113>, <gregtech:meta_item_1:12092>, <gregtech:meta_item_1:12111>, <gregtech:meta_item_1:12331>, <gregtech:meta_item_1:12209>,<gregtech:meta_item_1:12218>,<gregtech:meta_item_1:12214> ] as IItemStack[];
+
+for item in lensRemoval {
+	
+	lathe.findRecipe(16, [item], [null]).remove();
+}
+
+// This won't work like you think it does
+
+val lensMap as IItemStack[][ILiquidStack][IItemStack] = {
+	//Red Lens
+	<gregtech:meta_item_1:15154> : [[<gregtech:meta_item_1:8154>, <gregtech:meta_item_1:8206>, <gregtech:meta_item_1:8122>, <gregtech:meta_item_1:8243>, <gregtech:meta_item_1:8085>], [<liquid:water>]],
+	// Green Lens
+	<gregtech:meta_item_1:15113> : [[<gregtech:meta_item_1:8117>, <minecraft:emerald>, <gregtech:meta_item_1:8212>], [<liquid:water>]],
+	// Blue Lens
+	<gregtech:meta_item_1:15092> : [[<gregtech:meta_item_1:8092>, <gregtech:meta_item_1:8213>, <minecraft:dye:4>, <gregtech:meta_item_1:8157>], [<liquid:water>]],
+	// Diamond Lens
+	<gregtech:meta_item_1:15111> : [[<minecraft:diamond>], [<liquid:water>]],
+	// Nether Star Lens
+	<gregtech:meta_item_1:15331>: [[<minecraft:nether_star>], [<liquid:water>]],
+	// Glass Lens
+	<gregtech:meta_item_1:15209> : [[<minecraft:glass>], [<liquid:water>]],
+	// Ender Pearl Lens
+	<gregtech:meta_item_1:15218> : [[<minecraft:ender_pearl>], [<liquid:water>]],
+	// Ender Eye Lens
+	<gregtech:meta_item_1:15219> : [[<minecraft:ender_eye>], [<liquid:water>]],
+	// Draconium Lens
+	<gregtech:meta_item_1:15214> : [[<draconicevolution:draconium_block>], [<liquid:mana>]]
+};
+
+for lens, item, fluid in lensMap {
+	
+	autoclave.recipeBuilder()
+		.inputs([item])
+		.fluidInputs(fluid*1000)
+		.outputs(lens)
+		.duration(200).EUt(16).buildAndRegister();	
+
+
+}
+
+/*val meta = [8243, 8154, 8206, 8122, 8085] as int[];
+
+for value in meta {
+	
+	autoclave.recipeBuilder()
+		.inputs([<gregtech:meta_item_1:value>])
+		.fluidInputs(<liquid:water>*1000)
+		.ouputs(<gregtech:meta_item_1:15154>)
+		.duration(200).EUt(16).buildAndRegister();
+}*/
+
+<gregtech:meta_item_1:15154>.clearTooltip();
+<gregtech:meta_item_1:15154>.displayName = "Red Lens";
+<gregtech:meta_item_1:15154>.addTooltip("Red Lens"); 
+
+
+// Green lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12219>], [null]).remove();
+
+/*val item = [<gregtech:meta_item_1:8117>, <minecraft:emerald>, <gregtech:meta_item_1:8212>] as IItemStack[];
+
+for gem in item {
+	
+	autoclave.recipeBuilder()
+		.inputs(gem)
+		.fluidInputs(<liquid:water>*1000)
+		.outputs(<gregtech:meta_item_1:15113>)
+		.duration(200).EUt(16).buildAndRegister();
+}*/
+<gregtech:meta_item_1:15113>.clearTooltip();
+<gregtech:meta_item_1:15113>.displayName = "Green Lens";
+<gregtech:meta_item_1:15113>.addTooltip("Green Lens");
+
+// Blue lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12092>], [null]).remove();	
+
+/*val item = [<gregtech:meta_item_1:8092>, <gregtech:meta_item_1:8213>, <minecraft:dye:4>, <gregtech:meta_item_1:8157>] as IItemStack[];
+
+for gem in item {
+	
+	autoclave.recipeBuilder()
+		.inputs(gem)
+		.fluidInputs(<liquid:water>*1000)
+		.outputs(<gregtech:meta_item_1:15092>)
+		.duration(200).EUt(16).buildAndRegister();	
+}*/
+<gregtech:meta_item_1:15092>.clearTooltip();
+<gregtech:meta_item_1:15092>.displayName = "Blue Lens";
+<gregtech:meta_item_1:15092>.addTooltip("Blue Lens");
+
+// Diamond Lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12111>], [null]).remove();
+
+/*autoclave.recipeBuilder()
+	.inputs([<minecraft:diamond>])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15111>])
+	.duration(400).EUt(16).buildAndRegister();*/
+
+// Netherstar Lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12331>], [null]).remove();
+
+/*autoclave.recipeBuilder()
+	.inputs([<minecraft:nether_star>])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15331>])
+	.duration(1600).EUt(16).buildAndRegister();*/
+
+// Glass Lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12209>], [null]).remove();	
+
+/*autoclave.recipeBuilder()
+	.inputs([<minecraft:glass>])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15209>])
+	.duration(100).EUt(16).buildAndRegister();*/
+
+// Enderpearl Lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12218>], [null]).remove();	
+
+/*autoclave.recipeBuilder()
+	.inputs([<minecraft:ender_pearl>])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15218>])
+	.duration(400).EUt(16).buildAndRegister(); 
+
+// Endereye Lens
+autoclave.recipeBuilder()
+	.inputs([<minecraft:ender_eye>])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15219>])
+	.duration(800).EUt(16).buildAndRegister();*/
+
+// Draconium Lens
+//lathe.findRecipe(16, [<gregtech:meta_item_1:12214>], [null]).remove();	
+	
+/*autoclave.recipeBuilder()
+	.inputs([<draconicevolution:draconium_block>])
+	.fluidInputs([<liquid:mana> * 1000])
+	.outputs([<gregtech:meta_item_1:15214>])
+	.duration(1200).EUt(1960).buildAndRegister();*/
+
+<gregtech:meta_item_1:15214>.clearTooltip();
+<gregtech:meta_item_1:15214>.displayName = "Draconium Lens";
+<gregtech:meta_item_1:15214>.addTooltip("Draconium Lens");
+
+
+/* ******* GTCE Precision Laser Engraver ****** */
+
+engraver.findRecipe(120, [<metaitem:wafer.silicon>,<gregtech:meta_item_1:15117>], [null]).remove();	
+engraver.findRecipe(480, [<metaitem:wafer.glowstone>,<gregtech:meta_item_1:15117>], [null]).remove();	
+engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15117>], [null]).remove();	
+engraver.recipeBuilder().inputs([<metaitem:wafer.silicon>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<metaitem:wafer.random_access_memory>]).duration(900).EUt(120).buildAndRegister();
+engraver.recipeBuilder().inputs([<metaitem:wafer.glowstone>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<metaitem:wafer.random_access_memory> * 4]).duration(500).EUt(480).buildAndRegister();
+engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<metaitem:wafer.random_access_memory> * 8]).duration(200).EUt(1920).buildAndRegister();
+
+engraver.findRecipe(480, [<metaitem:wafer.glowstone>,<gregtech:meta_item_1:15209>], [null]).remove();	
+engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15209>], [null]).remove();	
+engraver.recipeBuilder().inputs([<metaitem:wafer.glowstone>]).notConsumable(<gregtech:meta_item_1:15209>).outputs([<metaitem:wafer.central_processing_unit> * 4]).duration(500).EUt(480).buildAndRegister();
+engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15209>).outputs([<metaitem:wafer.central_processing_unit> * 16]).duration(200).EUt(1920).buildAndRegister();
+
+engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15214>).outputs([<metaitem:wafer.advanced_system_on_chip>]).duration(200).EUt(1920).buildAndRegister();
+
+engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15190>], [null]).remove();	
+
+engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15244>], [null]).remove();	
+engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15331>).outputs([<metaitem:wafer.system_on_chip> * 2]).duration(200).EUt(1920).buildAndRegister();
+
+
+/* ******* GTCE Cutting Saw ******* */
+
+saw.findRecipe(48, [<metaitem:wafer.central_processing_unit>], [<liquid:water> * 90]).remove();	
+saw.findRecipe(48, [<metaitem:wafer.central_processing_unit>], [<liquid:distilled_water> * 67]).remove();	
+saw.findRecipe(48, [<metaitem:wafer.central_processing_unit>], [<liquid:lubricant> * 22]).remove();	
+saw.recipeBuilder().inputs([<metaitem:wafer.central_processing_unit>]).fluidInputs([<liquid:water> * 90]).outputs([<metaitem:plate.central_processing_unit> * 8]).duration(1200).EUt(8).buildAndRegister();
+saw.recipeBuilder().inputs([<metaitem:wafer.central_processing_unit>]).fluidInputs([<liquid:distilled_water> * 67]).outputs([<metaitem:plate.central_processing_unit> * 8]).duration(780).EUt(8).buildAndRegister();
+saw.recipeBuilder().inputs([<metaitem:wafer.central_processing_unit>]).fluidInputs([<liquid:lubricant> * 22]).outputs([<metaitem:plate.central_processing_unit> * 8]).duration(300).EUt(8).buildAndRegister();
+
+
+//Ender Star
+recipes.remove(<actuallyadditions:item_misc:19>);	
+reactor.recipeBuilder().inputs([<minecraft:nether_star>]).fluidInputs([<liquid:ender_distillation> * 8000]).outputs(<actuallyadditions:item_misc:19>).EUt(400).duration(2000).buildAndRegister();
+
+
 	
 //Long Rods
 lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14302> * 2]).outputs([<gregtech:meta_item_2:19302>]).duration(200).EUt(30).buildAndRegister();
@@ -364,3 +517,18 @@ reactor.recipeBuilder()
     .buildAndRegister();
 // end Fix for #357
 
+/* ******* Thermal Expansion Satchel ******* */
+
+recipes.remove(<thermalexpansion:satchel:2>);
+recipes.addShaped("test", <thermalexpansion:satchel:2>, [
+	[null, <gregtech:meta_item_1:9112>, null],
+	[<gregtech:meta_item_1:10001>, <thermalexpansion:satchel:1>.marked("satchel"), <gregtech:meta_item_1:10001>], 
+	[<gregtech:meta_item_1:9112>, null, <gregtech:meta_item_1:9112>]],
+	function(out, ins, cInfo) {
+    var tag = {} as IData;
+    # This if is here to keep the tinkers workbench from screwing up JEI autocomplete
+    if(ins has "satchel" && !isNull(ins.satchel) && ins.satchel.hasTag) {
+        tag = ins.satchel.tag;
+    }
+    return out.withTag(tag);
+}, null);
