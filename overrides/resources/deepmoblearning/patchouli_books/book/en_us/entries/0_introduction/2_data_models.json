@@ -2,18 +2,18 @@
   "name": "Data Models",
   "icon": "deepmoblearning:data_model_guardian",
   "category": "0_introduction",
-  "sortnum": 2,
+  "sortnum": 1,
   "pages": [
     {
       "type": "recipelookup",
       "recipe": "deepmoblearning:data_model_blank",
-      "text": "You can craft a $(item)Blank Data Model$() with some of that$(br)$(l:0_introduction/0_introduction#sooted_redstone)Soot-covered Redstone$() you made earlier."
+      "text": "Crafting $(item)Blank Data Model$() will require some $(item)Electrical Steel Plates$(), a $(item)Pulsating Mesh$() and a $(item)Tier One Circuit$()."
     },
     {
       "type": "spotlight",
       "item": "deepmoblearning:data_model_guardian",
       "anchor": "data_models",
-      "text": "All of the $(item)Data Models$() start at the \"$(8)Faulty$()\" tier, this tier goes up as the $(item)Data Models$() gather more $(item)Data$().$(br2)As you $(item)Tier$() up you will gain more $(item)Data$() from the mobs you defeat.$(br2)$(item)Data Models$() can be put inside a $(l:1_machines/0_simulation_chamber)Simulation chamber$()"
+      "text": "All of the $(item)Data Models$() start at the \"$(a)Basic$()\" tier, this tier goes up as the $(item)Data Models$() gather more $(item)Data$().$(br2)Unlike many packs, you don't have to kill mobs to level up your models in Omnifactory: a freshly crafted $(item)Data Model$() is ready to be put inside a $(l:1_machines/0_simulation_chamber)Simulation chamber$() immediately."
     },
     {
       "type": "text",

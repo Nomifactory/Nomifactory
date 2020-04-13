@@ -2,11 +2,11 @@
   "name": "Data",
   "icon": "deepmoblearning:deep_learner",
   "category": "0_introduction",
-  "sortnum": 1,
+  "sortnum": 2,
   "pages": [
     {
       "type": "text",
-      "text": "Before you can start reaping the rewards you will need to collect some $(item)Data$() about a mob, the handheld device that makes that possible is called the $(item)Deep Learner$().$(br2)The $(item)Deep Learner$() is a device that can detect whenever you deliver mortal harm to a mob."
+      "text": "While it's not necessary, it's possible to collect $(item)Data$() about a mob manually. The handheld device that makes that possible is called the $(item)Deep Learner$().$(br2)The $(item)Deep Learner$() is a device that can detect whenever you deliver mortal harm to a mob."
     },
     {
       "type": "recipelookup",
