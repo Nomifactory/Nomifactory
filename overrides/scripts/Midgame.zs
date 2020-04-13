@@ -298,20 +298,30 @@ saw.recipeBuilder()
 /* ******* GTCE Lathe ******* */
 	
 // HSS-G Long Rod
-lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14302> * 2]).outputs([<gregtech:meta_item_2:19302>]).duration(200).EUt(30).buildAndRegister();
+lathe.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:14302> * 2])
+	.outputs([<gregtech:meta_item_2:19302>])
+	.duration(200).EUt(30).buildAndRegister();
 
 // HSS-E Long Rod
-lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14303> * 2]).outputs([<gregtech:meta_item_2:19303>]).duration(200).EUt(30).buildAndRegister();
+lathe.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:14303> * 2])
+	.outputs([<gregtech:meta_item_2:19303>])
+	.duration(200).EUt(30).buildAndRegister();
 
 // Neutronium Long Rod
-lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14972> * 2]).outputs([<gregtech:meta_item_2:19972>]).duration(200).EUt(30).buildAndRegister();
+lathe.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:14972> * 2])
+	.outputs([<gregtech:meta_item_2:19972>])
+	.duration(200).EUt(30).buildAndRegister();
 
 // Magnetic Neodymium Long Rod
-lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14299> * 2]).outputs([<gregtech:meta_item_2:19299>]).duration(200).EUt(30).buildAndRegister();
+lathe.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:14299> * 2])
+	.outputs([<gregtech:meta_item_2:19299>])
+	.duration(200).EUt(30).buildAndRegister();
 
 
-
-	
 /* ******* GTCE Brewery ******* */
 
 // Plant Ball	
