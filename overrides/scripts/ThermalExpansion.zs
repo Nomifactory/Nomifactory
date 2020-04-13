@@ -439,18 +439,21 @@ for liquid,items in liquidMap {
 //Furnace Recipes
 //Enderium
 recipes.remove(<gregtech:meta_item_1:2708>);
+recipes.remove(<gregtech:meta_item_1:708>);
 furnace.remove(<gregtech:meta_item_1:10708>, <gregtech:meta_item_1:2708>);
 furnace.remove(<gregtech:meta_item_1:9708>, <gregtech:meta_item_1:708>);
 furnace.addRecipe(<thermalfoundation:material:167>, <gregtech:meta_item_1:2708>);
 
 //Signalum
 recipes.remove(<gregtech:meta_item_1:2707>);
+recipes.remove(<gregtech:meta_item_1:707>);
 furnace.remove(<gregtech:meta_item_1:10707>, <gregtech:meta_item_1:2707>);
 furnace.remove(<gregtech:meta_item_1:9707>, <gregtech:meta_item_1:707>);
 furnace.addRecipe(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
 
 //Lumium
 recipes.remove(<gregtech:meta_item_1:2706>);
+recipes.remove(<gregtech:meta_item_1:706>);
 furnace.remove(<gregtech:meta_item_1:10706>, <gregtech:meta_item_1:2706>);
 furnace.remove(<gregtech:meta_item_1:9706>, <gregtech:meta_item_1:706>);
 furnace.addRecipe(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>);
