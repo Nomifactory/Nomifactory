@@ -320,9 +320,14 @@ recipes.addShapeless(<extrautils2:endershard> * 8, [<minecraft:ender_pearl>]);
 assembler.findRecipe(2, [<minecraft:blaze_powder>,<minecraft:ender_pearl>], [null]).remove();
 assembler.findRecipe(2, [<minecraft:ender_pearl> * 6,<minecraft:blaze_rod>], [null]).remove();
 mixer.findRecipe(8, [<gregtech:meta_item_1:2184> * 3,<gregtech:meta_item_1:2229>,<gregtech:meta_item_1:2044>], [null]).remove();
-reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
-reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2125> * 6,<gregtech:meta_item_1:2063>]).outputs([<gregtech:meta_item_1:1038> * 7]).fluidOutputs([<liquid:chlorine> * 3500]).EUt(240).duration(300).buildAndRegister();
 
+// Magnesium Chloride decomposition
+reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
+electrolyzer.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2125>*3])
+    .outputs([<gregtech:meta_item_1:2038>])
+    .fluidOutputs([<liquid:chlorine>*2000])
+    .duration(720).EUt(30).buildAndRegister();
 
 reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
 reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
@@ -440,8 +445,29 @@ recipes.addShapeless(<gregtech:meta_item_1:32517>,[<gregtech:meta_item_1:32500>,
 recipes.addShapeless(<gregtech:meta_item_1:32519>,[<gregtech:meta_item_1:32500>,<gregtech:meta_item_1:2063>,<gregtech:meta_item_1:2063>]);	//Small Sodium
 recipes.addShapeless(<gregtech:meta_item_1:32518>,[<gregtech:meta_item_1:32500>,<gregtech:meta_item_1:2036>,<gregtech:meta_item_1:2036>]);	//Small Lithium
 
+// Small Battery Hull
 recipes.remove(<gregtech:meta_item_1:32500>);
-recipes.addShaped(<gregtech:meta_item_1:32500>, [[<ore:cableGtSingleRedAlloy>], [<gregtech:meta_item_1:12071>], [<gregtech:meta_item_1:12071>]]);
+recipes.addShaped(<gregtech:meta_item_1:32500>, [
+	[<ore:cableGtSingleRedAlloy>], 
+	[<gregtech:meta_item_1:12071>], 
+	[<gregtech:meta_item_1:12071>]]);
+
+// Add Corrected Small Battery Hull recipe to Assembler
+assembler.findRecipe(1, [<gregtech:meta_item_1:12091>, <gregtech:cable:5071>],[<liquid:plastic>*144]).remove();
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:12071>, <gregtech:cable:5237>])
+	.fluidInputs([<liquid:plastic>*144])	
+	.outputs([<gregtech:meta_item_1:32500>])
+	.duration(800).EUt(1).buildAndRegister();
+
+// Correct the Macerating recipe for Small Battery Hull
+macerator.findRecipe(8, [<gregtech:meta_item_1:32500>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32500>)
+	.outputs(<gregtech:meta_item_1:2071>)
+	.duration(30).EUt(8).buildAndRegister();
+
+
 recipes.removeByRecipeName("gregtech:electric_motor/electric_motor_lv_steel");
 
 recipes.remove(<gregtech:machine:210>);
@@ -821,3 +847,4 @@ recipes.addShaped(<minecraft:sponge>,
 	[[<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>],
 	[<gregtech:meta_item_2:32570>,<inspirations:mulch>,<gregtech:meta_item_2:32570>],
 	[<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>]]);
+
