@@ -59,5 +59,6 @@ module.exports = {
 	buildClient: buildClient,
 	buildAll: buildAll,
 	travis: travis,
-	travisChecks: travisChecks
+	travisChecks: travisChecks,
+	deployCurseForge: series(require("./tasks/deploy/curseforge"))
 }

@@ -13218,12 +13218,6 @@
               "Damage:2": 4,
               "OreDict:8": "",
               "id:8": "gregtech:multiblock_casing"
-            },
-            "2:10": {
-              "Count:3": 16,
-              "Damage:2": 784,
-              "OreDict:8": "",
-              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -15745,7 +15739,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your Rocket built, fuel loaded, and destination set, it\u0027s time for the prelaunch checklist.\n\n- §eMake sure you\u0027re wearing your Space Suit§r (all four pieces) and that it has a full tank of Oxygen. If you plan to stay on the Moon a while, maybe bring a gas charging pad and Ender Tank (being filled with Oxygen) with you.\n\nTeleportation:\n\n- If you decided to go with §aDislocators§r, make sure you take two with you: one bound to the Overworld, the other ready to bind to the Moon. Also bring along a Pedestal to put the Overworld one on the Moon surface.\n\n- If you decided to go with Telepads, make sure you\u0027ve constructed a Telepad in the Overworld and that you\u0027re carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and materials for the second Telepad setup. Bring Dew of the Void and RF power (like a §6Solar Panel§r and a §6Capacitor Bank§r).\n\nIn either case, as soon as you land you will need to prepare the other half of the teleportation route, and chunkload it.\n\nWhen you\u0027re sure you\u0027re prepared, sit in your rocket and press §eSpace§r.\n\nLiftoff!",
+          "desc:8": "With your Rocket built, fuel loaded, and destination set, it\u0027s time for the prelaunch checklist.\n\n- §eMake sure you\u0027re wearing your Space Suit§r (all four pieces) and that it has a full tank of Oxygen. If you plan to stay on the Moon a while, maybe bring a gas charging pad and Ender Tank (being filled with Oxygen) with you.\n\nTeleportation:\n\n- If you decided to go with §aDislocators§r, make sure you take two with you: one bound to the Overworld, the other ready to bind to the Moon. Also bring along a Pedestal to put the Overworld one on the Moon surface.\n\n- If you decided to go with §aTelepads§r, make sure you\u0027ve constructed a Telepad in the Overworld and that you\u0027re carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and materials for the second Telepad setup. Bring Dew of the Void and RF power (like a §6Solar Panel§r and a §6Capacitor Bank§r).\n\nIn either case, as soon as you land you will need to prepare the other half of the teleportation route, and chunkload it.\n\nWhen you\u0027re sure you\u0027re prepared, sit in your rocket and press §eSpace§r.\n\nLiftoff!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18591,7 +18585,7 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 12,
+              "Count:3": 32,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "draconicevolution:dragon_heart"
@@ -23593,7 +23587,7 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 12,
+              "Count:3": 1,
               "Damage:2": 4,
               "OreDict:8": "",
               "id:8": "armorplus:material"
@@ -26131,7 +26125,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Large Plasma Turbines§r are a powerful late game method of generating power. One Large Plasma Turbine can produce nearly 41800 EU/t when using an §aLuV Rotor Holder§r and equipped with §a100% efficiency§r rotor.\n\nOne §3Mark 1 Fusion Reactor§r dedicated to producing §bOxygen Plasma§r can provide suffient fuel for continuously operating 16 Large Plasma Turbines, resulting in a combined production of roughly 670000 EU/t. Granted, this is a decent amount of infrastructure.\n\nDon\u0027t rely on §bJEI§r too much when looking for the best plasma: fuels are displayed in a very misleading manner. A Large Plasma Turbine consumes nearly 16 buckets of plasma to run a cycle for the duration specified in JEI, and takes some time to spin up to full power.",
+          "desc:8": "§3Large Plasma Turbines§r are a powerful late game method of generating power. One Large Plasma Turbine can produce nearly 41800 EU/t when using an §aLuV Rotor Holder§r and equipped with §a100% efficiency§r rotor.\n\nOne §3Mark 1 Fusion Reactor§r dedicated to producing §bOxygen Plasma§r can provide suffient fuel for continuously operating 16 Large Plasma Turbines, resulting in a combined production of roughly 670000 EU/t. Granted, this is a decent amount of infrastructure.\n\nDon\u0027t rely on §bJEI§r too much when looking for the best plasma: fuels are displayed in a very misleading manner. A Large Plasma Turbine consumes up to nearly 16 buckets of plasma to run a cycle for the duration specified in JEI, and takes some time to spin up to full power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31087,7 +31081,7 @@
     },
     "503:10": {
       "preRequisites:11": [
-        313
+        243
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -32345,7 +32339,8 @@
     },
     "523:10": {
       "preRequisites:11": [
-        525
+        525,
+        527
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35752,7 +35747,7 @@
     },
     "582:10": {
       "preRequisites:11": [
-        315
+        527
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35817,7 +35812,7 @@
     },
     "583:10": {
       "preRequisites:11": [
-        315
+        745
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35882,7 +35877,7 @@
     },
     "584:10": {
       "preRequisites:11": [
-        316
+        750
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36439,7 +36434,7 @@
     },
     "593:10": {
       "preRequisites:11": [
-        19
+        26
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36504,7 +36499,7 @@
     },
     "594:10": {
       "preRequisites:11": [
-        216
+        214
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36895,7 +36890,8 @@
     },
     "600:10": {
       "preRequisites:11": [
-        59
+        513,
+        298
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -40373,7 +40369,7 @@
     },
     "654:10": {
       "preRequisites:11": [
-        254
+        251
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42315,7 +42311,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!\n\nSimulated mobs can even be used to provide you with many of the basic resources you\u0027ll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.\n\nSetting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!\n\nYes, you can also use it for generating power... §owith Diamonds.",
+          "desc:8": "A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!\n\nSimulated mobs can even be used to provide you with many of the basic resources you\u0027ll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.\n\nSetting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!\n\nAn important thing to know is that Simulation Chambers are §asided§r, thus they only accept §6Pulsating Polymer Clay§r through §athe top side§r and output products through §aall other sides§r. It\u0027s worth noting that you can also pull models through the top side.\n\nYes, you can also use it for generating power... §owith Diamonds.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42516,7 +42512,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Simulating mob kills will occasionally result in §6Pristine Matter§r of that mob\u0027s type.\n\nPutting Pristine matter into a §3Loot Fabricator§r will allow you to obtain one of various items related to that mob.",
+          "desc:8": "Simulating mob kills will occasionally result in §6Pristine Matter§r of that mob\u0027s type.\n\nPutting Pristine matter into a §3Loot Fabricator§r will allow you to obtain one of various items related to that mob.\n\nMuch like §3Simulation Chambers§r, Loot Fabricators are §asided§r, accepting input from §athe top side§r and allowing extraction from §aall sides except the top§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -46371,7 +46367,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Fire Water§r is a great way of producing §6Grains of Infinity§r. Spill a bucket over a patch of bare bedrock and watch it drop grains every so often. There\u0027s a 2% chance per tick for one to be generated on each block of bedrock the Fire Water is flowing on.\n\nMake sure to chunkload the area.",
+          "desc:8": "§9Fire Water§r is a great way of producing §6Grains of Infinity§r. Spill a bucket over a patch of bare bedrock and watch it drop grains every so often. There\u0027s a 2% chance per random tick for one to be generated on each block of bedrock the Fire Water is flowing on.\n\nMake sure to chunkload the area.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -49942,42 +49938,42 @@
           "id:3": 195,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 216,
+          "x:3": 252,
           "y:3": 36
         },
         "7:10": {
           "id:3": 196,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 156,
+          "x:3": 192,
           "y:3": 96
         },
         "8:10": {
           "id:3": 238,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 156,
+          "x:3": 192,
           "y:3": 228
         },
         "9:10": {
           "id:3": 239,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
+          "x:3": 204,
           "y:3": 324
         },
         "10:10": {
           "id:3": 240,
           "sizeX:3": 72,
           "sizeY:3": 72,
-          "x:3": -36,
+          "x:3": 0,
           "y:3": 360
         },
         "11:10": {
           "id:3": 241,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
+          "x:3": 204,
           "y:3": 192
         },
         "12:10": {
@@ -49991,14 +49987,14 @@
           "id:3": 243,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
+          "x:3": 24,
           "y:3": 48
         },
         "14:10": {
           "id:3": 244,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 168,
           "y:3": 384
         },
         "15:10": {
@@ -50033,21 +50029,21 @@
           "id:3": 256,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 24,
+          "x:3": 60,
           "y:3": 228
         },
         "20:10": {
           "id:3": 257,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 72,
           "y:3": 192
         },
         "21:10": {
           "id:3": 258,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 168,
           "y:3": 288
         },
         "22:10": {
@@ -50103,14 +50099,14 @@
           "id:3": 271,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 168,
           "y:3": 324
         },
         "30:10": {
           "id:3": 274,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 72,
           "y:3": 288
         },
         "31:10": {
@@ -50138,7 +50134,7 @@
           "id:3": 287,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 72,
+          "x:3": 108,
           "y:3": 36
         },
         "35:10": {
@@ -50167,13 +50163,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -408,
-          "y:3": 348
+          "y:3": 336
         },
         "39:10": {
           "id:3": 295,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 72,
           "y:3": 132
         },
         "40:10": {
@@ -50181,14 +50177,14 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
-          "y:3": 66
+          "y:3": 64
         },
         "41:10": {
           "id:3": 313,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -212,
-          "y:3": 66
+          "y:3": 64
         },
         "42:10": {
           "id:3": 314,
@@ -50215,7 +50211,7 @@
           "id:3": 317,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
+          "x:3": 24,
           "y:3": 288
         },
         "46:10": {
@@ -50236,7 +50232,7 @@
           "id:3": 325,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 120,
           "y:3": 96
         },
         "49:10": {
@@ -50257,21 +50253,21 @@
           "id:3": 329,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 168,
           "y:3": 132
         },
         "52:10": {
           "id:3": 330,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 264,
+          "x:3": 300,
           "y:3": 132
         },
         "53:10": {
           "id:3": 331,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 264,
+          "x:3": 300,
           "y:3": 324
         },
         "54:10": {
@@ -50306,49 +50302,49 @@
           "id:3": 336,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -102,
-          "y:3": 96
+          "x:3": -12,
+          "y:3": 72
         },
         "59:10": {
           "id:3": 337,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 72,
           "y:3": 96
         },
         "60:10": {
           "id:3": 342,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
+          "x:3": 156,
           "y:3": 96
         },
         "61:10": {
           "id:3": 345,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 120,
           "y:3": 132
         },
         "62:10": {
           "id:3": 351,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 72,
           "y:3": 324
         },
         "63:10": {
           "id:3": 389,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -360,
+          "x:3": -348,
           "y:3": 288
         },
         "64:10": {
           "id:3": 399,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 120,
           "y:3": 0
         },
         "65:10": {
@@ -50369,14 +50365,14 @@
           "id:3": 408,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -240,
+          "x:3": -252,
           "y:3": 288
         },
         "68:10": {
           "id:3": 411,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": 94,
+          "x:3": 130,
           "y:3": 234
         },
         "69:10": {
@@ -50412,7 +50408,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
-          "y:3": 84
+          "y:3": 96
         },
         "74:10": {
           "id:3": 523,
@@ -50460,15 +50456,15 @@
           "id:3": 534,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -306,
-          "y:3": 348
+          "x:3": -228,
+          "y:3": 336
         },
         "81:10": {
           "id:3": 535,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": 348
+          "x:3": -192,
+          "y:3": 336
         },
         "82:10": {
           "id:3": 536,
@@ -50488,21 +50484,21 @@
           "id:3": 560,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -176,
+          "x:3": -180,
           "y:3": 132
         },
         "85:10": {
           "id:3": 564,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 216,
+          "x:3": 252,
           "y:3": 372
         },
         "86:10": {
           "id:3": 607,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 216,
+          "x:3": 252,
           "y:3": 228
         },
         "87:10": {
@@ -50537,7 +50533,7 @@
           "id:3": 733,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
+          "x:3": 24,
           "y:3": 96
         },
         "92:10": {
@@ -50551,7 +50547,7 @@
           "id:3": 749,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 144,
+          "x:3": 180,
           "y:3": 36
         },
         "94:10": {

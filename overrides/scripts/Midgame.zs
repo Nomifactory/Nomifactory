@@ -384,6 +384,16 @@ recipes.addShaped(<actuallyadditions:block_canola_press>, [
 recipes.remove(<deepmoblearning:deep_learner>);
 recipes.addShaped(<deepmoblearning:deep_learner>, [[null,null,null],[<scannable:module_monster>,<scannable:scanner>,<scannable:module_monster>],[null,null,null]]);
 
+// Deep Mob Learning book
+recipes.remove(
+	<patchouli:guide_book>
+		.withTag({"patchouli:book": "deepmoblearning:book"})
+);
+recipes.addShapeless(
+	<patchouli:guide_book>
+		.withTag({"patchouli:book": "deepmoblearning:book"}),
+	[<ore:book>, <forestry:crafting_material>]
+);
 
 //Moon Materials
 macerator.findRecipe(8, [<minecraft:blaze_rod>], [null]).remove();
