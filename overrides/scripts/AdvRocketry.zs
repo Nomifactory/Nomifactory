@@ -365,10 +365,6 @@ recipes.addShaped(<advancedrocketry:loader:6>, [
 	[null, <ore:circuitAdvanced>, null]
 ]);
 
-// Altitude Controller
-recipes.remove(<advancedrocketry:altitudecontroller>);
-recipes.addShapeless(<advancedrocketry:altitudecontroller>, [<libvulpes:structuremachine>,<ore:circuitBasic>,<extrautils2:screen>]);
-
 // Station Docking Port
 recipes.remove(<advancedrocketry:stationmarker>);
 recipes.addShapeless(<advancedrocketry:stationmarker>, [
