@@ -42311,7 +42311,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!\n\nSimulated mobs can even be used to provide you with many of the basic resources you\u0027ll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.\n\nSetting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!\n\nYes, you can also use it for generating power... §owith Diamonds.",
+          "desc:8": "A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!\n\nSimulated mobs can even be used to provide you with many of the basic resources you\u0027ll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.\n\nSetting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!\n\nAn important thing to know is that Simulation Chambers are §asided§r, thus they only accept §6Pulsating Polymer Clay§r through §athe top side§r and output products through §aall other sides§r. It\u0027s worth noting that you can also pull models through the top side.\n\nYes, you can also use it for generating power... §owith Diamonds.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42512,7 +42512,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Simulating mob kills will occasionally result in §6Pristine Matter§r of that mob\u0027s type.\n\nPutting Pristine matter into a §3Loot Fabricator§r will allow you to obtain one of various items related to that mob.",
+          "desc:8": "Simulating mob kills will occasionally result in §6Pristine Matter§r of that mob\u0027s type.\n\nPutting Pristine matter into a §3Loot Fabricator§r will allow you to obtain one of various items related to that mob.\n\nMuch like §3Simulation Chambers§r, Loot Fabricators are §asided§r, accepting input from §athe top side§r and allowing extraction from §aall sides except the top§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
