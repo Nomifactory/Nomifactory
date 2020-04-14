@@ -16,16 +16,9 @@ makeShaped("of_spatial_pylon", <appliedenergistics2:spatial_pylon>,
     ["APA",
      "PCP",
      "APA"],
-    { A : <gregtech:meta_item_1:12331>,
+    { A : <gregtech:meta_item_1:12331>, // Nether Star Plate
       P : <moreplates:draconium_plate>,
       C : <draconicevolution:wyvern_energy_core> });
-
-
-
-/*recipes.addShaped(<appliedenergistics2:spatial_pylon>, 
-	[[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>],
-	[<moreplates:draconium_plate>, <draconicevolution:wyvern_energy_core>, <moreplates:draconium_plate>], 
-	[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>]]);*/
 
 // Certus Quartz
 autoclave.recipeBuilder().
@@ -49,12 +42,6 @@ makeShaped("of_attractor_obelisk", <enderio:block_attractor_obelisk>,
       S	: <ore:ingotSoularium>,
       H : <ore:itemSoulMachineChassi> });
 
-
-/*recipes.addShaped(<enderio:block_attractor_obelisk>, 
-	[[null, <ore:itemAttractorCrystal>, null], 
-	[<ore:ingotEnergeticAlloy>, <moreplates:restonia_gear>, <ore:ingotEnergeticAlloy>], 
-	[<ore:ingotSoularium>, <ore:itemSoulMachineChassi>, <ore:ingotSoularium>]]);*/
-
 //Fused Glass
 furnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass>, 0.0);
 
@@ -67,19 +54,11 @@ makeShaped("of_Z_Logic", <enderio:item_material:41>,
     ["ISI",
      "ICI",
      "WAW"],
-    { I : <enderio:item_alloy_ingot:7>,
-      S : <minecraft:skull:2>,
-      C : <ore:circuitGood>,
-      W	: <gregtech:meta_item_2:32440>,
+    { I : <enderio:item_alloy_ingot:7>, // Soularium
+      S : <minecraft:skull:2>, 			// Zombie Skull
+      C : <ore:circuitGood>,			// T2 Circuit
+      W	: <gregtech:meta_item_2:32440>, //Wafer
       A : <ore:blockRedAlloy> });
-
-
-
-/*recipes.addShaped(<enderio:item_material:41>, [
-	[<enderio:item_alloy_ingot:7>,<minecraft:skull:2>,<enderio:item_alloy_ingot:7>],
-	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
-	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);*/
-
 
 /* ******* GTCE ******* */
 
@@ -92,15 +71,9 @@ makeShaped("of_distillation_tower", <gregtech:machine:515>,
      "CMC",
      "PAP"],
     { P : <ore:pipeLargeStainlessSteel>,
-      A : <gregtech:meta_item_1:32612>,
-      C : <ore:circuitAdvanced>,
-      M	: <gregtech:machine:502> });
-
-
-/*recipes.addShaped(<gregtech:machine:515>, [
-	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>], 
-	[<ore:circuitAdvanced>, <gregtech:machine:502>, <ore:circuitAdvanced>], 
-	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>]]);*/
+      A : <gregtech:meta_item_1:32612>,		// HV Pump
+      C : <ore:circuitAdvanced>,			// T3 Circuit
+      M	: <gregtech:machine:502> });		// MV Machine Hull
 
 //Tower Processing Recipes - Biomass
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
@@ -160,6 +133,7 @@ for lens in lensRemoval {
 }
 
 val lensMap as IItemStack[][IItemStack] = {
+
 	//Red Lens
 	<gregtech:meta_item_1:15154> : [<gregtech:meta_item_1:8154>, <gregtech:meta_item_1:8206>, <gregtech:meta_item_1:8122>, <gregtech:meta_item_1:8243>, <gregtech:meta_item_1:8085>],
 	// Green Lens
@@ -192,90 +166,17 @@ for lens, inputs in lensMap {
 	}
 }
 
-
-
-
-
-
-/*val item = [<gregtech:meta_item_1:8243>, <gregtech:meta_item_1:8154>, <gregtech:meta_item_1:8206>, <gregtech:meta_item_1:8122>, <gregtech:meta_item_1:8085>] as IItemStack[];
-
-for gem in item {
-	
-	autoclave.recipeBuilder()
-		.inputs([gem])
-		.fluidInputs(<liquid:water>*1000)
-		.outputs(<gregtech:meta_item_1:15154>)
-		.duration(200).EUt(16).buildAndRegister();
-}
 <gregtech:meta_item_1:15154>.clearTooltip();
 <gregtech:meta_item_1:15154>.displayName = "Red Lens";
 <gregtech:meta_item_1:15154>.addTooltip("Red Lens"); 
 
-
-// Green lens
-val item2 = [<gregtech:meta_item_1:8117>, <minecraft:emerald>, <gregtech:meta_item_1:8212>] as IItemStack[];
-
-for gem in item2 {
-	
-	autoclave.recipeBuilder()
-		.inputs(gem)
-		.fluidInputs(<liquid:water>*1000)
-		.outputs(<gregtech:meta_item_1:15113>)
-		.duration(200).EUt(16).buildAndRegister();
-}
 <gregtech:meta_item_1:15113>.clearTooltip();
 <gregtech:meta_item_1:15113>.displayName = "Green Lens";
 <gregtech:meta_item_1:15113>.addTooltip("Green Lens");
 
-// Blue lens
-val item3 = [<gregtech:meta_item_1:8092>, <gregtech:meta_item_1:8213>, <minecraft:dye:4>, <gregtech:meta_item_1:8157>] as IItemStack[];
-
-for gem in item3 {
-	
-	autoclave.recipeBuilder()
-		.inputs(gem)
-		.fluidInputs(<liquid:water>*1000)
-		.outputs(<gregtech:meta_item_1:15092>)
-		.duration(200).EUt(16).buildAndRegister();	
-}
 <gregtech:meta_item_1:15092>.clearTooltip();
 <gregtech:meta_item_1:15092>.displayName = "Blue Lens";
 <gregtech:meta_item_1:15092>.addTooltip("Blue Lens");
-
-// Diamond Lens
-autoclave.recipeBuilder()
-	.inputs([<minecraft:diamond>])
-	.fluidInputs([<liquid:water> * 1000])
-	.outputs([<gregtech:meta_item_1:15111>])
-	.duration(400).EUt(16).buildAndRegister();
-
-// Netherstar Lens
-autoclave.recipeBuilder()
-	.inputs([<minecraft:nether_star>])
-	.fluidInputs([<liquid:water> * 1000])
-	.outputs([<gregtech:meta_item_1:15331>])
-	.duration(1600).EUt(16).buildAndRegister();
-
-// Glass Lens
-autoclave.recipeBuilder()
-	.inputs([<minecraft:glass>])
-	.fluidInputs([<liquid:water> * 1000])
-	.outputs([<gregtech:meta_item_1:15209>])
-	.duration(100).EUt(16).buildAndRegister();
-
-// Enderpearl Lens
-autoclave.recipeBuilder()
-	.inputs([<minecraft:ender_pearl>])
-	.fluidInputs([<liquid:water> * 1000])
-	.outputs([<gregtech:meta_item_1:15218>])
-	.duration(400).EUt(16).buildAndRegister(); 
-
-// Endereye Lens
-autoclave.recipeBuilder()
-	.inputs([<minecraft:ender_eye>])
-	.fluidInputs([<liquid:water> * 1000])
-	.outputs([<gregtech:meta_item_1:15219>])
-	.duration(800).EUt(16).buildAndRegister();*/
 
 // Draconium Lens
 autoclave.recipeBuilder()
