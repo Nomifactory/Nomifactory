@@ -287,9 +287,10 @@ macerator.recipeBuilder().inputs([<draconicevolution:draconium_ore:2>]).outputs(
 // Launch Pad
 recipes.remove(<advancedrocketry:launchpad>);
 recipes.addShaped(<advancedrocketry:launchpad> * 9, [
-[<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
-[<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
-[<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>]]);
+	[<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
+	[<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>],
+	[<gregtech:concrete>,<gregtech:concrete>,<gregtech:concrete>]
+]);
 
 
 //Linker
@@ -352,16 +353,20 @@ recipes.addShaped(<advancedrocketry:warpcore>, [
 // Rocket Monitoring Station
 recipes.remove(<advancedrocketry:monitoringstation>);
 recipes.addShaped(<advancedrocketry:monitoringstation>, [
-	[<gregtech:meta_item_1:14018>, <advancedrocketry:satelliteprimaryfunction>, <gregtech:meta_item_1:14018>],
-	[<gregtech:meta_item_1:14018>, <libvulpes:structuremachine>, <gregtech:meta_item_1:14018>],
-	[<gregtech:meta_item_1:14018>, <actuallyadditions:item_battery>, <gregtech:meta_item_1:14018>]
+	[<gregtech:meta_item_1:14018> , <advancedrocketry:satelliteprimaryfunction> , <gregtech:meta_item_1:14018>],
+	[<gregtech:meta_item_1:14018> , <libvulpes:structuremachine>                , <gregtech:meta_item_1:14018>],
+	[<gregtech:meta_item_1:14018> , <actuallyadditions:item_battery>            , <gregtech:meta_item_1:14018>]
 ]);
 
 // Guidance Computer Access Hatch
 recipes.remove(<advancedrocketry:loader:6>);
 recipes.addShaped(<advancedrocketry:loader:6>, [
 	[null, <ore:circuitAdvanced>, null],
-	[<gregtech:meta_item_1:14018>, <libvulpes:structuremachine>, <gregtech:meta_item_1:14018>],
+	[
+		<gregtech:meta_item_1:14018>,
+		<libvulpes:structuremachine>,
+		<gregtech:meta_item_1:14018>
+	],
 	[null, <ore:circuitAdvanced>, null]
 ]);
 
@@ -404,51 +409,52 @@ recipes.addShapeless(<advancedrocketry:circlelight>, [
 // Atmosphere Detector
 recipes.remove(<advancedrocketry:oxygendetection>);
 recipes.addShaped(<advancedrocketry:oxygendetection>, [
-	[<gregtech:meta_item_1:12184>   , <extrautils2:screen>         , <gregtech:meta_item_1:12184>]
-	, [<minecraft:iron_bars>        , <libvulpes:structuremachine> , <gregtech:meta_item_2:18184>]
-	, [<gregtech:meta_item_1:12184> , <ore:circuitGood>            , <gregtech:meta_item_1:12184>]
+	[<gregtech:meta_item_1:12184> , <extrautils2:screen>         , <gregtech:meta_item_1:12184>],
+	[<minecraft:iron_bars>        , <libvulpes:structuremachine> , <gregtech:meta_item_2:18184>],
+	[<gregtech:meta_item_1:12184> , <ore:circuitGood>            , <gregtech:meta_item_1:12184>]
 ]);
 
 // Area Gravity Controller
 recipes.remove(<advancedrocketry:gravitymachine>);
 recipes.addShaped(<advancedrocketry:gravitymachine>, [
-	[null                           , <extrautils2:screen>         , null                        ]
-	, [<gregtech:meta_item_1:12072> , <advancedrocketry:warpcore>  , <gregtech:meta_item_1:12072>]
-	, [<gregtech:meta_item_1:12072> , <ore:circuitExtreme>         , <gregtech:meta_item_1:12072>]
+	[null                         , <extrautils2:screen>         , null                        ],
+	[<gregtech:meta_item_1:12072> , <advancedrocketry:warpcore>  , <gregtech:meta_item_1:12072>],
+	[<gregtech:meta_item_1:12072> , <ore:circuitExtreme>         , <gregtech:meta_item_1:12072>]
 ]);
 
 // Seal Detector
 recipes.remove(<advancedrocketry:sealdetector>);
 recipes.addShaped(<advancedrocketry:sealdetector>, [
-	[null   , <gregtech:meta_item_1:32691> , null]
-	, [null , <extrautils2:screen>         , null]
-	, [null , <minecraft:comparator>       , null]
+	[null , <gregtech:meta_item_1:32691> , null],
+	[null , <extrautils2:screen>         , null],
+	[null , <minecraft:comparator>       , null]
 ]);
 
 // HoverCraft (lul)
 recipes.remove(<advancedrocketry:hovercraft>);
 recipes.addShaped(<advancedrocketry:hovercraft>, [
-	[<ore:circuitGood>, <extrautils2:screen>, <ore:circuitGood>]
-	, [<ore:gemDilithium>.firstItem
-		, <advancedrocketry:structuretower>
-		, <ore:gemDilithium>.firstItem
-	]
-	, [<advancedrocketry:rocketmotor>, null, <advancedrocketry:rocketmotor>]
+	[<ore:circuitGood>, <extrautils2:screen>, <ore:circuitGood>],
+	[
+		<ore:gemDilithium>.firstItem,
+		<advancedrocketry:structuretower>,
+		<ore:gemDilithium>.firstItem
+	],
+	[<advancedrocketry:rocketmotor>, null, <advancedrocketry:rocketmotor>]
 ]);
 
 // Planet Selector
 recipes.addShaped(<advancedrocketry:planetselector>, [
-	[null, null, null],
-	[<ore:circuitGood>, <advancedrocketry:planetidchip> ,<ore:circuitGood>],
-	[<libvulpes:structuremachine>,<libvulpes:structuremachine>,<libvulpes:structuremachine>]
-	]);
+	[null                         , null                            , null                        ],
+	[<ore:circuitGood>            , <advancedrocketry:planetidchip> , <ore:circuitGood>           ],
+	[<libvulpes:structuremachine> , <libvulpes:structuremachine>    , <libvulpes:structuremachine>]
+]);
 
 // Holographic Planet Selector
 recipes.remove(<advancedrocketry:planetholoselector>);
 recipes.addShaped(<advancedrocketry:planetholoselector>, [
-	[<ore:circuitAdvanced>, <minecraft:glowstone>, <ore:circuitAdvanced>],
-	[<libvulpes:structuremachine>, <advancedrocketry:planetselector> ,<libvulpes:structuremachine>],
-	[<ore:circuitAdvanced>, <libvulpes:holoprojector>, <ore:circuitAdvanced>]
+	[<ore:circuitAdvanced>        , <minecraft:glowstone>             , <ore:circuitAdvanced>       ],
+	[<libvulpes:structuremachine> , <advancedrocketry:planetselector> , <libvulpes:structuremachine>],
+	[<ore:circuitAdvanced>        , <libvulpes:holoprojector>         , <ore:circuitAdvanced>       ]
 ]);
 
 // Space Suit Upgrades
@@ -506,10 +512,10 @@ assembler.recipeBuilder()
 
 */
 
-recipes.remove(<advancedrocketry:blockpump>);             // Fluid Pump
-mods.jei.JEI.removeAndHide(<advancedrocketry:blockpump>); // Fluid Pump
-recipes.remove(<advancedrocketry:centrifuge>);             // Centrifuge
-mods.jei.JEI.removeAndHide(<advancedrocketry:centrifuge>); // Centrifuge
+recipes.remove(<advancedrocketry:blockpump>);                // Fluid Pump
+mods.jei.JEI.removeAndHide(<advancedrocketry:blockpump>);    // Fluid Pump
+recipes.remove(<advancedrocketry:centrifuge>);               // Centrifuge
+mods.jei.JEI.removeAndHide(<advancedrocketry:centrifuge>);   // Centrifuge
 mods.jei.JEI.removeAndHide(<advancedrocketry:basalt>);       // Basalt
 mods.jei.JEI.removeAndHide(<advancedrocketry:landingfloat>); // Landing Float
 mods.jei.JEI.removeAndHide(<advancedrocketry:airlock_door>); // Airlock Door (Technical Block)
