@@ -288,8 +288,9 @@ reactor.recipeBuilder().inputs([<contenttweaker:block_dust>]).fluidInputs([<liqu
 reactor.recipeBuilder().inputs([<contenttweaker:block_dust>]).fluidInputs([<liquid:water> * 1000]).outputs(<minecraft:clay>).EUt(15).duration(20).buildAndRegister();
 reactor.recipeBuilder().inputs([<minecraft:magma>]).fluidOutputs(<liquid:lava> * 1000).EUt(30).duration(120).buildAndRegister();
 reactor.recipeBuilder().inputs([<thermalfoundation:fertilizer>]).fluidInputs(<liquid:ammonia> * 100).outputs(<thermalfoundation:fertilizer:1>).EUt(30).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
+// recipes for Manganese Oxides - currently unused
+// reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
+// reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
 mixer.recipeBuilder().inputs([<minecraft:redstone>,<minecraft:glowstone_dust>]).outputs(<nuclearcraft:compound:2> * 2).EUt(22).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2239>,<gregtech:meta_item_1:2026>]).outputs(<minecraft:glowstone_dust> * 2).EUt(15).duration(80).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:2071>]).outputs(<gregtech:meta_item_1:2189> * 2).EUt(15).duration(40).buildAndRegister();

@@ -340,6 +340,17 @@ fluid_extractor.recipeBuilder()
     .fluidOutputs([<liquid:emerald> * 144])
     .duration(180).EUt(16).buildAndRegister();
 
+// Molten Diamond for NC Active Coolers
+fluid_extractor.recipeBuilder()
+    .inputs([<minecraft:diamond>])
+    .fluidOutputs([<liquid:diamond> * 144])
+    .duration(180).EUt(16).buildAndRegister();
+
+fluid_extractor.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2111>])
+    .fluidOutputs([<liquid:diamond> * 144])
+    .duration(180).EUt(16).buildAndRegister();
+
 fluid_extractor.recipeBuilder()
     .inputs([<gregtech:meta_item_1:2201>])
     .fluidOutputs([<liquid:quartz> * 144])
