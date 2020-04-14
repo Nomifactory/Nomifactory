@@ -183,7 +183,6 @@ val ncItems as IItemStack[] = [
     <nuclearcraft:roasted_cocoa_beans>,
     <nuclearcraft:salt_fission_beam>,
     <nuclearcraft:salt_fission_computer_port>,
-    <nuclearcraft:salt_fission_controller>,
     <nuclearcraft:salt_fission_distributor>,
     <nuclearcraft:salt_fission_frame>,
     <nuclearcraft:salt_fission_glass>,
@@ -680,13 +679,11 @@ alloy.recipeBuilder()
     .inputs([<ore:gemDiamond>, <ore:ingotGraphite> * 2])
     .duration(300).EUt(500).buildAndRegister();
 
-// Extreme Alloy - unused
-/*
+// Extreme Alloy
 alloy.recipeBuilder()
     .outputs([<nuclearcraft:alloy:10>])
     .inputs([<nuclearcraft:alloy:2>, <ore:ingotTough>])
     .duration(200).EUt(1000).buildAndRegister();
-*/
 
 // magnesium diboride - unused
 /*
