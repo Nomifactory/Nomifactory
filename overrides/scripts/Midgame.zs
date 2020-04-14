@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 
 /* ******* Applied Energistics 2 ******* */
@@ -11,10 +12,20 @@ recipes.addShapeless(<appliedenergistics2:network_tool>,
 
 // AE Spatial Pylon
 recipes.remove(<appliedenergistics2:spatial_pylon>);
-recipes.addShaped(<appliedenergistics2:spatial_pylon>, 
+makeShaped("of_spatial_pylon", <appliedenergistics2:spatial_pylon>,
+    ["APA",
+     "PCP",
+     "APA"],
+    { A : <gregtech:meta_item_1:12331>,
+      P : <moreplates:draconium_plate>,
+      C : <draconicevolution:wyvern_energy_core> });
+
+
+
+/*recipes.addShaped(<appliedenergistics2:spatial_pylon>, 
 	[[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>],
 	[<moreplates:draconium_plate>, <draconicevolution:wyvern_energy_core>, <moreplates:draconium_plate>], 
-	[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>]]);
+	[<gregtech:meta_item_1:12331>, <moreplates:draconium_plate>, <gregtech:meta_item_1:12331>]]);*/
 
 // Certus Quartz
 autoclave.recipeBuilder().
@@ -28,10 +39,21 @@ autoclave.recipeBuilder().
 
 // Enderio Attractor Obelisk
 recipes.remove(<enderio:block_attractor_obelisk>);
-recipes.addShaped(<enderio:block_attractor_obelisk>, 
+makeShaped("of_attractor_obelisk", <enderio:block_attractor_obelisk>,
+    [" C ",
+     "EGE",
+     "SHS"],
+    { C : <ore:itemAttractorCrystal>,
+      E : <ore:ingotEnergeticAlloy>,
+      G : <moreplates:restonia_gear>,
+      S	: <ore:ingotSoularium>,
+      H : <ore:itemSoulMachineChassi> });
+
+
+/*recipes.addShaped(<enderio:block_attractor_obelisk>, 
 	[[null, <ore:itemAttractorCrystal>, null], 
 	[<ore:ingotEnergeticAlloy>, <moreplates:restonia_gear>, <ore:ingotEnergeticAlloy>], 
-	[<ore:ingotSoularium>, <ore:itemSoulMachineChassi>, <ore:ingotSoularium>]]);
+	[<ore:ingotSoularium>, <ore:itemSoulMachineChassi>, <ore:ingotSoularium>]]);*/
 
 //Fused Glass
 furnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass>, 0.0);
@@ -41,10 +63,22 @@ mods.enderio.Vat.removeRecipe(<liquid:ender_distillation> * 1000);
 mods.enderio.Vat.addRecipe(<liquid:ender_distillation> * 1000, 0.5, <liquid:ender> * 4000, [<enderio:item_material:36>], [2], [<enderio:item_material:35>], [2]);
 
 // Z-Logic Controller
-recipes.addShaped(<enderio:item_material:41>, [
+makeShaped("of_Z_Logic", <enderio:item_material:41>,
+    ["ISI",
+     "ICI",
+     "WAW"],
+    { I : <enderio:item_alloy_ingot:7>,
+      S : <minecraft:skull:2>,
+      C : <ore:circuitGood>,
+      W	: <gregtech:meta_item_2:32440>,
+      A : <ore:blockRedAlloy> });
+
+
+
+/*recipes.addShaped(<enderio:item_material:41>, [
 	[<enderio:item_alloy_ingot:7>,<minecraft:skull:2>,<enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
-	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);
+	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);*/
 
 
 /* ******* GTCE ******* */
@@ -53,10 +87,20 @@ recipes.addShaped(<enderio:item_material:41>, [
 
 //Distillation Tower
 recipes.remove(<gregtech:machine:515>);
-recipes.addShaped(<gregtech:machine:515>, [
+makeShaped("of_distillation_tower", <gregtech:machine:515>,
+    ["PAP",
+     "CMC",
+     "PAP"],
+    { P : <ore:pipeLargeStainlessSteel>,
+      A : <gregtech:meta_item_1:32612>,
+      C : <ore:circuitAdvanced>,
+      M	: <gregtech:machine:502> });
+
+
+/*recipes.addShaped(<gregtech:machine:515>, [
 	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>], 
 	[<ore:circuitAdvanced>, <gregtech:machine:502>, <ore:circuitAdvanced>], 
-	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>]]);
+	[<ore:pipeLargeStainlessSteel>, <gregtech:meta_item_1:32612>, <ore:pipeLargeStainlessSteel>]]);*/
 
 //Tower Processing Recipes - Biomass
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
