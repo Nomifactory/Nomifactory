@@ -159,7 +159,45 @@ for lens in lensRemoval {
 	lathe.findRecipe(16, [lens], [null]).remove();
 }
 
-val item = [<gregtech:meta_item_1:8243>, <gregtech:meta_item_1:8154>, <gregtech:meta_item_1:8206>, <gregtech:meta_item_1:8122>, <gregtech:meta_item_1:8085>] as IItemStack[];
+val lensMap as IItemStack[][IItemStack] = {
+	//Red Lens
+	<gregtech:meta_item_1:15154> : [<gregtech:meta_item_1:8154>, <gregtech:meta_item_1:8206>, <gregtech:meta_item_1:8122>, <gregtech:meta_item_1:8243>, <gregtech:meta_item_1:8085>],
+	// Green Lens
+	<gregtech:meta_item_1:15113> : [<gregtech:meta_item_1:8117>, <minecraft:emerald>, <gregtech:meta_item_1:8212>],
+	// Blue Lens
+	<gregtech:meta_item_1:15092> : [<gregtech:meta_item_1:8092>, <gregtech:meta_item_1:8213>, <minecraft:dye:4>, <gregtech:meta_item_1:8157>],
+	// Diamond Lens
+	<gregtech:meta_item_1:15111> : [<minecraft:diamond>],
+	// Nether Star Lens
+	<gregtech:meta_item_1:15331>: [<minecraft:nether_star>],
+	// Glass Lens
+	<gregtech:meta_item_1:15209> : [<minecraft:glass>],
+	// Ender Pearl Lens
+	<gregtech:meta_item_1:15218> : [<minecraft:ender_pearl>],
+	// Ender Eye Lens
+	<gregtech:meta_item_1:15219> : [<minecraft:ender_eye>]
+
+} as IItemStack[][IItemStack];
+
+for lens, inputs in lensMap {
+	
+	for input in inputs {
+
+		autoclave.recipeBuilder()
+			.inputs(input)
+			.fluidInputs(<liquid:water>*1000)
+			.outputs(lens)
+			.duration(200).EUt(16).buildAndRegister();
+
+	}
+}
+
+
+
+
+
+
+/*val item = [<gregtech:meta_item_1:8243>, <gregtech:meta_item_1:8154>, <gregtech:meta_item_1:8206>, <gregtech:meta_item_1:8122>, <gregtech:meta_item_1:8085>] as IItemStack[];
 
 for gem in item {
 	
@@ -237,7 +275,7 @@ autoclave.recipeBuilder()
 	.inputs([<minecraft:ender_eye>])
 	.fluidInputs([<liquid:water> * 1000])
 	.outputs([<gregtech:meta_item_1:15219>])
-	.duration(800).EUt(16).buildAndRegister();
+	.duration(800).EUt(16).buildAndRegister();*/
 
 // Draconium Lens
 autoclave.recipeBuilder()
