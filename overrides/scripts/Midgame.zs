@@ -57,7 +57,7 @@ makeShaped("of_Z_Logic", <enderio:item_material:41>,
     { I : <enderio:item_alloy_ingot:7>, // Soularium
       S : <minecraft:skull:2>, 			// Zombie Skull
       C : <ore:circuitGood>,			// T2 Circuit
-      W	: <gregtech:meta_item_2:32440>, //Wafer
+      W : <gregtech:meta_item_2:32440>, //Wafer
       A : <ore:blockRedAlloy> });
 
 /* ******* GTCE ******* */
@@ -73,7 +73,7 @@ makeShaped("of_distillation_tower", <gregtech:machine:515>,
     { P : <ore:pipeLargeStainlessSteel>,
       A : <gregtech:meta_item_1:32612>,		// HV Pump
       C : <ore:circuitAdvanced>,			// T3 Circuit
-      M	: <gregtech:machine:502> });		// MV Machine Hull
+      M : <gregtech:machine:502> });		// MV Machine Hull
 
 //Tower Processing Recipes - Biomass
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
@@ -307,7 +307,53 @@ lathe.recipeBuilder()
 
 /* ******* GTCE Brewery ******* */
 
-// Plant Ball	
+val brewMap as ILiquidStack[][IItemStack] = {
+	
+	// Plant ball
+	<gregtech:meta_item_2:32570> : [<liquid:water> * 180, <liquid:water> * 180, <liquid:for.honey> * 180, <liquid:juice> * 180],
+	// Oak Sapling
+	<minecraft:sapling> : [<liquid:water> * 100, <liquid:water> * 100, <liquid:for.honey> * 100, <liquid:juice> * 100],
+	// Spruce Sapling
+	<minecraft:sapling:1> : [<liquid:water> * 100],
+	// Birch Sapling
+	//<minecraft:sapling:2> : [<liquid:water> * 100],
+	// Jungle Sapling
+	//<minecraft:sapling:3> : [<liquid:water> * 100],	
+	// Acacia Sapling
+	<minecraft:sapling:4> : [<liquid:water> * 100],	
+	// Dark Oak Sapling
+	<minecraft:sapling:5> : [<liquid:water> * 100],	
+	// Potato
+	<minecraft:potato> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// Sugarcane
+	<minecraft:reeds> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// Beetroot
+	<minecraft:beetroot> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// Red Mushroom
+	<minecraft:red_mushroom> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// Brown Mushroom
+	<minecraft:brown_mushroom> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// Carrot 
+	<minecraft:carrot> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// Cactus
+	<minecraft:cactus> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20]
+
+
+} as ILiquidStack[][IItemStack];
+
+for item, liquids in brewMap {
+
+	
+	for liquid in liquids {
+
+		brewer.findRecipe(3, [item], [liquid]).remove();
+	}
+}
+
+
+
+
+/*// Plant Ball	
 brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
 brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
 brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:for.honey> * 180]).remove();
@@ -356,7 +402,7 @@ brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:juice> * 20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice> * 20]).remove();
+brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice> * 20]).remove(); */
 
 // Biomass - Plant Ball
 brewer.recipeBuilder()
