@@ -312,7 +312,7 @@ makeShaped("pauto_unpackager",
 
 recipes.remove(<packagedauto:encoder>);
 makeShaped("pauto_encoder",
-	<packagedauto:encoder> * 3, [
+	<packagedauto:encoder>, [
 		"TMT",
 		"HXH",
 		"TCT",
