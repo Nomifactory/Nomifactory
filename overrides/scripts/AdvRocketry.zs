@@ -270,7 +270,7 @@ makeShaped("pauto_package_component",
 
 recipes.remove(<packagedauto:recipe_holder>);
 makeShaped("pauto_recipe_holder",
-	<packagedauto:recipe_holder>, [
+	<packagedauto:recipe_holder> * 3, [
 		"GPG",
 		"PBP",
 		"TMT",
@@ -312,7 +312,7 @@ makeShaped("pauto_unpackager",
 
 recipes.remove(<packagedauto:encoder>);
 makeShaped("pauto_encoder",
-	<packagedauto:encoder>, [
+	<packagedauto:encoder> * 3, [
 		"TMT",
 		"HXH",
 		"TCT",
