@@ -75,7 +75,6 @@ val ncItems as IItemStack[] = [
     <nuclearcraft:alloy:7>, // Shibuichi Alloy
     <nuclearcraft:alloy:8>, // Tin Silver Alloy
     <nuclearcraft:alloy:9>, // Lead Platinum Alloy
-    <nuclearcraft:alloy:10>, // Extreme Alloy
     <nuclearcraft:alloy:11>, // Thermoconducting Alloy
     <nuclearcraft:alloy:12>, // Zircaloy
     <nuclearcraft:alloy:13>, // Silicon Carbide
@@ -104,8 +103,6 @@ val ncItems as IItemStack[] = [
     <nuclearcraft:compound:10>, // Alugentum Dust
     <nuclearcraft:dark_chocolate>,
     <nuclearcraft:decay_generator>,
-    <nuclearcraft:depleted_fuel_ic2>,   // Depleted Uranium Nuclear Fuel
-    <nuclearcraft:depleted_fuel_ic2:1>, // Depleted MOX Nuclear Fuel
     <nuclearcraft:dry_earth>,
     <nuclearcraft:dust:10>, // Zirconium Dust
     <nuclearcraft:dust_oxide>,   // Thorium Oxide Dust
@@ -171,7 +168,6 @@ val ncItems as IItemStack[] = [
     <nuclearcraft:part:5>,  // Magnesium Diboride Solenoid
     <nuclearcraft:part:6>,  // Bioplastic
     <nuclearcraft:part:11>, // Empty Frame
-    <nuclearcraft:part:12>, // Steel Frame
     <nuclearcraft:part:13>, // Silicon Carbide Fiber
     <nuclearcraft:portable_ender_chest>,
     <nuclearcraft:radiation_scrubber>,
@@ -231,61 +227,93 @@ for ncItem in ncItems {
     mods.jei.JEI.removeAndHide(ncItem);
 }
 
-// purge oxides
-val fissiles as int[][string] = {
-    "americium" :   [1,3,5,7,9,11],
-    "berkelium" :   [1,3,5,7],
-    "californium" : [1,3,5,7,9,11,13,15],
-    "curium" :      [1,3,5,7,9,11,13,15],
-    "neptunium" :   [1,3,5,7],
-    "plutonium" :   [1,3,5,7,9,11,13,15],
-    "thorium" :     [1,3,5,7],
-    "uranium" :     [1,3,5,7,9,11],
-} as int[][string];
+zenClass Material {
+    var name as string = "";
+    var fissileMetas as int[] = [];
+    var fuelMetas as int[] = [];
+    var depletedFuelMetas as int[] = [];
+
+    zenConstructor(
+        name as string,
+        fissileMetas as int[],
+        fuelMetas as int[],
+        depletedFuelMetas as int[])
+    {
+        this.name = name;
+        this.fissileMetas = fissileMetas;
+        this.fuelMetas = fuelMetas;
+        this.depletedFuelMetas = depletedFuelMetas;
+    }
+
+    function fissileName() as string {
+        return "nuclearcraft:" + this.name;
+    }
+
+    function fuelName() as string {
+        return "nuclearcraft:fuel_" + this.name;
+    }
+
+    function depletedFuelName() as string {
+        return "nuclearcraft:depleted_fuel_" + this.name;
+    }
+}
 
 // oxides are odd-valued metadata values beginning with 1.
-//val metas as int[] = [1,3,5,7,9,11,13,15,17,19,21] as int[]; 
-for fissile,metas in fissiles {
-    for meta in metas {
-        val variants as string[] = [
-            "nuclearcraft:" + fissile,
-            "nuclearcraft:fuel_" + fissile,
-            "nuclearcraft:depleted_fuel_" + fissile,
-        ] as string[];
+var fuelObjs as Material[] = [
+    Material("americium",   [1,3,5,7,9,11], [1,3], [1,3]),
+    Material("berkelium",   [1,3,5,7],      [1,3], [1,3]),
+    Material("californium", [1,3,5,7,9,11,13,15], [1,3,5,7], [1,3,5,7]),
+    Material("curium",      [1,3,5,7,9,11,13,15], [1,3,5,7,9,11], [1,3,5,7,9,11]),
+    Material("neptunium",   [1,3,5,7], [1,3], [1,3]),
+    Material("plutonium",   [1,3,5,7,9,11,13,15], [1,3,5,7], [1,3,5,7]),
+    Material("thorium",     [1,3,5,7], [1,], [1,]),
+    Material("uranium",     [1,3,5,7,9,11], [1,3,5,7], [1,3,5,7]),
+    Material("mixed_oxide", [], [0,1], [0,1]),
+    Material("ic2",         [], [], [0,1]),
+];
 
-        for variant in variants {
-            var oxide   = itemUtils.getItem(variant, meta);
-            var regular = itemUtils.getItem(variant, meta - 1);
-            if(!isNull(oxide)) {
-                furnace.remove(regular, oxide); // remove de-oxidation smelting
-                mods.jei.JEI.removeAndHide(oxide);
-            }
-        }
+for fuelObj in fuelObjs {
+    // Clean up oxide fissiles
+    for meta in fuelObj.fissileMetas {
+        var variant = fuelObj.fissileName();
+        var oxide   = itemUtils.getItem(variant, meta);
+        var regular = itemUtils.getItem(variant, meta - 1);
+
+        // remove de-oxidation smelting?
+        furnace.remove(regular, oxide);
+
+        // base fissiles have no crafting table recipe so just hide them
+        mods.jei.JEI.hide(oxide);
+    }
+
+    // Clean up oxide fissile fuels
+    for meta in fuelObj.fuelMetas {
+        var variant = fuelObj.fuelName();
+        var oxide   = itemUtils.getItem(variant, meta);
+        var regular = itemUtils.getItem(variant, meta - 1);
+
+        // Remove deoxidation smelting recipes
+        furnace.remove(regular, oxide);
+
+        // remove the oxide fuel split recipe from the TC
+        thermal_sep.findRecipe(48, [oxide], null).remove();
+
+        // remove the JEI entry and crafting table recipe
+        mods.jei.JEI.removeAndHide(oxide);
+    }
+
+    // Depleted fuels just need to be hidden from JEI
+    for meta in fuelObj.depletedFuelMetas {
+        var item = itemUtils.getItem(fuelObj.depletedFuelName(), meta);
+
+        // hide from JEI but there's no table recipes
+        mods.jei.JEI.hide(item);
+
+        // remove from the fission recipe list
+        mods.nuclearcraft.fission.removeRecipeWithOutput([item]);
     }
 }
 
-// Remove the fission recipes resulting in depleted oxide fuels
-val depletedFuels as int[][string] = {
-    "americium"   : [1,3],
-    "berkelium"   : [1,3],
-    "californium" : [1,3,5,7],
-    "curium"      : [1,3,5,7,9,11],
-    "neptunium"   : [1,3],
-    "plutonium"   : [1,3,5,7],
-    "thorium"     : [1,],
-    "uranium"     : [1,3,5,7],
-    "ic2"         : [0,1],
-    "mixed_oxide" : [0,1],
-} as int[][string];
-
-for depletedFuel,metas in depletedFuels {
-    for meta in metas {
-        var item = itemUtils.getItem("nuclearcraft:depleted_fuel_" + depletedFuel, meta);
-        if(!isNull(item)) {
-            mods.nuclearcraft.fission.removeRecipeWithOutput([item]);
-        }
-    }
-}
 
 // Get rid of unused NC fluids related to the MSR
 // unfortunately liquids aren't registered with their parent mod so this is ugly
@@ -313,11 +341,9 @@ val ncFluids as string[] = [
     "alugentum",
     "alumina",
     "aluminum",
-    "ammonia",
     "arsenic",
     "bas",
     "bef2",
-    "beryllium",
     "borax_solution",
     "boric_acid",
     "boron",
@@ -325,71 +351,54 @@ val ncFluids as string[] = [
     "boron11",
     "boron_nitride_solution",
     "calcium_sulfate_solution",
-    "carbon_dioxide",
-    "carbon_monoxide",
     "chocolate_liquor",
     "cocoa_butter",
     "condensate_water",
-    "corium",
     "dark_chocolate",
-    "deuterium",
     "diborane",
     "ethanol",
     "ethene",
     "exhaust_steam",
     "ferroboron",
     "flibe",
-    "fluorine",
     "fluorite_water",
     "fluoromethane",
     "gelatin",
     "hard_carbon",
-    "helium",
     "helium3",
     "high_pressure_steam",
     "hydrated_gelatin",
     "hydrofluoric_acid",
-    "hydrogen",
     "koh",
     "lif",
     "liquidhelium",
+    "liquid_nitrogen",
     "lithium",
     "lithium6",
     "lithium7",
     "low_pressure_steam",
     "low_quality_steam",
-    "manganese",
     "manganese_dioxide",
     "marshmallow",
-    "methanol",
     "milk",
     "milk_chocolate",
     "nak",
     "nak_hot",
     "naoh",
     "neutron",
-    "nitrogen",
-    "oxygen",
     "oxygen_difluoride",
     "plasma",
-    "potassium",
     "potassium_fluoride_solution",
     "potassium_hydroxide_solution",
     "preheated_water",
     "radaway",
     "radaway_slow",
     "sic_vapor",
-    "silver",
-    "sodium",
     "sodium_fluoride_solution",
     "sodium_hydroxide_solution",
     "sugar",
     "sulfur",
-    "sulfur_dioxide",
-    "sulfur_trioxide",
-    "sulfuric_acid",
     "tough",
-    "tritium",
     "unsweetened_chocolate"
 ] as string[];
 
@@ -402,6 +411,38 @@ for fluid in ncFluids {
     }
 
     purgeFluidFromJEI(fluid);
+}
+
+val sharedFluids as string[] = [
+    "ammonia",
+    "beryllium",
+    "carbon_dioxide",
+    "carbon_monoxide",
+    "corium",
+    "deuterium",
+    "fluorine",
+    "helium",
+    "hydrogen",
+    "manganese",
+    "methanol",
+    "nitrogen",
+    "oxygen",
+    "potassium",
+    "silver",
+    "sodium",
+    "sulfur_dioxide",
+    "sulfuric_acid",
+    "sulfur_trioxide",
+    "tritium",
+] as string[];
+
+// these ones overlap other mods's fluids. Just remove the weird tile item
+for fluid in sharedFluids {
+    // get rid of NC's weird fluid tile things
+    var item = itemUtils.getItem("nuclearcraft:fluid_" + fluid);
+    if(!isNull(item)) {
+        mods.jei.JEI.hide(item);
+    }
 }
 
 // End of mass removals, now for replacements:
