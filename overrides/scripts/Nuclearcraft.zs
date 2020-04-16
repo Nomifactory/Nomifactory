@@ -5,6 +5,7 @@ import crafttweaker.mods.IMod;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
 import mods.gregtech.recipe.RecipeMap;
+import mods.gregtech.recipe.Recipe;
 
 import scripts.CommonVars.makeShaped as makeShaped;
 
@@ -67,162 +68,181 @@ function purgeFluidFromJEI(fluid as string) {
     mods.jei.JEI.removeAndHide(<forge:bucketfilled>.withTag({FluidName: fluid, Amount: 1000}));
 }
 
-// Nuclearcraft Item Removals
-val ncItems as IItemStack[] = [
-    <nuclearcraft:accelerator_electromagnet_idle>,
-    <nuclearcraft:alloy:3>, // Magnesium Diboride
-    <nuclearcraft:alloy:4>, // Lithium Manganese Dioxide
-    <nuclearcraft:alloy:7>, // Shibuichi Alloy
-    <nuclearcraft:alloy:8>, // Tin Silver Alloy
-    <nuclearcraft:alloy:9>, // Lead Platinum Alloy
-    <nuclearcraft:alloy:11>, // Thermoconducting Alloy
-    <nuclearcraft:alloy:12>, // Zircaloy
-    <nuclearcraft:alloy:13>, // Silicon Carbide
-    <nuclearcraft:alloy:14>, // SiC SiC Ceramic Matrix Composite
-    <nuclearcraft:alloy:15>, // HSLA Steel
-    <nuclearcraft:bin>,
-    <nuclearcraft:boots_hazmat>,
-    <nuclearcraft:boron:0>, // all boron isotopes
-    <nuclearcraft:boron:1>,
-    <nuclearcraft:boron:2>,
-    <nuclearcraft:boron:3>,
-    <nuclearcraft:chest_hazmat>,
-    <nuclearcraft:cocoa_butter>,
-    <nuclearcraft:cocoa_solids>,
-    <nuclearcraft:compound:0>, // Calcium Sulfate
-    <nuclearcraft:compound:1>, // Crystal Binder
-    <nuclearcraft:compound:3>, // Sodium Fluoride
-    <nuclearcraft:compound:4>, // Potassium Fluoride
-    <nuclearcraft:compound:5>, // Sodium Hydroxide
-    <nuclearcraft:compound:6>, // Potassium Hydroxide
-    <nuclearcraft:compound:7>, // Borax
-    <nuclearcraft:compound:8>, // Dimensional Blend
-    <nuclearcraft:compound:9>, // Carbon-Manganese Blend
-    <nuclearcraft:compound:10>, // Alugentum Dust
-    <nuclearcraft:dark_chocolate>,
-    <nuclearcraft:decay_generator>,
-    <nuclearcraft:dry_earth>,
-    <nuclearcraft:dust:10>, // Zirconium Dust
-    <nuclearcraft:dust_oxide>,   // Thorium Oxide Dust
-    <nuclearcraft:dust_oxide:1>, // Uranium Oxide Dust
-    <nuclearcraft:dust_oxide:2>, // Manganese Oxide Dust
-    <nuclearcraft:dust_oxide:3>, // Manganese Dioxide Dust
-    <nuclearcraft:electromagnet_supercooler_idle>,
-    <nuclearcraft:fission_controller_idle>,
-    <nuclearcraft:flour>,
-    <nuclearcraft:fusion_connector>,
-    <nuclearcraft:fusion_core>,
-    <nuclearcraft:fusion_electromagnet_idle>,
-    <nuclearcraft:fusion_electromagnet_transparent_idle>,
-    <nuclearcraft:geiger_counter>,
-    <nuclearcraft:gelatin>,
-    <nuclearcraft:gem:0>, // all NC gems
-    <nuclearcraft:gem:1>,
-    <nuclearcraft:gem:2>,
-    <nuclearcraft:gem:3>,
-    <nuclearcraft:gem:4>,
-    <nuclearcraft:gem:5>,
-    <nuclearcraft:gem:6>,
-    <nuclearcraft:gem_dust:4>, // Hexagonal Boron Nitride
-    <nuclearcraft:gem_dust:5>, // Crushed Fluorite
-    <nuclearcraft:gem_dust:6>, // Sulfur
-    <nuclearcraft:gem_dust:8>, // Crushed Villiaumite
-    <nuclearcraft:gem_dust:9>, // Crushed Carobbiite
-    <nuclearcraft:gem_dust:10>,// Crushed Arsenic
-    <nuclearcraft:gem_dust:11>,// Crushed End Stone
-    <nuclearcraft:graham_cracker>,
-    <nuclearcraft:ground_cocoa_nibs>,
-    <nuclearcraft:heat_exchanger_condenser_tube_copper>,
-    <nuclearcraft:heat_exchanger_condenser_tube_hard_carbon>,
-    <nuclearcraft:heat_exchanger_condenser_tube_thermoconducting>,
-    <nuclearcraft:heat_exchanger_controller>,
-    <nuclearcraft:heat_exchanger_frame>,
-    <nuclearcraft:heat_exchanger_glass>,
-    <nuclearcraft:heat_exchanger_tube_copper>,
-    <nuclearcraft:heat_exchanger_tube_hard_carbon>,
-    <nuclearcraft:heat_exchanger_tube_thermoconducting>,
-    <nuclearcraft:heat_exchanger_vent>,
-    <nuclearcraft:heat_exchanger_wall>,
-    <nuclearcraft:helm_hazmat>,
-    <nuclearcraft:ingot:10>,       // Zirconium Ingot
-    <nuclearcraft:ingot_block:10>, // Zirconium Block
-    <nuclearcraft:ingot_oxide>,    // Thorium Oxide Ingot
-    <nuclearcraft:ingot_oxide:1>,  // Uranium Oxide Ingot
-    <nuclearcraft:ingot_oxide:2>,  // Manganese Oxide Ingot
-    <nuclearcraft:ingot_oxide:3>,  // Manganese Dioxide Ingot
-    <nuclearcraft:legs_hazmat>,
-    <nuclearcraft:lithium:0>, // all lithium isotopes
-    <nuclearcraft:lithium:1>,
-    <nuclearcraft:lithium:2>,
-    <nuclearcraft:lithium:3>,
-    <nuclearcraft:lithium_ion_battery_advanced>,
-    <nuclearcraft:lithium_ion_battery_basic>,
-    <nuclearcraft:lithium_ion_battery_du>,
-    <nuclearcraft:lithium_ion_battery_elite>,
-    <nuclearcraft:lithium_ion_cell>,
-    <nuclearcraft:marshmallow>,
-    <nuclearcraft:milk_chocolate>,
-    <nuclearcraft:moresmore>,
-    <nuclearcraft:part:5>,  // Magnesium Diboride Solenoid
-    <nuclearcraft:part:6>,  // Bioplastic
-    <nuclearcraft:part:11>, // Empty Frame
-    <nuclearcraft:part:13>, // Silicon Carbide Fiber
-    <nuclearcraft:portable_ender_chest>,
-    <nuclearcraft:radiation_scrubber>,
-    <nuclearcraft:radaway_slow>,
-    <nuclearcraft:rad_shielding:0>, // Light Rad Shielding
-    <nuclearcraft:rad_shielding:1>, // Medium Rad Shielding
-    <nuclearcraft:rad_shielding:2>, // Heavy Rad Shielding
-    <nuclearcraft:rad_x>,
-    <nuclearcraft:roasted_cocoa_beans>,
-    <nuclearcraft:salt_fission_beam>,
-    <nuclearcraft:salt_fission_computer_port>,
-    <nuclearcraft:salt_fission_distributor>,
-    <nuclearcraft:salt_fission_frame>,
-    <nuclearcraft:salt_fission_glass>,
-    <nuclearcraft:salt_fission_heater>,
-    <nuclearcraft:salt_fission_moderator>,
-    <nuclearcraft:salt_fission_redstone_port>,
-    <nuclearcraft:salt_fission_retriever>,
-    <nuclearcraft:salt_fission_vent>,
-    <nuclearcraft:salt_fission_vessel>,
-    <nuclearcraft:salt_fission_wall>,
-    <nuclearcraft:smore>,
-    <nuclearcraft:solar_panel_advanced>,
-    <nuclearcraft:solar_panel_basic>,
-    <nuclearcraft:solar_panel_du>,
-    <nuclearcraft:solar_panel_elite>,
-    <nuclearcraft:tiny_dust_lead>,
-    <nuclearcraft:turbine_controller>,
-    <nuclearcraft:turbine_dynamo_coil:0>,
-    <nuclearcraft:turbine_dynamo_coil:1>,
-    <nuclearcraft:turbine_dynamo_coil:2>,
-    <nuclearcraft:turbine_dynamo_coil:3>,
-    <nuclearcraft:turbine_dynamo_coil:4>,
-    <nuclearcraft:turbine_dynamo_coil:5>,
-    <nuclearcraft:turbine_frame>,
-    <nuclearcraft:turbine_glass>,
-    <nuclearcraft:turbine_inlet>,
-    <nuclearcraft:turbine_outlet>,
-    <nuclearcraft:turbine_rotor_bearing>,
-    <nuclearcraft:turbine_rotor_blade_extreme>,
-    <nuclearcraft:turbine_rotor_blade_sic_sic_cmc>,
-    <nuclearcraft:turbine_rotor_blade_steel>,
-    <nuclearcraft:turbine_rotor_shaft>,
-    <nuclearcraft:turbine_rotor_stator>,
-    <nuclearcraft:turbine_wall>,
-    <nuclearcraft:unsweetened_chocolate>,
-    <nuclearcraft:upgrade:0>, // Speed Upgrade (NC Machines)
-    <nuclearcraft:upgrade:1>, // Energy Upgrade (NC Machines)
-    <nuclearcraft:voltaic_pile_advanced>,
-    <nuclearcraft:voltaic_pile_basic>,
-    <nuclearcraft:voltaic_pile_du>,
-    <nuclearcraft:voltaic_pile_elite>,
-] as IItemStack[];
+zenClass Removal {
 
-for ncItem in ncItems {
-    furnace.remove(ncItem);
-    mods.jei.JEI.removeAndHide(ncItem);
+    var item as IItemStack;
+    var hasFurnace as bool = false;
+
+    zenConstructor(item as IItemStack) {
+        this.item = item;
+    }
+
+    zenConstructor(item as IItemStack, hasFurnace as bool) {
+        this.item = item;
+        this.hasFurnace = hasFurnace;
+    }
+
+}
+
+
+// Nuclearcraft Item Removals
+val removals as Removal[] = [
+    Removal(<nuclearcraft:accelerator_electromagnet_idle>),
+    Removal(<nuclearcraft:alloy:3>), // Magnesium Diboride
+    Removal(<nuclearcraft:alloy:4>), // Lithium Manganese Dioxide
+    Removal(<nuclearcraft:alloy:7>), // Shibuichi Alloy
+    Removal(<nuclearcraft:alloy:8>), // Tin Silver Alloy
+    Removal(<nuclearcraft:alloy:9>), // Lead Platinum Alloy
+    Removal(<nuclearcraft:alloy:11>), // Thermoconducting Alloy
+    Removal(<nuclearcraft:alloy:12>), // Zircaloy
+    Removal(<nuclearcraft:alloy:13>), // Silicon Carbide
+    Removal(<nuclearcraft:alloy:14>), // SiC SiC Ceramic Matrix Composite
+    Removal(<nuclearcraft:alloy:15>), // HSLA Steel
+    Removal(<nuclearcraft:bin>),
+    Removal(<nuclearcraft:boots_hazmat>),
+    Removal(<nuclearcraft:boron:0>), // all boron isotopes
+    Removal(<nuclearcraft:boron:1>),
+    Removal(<nuclearcraft:boron:2>),
+    Removal(<nuclearcraft:boron:3>),
+    Removal(<nuclearcraft:chest_hazmat>),
+    Removal(<nuclearcraft:cocoa_butter>),
+    Removal(<nuclearcraft:cocoa_solids>),
+    Removal(<nuclearcraft:compound:0>), // Calcium Sulfate
+    Removal(<nuclearcraft:compound:1>), // Crystal Binder
+    Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
+    Removal(<nuclearcraft:compound:4>), // Potassium Fluoride
+    Removal(<nuclearcraft:compound:5>), // Sodium Hydroxide
+    Removal(<nuclearcraft:compound:6>), // Potassium Hydroxide
+    Removal(<nuclearcraft:compound:7>), // Borax
+    Removal(<nuclearcraft:compound:8>), // Dimensional Blend
+    Removal(<nuclearcraft:compound:9>), // Carbon-Manganese Blend
+    Removal(<nuclearcraft:compound:10>), // Alugentum Dust
+    Removal(<nuclearcraft:dark_chocolate>),
+    Removal(<nuclearcraft:decay_generator>),
+    Removal(<nuclearcraft:dry_earth>),
+    Removal(<nuclearcraft:dust:10>), // Zirconium Dust
+    Removal(<nuclearcraft:dust_oxide>),   // Thorium Oxide Dust
+    Removal(<nuclearcraft:dust_oxide:1>), // Uranium Oxide Dust
+    Removal(<nuclearcraft:dust_oxide:2>, true), // Manganese Oxide Dust
+    Removal(<nuclearcraft:dust_oxide:3>), // Manganese Dioxide Dust
+    Removal(<nuclearcraft:electromagnet_supercooler_idle>),
+    Removal(<nuclearcraft:fission_controller_idle>),
+    Removal(<nuclearcraft:flour>),
+    Removal(<nuclearcraft:fusion_connector>),
+    Removal(<nuclearcraft:fusion_core>),
+    Removal(<nuclearcraft:fusion_electromagnet_idle>),
+    Removal(<nuclearcraft:fusion_electromagnet_transparent_idle>),
+    Removal(<nuclearcraft:geiger_counter>),
+    Removal(<nuclearcraft:gelatin>),
+    Removal(<nuclearcraft:gem:0>), // all NC gems
+    Removal(<nuclearcraft:gem:1>),
+    Removal(<nuclearcraft:gem:2>),
+    Removal(<nuclearcraft:gem:3>),
+    Removal(<nuclearcraft:gem:4>),
+    Removal(<nuclearcraft:gem:5>),
+    Removal(<nuclearcraft:gem:6>),
+    Removal(<nuclearcraft:gem_dust:4>), // Hexagonal Boron Nitride
+    Removal(<nuclearcraft:gem_dust:5>), // Crushed Fluorite
+    Removal(<nuclearcraft:gem_dust:6>), // Sulfur
+    Removal(<nuclearcraft:gem_dust:8>), // Crushed Villiaumite
+    Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
+    Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic
+    Removal(<nuclearcraft:gem_dust:11>),// Crushed End Stone
+    Removal(<nuclearcraft:graham_cracker>),
+    Removal(<nuclearcraft:ground_cocoa_nibs>),
+    Removal(<nuclearcraft:heat_exchanger_condenser_tube_copper>),
+    Removal(<nuclearcraft:heat_exchanger_condenser_tube_hard_carbon>),
+    Removal(<nuclearcraft:heat_exchanger_condenser_tube_thermoconducting>),
+    Removal(<nuclearcraft:heat_exchanger_controller>),
+    Removal(<nuclearcraft:heat_exchanger_frame>),
+    Removal(<nuclearcraft:heat_exchanger_glass>),
+    Removal(<nuclearcraft:heat_exchanger_tube_copper>),
+    Removal(<nuclearcraft:heat_exchanger_tube_hard_carbon>),
+    Removal(<nuclearcraft:heat_exchanger_tube_thermoconducting>),
+    Removal(<nuclearcraft:heat_exchanger_vent>),
+    Removal(<nuclearcraft:heat_exchanger_wall>),
+    Removal(<nuclearcraft:helm_hazmat>),
+    Removal(<nuclearcraft:ingot:10>, true), // Zirconium Ingot
+    Removal(<nuclearcraft:ingot_block:10>), // Zirconium Block
+    Removal(<nuclearcraft:ingot_oxide>, true),    // Thorium Oxide Ingot
+    Removal(<nuclearcraft:ingot_oxide:1>, true),  // Uranium Oxide Ingot
+    Removal(<nuclearcraft:ingot_oxide:2>, true),  // Manganese Oxide Ingot
+    Removal(<nuclearcraft:ingot_oxide:3>, true),  // Manganese Dioxide Ingot
+    Removal(<nuclearcraft:legs_hazmat>),
+    Removal(<nuclearcraft:lithium:0>), // all lithium isotopes
+    Removal(<nuclearcraft:lithium:1>),
+    Removal(<nuclearcraft:lithium:2>),
+    Removal(<nuclearcraft:lithium:3>),
+    Removal(<nuclearcraft:lithium_ion_battery_advanced>),
+    Removal(<nuclearcraft:lithium_ion_battery_basic>),
+    Removal(<nuclearcraft:lithium_ion_battery_du>),
+    Removal(<nuclearcraft:lithium_ion_battery_elite>),
+    Removal(<nuclearcraft:lithium_ion_cell>),
+    Removal(<nuclearcraft:marshmallow>),
+    Removal(<nuclearcraft:milk_chocolate>),
+    Removal(<nuclearcraft:moresmore>),
+    Removal(<nuclearcraft:part:5>),  // Magnesium Diboride Solenoid
+    Removal(<nuclearcraft:part:6>),  // Bioplastic
+    Removal(<nuclearcraft:part:11>), // Empty Frame
+    Removal(<nuclearcraft:part:13>), // Silicon Carbide Fiber
+    Removal(<nuclearcraft:portable_ender_chest>),
+    Removal(<nuclearcraft:radiation_scrubber>),
+    Removal(<nuclearcraft:radaway_slow>),
+    Removal(<nuclearcraft:rad_shielding:0>), // Light Rad Shielding
+    Removal(<nuclearcraft:rad_shielding:1>), // Medium Rad Shielding
+    Removal(<nuclearcraft:rad_shielding:2>), // Heavy Rad Shielding
+    Removal(<nuclearcraft:rad_x>),
+    Removal(<nuclearcraft:roasted_cocoa_beans>, true),
+    Removal(<nuclearcraft:salt_fission_beam>),
+    Removal(<nuclearcraft:salt_fission_computer_port>),
+    Removal(<nuclearcraft:salt_fission_distributor>),
+    Removal(<nuclearcraft:salt_fission_frame>),
+    Removal(<nuclearcraft:salt_fission_glass>),
+    Removal(<nuclearcraft:salt_fission_heater>),
+    Removal(<nuclearcraft:salt_fission_moderator>),
+    Removal(<nuclearcraft:salt_fission_redstone_port>),
+    Removal(<nuclearcraft:salt_fission_retriever>),
+    Removal(<nuclearcraft:salt_fission_vent>),
+    Removal(<nuclearcraft:salt_fission_vessel>),
+    Removal(<nuclearcraft:salt_fission_wall>),
+    Removal(<nuclearcraft:smore>),
+    Removal(<nuclearcraft:solar_panel_advanced>),
+    Removal(<nuclearcraft:solar_panel_basic>),
+    Removal(<nuclearcraft:solar_panel_du>),
+    Removal(<nuclearcraft:solar_panel_elite>),
+    Removal(<nuclearcraft:tiny_dust_lead>),
+    Removal(<nuclearcraft:turbine_controller>),
+    Removal(<nuclearcraft:turbine_dynamo_coil:0>),
+    Removal(<nuclearcraft:turbine_dynamo_coil:1>),
+    Removal(<nuclearcraft:turbine_dynamo_coil:2>),
+    Removal(<nuclearcraft:turbine_dynamo_coil:3>),
+    Removal(<nuclearcraft:turbine_dynamo_coil:4>),
+    Removal(<nuclearcraft:turbine_dynamo_coil:5>),
+    Removal(<nuclearcraft:turbine_frame>),
+    Removal(<nuclearcraft:turbine_glass>),
+    Removal(<nuclearcraft:turbine_inlet>),
+    Removal(<nuclearcraft:turbine_outlet>),
+    Removal(<nuclearcraft:turbine_rotor_bearing>),
+    Removal(<nuclearcraft:turbine_rotor_blade_extreme>),
+    Removal(<nuclearcraft:turbine_rotor_blade_sic_sic_cmc>),
+    Removal(<nuclearcraft:turbine_rotor_blade_steel>),
+    Removal(<nuclearcraft:turbine_rotor_shaft>),
+    Removal(<nuclearcraft:turbine_rotor_stator>),
+    Removal(<nuclearcraft:turbine_wall>),
+    Removal(<nuclearcraft:unsweetened_chocolate>),
+    Removal(<nuclearcraft:upgrade:0>), // Speed Upgrade (NC Machines)
+    Removal(<nuclearcraft:upgrade:1>), // Energy Upgrade (NC Machines)
+    Removal(<nuclearcraft:voltaic_pile_advanced>),
+    Removal(<nuclearcraft:voltaic_pile_basic>),
+    Removal(<nuclearcraft:voltaic_pile_du>),
+    Removal(<nuclearcraft:voltaic_pile_elite>),
+] as Removal[];
+
+for removal in removals {
+    if(removal.hasFurnace) {
+        furnace.remove(removal.item);
+    }
+    mods.jei.JEI.removeAndHide(removal.item);
 }
 
 zenClass Material {
@@ -254,6 +274,19 @@ zenClass Material {
     function depletedFuelName() as string {
         return "nuclearcraft:depleted_fuel_" + this.name;
     }
+
+    function fissileItem(meta as int) as IItemStack {
+        return itemUtils.getItem(this.fissileName(), meta);
+    }
+
+    function fuelItem(meta as int) as IItemStack {
+        return itemUtils.getItem(this.fuelName(), meta);
+    }
+
+    function depletedFuelItem(meta as int) as IItemStack {
+        return itemUtils.getItem(this.depletedFuelName(), meta);
+    }
+
 }
 
 // oxides are odd-valued metadata values beginning with 1.
@@ -273,9 +306,8 @@ var fuelObjs as Material[] = [
 for fuelObj in fuelObjs {
     // Clean up oxide fissiles
     for meta in fuelObj.fissileMetas {
-        var variant = fuelObj.fissileName();
-        var oxide   = itemUtils.getItem(variant, meta);
-        var regular = itemUtils.getItem(variant, meta - 1);
+        var oxide   = fuelObj.fissileItem(meta);
+        var regular = fuelObj.fissileItem(meta - 1);
 
         // remove de-oxidation smelting?
         furnace.remove(regular, oxide);
@@ -286,9 +318,8 @@ for fuelObj in fuelObjs {
 
     // Clean up oxide fissile fuels
     for meta in fuelObj.fuelMetas {
-        var variant = fuelObj.fuelName();
-        var oxide   = itemUtils.getItem(variant, meta);
-        var regular = itemUtils.getItem(variant, meta - 1);
+        var oxide   = fuelObj.fuelItem(meta);
+        var regular = fuelObj.fuelItem(meta - 1);
 
         // Remove deoxidation smelting recipes
         furnace.remove(regular, oxide);
@@ -302,9 +333,8 @@ for fuelObj in fuelObjs {
 
     // Clean up oxide depleted fuels
     for meta in fuelObj.depletedFuelMetas {
-        var variant = fuelObj.depletedFuelName();
-        var oxide   = itemUtils.getItem(variant, meta);
-        var regular = itemUtils.getItem(variant, meta - 1);
+        var oxide   = fuelObj.depletedFuelItem(meta);
+        var regular = fuelObj.depletedFuelItem(meta - 1);
 
         // Remove deoxidation smelting recipes
         furnace.remove(regular, oxide);
@@ -316,7 +346,11 @@ for fuelObj in fuelObjs {
         mods.nuclearcraft.fission.removeRecipeWithOutput([oxide]);
 
         // Remove oxide depleted fuel recipes from the centrifuge
-        centrifuge.findRecipe(24, [oxide], null).remove();
+        // One of the ic2 ones threw a null here.
+        val cr as Recipe = centrifuge.findRecipe(24, [oxide], null);
+        if(!isNull(cr)) {
+            cr.remove();
+        }
     }
 }
 
