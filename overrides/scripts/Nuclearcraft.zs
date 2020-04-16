@@ -81,8 +81,6 @@ val ncItems as IItemStack[] = [
     <nuclearcraft:alloy:14>, // SiC SiC Ceramic Matrix Composite
     <nuclearcraft:alloy:15>, // HSLA Steel
     <nuclearcraft:bin>,
-    <nuclearcraft:block_depleted_thorium>,
-    <nuclearcraft:block_depleted_uranium>,
     <nuclearcraft:boots_hazmat>,
     <nuclearcraft:boron:0>, // all boron isotopes
     <nuclearcraft:boron:1>,
@@ -302,15 +300,23 @@ for fuelObj in fuelObjs {
         mods.jei.JEI.removeAndHide(oxide);
     }
 
-    // Depleted fuels just need to be hidden from JEI
+    // Clean up oxide depleted fuels
     for meta in fuelObj.depletedFuelMetas {
-        var item = itemUtils.getItem(fuelObj.depletedFuelName(), meta);
+        var variant = fuelObj.depletedFuelName();
+        var oxide   = itemUtils.getItem(variant, meta);
+        var regular = itemUtils.getItem(variant, meta - 1);
+
+        // Remove deoxidation smelting recipes
+        furnace.remove(regular, oxide);
 
         // hide from JEI but there's no table recipes
-        mods.jei.JEI.hide(item);
+        mods.jei.JEI.hide(oxide);
 
-        // remove from the fission recipe list
-        mods.nuclearcraft.fission.removeRecipeWithOutput([item]);
+        // remove oxide recipes from the fission reactor recipe list
+        mods.nuclearcraft.fission.removeRecipeWithOutput([oxide]);
+
+        // Remove oxide depleted fuel recipes from the centrifuge
+        centrifuge.findRecipe(24, [oxide], null).remove();
     }
 }
 
