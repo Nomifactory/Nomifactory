@@ -14,7 +14,7 @@ then
 else
 	export TAGGED_RELEASE=false
 	
-	shortCommit="${TRAVIS_COMMIT:0:6}"
+	shortCommit="${TRAVIS_COMMIT:0:7}"
 	releaseName="${REPO_NAME}-${TRAVIS_BRANCH}-${shortCommit}-snapshot"
 fi
 
