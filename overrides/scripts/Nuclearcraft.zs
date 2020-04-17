@@ -37,7 +37,8 @@ mods.nuclearcraft.decay_generator.removeAllRecipes();
 mods.nuclearcraft.fusion.removeAllRecipes();
 mods.nuclearcraft.salt_fission.removeAllRecipes();
 mods.nuclearcraft.heat_exchanger.removeAllRecipes();
-//mods.nuclearcraft.steam_turbine.removeAllRecipes(); FIXME: probably in a newer version?
+//FIXME: NC lists this next one in its docs but CT doesn't like it. Disabling for now.
+//mods.nuclearcraft.steam_turbine.removeAllRecipes();
 mods.nuclearcraft.condenser.removeAllRecipes();
 
 // Hide NC categories related to MSR and Turbines
@@ -236,7 +237,7 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:voltaic_pile_basic>),
     Removal(<nuclearcraft:voltaic_pile_du>),
     Removal(<nuclearcraft:voltaic_pile_elite>),
-] as Removal[];
+] as Removal[];      
 
 for removal in removals {
     if(removal.hasFurnace) {
@@ -263,28 +264,16 @@ zenClass Material {
         this.depletedFuelMetas = depletedFuelMetas;
     }
 
-    function fissileName() as string {
-        return "nuclearcraft:" + this.name;
-    }
-
-    function fuelName() as string {
-        return "nuclearcraft:fuel_" + this.name;
-    }
-
-    function depletedFuelName() as string {
-        return "nuclearcraft:depleted_fuel_" + this.name;
-    }
-
     function fissileItem(meta as int) as IItemStack {
-        return itemUtils.getItem(this.fissileName(), meta);
+        return itemUtils.getItem("nuclearcraft:" + this.name, meta);
     }
 
     function fuelItem(meta as int) as IItemStack {
-        return itemUtils.getItem(this.fuelName(), meta);
+        return itemUtils.getItem("nuclearcraft:fuel_" + this.name, meta);
     }
 
     function depletedFuelItem(meta as int) as IItemStack {
-        return itemUtils.getItem(this.depletedFuelName(), meta);
+        return itemUtils.getItem("nuclearcraft:depleted_fuel_" + this.name, meta);
     }
 
 }
