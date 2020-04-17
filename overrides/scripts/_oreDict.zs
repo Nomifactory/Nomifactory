@@ -541,7 +541,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productingot:6>,
 		<thermalfoundation:material:160>,
 		<nuclearcraft:alloy:5>
-	]
+	],
+
+    #ingotUranium235
+    <ore:ingotUranium235> : [
+        <gregtech:meta_item_1:10076>,
+    ],
 
 };
 
@@ -1516,57 +1521,6 @@ mods.jei.JEI.removeAndHide(<morefurnaces:furnaceblock:4>);
 mods.jei.JEI.removeAndHide(<moreplates:hammer>);
 
 
-//Nuclearcraft Removals
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_cell>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:portable_ender_chest>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:decay_generator>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:1>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:2>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:1>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:2>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:4>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:13>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:8>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:11>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:7>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:8>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:14>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:turbine_rotor_blade_sic_sic_cmc>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:4>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:6>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:7>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:part:13>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:block_depleted_thorium>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:block_depleted_uranium>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:6>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:10>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:uranium:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:uranium:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:upgrade>);
-
-<ore:ingotUranium235>.remove(<gregtech:meta_item_1:10076>);
-
 //Standard Expansion Removals
 mods.jei.JEI.removeAndHide(<bq_standard:loot_chest>);
 mods.jei.JEI.removeAndHide(<bq_standard:loot_chest:25>);
@@ -1635,7 +1589,6 @@ mods.jei.JEI.removeAndHide(<libvulpes:battery>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery:1>);
 mods.jei.JEI.removeAndHide(<libvulpes:productfan:6>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem:6>);
 
 //Lumberaxe Removal
 mods.jei.JEI.removeAndHide(<lumberjack:infinity_lumberaxe>);

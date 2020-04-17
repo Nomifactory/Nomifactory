@@ -57,8 +57,8 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>], [<liquid:oxygen> * 
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>], [<liquid:oxygen> * 1000]).remove();	
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10018>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<gregtech:meta_item_1:10087>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
-//HSLA
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
+//HSLA - unused
+//blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 
 //Kanthal [tier 2]

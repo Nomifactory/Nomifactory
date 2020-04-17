@@ -448,3 +448,9 @@ furnace.addRecipe(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>)
 //Lumium
 furnace.remove(<gregtech:meta_item_1:10706>, <gregtech:meta_item_1:2706>);
 furnace.addRecipe(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>);
+
+//Mana Infused
+mixer.recipeBuilder()
+    .outputs(<thermalfoundation:material:72> * 2)
+    .inputs([<thermalfoundation:material:1028>, <gregtech:meta_item_1:2072>])
+    .duration(200).EUt(30).buildAndRegister();
