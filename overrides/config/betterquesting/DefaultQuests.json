@@ -47026,7 +47026,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Gregtech Low Voltage Tier: start building a factory!\nGenerate resources with §bDeep Mob Learning§r.\nBuild an §3Electric Blast Furnace§r for smelting advanced materials and alloys.\nEarly §bEnderIO§r tech and §bApplied Energistics 2§r Digital Storage.",
+          "desc:8": "Gregtech Low Voltage Tier: start building a factory!\n\nGenerate resources with §bDeep Mob Learning§r.\n\nBuild an §3Electric Blast Furnace§r for smelting advanced materials and alloys.\n\nEarly §bEnderIO§r tech and §bApplied Energistics 2§r Digital Storage.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -48272,7 +48272,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Gregtech High Voltage, Extreme Voltage, and Insane Voltage tiers:\n§6§3Cryogenic Distillation§r, and petrochemistry for §6Epoxy§r and §9Cetane Diesel§r.\nCraft §6Nether Stars§r and unlock §bThermal Expansion§r machines.\nBuild a§b NuclearCraft§r fission reactor to obtain new materials.\nBuild a Space Station and Warp Core.",
+          "desc:8": "Gregtech High Voltage, Extreme Voltage, and Insane Voltage tiers:\n\n§6§3Cryogenic Distillation§r, and petrochemistry for §6Epoxy§r and §9Cetane Diesel§r.\n\nCraft §6Nether Stars§r and unlock §bThermal Expansion§r machines.\n\nBuild a§b NuclearCraft§r fission reactor to obtain new materials.\n\nBuild a Space Station and Warp Core.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -49889,7 +49889,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "GregTech LuV, ZPM, and UV tiers:\nBuild §3Assembly Lines§r, §3Fusion Reactors§r, and more!\nAutomate in style with §bPackagedAuto§r. Climb the tiers of §6Micro Miners§r.\n§bDraconic Evolution§r for fusion crafting and energy storage.",
+          "desc:8": "GregTech LuV, ZPM, and UV tiers:\n\nBuild §3Assembly Lines§r, §3Fusion Reactors§r, and more!\n\nAutomate in style with §bPackagedAuto§r. Climb the tiers of §6Micro Miners§r.\n\n§bDraconic Evolution§r for fusion crafting and energy storage.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -50582,7 +50582,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "You\u0027re in the endgame now...\nHarvest entire microverses and unlock the §dCreative Portable Tank§r.\nPut your automation to the ultimate test as you progress towards the final goal:\nThe §dCreative Vending Upgrade§r.",
+          "desc:8": "You\u0027re in the endgame now...\n\nHarvest entire microverses and unlock the §dCreative Portable Tank§r.\n\nPut your automation to the ultimate test as you progress towards the final goal: the §dCreative Vending Upgrade§r.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -51352,7 +51352,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "\n\nWelcome to §5Omnifactory§r, I\u0027ll be your guide.",
+          "desc:8": "Welcome to §5Omnifactory§r, I\u0027ll be your guide.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -51716,7 +51716,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\nEither way, it\u0027s time to start mining §emicroverses§r.",
+          "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\n\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\n\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\n\nEither way, it\u0027s time to start mining §emicroverses§r.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
