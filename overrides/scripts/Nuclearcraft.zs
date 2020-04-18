@@ -543,18 +543,7 @@ mixer.recipeBuilder()
     .inputs([<gregtech:meta_item_1:2232> * 3, <minecraft:blaze_powder>])
     .duration(200).EUt(30).buildAndRegister();
 
-// Remove recipes for items with a specific range of metadata values
-function delRange(name as string, start as int, stop as int) {
-    for i in start to stop+1 { // endval is exclusive
-        var item = itemUtils.getItem(name ~ ":" ~ i);
-        if(!isNull(item)) {
-            recipes.remove(item);
-        }
-    }
-}
-
 // remove table recipes for coolers and replace with canning machine recipes
-delRange("nuclearcraft:cooler",1,15);
 
 recipes.remove(<nuclearcraft:cooler:1>);
 fluid_canner.recipeBuilder()
