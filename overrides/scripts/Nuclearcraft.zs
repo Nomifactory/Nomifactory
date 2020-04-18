@@ -546,7 +546,7 @@ mixer.recipeBuilder()
 // Remove recipes for items with a specific range of metadata values
 function delRange(name as string, start as int, stop as int) {
     for i in start to stop+1 { // endval is exclusive
-        var item = itemUtils.getItem(name);
+        var item = itemUtils.getItem(name ~ ":" ~ i);
         if(!isNull(item)) {
             recipes.remove(item);
         }
