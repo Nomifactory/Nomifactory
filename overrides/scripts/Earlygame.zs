@@ -842,3 +842,10 @@ assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:32402>, <ore:dyeLightGray>)
 	.outputs(<gregtech:meta_item_1:32446>)
 	.duration(200).EUt(8).buildAndRegister();
+
+//Sponge Recipe
+recipes.addShaped(<minecraft:sponge>, 
+	[[<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>],
+	[<gregtech:meta_item_2:32570>,<inspirations:mulch>,<gregtech:meta_item_2:32570>],
+	[<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>]]);
+
