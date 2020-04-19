@@ -444,6 +444,7 @@ signalum1.addItemInput(<advancedrocketry:satelliteprimaryfunction:1>);
 signalum1.addItemInput(<thermalfoundation:material:1027> * 64);
 signalum1.addItemOutput(<contenttweaker:denseoilshale> * 64);
 signalum1.addItemOutput(<contenttweaker:denseoilshale> * 64);
+signalum1.addItemOutput(<enderio:block_infinity> * 16);
 signalum1.build();
 
 
