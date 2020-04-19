@@ -1736,6 +1736,27 @@ solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 144).notConsumable(
 solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<avaritia:block_resource>]).duration(200).EUt(30).buildAndRegister();
 recipes.addShapeless(<avaritia:resource:4>, [<gregtech:meta_item_1:10972>]);
 
+// Signalum Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateSignalum>.firstItem])
+    .fluidInputs(<liquid:signalum> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
+// Enderium Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateEnderium>.firstItem])
+    .fluidInputs(<liquid:enderium> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
+// Crystal Matrix Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateCrystalMatrix>.firstItem])
+    .fluidInputs(<liquid:moltencrystalmatrix> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
 
 //Redstone Alloy
 <ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
