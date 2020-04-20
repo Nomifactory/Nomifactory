@@ -127,6 +127,26 @@ function textToIngredients(ingredients as IIngredient[][],
     return ingredients;
 }
 
+/* Same as above, but for standard 3x3 shapeless recipes. */
+function makeShapeless3(name as string,
+                        output as IItemStack,
+                        recipe as string[],
+                        replacements as IIngredient[string]) {
+
+    var ingredients = [null,null,null,
+                       null,null,null,
+                       null,null,null] as IIngredient[];
+
+    for i, str in recipe {
+        for j in 0 .. str.length {
+            var item = str[j];
+            ingredients[str.length*i+j] = replacements[item];
+        }
+    }
+
+    recipes.addShapeless(name, output, ingredients);
+}
+
 function makeShaped(name as string,
                     output as IItemStack,
                     recipe as string[],
