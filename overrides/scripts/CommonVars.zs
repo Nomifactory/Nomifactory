@@ -140,7 +140,9 @@ function makeShapeless3(name as string,
     for i, str in recipe {
         for j in 0 .. str.length {
             var item = str[j];
-            ingredients[str.length*i+j] = replacements[item];
+            if " " != item { // blanks are nulls, ignore them
+                ingredients[str.length*i+j] = replacements[item];
+            }
         }
     }
 
