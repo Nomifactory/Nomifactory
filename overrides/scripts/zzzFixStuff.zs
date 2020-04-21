@@ -103,17 +103,6 @@ recipes.addShapeless("gregtech_block_compress_uranium235",
      <gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>]);
 
 /*
-    === Magnesium Chloride Electrolysis ===
-    The stoichiometry of the chem reactor recipe makes no sense, and you just electrolyze it IRL.
- */
-
-electrolyzer.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2125>*3])
-    .outputs([<gregtech:meta_item_1:2038>])
-    .fluidOutputs([<liquid:chlorine>*2000])
-    .duration(720).EUt(30).buildAndRegister();
-
-/*
     === TE to GT Dust shapeless conversions ===
     Thanks Grom PE for these fixes.
  */
@@ -121,4 +110,33 @@ electrolyzer.recipeBuilder()
 recipes.addShapeless(<gregtech:meta_item_1:2138>, [<thermalfoundation:material:770>]);
 // TE niter to GT saltpeter
 recipes.addShapeless(<gregtech:meta_item_1:2156>, [<thermalfoundation:material:772>]);
+
+/*
+    === Avaritia Tweaks ===
+ */
+
+// Add solidifier block recipe
+solidifier.recipeBuilder()
+    .fluidInputs([<liquid:moltencrystalmatrix> * 1296])
+    .notConsumable(<gregtech:meta_item_1:32308>)
+    .outputs([<avaritia:block_resource:2>])
+    .duration(200).EUt(30).buildAndRegister();
+
+// decomposition for crystal matrix block
+recipes.addShapeless("of_crystal_matrix_decomp", <avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
+
+/*
+    Anti-Footgun: remove recipe for max energy hatch
+ */
+recipes.removeByRecipeName("gregtech:energy_input_hatch_max");
+
+
+/*
+    Airtight Seal books for the low price of 900 omnicoins!
+ */
+recipes.addShaped("of_craft_airtight_seal",
+    <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 12 as short}]}),
+    [[<contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>],
+     [<contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>],
+     [<contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>]]);
 

@@ -1,9 +1,5 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val mixer = RecipeMap.getByName("mixer");
-
 //Removed From Furnace Smelting
 furnace.remove(<ore:ingotIridium>);
 furnace.remove(<ore:ingotTungsten>);
@@ -61,8 +57,8 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>], [<liquid:oxygen> * 
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>], [<liquid:oxygen> * 1000]).remove();	
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10018>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<gregtech:meta_item_1:10087>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
-//HSLA
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
+//HSLA - unused
+//blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 
 //Kanthal [tier 2]
@@ -190,6 +186,8 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10045>,<gregtech:met
 
 //Naquadah [tier 11]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2307>], [null]).remove();	
+freezer.findRecipe(120, [<gregtech:meta_item_1:11307>], [null]).remove();
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:11307>);	
 furnace.addRecipe(<gregtech:meta_item_1:10307>, <gregtech:meta_item_1:2307>, 0.0);
 
 //Enriched Naquadah

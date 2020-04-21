@@ -1,16 +1,13 @@
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Color;
 import mods.gregtech.recipe.RecipeMap;
-
-val alloy = RecipeMap.getByName("alloy_smelter");
-val wiremill = RecipeMap.getByName("wiremill");
-val assembler = RecipeMap.getByName("assembler");
-val autoclave = RecipeMap.getByName("autoclave");
-val pyro = RecipeMap.getByName("pyro");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val assembly_line = RecipeMap.getByName("assembly_line");
-
-
-
-
+import mods.gregtech.material.MaterialRegistry;
+import mods.gregtech.material.Material;
 
 /////////////////   Tier One Circuits | Basic Tier   ///////////////////////	
 
@@ -744,31 +741,48 @@ assembler.findRecipe(1920, [<ore:circuitExtreme>.firstItem * 4, <gregtech:meta_i
 assembler.findRecipe(1920, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_item_1:2331>], [<liquid:osmium> * 2304]).remove();
 assembler.findRecipe(7680, [<ore:circuitMaster>.firstItem * 4, <gregtech:meta_item_1:32725>], [<liquid:osmium> * 4608]).remove();
 assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_item_1:32725>], [<liquid:osmium> * 4608]).remove();
-	
-recipes.addShaped(<enderio:item_item_conduit> * 4, [								//Item conduit
+
+//Item conduit - by hand
+recipes.addShaped(<enderio:item_item_conduit> * 4, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 	[<contenttweaker:pulsatingwire>,<contenttweaker:pulsatingwire>,<contenttweaker:pulsatingwire>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
-	
-recipes.addShaped(<enderio:item_redstone_conduit> * 4, [							//redstone conduit
+
+//redstone conduit - by hand
+recipes.addShaped(<enderio:item_redstone_conduit> * 4, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 	[<gregtech:cable:237>,<gregtech:cable:237>,<gregtech:cable:237>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
-	
-recipes.addShaped(<enderio:item_me_conduit> * 4, [									//me conduit
+
+//me conduit - by hand
+recipes.addShaped(<enderio:item_me_conduit> * 4, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 	[<appliedenergistics2:part:36>,<appliedenergistics2:part:36>,<appliedenergistics2:part:36>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
-	
-recipes.addShaped(<enderio:item_liquid_conduit:2> * 4, [									//ender fluid conduit
+
+//ender fluid conduit - by hand
+recipes.addShaped(<enderio:item_liquid_conduit:2> * 4, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 	[<gregtech:cable:702>,<enderio:item_liquid_conduit:1>,<gregtech:cable:702>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 
+//redstone conduit - assembler
+assembler.recipeBuilder()
+    .inputs([<gregtech:cable:237> * 3, <ore:itemConduitBinder> * 6])
+    .outputs([<enderio:item_redstone_conduit> * 8])
+    .duration(80).EUt(16).buildAndRegister();
 
-assembler.recipeBuilder().inputs([<gregtech:cable:237> * 3, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_redstone_conduit> * 8]).duration(80).EUt(16).buildAndRegister();										//redstone
-assembler.recipeBuilder().inputs([<contenttweaker:pulsatingwire> * 3, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_item_conduit> * 8]).duration(80).EUt(16).buildAndRegister();									//item cond
-assembler.recipeBuilder().inputs([<gregtech:cable:702> * 2, <enderio:item_liquid_conduit:1>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_liquid_conduit:2> * 8]).duration(80).EUt(16).buildAndRegister();		//ender fluid							//item cond
+//item conduit - assembler
+assembler.recipeBuilder()
+    .inputs([<contenttweaker:pulsatingwire> * 3, <ore:itemConduitBinder> * 6])
+    .outputs([<enderio:item_item_conduit> * 8])
+    .duration(80).EUt(16).buildAndRegister();
+
+//ender fluid conduit - assembler
+assembler.recipeBuilder()
+    .inputs([<gregtech:cable:702> * 2, <enderio:item_liquid_conduit:1>, <ore:itemConduitBinder> * 6])
+    .outputs([<enderio:item_liquid_conduit:2> * 8])
+    .duration(80).EUt(16).buildAndRegister();
 
 mods.jei.JEI.removeAndHide(<enderio:item_endergy_conduit:2>);
 mods.jei.JEI.removeAndHide(<enderio:item_endergy_conduit:3>);
@@ -778,7 +792,6 @@ mods.jei.JEI.removeAndHide(<enderio:item_endergy_conduit:8>);
 mods.jei.JEI.removeAndHide(<enderio:item_endergy_conduit:9>);
 
 
-	
 //Ender Pearls
 alloy.recipeBuilder().inputs([<minecraft:diamond>,<forestry:crafting_material>]).outputs([<minecraft:ender_pearl>]).duration(300).EUt(16).buildAndRegister();
 
@@ -787,20 +800,24 @@ furnace.remove(<gregtech:meta_item_1:9197>);
 furnace.addRecipe(<gregtech:meta_item_1:10197>, <minecraft:iron_ingot>, 0.0);
 	
 //LV Casing
-recipes.remove(<gregtech:machine_casing:1>);	
-recipes.addShaped(<gregtech:machine_casing:1>, [
-	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>], 
-	[<ore:plateWroughtIron>, <gregtech:meta_tool:8>, <ore:plateWroughtIron>], 
-	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
-assembler.findRecipe(16, [<gregtech:meta_item_1:12184> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();	
-assembler.recipeBuilder().inputs(<ore:plateWroughtIron> * 8).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8})).outputs([<gregtech:machine_casing:1>]).duration(30).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateIron> * 3).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3})).outputs([<minecraft:bucket>]).duration(30).EUt(16).buildAndRegister();
+recipes.removeByRecipeName("gregtech:casing_lv");
 
-recipes.addShaped(<gregtech:machine_casing:9>, [
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>,<moreplates:neutronium_plate>], 
-	[<moreplates:neutronium_plate>, <gregtech:meta_tool:8>, <moreplates:neutronium_plate>], 
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>,<moreplates:neutronium_plate>]]);
-assembler.recipeBuilder().inputs(<moreplates:neutronium_plate> * 8).outputs([<gregtech:machine_casing:9>]).duration(30).EUt(16).buildAndRegister();
+// remove the steel plate assembler recipe for LV casing
+assembler.findRecipe(16, [<gregtech:meta_item_1:12184> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();
+
+// use wrought iron instead
+assembler.recipeBuilder()
+    .inputs(<ore:plateWroughtIron> * 8)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8}))
+    .outputs([<gregtech:machine_casing:1>])
+    .duration(30).EUt(16).buildAndRegister();
+
+// Buckets from iron plates
+assembler.recipeBuilder()
+    .inputs(<ore:plateIron> * 3)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3}))
+    .outputs([<minecraft:bucket>])
+    .duration(30).EUt(16).buildAndRegister();
 
 	
 //LV Hull
@@ -809,17 +826,12 @@ recipes.addShaped(<gregtech:machine:501>, [
 	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>], 
 	[<ore:cableGtSingleTin>, <gregtech:machine_casing:1>, <ore:cableGtSingleTin>]]);	
 assembler.findRecipe(16, [<gregtech:cable:5071> * 2, <gregtech:machine_casing:1>], [<liquid:plastic> * 288]).remove();	
-	
-recipes.addShaped(<gregtech:machine:509>, [
-	[<gregtech:meta_item_1:12145>, <moreplates:neutronium_plate>, <gregtech:meta_item_1:12145>], 
-	[<ore:wireGtSingleSuperconductor>, <gregtech:machine_casing:9>, <ore:wireGtSingleSuperconductor>]]);	
-	
+
 recipes.addShaped(<gregtech:meta_item_1:32600>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_2:16018>, <ore:stickIron>], 
 	[<gregtech:meta_item_2:16018>, <ore:stickIronMagnetic>, <gregtech:meta_item_2:16018>],
 	[<ore:stickIron>, <gregtech:meta_item_2:16018>, <ore:cableGtSingleTin>]]);
-	
-	
+
 //Diode
 recipes.remove(<metaitem:component.diode>);
 recipes.addShaped(<metaitem:component.diode> * 4, [[null, <minecraft:glass_pane>, null], [<gregtech:meta_item_2:16071>, <ore:dustTinyGallium>, <gregtech:meta_item_2:16071>], [null, <minecraft:glass_pane>, null]]);	
@@ -863,12 +875,44 @@ recipes.addShaped(<gregtech:machine:514>, [
 	[<gregtech:meta_item_1:32640>, <gregtech:meta_item_1:32610>, <ore:wireGtQuadrupleCupronickel>]]);
 	
 //ULV Casing
-recipes.remove(<gregtech:machine_casing>);	
-recipes.addShaped(<gregtech:machine_casing>, [
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], 
-	[<ore:plateIron>, <gregtech:meta_tool:8>, <ore:plateIron>], 
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
-assembler.findRecipe(16, [<gregtech:meta_item_1:12197> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();	
+recipes.remove(<gregtech:machine_casing>);
+
+var wrenches = [
+    <gregtech:meta_tool:8>,
+    <gregtech:meta_tool:29>,
+    <gregtech:meta_tool:30>,
+    <gregtech:meta_tool:31>] as IItemStack[];
+
+for i, wrench in wrenches {
+    // ULV Machine Casing
+    recipes.addShaped("of_ulv_casing_wrench"+i, <gregtech:machine_casing>, [
+        [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
+        [<ore:plateIron>,      wrench    , <ore:plateIron>],
+        [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+
+    // LV Machine Casing
+    recipes.addShaped("of_lv_casing_wrench"+i, <gregtech:machine_casing:1>, [
+        [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
+        [<ore:plateWroughtIron>,          wrench       , <ore:plateWroughtIron>],
+        [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
+
+
+    // Modularium Machine Casing
+    recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
+        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>], 
+        [<modularmachinery:itemmodularium>,               wrench             , <modularmachinery:itemmodularium>], 
+        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]]);
+
+    // LuV Machine Casing
+    recipes.addShaped("of_luv_casing_wrench"+i, <gregtech:machine_casing:6>, [
+        [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>], 
+        [<ore:plateLumium>,       wrench     , <ore:plateLumium>], 
+        [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
+}
+
+
+
+assembler.findRecipe(16,[<gregtech:meta_item_1:12197> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12197> * 2, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12033> * 2, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12197> * 6, <gregtech:meta_item_1:32766>.withTag({Configuration: 6})], [null]).remove();	
@@ -912,8 +956,8 @@ pyro.recipeBuilder().inputs([<gregtech:meta_item_1:2106> * 16]).notConsumable(<g
 
 reactor.recipeBuilder().inputs(<metaitem:board.coated>).fluidInputs([<liquid:phenol> * 100]).outputs([<metaitem:board.phenolic>]).duration(100).EUt(8).buildAndRegister();
 
-assembler.findRecipe(8, [<thermalfoundation:material:800>, <gregtech:meta_item_1:32301>], [<liquid:glue> * 100]).remove();	
-assembler.findRecipe(8, [<thermalfoundation:material:800>, <gregtech:meta_item_1:32301>], [<liquid:bisphenol_a> * 100]).remove();	
+assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>], [<liquid:glue> * 100]).remove();	
+assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>], [<liquid:bisphenol_a> * 100]).remove();	
 
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_steel");
 recipes.removeByRecipeName("gregtech:small_coil_copper_ferrite");

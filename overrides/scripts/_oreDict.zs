@@ -357,6 +357,21 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#dustTitanium
 	<ore:dustTitanium> : [
 		<libvulpes:productdust:7>
+	],
+
+	#dustWood
+	<ore:dustWood>: [
+		<thermalfoundation:material:800>
+	],
+
+	#itemSawdust
+	<ore:itemSawdust>: [
+		<thermalfoundation:material:800>
+	],
+
+	#dustEndstone
+	<ore:dustEndstone>: [
+		<nuclearcraft:gem_dust:11>
 	]
 
 };
@@ -526,7 +541,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productingot:6>,
 		<thermalfoundation:material:160>,
 		<nuclearcraft:alloy:5>
-	]
+	],
+
+    #ingotUranium235
+    <ore:ingotUranium235> : [
+        <gregtech:meta_item_1:10076>,
+    ],
 
 };
 
@@ -810,6 +830,11 @@ var platesDisabled as IItemStack[][IOreDictEntry] = {
 	#plateTitanium
 	<ore:plateTitanium> : [
 		<libvulpes:productplate:7>
+	],
+
+	#plateNeutronium
+	<ore:plateNeutronium> : [
+		<gregtech:meta_item_1:12972>
 	]
 };
 
@@ -918,7 +943,6 @@ var gearsDisabled as IItemStack[][IOreDictEntry] = {
 	#gearWood
 	<ore:gearWood> : [
 		<appliedenergistics2:material:40>,
-		<enderio:item_material:9>,
 		<thermalfoundation:material:22>
 	]
 };
@@ -963,6 +987,7 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:itemSilicon>.add(<gregtech:meta_item_2:32440>);
 <ore:dustQuartz>.add(<gregtech:meta_item_1:2201>);
+<ore:dustBone>.add(<minecraft:dye:15>);
 
 //Ores
 <ore:oreIron>.add(<minecraft:iron_ore>);
@@ -974,6 +999,10 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreEmerald>.add(<minecraft:emerald_ore>);
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
+<ore:blockAluminum>.add(<gregtech:compressed_0:0>);
+
+//Add moreplates neutronium plate to gtce neutronium ore dict
+<ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
 
 
 ////////////////////////////////
@@ -1002,18 +1031,6 @@ mods.jei.JEI.hideCategory("xu2_machine_extrautils2:crusher");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator_survival");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator");
 mods.jei.JEI.hide(<appliedenergistics2:facade>);
-
-//Forestry Removals
-mods.jei.JEI.removeAndHide(<forestry:phosphor>);
-mods.jei.JEI.removeAndHide(<forestry:ash>);
-mods.jei.JEI.removeAndHide(<forestry:wood_pulp>);
-mods.jei.JEI.removeAndHide(<forestry:mulch>);
-mods.jei.JEI.removeAndHide(<forestry:beeswax>);
-mods.jei.JEI.removeAndHide(<forestry:refractory_wax>);
-mods.jei.JEI.removeAndHide(<forestry:fertilizer_bio>);
-mods.jei.JEI.removeAndHide(<forestry:soldering_iron>);
-mods.jei.JEI.removeAndHide(<forestry:ash_brick>);
-mods.jei.JEI.removeAndHide(<forestry:ash_stairs>);
 
 
 //Actually Additions Removals
@@ -1058,9 +1075,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:22>);
 
 
 mods.jei.JEI.removeAndHide(<advancedrocketry:charcoallog>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:datapipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:energypipe>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:liquidpipe>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:satellitebuilder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:loader>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:precisionassemblingmachine>);
@@ -1092,7 +1106,6 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:solargenerator>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:railgun>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:blocklens>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:forcefieldprojector>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:pipesealer>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:spaceelevatorcontroller>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:beacon>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:thermitetorch>);
@@ -1135,8 +1148,6 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:asteroidchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:elevatorchip>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:lens>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:basiclasergun>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:itemupgrade:1>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:beaconfinder>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:thermite>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:unlittorch>);
@@ -1254,7 +1265,6 @@ mods.jei.JEI.removeAndHide(<extrautils2:user>);
 mods.jei.JEI.removeAndHide(<extrautils2:contract>);
 mods.jei.JEI.removeAndHide(<enderio:block_cap_bank>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_grainy>);
-mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_stellar>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_melodic>);
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_crystalline>);
@@ -1511,57 +1521,6 @@ mods.jei.JEI.removeAndHide(<morefurnaces:furnaceblock:4>);
 mods.jei.JEI.removeAndHide(<moreplates:hammer>);
 
 
-//Nuclearcraft Removals
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_cell>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:portable_ender_chest>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:decay_generator>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:1>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:2>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:1>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:2>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:4>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:13>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:8>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:11>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:7>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:8>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:14>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:turbine_rotor_blade_sic_sic_cmc>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:4>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:6>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:7>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:part:13>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:block_depleted_thorium>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:block_depleted_uranium>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:6>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:10>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:uranium:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:uranium:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:upgrade>);
-
-<ore:ingotUranium235>.remove(<gregtech:meta_item_1:10076>);
-
 //Standard Expansion Removals
 mods.jei.JEI.removeAndHide(<bq_standard:loot_chest>);
 mods.jei.JEI.removeAndHide(<bq_standard:loot_chest:25>);
@@ -1589,17 +1548,10 @@ mods.jei.JEI.removeAndHide(<theoneprobe:creativeprobe>);
 //Thermal Removals
 mods.jei.JEI.removeAndHide(<thermalexpansion:satchel:32000>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:frame:129>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:130>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:131>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:132>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:146>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:147>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:frame:148>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:upgrade:256>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:23>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:27>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:802>);
-mods.jei.JEI.removeAndHide(<thermalfoundation:material:800>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:801>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:657>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_silver>);
@@ -1637,7 +1589,6 @@ mods.jei.JEI.removeAndHide(<libvulpes:battery>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery:1>);
 mods.jei.JEI.removeAndHide(<libvulpes:productfan:6>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem:6>);
 
 //Lumberaxe Removal
 mods.jei.JEI.removeAndHide(<lumberjack:infinity_lumberaxe>);
@@ -1659,7 +1610,7 @@ recipes.addShapeless(<thermalfoundation:material:166>, [<gregtech:meta_item_1:10
 recipes.addShapeless(<thermalfoundation:material:165>, [<gregtech:meta_item_1:10707>]);
 recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10710>]);
 recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:2710>]);
-
+recipes.addShapeless(<ore:dustWood>.firstItem, [<thermalfoundation:material:800>]);
 
 
 
@@ -1785,6 +1736,27 @@ solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 144).notConsumable(
 solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<avaritia:block_resource>]).duration(200).EUt(30).buildAndRegister();
 recipes.addShapeless(<avaritia:resource:4>, [<gregtech:meta_item_1:10972>]);
 
+// Signalum Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateSignalum>.firstItem])
+    .fluidInputs(<liquid:signalum> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
+// Enderium Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateEnderium>.firstItem])
+    .fluidInputs(<liquid:enderium> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
+// Crystal Matrix Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateCrystalMatrix>.firstItem])
+    .fluidInputs(<liquid:moltencrystalmatrix> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
 
 //Redstone Alloy
 <ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
@@ -1827,6 +1799,27 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:dustEnderium>.remove(<thermalfoundation:material:103>);
 <ore:dustSignalum>.remove(<thermalfoundation:material:101>);
 
+//Questbook things
+<ore:questbookBrewery>.add(<gregtech:machine:130>); // LV Brewery
+<ore:questbookBrewery>.add(<gregtech:machine:131>); // MV Brewery
+
+<ore:questbookDistillery>.add(<gregtech:machine:230>); // LV Distillery
+<ore:questbookDistillery>.add(<gregtech:machine:231>); // MV Distillery
+
+<ore:questbookCentrifuge>.add(<gregtech:machine:150>); // LV Centrifuge
+<ore:questbookCentrifuge>.add(<gregtech:machine:151>); // MV Centrifuge
+<ore:questbookCentrifuge>.add(<gregtech:machine:152>); // HV Centrifuge
+
+<ore:questbookPolarizer>.add(<gregtech:machine:420>); // LV Polarizer
+<ore:questbookPolarizer>.add(<gregtech:machine:421>); // MV Polarizer (why)
+
+<ore:questbookAirCollector>.add(<gregtech:machine:950>); // LV Air Succ
+<ore:questbookAirCollector>.add(<gregtech:machine:960>); // MV Air Succ
+<ore:questbookAirCollector>.add(<gregtech:machine:970>); // HV Air Succ
+<ore:questbookAirCollector>.add(<gregtech:machine:980>); // EV Air Succ
+
+<ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
+<ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
 
 //Extra EnderIO Stuff
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
@@ -1907,16 +1900,18 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
-recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate>]);		//neutronium plate exchange
-recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
-recipes.addShaped(<gregtech:frame_neutronium> * 4, [
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_tool:8>, <gregtech:meta_item_1:14972>]]);
+// Temporary recipe to convert endstone dusts
+recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
+<contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
 
+//neutronium plate exchange
+recipes.addShapeless("of_exchange_neutronium_plate",
+    <moreplates:neutronium_plate>,
+    [<gregtech:meta_item_1:12972>]);
 
-
-
+// Workaround for DE Fusion Custom recipe not liking strings in the NBT
+<ore:compressedoctadiccap>.add(compressedoctadiccap);
 
 /////////////////////////////////
 //  One Ingot To Rule Them All //

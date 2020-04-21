@@ -2,23 +2,6 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 
-
-val circuit_assembler = RecipeMap.getByName("circuit_assembler");
-val lathe = RecipeMap.getByName("lathe");
-val autoclave = RecipeMap.getByName("autoclave");
-val engraver = RecipeMap.getByName("laser_engraver");
-val brewer = RecipeMap.getByName("brewer");
-val tower = RecipeMap.getByName("distillation_tower");
-val distillery = RecipeMap.getByName("distillery");
-val fermenter = RecipeMap.getByName("fermenter");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val macerator = RecipeMap.getByName("macerator");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val assembler = RecipeMap.getByName("assembler");
-val saw = RecipeMap.getByName("cutting_saw");
-val extruder = RecipeMap.getByName("extruder");
-
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
 furnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass>, 0.0);
@@ -248,6 +231,16 @@ recipes.addShaped(<actuallyadditions:block_canola_press>, [
 recipes.remove(<deepmoblearning:deep_learner>);
 recipes.addShaped(<deepmoblearning:deep_learner>, [[null,null,null],[<scannable:module_monster>,<scannable:scanner>,<scannable:module_monster>],[null,null,null]]);
 
+// Deep Mob Learning book
+recipes.remove(
+	<patchouli:guide_book>
+		.withTag({"patchouli:book": "deepmoblearning:book"})
+);
+recipes.addShapeless(
+	<patchouli:guide_book>
+		.withTag({"patchouli:book": "deepmoblearning:book"}),
+	[<ore:book>, <forestry:crafting_material>]
+);
 
 //Moon Materials
 macerator.findRecipe(8, [<minecraft:blaze_rod>], [null]).remove();
@@ -288,8 +281,15 @@ assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs
 
 
 //Gear Boxes Via Assembler
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:26184> * 2, <gregtech:meta_item_1:12184> * 4, <gregtech:frame_steel>]).outputs([<gregtech:turbine_casing:1> * 3]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:26072> * 2, <gregtech:meta_item_1:12072> * 4, <gregtech:frame_titanium>]).outputs([<gregtech:turbine_casing:2> * 3]).duration(400).EUt(16).buildAndRegister();
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_2:26184> * 2, <gregtech:meta_item_1:12184> * 4, <gregtech:frame_steel>])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8}))
+	.outputs([<gregtech:turbine_casing:1> * 3])
+	.duration(200).EUt(16).buildAndRegister();
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_2:26072> * 2, <gregtech:meta_item_1:12072> * 4, <gregtech:frame_titanium>])
+	.outputs([<gregtech:turbine_casing:2> * 3])
+	.duration(400).EUt(16).buildAndRegister();
 
 
 //Engine Intake
@@ -355,31 +355,22 @@ recipes.addShaped(<enderio:item_material:41>, [
 	[<enderio:item_alloy_ingot:7>,<ore:circuitGood>,<enderio:item_alloy_ingot:7>], 
 	[<gregtech:meta_item_2:32440>,<ore:blockRedAlloy>,<gregtech:meta_item_2:32440>]]);
 
+//Rose Gold Plate
+compressor.recipeBuilder().inputs([<gregtech:meta_item_1:10228>]).outputs([<gregtech:meta_item_1:12228>]).duration(100).EUt(10).buildAndRegister();
 
 
+// Fixes #357: CO2 output should be 4 buckets
+reactor.findRecipe(480,
+    [<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>],
+    [<liquid:chlorine> * 4000])
+    .remove();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+reactor.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>])
+    .fluidInputs([<liquid:chlorine> * 4000])
+    .fluidOutputs([<liquid:carbon_monoxide> * 4000, <liquid:titanium_tetrachloride> * 1000])
+    .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+// end Fix for #357
 

@@ -1,33 +1,5 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val compressor = RecipeMap.getByName("compressor");
-val macerator = RecipeMap.getByName("macerator");
-val assembler = RecipeMap.getByName("assembler");
-val alloy = RecipeMap.getByName("alloy_smelter");
-val extractor = RecipeMap.getByName("extractor");
-val lathe = RecipeMap.getByName("lathe");
-val canner = RecipeMap.getByName("canner");
-val fluid_canner = RecipeMap.getByName("fluid_canner");
-val fluid_extractor = RecipeMap.getByName("fluid_extractor");
-val freezer = RecipeMap.getByName("vacuum_freezer");
-val mixer = RecipeMap.getByName("mixer");
-val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
-val sifter = RecipeMap.getByName("sifter");
-val autoclave = RecipeMap.getByName("autoclave");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val saw = RecipeMap.getByName("cutting_saw");
-val forming = RecipeMap.getByName("forming_press");
-val electrolyzer = RecipeMap.getByName("electrolyzer");
-val circuit_assembler = RecipeMap.getByName("circuit_assembler");
-val engraver = RecipeMap.getByName("laser_engraver");
-val attractor = RecipeMap.getByName("attractor");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-
-
-
-
 recipes.remove(<draconicevolution:draconic_core>);
 recipes.addShaped(<draconicevolution:draconic_core>, [
 	[<draconicevolution:draconium_ingot>, <ore:ingotTungstenCarbide>, <draconicevolution:draconium_ingot>],

@@ -154,6 +154,14 @@ alloy.recipeBuilder().inputs([<minecraft:slime>,<minecraft:redstone>]).outputs([
 
 recipes.addShapeless(<minecraft:skull:1>, [<minecraft:skull>,<minecraft:skull>,<minecraft:skull>,<deepmoblearning:living_matter_hellish>]);
 
+//Removes the unobtainable dirt recipe
+recipes.removeByRecipeName("thermalfoundation:block_dirt");
+
+//Add in a new dirt recipe
+recipes.addShapeless(<minecraft:dirt> * 16, [
+	<ore:treeSapling>,<ore:treeSapling>,
+	<minecraft:clay>,<deepmoblearning:living_matter_overworldian>]);
+
 
 
 recipes.addShaped(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:zombie"}), [
