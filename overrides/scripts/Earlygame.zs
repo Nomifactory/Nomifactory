@@ -468,6 +468,13 @@ macerator.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:2071>)
 	.duration(30).EUt(8).buildAndRegister();
 
+// Add Corrected Small Battery Hull recipe to fluid extractor
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:32500>], [null]).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32500>)
+	.fluidOutputs(<liquid:tin>*144)
+	.duration(80).EUt(32).buildAndRegister();
+
 
 recipes.removeByRecipeName("gregtech:electric_motor/electric_motor_lv_steel");
 
