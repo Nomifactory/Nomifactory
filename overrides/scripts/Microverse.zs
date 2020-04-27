@@ -1031,7 +1031,7 @@ mmRecipe("naquadareactorhmk2b", "naquadahreactormk2", 12000)
 
 // Oil Drilling Rig mechanics
 mmRecipe("oildrillingrig", "oildrillingrig", 80)
-	.addEnergyPerTickInput(17500)
+	.addEnergyPerTickInput(1600)
 	.addFluidInput(<liquid:drilling_fluid> * 40)
 	.addItemInput(<inspirations:pipe>)
 	.setChance(0.04)
