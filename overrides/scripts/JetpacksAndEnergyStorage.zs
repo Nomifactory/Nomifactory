@@ -539,6 +539,7 @@ recipes.addShaped(<enderio:item_xp_transfer>, [
 	[null,<gregtech:meta_item_1:14702>,null],
 	[<gregtech:meta_item_1:14702>,null,null]]);
 
+recipes.remove(<enderio:block_xp_vacuum>);
 recipes.addShaped(<enderio:block_xp_vacuum>, [
 	[<gregtech:meta_item_1:12704>, <gregtech:meta_item_1:12704>, <gregtech:meta_item_1:12704>],
 	[<gregtech:meta_item_1:12704>, <enderio:item_xp_transfer>, <gregtech:meta_item_1:12704>],
