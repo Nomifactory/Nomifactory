@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 //Plantball
 recipes.addShaped(<gregtech:meta_item_2:32570>, [
@@ -850,9 +851,16 @@ assembler.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:32446>)
 	.duration(200).EUt(8).buildAndRegister();
 
-//Sponge Recipe
-recipes.addShaped(<minecraft:sponge>, 
-	[[<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>],
-	[<gregtech:meta_item_2:32570>,<inspirations:mulch>,<gregtech:meta_item_2:32570>],
-	[<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>,<gregtech:meta_item_2:32570>]]);
 
+makeShaped("of_sponge", <minecraft:sponge>,
+	["PPP",
+	 "PMP",
+	 "PPP"],
+	{ P : <gregtech:meta_item_2:32570>,  // Plant Ball
+	  M : <inspirations:mulch>});
+
+// Bronze Casing Assembler recipe
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:12095>*6, <minecraft:brick_block>)
+	.outputs(<gregtech:metal_casing>*3)
+	.duration(50).EUt(16).buildAndRegister();
