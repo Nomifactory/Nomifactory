@@ -11836,7 +11836,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Breaking down §9Noble Gasses§r into their components will require 53 iterations of distilling §9Liquid Air§r to acquire the buckets needed for one batch. Running multiple towers (if you can generate Liquid Air fast enough) is not a bad idea.\n\nYou\u0027ll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. \n\n§9Aargon§r, for example, is important for production of advanced §6Silicon Boules§r.",
+          "desc:8": "Breaking down §9Noble Gasses§r into their components will require 53 iterations of distilling §9Liquid Air§r to acquire the buckets needed for one batch. Running multiple towers (if you can generate Liquid Air fast enough) is not a bad idea.\n\nYou\u0027ll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. \n\n§9Argon§r, for example, is important for production of advanced §6Silicon Boules§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
