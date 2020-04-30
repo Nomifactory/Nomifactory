@@ -33386,7 +33386,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "These two dusts will be used in a variety of upcoming chemical reactions.\n\n§6Phosphor§r can be obtained by processing §6Phosphor Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r veins.\n\n§6Sulfur§r can be electrolyzed easily from §6Sphalerite§r (which also provides §6Gallium§r), §6Cinnabar§r, and §6Pyrite§r. Alternately, Sulfur can be acquired through §bDeep Mob Learning§r- look into that quest line if you haven\u0027t already.",
+          "desc:8": "These two dusts will be used in a variety of upcoming chemical reactions.\n\n§6Phosphorous§r can be obtained by processing §6Phosphor Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r veins.\n\n§6Sulfur§r can be electrolyzed easily from §6Sphalerite§r (which also provides §6Gallium§r), §6Cinnabar§r, and §6Pyrite§r. Alternately, Sulfur can be acquired through §bDeep Mob Learning§r- look into that quest line if you haven\u0027t already.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
