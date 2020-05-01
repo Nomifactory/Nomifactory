@@ -5484,7 +5484,8 @@
     },
     "79:10": {
       "preRequisites:11": [
-        187
+        147,
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5746,7 +5747,8 @@
     },
     "83:10": {
       "preRequisites:11": [
-        187
+        147,
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6211,8 +6213,7 @@
     "90:10": {
       "preRequisites:11": [
         89,
-        259,
-        147
+        259
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9849,12 +9850,13 @@
     },
     "147:10": {
       "preRequisites:11": [
-        21
+        53,
+        187
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Note: this quest accepts both LV and MV Polarizer.\n\nAlthough you could §emagnetize§r §6Iron Ingots§r by hand using §6Redstone§r, that\u0027s not an option for more advanced materials. This machine will let you magnetize §6Steel Rods§r, as well as even more advanced materials later.\n\nThere are no recipes for the §3Polarizer§r that require more than 32 volts, which means you can get away with using an LV Polarizer for the entire pack. However, higher voltages will work faster, in exchange for consuming more power.\n\n",
+          "desc:8": "Note: this quest accepts both LV and MV Polarizer.\n\nAlthough you could §emagnetize§r §6Iron Ingots§r by hand using §6Redstone§r, doing that consumes considerable amounts of dust and that\u0027s not an option for more advanced materials. This machine will let you magnetize §6Steel Rods§r, as well as even more advanced materials later.\n\nThere are no recipes for the §3Polarizer§r that require more than 32 volts, which means you can get away with using an LV Polarizer for the entire pack. However, higher voltages will work faster, in exchange for consuming more power.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33452,7 +33454,8 @@
     },
     "540:10": {
       "preRequisites:11": [
-        187
+        147,
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -47329,300 +47332,307 @@
           "y:3": 144
         },
         "29:10": {
+          "id:3": 147,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -828,
+          "y:3": 300
+        },
+        "30:10": {
           "id:3": 215,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -792,
           "y:3": 12
         },
-        "30:10": {
+        "31:10": {
           "id:3": 228,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 96
         },
-        "31:10": {
+        "32:10": {
           "id:3": 230,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -396,
           "y:3": 96
         },
-        "32:10": {
+        "33:10": {
           "id:3": 231,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 192
         },
-        "33:10": {
+        "34:10": {
           "id:3": 259,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -576,
           "y:3": 366
         },
-        "34:10": {
+        "35:10": {
           "id:3": 260,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 240
         },
-        "35:10": {
+        "36:10": {
           "id:3": 270,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -876,
           "y:3": 144
         },
-        "36:10": {
+        "37:10": {
           "id:3": 272,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 192
         },
-        "37:10": {
+        "38:10": {
           "id:3": 273,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -792,
           "y:3": 384
         },
-        "38:10": {
+        "39:10": {
           "id:3": 278,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 48
         },
-        "39:10": {
+        "40:10": {
           "id:3": 282,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -456,
           "y:3": 132
         },
-        "40:10": {
+        "41:10": {
           "id:3": 296,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 240
         },
-        "41:10": {
+        "42:10": {
           "id:3": 352,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -792,
           "y:3": 96
         },
-        "42:10": {
+        "43:10": {
           "id:3": 402,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -881,
           "y:3": 52
         },
-        "43:10": {
+        "44:10": {
           "id:3": 403,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -881,
           "y:3": 12
         },
-        "44:10": {
+        "45:10": {
           "id:3": 413,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -828,
           "y:3": 144
         },
-        "45:10": {
+        "46:10": {
           "id:3": 489,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -924,
           "y:3": 192
         },
-        "46:10": {
+        "47:10": {
           "id:3": 490,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 144
         },
-        "47:10": {
+        "48:10": {
           "id:3": 497,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -828,
           "y:3": 192
         },
-        "48:10": {
+        "49:10": {
           "id:3": 499,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -876,
           "y:3": 300
         },
-        "49:10": {
+        "50:10": {
           "id:3": 516,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -876,
           "y:3": 240
         },
-        "50:10": {
+        "51:10": {
           "id:3": 517,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -924,
           "y:3": 144
         },
-        "51:10": {
+        "52:10": {
           "id:3": 528,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -672,
           "y:3": 192
         },
-        "52:10": {
+        "53:10": {
           "id:3": 539,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 276
         },
-        "53:10": {
+        "54:10": {
           "id:3": 544,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 288
         },
-        "54:10": {
+        "55:10": {
           "id:3": 545,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -672,
           "y:3": 288
         },
-        "55:10": {
+        "56:10": {
           "id:3": 548,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -744,
           "y:3": 96
         },
-        "56:10": {
+        "57:10": {
           "id:3": 553,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 258
         },
-        "57:10": {
+        "58:10": {
           "id:3": 554,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -672,
           "y:3": 258
         },
-        "58:10": {
+        "59:10": {
           "id:3": 559,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 420
         },
-        "59:10": {
+        "60:10": {
           "id:3": 682,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -636,
           "y:3": 84
         },
-        "60:10": {
+        "61:10": {
           "id:3": 683,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 48
         },
-        "61:10": {
+        "62:10": {
           "id:3": 684,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -684,
           "y:3": 48
         },
-        "62:10": {
+        "63:10": {
           "id:3": 685,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 96
         },
-        "63:10": {
+        "64:10": {
           "id:3": 686,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 12
         },
-        "64:10": {
+        "65:10": {
           "id:3": 688,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -534,
           "y:3": 48
         },
-        "65:10": {
+        "66:10": {
           "id:3": 689,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -534,
           "y:3": 12
         },
-        "66:10": {
+        "67:10": {
           "id:3": 690,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -492,
           "y:3": 48
         },
-        "67:10": {
+        "68:10": {
           "id:3": 691,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -492,
           "y:3": 12
         },
-        "68:10": {
+        "69:10": {
           "id:3": 727,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 276
         },
-        "69:10": {
+        "70:10": {
           "id:3": 752,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 222
         },
-        "70:10": {
+        "71:10": {
           "id:3": 755,
           "sizeX:3": 35,
           "sizeY:3": 35,
           "x:3": -881,
           "y:3": 92
         },
-        "71:10": {
+        "72:10": {
           "id:3": 774,
           "sizeX:3": 24,
           "sizeY:3": 24,
@@ -47654,7 +47664,7 @@
           "id:3": 2,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -372,
+          "x:3": -384,
           "y:3": 36
         },
         "1:10": {
@@ -47738,7 +47748,7 @@
           "id:3": 55,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -414,
+          "x:3": -420,
           "y:3": 36
         },
         "13:10": {
@@ -47759,7 +47769,7 @@
           "id:3": 70,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -336,
+          "x:3": -348,
           "y:3": 36
         },
         "16:10": {
@@ -48109,8 +48119,8 @@
           "id:3": 147,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -576,
-          "y:3": 288
+          "x:3": -336,
+          "y:3": 84
         },
         "66:10": {
           "id:3": 154,
@@ -48123,8 +48133,8 @@
           "id:3": 187,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -342,
-          "y:3": 78
+          "x:3": -312,
+          "y:3": 30
         },
         "68:10": {
           "id:3": 203,
@@ -48249,8 +48259,8 @@
           "id:3": 509,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -288,
-          "y:3": 36
+          "x:3": -306,
+          "y:3": 0
         },
         "86:10": {
           "id:3": 516,
@@ -48319,7 +48329,7 @@
           "id:3": 727,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -414,
+          "x:3": -420,
           "y:3": 0
         },
         "96:10": {
