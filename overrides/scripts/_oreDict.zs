@@ -1199,6 +1199,7 @@ mods.jei.JEI.removeAndHide(<armorplus:obsidian_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:emerald_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:redstone_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:coal_bow>);
+mods.jei.JEI.removeAndHide(<armorplus:book_lore>);
 
 
 //Avaritia Removals
