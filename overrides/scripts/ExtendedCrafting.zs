@@ -1568,3 +1568,5 @@ makeExtremeRecipe9(<contenttweaker:ultimate_power_storage>,
 
 <gregtech:turbine_casing:3>.displayName = "Magnalium Turbine Casing";
 
+//Luminessence de-blockifying recipe
+recipes.addShapeless(<extendedcrafting:material:7>*9,[<extendedcrafting:storage:1>]);
