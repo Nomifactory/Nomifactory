@@ -1842,7 +1842,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This quest is repeatable once per hour and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips.\n\n§dNote: Travel to the Void World appears to be bugged for many players. The issue is being worked on. If you can\u0027t get the Void Cake to work right, you can simply play in Lost Cities or Overworld instead without issue... lack of access to the Void World will not block your progression in any way.",
+          "desc:8": "This quest is repeatable once per hour and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
