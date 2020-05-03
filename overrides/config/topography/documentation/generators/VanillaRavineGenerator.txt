@@ -1,8 +1,0 @@
-This file is for the VanillaRavineGenerator. Generates vanilla ravines.
-
-
-
-Constructor:
-    Notes:
-        This constructs a VanillaRavineGenerator.
-

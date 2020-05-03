@@ -1,8 +1,0 @@
-This file is for the VanillaCaveGenerator. This generates vanilla caves.
-
-
-
-Constructor:
-    Notes:
-        This constructs a VanillaCaveGenerator.
-
