@@ -1,7 +1,8 @@
-import mods.gregtech.recipe.RecipeMap;
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import crafttweaker.data.IData;
+import mods.gregtech.recipe.Recipe;
+import mods.gregtech.recipe.RecipeMap;
 import scripts.CommonVars.makeShaped as makeShaped;
 
 
@@ -324,11 +325,11 @@ val brewMap as ILiquidStack[][IItemStack] = {
 	// Oak Sapling
 	<minecraft:sapling> : [<liquid:water> * 100, <liquid:water> * 100, <liquid:for.honey> * 100, <liquid:juice> * 100],
 	// Spruce Sapling
-	//<minecraft:sapling:1> : [<liquid:water> * 100],
+	<minecraft:sapling:1> : [<liquid:water> * 100],
 	// Birch Sapling
-	//<minecraft:sapling:2> : [<liquid:water> * 100],
+	<minecraft:sapling:2> : [<liquid:water> * 100],
 	// Jungle Sapling
-	//<minecraft:sapling:3> : [<liquid:water> * 100],	
+	<minecraft:sapling:3> : [<liquid:water> * 100],	
 	// Acacia Sapling
 	<minecraft:sapling:4> : [<liquid:water> * 100],	
 	// Dark Oak Sapling
@@ -360,7 +361,12 @@ for item, liquids in brewMap {
 	
 	for liquid in liquids {
 	
-		brewer.findRecipe(3, [item], [liquid]).remove();
+		var recipe as Recipe = brewer.findRecipe(3, [item], [liquid]);
+		if(!isNull(recipe)) {
+			recipe.remove();
+		} else {
+			print("No matching brewing recipe found for [" ~ item.name ~ "] [" ~ liquid.name ~ " * " ~ liquid.amount ~ "]");
+		}
 	}
 }
 
