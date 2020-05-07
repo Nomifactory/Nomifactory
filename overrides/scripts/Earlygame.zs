@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 //Plantball
 recipes.addShaped(<gregtech:meta_item_2:32570>, [
@@ -288,8 +289,9 @@ reactor.recipeBuilder().inputs([<contenttweaker:block_dust>]).fluidInputs([<liqu
 reactor.recipeBuilder().inputs([<contenttweaker:block_dust>]).fluidInputs([<liquid:water> * 1000]).outputs(<minecraft:clay>).EUt(15).duration(20).buildAndRegister();
 reactor.recipeBuilder().inputs([<minecraft:magma>]).fluidOutputs(<liquid:lava> * 1000).EUt(30).duration(120).buildAndRegister();
 reactor.recipeBuilder().inputs([<thermalfoundation:fertilizer>]).fluidInputs(<liquid:ammonia> * 100).outputs(<thermalfoundation:fertilizer:1>).EUt(30).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
+// recipes for Manganese Oxides - currently unused
+// reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
+// reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
 mixer.recipeBuilder().inputs([<minecraft:redstone>,<minecraft:glowstone_dust>]).outputs(<nuclearcraft:compound:2> * 2).EUt(22).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2239>,<gregtech:meta_item_1:2026>]).outputs(<minecraft:glowstone_dust> * 2).EUt(15).duration(80).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:2071>]).outputs(<gregtech:meta_item_1:2189> * 2).EUt(15).duration(40).buildAndRegister();
@@ -466,6 +468,13 @@ macerator.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:32500>)
 	.outputs(<gregtech:meta_item_1:2071>)
 	.duration(30).EUt(8).buildAndRegister();
+
+// Add Corrected Small Battery Hull recipe to fluid extractor
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:32500>], [null]).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32500>)
+	.fluidOutputs(<liquid:tin>*144)
+	.duration(80).EUt(32).buildAndRegister();
 
 
 recipes.removeByRecipeName("gregtech:electric_motor/electric_motor_lv_steel");
@@ -841,3 +850,17 @@ assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:32402>, <ore:dyeLightGray>)
 	.outputs(<gregtech:meta_item_1:32446>)
 	.duration(200).EUt(8).buildAndRegister();
+
+
+makeShaped("of_sponge", <minecraft:sponge>,
+	["PPP",
+	 "PMP",
+	 "PPP"],
+	{ P : <gregtech:meta_item_2:32570>,  // Plant Ball
+	  M : <inspirations:mulch>});
+
+// Bronze Casing Assembler recipe
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:12095>*6, <minecraft:brick_block>)
+	.outputs(<gregtech:metal_casing>*3)
+	.duration(50).EUt(16).buildAndRegister();

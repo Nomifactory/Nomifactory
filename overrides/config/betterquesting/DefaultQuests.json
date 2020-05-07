@@ -3031,42 +3031,31 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Reloading the questbook is required after updating the modpack to see the changes.\n\nOr, well, if the questbook is misbehaving for some reason.",
+          "desc:8": "",
           "globalshare:1": 0,
           "icon:10": {
-            "Count:3": 1,
+            "Count:3": 0,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "minecraft:nether_star"
+            "id:8": "minecraft:air"
           },
           "ismain:1": 0,
-          "issilent:1": 0,
+          "issilent:1": 1,
           "lockedprogress:1": 0,
-          "name:8": "Reload The Questbook",
+          "name:8": "Gap",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
-          "repeattime:3": 30,
+          "repeattime:3": -1,
           "simultaneous:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "ALWAYS"
+          "visibility:8": "HIDDEN"
         }
       },
       "questID:3": 43,
-      "rewards:9": {
-        "0:10": {
-          "asScript:1": 1,
-          "command:8": "/bq_admin default load",
-          "description:8": "Reload the quest book",
-          "hideBlockIcon:1": 1,
-          "index:3": 0,
-          "rewardID:8": "bq_standard:command",
-          "title:8": "bq_standard.reward.command",
-          "viaPlayer:1": 0
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {
         "0:10": {
           "index:3": 0,
@@ -5495,12 +5484,13 @@
     },
     "79:10": {
       "preRequisites:11": [
-        187
+        147,
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Cuts things up.\n\nThe §3Cutting Machine§r is also able to cut rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into plates is fast and effective, and is the only way to get gem plates like §6Diamond Plates§r for now.\n\nThe blade will require you to make §6Cobalt Brass§r. Cobalt is a byproduct you will obtain (probably first as tiny piles through some simple ore processing), §6Zinc§r you should have already from electrolyzing §6Sphalerite§r, and the other materials are just §6Copper§r and §6Aluminium§r.\n\nCutting Machines work with plain §9Water§r for all recipes. You can also use §9Distilled Water§r which speeds up the processing somewhat, or §9Lubricant§r that speeds it up greatly. Right now though, the benefit is rather minor compared the extra effort required to make those fluids. Something to keep in mind for the future though.\n\nYou might consider waiting until you have §6Electronic Processors§r before progressing too far down the path of MV machines, since these circuits are much easier to make than §6Primtive Processors§r.",
+          "desc:8": "Cuts things up.\n\nThe §3Cutting Machine§r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into plates is fast and effective, and is the only way to get gem plates like §6Lapis Plates§r for now.\n\nThe blade will require you to make §6Cobalt Brass§r. Cobalt is a byproduct you will obtain (probably first as tiny piles through some simple ore processing), §6Zinc§r you should have already from electrolyzing §6Sphalerite§r, and the other materials are just §6Copper§r and §6Aluminium§r.\n\nCutting Machines work with plain §9Water§r for all recipes. You can also use §9Distilled Water§r which speeds up the processing somewhat, or §9Lubricant§r that speeds it up greatly. Right now though, the benefit is rather minor compared the extra effort required to make those fluids. Something to keep in mind for the future though.\n\nYou might consider waiting until you have §6Electronic Processors§r before progressing too far down the path of MV machines, since these circuits are much easier to make than §6Primitive Processors§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5757,7 +5747,8 @@
     },
     "83:10": {
       "preRequisites:11": [
-        187
+        147,
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6222,8 +6213,7 @@
     "90:10": {
       "preRequisites:11": [
         89,
-        259,
-        147
+        259
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8798,7 +8788,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Next up are §6SMD Diodes§r, which are fairly simple.\n\nA §6Small Pile of Gallium Dust§r and four §6Fine Electrum Wire§r net you half a stack.",
+          "desc:8": "Next up are §6SMD Diodes§r, which are fairly simple.\n\nA §6Small Pile of Gallium Dust§r and four §6Fine Platinum Wire§r net you half a stack.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9860,12 +9850,13 @@
     },
     "147:10": {
       "preRequisites:11": [
-        21
+        53,
+        187
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Note: this quest accepts both LV and MV Polarizer.\n\nAlthough you could §emagnetize§r §6Iron Ingots§r by hand using §6Redstone§r, that\u0027s not an option for more advanced materials. This machine will let you magnetize §6Steel Rods§r, as well as even more advanced materials later.\n\nThere are no recipes for the §3Polarizer§r that require more than 32 volts, which means you can get away with using an LV Polarizer for the entire pack. However, higher voltages will work faster, in exchange for consuming more power.\n\n",
+          "desc:8": "Note: this quest accepts both LV and MV Polarizer.\n\nAlthough you could §emagnetize§r §6Iron Ingots§r by hand using §6Redstone§r, doing that consumes considerable amounts of dust and that\u0027s not an option for more advanced materials. This machine will let you magnetize §6Steel Rods§r, as well as even more advanced materials later.\n\nThere are no recipes for the §3Polarizer§r that require more than 32 volts, which means you can get away with using an LV Polarizer for the entire pack. However, higher voltages will work faster, in exchange for consuming more power.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -11847,7 +11838,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Breaking down §9Noble Gasses§r into their components will require 53 iterations of distilling §9Liquid Air§r to acquire the buckets needed for one batch. Running multiple towers (if you can generate Liquid Air fast enough) is not a bad idea.\n\nYou\u0027ll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. \n\n§9Aargon§r, for example, is important for production of advanced §6Silicon Boules§r.",
+          "desc:8": "Breaking down §9Noble Gasses§r into their components will require 53 iterations of distilling §9Liquid Air§r to acquire the buckets needed for one batch. Running multiple towers (if you can generate Liquid Air fast enough) is not a bad idea.\n\nYou\u0027ll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. \n\n§9Argon§r, for example, is important for production of advanced §6Silicon Boules§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12135,9 +12126,8 @@
     },
     "179:10": {
       "preRequisites:11": [
-        168,
-        172,
-        178
+        178,
+        773
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12938,7 +12928,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "The Final Tier Two Circuits",
+          "name:8": "The Fourth And Final Tier Two Circuits",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -30538,7 +30528,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§aStorage Drawer Controllers§r are the central hub of any good storage system. They can pull from any drawers they are connected to (via other drawers, or drawer trims) within a 12 block cubic radius. This leads to a potential 25x25x25 area to connect drawers, centered on the controller.\n\n§aController Slaves§r do not extend the range, but rather act as another access point to that controller - allowing you to push/pull from any of the drawers within range of the local Drawer Controller.\n\nConnecting an §6ME Storage Bus§f to a controller exposes all of the drawers to §bApplied Energistics§f. Particularly large networks can be laggy though, so keep your drawer networks a manageable size.",
+          "desc:8": "§aStorage Drawer Controllers§r are the central hub of any good storage system. They can pull from any drawers they are connected to (via other drawers, or drawer trims) within a 12 block cubic radius. This leads to a potential 25x25x25 area to connect drawers, centered on the controller.\n\nThe appearance can be customized by crafting the controller into §aFramed Controller§r and putting it into a §aFraming Table§r.\n\n§aController Slaves§r do not extend the range, but rather act as another access point to that controller - allowing you to push/pull from any of the drawers within range of the local Drawer Controller.\n\nConnecting an §6ME Storage Bus§f to a controller exposes all of the drawers to §bApplied Energistics§f. Particularly large networks can be laggy though, so keep your drawer networks a manageable size.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30674,7 +30664,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things.",
+          "desc:8": "Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with §dOmnicoins§r.\n\nThe appearance can be customized by crafting the drawer into §aFramed Compacting Drawer§r and putting it into a §aFraming Table§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31327,7 +31317,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes. You can get it from electrolyzing §6Salt§r, among other sources.\n\nUsing a §3Mixer§r, you can create §9Salt Water§r and electrolyze that instead of plain Salt, which §edoubles the yield per Salt§r and provides you with useful §6Sodium Hydrodixe§r (NaOH).",
+          "desc:8": "You\u0027ll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes. You can get it from electrolyzing §6Salt§r, among other sources.\n\nUsing a §3Mixer§r, you can create §9Salt Water§r and electrolyze that instead of plain Salt, which §edoubles the yield per Salt§r and provides you with useful §6Sodium Hydroxide§r (NaOH).",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33398,7 +33388,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "These two dusts will be used in a variety of upcoming chemical reactions.\n\n§6Phosphor§r can be obtained by processing §6Phosphor Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r veins.\n\n§6Sulfur§r can be electrolyzed easily from §6Sphalerite§r (which also provides §6Gallium§r), §6Cinnabar§r, and §6Pyrite§r. Alternately, Sulfur can be acquired through §bDeep Mob Learning§r- look into that quest line if you haven\u0027t already.",
+          "desc:8": "These two dusts will be used in a variety of upcoming chemical reactions.\n\n§6Phosphorous§r can be obtained by processing §6Phosphor Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r veins.\n\n§6Sulfur§r can be electrolyzed easily from §6Sphalerite§r (which also provides §6Gallium§r), §6Cinnabar§r, and §6Pyrite§r. Alternately, Sulfur can be acquired through §bDeep Mob Learning§r- look into that quest line if you haven\u0027t already.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33464,7 +33454,8 @@
     },
     "540:10": {
       "preRequisites:11": [
-        187
+        147,
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36007,7 +35998,8 @@
     },
     "586:10": {
       "preRequisites:11": [
-        150
+        324,
+        313
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36025,7 +36017,7 @@
           "lockedprogress:1": 1,
           "name:8": "High Speed Steel Type E Ingot",
           "partysinglereward:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -36137,7 +36129,8 @@
     },
     "588:10": {
       "preRequisites:11": [
-        150
+        313,
+        324
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36155,7 +36148,7 @@
           "lockedprogress:1": 1,
           "name:8": "High Speed Steel Type S Ingots",
           "partysinglereward:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -42311,7 +42304,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!\n\nSimulated mobs can even be used to provide you with many of the basic resources you\u0027ll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.\n\nSetting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!\n\nAn important thing to know is that Simulation Chambers are §asided§r, thus they only accept §6Pulsating Polymer Clay§r through §athe top side§r and output products through §aall other sides§r. It\u0027s worth noting that you can also pull models through the top side.\n\nYes, you can also use it for generating power... §owith Diamonds.",
+          "desc:8": "A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!\n\nSimulated mobs can even be used to provide you with many of the basic resources you\u0027ll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.\n\nSetting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!\n\nAn important thing to know is that Deep Mob Learning machines are §asided§r, thus they only accept §6Pristine Matter§r through §athe top side§r and output products through §aall other sides§r. It\u0027s worth noting that you can also extract models through the top side.\n\nConsider reading the §bDeep Mob Learning§r book for more info.\n\nYes, you can also use it for generating power... §owith Diamonds.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42345,6 +42338,15 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "contenttweaker:omnicoin25"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "patchouli:guide_book",
+              "tag:10": {
+                "patchouli:book:8": "deepmoblearning:book"
+              }
             }
           }
         }
@@ -47007,6 +47009,105 @@
       "questID:3": 772,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "773:10": {
+      "preRequisites:11": [
+        172,
+        168
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "How did you end up here?",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 0,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:air"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Diesel or Bio-Diesel",
+          "questlogic:8": "OR",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "OR",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 773,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "774:10": {
+      "preRequisites:11": [
+        145
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§3Lathe§r is an important machine that makes rods less expensive to craft.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 350,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Lathe",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 774,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 350,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -47017,7 +47118,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Gregtech Low Voltage Tier: start building a factory!\nGenerate resources with §bDeep Mob Learning§r.\nBuild an §3Electric Blast Furnace§r for smelting advanced materials and alloys.\nEarly §bEnderIO§r tech and §bApplied Energistics 2§r Digital Storage.",
+          "desc:8": "Gregtech Low Voltage Tier: start building a factory!\n\nGenerate resources with §bDeep Mob Learning§r.\n\nBuild an §3Electric Blast Furnace§r for smelting advanced materials and alloys.\n\nEarly §bEnderIO§r tech and §bApplied Energistics 2§r Digital Storage.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -47233,298 +47334,312 @@
           "y:3": 144
         },
         "29:10": {
+          "id:3": 147,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -828,
+          "y:3": 300
+        },
+        "30:10": {
           "id:3": 215,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -792,
           "y:3": 12
         },
-        "30:10": {
+        "31:10": {
           "id:3": 228,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 96
         },
-        "31:10": {
+        "32:10": {
           "id:3": 230,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -396,
           "y:3": 96
         },
-        "32:10": {
+        "33:10": {
           "id:3": 231,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 192
         },
-        "33:10": {
+        "34:10": {
           "id:3": 259,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -576,
           "y:3": 366
         },
-        "34:10": {
+        "35:10": {
           "id:3": 260,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 240
         },
-        "35:10": {
+        "36:10": {
           "id:3": 270,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -876,
           "y:3": 144
         },
-        "36:10": {
+        "37:10": {
           "id:3": 272,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 192
         },
-        "37:10": {
+        "38:10": {
           "id:3": 273,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -792,
           "y:3": 384
         },
-        "38:10": {
+        "39:10": {
           "id:3": 278,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 48
         },
-        "39:10": {
+        "40:10": {
           "id:3": 282,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -456,
           "y:3": 132
         },
-        "40:10": {
+        "41:10": {
           "id:3": 296,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 240
         },
-        "41:10": {
+        "42:10": {
           "id:3": 352,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -792,
           "y:3": 96
         },
-        "42:10": {
+        "43:10": {
           "id:3": 402,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -881,
           "y:3": 52
         },
-        "43:10": {
+        "44:10": {
           "id:3": 403,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -881,
           "y:3": 12
         },
-        "44:10": {
+        "45:10": {
           "id:3": 413,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -828,
           "y:3": 144
         },
-        "45:10": {
+        "46:10": {
           "id:3": 489,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -924,
           "y:3": 192
         },
-        "46:10": {
+        "47:10": {
           "id:3": 490,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 144
         },
-        "47:10": {
+        "48:10": {
           "id:3": 497,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -828,
           "y:3": 192
         },
-        "48:10": {
+        "49:10": {
           "id:3": 499,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -876,
           "y:3": 300
         },
-        "49:10": {
+        "50:10": {
           "id:3": 516,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -876,
           "y:3": 240
         },
-        "50:10": {
+        "51:10": {
           "id:3": 517,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -924,
           "y:3": 144
         },
-        "51:10": {
+        "52:10": {
           "id:3": 528,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -672,
           "y:3": 192
         },
-        "52:10": {
+        "53:10": {
           "id:3": 539,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 276
         },
-        "53:10": {
+        "54:10": {
           "id:3": 544,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 288
         },
-        "54:10": {
+        "55:10": {
           "id:3": 545,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -672,
           "y:3": 288
         },
-        "55:10": {
+        "56:10": {
           "id:3": 548,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -744,
           "y:3": 96
         },
-        "56:10": {
+        "57:10": {
           "id:3": 553,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 258
         },
-        "57:10": {
+        "58:10": {
           "id:3": 554,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -672,
           "y:3": 258
         },
-        "58:10": {
+        "59:10": {
           "id:3": 559,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 420
         },
-        "59:10": {
+        "60:10": {
           "id:3": 682,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -636,
           "y:3": 84
         },
-        "60:10": {
+        "61:10": {
           "id:3": 683,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 48
         },
-        "61:10": {
+        "62:10": {
           "id:3": 684,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -684,
           "y:3": 48
         },
-        "62:10": {
+        "63:10": {
           "id:3": 685,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 96
         },
-        "63:10": {
+        "64:10": {
           "id:3": 686,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 12
         },
-        "64:10": {
+        "65:10": {
           "id:3": 688,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -534,
           "y:3": 48
         },
-        "65:10": {
+        "66:10": {
           "id:3": 689,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -534,
           "y:3": 12
         },
-        "66:10": {
+        "67:10": {
           "id:3": 690,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -492,
           "y:3": 48
         },
-        "67:10": {
+        "68:10": {
           "id:3": 691,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -492,
           "y:3": 12
         },
-        "68:10": {
+        "69:10": {
           "id:3": 727,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 276
         },
-        "69:10": {
+        "70:10": {
           "id:3": 752,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 222
         },
-        "70:10": {
+        "71:10": {
           "id:3": 755,
           "sizeX:3": 35,
           "sizeY:3": 35,
           "x:3": -881,
           "y:3": 92
+        },
+        "72:10": {
+          "id:3": 774,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -924,
+          "y:3": 240
         }
       }
     },
@@ -47551,7 +47666,7 @@
           "id:3": 2,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -372,
+          "x:3": -384,
           "y:3": 36
         },
         "1:10": {
@@ -47635,7 +47750,7 @@
           "id:3": 55,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -414,
+          "x:3": -420,
           "y:3": 36
         },
         "13:10": {
@@ -47656,7 +47771,7 @@
           "id:3": 70,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -336,
+          "x:3": -348,
           "y:3": 36
         },
         "16:10": {
@@ -48006,8 +48121,8 @@
           "id:3": 147,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -576,
-          "y:3": 288
+          "x:3": -336,
+          "y:3": 84
         },
         "66:10": {
           "id:3": 154,
@@ -48020,8 +48135,8 @@
           "id:3": 187,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -342,
-          "y:3": 78
+          "x:3": -312,
+          "y:3": 30
         },
         "68:10": {
           "id:3": 203,
@@ -48146,8 +48261,8 @@
           "id:3": 509,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -288,
-          "y:3": 36
+          "x:3": -306,
+          "y:3": 0
         },
         "86:10": {
           "id:3": 516,
@@ -48216,7 +48331,7 @@
           "id:3": 727,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -414,
+          "x:3": -420,
           "y:3": 0
         },
         "96:10": {
@@ -48263,7 +48378,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Gregtech High Voltage, Extreme Voltage, and Insane Voltage tiers:\n§6§3Cryogenic Distillation§r, and petrochemistry for §6Epoxy§r and §9Cetane Diesel§r.\nCraft §6Nether Stars§r and unlock §bThermal Expansion§r machines.\nBuild a§b NuclearCraft§r fission reactor to obtain new materials.\nBuild a Space Station and Warp Core.",
+          "desc:8": "Gregtech High Voltage, Extreme Voltage, and Insane Voltage tiers:\n\n§6§3Cryogenic Distillation§r, and petrochemistry for §6Epoxy§r and §9Cetane Diesel§r.\n\nCraft §6Nether Stars§r and unlock §bThermal Expansion§r machines.\n\nBuild a§b NuclearCraft§r fission reactor to obtain new materials.\n\nBuild a Space Station and Warp Core.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -49156,6 +49271,13 @@
           "sizeY:3": 24,
           "x:3": -828,
           "y:3": -36
+        },
+        "126:10": {
+          "id:3": 773,
+          "sizeX:3": 0,
+          "sizeY:3": 0,
+          "x:3": -168,
+          "y:3": 84
         }
       }
     },
@@ -49880,7 +50002,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "GregTech LuV, ZPM, and UV tiers:\nBuild §3Assembly Lines§r, §3Fusion Reactors§r, and more!\nAutomate in style with §bPackagedAuto§r. Climb the tiers of §6Micro Miners§r.\n§bDraconic Evolution§r for fusion crafting and energy storage.",
+          "desc:8": "GregTech LuV, ZPM, and UV tiers:\n\nBuild §3Assembly Lines§r, §3Fusion Reactors§r, and more!\n\nAutomate in style with §bPackagedAuto§r. Climb the tiers of §6Micro Miners§r.\n\n§bDraconic Evolution§r for fusion crafting and energy storage.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -50573,7 +50695,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "You\u0027re in the endgame now...\nHarvest entire microverses and unlock the §dCreative Portable Tank§r.\nPut your automation to the ultimate test as you progress towards the final goal:\nThe §dCreative Vending Upgrade§r.",
+          "desc:8": "You\u0027re in the endgame now...\n\nHarvest entire microverses and unlock the §dCreative Portable Tank§r.\n\nPut your automation to the ultimate test as you progress towards the final goal: the §dCreative Vending Upgrade§r.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -51343,7 +51465,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "\n\nWelcome to §5Omnifactory§r, I\u0027ll be your guide.",
+          "desc:8": "Welcome to §5Omnifactory§r, I\u0027ll be your guide.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -51496,202 +51618,195 @@
           "y:3": 222
         },
         "20:10": {
-          "id:3": 43,
-          "sizeX:3": 36,
-          "sizeY:3": 36,
-          "x:3": -204,
-          "y:3": 186
-        },
-        "21:10": {
           "id:3": 50,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -72,
           "y:3": 66
         },
-        "22:10": {
+        "21:10": {
           "id:3": 56,
           "sizeX:3": 72,
           "sizeY:3": 72,
           "x:3": -36,
           "y:3": 366
         },
-        "23:10": {
+        "22:10": {
           "id:3": 58,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": 294
         },
-        "24:10": {
+        "23:10": {
           "id:3": 66,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 186
         },
-        "25:10": {
+        "24:10": {
           "id:3": 141,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -204,
           "y:3": 18
         },
-        "26:10": {
+        "25:10": {
           "id:3": 353,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -138,
           "y:3": 108
         },
-        "27:10": {
+        "26:10": {
           "id:3": 368,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -36,
           "y:3": 66
         },
-        "28:10": {
+        "27:10": {
           "id:3": 370,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 48,
           "y:3": 66
         },
-        "29:10": {
+        "28:10": {
           "id:3": 371,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 108
         },
-        "30:10": {
+        "29:10": {
           "id:3": 393,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -204,
           "y:3": 102
         },
-        "31:10": {
+        "30:10": {
           "id:3": 394,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 294
         },
-        "32:10": {
+        "31:10": {
           "id:3": 401,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 30,
           "y:3": 132
         },
-        "33:10": {
+        "32:10": {
           "id:3": 405,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -204,
           "y:3": 144
         },
-        "34:10": {
+        "33:10": {
           "id:3": 409,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 330
         },
-        "35:10": {
+        "34:10": {
           "id:3": 410,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": 330
         },
-        "36:10": {
+        "35:10": {
           "id:3": 415,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": 294
         },
-        "37:10": {
+        "36:10": {
           "id:3": 488,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 30,
           "y:3": 168
         },
-        "38:10": {
+        "37:10": {
           "id:3": 491,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": 60
         },
-        "39:10": {
+        "38:10": {
           "id:3": 495,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 222
         },
-        "40:10": {
+        "39:10": {
           "id:3": 496,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": -24
         },
-        "41:10": {
+        "40:10": {
           "id:3": 530,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 222
         },
-        "42:10": {
+        "41:10": {
           "id:3": 547,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 144
         },
-        "43:10": {
+        "42:10": {
           "id:3": 552,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 330
         },
-        "44:10": {
+        "43:10": {
           "id:3": 558,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -108,
           "y:3": 186
         },
-        "45:10": {
+        "44:10": {
           "id:3": 670,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -138,
           "y:3": 42
         },
-        "46:10": {
+        "45:10": {
           "id:3": 687,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -54,
           "y:3": 132
         },
-        "47:10": {
+        "46:10": {
           "id:3": 692,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 12,
           "y:3": 66
         },
-        "48:10": {
+        "47:10": {
           "id:3": 743,
           "sizeX:3": 36,
           "sizeY:3": 36,
@@ -51707,7 +51822,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\nEither way, it\u0027s time to start mining §emicroverses§r.",
+          "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\n\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\n\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\n\nEither way, it\u0027s time to start mining §emicroverses§r.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -52105,7 +52220,7 @@
       "livesdef:3": 3,
       "livesmax:3": 10,
       "pack_name:8": "Omnifactory",
-      "pack_version:3": 0,
+      "pack_version:3": 1,
       "party_enable:1": 1
     }
   }

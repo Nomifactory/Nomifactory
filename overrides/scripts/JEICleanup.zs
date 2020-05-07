@@ -1,14 +1,14 @@
 #priority -9998
 
-import crafttweaker.mods.IMod;
-import crafttweaker.game.IGame;
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.mods.IMod;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+
 
 /*
     MetaIDs of SoG's curved plates and double-ingots that aren't gone from JEI
@@ -39,56 +39,6 @@ for meta in curvedPlatesDoubleIngots {
     }
 }
 
-/* Hide as much of NuclearCraft's unused stuff as possible */
-val nc as IMod = loadedMods["nuclearcraft"];
-if(!isNull(nc)) {
-    val ncItems as IItemStack[] = nc.items;
-
-    for item in ncItems {
-        if(item.displayName has " Oxide" |
-           item.displayName has "MOX" |
-           item.displayName has "Molten Salt" |
-           item.displayName has "Eutectic" |
-           item.displayName has "Molten Depleted" |
-           item.displayName has "FLiBe" |
-           item.displayName has "Molten LE" |
-           item.displayName has "Molten HE" |
-           item.displayName has "Fluoride" |
-           item.definition.id has "fluid") {
-            mods.jei.JEI.removeAndHide(item);
-        }
-    }
-
-    /* Hide various unused NC fluids */
-    val containers = [<gregtech:meta_item_1:32405>,
-                      <gregtech:meta_item_1:32762>,
-                      <gregtech:meta_item_1:32406>] as IItemStack[];
-
-    for liquid in game.liquids {
-        if(liquid.displayName has "Eutectic" |
-           liquid.displayName has "Molten Depleted" |
-           liquid.displayName has "Molten LE" |
-           liquid.displayName has "Molten HE" |
-           liquid.displayName has "Fluoride" |
-           liquid.displayName has "FLiBe" |
-           liquid.name has "_23" | 
-           liquid.name has "_24" | 
-           liquid.name has "_25" ) {
-
-            // remove from various GT containers
-            for container in containers {
-                mods.jei.JEI.hide(container.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
-            }
-
-            // Different tag schemas...
-            mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: liquid.name, Amount: 1000}}));
-            mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: liquid.name, Amount: 1000}));
-
-            // Hide the fluid too
-            mods.jei.JEI.hide(liquid*1000);
-        }
-    }
-}
 
 /* Hide all of AE2's facades (can still be crafted, just hiding from JEI) */
 val ae2 as IMod = loadedMods["appliedenergistics2"];

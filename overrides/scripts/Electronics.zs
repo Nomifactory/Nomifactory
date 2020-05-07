@@ -295,8 +295,8 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metai
 
 <contenttweaker:microprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Four circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(360).buildAndRegister();
+assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(360).buildAndRegister();
 
 
 
