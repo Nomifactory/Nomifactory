@@ -58,7 +58,7 @@ makeShaped("of_Z_Logic", <enderio:item_material:41>,
     { I : <enderio:item_alloy_ingot:7>, // Soularium
       S : <minecraft:skull:2>, 			// Zombie Skull
       C : <ore:circuitGood>,			// T2 Circuit
-      W	: <gregtech:meta_item_2:32440>, //Wafer
+      W : <gregtech:meta_item_2:32440>, //Wafer
       A : <ore:blockRedAlloy> });
 
 /* ******* GTCE ******* */
@@ -74,7 +74,7 @@ makeShaped("of_distillation_tower", <gregtech:machine:515>,
     { P : <ore:pipeLargeStainlessSteel>,
       A : <gregtech:meta_item_1:32612>,		// HV Pump
       C : <ore:circuitAdvanced>,			// T3 Circuit
-      M	: <gregtech:machine:502> });		// MV Machine Hull
+      M : <gregtech:machine:502> });		// MV Machine Hull
 
 //Tower Processing Recipes - Biomass
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
