@@ -1,5 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import scripts.CommonVars.makeShaped as makeShaped;
 
@@ -57,7 +58,7 @@ makeShaped("of_Z_Logic", <enderio:item_material:41>,
     { I : <enderio:item_alloy_ingot:7>, // Soularium
       S : <minecraft:skull:2>, 			// Zombie Skull
       C : <ore:circuitGood>,			// T2 Circuit
-      W : <gregtech:meta_item_2:32440>, //Wafer
+      W	: <gregtech:meta_item_2:32440>, //Wafer
       A : <ore:blockRedAlloy> });
 
 /* ******* GTCE ******* */
@@ -73,7 +74,7 @@ makeShaped("of_distillation_tower", <gregtech:machine:515>,
     { P : <ore:pipeLargeStainlessSteel>,
       A : <gregtech:meta_item_1:32612>,		// HV Pump
       C : <ore:circuitAdvanced>,			// T3 Circuit
-      M : <gregtech:machine:502> });		// MV Machine Hull
+      M	: <gregtech:machine:502> });		// MV Machine Hull
 
 //Tower Processing Recipes - Biomass
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
@@ -92,35 +93,44 @@ distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration:
 /* ******* GTCE Drums ******* */
 
 //Tungstensteel Drum
-recipes.addShaped(<gregtech:machine:2200>, 
-	[[<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>],
-	[<gregtech:meta_item_1:12235>, <minecraft:bucket>, <gregtech:meta_item_1:12235>], 
-	[<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>]]);
+makeShaped("of_tungstensteel_drum", <gregtech:machine:2200>,
+    ["PPP",
+     "PBP",
+     "PPP"],
+    { B : <minecraft:bucket>,
+      P : <gregtech:meta_item_1:12235>});
 
 // Stainless Steel Drum
-recipes.addShaped(<gregtech:machine:2198>, 
-	[[<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>],
-	[<gregtech:meta_item_1:12183>, <minecraft:bucket>, <gregtech:meta_item_1:12183>], 
-	[<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>]]);
+makeShaped("of_stainless_drum", <gregtech:machine:2198>,
+    ["PPP",
+     "PBP",
+     "PPP"],
+    { B : <minecraft:bucket>,
+      P : <gregtech:meta_item_1:12183>});	
 
 // Titanium Drum
-recipes.addShaped(<gregtech:machine:2199>, 
-	[[<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>],
-	[<gregtech:meta_item_1:12072>, <minecraft:bucket>, <gregtech:meta_item_1:12072>], 
-	[<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>]]);
+makeShaped("of_titanium_drum", <gregtech:machine:2199>,
+    ["PPP",
+     "PBP",
+     "PPP"],
+    { B : <minecraft:bucket>,
+      P : <gregtech:meta_item_1:12072>});
 
 // Steel Drum
-recipes.addShaped(<gregtech:machine:2197>, 
-	[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
-	[<gregtech:meta_item_1:12184>, <minecraft:bucket>, <gregtech:meta_item_1:12184>], 
-	[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>]]);
+makeShaped("of_steel_drum", <gregtech:machine:2197>,
+    ["PPP",
+     "PBP",
+     "PPP"],
+    { B : <minecraft:bucket>,
+      P : <gregtech:meta_item_1:12184>});	
 
 // Bronze Drum
-recipes.addShaped(<gregtech:machine:2196>, 
-	[[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>],
-	[<gregtech:meta_item_1:12095>, <minecraft:bucket>, <gregtech:meta_item_1:12095>], 
-	[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>]]);
-
+makeShaped("of_bronze_drum", <gregtech:machine:2196>,
+    ["PPP",
+     "PBP",
+     "PPP"],
+    { B : <minecraft:bucket>,
+      P : <gregtech:meta_item_1:12095>});
 
 /* ******* GTCE Lens ******* */
 
@@ -314,7 +324,7 @@ val brewMap as ILiquidStack[][IItemStack] = {
 	// Oak Sapling
 	<minecraft:sapling> : [<liquid:water> * 100, <liquid:water> * 100, <liquid:for.honey> * 100, <liquid:juice> * 100],
 	// Spruce Sapling
-	<minecraft:sapling:1> : [<liquid:water> * 100],
+	//<minecraft:sapling:1> : [<liquid:water> * 100],
 	// Birch Sapling
 	//<minecraft:sapling:2> : [<liquid:water> * 100],
 	// Jungle Sapling
@@ -336,7 +346,11 @@ val brewMap as ILiquidStack[][IItemStack] = {
 	// Carrot 
 	<minecraft:carrot> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
 	// Cactus
-	<minecraft:cactus> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20]
+	<minecraft:cactus> : [<liquid:water> * 20, <liquid:water> * 20, <liquid:for.honey> * 20, <liquid:juice> * 20],
+	// AR Sapling
+	<advancedrocketry:aliensapling> : [<liquid:water> * 100],
+	// Rubber Sapling
+	<gregtech:sapling> : [<liquid:water> * 100]
 
 
 } as ILiquidStack[][IItemStack];
@@ -345,22 +359,21 @@ for item, liquids in brewMap {
 
 	
 	for liquid in liquids {
-
+	
 		brewer.findRecipe(3, [item], [liquid]).remove();
 	}
 }
 
 
 
-
-/*// Plant Ball	
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:for.honey> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:juice> * 180]).remove();	
+// Plant Ball	
+//brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
+//brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
+//brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:for.honey> * 180]).remove();
+//brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:juice> * 180]).remove();	
 
 // Oak Sapling	
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
+/*brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
 brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
 brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:for.honey> * 100]).remove();
 brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:juice> * 100]).remove();
@@ -402,8 +415,8 @@ brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:juice> * 20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice> * 20]).remove(); */
-
+brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice> * 20]).remove();
+*/
 // Biomass - Plant Ball
 brewer.recipeBuilder()
 	.inputs(<gregtech:meta_item_2:32570>)
@@ -831,10 +844,16 @@ reactor.recipeBuilder()
 
 // Canola Press
 recipes.removeByRecipeName("actuallyadditions:recipes132");
-recipes.addShaped(<actuallyadditions:block_canola_press>, [
-	[<gregtech:meta_item_1:12184>, <actuallyadditions:block_crystal:5>, <gregtech:meta_item_1:12184>], 
-	[<gregtech:meta_item_1:32641>, null, <gregtech:meta_item_1:32641>], 
-	[<gregtech:meta_item_1:12184>, <actuallyadditions:item_misc:8>, <gregtech:meta_item_1:12184>]]);
+makeShaped("of_canola_press", <actuallyadditions:block_canola_press>,
+    ["SES",
+     "P P",
+     "SCS"],
+    { S : <gregtech:meta_item_1:12184>, //Steel Plate
+      E : <actuallyadditions:block_crystal:5>, //Enori Crystal
+      P : <gregtech:meta_item_1:32641>, //MV Piston
+      C : <actuallyadditions:item_misc:8> //Advanced Coil
+      });
+
 <actuallyadditions:block_canola_press>.addTooltip(format.green("Turns Canola into Canola Oil. Requires RF."));  
 
 /* ******* Simply Jetpacks ******* */
