@@ -29,6 +29,11 @@ module.exports = {
 	downloaderCheckHashes: true,
 
 	/**
+	 * Download cache directory.
+	 */
+	downloaderCacheDirectory: "../.cache",
+
+	/**
 	 * Defines the min amount of RAM.
 	 * 
 	 * Replaces `{{minRAM}}` in launch scripts.
