@@ -119,3 +119,67 @@ for variant in gemVariants {
 
 	}
 }
+
+
+//Remove more Flawless gem recipes for other gem variants
+
+val extraGems as IOreDictEntry[] = 
+	[
+		<ore:gemFlawlessGreenSapphire>,
+		<ore:gemExquisiteGreenSapphire>,
+		<ore:gemFlawlessTopaz>,
+		<ore:gemExquisiteTopaz>,		
+		<ore:gemFlawlessAlmandine>,
+		<ore:gemExquisiteAlmandine>,
+		<ore:gemFlawlessVinteum>,
+		<ore:gemExquisiteVinteum>,
+		<ore:gemFlawlessGarnetYellow>,
+		<ore:gemExquisiteGarnetYellow>,
+		<ore:gemFlawlessOlivine>,
+		<ore:gemExquisiteOlivine>,						
+		<ore:gemFlawlessOpal>,
+		<ore:gemExquisiteOpal>,
+		<ore:gemFlawlessRutile>,
+		<ore:gemExquisiteRutile>,
+		<ore:gemFlawlessSapphire>,
+		<ore:gemExquisiteSapphire>,
+		<ore:gemFlawlessGarnetRed>,
+		<ore:gemExquisiteGarnetRed>,				
+		<ore:gemFlawlessGlass>,
+		<ore:gemExquisiteGlass>,
+		<ore:gemChippedGlass>,
+		<ore:gemFlawedGlass>,
+		<ore:gemFlawlessJasper>,
+		<ore:gemExquisiteJasper>,
+		<ore:gemFlawlessTanzanite>,
+		<ore:gemExquisiteTanzanite>,
+		<ore:gemFlawlessAmethyst>,
+		<ore:gemExquisiteAmethyst>						
+	];
+
+
+// Remove leftover Macerator recipes
+for uselessEntry in extraGems as IOreDictEntry[] {
+	val recipe = macerator.findRecipe(8, [uselessEntry.firstItem], [null]);
+
+	if (!isNull(recipe)) {
+		recipe.remove();
+	}
+
+
+	//if(uselessEntry != <ore:FlawlessGlass> & uselessEntry != <ore:ExquisiteGlass> & uselessEntry != <ore:ChippedGlass> & uselessEntry != <ore:FlawedGlass>) {
+
+			//recipes.removeShapeless(<ore:craftingToolSaw>, <gregtech:meta_tool:9>, uselessEntry.firstItem);
+		
+	//}
+
+}
+
+
+
+blast_furnace.findRecipe(480, [<ore:gemExquisiteOlivine>.firstItem, <gregtech:meta_item_1:12212>*10], [<liquid:helium>*5000]).remove();
+
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:23209>],[null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:22209>],[null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:25209>],[null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:24209>],[null]).remove();
