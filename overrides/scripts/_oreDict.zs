@@ -1501,6 +1501,12 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:450>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:451>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:452>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:453>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:32707>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:32708>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32480>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32466>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32482>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
 
 
 //Inspirations Removals

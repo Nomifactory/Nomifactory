@@ -520,6 +520,7 @@ assembly_line.recipeBuilder()
     .outputs(<gtadditions:ga_meta_item:32124>)
     .duration(2000).EUt(300000).buildAndRegister();
 
+
 //Neutronium Round
 recipes.remove(<gtadditions:ga_meta_item:2972>);  
 lathe.findRecipe(8, [<gregtech:meta_item_1:9972>], [null]).remove();  
@@ -534,3 +535,47 @@ lathe.recipeBuilder()
   .inputs([<gregtech:meta_item_1:9303>])
   .outputs([<gtadditions:ga_meta_item:2303>])
   .duration(1480).EUt(8).buildAndRegister();
+
+//Remove Data Orbs
+assembler.findRecipe(1200,
+    [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64, 
+            <gregtech:meta_item_2:32482>*32, <gregtech:meta_item_2:32485>*4,
+            <gregtech:meta_item_2:32444>, <gregtech:meta_item_2:32492>],
+    [<liquid:tin>*288]).remove();
+
+assembler.findRecipe(1200,
+    [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64, 
+            <gregtech:meta_item_2:32482>*32, <gregtech:meta_item_2:32485>*4,
+            <gregtech:meta_item_2:32444>, <gregtech:meta_item_2:32492>],
+    [<liquid:soldering_alloy>*144]).remove();
+
+//Remove Data Sticks
+assembler.findRecipe(90,
+    [<gregtech:meta_item_2:32480>*32, <gregtech:meta_item_2:16237>*8,
+    <gregtech:meta_item_2:32485>*4, <gregtech:meta_item_1:12141>*4,
+    <gregtech:meta_item_2:32448>, <gregtech:meta_item_2:32490>],
+    [<liquid:tin>*288]).remove();
+
+//Remove Data Sticks
+assembler.findRecipe(90,
+    [<gregtech:meta_item_2:32480>*32, <gregtech:meta_item_2:16237>*8,
+    <gregtech:meta_item_2:32485>*4, <gregtech:meta_item_1:12141>*4,
+    <gregtech:meta_item_2:32448>, <gregtech:meta_item_2:32490>],
+    [<liquid:soldering_alloy>*144]).remove();
+
+//Remove NAND Gates, only used in data items
+saw.findRecipe(48, [<gregtech:meta_item_2:32466>],[<liquid:water>*90]).remove();
+saw.findRecipe(48, [<gregtech:meta_item_2:32466>],[<liquid:distilled_water>*67]).remove();
+saw.findRecipe(48, [<gregtech:meta_item_2:32466>],[<liquid:lubricant>*22]).remove();
+
+engraver.findRecipe(480, [<gregtech:meta_item_1:15218>, <gregtech:meta_item_2:32441>], [null]).remove();
+engraver.findRecipe(1920, [<gregtech:meta_item_1:15218>, <gregtech:meta_item_2:32442>], [null]).remove();
+
+//Remove NOR Gates, only used in data items
+saw.findRecipe(48, [<gregtech:meta_item_2:32468>],[<liquid:water>*90]).remove();
+saw.findRecipe(48, [<gregtech:meta_item_2:32468>],[<liquid:distilled_water>*67]).remove();
+saw.findRecipe(48, [<gregtech:meta_item_2:32468>],[<liquid:lubricant>*22]).remove();
+
+engraver.findRecipe(480, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32441>], [null]).remove();
+engraver.findRecipe(1920, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32442>], [null]).remove();
+
