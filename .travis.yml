@@ -4,6 +4,10 @@ branches:
     - dev
     - /^v\d+\.\d+\.\d+.*$/
 
+cache:
+  directories:
+    - .cache
+
 language: node_js
 node_js:
   - 13

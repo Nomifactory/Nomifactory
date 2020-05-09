@@ -25,9 +25,10 @@ const DOWNLOADER = new ConcurrentRetryDownloader({
 	concurrency  : global.CONFIG.downloaderConcurrency
 	, checkHashes: global.CONFIG.downloaderCheckHashes
 	, maxRetries : global.CONFIG.downloaderMaxRetries
+	, cacheDirectory: global.CONFIG.downloaderCacheDirectory
 })
 .on("start", (args) => {
-	log(`Downloading ${path.basename(args.fileDef.path)}...`)
+	log(`Fetching ${path.basename(args.fileDef.path)}...`)
 })
 .on("complete", (args) => {
 	const numFiles = args.total > 1 ? `(${args.index + 1} / ${args.total}) ` : "";
@@ -51,7 +52,11 @@ const DOWNLOADER = new ConcurrentRetryDownloader({
 	const fd = fs.openSync(args.fileDef.path, "wx");
 	fs.writeSync(fd, args.output);
 	fs.closeSync(fd);
-	log(numFiles + `Downloaded and saved ${path.basename(args.fileDef.path)}`)
+	if (!args.cacheHit) {
+		log(numFiles + `Downloaded and saved ${path.basename(args.fileDef.path)}`)
+	} else {
+		log(numFiles + `Retrieved ${path.basename(args.fileDef.path)} from cache`)
+	}
 })
 .on("retry", (args) => {
 	log(`Failed to download ${path.basename(args.fileDef.path)}, retrying...`)
