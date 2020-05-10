@@ -389,7 +389,7 @@ function zipServer() {
 		.pipe(dest(DEST_FOLDER));
 }
 
-function transfomFile(cb) {
+function transfomLang(cb) {
 	questLocal.transformFile(
 		path.join(SERVER_DEST_FOLDER, questLocal.questLocation), 
 		path.join(SERVER_DEST_FOLDER, questLocal.langFileLocation))()
@@ -403,7 +403,7 @@ module.exports = [
 	downloadMods,
 	copyServerOverrides,
 	copyServerfiles,
-	transfomFile,
+	transfomLang,
 	copyServerLicense,
 	processLaunchscripts,
 	zipServer
