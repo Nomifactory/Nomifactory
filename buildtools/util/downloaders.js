@@ -147,24 +147,26 @@ class ConcurrentRetryDownloader extends EventEmitter {
 
 						return request(fileDef.url, opts);
 					})().then((buffer) => {
-							/**
-							 * Check hashes if requested and the hashDef array is present.
-							 */
-							if (this.checkHashes && fileDef.hashes) {
+							if (!cacheHit) {
 								/**
-								 * Check given hashes and throw if something doesn't match.
+								 * Check hashes if requested and the hashDef array is present.
 								 */
-								fileDef.hashes.forEach((hashInfo) => compareBufferToHashDef(buffer, hashInfo));
-							}
-
-							if (this.cacheDirectory && !cacheHit) {
-								if (!fs.existsSync(this.cacheDirectory)) {
-									fs.mkdirSync(this.cacheDirectory, { recursive: true })
+								if (this.checkHashes && fileDef.hashes) {
+									/**
+									 * Check given hashes and throw if something doesn't match.
+									 */
+									fileDef.hashes.forEach((hashInfo) => compareBufferToHashDef(buffer, hashInfo));
 								}
 
-								const fd = fs.openSync(path.join(this.cacheDirectory, fileNameHash), "wx");
-								fs.writeSync(fd, buffer);
-								fs.closeSync(fd);
+								if (this.cacheDirectory) {
+									if (!fs.existsSync(this.cacheDirectory)) {
+										fs.mkdirSync(this.cacheDirectory, { recursive: true })
+									}
+
+									const fd = fs.openSync(path.join(this.cacheDirectory, fileNameHash), "wx");
+									fs.writeSync(fd, buffer);
+									fs.closeSync(fd);
+								}
 							}
 
 							this.__emitComplete(fileDef, countDownloadedFiles++, total, buffer, cacheHit);
