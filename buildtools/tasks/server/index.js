@@ -10,6 +10,7 @@ const through  = require("through2");
 const { src, dest } = require("gulp");
 
 const { ConcurrentRetryDownloader, retryRequest } = require("../../util/downloaders.js");
+const questLocal = require('../shared/quest_local');
 
 const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
@@ -388,6 +389,13 @@ function zipServer() {
 		.pipe(dest(DEST_FOLDER));
 }
 
+function transfomFile(cb) {
+	questLocal.transformFile(
+		path.join(SERVER_DEST_FOLDER, questLocal.questLocation), 
+		path.join(SERVER_DEST_FOLDER, questLocal.langFileLocation))()
+		.then(cb);
+}
+
 module.exports = [
 	createServerDirs,
 	downloadForge,
@@ -395,6 +403,7 @@ module.exports = [
 	downloadMods,
 	copyServerOverrides,
 	copyServerfiles,
+	transfomFile,
 	copyServerLicense,
 	processLaunchscripts,
 	zipServer
