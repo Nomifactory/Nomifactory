@@ -1051,7 +1051,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:block_compost>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_energizer>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_enervator>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_treasure_chest>);
-mods.jei.JEI.removeAndHide(<actuallyadditions:block_furnace_solar>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_heat_collector>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_item_repairer>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_greenhouse_glass>);
