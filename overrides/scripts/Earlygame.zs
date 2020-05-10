@@ -864,3 +864,23 @@ assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:12095>*6, <minecraft:brick_block>)
 	.outputs(<gregtech:metal_casing>*3)
 	.duration(50).EUt(16).buildAndRegister();
+
+//Fix unintended Concrete powerder skips
+
+macerator.findRecipe(8, [<gregtech:concrete>], [null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:concrete>], [null]).remove();
+
+
+recipes.removeByRecipeName("gregtech:block_decompress_concrete");
+
+macerator.recipeBuilder()
+	.inputs(<gregtech:concrete>)
+	.outputs(<gregtech:meta_item_1:2296> *9)
+	.duration(270).EUt(8).buildAndRegister();
+
+fluid_extractor.recipeBuilder()
+	.inputs(<gregtech:concrete>)
+	.fluidOutputs(<liquid:concrete>*1296)
+	.duration(720).EUt(32).buildAndRegister();
+
+recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]); 
