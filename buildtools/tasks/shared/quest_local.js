@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = require('path');
+const path = require('path').posix;
 
 const localPrefix = 'omnifactory.quest.';
 let data = {};
@@ -16,13 +16,13 @@ function flat(cur, pre) {
 }
 
 /**
- * Covert text on quest books
+ * Escape text on quest books
  * 
  * @param {string} origin 
  * @returns {string}
  */
-function covertString(origin) {
-    return JSON.stringify(origin.split("\n").join('%n')).substr(1, origin.length);
+function escapeString(origin) {
+    return origin.replace(/\n/g, "%n");
 }
 
 function editKey(dbName, keyName) {
@@ -38,8 +38,8 @@ function editKey(dbName, keyName) {
 
         r.push(`# ${keyName} ${storeKeyName}`);
 
-        r.push(`${prefix}.title=${covertString(props['name:8'])}`);
-        r.push(`${prefix}.desc=${covertString(props['desc:8'])}`);
+        r.push(`${prefix}.title=${escapeString(props['name:8'])}`);
+        r.push(`${prefix}.desc=${escapeString(props['desc:8'])}`);
 
         r.push('');
 
