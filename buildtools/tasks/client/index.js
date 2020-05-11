@@ -7,6 +7,7 @@ const Promise  = require("bluebird");
 const { retryRequest } = require("../../util/downloaders.js");
 
 const { src, dest } = require("gulp");
+const questLocal = require("../shared/quest_local");
 
 const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
@@ -103,11 +104,21 @@ function zipClient() {
 		.pipe(dest(DEST_FOLDER));
 }
 
+function transformLang(cb) {
+	const basedir = path.join(CLIENT_DEST_FOLDER, global.OVERRIDES_FOLDER);
+	
+	questLocal.transformFile(
+		path.join(basedir, questLocal.questLocation), 
+		path.join(basedir, questLocal.langFileLocation))()
+		.then(cb);
+}
+
 module.exports = [
 	createClientDirs,
 	copyClientManifest,
 	copyClientOverrides,
 	copyClientLicense,
+	transformLang,
 	fetchModList,
 	zipClient
 ]
