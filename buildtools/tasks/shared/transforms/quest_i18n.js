@@ -80,8 +80,20 @@ function transformFile(file, langFile) {
     }
 }
 
-module.exports = {
-    transformFile,
-    questLocation: "./config/betterquesting/DefaultQuests.json",
-    langFileLocation: "./resources/minecraft/lang"
+const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
+const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
+
+const questLocation    = "./config/betterquesting/DefaultQuests.json";
+const langFileLocation = "./resources/minecraft/lang";
+
+/**
+ * Extract lang entries from the quest book and transform the database.
+ */
+function transfomLang(cb) {
+	transformFile(
+		path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, questLocation), 
+		path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, langFileLocation))()
+		.then(cb);
 }
+
+module.exports = transfomLang;
