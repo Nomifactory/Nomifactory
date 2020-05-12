@@ -26,8 +26,8 @@ async function transformScannable(cb) {
 				
 			return g0 + g1
 				+ ` <`
-				+	body
-				+ (body ? "" : "\n") + g0 + ` >`;
+				+ body + (body ? "" : "\n")
+				+ g0 + ` >`;
 		});
 
 	await fs.promises.writeFile(configPath, contents);
