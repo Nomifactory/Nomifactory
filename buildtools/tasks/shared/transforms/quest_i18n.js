@@ -79,7 +79,7 @@ async function transfomLang(cb) {
 
     await mkdirp(questLangLocation);
 
-    await fs.promises.writeFile(path.join(questLangLocation, "en_US.lang"), text);
+    await fs.promises.writeFile(path.join(questLangLocation, "en_us.lang"), text);
     await fs.promises.writeFile(questDatabasePath, JSON.stringify(data, null, 4));
 
     cb();
