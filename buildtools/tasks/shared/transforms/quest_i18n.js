@@ -57,29 +57,6 @@ async function mkdirp(dir) {
     await fs.promises.mkdir(dir);
 }
 
-/**
- * Transform questbook file
- * 
- * @param {string} file 
- * @param {string} langFile
- * @returns {() => Promise<string>}
- */
-function transformFile(file, langFile) {
-    return async function() {
-        data = JSON.parse((await fs.promises.readFile(file)).toString());
-
-        const lines = [editKey("questDatabase:9", "db"), editKey("questLines:9", "line")]
-            .reduce(flat, []);
-
-        const text = lines.join("\n");
-
-        await mkdirp(langFile);
-
-        await fs.promises.writeFile(path.join(langFile, "en_US.lang"), text);
-        await fs.promises.writeFile(file, JSON.stringify(data, null, 4));
-    }
-}
-
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
 
@@ -89,11 +66,23 @@ const langFileLocation = "./resources/minecraft/lang";
 /**
  * Extract lang entries from the quest book and transform the database.
  */
-function transfomLang(cb) {
-	transformFile(
-		path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, questLocation), 
-		path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, langFileLocation))()
-		.then(cb);
+async function transfomLang(cb) {
+    const questDatabasePath = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, questLocation);
+    const questLangLocation = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, langFileLocation);
+
+    data = JSON.parse((await fs.promises.readFile(questDatabasePath)).toString());
+
+    const lines = [editKey("questDatabase:9", "db"), editKey("questLines:9", "line")]
+        .reduce(flat, []);
+
+    const text = lines.join("\n");
+
+    await mkdirp(questLangLocation);
+
+    await fs.promises.writeFile(path.join(questLangLocation, "en_US.lang"), text);
+    await fs.promises.writeFile(questDatabasePath, JSON.stringify(data, null, 4));
+
+    cb();
 }
 
 module.exports = transfomLang;
