@@ -61,7 +61,7 @@ const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
 
 const questLocation    = "./config/betterquesting/DefaultQuests.json";
-const langFileLocation = "./resources/minecraft/lang";
+const langFileLocation = "./resources/questbook/lang";
 
 /**
  * Extract lang entries from the quest book and transform the database.
