@@ -43,7 +43,7 @@ function createSharedDirs(cb) {
  */
 function zipLang() {
 	const resourcesPath = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, "resources");
-	const globs = ["**/*.lang", "**/*.mcmeta"]
+	const globs = ["**/*.lang", "pack.mcmeta"]
 		.map(x => path.join(resourcesPath, x));
 
 	return src(globs, { nodir: true, base: resourcesPath })
