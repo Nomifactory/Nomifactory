@@ -1,6 +1,7 @@
 const fs       = require("fs");
 const log      = require("fancy-log");
 const path     = require("path").posix;
+const zip      = require("gulp-zip");
 
 const { src, dest } = require("gulp");
 
@@ -37,8 +38,22 @@ function createSharedDirs(cb) {
 	cb();
 }
 
+/**
+ * Zips the language files.
+ */
+function zipLang() {
+	const resourcesPath = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, "resources");
+	const globs = ["**/*.lang", "**/*.mcmeta"]
+		.map(x => path.join(resourcesPath, x));
+
+	return src(globs, { nodir: true, base: resourcesPath })
+		.pipe(zip("lang.zip"))
+		.pipe(dest(DEST_FOLDER));
+}
+
 module.exports = [
 	createSharedDirs,
 	copyOverrides,
-	...require("./transforms")
+	...require("./transforms"),
+	zipLang
 ]
