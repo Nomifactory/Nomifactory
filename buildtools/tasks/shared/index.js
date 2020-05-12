@@ -1,6 +1,6 @@
 const fs       = require("fs");
 const log      = require("fancy-log");
-const path     = require("path");
+const path     = require("path").posix;
 const zip      = require("gulp-zip");
 const merge    = require("merge-stream");
 const rename   = require("gulp-rename");
