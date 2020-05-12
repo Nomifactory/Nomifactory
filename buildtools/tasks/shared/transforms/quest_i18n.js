@@ -82,6 +82,9 @@ async function transfomLang(cb) {
     await fs.promises.writeFile(path.join(questLangLocation, "en_US.lang"), text);
     await fs.promises.writeFile(questDatabasePath, JSON.stringify(data, null, 4));
 
+    // Travis
+    await fs.promises.writeFile(path.join(DEST_FOLDER, "questbook.lang"), text);
+
     cb();
 }
 

@@ -33,6 +33,7 @@ deploy:
     file:
       - ./build/$SERVER_ARCHIVE.zip
       - ./build/$CLIENT_ARCHIVE.zip
+      - ./build/questbook.lang
     on:
       tags: true
       condition: $TAGGED_RELEASE = true
