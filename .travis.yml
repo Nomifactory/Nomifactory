@@ -57,6 +57,7 @@ deploy:
     file:
       - ./build/$SERVER_ARCHIVE.zip
       - ./build/$CLIENT_ARCHIVE.zip
+      - ./build/questbook.lang
     on:
       branch: dev
       condition: $TAGGED_RELEASE = false
