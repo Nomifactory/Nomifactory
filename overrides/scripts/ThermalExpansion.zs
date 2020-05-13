@@ -454,3 +454,7 @@ mixer.recipeBuilder()
     .outputs(<thermalfoundation:material:72> * 2)
     .inputs([<thermalfoundation:material:1028>, <gregtech:meta_item_1:2072>])
     .duration(200).EUt(30).buildAndRegister();
+
+//TE Drill
+recipes.addShapeless(<thermalfoundation:material:640>, [<actuallyadditions:item_misc:16>]);
+recipes.addShapeless(<thermalfoundation:material:656>, [<gregtech:meta_item_2:8183>]);
