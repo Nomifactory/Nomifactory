@@ -969,7 +969,8 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:itemSilicon> : [
 		<enderio:item_material:5>,
 		<nuclearcraft:gem:6>,
-		<appliedenergistics2:material:5>
+		<appliedenergistics2:material:5>,
+		<libvulpes:productingot:3>
 	],
 
 	#Arsenic
