@@ -10,8 +10,11 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.IRecipeAction;
+import crafttweaker.oredict.IOreDictEntry;
+
 
 global alloy            as RecipeMap = RecipeMap.getByName("alloy_smelter");
 global assembler        as RecipeMap = RecipeMap.getByName("assembler");
@@ -212,4 +215,63 @@ function makeExtremeRecipe9(output as IItemStack,
 
     mods.extendedcrafting.TableCrafting.addShaped(output,
         textToIngredients(ingredients, output, recipe, replacements));
+}
+
+
+zenClass Components {
+    
+    var dur as int;
+    var power as int;
+    var macInput as IItemStack;
+    var macOutput as IItemStack;
+    var macFluidInput as ILiquidStack;
+    var macFluidOutput as ILiquidStack;
+    var notConsumed as IItemStack;
+
+    var oreMacInput as IOreDictEntry;
+    var oreMacOutput as IOreDictEntry;
+
+    var macInputArray as IItemStack[];
+    var macFluidInputArray as ILiquidStack[];
+
+
+    zenConstructor(dur as int, power as int, macInputArray as IItemStack[], macOutput as IItemStack) {
+
+        this.dur = dur;
+        this.power = power;
+        this.macInputArray = macInputArray;
+        this.macOutput = macOutput;
+    }
+
+    zenConstructor(dur as int, oreMacInput as IOreDictEntry, oreMacOutput as IOreDictEntry) {
+
+        this.dur = dur;
+        this.oreMacInput = oreMacInput;
+        this.oreMacOutput = oreMacOutput;
+    }
+
+
+    zenConstructor(macInput as IItemStack, macOutput as IItemStack, power as int) {
+
+        this.macInput = macInput;
+        this.macOutput = macOutput;
+        this.power = power;
+    }
+
+    zenConstructor(oreMacInput as IOreDictEntry, oreMacOutput as IOreDictEntry, power as int) {
+
+        this.oreMacInput = oreMacInput;
+        this.oreMacOutput = oreMacOutput;
+        this.power = power;
+    }
+
+    zenConstructor(macInputArray as IItemStack[], macFluidInputArray as ILiquidStack[], macOutput as IItemStack, dur as int, power as int) {
+
+        this.macInputArray = macInputArray;
+        this.macFluidInputArray = macFluidInputArray;
+        this.macOutput = macOutput;
+        this.dur = dur;
+        this.power = power;
+    }
+
 }
