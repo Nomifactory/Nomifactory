@@ -8,7 +8,7 @@ import mods.gregtech.recipe.Recipe;
 import scripts.CommonVars.Components;
 
 
-var debug = true;
+var debug = false;
 
 
 
