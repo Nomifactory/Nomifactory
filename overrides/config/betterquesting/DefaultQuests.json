@@ -26282,7 +26282,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Anvils§f can be used to repair almost all §bGregTech tools§f!\n\nYou might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils§f spawn abundantly in §bLost Cities§f buildings, so go and snatch one!\n\nPut a damaged tool inside and put some material it\u0027s made of. For example, you\u0027ll need to put §6Wrought Iron Ingots§f to repair tools made of §6Wrought Iron§f. The only tools unabled to be repaired are the mortar and the plunger.",
+          "desc:8": "§3Anvils§f can be used to repair almost all §bGregTech tools§f!\n\nYou might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils§f spawn abundantly in §bLost Cities§f buildings, so go and snatch one!\n\nPut a damaged tool inside and put some material it\u0027s made of. For example, you\u0027ll need to put §6Wrought Iron Ingots§f to repair tools made of §6Wrought Iron§f. The only tools unable to be repaired are the mortar and the plunger.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
