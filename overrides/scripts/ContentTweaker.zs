@@ -221,10 +221,6 @@ var block_dust = VanillaFactory.createItem("block_dust");
 block_dust.maxStackSize = 64;
 block_dust.register();
 
-var endstonedust = VanillaFactory.createItem("endstonedust");
-endstonedust.maxStackSize = 64;
-endstonedust.register();
-
 var knightslimeingot = VanillaFactory.createItem("knightslimeingot");
 knightslimeingot.maxStackSize = 64;
 knightslimeingot.register();

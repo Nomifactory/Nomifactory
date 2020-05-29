@@ -1795,7 +1795,6 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:circuitUltimate>.add(<contenttweaker:quantumprocessormainframe>);
 <ore:circuitUltimate>.add(<contenttweaker:crystalprocessorarray>);
 <ore:circuitSuperconductor>.add(<contenttweaker:crystalprocessormainframe>);
-<ore:dustEndstone>.add(<contenttweaker:endstonedust>);
 <ore:craftingLensLime>.remove(<gregtech:meta_item_1:15219>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15111>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15331>);
@@ -1906,11 +1905,6 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
-
-// Temporary recipe to convert endstone dusts
-recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
-<contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
 
 //neutronium plate exchange
 recipes.addShapeless("of_exchange_neutronium_plate",
