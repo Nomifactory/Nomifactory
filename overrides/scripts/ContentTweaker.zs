@@ -614,20 +614,10 @@ stellarcreationdata.rarity = "rare";
 stellarcreationdata.maxStackSize = 64;
 stellarcreationdata.register();
 
-var lairoftheclockworkkingdata = VanillaFactory.createItem("lairoftheclockworkkingdata");
-lairoftheclockworkkingdata.rarity = "epic";
-lairoftheclockworkkingdata.maxStackSize = 1;
-lairoftheclockworkkingdata.register();
-
 var lairofthechaosguardiandata = VanillaFactory.createItem("lairofthechaosguardiandata");
 lairofthechaosguardiandata.rarity = "epic";
 lairofthechaosguardiandata.maxStackSize = 1;
 lairofthechaosguardiandata.register();
-
-var sentientgear = VanillaFactory.createItem("sentientgear");
-sentientgear.rarity = "epic";
-sentientgear.maxStackSize = 64;
-sentientgear.register();
 
 var denseoilshale = VanillaFactory.createItem("denseoilshale");
 denseoilshale.maxStackSize = 64;
