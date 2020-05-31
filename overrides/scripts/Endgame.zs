@@ -185,7 +185,7 @@ recipes.remove(<gregtech:meta_item_2:26708>);
 recipes.remove(<gregtech:meta_item_2:26707>);
 
 //neuroprocessor
-assembly_line.findRecipe(80000,
+assembly_line.findRecipe(20000,
     [<gregtech:meta_item_1:19391> * 64,
      <gtadditions:ga_meta_item:32018> * 8,
      <gregtech:meta_item_2:32454> * 8,
