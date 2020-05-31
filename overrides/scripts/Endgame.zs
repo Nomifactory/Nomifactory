@@ -192,10 +192,9 @@ assembly_line.findRecipe(80000,
      <gregtech:meta_item_1:12026> * 8,
      <gregtech:meta_item_1:12183> * 4,
      <metaitem:board.wetware>],
-    [<liquid:sterilized_growth_medium> * 250,
-     <liquid:uumatter> * 100,
-     <liquid:water> * 250,
-     <liquid:lava> * 1000]).remove();
+    [<liquid:sterilized_growth_medium> * 100,
+     <liquid:uumatter> * 20,
+     <liquid:distilled_water> * 4000]).remove();
 
 assembly_line.recipeBuilder()
     .inputs(<contenttweaker:draconicstemcells> * 8,
