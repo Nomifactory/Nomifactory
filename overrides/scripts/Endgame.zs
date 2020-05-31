@@ -149,7 +149,8 @@ val t6c as IIngredient[] = [
     <metaitem:component.smd.capacitor> * 2,
     <metaitem:component.smd.transistor> * 2,
     <gregtech:meta_item_2:16200> * 2,
-    <metaitem:board.wetware>,
+    //<metaitem:board.wetware>,
+    <gtadditions:ga_meta_item:32015>,
     <gregtech:meta_item_2:32474>,
     <gregtech:meta_item_2:32481>];
 
