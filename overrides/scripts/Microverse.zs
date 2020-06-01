@@ -18,164 +18,50 @@ import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 
 // Controller
 recipes.remove(<modularmachinery:blockcontroller>);
-makeShaped("of_mm_blockcontroller", <modularmachinery:blockcontroller>,
-	["CMC",
-	 "MSM",
-	 "CMC"],
-	{ C : <ore:circuitAdvanced>,
-	  M : <modularmachinery:itemmodularium>,
-	  S : <extrautils2:screen> }
-);
 <modularmachinery:blockcontroller>.displayName = "Modular Machine Controller";
+<modularmachinery:blockcontroller>.addTooltip(format.red("Modular Machinery is getting removed in a future update."));
+<modularmachinery:blockcontroller>.addTooltip(format.red("Please use the new GregTech multiblocks instead. ('@Multiblock' in JEI)"));
 
-// Item Inputs
-for meta in 2 .. 7 {
-	val item = "modularmachinery:blockinputbus";
-	makeShaped("of_mm_blockinputbus_" ~ meta,
-		itemUtils.getItem(item, meta),
-		[" H ",
-		 "MAM",
-		 "CMC"],
-		{ A : itemUtils.getItem(item, meta - 1),
-		  C : <minecraft:chest>,
-		  H : <minecraft:hopper>,
-		  M : <modularmachinery:itemmodularium> }
-	);
-}
-
-// Item Outputs
-for meta in 2 .. 7 {
-	val item = "modularmachinery:blockoutputbus";
-	makeShaped("of_mm_blockoutputbus_" ~ meta,
-		itemUtils.getItem(item, meta),
-		["CMC",
-		 "MAM",
-		 " H "],
-		{ A : itemUtils.getItem(item, meta - 1),
-		  C : <minecraft:chest>,
-		  H : <minecraft:hopper>,
-		  M : <modularmachinery:itemmodularium> }
-	);
-}
-
-// Fluid Input Hatches
-for meta in 2 .. 8 { // Tiny -> Vacuum
-	val item = "modularmachinery:blockfluidinputhatch";
-	makeShaped("of_mm_blockfluidinputhatch_" ~ meta,
-		itemUtils.getItem(item, meta),
-		[" H ",
-		 "MAM",
-		 "BMB"],
-		{ A : itemUtils.getItem(item, meta - 1),
-		  B : <minecraft:bucket>,
-		  H : <minecraft:hopper>,
-		  M : <modularmachinery:itemmodularium> }
-	);
-}
-
-// Fluid Output Hatches
-for meta in 2 .. 8 { // Tiny -> Vacuum
-	val item = "modularmachinery:blockfluidoutputhatch";
-	makeShaped("of_mm_blockfluidoutputhatch_" ~ meta,
-		itemUtils.getItem(item, meta),
-		["BMB",
-		 "MAM",
-		 " H "],
-		{ A : itemUtils.getItem(item, meta - 1),
-		  B : <minecraft:bucket>,
-		  H : <minecraft:hopper>,
-		  M : <modularmachinery:itemmodularium> }
-	);
-}
-
-// Energy Input Hatches
-
-recipes.remove(<modularmachinery:blockenergyinputhatch>);
-recipes.remove(<modularmachinery:blockenergyinputhatch:1>);
-
-val energyInputHatches as IItemStack[] = [
-	<gregtech:machine:714>, // LV
-	<gregtech:machine:724>, // MV
-	<gregtech:machine:734>, // HV
-	<gregtech:machine:744>, // EV
-	<gregtech:machine:754>, // IV
-	<gregtech:machine:764>, // LuV
-	<gregtech:machine:774>, // ZPM
-	<gregtech:machine:784>, // UV
-] as IItemStack[];
-
-for meta,input in energyInputHatches {
-	val item as IItemStack = itemUtils.getItem("modularmachinery:blockenergyinputhatch", meta);
-	makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item, 
-		[" M ",
-		 "MAM",
-		 " M "],
-		{ A : input,
-		  M : <modularmachinery:itemmodularium> }
-	);
-}
-
-<modularmachinery:blockenergyinputhatch:0>.displayName = "Modularium LV Energy Input";
-<modularmachinery:blockenergyinputhatch:1>.displayName = "Modularium MV Energy Input";
-<modularmachinery:blockenergyinputhatch:2>.displayName = "Modularium HV Energy Input";
-<modularmachinery:blockenergyinputhatch:3>.displayName = "Modularium EV Energy Input";
-<modularmachinery:blockenergyinputhatch:4>.displayName = "Modularium IV Energy Input";
-<modularmachinery:blockenergyinputhatch:5>.displayName = "Modularium LuV Energy Input";
-<modularmachinery:blockenergyinputhatch:6>.displayName = "Modularium ZPM Energy Input";
-<modularmachinery:blockenergyinputhatch:7>.displayName = "Modularium UV Energy Input";
-
-// Energy Output Hatch
-
-recipes.remove(<modularmachinery:blockenergyoutputhatch>);
-recipes.remove(<modularmachinery:blockenergyoutputhatch:1>);
-
-val energyOutputHatches as IItemStack[] = [
-	<gregtech:machine:715>, // LV
-	<gregtech:machine:725>, // MV
-	<gregtech:machine:735>, // HV
-	<gregtech:machine:745>, // EV
-	<gregtech:machine:755>, // IV
-	<gregtech:machine:765>, // LuV
-	<gregtech:machine:775>, // ZPM
-	<gregtech:machine:785>, // UV
-] as IItemStack[];
-
-for meta,input in energyOutputHatches {
-	makeShaped("of_mm_blockenergyoutputhatch_" ~ meta,
-		itemUtils.getItem("modularmachinery:blockenergyoutputhatch", meta),
-		[" M ",
-		 "MAM",
-		 " M "],
-		{ A : input,
-		  M : <modularmachinery:itemmodularium> }
-	);
-}
-
-<modularmachinery:blockenergyoutputhatch:0>.displayName = "Modularium LV Energy Output";
-<modularmachinery:blockenergyoutputhatch:1>.displayName = "Modularium MV Energy Output";
-<modularmachinery:blockenergyoutputhatch:2>.displayName = "Modularium HV Energy Output";
-<modularmachinery:blockenergyoutputhatch:3>.displayName = "Modularium EV Energy Output";
-<modularmachinery:blockenergyoutputhatch:4>.displayName = "Modularium IV Energy Output";
-<modularmachinery:blockenergyoutputhatch:5>.displayName = "Modularium LuV Energy Output";
-<modularmachinery:blockenergyoutputhatch:6>.displayName = "Modularium ZPM Energy Output";
-<modularmachinery:blockenergyoutputhatch:7>.displayName = "Modularium UV Energy Output";
-
-
-// Casing
-recipes.remove(<modularmachinery:blockcasing>);
-assembler.recipeBuilder()
-	.outputs([<modularmachinery:blockcasing>])
-	.inputs([<modularmachinery:itemmodularium> * 4])
-	.duration(200).EUt(30).buildAndRegister();
-
-// Machine Vent
-makeShaped("of_mm_machine_vent", <modularmachinery:blockcasing:1>,
-	[" M ",
-	 "MCM",
-	 " M "],
-	{ C : <gregtech:multiblock_casing:1>, // Grate Machine Casing
-	  M : <modularmachinery:itemmodularium> }
-);
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
 
 /////////////	 Tier One Space Ship   	  //////////////////	200 ingots
 
@@ -370,7 +256,7 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiersevenship>, 
+makeExtremeRecipe9(<contenttweaker:tiersevenship>,
 	[" L  D  L ",
 	 " DDDGDDD ",
 	 "LDDDDDDDL",
@@ -404,7 +290,7 @@ makeShaped("of_warpengine", <contenttweaker:warpengine>,
 
 /////////////	 Tier Eight Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiereightship>, 
+makeExtremeRecipe9(<contenttweaker:tiereightship>,
 	[" G C C G ",
 	 " WCCLCCW ",
 	 " WCIIICW ",
@@ -461,7 +347,7 @@ makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiertenship>, 
+makeExtremeRecipe9(<contenttweaker:tiertenship>,
 	["  N   N  ",
 	 " NUN NUN ",
 	 " NNN NNN ",
@@ -492,6 +378,46 @@ makeExtremeRecipe9(<contenttweaker:tiertenship>,
 	format.gray(
 		format.italic("Omnium Trimmed")));
 
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
 
 // Small Dimensional Projector Recipes
 
@@ -852,6 +778,47 @@ mmRecipe("large_microverse_neutronium_1", "large_microverse", 6000)
 	.addItemOutput(<contenttweaker:heartofauniverse>)
 	.build();
 
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
+
 // Impossible Realm Data Recipes
 makeShaped("of_impossiblerealmdata_x1", <contenttweaker:impossiblerealmdata>,
 	["OEO",
@@ -875,7 +842,7 @@ makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4
 	  X : <deepmoblearning:living_matter_extraterrestrial> });
 
 // Dragon Lair Data
-makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>, 
+makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 	["IHH",
 	 "HHH",
 	 "HHH"],
@@ -884,7 +851,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 );
 
 // Wither Realm Data
-makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>, 
+makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 	["IXX",
 	 "XXX",
 	 "XXX"],
@@ -979,6 +946,47 @@ makeShaped("of_dml_living_matter_extraterrestrial",
 	  E : <minecraft:ender_pearl> }
 );
 
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
+
 // Cryogenic Distillation Recipe 1: Liquid Air
 mmRecipe("cryogenicairdistillation_1", "cryogenicairdistillation", 125)
 	.addEnergyPerTickInput(2000)
@@ -1055,6 +1063,47 @@ mmRecipe("lunarminingstationb", "lunarminingstation", 12000)
 	.setChance(0.1)
 	.addFluidOutput(<liquid:helium3> * 48000)
 	.build();
+
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
 
 // Lunar Mining Station Rovers:
 

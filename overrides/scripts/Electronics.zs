@@ -898,10 +898,10 @@ for i, wrench in wrenches {
 
 
     // Modularium Machine Casing
-    recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>,               wrench             , <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]]);
+    recipes.addShaped("of_microverse_casing_wrench"+i, <contenttweaker:microverse_casing> *2, [
+        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>], 
+        [<ore:ingotMicroversium>,          wrench        , <ore:ingotMicroversium>], 
+        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>]]);
 
     // LuV Machine Casing
     recipes.addShaped("of_luv_casing_wrench"+i, <gregtech:machine_casing:6>, [

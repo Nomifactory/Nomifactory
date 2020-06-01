@@ -1597,6 +1597,148 @@ mods.jei.JEI.removeAndHide(<libvulpes:battery:1>);
 mods.jei.JEI.removeAndHide(<libvulpes:productfan:6>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
 
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
+
+//Modular Machinery removals
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:6>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyinputhatch:7>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:6>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockenergyoutputhatch:7>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:6>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidinputhatch:7>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:6>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockfluidoutputhatch:7>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:6>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockinputbus:7>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:6>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockoutputbus:7>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:0>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:1>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:2>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:3>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:4>);
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:5>);
+mods.jei.JEI.removeAndHide(<modularmachinery:itemmodularium>);
+mods.jei.JEI.removeAndHide(<modulardiversity:blockbiomedetector>);
+mods.jei.JEI.removeAndHide(<modulardiversity:blockdaylightdetector>);
+mods.jei.JEI.removeAndHide(<modulardiversity:blockweatherdetector>);
+
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
+
 //Lumberaxe Removal
 mods.jei.JEI.removeAndHide(<lumberjack:infinity_lumberaxe>);
 mods.jei.JEI.removeAndHide(<lumberjack:endsteel_lumberaxe>);
@@ -1775,8 +1917,6 @@ mods.jei.JEI.removeAndHide(<enderio:item_alloy_nugget:3>);
 recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>]);
 
 //Circuits
-<ore:lvcef>.add(<gregtech:machine:10661>);
-<ore:lvcef>.add(<gregtech:machine:10665>);
 <ore:circuitBasic>.add(<contenttweaker:refinedcircuit>);
 <ore:circuitGood>.add(<contenttweaker:combinationcircuit>);
 <ore:circuitGood>.add(<contenttweaker:electronicprocessor>);
@@ -1795,7 +1935,15 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:circuitUltimate>.add(<contenttweaker:quantumprocessormainframe>);
 <ore:circuitUltimate>.add(<contenttweaker:crystalprocessorarray>);
 <ore:circuitSuperconductor>.add(<contenttweaker:crystalprocessormainframe>);
+
+
+//Misc
+<ore:lvcef>.add(<gregtech:machine:10661>);
+<ore:lvcef>.add(<gregtech:machine:10665>);
 <ore:dustEndstone>.add(<contenttweaker:endstonedust>);
+<ore:ingotMicroversium>.add(<contenttweaker:microversium>);
+
+//Removals
 <ore:craftingLensLime>.remove(<gregtech:meta_item_1:15219>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15111>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15331>);

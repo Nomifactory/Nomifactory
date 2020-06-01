@@ -114,8 +114,8 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2016>]).outputs([<gr
 
 //Modularium [tier 3]
 recipes.remove(<modularmachinery:itemmodularium>);
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<contenttweaker:microversium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<contenttweaker:microversium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nichrome [tier 4]
 blast_furnace.findRecipe(480, [<gregtech:meta_item_1:10044> * 4,<gregtech:meta_item_1:10016>], [null]).remove();

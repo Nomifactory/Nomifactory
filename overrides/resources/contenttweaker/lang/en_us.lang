@@ -212,7 +212,10 @@ item.contenttweaker.stellarcreationdata.name=Stellar Creation Data
 item.contenttweaker.densehydrogen.name=Dense Hydrogen
 item.contenttweaker.ultradensehydrogen.name=Ultra Dense Hydrogen
 
+tile.contenttweaker.microverse_casing.name=Microverse Projector Casing
+tile.contenttweaker.microverse_vent.name=Microverse Projector Vent
 
+item.contenttweaker.microversium.name=Microversium Ingot
 
 
 

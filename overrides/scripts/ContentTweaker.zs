@@ -2,6 +2,7 @@
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.Block;
 import mods.contenttweaker.Color;
 
 
@@ -644,3 +645,12 @@ ultradensehydrogen.maxStackSize = 64;
 ultradensehydrogen.rarity = "rare";
 ultradensehydrogen.register();
 
+var microverse_casing = VanillaFactory.createBlock("microverse_casing", <blockmaterial:iron>);
+microverse_casing.register();
+
+var microverse_vent = VanillaFactory.createBlock("microverse_vent", <blockmaterial:iron>);
+microverse_vent.register();
+
+var microversium = VanillaFactory.createItem("microversium");
+microversium.maxStackSize = 64;
+microversium.register();
