@@ -1,5 +1,7 @@
 import crafttweaker.world.IFacing;
 import crafttweaker.block.IBlock;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 import mods.gregtech.multiblock.Builder;
 import mods.gregtech.multiblock.FactoryBlockPattern;
@@ -17,6 +19,8 @@ import mods.gregtech.recipe.FactoryRecipeMap;
 
 import mods.gregtech.render.ICubeRenderer;
 import mods.gregtech.render.Textures;
+
+import scripts.CommonVars.makeShaped as makeShaped;
 
 ///////////////////////////////////////////////
 /////////////     Multiblocks     /////////////
@@ -865,9 +869,10 @@ val naquadahreactormk2 = Builder.start(loc,id)
 id += 1;
 loc = "lunarminingstation";
 
-val inBiome as IBlockMatcher = function (state as IBlockWorldState) as bool {
-    val biome = state.getWorld().getBiome(state.getPos()).id;
-    return biome == "advancedrocketry:moon" || biome == "advancedrocketry:moondark" || state.getWorld().getDimension() == 2147483647;
+val onMoon as IBlockMatcher = function (state as IBlockWorldState) as bool {
+    val dimension = state.getWorld().getDimension();
+    return dimension == 100 // Moon dimension
+        || dimension == 2147483647;
 };
 
 val lunarminingstation = Builder.start(loc, id)
@@ -877,9 +882,9 @@ val lunarminingstation = Builder.start(loc, id)
                                         "    A    ",
                                         "    A    ",
                                         "    A    ",
-                                        "   CAC   ",
+                                        "   LAL   ",
                                         "AAAAAAAAA",
-                                        "   SAC   ",
+                                        "   SAL   ",
                                         "    A    ",
                                         "    A    ",
                                         "    A    ")
@@ -963,17 +968,17 @@ val lunarminingstation = Builder.start(loc, id)
                                         "         ",
                                         "         ",
                                         "         ")
-                                    .whereAnd('S', IBlockMatcher.controller(loc), inBiome)
+                                    .whereAnd('S', IBlockMatcher.controller(loc), onMoon)
                                     .where('M', <minecraft:beacon>)
                                     .where(' ', IBlockMatcher.ANY)
                                     .where('B', <metastate:enderio:block_alloy_endergy:3>)
-                                    .where('L', <metastate:gregtech:machine_casing:6>)
                                     .where('G', <metastate:extrautils2:ineffableglass:3>)
                                     .where('E', <metastate:enderio:block_alloy_endergy:5>)
                                     .where('A', <metastate:actuallyadditions:block_misc:9>)
-                                    .where('C', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-                                                                                    MultiblockAbility.EXPORT_FLUIDS,
-                                                                                    MultiblockAbility.IMPORT_ITEMS))
+                                    .whereOr('L', <metastate:gregtech:machine_casing:6>,
+                                                    IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
+                                                                                        MultiblockAbility.EXPORT_FLUIDS,
+                                                                                        MultiblockAbility.IMPORT_ITEMS))
                                     .build())
                             .addDesign(
                                 FactoryMultiblockShapeInfo.start()
@@ -1094,9 +1099,9 @@ val lunarminingstation = Builder.start(loc, id)
 ///////////////////////////////////////////////
 
 // Modular Machinery conversion recipes
-recipes.addShapeless(<contenttweaker:microverse_casing>, [<modularmachinery:blockcasing>]);
-recipes.addShapeless(<contenttweaker:microverse_vent>, [<modularmachinery:blockcasing:1>]);
-recipes.addShapeless(<contenttweaker:microversium>, [<modularmachinery:itemmodularium>]);
+recipes.addShapeless("mm_casing_conversion", <contenttweaker:microverse_casing>, [<modularmachinery:blockcasing>]);
+recipes.addShapeless("mm_vent_conversion", <contenttweaker:microverse_vent>, [<modularmachinery:blockcasing:1>]);
+recipes.addShapeless("mm_ingot_conversion", <contenttweaker:microversium>, [<modularmachinery:itemmodularium>]);
 
 // Casing
 assembler.recipeBuilder()
@@ -1107,58 +1112,46 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 // Vent
-recipes.addShaped(<contenttweaker:microverse_vent>, [
+recipes.addShaped("ctt_vent", <contenttweaker:microverse_vent>, [
     [<ore:barsIron>,          <ore:rotorSteel>,          <ore:barsIron>],
     [<ore:barsIron>, <contenttweaker:microverse_casing>, <ore:barsIron>],
     [<ore:barsIron>,    <gregtech:meta_item_1:32601>,    <ore:barsIron>]]);
 
 // Cryogenic Distillation Tower
-recipes.addShaped(<gregtech:machine:3000>, [
-    [<ore:pipeLargeStainlessSteel>, <ore:circuitAdvanced>, <ore:pipeLargeStainlessSteel>],
-    [<ore:circuitAdvanced>,       <gregtech:metal_casing:3>,       <ore:circuitAdvanced>],
-    [<ore:pipeLargeStainlessSteel>, <ore:circuitAdvanced>, <ore:pipeLargeStainlessSteel>]]);
+makeShaped("multiblock_controller_base", <gregtech:machine:3000>,
+	["CMC",
+	 "MSM",
+	 "CMC"],
+	{ C : <ore:circuitAdvanced>,
+	  M : <ore:ingotMicroversium>,
+	  S : <extrautils2:screen> }
+);
 
-// Lunar Mining Station
-recipes.addShaped(<gregtech:machine:3007>, [
-    [<ore:plateLumium>,         <ore:circuitAdvanced>,        <ore:plateLumium>],
-    [<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>],
-    [<ore:plateLumium>,         <ore:circuitAdvanced>,        <ore:plateLumium>]]);
+val controllers = [
+    <gregtech:machine:3000>,
+    <gregtech:machine:3001>,
+    <gregtech:machine:3002>,
+    <gregtech:machine:3003>,
+    <gregtech:machine:3004>,
+    <gregtech:machine:3005>,
+    <gregtech:machine:3006>,
+    <gregtech:machine:3007>] as IItemStack[];
 
-// Naquadah Reactor Mk1
-recipes.addShaped(<gregtech:machine:3005>, [
-    [<ore:plateNaquadah>,          <ore:circuitAdvanced>,         <ore:plateNaquadah>],
-    [<ore:circuitAdvanced>, <contenttweaker:microverse_casing>, <ore:circuitAdvanced>],
-    [<ore:plateNaquadah>,          <ore:circuitAdvanced>,         <ore:plateNaquadah>]]);
+function makeRecipe(i as int, result as IItemStack) {
+    val grid = [[null, null, null],
+                [null, null, null],
+                [null, null, null]] as IIngredient[][];
 
-// Naquadah Reactor Mk2
-recipes.addShaped(<gregtech:machine:3006>, [
-    [<ore:plateNaquadah>,    <ore:circuitExtreme>,   <ore:plateNaquadah>],
-    [<ore:circuitExtreme>, <gregtech:machine:3005>, <ore:circuitExtreme>],
-    [<ore:plateNaquadah>,    <ore:circuitExtreme>,   <ore:plateNaquadah>]]);
+    grid[i / 3][i % 3] = <ore:multiblockController>;
 
-// Oil Drilling Rig
-recipes.addShaped(<gregtech:machine:3004>, [
-    [<ore:frameGtSteel>,      <ore:circuitAdvanced>,      <ore:frameGtSteel>],
-    [<ore:circuitAdvanced>, <gregtech:metal_casing:4>, <ore:circuitAdvanced>],
-    [<ore:frameGtSteel>,       <inspirations:pipe>,       <ore:frameGtSteel>]]);
+    recipes.addShaped("multiblock_controller_"+i, result, grid);
+}
 
-// Small Microverse Projector
-recipes.addShaped(<gregtech:machine:3001>, [
-    [<contenttweaker:microverse_vent>, <ore:circuitAdvanced>, <contenttweaker:microverse_vent>],
-    [<ore:circuitAdvanced>,      <contenttweaker:microverse_casing>,     <ore:circuitAdvanced>],
-    [<contenttweaker:microverse_vent>, <ore:circuitAdvanced>, <contenttweaker:microverse_vent>]]);
+for i, controller in controllers {
+    makeRecipe(i, controller);
 
-// Medium Microverse Projector
-recipes.addShaped(<gregtech:machine:3002>, [
-    [<contenttweaker:microverse_vent>, <ore:circuitExtreme>, <contenttweaker:microverse_vent>],
-    [<ore:circuitExtreme>,            <gregtech:machine:3001>,           <ore:circuitExtreme>],
-    [<contenttweaker:microverse_vent>, <ore:circuitExtreme>, <contenttweaker:microverse_vent>]]);
-
-// Large Microverse Projector
-recipes.addShaped(<gregtech:machine:3003>, [
-    [<contenttweaker:microverse_vent>, <ore:circuitElite>, <contenttweaker:microverse_vent>],
-    [<ore:circuitElite>,             <gregtech:machine:3002>,            <ore:circuitElite>],
-    [<contenttweaker:microverse_vent>, <ore:circuitElite>, <contenttweaker:microverse_vent>]]);
+    <ore:multiblockController>.add(controller);
+}
 
 ///////////////////////////////////////////////
 ////////////  Multiblock Recipes  /////////////

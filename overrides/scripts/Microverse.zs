@@ -22,6 +22,8 @@ recipes.remove(<modularmachinery:blockcontroller>);
 <modularmachinery:blockcontroller>.addTooltip(format.red("Modular Machinery is getting removed in a future update."));
 <modularmachinery:blockcontroller>.addTooltip(format.red("Please use the new GregTech multiblocks instead. ('@Multiblock' in JEI)"));
 
+<ore:multiblockController>.add(<modularmachinery:blockcontroller>);
+
 //                 XXXXXXXXXX                            XXXXXXXXXX
 //              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
 //            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
