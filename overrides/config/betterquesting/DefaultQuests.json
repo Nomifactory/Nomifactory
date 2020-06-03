@@ -26644,13 +26644,13 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Medium Microverse Projector§r is a more powerful projector required for sending Tier Four through Tier Six Micro Miners into microverses.\n\nWhile some of the miners run on IV power, make a §6LuV Energy Input§r so you don\u0027t have to replace it later or accidentally try to run a Tier Six on IV power. Always check the voltage required on a recipe, as you will §close a miner§r if you can\u0027t supply enough power to complete the mission; ModMachines will continue to eat incoming power without making progress.\n\nWhen building the multiblock, be sure to place the §6Quantum Compressors§r to face the same direction as the controller block (this is the usual reason for the structure not forming).",
+          "desc:8": "The §3Medium Microverse Projector§r is a more powerful projector required for sending Tier Four through Tier Six Micro Miners into microverses.\n\nWhile some of the miners run on IV power, make a §6LuV Energy Input§r so you don\u0027t have to replace it later.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3002,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -26693,15 +26693,15 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3002,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 54,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "2:10": {
               "Count:3": 26,
@@ -26717,9 +26717,9 @@
             },
             "4:10": {
               "Count:3": 4,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_vent"
             },
             "5:10": {
               "Count:3": 1,
@@ -26729,21 +26729,21 @@
             },
             "6:10": {
               "Count:3": 1,
-              "Damage:2": 5,
+              "Damage:2": 764,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 710,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 6,
+              "Damage:2": 741,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockoutputbus"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
