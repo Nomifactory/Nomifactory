@@ -27059,7 +27059,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Lunar Mining Station§r is a large multiblock structure used for mining gases from the moon. It is an excellent (though not the only) source of §9Deuterium§r or §9Helium-3§r, depending on what kind of §6Rover§r you use.\n\nRovers only have a 10% chance to break while mining, so a stack of them will last quite a while.\n\nBecause this structure must be placed on the Moon, it is a good idea to use mechanisms like §aEnder Tanks§r or a §6Quantum Link Chamber§r for teleporting the fluids back to your base.\n\nMake sure to keep it chunk-loaded!\n\n",
+          "desc:8": "The §3Lunar Mining Station§r is a large multiblock structure used for mining gases from the moon. It is an excellent (though not the only) source of §9Deuterium§r or §9Helium-3§r, depending on what kind of §6Rover§r you use.\n\nRovers only have a 10% chance to break while mining, so a stack of them will last quite a while.\n\nBecause this structure must be placed on the Moon, it is a good idea to use mechanisms like §aEnder Tanks§r or a §6Quantum Link Chamber§r for teleporting the fluids back to your base.\n\nWhile both available recipes require MV power, you can use Energy Inputs of higher tiers to make the machine run faster at the cost of power efficiency.\n\nMake sure to keep it chunk-loaded!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27108,9 +27108,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3007,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 56,
@@ -27150,21 +27150,15 @@
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 743,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidoutputhatch"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 700,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
-            },
-            "9:10": {
-              "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
