@@ -14587,7 +14587,8 @@
       "preRequisites:11": [
         214,
         400,
-        385
+        385,
+        132
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -26639,7 +26640,8 @@
     },
     "407:10": {
       "preRequisites:11": [
-        386
+        386,
+        132
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -26941,7 +26943,8 @@
     },
     "411:10": {
       "preRequisites:11": [
-        386
+        386,
+        192
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -34089,7 +34092,8 @@
     },
     "549:10": {
       "preRequisites:11": [
-        154
+        89,
+        98
       ],
       "properties:10": {
         "betterquesting:10": {
