@@ -30,841 +30,841 @@ var id = 3000;
 var loc = "cryogenicairdistillation";
 
 val cryodist = Builder.start(loc, id)
-                    .withPattern(
-                        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
-                            .aisle(
-                                "FFFFFF",
-                                "FFFFFF",
-                                "FFFFFF",
-                                "FFFFFF",
-                                "FFFFFF",
-                                "FFCFFF")
-                            .aisle(
-                                "FFFFFF",
-                                "FFSSFF",
-                                "FS~~SF",
-                                "FS~~SF",
-                                "FFSSFF",
-                                "FFFFFF")
-                            .aisleRepeatable(9, 256,
-                                "      ",
-                                "  SS  ",
-                                " S~~S ",
-                                " S~~S ",
-                                "  SS  ",
-                                "      ")
-                            .aisle(
-                                "      ",
-                                "      ",
-                                "  SS  ",
-                                "  SS  ",
-                                "      ",
-                                "      ")
-                            .where('C', IBlockMatcher.controller(loc))
-                            .where(' ', IBlockMatcher.ANY)
-                            .where('~', IBlockMatcher.AIR)
-                            .where('S', <metastate:gregtech:metal_casing:4>)
-                            .whereOr('F', <metastate:gregtech:metal_casing:3> as IBlockMatcher,
-                                          IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-                                                                                MultiblockAbility.IMPORT_FLUIDS,
-                                                                                MultiblockAbility.EXPORT_FLUIDS))
-                            .build())
-                    .addDesign(
-                        FactoryMultiblockShapeInfo.start()
-                            .aisle(
-                                "FFFFF0",
-                                "FFFFFF",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ")
-                            .aisle(
-                                "FFFFF0",
-                                "FFSSFF",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "      ")
-                            .aisle(
-                                "CFFFF0",
-                                "FS  SF",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                "  SS  ")
-                            .aisle(
-                                "IFFFF@",
-                                "FS  SF",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                " S  S ",
-                                "  SS  ")
-                            .aisle(
-                                "FFFFF1",
-                                "FFSSFF",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "  SS  ",
-                                "      ")
-                            .aisle(
-                                "FFFFF2",
-                                "FFFFFF",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ",
-                                "      ")
-                            .where('C', IBlockInfo.controller(loc))
-                            .where(' ', IBlockInfo.EMPTY)
-                            .where('~', IBlockInfo.EMPTY)
-                            .where('F', <metastate:gregtech:metal_casing:3>)
-                            .where('S', <metastate:gregtech:metal_casing:4>)
-                            .where('I', MetaTileEntities.FLUID_IMPORT_HATCH[3], IFacing.west())
-                            .where('@', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.east())
-                            .where('0', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.east())
-                            .where('1', MetaTileEntities.FLUID_EXPORT_HATCH[2], IFacing.east())
-                            .where('2', MetaTileEntities.FLUID_EXPORT_HATCH[3], IFacing.east())
-                            .build())
-                    .withRecipeMap(
-                        FactoryRecipeMap.start(loc)
-                                        .minFluidInputs(1)
-                                        .maxFluidInputs(1)
-                                        .maxFluidOutputs(6)
-                                        .build())
-                    .withTexture(Textures.FROST_PROOF_CASING)
-                    .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
+            .aisle(
+                "FFFFFF",
+                "FFFFFF",
+                "FFFFFF",
+                "FFFFFF",
+                "FFFFFF",
+                "FFCFFF")
+            .aisle(
+                "FFFFFF",
+                "FFSSFF",
+                "FS~~SF",
+                "FS~~SF",
+                "FFSSFF",
+                "FFFFFF")
+            .aisleRepeatable(9, 256,
+                "      ",
+                "  SS  ",
+                " S~~S ",
+                " S~~S ",
+                "  SS  ",
+                "      ")
+            .aisle(
+                "      ",
+                "      ",
+                "  SS  ",
+                "  SS  ",
+                "      ",
+                "      ")
+            .where('C', IBlockMatcher.controller(loc))
+            .where(' ', IBlockMatcher.ANY)
+            .where('~', IBlockMatcher.AIR)
+            .where('S', <metastate:gregtech:metal_casing:4>)
+            .whereOr('F', <metastate:gregtech:metal_casing:3> as IBlockMatcher,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
+                                                                MultiblockAbility.IMPORT_FLUIDS,
+                                                                MultiblockAbility.EXPORT_FLUIDS))
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                "FFFFF0",
+                "FFFFFF",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ")
+            .aisle(
+                "FFFFF0",
+                "FFSSFF",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "      ")
+            .aisle(
+                "CFFFF0",
+                "FS  SF",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                "  SS  ")
+            .aisle(
+                "IFFFF@",
+                "FS  SF",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                " S  S ",
+                "  SS  ")
+            .aisle(
+                "FFFFF1",
+                "FFSSFF",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "  SS  ",
+                "      ")
+            .aisle(
+                "FFFFF2",
+                "FFFFFF",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ",
+                "      ")
+            .where('C', IBlockInfo.controller(loc))
+            .where(' ', IBlockInfo.EMPTY)
+            .where('~', IBlockInfo.EMPTY)
+            .where('F', <metastate:gregtech:metal_casing:3>)
+            .where('S', <metastate:gregtech:metal_casing:4>)
+            .where('I', MetaTileEntities.FLUID_IMPORT_HATCH[3], IFacing.west())
+            .where('@', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.east())
+            .where('0', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.east())
+            .where('1', MetaTileEntities.FLUID_EXPORT_HATCH[2], IFacing.east())
+            .where('2', MetaTileEntities.FLUID_EXPORT_HATCH[3], IFacing.east())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minFluidInputs(1)
+                        .maxFluidInputs(1)
+                        .maxFluidOutputs(6)
+                        .build())
+    .withTexture(Textures.FROST_PROOF_CASING)
+    .buildAndRegister() as Multiblock;
 
 id += 1;
 loc = "small_microverse";
 
 val small_microverse = Builder.start(loc, id)
-                        .withPattern(
-                            FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
-                                .aisle(
-                                        "CCC",
-                                        "CGC",
-                                        "CSC")
-                                .aisle(
-                                        "CVC",
-                                        "G*G",
-                                        "CCC")
-                                .aisle(
-                                        "CCC",
-                                        "CGC",
-                                        "CCC")
-                                .where('S', IBlockMatcher.controller(loc))
-                                .where('G', <metastate:extrautils2:ineffableglass:2>)
-                                .where('V', <contenttweaker:microverse_vent>)
-                                .where('*', <extendedcrafting:compressor>)
-                                .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
-                                              IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-                                                                                    MultiblockAbility.IMPORT_FLUIDS,
-                                                                                    MultiblockAbility.IMPORT_ITEMS,
-                                                                                    MultiblockAbility.EXPORT_ITEMS))
-                                .build())
-                        .addDesign(
-                            FactoryMultiblockShapeInfo.start()
-                                .aisle(
-                                        "FCC",
-                                        "CGC",
-                                        "CCC")
-                                .aisle(
-                                        "SC@",
-                                        "G*G",
-                                        "CVC")
-                                .aisle(
-                                        "ICO",
-                                        "CGC",
-                                        "CCC")
-                                .where('S', IBlockInfo.controller(loc))
-                                .where('C', <contenttweaker:microverse_casing>)
-                                .where('G', <metastate:extrautils2:ineffableglass:2>)
-                                .where('V', <contenttweaker:microverse_vent>)
-                                .where('*', <extendedcrafting:compressor>)
-                                .where('@', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.east())
-                                .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.east())
-                                .where('F', MetaTileEntities.FLUID_IMPORT_HATCH[2], IFacing.west())
-                                .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-                                .build())
-                        .withRecipeMap(
-                            FactoryRecipeMap.start(loc)
-                                            .maxFluidInputs(1)
-                                            .minInputs(2)
-                                            .maxInputs(3)
-                                            .minOutputs(1)
-                                            .maxOutputs(15)
-                                            .build())
-                        .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
+            .aisle(
+                    "CCC",
+                    "CGC",
+                    "CSC")
+            .aisle(
+                    "CVC",
+                    "G*G",
+                    "CCC")
+            .aisle(
+                    "CCC",
+                    "CGC",
+                    "CCC")
+            .where('S', IBlockMatcher.controller(loc))
+            .where('G', <metastate:extrautils2:ineffableglass:2>)
+            .where('V', <contenttweaker:microverse_vent>)
+            .where('*', <extendedcrafting:compressor>)
+            .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
+                                                                MultiblockAbility.IMPORT_FLUIDS,
+                                                                MultiblockAbility.IMPORT_ITEMS,
+                                                                MultiblockAbility.EXPORT_ITEMS))
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                    "FCC",
+                    "CGC",
+                    "CCC")
+            .aisle(
+                    "SC@",
+                    "G*G",
+                    "CVC")
+            .aisle(
+                    "ICO",
+                    "CGC",
+                    "CCC")
+            .where('S', IBlockInfo.controller(loc))
+            .where('C', <contenttweaker:microverse_casing>)
+            .where('G', <metastate:extrautils2:ineffableglass:2>)
+            .where('V', <contenttweaker:microverse_vent>)
+            .where('*', <extendedcrafting:compressor>)
+            .where('@', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.east())
+            .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.east())
+            .where('F', MetaTileEntities.FLUID_IMPORT_HATCH[2], IFacing.west())
+            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .maxFluidInputs(1)
+                        .minInputs(2)
+                        .maxInputs(3)
+                        .minOutputs(1)
+                        .maxOutputs(15)
+                        .build())
+    .buildAndRegister() as Multiblock;
 
 id += 1;
 loc = "medium_microverse";
 
 val medium_microverse = Builder.start(loc, id)
-                        .withPattern(
-                            FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
-                                .aisle(
-                                        "CCCCC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CCSCC")
-                                .aisle(
-                                        "CVCVC",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "CCCCC")
-                                .aisle(
-                                        "CCCCC",
-                                        "GDDDG",
-                                        "GD*DG",
-                                        "GDDDG",
-                                        "CCCCC")
-                                .aisle(
-                                        "CVCVC",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "CCCCC")
-                                .aisle(
-                                        "CCCCC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CCCCC")
-                                .where('S', IBlockMatcher.controller(loc))
-                                .where('D', <metastate:chisel:diamond:3>)
-                                .where('G', <metastate:extrautils2:ineffableglass:2>)
-                                .where('V', <contenttweaker:microverse_vent>)
-                                .where('*', <extendedcrafting:compressor>)
-                                .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
-                                              IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-                                                                                  MultiblockAbility.IMPORT_ITEMS,
-                                                                                  MultiblockAbility.EXPORT_ITEMS))
-                                .build())
-                        .addDesign(
-                            FactoryMultiblockShapeInfo.start()
-                                .aisle(
-                                        "CCCCC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CCCCC")
-                                .aisle(
-                                        "ICCCC",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "CVCVC")
-                                .aisle(
-                                        "SCCC@",
-                                        "GDDDG",
-                                        "GD*DG",
-                                        "GDDDG",
-                                        "CCCCC")
-                                .aisle(
-                                        "OCCCC",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "GDDDG",
-                                        "CVCVC")
-                                .aisle(
-                                        "CCCCC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CGGGC",
-                                        "CCCCC")
-                                .where('S', IBlockInfo.controller(loc))
-                                .where('C', <contenttweaker:microverse_casing>)
-                                .where('G', <metastate:extrautils2:ineffableglass:2>)
-                                .where('V', <contenttweaker:microverse_vent>)
-                                .where('D', <metastate:chisel:diamond:3>)
-                                .where('*', <extendedcrafting:compressor>)
-                                .where('@', MetaTileEntities.ENERGY_INPUT_HATCH[4], IFacing.east())
-                                .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-                                .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.west())
-                                .build())
-                        .withRecipeMap(
-                            FactoryRecipeMap.start(loc)
-                                            .minInputs(2)
-                                            .maxInputs(6)
-                                            .minOutputs(1)
-                                            .maxOutputs(15)
-                                            .build())
-                        .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
+            .aisle(
+                    "CCCCC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CCSCC")
+            .aisle(
+                    "CVCVC",
+                    "GDDDG",
+                    "GDDDG",
+                    "GDDDG",
+                    "CCCCC")
+            .aisle(
+                    "CCCCC",
+                    "GDDDG",
+                    "GD*DG",
+                    "GDDDG",
+                    "CCCCC")
+            .aisle(
+                    "CVCVC",
+                    "GDDDG",
+                    "GDDDG",
+                    "GDDDG",
+                    "CCCCC")
+            .aisle(
+                    "CCCCC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CCCCC")
+            .where('S', IBlockMatcher.controller(loc))
+            .where('D', <metastate:chisel:diamond:3>)
+            .where('G', <metastate:extrautils2:ineffableglass:2>)
+            .where('V', <contenttweaker:microverse_vent>)
+            .where('*', <extendedcrafting:compressor>)
+            .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
+                                                                MultiblockAbility.IMPORT_ITEMS,
+                                                                MultiblockAbility.EXPORT_ITEMS))
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                    "CCCCC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CCCCC")
+            .aisle(
+                    "ICCCC",
+                    "GDDDG",
+                    "GDDDG",
+                    "GDDDG",
+                    "CVCVC")
+            .aisle(
+                    "SCCC@",
+                    "GDDDG",
+                    "GD*DG",
+                    "GDDDG",
+                    "CCCCC")
+            .aisle(
+                    "OCCCC",
+                    "GDDDG",
+                    "GDDDG",
+                    "GDDDG",
+                    "CVCVC")
+            .aisle(
+                    "CCCCC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CGGGC",
+                    "CCCCC")
+            .where('S', IBlockInfo.controller(loc))
+            .where('C', <contenttweaker:microverse_casing>)
+            .where('G', <metastate:extrautils2:ineffableglass:2>)
+            .where('V', <contenttweaker:microverse_vent>)
+            .where('D', <metastate:chisel:diamond:3>)
+            .where('*', <extendedcrafting:compressor>)
+            .where('@', MetaTileEntities.ENERGY_INPUT_HATCH[4], IFacing.east())
+            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.west())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minInputs(2)
+                        .maxInputs(6)
+                        .minOutputs(1)
+                        .maxOutputs(15)
+                        .build())
+    .buildAndRegister() as Multiblock;
 
 id += 1;
 loc = "large_microverse";
 
 val large_microverse = Builder.start(loc, id)
-                        .withPattern(
-                            FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
-                            .aisle(
-                                "         ",
-                                "         ",
-                                "  CCCCC  ",
-                                "  CCCCC  ",
-                                "  CCCCC  ",
-                                "  CCCCC  ",
-                                "  CCSCC  ",
-                                "         ",
-                                "         ")
-                            .aisle(
-                                "         ",
-                                "  CGGGC  ",
-                                " CDDDDDC ",
-                                " GDDDDDG ",
-                                " GDDDDDG ",
-                                " GDDDDDG ",
-                                " CDDDDDC ",
-                                "  CGGGC  ",
-                                "         ")
-                            .aisle(
-                                "  CCCCC  ",
-                                " CDDDDDC ",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                " CDDDDDC ",
-                                "  CCCCC  ")
-                            .aisleRepeatable(3,
-                                "  CGGGC  ",
-                                " GDDDDDG ",
-                                "CDDDDDDDC",
-                                "GDDQQQDDG",
-                                "GDDQQQDDG",
-                                "GDDQQQDDG",
-                                "CDDDDDDDC",
-                                " GDDDDDG ",
-                                "  CGGGC  ")
-                            .aisle(
-                                "  CCCCC  ",
-                                " CDDDDDC ",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                "CDDDDDDDC",
-                                " CDDDDDC ",
-                                "  CCCCC  ")
-                            .aisle(
-                                "         ",
-                                "  CGGGC  ",
-                                " CDDDDDC ",
-                                " GDDDDDG ",
-                                " GDDDDDG ",
-                                " GDDDDDG ",
-                                " CDDDDDC ",
-                                "  CGGGC  ",
-                                "         ")
-                            .aisle(
-                                "         ",
-                                "         ",
-                                "  CCCCC  ",
-                                "  CVCVC  ",
-                                "  CCCCC  ",
-                                "  CVCVC  ",
-                                "  CCCCC  ",
-                                "         ",
-                                "         ")
-                            .where('S', IBlockMatcher.controller(loc))
-                            .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
-                                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS,
-                                                                                MultiblockAbility.EXPORT_ITEMS,
-                                                                                MultiblockAbility.INPUT_ENERGY))
-                            .where('V', <contenttweaker:microverse_vent>)
-                            .where('G', <metastate:extrautils2:ineffableglass:2>)
-                            .where('D', <metastate:chisel:diamond:3>)
-                            .where('Q', <extendedcrafting:compressor>)
-                            .build())
-                        .addDesign(
-                            FactoryMultiblockShapeInfo.start()
-                                .aisle(
-                                    "         ",
-                                    "         ",
-                                    "  CCCCC  ",
-                                    "  CGGGC  ",
-                                    "  CGGGC  ",
-                                    "  CGGGC  ",
-                                    "  CCCCC  ",
-                                    "         ",
-                                    "         ")
-                                .aisle(
-                                    "         ",
-                                    "  CGGGC  ",
-                                    " CDDDDDC ",
-                                    " GDDDDDG ",
-                                    " GDDDDDG ",
-                                    " GDDDDDG ",
-                                    " CDDDDDC ",
-                                    "  CGGGC  ",
-                                    "         ")
-                                .aisle(
-                                    "  CCCCC  ",
-                                    " CDDDDDC ",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    " CDDDDDC ",
-                                    "  CCCCC  ")
-                                .aisle(
-                                    "  ICCCC  ",
-                                    " GDDDDDG ",
-                                    "CDDDDDDDC",
-                                    "GDDQQQDDG",
-                                    "GDDQQQDDG",
-                                    "GDDQQQDDG",
-                                    "CDDDDDDDC",
-                                    " GDDDDDG ",
-                                    "  CVCVC  ")
-                                .aisle(
-                                    "  SCCCE  ",
-                                    " GDDDDDG ",
-                                    "CDDDDDDDC",
-                                    "GDDQQQDDG",
-                                    "GDDQQQDDG",
-                                    "GDDQQQDDG",
-                                    "CDDDDDDDC",
-                                    " GDDDDDG ",
-                                    "  CCCCC  ")
-                                .aisle(
-                                    "  OCCCC  ",
-                                    " GDDDDDG ",
-                                    "CDDDDDDDC",
-                                    "GDDQQQDDG",
-                                    "GDDQQQDDG",
-                                    "GDDQQQDDG",
-                                    "CDDDDDDDC",
-                                    " GDDDDDG ",
-                                    "  CVCVC  ")
-                                .aisle(
-                                    "  CCCCC  ",
-                                    " CDDDDDC ",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    "CDDDDDDDC",
-                                    " CDDDDDC ",
-                                    "  CCCCC  ")
-                                .aisle(
-                                    "         ",
-                                    "  CGGGC  ",
-                                    " CDDDDDC ",
-                                    " GDDDDDG ",
-                                    " GDDDDDG ",
-                                    " GDDDDDG ",
-                                    " CDDDDDC ",
-                                    "  CGGGC  ",
-                                    "         ")
-                                .aisle(
-                                    "         ",
-                                    "         ",
-                                    "  CCCCC  ",
-                                    "  CGGGC  ",
-                                    "  CGGGC  ",
-                                    "  CGGGC  ",
-                                    "  CCCCC  ",
-                                    "         ",
-                                    "         ")
-                                .where('S', IBlockInfo.controller(loc))
-                                .where('C', <contenttweaker:microverse_casing>)
-                                .where('V', <contenttweaker:microverse_vent>)
-                                .where('G', <metastate:extrautils2:ineffableglass:2>)
-                                .where('D', <metastate:chisel:diamond:3>)
-                                .where('Q', <extendedcrafting:compressor>)
-                                .where('I', MetaTileEntities.ITEM_IMPORT_BUS[3], IFacing.west())
-                                .where('E', MetaTileEntities.ENERGY_INPUT_HATCH[8], IFacing.east())
-                                .where('O', MetaTileEntities.ITEM_EXPORT_BUS[4], IFacing.west())
-                                .build())
-                        .withRecipeMap(
-                            FactoryRecipeMap.start(loc)
-                                            .minInputs(2)
-                                            .maxInputs(8)
-                                            .minOutputs(1)
-                                            .maxOutputs(16)
-                                            .build())
-                        .withTexture(ICubeRenderer.nonSided("contenttweaker:blocks/microverse_casing"))
-                        .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
+        .aisle(
+            "         ",
+            "         ",
+            "  CCCCC  ",
+            "  CCCCC  ",
+            "  CCCCC  ",
+            "  CCCCC  ",
+            "  CCSCC  ",
+            "         ",
+            "         ")
+        .aisle(
+            "         ",
+            "  CGGGC  ",
+            " CDDDDDC ",
+            " GDDDDDG ",
+            " GDDDDDG ",
+            " GDDDDDG ",
+            " CDDDDDC ",
+            "  CGGGC  ",
+            "         ")
+        .aisle(
+            "  CCCCC  ",
+            " CDDDDDC ",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            " CDDDDDC ",
+            "  CCCCC  ")
+        .aisleRepeatable(3,
+            "  CGGGC  ",
+            " GDDDDDG ",
+            "CDDDDDDDC",
+            "GDDQQQDDG",
+            "GDDQQQDDG",
+            "GDDQQQDDG",
+            "CDDDDDDDC",
+            " GDDDDDG ",
+            "  CGGGC  ")
+        .aisle(
+            "  CCCCC  ",
+            " CDDDDDC ",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            "CDDDDDDDC",
+            " CDDDDDC ",
+            "  CCCCC  ")
+        .aisle(
+            "         ",
+            "  CGGGC  ",
+            " CDDDDDC ",
+            " GDDDDDG ",
+            " GDDDDDG ",
+            " GDDDDDG ",
+            " CDDDDDC ",
+            "  CGGGC  ",
+            "         ")
+        .aisle(
+            "         ",
+            "         ",
+            "  CCCCC  ",
+            "  CVCVC  ",
+            "  CCCCC  ",
+            "  CVCVC  ",
+            "  CCCCC  ",
+            "         ",
+            "         ")
+        .where('S', IBlockMatcher.controller(loc))
+        .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
+                        IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS,
+                                                            MultiblockAbility.EXPORT_ITEMS,
+                                                            MultiblockAbility.INPUT_ENERGY))
+        .where('V', <contenttweaker:microverse_vent>)
+        .where('G', <metastate:extrautils2:ineffableglass:2>)
+        .where('D', <metastate:chisel:diamond:3>)
+        .where('Q', <extendedcrafting:compressor>)
+        .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                "         ",
+                "         ",
+                "  CCCCC  ",
+                "  CGGGC  ",
+                "  CGGGC  ",
+                "  CGGGC  ",
+                "  CCCCC  ",
+                "         ",
+                "         ")
+            .aisle(
+                "         ",
+                "  CGGGC  ",
+                " CDDDDDC ",
+                " GDDDDDG ",
+                " GDDDDDG ",
+                " GDDDDDG ",
+                " CDDDDDC ",
+                "  CGGGC  ",
+                "         ")
+            .aisle(
+                "  CCCCC  ",
+                " CDDDDDC ",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                " CDDDDDC ",
+                "  CCCCC  ")
+            .aisle(
+                "  ICCCC  ",
+                " GDDDDDG ",
+                "CDDDDDDDC",
+                "GDDQQQDDG",
+                "GDDQQQDDG",
+                "GDDQQQDDG",
+                "CDDDDDDDC",
+                " GDDDDDG ",
+                "  CVCVC  ")
+            .aisle(
+                "  SCCCE  ",
+                " GDDDDDG ",
+                "CDDDDDDDC",
+                "GDDQQQDDG",
+                "GDDQQQDDG",
+                "GDDQQQDDG",
+                "CDDDDDDDC",
+                " GDDDDDG ",
+                "  CCCCC  ")
+            .aisle(
+                "  OCCCC  ",
+                " GDDDDDG ",
+                "CDDDDDDDC",
+                "GDDQQQDDG",
+                "GDDQQQDDG",
+                "GDDQQQDDG",
+                "CDDDDDDDC",
+                " GDDDDDG ",
+                "  CVCVC  ")
+            .aisle(
+                "  CCCCC  ",
+                " CDDDDDC ",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                "CDDDDDDDC",
+                " CDDDDDC ",
+                "  CCCCC  ")
+            .aisle(
+                "         ",
+                "  CGGGC  ",
+                " CDDDDDC ",
+                " GDDDDDG ",
+                " GDDDDDG ",
+                " GDDDDDG ",
+                " CDDDDDC ",
+                "  CGGGC  ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "  CCCCC  ",
+                "  CGGGC  ",
+                "  CGGGC  ",
+                "  CGGGC  ",
+                "  CCCCC  ",
+                "         ",
+                "         ")
+            .where('S', IBlockInfo.controller(loc))
+            .where('C', <contenttweaker:microverse_casing>)
+            .where('V', <contenttweaker:microverse_vent>)
+            .where('G', <metastate:extrautils2:ineffableglass:2>)
+            .where('D', <metastate:chisel:diamond:3>)
+            .where('Q', <extendedcrafting:compressor>)
+            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[3], IFacing.west())
+            .where('E', MetaTileEntities.ENERGY_INPUT_HATCH[8], IFacing.east())
+            .where('O', MetaTileEntities.ITEM_EXPORT_BUS[4], IFacing.west())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minInputs(2)
+                        .maxInputs(8)
+                        .minOutputs(1)
+                        .maxOutputs(16)
+                        .build())
+    .withTexture(ICubeRenderer.nonSided("contenttweaker:blocks/microverse_casing"))
+    .buildAndRegister() as Multiblock;
 
 id += 1;
 loc = "oildrillingrig";
 
 val oildrillingrig = Builder.start(loc, id)
-                    .withPattern(
-                        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.DOWN)
-                            .aisleRepeatable(3,
-                                "     ",
-                                "     ",
-                                "  F  ",
-                                "     ",
-                                "     ")
-                            .aisleRepeatable(6,
-                                "     ",
-                                "     ",
-                                " FFF ",
-                                "     ",
-                                "     ")
-                            .aisle(
-                                "     ",
-                                " ACA ",
-                                " CGC ",
-                                " ASA ",
-                                "     ")
-                            .aisle(
-                                "CACAC",
-                                "AGGGA",
-                                "CGPGC",
-                                "AGGGA",
-                                "CACAC")
-                            .aisleRepeatable(2,
-                                "F   F",
-                                "     ",
-                                "  P  ",
-                                "     ",
-                                "F   F")
-                            .aisleRepeatable(9, 256,
-                                "     ",
-                                "     ",
-                                "  P  ",
-                                "     ",
-                                "     ")
-                            .where('S', IBlockMatcher.controller(loc))
-                            .where(' ', IBlockMatcher.ANY)
-                            .where('A', <metastate:gregtech:boiler_casing:1>)
-                            .where('G', <metastate:gregtech:turbine_casing:1>)
-                            .where('F', <gregtech:frame_steel>)
-                            .where('P', <inspirations:pipe>)
-                            .whereOr('C', <metastate:gregtech:metal_casing:4> as IBlockMatcher,
-                                          IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-                                                                                MultiblockAbility.IMPORT_ITEMS,
-                                                                                MultiblockAbility.IMPORT_FLUIDS,
-                                                                                MultiblockAbility.EXPORT_FLUIDS))
-                            .build())
-                    .addDesign(
-                        FactoryMultiblockShapeInfo.start()
-                            .aisle(
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "F   F",
-                                "F   F",
-                                "CACAC",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ")
-                            .aisle(
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "AGGGA",
-                                " AEA ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "     ",
-                                "     ",
-                                "     ")
-                            .aisle(
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "  P  ",
-                                "IGPGC",
-                                " SGQ ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ")
-                            .aisle(
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "AGGGA",
-                                " AOA ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "  F  ",
-                                "     ",
-                                "     ",
-                                "     ")
-                            .aisle(
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "F   F",
-                                "F   F",
-                                "CACAC",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ",
-                                "     ")
-                            .where('S', IBlockInfo.controller(loc))
-                            .where(' ', IBlockInfo.EMPTY)
-                            .where('C', <metastate:gregtech:metal_casing:4>)
-                            .where('F', <metastate:gregtech:frame_steel:0>)
-                            .where('A', <metastate:gregtech:boiler_casing:1>)
-                            .where('G', <metastate:gregtech:turbine_casing:1>)
-                            .where('P', <metastate:inspirations:pipe:0>)
-                            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-                            .where('E', MetaTileEntities.ENERGY_INPUT_HATCH[4], IFacing.north())
-                            .where('Q', MetaTileEntities.FLUID_IMPORT_HATCH[1], IFacing.east())
-                            .where('O', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.south())
-                            .build())
-                    .withRecipeMap(
-                        FactoryRecipeMap.start(loc)
-                                        .minFluidInputs(1)
-                                        .maxFluidInputs(1)
-                                        .minFluidOutputs(1)
-                                        .maxFluidOutputs(1)
-                                        .minInputs(1)
-                                        .maxInputs(1)
-                                        .minOutputs(0)
-                                        .maxOutputs(0)
-                                        .build())
-                    .withTexture(Textures.SOLID_STEEL_CASING)
-                    .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.DOWN)
+            .aisleRepeatable(3,
+                "     ",
+                "     ",
+                "  F  ",
+                "     ",
+                "     ")
+            .aisleRepeatable(6,
+                "     ",
+                "     ",
+                " FFF ",
+                "     ",
+                "     ")
+            .aisle(
+                "     ",
+                " ACA ",
+                " CGC ",
+                " ASA ",
+                "     ")
+            .aisle(
+                "CACAC",
+                "AGGGA",
+                "CGPGC",
+                "AGGGA",
+                "CACAC")
+            .aisleRepeatable(2,
+                "F   F",
+                "     ",
+                "  P  ",
+                "     ",
+                "F   F")
+            .aisleRepeatable(9, 256,
+                "     ",
+                "     ",
+                "  P  ",
+                "     ",
+                "     ")
+            .where('S', IBlockMatcher.controller(loc))
+            .where(' ', IBlockMatcher.ANY)
+            .where('A', <metastate:gregtech:boiler_casing:1>)
+            .where('G', <metastate:gregtech:turbine_casing:1>)
+            .where('F', <gregtech:frame_steel>)
+            .where('P', <inspirations:pipe>)
+            .whereOr('C', <metastate:gregtech:metal_casing:4> as IBlockMatcher,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
+                                                                MultiblockAbility.IMPORT_ITEMS,
+                                                                MultiblockAbility.IMPORT_FLUIDS,
+                                                                MultiblockAbility.EXPORT_FLUIDS))
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "F   F",
+                "F   F",
+                "CACAC",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ")
+            .aisle(
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "AGGGA",
+                " AEA ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "     ",
+                "     ",
+                "     ")
+            .aisle(
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "  P  ",
+                "IGPGC",
+                " SGQ ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ")
+            .aisle(
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "AGGGA",
+                " AOA ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "  F  ",
+                "     ",
+                "     ",
+                "     ")
+            .aisle(
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "F   F",
+                "F   F",
+                "CACAC",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ",
+                "     ")
+            .where('S', IBlockInfo.controller(loc))
+            .where(' ', IBlockInfo.EMPTY)
+            .where('C', <metastate:gregtech:metal_casing:4>)
+            .where('F', <metastate:gregtech:frame_steel:0>)
+            .where('A', <metastate:gregtech:boiler_casing:1>)
+            .where('G', <metastate:gregtech:turbine_casing:1>)
+            .where('P', <metastate:inspirations:pipe:0>)
+            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .where('E', MetaTileEntities.ENERGY_INPUT_HATCH[4], IFacing.north())
+            .where('Q', MetaTileEntities.FLUID_IMPORT_HATCH[1], IFacing.east())
+            .where('O', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.south())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minFluidInputs(1)
+                        .maxFluidInputs(1)
+                        .minFluidOutputs(1)
+                        .maxFluidOutputs(1)
+                        .minInputs(1)
+                        .maxInputs(1)
+                        .minOutputs(0)
+                        .maxOutputs(0)
+                        .build())
+    .withTexture(Textures.SOLID_STEEL_CASING)
+    .buildAndRegister() as Multiblock;
 
 id += 1;
 loc = "naquadahreactormk1";
 
 val naquadahreactormk1 = Builder.start(loc, id)
-                        .withPattern(
-                            FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
-                                .aisle(
-                                        "CCC",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "CSC")
-                                .aisle(
-                                        "CCC",
-                                        "GBG",
-                                        "GBG",
-                                        "GBG",
-                                        "CCC")
-                                .aisle(
-                                        "CCC",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "CCC")
-                                .where('S', IBlockMatcher.controller(loc))
-                                .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
-                                                IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS,
-                                                                                    MultiblockAbility.EXPORT_ITEMS,
-                                                                                    MultiblockAbility.OUTPUT_ENERGY))
-                                .where('P', <appliedenergistics2:spatial_pylon>)
-                                .where('G', <nuclearcraft:reactor_casing_transparent>)
-                                .where('B', <metastate:extendedcrafting:trimmed:5>)
-                                .build())
-                        .addDesign(
-                            FactoryMultiblockShapeInfo.start()
-                                .aisle(
-                                    "ICC",
-                                    "PGP",
-                                    "PGP",
-                                    "PGP",
-                                    "CCC")
-                                .aisle(
-                                    "SCE",
-                                    "GBG",
-                                    "GBG",
-                                    "GBG",
-                                    "CCC")
-                                .aisle(
-                                    "OCC",
-                                    "PGP",
-                                    "PGP",
-                                    "PGP",
-                                    "CCC")
-                                .where('S', IBlockInfo.controller(loc))
-                                .where('C', <contenttweaker:microverse_casing>)
-                                .where('G', <metastate:nuclearcraft:reactor_casing_transparent:0>)
-                                .where('P', <metastate:appliedenergistics2:spatial_pylon:0>)
-                                .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.west())
-                                .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-                                .where('E', MetaTileEntities.ENERGY_OUTPUT_HATCH[4], IFacing.east())
-                                .where('B', <metastate:extendedcrafting:trimmed:5>)
-                                .build())
-                        .withRecipeMap(
-                            FactoryRecipeMap.start(loc)
-                                            .minInputs(1)
-                                            .maxInputs(1)
-                                            .minOutputs(1)
-                                            .maxOutputs(1)
-                                            .build())
-                        .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
+            .aisle(
+                    "CCC",
+                    "PGP",
+                    "PGP",
+                    "PGP",
+                    "CSC")
+            .aisle(
+                    "CCC",
+                    "GBG",
+                    "GBG",
+                    "GBG",
+                    "CCC")
+            .aisle(
+                    "CCC",
+                    "PGP",
+                    "PGP",
+                    "PGP",
+                    "CCC")
+            .where('S', IBlockMatcher.controller(loc))
+            .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS,
+                                                                MultiblockAbility.EXPORT_ITEMS,
+                                                                MultiblockAbility.OUTPUT_ENERGY))
+            .where('P', <appliedenergistics2:spatial_pylon>)
+            .where('G', <nuclearcraft:reactor_casing_transparent>)
+            .where('B', <metastate:extendedcrafting:trimmed:5>)
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                "ICC",
+                "PGP",
+                "PGP",
+                "PGP",
+                "CCC")
+            .aisle(
+                "SCE",
+                "GBG",
+                "GBG",
+                "GBG",
+                "CCC")
+            .aisle(
+                "OCC",
+                "PGP",
+                "PGP",
+                "PGP",
+                "CCC")
+            .where('S', IBlockInfo.controller(loc))
+            .where('C', <contenttweaker:microverse_casing>)
+            .where('G', <metastate:nuclearcraft:reactor_casing_transparent:0>)
+            .where('P', <metastate:appliedenergistics2:spatial_pylon:0>)
+            .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.west())
+            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .where('E', MetaTileEntities.ENERGY_OUTPUT_HATCH[4], IFacing.east())
+            .where('B', <metastate:extendedcrafting:trimmed:5>)
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minInputs(1)
+                        .maxInputs(1)
+                        .minOutputs(1)
+                        .maxOutputs(1)
+                        .build())
+    .buildAndRegister() as Multiblock;
 
 id += 1; 
 loc = "naquadahreactormk2";
  
 val naquadahreactormk2 = Builder.start(loc,id)
-                            .withPattern(
-                                FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
-                                    .aisle(
-                                        "CCC",
-                                        "CCC",
-                                        "CSC")
-                                    .aisleRepeatable(5,
-                                        "PGP",
-                                        "GOG",
-                                        "PGP")
-                                    .aisle(
-                                        "CCC",
-                                        "CCC",
-                                        "CCC")
-                                    .where('S', IBlockMatcher.controller(loc))
-                                    .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
-                                                    IBlockMatcher.abilityPartPredicate(MultiblockAbility.OUTPUT_ENERGY,
-                                                                                        MultiblockAbility.IMPORT_ITEMS,
-                                                                                        MultiblockAbility.EXPORT_ITEMS))
-                                    .where('O', <metastate:extendedcrafting:storage:4>)
-                                    .where('P', <appliedenergistics2:spatial_pylon>)
-                                    .where('G', <nuclearcraft:reactor_casing_transparent>)
-                                    .build())
-                            .addDesign(
-                                FactoryMultiblockShapeInfo.start()
-                                    .aisle(
-                                        "ACC",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "CCC")
-                                    .aisle(
-                                        "SCE",
-                                        "GOG",
-                                        "GOG",
-                                        "GOG",
-                                        "GOG",
-                                        "GOG",
-                                        "CCC")
-                                    .aisle(
-                                        "ICC",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "PGP",
-                                        "CCC")
-                                    .where('S', IBlockInfo.controller(loc))
-                                    .where('C', <contenttweaker:microverse_casing>)
-                                    .where('G', <nuclearcraft:reactor_casing_transparent>)
-                                    .where('O', <metastate:extendedcrafting:storage:4>)
-                                    .where('P', <appliedenergistics2:spatial_pylon>)
-                                    .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-                                    .where('A', MetaTileEntities.ITEM_EXPORT_BUS[1], IFacing.west())
-                                    .where('E', MetaTileEntities.ENERGY_OUTPUT_HATCH[8], IFacing.east())
-                                    .build())
-                            .withRecipeMap(
-                                FactoryRecipeMap.start(loc)
-                                                .minOutputs(1)
-                                                .maxOutputs(1)
-                                                .minInputs(1)
-                                                .maxInputs(1)
-                                                .build())
-                            .withTexture(ICubeRenderer.nonSided("contenttweaker:blocks/microverse_casing"))
-                            .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
+            .aisle(
+                "CCC",
+                "CCC",
+                "CSC")
+            .aisleRepeatable(5,
+                "PGP",
+                "GOG",
+                "PGP")
+            .aisle(
+                "CCC",
+                "CCC",
+                "CCC")
+            .where('S', IBlockMatcher.controller(loc))
+            .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.OUTPUT_ENERGY,
+                                                                MultiblockAbility.IMPORT_ITEMS,
+                                                                MultiblockAbility.EXPORT_ITEMS))
+            .where('O', <metastate:extendedcrafting:storage:4>)
+            .where('P', <appliedenergistics2:spatial_pylon>)
+            .where('G', <nuclearcraft:reactor_casing_transparent>)
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                "ACC",
+                "PGP",
+                "PGP",
+                "PGP",
+                "PGP",
+                "PGP",
+                "CCC")
+            .aisle(
+                "SCE",
+                "GOG",
+                "GOG",
+                "GOG",
+                "GOG",
+                "GOG",
+                "CCC")
+            .aisle(
+                "ICC",
+                "PGP",
+                "PGP",
+                "PGP",
+                "PGP",
+                "PGP",
+                "CCC")
+            .where('S', IBlockInfo.controller(loc))
+            .where('C', <contenttweaker:microverse_casing>)
+            .where('G', <nuclearcraft:reactor_casing_transparent>)
+            .where('O', <metastate:extendedcrafting:storage:4>)
+            .where('P', <appliedenergistics2:spatial_pylon>)
+            .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .where('A', MetaTileEntities.ITEM_EXPORT_BUS[1], IFacing.west())
+            .where('E', MetaTileEntities.ENERGY_OUTPUT_HATCH[8], IFacing.east())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minOutputs(1)
+                        .maxOutputs(1)
+                        .minInputs(1)
+                        .maxInputs(1)
+                        .build())
+    .withTexture(ICubeRenderer.nonSided("contenttweaker:blocks/microverse_casing"))
+    .buildAndRegister() as Multiblock;
 
 id += 1;
 loc = "lunarminingstation";
@@ -876,223 +876,223 @@ val onMoon as IBlockMatcher = function (state as IBlockWorldState) as bool {
 };
 
 val lunarminingstation = Builder.start(loc, id)
-                            .withPattern(
-                                FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
-                                    .aisle(
-                                        "    A    ",
-                                        "    A    ",
-                                        "    A    ",
-                                        "   LAL   ",
-                                        "AAAAAAAAA",
-                                        "   SAL   ",
-                                        "    A    ",
-                                        "    A    ",
-                                        "    A    ")
-                                    .aisle(
-                                        "         ",
-                                        "   E E   ",
-                                        "   L L   ",
-                                        " EL   LE ",
-                                        "         ",
-                                        " EL   LE ",
-                                        "   L L   ",
-                                        "   E E   ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "    E    ",
-                                        "   L L   ",
-                                        "  L   L  ",
-                                        " E     E ",
-                                        "  L   L  ",
-                                        "   L L   ",
-                                        "    E    ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "         ",
-                                        "   LLL   ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "   LLL   ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "         ",
-                                        "   LGL   ",
-                                        "  L   L  ",
-                                        "  G   G  ",
-                                        "  L   L  ",
-                                        "   LGL   ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "         ",
-                                        "   LLL   ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "   LLL   ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "         ",
-                                        "    L    ",
-                                        "   L L   ",
-                                        "  L   L  ",
-                                        "   L L   ",
-                                        "    L    ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "   BBB   ",
-                                        "   BBB   ",
-                                        "   BBB   ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "    M    ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .whereAnd('S', IBlockMatcher.controller(loc), onMoon)
-                                    .where('M', <minecraft:beacon>)
-                                    .where(' ', IBlockMatcher.ANY)
-                                    .where('B', <metastate:enderio:block_alloy_endergy:3>)
-                                    .where('G', <metastate:extrautils2:ineffableglass:3>)
-                                    .where('E', <metastate:enderio:block_alloy_endergy:5>)
-                                    .where('A', <metastate:actuallyadditions:block_misc:9>)
-                                    .whereOr('L', <metastate:gregtech:machine_casing:6>,
-                                                    IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-                                                                                        MultiblockAbility.EXPORT_FLUIDS,
-                                                                                        MultiblockAbility.IMPORT_ITEMS))
-                                    .build())
-                            .addDesign(
-                                FactoryMultiblockShapeInfo.start()
-                                    .aisle(
-                                        "    A    ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "    A    ",
-                                        "   E E   ",
-                                        "    E    ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "    A    ",
-                                        "   L L   ",
-                                        "   L L   ",
-                                        "  LLLLL ",
-                                        "   LGL   ",
-                                        "   LLL   ",
-                                        "    L    ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "   SAH   ",
-                                        " EL   LE ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "   L L   ",
-                                        "   BBB   ",
-                                        "         ")
-                                    .aisle(
-                                        "AAAAAAAAA",
-                                        "         ",
-                                        " E     E ",
-                                        "  L   L  ",
-                                        "  G   G  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "   BBB   ",
-                                        "    M    ")
-                                    .aisle(
-                                        "   QAO   ",
-                                        " EL   LE ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "  L   L  ",
-                                        "   L L   ",
-                                        "   BBB   ",
-                                        "         ")
-                                    .aisle(
-                                        "    A    ",
-                                        "   L L   ",
-                                        "   L L   ",
-                                        "  LLLLL  ",
-                                        "   LGL   ",
-                                        "   LLL   ",
-                                        "    L    ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "    A    ",
-                                        "   E E   ",
-                                        "    E    ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .aisle(
-                                        "    A    ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ",
-                                        "         ")
-                                    .where('S', IBlockInfo.controller(loc))
-                                    .where('A', <metastate:actuallyadditions:block_misc:9>)
-                                    .where(' ', IBlockInfo.EMPTY)
-                                    .where('E', <metastate:enderio:block_alloy_endergy:5>)
-                                    .where('L', <metastate:gregtech:machine_casing:6>)
-                                    .where('G', <metastate:extrautils2:ineffableglass:3>)
-                                    .where('B', <metastate:enderio:block_alloy_endergy:3>)
-                                    .where('M', <metastate:minecraft:beacon:0>)
-                                    .where('Q', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-                                    .where('O', MetaTileEntities.FLUID_EXPORT_HATCH[4], IFacing.east())
-                                    .where('H', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.east())
-                                    .build())
-                            .withRecipeMap(
-                                FactoryRecipeMap.start(loc)
-                                                .minInputs(1)
-                                                .maxInputs(1)
-                                                .minFluidOutputs(1)
-                                                .maxFluidOutputs(1)
-                                                .build())
-                            .buildAndRegister() as Multiblock;
+    .withPattern(
+        FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
+            .aisle(
+                "    A    ",
+                "    A    ",
+                "    A    ",
+                "   LAL   ",
+                "AAAAAAAAA",
+                "   SAL   ",
+                "    A    ",
+                "    A    ",
+                "    A    ")
+            .aisle(
+                "         ",
+                "   E E   ",
+                "   L L   ",
+                " EL   LE ",
+                "         ",
+                " EL   LE ",
+                "   L L   ",
+                "   E E   ",
+                "         ")
+            .aisle(
+                "         ",
+                "    E    ",
+                "   L L   ",
+                "  L   L  ",
+                " E     E ",
+                "  L   L  ",
+                "   L L   ",
+                "    E    ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "   LLL   ",
+                "  L   L  ",
+                "  L   L  ",
+                "  L   L  ",
+                "   LLL   ",
+                "         ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "   LGL   ",
+                "  L   L  ",
+                "  G   G  ",
+                "  L   L  ",
+                "   LGL   ",
+                "         ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "   LLL   ",
+                "  L   L  ",
+                "  L   L  ",
+                "  L   L  ",
+                "   LLL   ",
+                "         ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "    L    ",
+                "   L L   ",
+                "  L   L  ",
+                "   L L   ",
+                "    L    ",
+                "         ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "         ",
+                "   BBB   ",
+                "   BBB   ",
+                "   BBB   ",
+                "         ",
+                "         ",
+                "         ")
+            .aisle(
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "    M    ",
+                "         ",
+                "         ",
+                "         ",
+                "         ")
+            .whereAnd('S', IBlockMatcher.controller(loc), onMoon)
+            .where('M', <minecraft:beacon>)
+            .where(' ', IBlockMatcher.ANY)
+            .where('B', <metastate:enderio:block_alloy_endergy:3>)
+            .where('G', <metastate:extrautils2:ineffableglass:3>)
+            .where('E', <metastate:enderio:block_alloy_endergy:5>)
+            .where('A', <metastate:actuallyadditions:block_misc:9>)
+            .whereOr('L', <metastate:gregtech:machine_casing:6>,
+                            IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
+                                                                MultiblockAbility.EXPORT_FLUIDS,
+                                                                MultiblockAbility.IMPORT_ITEMS))
+            .build())
+    .addDesign(
+        FactoryMultiblockShapeInfo.start()
+            .aisle(
+                "    A    ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ")
+            .aisle(
+                "    A    ",
+                "   E E   ",
+                "    E    ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ")
+            .aisle(
+                "    A    ",
+                "   L L   ",
+                "   L L   ",
+                "  LLLLL ",
+                "   LGL   ",
+                "   LLL   ",
+                "    L    ",
+                "         ",
+                "         ",
+                "         ")
+            .aisle(
+                "   SAH   ",
+                " EL   LE ",
+                "  L   L  ",
+                "  L   L  ",
+                "  L   L  ",
+                "  L   L  ",
+                "   L L   ",
+                "   BBB   ",
+                "         ")
+            .aisle(
+                "AAAAAAAAA",
+                "         ",
+                " E     E ",
+                "  L   L  ",
+                "  G   G  ",
+                "  L   L  ",
+                "  L   L  ",
+                "   BBB   ",
+                "    M    ")
+            .aisle(
+                "   QAO   ",
+                " EL   LE ",
+                "  L   L  ",
+                "  L   L  ",
+                "  L   L  ",
+                "  L   L  ",
+                "   L L   ",
+                "   BBB   ",
+                "         ")
+            .aisle(
+                "    A    ",
+                "   L L   ",
+                "   L L   ",
+                "  LLLLL  ",
+                "   LGL   ",
+                "   LLL   ",
+                "    L    ",
+                "         ",
+                "         ")
+            .aisle(
+                "    A    ",
+                "   E E   ",
+                "    E    ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ")
+            .aisle(
+                "    A    ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ",
+                "         ")
+            .where('S', IBlockInfo.controller(loc))
+            .where('A', <metastate:actuallyadditions:block_misc:9>)
+            .where(' ', IBlockInfo.EMPTY)
+            .where('E', <metastate:enderio:block_alloy_endergy:5>)
+            .where('L', <metastate:gregtech:machine_casing:6>)
+            .where('G', <metastate:extrautils2:ineffableglass:3>)
+            .where('B', <metastate:enderio:block_alloy_endergy:3>)
+            .where('M', <metastate:minecraft:beacon:0>)
+            .where('Q', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .where('O', MetaTileEntities.FLUID_EXPORT_HATCH[4], IFacing.east())
+            .where('H', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.east())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+                        .minInputs(1)
+                        .maxInputs(1)
+                        .minFluidOutputs(1)
+                        .maxFluidOutputs(1)
+                        .build())
+    .buildAndRegister() as Multiblock;
 
 ///////////////////////////////////////////////
 ////////////   Crafting Recipes   /////////////
