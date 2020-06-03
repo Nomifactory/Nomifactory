@@ -32041,7 +32041,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Naquadah Reactor Mk1§r is a structure used to generate considerable amounts of RF power from decaying §6Enriched Naquadah§r or §6Naquadria§r into §6Lead§r.\n\n§eKnown issue: Modular Machine energy output hatches cause a lot of lag by scanning a large region around it for the presence of a Draconic Evolution Energy Core to output into. This will hopefully be addressed in a future update.",
+          "desc:8": "The §3Naquadah Reactor Mk1§r is a structure used to generate considerable amounts of EU power from decaying §6Enriched Naquadah§r or §6Naquadria§r into §6Lead§r.\n\nYou\u0027ll have to use a §6CEU§r if you want to convert EU to RF.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32090,9 +32090,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3005,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 3,
@@ -32116,13 +32116,13 @@
               "Count:3": 14,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 7,
+              "Damage:2": 765,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyoutputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -43332,7 +43332,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of RF energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?",
+          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -43384,6 +43384,12 @@
               "Damage:2": 4,
               "OreDict:8": "",
               "id:8": "extendedcrafting:storage"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 3006,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
