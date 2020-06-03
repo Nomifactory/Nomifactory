@@ -14592,13 +14592,13 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is your first §aMicroverse Projector§r.\n\nIn this modpack, Microverse Projectors are used to launch §6Micro Miners§r to obtain valuable loot, which includes but isn\u0027t not limited to §6ore, §6gems, various dusts and otherwise unobtainable items§r like Radium Salt or Naquadah Dust.\n\nUnlike GregTech multiblocks, Modular Machines must be constructed exactly as dictated by the blueprint. Make sure the Quantum Compressor is facing the controller, too.\n\nThis quest calls for an §6HV Energy Input§r. Make sure to §nalways check the energy requirement§r before launching Micro Miners! Not checking the requirement (and not upgrading the energy input hatch) will result in complete loss of input items: the Energy Input Hatch must match or be higher than the §aFE/t§r value of the recipe. Hover over different energy inputs to see how much power they can accept.\n\nSearch \"Microverse Projector\" in JEI to see blueprints, left-click a blueprint to see the multiblock preview and press U over the blueprint to see all recipes.\n\nYes, Micro Miners are single-use.",
+          "desc:8": "This is your first §3Microverse Projector§r.\n\nIn this modpack, Microverse Projectors are used to launch §6Micro Miners§r to obtain valuable loot, which includes but isn\u0027t not limited to §6ore, §6gems, various dusts and otherwise unobtainable items§r like Radium Salt or Naquadah Dust. §cKeep in mind that Micro Miners are single-use!§r\n\nMicroverse Projectors are §bGregTech§r multiblocks, which means that they\u0027re just as flexible as other machines in terms of the I/O block placement: §eany Microverse Casing can be replaced with a Bus or Hatch§r.\n\nHaving one §6HV Energy Input§r allows processing recipes that are calling for less than 1024 EU/t. To process the rest you\u0027ll need to upgrade the multiblock to EV power, which is either §6two HV Energy Inputs§r, or §6one EV Energy Input§r or better. The higher the tier, the faster it works.\n\nHover your mouse over the Small Microverse Projector and press §bU§r to see all available recipes.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3001,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -14643,7 +14643,7 @@
               "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "1:10": {
               "Count:3": 1,
@@ -14653,27 +14653,27 @@
             },
             "2:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 710,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
+              "id:8": "gregtech:machine"
             },
             "3:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_vent"
             },
             "4:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3001,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 722,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidinputhatch"
+              "id:8": "gregtech:machine"
             },
             "6:10": {
               "Count:3": 4,
@@ -14683,15 +14683,15 @@
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 734,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 5,
+              "Damage:2": 731,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockoutputbus"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -52210,7 +52210,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,
