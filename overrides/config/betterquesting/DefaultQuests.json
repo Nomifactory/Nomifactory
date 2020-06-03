@@ -34094,7 +34094,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "If you don\u0027t like the idea of mining out Oilsands veins, you can build an §3Oil Drilling Rig§r.\n\nYou\u0027ll need to provide it with power, §9Drilling Fluid§r, and a steady supply of §6Pipes§r. The Pipes only have a 1% chance to have one be used up per bucket of §9Oil§r drilled.",
+          "desc:8": "If you don\u0027t like the idea of mining out Oilsands veins, you can build an §3Oil Drilling Rig§r.\n\nYou\u0027ll need to provide it with power, §9Drilling Fluid§r, and a steady supply of §6Pipes§r. The Pipes only have a 1% chance to have one be used up per bucket of §9Oil§r drilled.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34164,33 +34164,33 @@
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3004,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "6:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 734,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 703,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidoutputhatch"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 702,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidinputhatch"
+              "id:8": "gregtech:machine"
             },
             "9:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 700,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
+              "id:8": "gregtech:machine"
             },
             "10:10": {
               "Count:3": 1,
