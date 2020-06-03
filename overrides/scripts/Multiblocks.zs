@@ -1614,12 +1614,12 @@ naquadahreactormk2.recipeMap
 // Oil Drilling Rig mechanics
 oildrillingrig.recipeMap
     .recipeBuilder()
-    .duration(80)
-    .EUt(4375)
+    .duration(100)
+    .EUt(875)
     .inputs(<inspirations:pipe>)
-    .fluidInputs(<liquid:drilling_fluid> * 40)
-    .fluidOutputs(<liquid:oil> * 4000)
-	.property("consumeChance", 4)
+    .fluidInputs(<liquid:drilling_fluid> * 10)
+    .fluidOutputs(<liquid:oil> * 1000)
+	.property("consumeChance", 1)
     .buildAndRegister();
 
 // Lunar Mining Station Rover Missions
