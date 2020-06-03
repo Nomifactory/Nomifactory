@@ -19,7 +19,7 @@ furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
 //  Tier 0										Steel, Silicon
 //	Tier 1	[1000 temp]		120		Copper		Black Steel, Annealed Copper
 //	Tier 2	[1500 temp]		120		Copper		Aluminium, Kanthal, Energetic Alloy, Neodymium
-//	Tier 3	[1700 temp]		120		Copper		Stainless Steel, Nickel Zinc Ferrite, Ilmenite, Silicon Boule, Vibrant Alloy, Red Steel, Nickel Zinc Ferrite, Palladium, Modularium
+//	Tier 3	[1700 temp]		120		Copper		Stainless Steel, Nickel Zinc Ferrite, Ilmenite, Silicon Boule, Vibrant Alloy, Red Steel, Nickel Zinc Ferrite, Palladium, Microversium
 //	Tier 4	[2100 temp]		480		Kanthal		Titanium, Nichrome, Yttrium
 //	Tier 5	[2700 temp]		480		Kanthal		Tungstencarbide, Tungstensteel, Glowstone Doped Boule
 //	Tier 6	[3000 temp]		480		Nichrome	Tungsten, Niobium
