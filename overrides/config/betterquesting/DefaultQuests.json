@@ -11530,13 +11530,13 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Air§r can be sent into the §3Vacuum Freezer§r to turn it into §9Liquid Air§r.\n\nLiquid Air can be sent into a §3Cryogenic Distillation Tower§r to break it down into its components. Keep in mind that Modular Machines output fluids into the first Fluid Hatch possible, so expect outputs appearing in different hatches every time.\n\nNote that despite accepting EU power, §nModular Machines will not overclock§r.\n\nIt\u0027s also highly advised to feed the tower FE (RF) instead of EU due to Modular Machines having issues with disconnecting from EU cables sometimes.",
+          "desc:8": "§9Air§r can be sent into the §3Vacuum Freezer§r to turn it into §9Liquid Air§r.\n\nLiquid Air can be sent into a §3Cryogenic Distillation Tower§r to break it down into its components.\n\n§9Noble Gases§r can be broken further into other valuable products, so it\u0027s advised to have at least two Cryogenic Distillation Towers.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3000,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -11579,9 +11579,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3000,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 52,
@@ -11597,21 +11597,21 @@
             },
             "3:10": {
               "Count:3": 5,
-              "Damage:2": 3,
+              "Damage:2": 733,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidoutputhatch"
+              "id:8": "gregtech:machine"
             },
             "4:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 734,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 732,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidinputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
