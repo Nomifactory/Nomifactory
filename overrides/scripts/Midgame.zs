@@ -396,11 +396,15 @@ recipes.addShapeless(<armorplus:ender_stone_bricks> * 4,
 	<armorplus:ender_stone>,<armorplus:ender_stone>]);
 
 recipes.addShaped(<armorplus:ender_pillar>,
-	[[<armorplus:ender_stone>, null],
-	 [<armorplus:ender_stone>, null]]);
+	[[null, <armorplus:ender_stone>],
+	 [null, <armorplus:ender_stone>]]);
 
 recipes.addShaped(<armorplus:ender_floor_1> * 3,
-	[<armorplus:ender_stone>,<armorplus:ender_stone>,<armorplus:ender_stone>]);
+	[[null, null, null],
+	[<armorplus:ender_stone>,<armorplus:ender_stone>,<armorplus:ender_stone>],
+	[null, null, null]]);
 
 recipes.addShaped(<armorplus:ender_floor_2> * 3,
-	[<armorplus:ender_stone_bricks>,<armorplus:ender_stone_bricks>,<armorplus:ender_stone_bricks>]);
+	[[null, null, null],
+	[<armorplus:ender_stone_bricks>,<armorplus:ender_stone_bricks>,<armorplus:ender_stone_bricks>],
+	[null, null, null]]);
