@@ -1311,6 +1311,12 @@ mods.jei.JEI.removeAndHide(<armorplus:obsidian_battle_axe>);
 mods.jei.JEI.removeAndHide(<armorplus:infused_lava_battle_axe>);
 mods.jei.JEI.removeAndHide(<armorplus:guardian_battle_axe>);
 mods.jei.JEI.removeAndHide(<armorplus:super_star_battle_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:ender_dragon_zombie"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:ice_golem"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:overlord_of_the_guardians"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:skeletal_king"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:witherling"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:demonic_dragon"}}));
 
 
 

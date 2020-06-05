@@ -391,6 +391,16 @@ alloy.recipeBuilder()
 	.outputs([<armorplus:ender_stone>])
 	.duration(200).EUt(16).buildAndRegister();
 
-recipes.addShapeless(<armorplus:ender_stone_bricks>, 
+recipes.addShapeless(<armorplus:ender_stone_bricks> * 4, 
 	[<armorplus:ender_stone>,<armorplus:ender_stone>,
 	<armorplus:ender_stone>,<armorplus:ender_stone>]);
+
+recipes.addShaped(<armorplus:ender_pillar>,
+	[[<armorplus:ender_stone>, null],
+	 [<armorplus:ender_stone>, null]]);
+
+recipes.addShaped(<armorplus:ender_floor_1> * 3,
+	[<armorplus:ender_stone>,<armorplus:ender_stone>,<armorplus:ender_stone>]);
+
+recipes.addShaped(<armorplus:ender_floor_2> * 3,
+	[<armorplus:ender_stone_bricks>,<armorplus:ender_stone_bricks>,<armorplus:ender_stone_bricks>]);
