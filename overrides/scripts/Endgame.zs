@@ -565,3 +565,12 @@ engraver.findRecipe(1920, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:3
 
 //Remove Energy Field Projector, no use
 recipes.remove(<gregtech:meta_item_2:32578>);
+
+//Restore Radon Recipe for QBit wafer
+reactor.recipeBuilder()
+  .inputs(<gregtech:meta_item_1:2421>, <gregtech:meta_item_2:32467>)
+  .fluidInputs(<liquid:radon> * 50)
+  .outputs(<gregtech:meta_item_2:32470>)
+  .duration(600).EUt(1920).buildAndRegister();
+
+reactor.findRecipe(1920 [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
