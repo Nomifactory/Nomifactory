@@ -562,3 +562,6 @@ saw.findRecipe(48, [<gregtech:meta_item_2:32468>],[<liquid:lubricant>*22]).remov
 
 engraver.findRecipe(480, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32441>], [null]).remove();
 engraver.findRecipe(1920, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32442>], [null]).remove();
+
+//Remove Energy Field Projector, no use
+recipes.remove(<gregtech:meta_item_2:32578>);
