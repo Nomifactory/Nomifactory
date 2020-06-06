@@ -322,7 +322,7 @@ val medium_microverse = Builder.start(loc, id)
     .withRecipeMap(
         FactoryRecipeMap.start(loc)
                         .minInputs(2)
-                        .maxInputs(6)
+                        .maxInputs(4)
                         .minOutputs(1)
                         .maxOutputs(15)
                         .build())
