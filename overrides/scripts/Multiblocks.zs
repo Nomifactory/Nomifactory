@@ -17,6 +17,8 @@ import mods.gregtech.MetaTileEntities;
 
 import mods.gregtech.recipe.FactoryRecipeMap;
 
+import mods.gregtech.render.ITextureArea;
+import mods.gregtech.render.MoveType;
 import mods.gregtech.render.ICubeRenderer;
 import mods.gregtech.render.Textures;
 
@@ -179,6 +181,8 @@ val cryodist = Builder.start(loc, id)
 id += 1;
 loc = "small_microverse";
 
+val ROCKET_ARROW as ITextureArea = ITextureArea.fullImage("multiblocktweaker:textures/gui/progress_bar/rocket.png");
+
 val small_microverse = Builder.start(loc, id)
     .withPattern(
         FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
@@ -242,6 +246,7 @@ val small_microverse = Builder.start(loc, id)
                         .maxInputs(3)
                         .minOutputs(1)
                         .maxOutputs(15)
+                        .setProgressBar(ROCKET_ARROW, MoveType.HORIZONTAL)
                         .build())
     .buildAndRegister() as Multiblock;
 
@@ -346,6 +351,7 @@ val medium_microverse = Builder.start(loc, id)
                         .maxInputs(4)
                         .minOutputs(1)
                         .maxOutputs(15)
+                        .setProgressBar(ROCKET_ARROW, MoveType.HORIZONTAL)
                         .build())
     .buildAndRegister() as Multiblock;
 
@@ -550,8 +556,9 @@ val large_microverse = Builder.start(loc, id)
                         .maxInputs(8)
                         .minOutputs(1)
                         .maxOutputs(16)
+                        .setProgressBar(ROCKET_ARROW, MoveType.HORIZONTAL)
                         .build())
-    .withTexture(ICubeRenderer.nonSided("contenttweaker:blocks/microverse_casing"))
+    .withTexture(<contenttweaker:microverse_casing> as IBlock as ICubeRenderer)
     .buildAndRegister() as Multiblock;
 
 id += 1;
@@ -906,7 +913,7 @@ val naquadahreactormk2 = Builder.start(loc,id)
                         .minInputs(1)
                         .maxInputs(1)
                         .build())
-    .withTexture(ICubeRenderer.nonSided("contenttweaker:blocks/microverse_casing"))
+    .withTexture(<contenttweaker:microverse_casing> as IBlock as ICubeRenderer)
     .buildAndRegister() as Multiblock;
 
 id += 1;
@@ -1221,10 +1228,10 @@ small_microverse.recipeMap
              <gregtech:ore_redstone_0> * 64,
              <gregtech:ore_nickel_0> * 64,
              <gregtech:ore_rutile_0> * 64,
-             <gregtech:ore_rutile_0> *64,
-             <gregtech:ore_uraninite_0:3> *64,
-             <gregtech:ore_galena_0> *64,
-             <gregtech:ore_galena_0> *64,
+             <gregtech:ore_rutile_0> * 64,
+             <gregtech:ore_uraninite_0:3> * 64,
+             <gregtech:ore_galena_0> * 64,
+             <gregtech:ore_galena_0> * 64,
              <advancedrocketry:moonturf> * 64,
              <libvulpes:ore0> * 64,
              <gregtech:ore_salt_0> * 64)
@@ -1276,12 +1283,12 @@ small_microverse.recipeMap
              <gregtech:ore_scheelite_0:1> * 64,
              <gregtech:ore_scheelite_0:1> * 64,
              <gregtech:ore_scheelite_0:1> * 64,
-             <gregtech:ore_tungstate_0:1>* 64,
+             <gregtech:ore_tungstate_0:1> * 64,
              <gregtech:ore_tungstate_0:1> * 64,
              <gregtech:ore_tungstate_0:1> * 64,
              <contenttweaker:radiumsalt> * 64,
              <contenttweaker:radiumsalt> * 64,
-             <gregtech:ore_cassiterite_0:1> *64)
+             <gregtech:ore_cassiterite_0:1> * 64)
     .buildAndRegister();
 
 // Tier 2 Titanium Microminer - Mission 2: Stellar Creation Data
@@ -1333,9 +1340,9 @@ small_microverse.recipeMap
     .outputs(<gregtech:ore_scheelite_0:6> * 64,
              <gregtech:ore_scheelite_0:6> * 64,
              <gregtech:ore_scheelite_0:6> * 64,
-             <gregtech:ore_tungstate_0:6>* 64,
-             <gregtech:ore_tungstate_0:6>* 64,
-             <gregtech:ore_tungstate_0:6>* 64,
+             <gregtech:ore_tungstate_0:6> * 64,
+             <gregtech:ore_tungstate_0:6> * 64,
+             <gregtech:ore_tungstate_0:6> * 64,
              <gregtech:ore_rutile_0:6> * 64,
              <gregtech:ore_vanadium_magnetite_0:6> * 64,
              <gregtech:ore_tetrahedrite_0:6> * 64,
