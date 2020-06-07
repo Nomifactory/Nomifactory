@@ -571,4 +571,4 @@ reactor.recipeBuilder()
   .outputs(<gregtech:meta_item_2:32470>)
   .duration(600).EUt(1920).buildAndRegister();
 
-reactor.findRecipe(1920 [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
+reactor.findRecipe(1920, [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
