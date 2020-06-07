@@ -884,3 +884,49 @@ fluid_extractor.recipeBuilder()
 	.duration(720).EUt(32).buildAndRegister();
 
 recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]); 
+
+
+//Restore Pump Recipes
+
+val material as string[] = [
+
+	"Chrome",
+	"Iridium",
+	"Darmstadtium",
+	"Osmium",
+	"Tin",
+	"Titanium",
+	"Bronze",
+	"StainlessSteel",
+	"Steel",
+	"TungstenSteel",
+	"SteelMagnetic",
+	"Hssg",
+	"Hsse",
+	"Neutronium"
+
+] as string[];
+
+for mat in material {
+	var allPlate = oreDict.get("plate" ~ mat);
+	var plate = allPlate.firstItem;
+	var allScrew = oreDict.get("screw" ~ mat);
+	var screw = allScrew.firstItem;
+	var allRing = oreDict.get("ring" ~ mat);
+	var ring = allRing.firstItem;
+	var allRotor = oreDict.get("rotor" ~ mat);
+	var rotor = allRotor.firstItem;
+
+	recipes.remove(rotor);
+
+	makeShaped("of_rotor_" ~ mat, rotor,
+		["PHP",
+	 	 "SRF",
+	 	 "PDP"],
+		{ P : plate,  
+	  	  H : <ore:craftingToolHardHammer>,
+	  	  S : screw,
+	  	  R : ring,
+	  	  F : <ore:craftingToolFile>,
+	  	  D : <ore:craftingToolScrewdriver>});
+}
