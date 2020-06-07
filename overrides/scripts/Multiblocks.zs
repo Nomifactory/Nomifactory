@@ -68,6 +68,13 @@ val cryodist = Builder.start(loc, id)
                             IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
                                                                 MultiblockAbility.IMPORT_FLUIDS,
                                                                 MultiblockAbility.EXPORT_FLUIDS))
+
+            .setAmountAtMost('@', 2)
+            .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
+            .setAmountAtLeast('U', 5)
+            .where('U', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
+            .setAmountAtLeast('#', 50)
+            .where('#', <metastate:gregtech:metal_casing:3>)
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -196,6 +203,13 @@ val small_microverse = Builder.start(loc, id)
                                                                 MultiblockAbility.IMPORT_FLUIDS,
                                                                 MultiblockAbility.IMPORT_ITEMS,
                                                                 MultiblockAbility.EXPORT_ITEMS))
+
+            .setAmountAtMost('@', 2)
+            .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
+            .setAmountAtLeast('I', 1)
+            .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_ITEMS))
+            .setAmountAtLeast('#', 15)
+            .where('#', <contenttweaker:microverse_casing>)
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -276,6 +290,13 @@ val medium_microverse = Builder.start(loc, id)
                             IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
                                                                 MultiblockAbility.IMPORT_ITEMS,
                                                                 MultiblockAbility.EXPORT_ITEMS))
+
+            .setAmountAtMost('@', 2)
+            .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
+            .setAmountAtLeast('I', 1)
+            .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_ITEMS))
+            .setAmountAtLeast('#', 50)
+            .where('#', <contenttweaker:microverse_casing>)
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -405,14 +426,21 @@ val large_microverse = Builder.start(loc, id)
             "         ",
             "         ")
         .where('S', IBlockMatcher.controller(loc))
-        .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
-                        IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS,
-                                                            MultiblockAbility.EXPORT_ITEMS,
-                                                            MultiblockAbility.INPUT_ENERGY))
         .where('V', <contenttweaker:microverse_vent>)
         .where('G', <metastate:extrautils2:ineffableglass:2>)
         .where('D', <metastate:chisel:diamond:3>)
         .where('Q', <extendedcrafting:compressor>)
+        .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
+                        IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS,
+                                                            MultiblockAbility.EXPORT_ITEMS,
+                                                            MultiblockAbility.INPUT_ENERGY))
+
+        .setAmountAtMost('@', 2)
+        .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
+        .setAmountAtLeast('I', 1)
+        .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_ITEMS))
+        .setAmountAtLeast('#', 125)
+        .where('#', <contenttweaker:microverse_casing>)
         .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -579,6 +607,11 @@ val oildrillingrig = Builder.start(loc, id)
                                                                 MultiblockAbility.IMPORT_ITEMS,
                                                                 MultiblockAbility.IMPORT_FLUIDS,
                                                                 MultiblockAbility.EXPORT_FLUIDS))
+
+            .setAmountAtMost('@', 2)
+            .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
+            .setAmountAtLeast('I', 1)
+            .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -755,6 +788,11 @@ val naquadahreactormk1 = Builder.start(loc, id)
             .where('P', <appliedenergistics2:spatial_pylon>)
             .where('G', <nuclearcraft:reactor_casing_transparent>)
             .where('B', <metastate:extendedcrafting:trimmed:5>)
+
+            .setAmountAtLeast('I', 1)
+            .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_ITEMS))
+            .setAmountAtLeast('#', 10)
+            .where('#', <contenttweaker:microverse_casing>)
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -813,13 +851,18 @@ val naquadahreactormk2 = Builder.start(loc,id)
                 "CCC",
                 "CCC")
             .where('S', IBlockMatcher.controller(loc))
+            .where('O', <metastate:extendedcrafting:storage:4>)
+            .where('P', <appliedenergistics2:spatial_pylon>)
+            .where('G', <nuclearcraft:reactor_casing_transparent>)
             .whereOr('C', <contenttweaker:microverse_casing> as IBlock as IBlockMatcher,
                             IBlockMatcher.abilityPartPredicate(MultiblockAbility.OUTPUT_ENERGY,
                                                                 MultiblockAbility.IMPORT_ITEMS,
                                                                 MultiblockAbility.EXPORT_ITEMS))
-            .where('O', <metastate:extendedcrafting:storage:4>)
-            .where('P', <appliedenergistics2:spatial_pylon>)
-            .where('G', <nuclearcraft:reactor_casing_transparent>)
+
+            .setAmountAtLeast('I', 1)
+            .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_ITEMS))
+            .setAmountAtLeast('#', 10)
+            .where('#', <contenttweaker:microverse_casing>)
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
@@ -870,9 +913,7 @@ id += 1;
 loc = "lunarminingstation";
 
 val onMoon as IBlockMatcher = function (state as IBlockWorldState) as bool {
-    val dimension = state.getWorld().getDimension();
-    return dimension == 100 // Moon dimension
-        || dimension == 2147483647;
+    return state.getWorld().getDimension() == 100; // Moon dimension
 };
 
 val lunarminingstation = Builder.start(loc, id)
@@ -968,7 +1009,7 @@ val lunarminingstation = Builder.start(loc, id)
                 "         ",
                 "         ",
                 "         ")
-            .whereAnd('S', IBlockMatcher.controller(loc), onMoon)
+            .whereAnd('S', IBlockMatcher.controller(loc), onMoon.or(IBlockMatcher.IN_PREVIEW))
             .where('M', <minecraft:beacon>)
             .where(' ', IBlockMatcher.ANY)
             .where('B', <metastate:enderio:block_alloy_endergy:3>)
@@ -979,6 +1020,13 @@ val lunarminingstation = Builder.start(loc, id)
                             IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
                                                                 MultiblockAbility.EXPORT_FLUIDS,
                                                                 MultiblockAbility.IMPORT_ITEMS))
+
+            .setAmountAtMost('@', 2)
+            .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
+            .setAmountAtLeast('I', 1)
+            .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
+            .setAmountAtLeast('#', 60)
+            .where('#', <metastate:gregtech:machine_casing:6>)
             .build())
     .addDesign(
         FactoryMultiblockShapeInfo.start()
