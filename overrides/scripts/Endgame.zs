@@ -149,13 +149,12 @@ val t6c as IIngredient[] = [
     <metaitem:component.smd.capacitor> * 2,
     <metaitem:component.smd.transistor> * 2,
     <gregtech:meta_item_2:16200> * 2,
-    //<metaitem:board.wetware>,
     <gtadditions:ga_meta_item:32015>,
     <gregtech:meta_item_2:32474>,
     <gregtech:meta_item_2:32481>];
 
-assembler.findRecipe(32800, t6c, [<liquid:tin> * 144]).remove();
-assembler.findRecipe(32800, t6c, [<liquid:soldering_alloy> * 72]).remove();
+assembler.findRecipe(28000, t6c, [<liquid:tin> * 144]).remove();
+assembler.findRecipe(28000, t6c, [<liquid:soldering_alloy> * 72]).remove();
 
 //t7 circuits
 val t7c as IIngredient[] = [
@@ -166,8 +165,8 @@ val t7c as IIngredient[] = [
     <metaitem:circuit.wetware_processor> * 2,
     <metaitem:board.wetware>];
 
-assembler.findRecipe(34400, t7c, [<liquid:tin> * 288]).remove();
-assembler.findRecipe(34400, t7c, [<liquid:soldering_alloy> * 144]).remove();
+assembler.findRecipe(30000, t7c, [<liquid:tin> * 144]).remove();
+assembler.findRecipe(30000, t7c, [<liquid:soldering_alloy> * 72]).remove();
 
 //t8 circuits
 val t8c as IIngredient[] = [
