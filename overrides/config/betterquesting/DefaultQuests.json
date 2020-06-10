@@ -26943,7 +26943,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending Tier Seven through Tier Ten Micro Miners into microverses.\n\nTier Seven missions will operate on §eLuV power§r, but higher energy tiers will be required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any §6Microverse Projector Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
+          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending §6Tier Seven§r through §6Tier Ten Micro Miners§r into microverses.\n\nTier Seven missions will operate on §eLuV power§r, but higher energy tiers will be required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any §6Microverse Projector Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
