@@ -374,6 +374,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 		<nuclearcraft:gem_dust:11>
 	]
 
+	#dustMoon
+	<ore:dustMoon>: [
+		<contenttweaker:moondust>
+	}
+
 };
 
 for oreDictEntry, items in dustsDisabled {
