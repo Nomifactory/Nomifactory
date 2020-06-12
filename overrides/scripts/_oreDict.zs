@@ -373,12 +373,6 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustEndstone>: [
 		<nuclearcraft:gem_dust:11>
 	]
-
-	#dustMoon
-	<ore:dustMoon>: [
-		<contenttweaker:moondust>
-	}
-
 };
 
 for oreDictEntry, items in dustsDisabled {
@@ -389,6 +383,7 @@ for oreDictEntry, items in dustsDisabled {
 }
 
 <ore:dustArdite>.add(<enderio:item_material:30>);
+<ore:dustMoon>.add(<contenttweaker:moondust>);
 
 //////////////////////////////
 //			Gems            //
