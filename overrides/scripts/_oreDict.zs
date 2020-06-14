@@ -1567,6 +1567,7 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_aluminum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_nickel>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_electrum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_invar>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:rockwool:*>);
 
 
 //Custom Materials Removals
