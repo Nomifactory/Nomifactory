@@ -883,4 +883,11 @@ fluid_extractor.recipeBuilder()
 	.fluidOutputs(<liquid:concrete>*1296)
 	.duration(720).EUt(32).buildAndRegister();
 
-recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]); 
+recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]);
+
+//Fix Wool macerator recipes
+macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:blockWool>)
+	.outputs(<minecraft:string> *4)
+	.duration(400).EUt(2).buildAndRegister();
