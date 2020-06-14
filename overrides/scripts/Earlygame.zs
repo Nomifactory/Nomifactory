@@ -891,3 +891,6 @@ macerator.recipeBuilder()
 	.inputs(<ore:blockWool>)
 	.outputs(<minecraft:string> *4)
 	.duration(400).EUt(2).buildAndRegister();
+
+//Remove Unobtainable Clay recipe
+recipes.removeByRecipeName("thermalfoundation:clay_ball");
