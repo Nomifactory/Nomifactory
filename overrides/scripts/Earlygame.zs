@@ -53,8 +53,7 @@ recipes.addShaped(<minecraft:shears>,[
 [<ore:plateIron>,<gregtech:meta_tool:9>]]);
 <minecraft:shears>.displayName = "Iron Shears";
 
-//Clay & Wool
-recipes.addShapeless(<minecraft:clay_ball> * 4, [<minecraft:clay>]);
+//Wool
 recipes.remove(<minecraft:string>);
 recipes.addShapeless(<minecraft:string> * 4, [<minecraft:wool>]);
 
