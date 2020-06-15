@@ -10,10 +10,9 @@ const through  = require("through2");
 const { src, dest } = require("gulp");
 
 const { ConcurrentRetryDownloader, retryRequest } = require("../../util/downloaders.js");
-const questLocal = require("../shared/quest_local");
 
-const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
+const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
 const SERVER_DEST_FOLDER = path.join(DEST_FOLDER, "server");
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
 
@@ -326,7 +325,7 @@ function downloadMods(cb) {
  * Copies modpack overrides.
  */
 function copyServerOverrides() {
-	const basedir = path.join(SRC_FOLDER, global.OVERRIDES_FOLDER);
+	const basedir = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER);
 	return src(global.CONFIG.copyOverridesServerGlobs.map(glob => path.join(basedir, glob)), { base: basedir })
 		.pipe(dest(SERVER_DEST_FOLDER));
 }
@@ -389,13 +388,6 @@ function zipServer() {
 		.pipe(dest(DEST_FOLDER));
 }
 
-function transfomLang(cb) {
-	questLocal.transformFile(
-		path.join(SERVER_DEST_FOLDER, questLocal.questLocation), 
-		path.join(SERVER_DEST_FOLDER, questLocal.langFileLocation))()
-		.then(cb);
-}
-
 module.exports = [
 	createServerDirs,
 	downloadForge,
@@ -403,7 +395,6 @@ module.exports = [
 	downloadMods,
 	copyServerOverrides,
 	copyServerfiles,
-	transfomLang,
 	copyServerLicense,
 	processLaunchscripts,
 	zipServer

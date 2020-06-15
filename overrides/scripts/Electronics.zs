@@ -727,7 +727,7 @@ recipes.addShaped(<enderio:item_endergy_conduit:11> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 	[<gregtech:cable:354>,<enderio:item_endergy_conduit:10>,<gregtech:cable:354>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
-<enderio:item_endergy_conduit:11>.displayName = "Superconducter Energy Conduit";
+<enderio:item_endergy_conduit:11>.displayName = "Superconductor Energy Conduit";
 assembler.recipeBuilder().inputs([<gregtech:cable:354>* 2, <enderio:item_endergy_conduit:10>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:11> * 4]).duration(80).EUt(16).buildAndRegister();
 	
 //removing bad field generator assembling recipes

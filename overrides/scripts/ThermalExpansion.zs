@@ -455,6 +455,17 @@ mixer.recipeBuilder()
     .inputs([<thermalfoundation:material:1028>, <gregtech:meta_item_1:2072>])
     .duration(200).EUt(30).buildAndRegister();
 
+
 //TE Drill
 recipes.addShapeless(<thermalfoundation:material:640>, [<actuallyadditions:item_misc:16>]);
 recipes.addShapeless(<thermalfoundation:material:656>, [<gregtech:meta_item_2:8183>]);
+
+//Remove Unobtainable Satchel and Void Satchel Recipe
+
+//Remove Rockwool smelting recipe
+furnace.remove(<thermalfoundation:rockwool:7>, <thermalfoundation:material:864>);
+
+//Satchel Removal
+recipes.removeByRecipeName("thermalexpansion:satchel_1");
+recipes.removeByRecipeName("thermalexpansion:satchel_7");
+
