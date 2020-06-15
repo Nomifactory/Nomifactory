@@ -3,6 +3,10 @@ const Promise = require("bluebird");
 const EventEmitter = require('events');
 
 const { compareBufferToHashDef } = require("./hashes.js")
+const sha1 = require("sha1");
+
+const fs = require("fs");
+const path = require("path").posix;
 
 /**
  * @typedef {object} FileDef
@@ -17,6 +21,7 @@ const { compareBufferToHashDef } = require("./hashes.js")
  * @property {number} [concurrency=5] Max amount of concurrent downloads.
  * @property {boolean} [checkHashes=true] Check hashes of downloaded files.
  * @property {boolean} [json=false] Don't save and output JSON instead.
+ * @property {string?} [cacheDirectory] Cache directory.
  */
 
 /**
@@ -33,11 +38,12 @@ class ConcurrentRetryDownloader extends EventEmitter {
 	 */
 	constructor(options = {}) {
 		super();
-		this.maxRetries  = options.maxRetries || 5;
-		this.readTimeout = options.readTimeout || 30000;
-		this.concurrency = options.concurrency || 5;
-		this.checkHashes = options.checkHashes == undefined ? true : options.checkHashes;
-		this.json        = options.json;
+		this.maxRetries     = options.maxRetries || 5;
+		this.readTimeout    = options.readTimeout || 30000;
+		this.concurrency    = options.concurrency || 5;
+		this.checkHashes    = options.checkHashes == undefined ? true : options.checkHashes;
+		this.json           = options.json;
+		this.cacheDirectory = options.cacheDirectory;
 	}
 
 	/**
@@ -59,7 +65,7 @@ class ConcurrentRetryDownloader extends EventEmitter {
 	/**
 	 * @param {FileDef} fileDef 
 	 */
-	__emitComplete(fileDef, index, total, output) {
+	__emitComplete(fileDef, index, total, output, cacheHit) {
 		/**
 		 * Download completion event.
 		 *
@@ -68,12 +74,14 @@ class ConcurrentRetryDownloader extends EventEmitter {
 		 * @property {object} fileDef File definition.
 		 * @property {number} index File index.
 		 * @property {Buffer|object} output Output.
+		 * @property {boolean} cacheHit True if the downloaded file was cached.
 		 */
 		this.emit("complete", {
 			fileDef: fileDef
 			, index: index
 			, total: total
 			, output: output
+			, cacheHit: cacheHit || false
 		});
 	}
 
@@ -112,6 +120,8 @@ class ConcurrentRetryDownloader extends EventEmitter {
 		 */
 		return Promise.map(files, fileDef => {
 			return new Promise((resolve, reject) => {
+				const fileNameHash = sha1(fileDef.url);
+
 				this.__emitStart(fileDef);
 
 				const retry = (counter = 0) => {
@@ -124,21 +134,42 @@ class ConcurrentRetryDownloader extends EventEmitter {
 						timeout    : this.readTimeout
 						, json     : this.json
 						, encoding : null
-					}
+					};
 
-					request(fileDef.url, opts)
-						.then((buffer) => {
-							/**
-							 * Check hashes if requested and the hashDef array is present.
-							 */
-							if (this.checkHashes && fileDef.hashes) {
+					var cacheHit = false;
+					(() => {
+						const cachePath = path.join(this.cacheDirectory, fileNameHash);
+
+						if (this.cacheDirectory && fs.existsSync(cachePath)) {
+							cacheHit = true;
+							return fs.promises.readFile(cachePath);
+						}
+
+						return request(fileDef.url, opts);
+					})().then((buffer) => {
+							if (!cacheHit) {
 								/**
-								 * Check given hashes and throw if something doesn't match.
+								 * Check hashes if requested and the hashDef array is present.
 								 */
-								fileDef.hashes.forEach((hashInfo) => compareBufferToHashDef(buffer, hashInfo));
+								if (this.checkHashes && fileDef.hashes) {
+									/**
+									 * Check given hashes and throw if something doesn't match.
+									 */
+									fileDef.hashes.forEach((hashInfo) => compareBufferToHashDef(buffer, hashInfo));
+								}
+
+								if (this.cacheDirectory) {
+									if (!fs.existsSync(this.cacheDirectory)) {
+										fs.mkdirSync(this.cacheDirectory, { recursive: true })
+									}
+
+									const fd = fs.openSync(path.join(this.cacheDirectory, fileNameHash), "wx");
+									fs.writeSync(fd, buffer);
+									fs.closeSync(fd);
+								}
 							}
 
-							this.__emitComplete(fileDef, countDownloadedFiles++, total, buffer);
+							this.__emitComplete(fileDef, countDownloadedFiles++, total, buffer, cacheHit);
 							resolve();	
 						})
 						.catch((error) => {
@@ -151,7 +182,7 @@ class ConcurrentRetryDownloader extends EventEmitter {
 								this.__emitRetry(fileDef, error, counter);
 								setTimeout(() => retry(counter), 1000);
 							}
-						})	
+						});
 				}
 
 				return retry();

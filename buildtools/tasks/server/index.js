@@ -11,8 +11,8 @@ const { src, dest } = require("gulp");
 
 const { ConcurrentRetryDownloader, retryRequest } = require("../../util/downloaders.js");
 
-const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
+const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
 const SERVER_DEST_FOLDER = path.join(DEST_FOLDER, "server");
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
 
@@ -25,9 +25,10 @@ const DOWNLOADER = new ConcurrentRetryDownloader({
 	concurrency  : global.CONFIG.downloaderConcurrency
 	, checkHashes: global.CONFIG.downloaderCheckHashes
 	, maxRetries : global.CONFIG.downloaderMaxRetries
+	, cacheDirectory: global.CONFIG.downloaderCacheDirectory
 })
 .on("start", (args) => {
-	log(`Downloading ${path.basename(args.fileDef.path)}...`)
+	log(`Fetching ${path.basename(args.fileDef.path)}...`)
 })
 .on("complete", (args) => {
 	const numFiles = args.total > 1 ? `(${args.index + 1} / ${args.total}) ` : "";
@@ -51,7 +52,11 @@ const DOWNLOADER = new ConcurrentRetryDownloader({
 	const fd = fs.openSync(args.fileDef.path, "wx");
 	fs.writeSync(fd, args.output);
 	fs.closeSync(fd);
-	log(numFiles + `Downloaded and saved ${path.basename(args.fileDef.path)}`)
+	if (!args.cacheHit) {
+		log(numFiles + `Downloaded and saved ${path.basename(args.fileDef.path)}`)
+	} else {
+		log(numFiles + `Retrieved ${path.basename(args.fileDef.path)} from cache`)
+	}
 })
 .on("retry", (args) => {
 	log(`Failed to download ${path.basename(args.fileDef.path)}, retrying...`)
@@ -320,7 +325,7 @@ function downloadMods(cb) {
  * Copies modpack overrides.
  */
 function copyServerOverrides() {
-	const basedir = path.join(SRC_FOLDER, global.OVERRIDES_FOLDER);
+	const basedir = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER);
 	return src(global.CONFIG.copyOverridesServerGlobs.map(glob => path.join(basedir, glob)), { base: basedir })
 		.pipe(dest(SERVER_DEST_FOLDER));
 }

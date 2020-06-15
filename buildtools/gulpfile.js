@@ -22,6 +22,7 @@ function postCleanup(cb) {
 	del(TEMP_FOLDER, { force: true }).then(() => cb());
 }
 
+const sharedTasks = require("./tasks/shared");
 const serverTasks = require("./tasks/server");
 const clientTasks = require("./tasks/client");
 const travisTasks = require("./tasks/travis");
@@ -29,18 +30,21 @@ const travisChecksTasks = require("./tasks/travis/checks");
 
 const buildServer = series(
 	cleanup,
+	...sharedTasks,
 	...serverTasks,
 	postCleanup
 );
 
 const buildClient = series(
 	cleanup,
+	...sharedTasks,
 	...clientTasks,
 	postCleanup,
 )
 
 const buildAll = series(
 	cleanup,
+	...sharedTasks,
 	...serverTasks,
 	...clientTasks,
 	postCleanup

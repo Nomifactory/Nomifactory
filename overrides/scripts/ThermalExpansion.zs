@@ -465,3 +465,13 @@ mixer.recipeBuilder()
     .inputs([<thermalfoundation:material:1028>, <gregtech:meta_item_1:2072>])
     .duration(200).EUt(30).buildAndRegister();
 
+
+//Remove Unobtainable Satchel and Void Satchel Recipe
+
+//Remove Rockwool smelting recipe
+furnace.remove(<thermalfoundation:rockwool:7>, <thermalfoundation:material:864>);
+
+//Satchel Removal
+recipes.removeByRecipeName("thermalexpansion:satchel_1");
+recipes.removeByRecipeName("thermalexpansion:satchel_7");
+

@@ -969,7 +969,8 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:itemSilicon> : [
 		<enderio:item_material:5>,
 		<nuclearcraft:gem:6>,
-		<appliedenergistics2:material:5>
+		<appliedenergistics2:material:5>,
+		<libvulpes:productingot:3>
 	],
 
 	#Arsenic
@@ -1051,7 +1052,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:block_compost>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_energizer>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_enervator>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_treasure_chest>);
-mods.jei.JEI.removeAndHide(<actuallyadditions:block_furnace_solar>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_heat_collector>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_item_repairer>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_greenhouse_glass>);
@@ -1567,6 +1567,9 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_aluminum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_nickel>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_electrum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_invar>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:rockwool:*>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:864>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:865>);
 
 
 //Custom Materials Removals

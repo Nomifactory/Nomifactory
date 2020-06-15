@@ -8,8 +8,8 @@ const { retryRequest } = require("../../util/downloaders.js");
 
 const { src, dest } = require("gulp");
 
-const SRC_FOLDER         = global.CONFIG.buildSourceDirectory;
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
+const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
 const CLIENT_DEST_FOLDER = path.join(DEST_FOLDER, "client");
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
 
@@ -47,7 +47,7 @@ function copyClientLicense() {
  * Copies modpack overrides.
  */
 function copyClientOverrides() {
-	const basedir = path.join(SRC_FOLDER, global.OVERRIDES_FOLDER);
+	const basedir = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER);
 	return src(
 		global.CONFIG.copyOverridesClientGlobs
 			.map(glob => path.join(basedir, glob))

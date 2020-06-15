@@ -283,6 +283,22 @@ recipes.addShapeless("armored_resonant_jetpack",
                      armoredresonantjetpack,
                      [resonantjetpack, <simplyjetpacks:metaitemmods:25>]);
 
+//Add Jetpack Nbt Resetting recipes
+
+//Enderio Jetpacks
+recipes.addShapeless(conductiveironjetpack, [<simplyjetpacks:itemjetpack:1>]);
+recipes.addShapeless(electricalsteeljetpack, [<simplyjetpacks:itemjetpack:2>]);
+recipes.addShapeless(energeticjetpack, [<simplyjetpacks:itemjetpack:3>]);
+recipes.addShapeless(vibrantjetpack, [<simplyjetpacks:itemjetpack:4>]);
+
+
+//TE Jetpacks
+recipes.addShapeless(leadstonejetpack, [<simplyjetpacks:itemjetpack:10>]);
+recipes.addShapeless(hardenedjetpack, [<simplyjetpacks:itemjetpack:11>]);
+recipes.addShapeless(reinforcedjetpack, [<simplyjetpacks:itemjetpack:12>]);
+recipes.addShapeless(resonantjetpack, [<simplyjetpacks:itemjetpack:13>]);
+
+
 recipes.remove(<openglider:hang_glider_part:2>);
 recipes.addShaped(<openglider:hang_glider_part:2>, [
 	[null, <gregtech:meta_item_1:14033>, null],

@@ -10,7 +10,7 @@ const MURMUR_SKIP_BYTES = {
 	, 32: true
 };
 
-const murmurhashV2 = require('murmurhash').v2;
+const murmurhashV2 = require('murmurhash-32/murmurhash2_gc');
 
 /**
  * Returns the hash sum of bytes of given bytes using MurmurHash v2.
@@ -22,17 +22,18 @@ const murmurhashV2 = require('murmurhash').v2;
  * @returns {Number} The MurmurHash hash of file contents.
  */
 exports.murmurhash = (inputBuffer, seed = 1) => {
-	var output = "";
+	const output = Array(inputBuffer).fill(0);
 
+	let pos = 0;
 	for (let i = 0; i < inputBuffer.length; i++) {
 		const byte = inputBuffer.readUInt8(i);
 
 		if (!MURMUR_SKIP_BYTES[byte]) {
-			output += String.fromCharCode(byte);
+			output[pos++] = byte;
 		}
 	}
 
-	return murmurhashV2(output, seed);
+	return murmurhashV2(output.slice(0, pos), seed);
 };
 
 const sha1 = require("sha1");
