@@ -132,7 +132,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:fusion_electromagnet_idle>),
     Removal(<nuclearcraft:fusion_electromagnet_transparent_idle>),
     Removal(<nuclearcraft:geiger_counter>),
-    Removal(<nuclearcraft:gelatin>),
     Removal(<nuclearcraft:gem:0>), // all NC gems
     Removal(<nuclearcraft:gem:1>),
     Removal(<nuclearcraft:gem:2>),
@@ -147,7 +146,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
     Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic
     Removal(<nuclearcraft:gem_dust:11>),// Crushed End Stone
-    Removal(<nuclearcraft:ground_cocoa_nibs>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_copper>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_hard_carbon>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_thermoconducting>),
@@ -187,7 +185,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:rad_shielding:1>), // Medium Rad Shielding
     Removal(<nuclearcraft:rad_shielding:2>), // Heavy Rad Shielding
     Removal(<nuclearcraft:rad_x>),
-    Removal(<nuclearcraft:roasted_cocoa_beans>, true),
     Removal(<nuclearcraft:salt_fission_beam>),
     Removal(<nuclearcraft:salt_fission_computer_port>),
     Removal(<nuclearcraft:salt_fission_distributor>),
@@ -819,33 +816,30 @@ compressor.recipeBuilder()
     .duration(400).EUt(2).buildAndRegister();
 
 // Gelatin from meat
-chemreactor.recipeBuilder()
-    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
-    .fluidInputs([<fluid:diluted_sulfuric_acid> * 10000])
-    .inputs([<ore:dustMeat> * 9])
-    .duration(400).EUt(16).buildAndRegister();
+macerator.recipeBuilder()
+    .outputs(<nuclearcraft:gelatin>)
+    .inputs([<ore:dustSmallMeat>])
+    .duration(40).EUt(30).buildAndRegister();
 
-chemreactor.recipeBuilder()
-    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
-    .fluidInputs([<fluid:sulfuric_acid> * 7000, <fluid:water> * 3000])
-    .inputs([<ore:dustMeat> * 9])
-    .duration(160).EUt(30).buildAndRegister();
+// Gelatin from fish
+var fishes as IItemStack[] = [
+    <minecraft:fish>,
+    <minecraft:fish:1>,
+    <minecraft:fish:2>,
+    <minecraft:fish:3>
+] as IItemStack[];
 
-// Gelatin from fish oil
-chemreactor.recipeBuilder()
-    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
-    .fluidInputs([<fluid:sulfuric_acid> * 7000, <fluid:water> * 3000, <fluid:fish_oil> * 360])
-    .duration(160).EUt(30).buildAndRegister();
-
-chemreactor.recipeBuilder()
-    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
-    .fluidInputs([<fluid:diluted_sulfuric_acid> * 10000, <fluid:fish_oil> * 360])
-    .duration(160).EUt(30).buildAndRegister();
+for fish in fishes {
+    macerator.recipeBuilder()
+        .outputs(<nuclearcraft:gelatin> * 4)
+        .inputs([fish])
+        .duration(160).EUt(30).buildAndRegister();
+}
 
 // Hydrated gelatin
 mixer.recipeBuilder()
-    .fluidOutputs(<fluid:hydrated_gelatin> * 1000)
-    .fluidInputs([<fluid:gelatin> * 1000, <fluid:water> * 1000])
+    .fluidOutputs(<fluid:hydrated_gelatin> * 144)
+    .fluidInputs([<fluid:gelatin> * 144, <fluid:water> * 500])
     .duration(50).EUt(8).buildAndRegister();
 
 // Molten sugar
@@ -857,22 +851,27 @@ fluid_extractor.recipeBuilder()
 // Marshmallow fluid
 mixer.recipeBuilder()
     .fluidOutputs(<fluid:marshmallow> * 144)
-    .fluidInputs(<fluid:sugar> * 144, <fluid:hydrated_gelatin> * 1000)
+    .fluidInputs(<fluid:sugar> * 72, <fluid:hydrated_gelatin> * 144)
     .duration(100).EUt(30).buildAndRegister();
 
-<ore:dustCocoa>.remove(<nuclearcraft:cocoa_solids>); // what a fun loop this would be
+// Cocoa nibs
+macerator.recipeBuilder()
+    .outputs(<nuclearcraft:ground_cocoa_nibs>)
+    .inputs(<nuclearcraft:roasted_cocoa_beans>)
+    .duration(100).EUt(20).buildAndRegister();
+
 // Cocoa butter
 fluid_extractor.recipeBuilder()
     .fluidOutputs(<fluid:cocoa_butter> * 144)
     .outputs(<nuclearcraft:cocoa_solids>)
-    .inputs(<ore:dustCocoa>)
+    .inputs([<nuclearcraft:ground_cocoa_nibs>])
     .duration(32).EUt(2).buildAndRegister();
 
 // Chocolate liquor
 blast_furnace.recipeBuilder()
     .fluidOutputs(<fluid:chocolate_liquor> * 144)
     .outputs(<ore:dustTinyCarbon>.firstItem)
-    .inputs([<ore:dustCocoa>])
+    .inputs([<nuclearcraft:ground_cocoa_nibs>])
     .property("temperature", 307) // ah yes, blast furnace temperatures
     .duration(100).EUt(120).buildAndRegister();
 
@@ -884,23 +883,22 @@ mixer.recipeBuilder()
 
 // Dark (best) chocolate
 mixer.recipeBuilder()
-    .fluidOutputs(<fluid:dark_chocolate> * 288)
-    .fluidInputs([<fluid:unsweetened_chocolate> * 288, <fluid:sugar> * 144])
+    .fluidOutputs(<fluid:dark_chocolate> * 144)
+    .fluidInputs([<fluid:unsweetened_chocolate> * 144, <fluid:sugar> * 72])
     .duration(100).EUt(30).buildAndRegister();
 
 // Milk chocolate
 mixer.recipeBuilder()
-    .fluidOutputs(<fluid:milk_chocolate> * 1152)
-    .fluidInputs([<fluid:dark_chocolate> * 576, <fluid:milk> * 1000])
+    .fluidOutputs(<fluid:milk_chocolate> * 288)
+    .fluidInputs([<fluid:dark_chocolate> * 144, <fluid:milk> * 250])
     .duration(100).EUt(30).buildAndRegister();
 
-// Solidifying and Fluid Extraction
-
+// Solidification and Fluid Extraction
 function smoreIngredient(
             stack as IItemStack,
             fluid as ILiquidStack,
             mould as IItemStack) {
-    // Solidify
+    // Solidification
     solidifier.recipeBuilder()
         .outputs(stack)
         .notConsumable(mould)
@@ -922,4 +920,5 @@ smoreIngredient(<nuclearcraft:marshmallow>, <fluid:marshmallow>, ballMould);
 smoreIngredient(<nuclearcraft:milk_chocolate>, <fluid:milk_chocolate>, plateMould);
 smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMould);
 smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMould);
+smoreIngredient(<nuclearcraft:gelatin>, <fluid:gelatin>, plateMould);
 smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMould);
