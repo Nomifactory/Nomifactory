@@ -964,3 +964,28 @@ smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMoul
 smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMould);
 smoreIngredient(<nuclearcraft:gelatin>, <fluid:gelatin>, plateMould);
 smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMould);
+
+// Advanced *S'more *S'mingots
+
+var smingots as IItemStack[] = [
+    <nuclearcraft:foursmore>,
+    <contenttweaker:eightsmore>,
+    <contenttweaker:sixteensmore>,
+    <contenttweaker:thirtytwosmore>,
+    <contenttweaker:sixtyfoursmore>
+] as IItemStack[];
+
+var i = 1;
+while i < smingots.length {
+    var inSmingot = smingots[i - 1];
+    var outSmingot = smingots[i];
+
+    makeShaped(outSmingot.definition.id, outSmingot,
+        ["PC",
+         "MP"],
+        { P: inSmingot,
+          C: <nuclearcraft:milk_chocolate>,
+          M: <nuclearcraft:marshmallow> });
+
+    i += 1;
+}
