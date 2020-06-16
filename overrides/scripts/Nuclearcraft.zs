@@ -938,7 +938,7 @@ while i < smingots.length {
     var inSmingot = smingots[i - 1];
     var outSmingot = smingots[i];
 
-    makeShaped(outSmingot.definition.id, outSmingot,
+    makeShaped(outSmingot.definition.id.replaceAll(":", "_"), outSmingot,
         ["PC",
          "MP"],
         { P: inSmingot,
