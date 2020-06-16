@@ -2426,7 +2426,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -4738,7 +4738,7 @@
     },
     "68:10": {
       "preRequisites:11": [
-        197
+        542
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10409,7 +10409,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r.",
+          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Crystal Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26282,7 +26282,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Anvils§f can be used to repair §bGregTech tools§f!\n\nYou might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils§f spawn abundantly in §bLost Cities§f buildings, so go and snatch one!\n\nPut a damaged tool inside and put some material it\u0027s made of. For example, you\u0027ll need to put §6Wrought Iron Ingots§f to repair tools made of §6Wrought Iron§f.",
+          "desc:8": "§3Anvils§f can be used to repair almost all §bGregTech tools§f!\n\nYou might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils§f spawn abundantly in §bLost Cities§f buildings, so go and snatch one!\n\nPut a damaged tool inside and put some material it\u0027s made of. For example, you\u0027ll need to put §6Wrought Iron Ingots§f to repair tools made of §6Wrought Iron§f. The only tools unable to be repaired are the mortar and the plunger.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42579,7 +42579,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "There\u0027s no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF.\n\nLook at what the §6Pristine Matter§r for each mob provides, and set up simulators for all the ones you\u0027re interested in. If you your power can handle it, it can even be advantageous to run several of the same model.",
+          "desc:8": "There\u0027s no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF.\n\nLook at what the §6Pristine Matter§r for each mob provides, and set up simulators for all the ones you\u0027re interested in. If your power can handle it, it can even be advantageous to run several of the same model.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,

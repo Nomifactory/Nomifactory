@@ -13,7 +13,7 @@ var debug = false;
 
 
 
-/* ******* Shaped Crafting Recipes ******* */
+
 
 
 //Plant Balls from Vines
@@ -1114,9 +1114,8 @@ fluid_extractor.recipeBuilder()
 	.inputs(<gregtech:concrete>)
 	.fluidOutputs(<liquid:concrete>*1296)
 	.duration(720).EUt(32).buildAndRegister();
-
-recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]); 
-
+  
+recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]);
 
 
 // Magnesium Chloride decomposition
@@ -1329,4 +1328,15 @@ for items in compressorArray {
 		.outputs(items.oreMacOutput.firstItem)
 		.duration(100).EUt(items.power).buildAndRegister();
 }
+
+
+//Fix Wool macerator recipes
+macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:blockWool>)
+	.outputs(<minecraft:string> *4)
+	.duration(400).EUt(2).buildAndRegister();
+
+//Remove Unobtainable Clay recipe
+recipes.removeByRecipeName("thermalfoundation:clay_ball");
 

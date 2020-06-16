@@ -136,7 +136,11 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	#blockTitanium
 	<ore:blockTitanium> : [
 		<libvulpes:metal0:7>
-	]
+	],
+	#blockFuelCoke
+	<ore:blockFuelCoke> : [
+		<thermalfoundation:storage_resource:1>
+	]		
 };
 
 for oreDictEntry, items in blocksDisabled {
@@ -970,7 +974,8 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:itemSilicon> : [
 		<enderio:item_material:5>,
 		<nuclearcraft:gem:6>,
-		<appliedenergistics2:material:5>
+		<appliedenergistics2:material:5>,
+		<libvulpes:productingot:3>
 	],
 
 	#Arsenic
@@ -1001,6 +1006,8 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
 <ore:blockAluminum>.add(<gregtech:compressed_0:0>);
+
+<ore:blockCoalCoke>.add(<gregtech:compressed_15:4>);
 
 //Add moreplates neutronium plate to gtce neutronium ore dict
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
@@ -1573,6 +1580,9 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_aluminum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_nickel>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_electrum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_invar>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:rockwool:*>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:864>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:865>);
 
 
 //Custom Materials Removals
@@ -1911,6 +1921,9 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
+
+//Thermal Coal Coke Decomposition 
+recipes.addShapeless(<gregtech:meta_item_1:8357> * 9, [<thermalfoundation:storage_resource:1>]);
 
 // Temporary recipe to convert endstone dusts TODO: Remove in 1.3
 recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
