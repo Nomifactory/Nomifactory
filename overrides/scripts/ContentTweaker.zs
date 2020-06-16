@@ -669,7 +669,7 @@ function getItemFoodEaten(duration as int) as IItemFoodEaten {
             <potion:minecraft:haste>
         ] as IPotion[];
         for potion in potions {
-            player.addPotionEffect(potion.makePotionEffect(duration, 2));
+            player.addPotionEffect(potion.makePotionEffect(duration, 1));
         }
     } as IItemFoodEaten;
 }
