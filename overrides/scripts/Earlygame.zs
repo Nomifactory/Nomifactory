@@ -441,10 +441,6 @@ makeShaped("of_sponge", <minecraft:sponge>,
 //Inspirations Pipe
 recipes.remove(<inspirations:pipe>);
 recipes.addShapeless(<inspirations:pipe>, [<gregtech:fluid_pipe:1184>]);
-
-
-//Clay 
-recipes.addShapeless(<minecraft:clay_ball> * 4, [<minecraft:clay>]);
 //String
 recipes.remove(<minecraft:string>);
 recipes.addShapeless(<minecraft:string> * 4, [<minecraft:wool>]);
@@ -930,6 +926,12 @@ macerator.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:2071>)
 	.duration(30).EUt(8).buildAndRegister();
 
+//Fix Wool macerator recipes
+macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:blockWool>)
+	.outputs(<minecraft:string> *4)
+	.duration(400).EUt(2).buildAndRegister();
 
 
 /* ******* Mixer Recipes ******* */
@@ -1086,6 +1088,9 @@ recipes.remove(<gregtech:meta_item_2:26095>);
 recipes.remove(<gregtech:meta_item_2:26126>);
 recipes.remove(<gregtech:meta_item_2:26112>);
 recipes.remove(<gregtech:meta_item_2:26184>);
+//Remove Unobtainable Clay recipe
+recipes.removeByRecipeName("thermalfoundation:clay_ball");
+
 
 
 
@@ -1328,15 +1333,4 @@ for items in compressorArray {
 		.outputs(items.oreMacOutput.firstItem)
 		.duration(100).EUt(items.power).buildAndRegister();
 }
-
-
-//Fix Wool macerator recipes
-macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
-macerator.recipeBuilder()
-	.inputs(<ore:blockWool>)
-	.outputs(<minecraft:string> *4)
-	.duration(400).EUt(2).buildAndRegister();
-
-//Remove Unobtainable Clay recipe
-recipes.removeByRecipeName("thermalfoundation:clay_ball");
 
