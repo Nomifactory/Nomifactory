@@ -1,6 +1,7 @@
 import crafttweaker.game.IGame;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.mods.IMod;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
@@ -106,8 +107,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:boron:2>),
     Removal(<nuclearcraft:boron:3>),
     Removal(<nuclearcraft:chest_hazmat>),
-    Removal(<nuclearcraft:cocoa_butter>),
-    Removal(<nuclearcraft:cocoa_solids>),
     Removal(<nuclearcraft:compound:0>), // Calcium Sulfate
     Removal(<nuclearcraft:compound:1>), // Crystal Binder
     Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
@@ -118,7 +117,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:compound:8>), // Dimensional Blend
     Removal(<nuclearcraft:compound:9>), // Carbon-Manganese Blend
     Removal(<nuclearcraft:compound:10>), // Alugentum Dust
-    Removal(<nuclearcraft:dark_chocolate>),
     Removal(<nuclearcraft:decay_generator>),
     Removal(<nuclearcraft:dry_earth>),
     Removal(<nuclearcraft:dust:10>), // Zirconium Dust
@@ -149,7 +147,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
     Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic
     Removal(<nuclearcraft:gem_dust:11>),// Crushed End Stone
-    Removal(<nuclearcraft:graham_cracker>),
     Removal(<nuclearcraft:ground_cocoa_nibs>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_copper>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_hard_carbon>),
@@ -179,9 +176,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:lithium_ion_battery_du>),
     Removal(<nuclearcraft:lithium_ion_battery_elite>),
     Removal(<nuclearcraft:lithium_ion_cell>),
-    Removal(<nuclearcraft:marshmallow>),
-    Removal(<nuclearcraft:milk_chocolate>),
-    Removal(<nuclearcraft:moresmore>),
     Removal(<nuclearcraft:part:5>),  // Magnesium Diboride Solenoid
     Removal(<nuclearcraft:part:6>),  // Bioplastic
     Removal(<nuclearcraft:part:11>), // Empty Frame
@@ -206,7 +200,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:salt_fission_vent>),
     Removal(<nuclearcraft:salt_fission_vessel>),
     Removal(<nuclearcraft:salt_fission_wall>),
-    Removal(<nuclearcraft:smore>),
     Removal(<nuclearcraft:solar_panel_advanced>),
     Removal(<nuclearcraft:solar_panel_basic>),
     Removal(<nuclearcraft:solar_panel_du>),
@@ -230,7 +223,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:turbine_rotor_shaft>),
     Removal(<nuclearcraft:turbine_rotor_stator>),
     Removal(<nuclearcraft:turbine_wall>),
-    Removal(<nuclearcraft:unsweetened_chocolate>),
     Removal(<nuclearcraft:upgrade:0>), // Speed Upgrade (NC Machines)
     Removal(<nuclearcraft:upgrade:1>), // Energy Upgrade (NC Machines)
     Removal(<nuclearcraft:voltaic_pile_advanced>),
@@ -380,10 +372,7 @@ val ncFluids as string[] = [
     "boron11",
     "boron_nitride_solution",
     "calcium_sulfate_solution",
-    "chocolate_liquor",
-    "cocoa_butter",
     "condensate_water",
-    "dark_chocolate",
     "diborane",
     "ethanol",
     "ethene",
@@ -392,10 +381,8 @@ val ncFluids as string[] = [
     "flibe",
     "fluorite_water",
     "fluoromethane",
-    "gelatin",
     "hard_carbon",
     "high_pressure_steam",
-    "hydrated_gelatin",
     "hydrofluoric_acid",
     "koh",
     "lif",
@@ -407,9 +394,7 @@ val ncFluids as string[] = [
     "low_pressure_steam",
     "low_quality_steam",
     "manganese_dioxide",
-    "marshmallow",
     "milk",
-    "milk_chocolate",
     "nak",
     "nak_hot",
     "naoh",
@@ -424,10 +409,8 @@ val ncFluids as string[] = [
     "sic_vapor",
     "sodium_fluoride_solution",
     "sodium_hydroxide_solution",
-    "sugar",
     "sulfur",
-    "tough",
-    "unsweetened_chocolate"
+    "tough"
 ] as string[];
 
 for fluid in ncFluids {
@@ -474,7 +457,11 @@ for fluid in sharedFluids {
     }
 }
 
-// End of mass removals, now for replacements:
+// End of mass removals.
+
+mods.jei.JEI.addItem(<nuclearcraft:foursmore>); // This disappeared apparently.
+
+// Now for replacements:
 
 recipes.remove(<nuclearcraft:compound:2>);
 mixer.recipeBuilder()
@@ -823,3 +810,116 @@ thermal_sep.recipeBuilder()
     .inputs([<gregtech:meta_item_1:10076>])
     .duration(3200).EUt(48).buildAndRegister();
 
+// Oh yeah it's S'more time
+
+// Graham Crackers
+compressor.recipeBuilder()
+    .outputs(<nuclearcraft:graham_cracker>)
+    .inputs([<ore:dustWheat> * 2])
+    .duration(400).EUt(2).buildAndRegister();
+
+// Gelatin from meat
+chemreactor.recipeBuilder()
+    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
+    .fluidInputs([<fluid:diluted_sulfuric_acid> * 10000])
+    .inputs([<ore:dustMeat> * 9])
+    .duration(400).EUt(16).buildAndRegister();
+
+chemreactor.recipeBuilder()
+    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
+    .fluidInputs([<fluid:sulfuric_acid> * 7000, <fluid:water> * 3000])
+    .inputs([<ore:dustMeat> * 9])
+    .duration(160).EUt(30).buildAndRegister();
+
+// Gelatin from fish oil
+chemreactor.recipeBuilder()
+    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
+    .fluidInputs([<fluid:sulfuric_acid> * 7000, <fluid:water> * 3000, <fluid:fish_oil> * 360])
+    .duration(160).EUt(30).buildAndRegister();
+
+chemreactor.recipeBuilder()
+    .fluidOutputs([<fluid:gelatin> * 9000, <fluid:water> * 1000])
+    .fluidInputs([<fluid:diluted_sulfuric_acid> * 10000, <fluid:fish_oil> * 360])
+    .duration(160).EUt(30).buildAndRegister();
+
+// Hydrated gelatin
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:hydrated_gelatin> * 1000)
+    .fluidInputs([<fluid:gelatin> * 1000, <fluid:water> * 1000])
+    .duration(50).EUt(8).buildAndRegister();
+
+// Molten sugar
+fluid_extractor.recipeBuilder()
+    .fluidOutputs(<fluid:sugar> * 144)
+    .inputs(<ore:dustSugar>)
+    .duration(32).EUt(2).buildAndRegister();
+
+// Marshmallow fluid
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:marshmallow> * 144)
+    .fluidInputs(<fluid:sugar> * 144, <fluid:hydrated_gelatin> * 1000)
+    .duration(100).EUt(30).buildAndRegister();
+
+<ore:dustCocoa>.remove(<nuclearcraft:cocoa_solids>); // what a fun loop this would be
+// Cocoa butter
+fluid_extractor.recipeBuilder()
+    .fluidOutputs(<fluid:cocoa_butter> * 144)
+    .outputs(<nuclearcraft:cocoa_solids>)
+    .inputs(<ore:dustCocoa>)
+    .duration(32).EUt(2).buildAndRegister();
+
+// Chocolate liquor
+blast_furnace.recipeBuilder()
+    .fluidOutputs(<fluid:chocolate_liquor> * 144)
+    .outputs(<ore:dustTinyCarbon>.firstItem)
+    .inputs([<ore:dustCocoa>])
+    .property("temperature", 307) // ah yes, blast furnace temperatures
+    .duration(100).EUt(120).buildAndRegister();
+
+// Unsweetened chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:unsweetened_chocolate> * 288)
+    .fluidInputs([<fluid:cocoa_butter> * 144, <fluid:chocolate_liquor> * 144])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Dark (best) chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:dark_chocolate> * 288)
+    .fluidInputs([<fluid:unsweetened_chocolate> * 288, <fluid:sugar> * 144])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Milk chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:milk_chocolate> * 1152)
+    .fluidInputs([<fluid:dark_chocolate> * 576, <fluid:milk> * 1000])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Solidifying and Fluid Extraction
+
+function smoreIngredient(
+            stack as IItemStack,
+            fluid as ILiquidStack,
+            mould as IItemStack) {
+    // Solidify
+    solidifier.recipeBuilder()
+        .outputs(stack)
+        .notConsumable(mould)
+        .fluidInputs(fluid * 144)
+        .duration(100).EUt(16).buildAndRegister();
+
+    // Fluid Extraction
+    fluid_extractor.recipeBuilder()
+        .fluidOutputs(fluid * 144)
+        .inputs(stack)
+        .duration(100).EUt(16).buildAndRegister();
+}
+
+var ballMould  as IItemStack = <gregtech:meta_item_1:32307>;
+var plateMould as IItemStack = <gregtech:meta_item_1:32301>;
+var ingotMould as IItemStack = <gregtech:meta_item_1:32306>;
+
+smoreIngredient(<nuclearcraft:marshmallow>, <fluid:marshmallow>, ballMould);
+smoreIngredient(<nuclearcraft:milk_chocolate>, <fluid:milk_chocolate>, plateMould);
+smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMould);
+smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMould);
+smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMould);
