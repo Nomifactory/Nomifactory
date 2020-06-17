@@ -650,7 +650,3 @@ microverse_casing.register();
 
 var microverse_vent = VanillaFactory.createBlock("microverse_vent", <blockmaterial:iron>);
 microverse_vent.register();
-
-var microversium = VanillaFactory.createItem("microversium");
-microversium.maxStackSize = 64;
-microversium.register();

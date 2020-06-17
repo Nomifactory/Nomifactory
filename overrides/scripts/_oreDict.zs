@@ -1941,7 +1941,6 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:lvcef>.add(<gregtech:machine:10661>);
 <ore:lvcef>.add(<gregtech:machine:10665>);
 <ore:dustEndstone>.add(<contenttweaker:endstonedust>);
-<ore:ingotMicroversium>.add(<contenttweaker:microversium>);
 
 //Removals
 <ore:craftingLensLime>.remove(<gregtech:meta_item_1:15219>);
@@ -1976,29 +1975,42 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
 <ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
 
-//Extra EnderIO Stuff
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
+// GTCE Conductive Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:15>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:2>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10703>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9703>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10704>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9704>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:3>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10705>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9705>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:4>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10701>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9701>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10702>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9702>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:1>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:10>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10712>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9712>);
 
+// GTCE Energetic Alloy
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9701>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10701>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:0>);
+
+// GTCE Vibrant Alloy
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9702>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10702>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:1>);
+
+// GTCE Pulsating Iron
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9703>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10703>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:2>);
+
+// GTCE Dark Steel
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9704>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10704>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:3>);
+
+// GTCE Electrical Steel
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9705>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10705>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:4>);
+
+// GTCE End Steel
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9712>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10712>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:10>);
+
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:14>); // Block of Lignite Coke
 
 //Nuggets
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:193>);

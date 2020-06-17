@@ -1156,13 +1156,13 @@ val lunarminingstation = Builder.start(loc, id)
 // Modular Machinery conversion recipes
 recipes.addShapeless("mm_casing_conversion", <contenttweaker:microverse_casing>, [<modularmachinery:blockcasing>]);
 recipes.addShapeless("mm_vent_conversion", <contenttweaker:microverse_vent>, [<modularmachinery:blockcasing:1>]);
-recipes.addShapeless("mm_ingot_conversion", <contenttweaker:microversium>, [<modularmachinery:itemmodularium>]);
+recipes.addShapeless("mm_ingot_conversion", <ore:ingotMicroversium>.firstItem, [<modularmachinery:itemmodularium>]);
 
 // Casing
 assembler.recipeBuilder()
     .duration(200)
     .EUt(30)
-    .inputs(<contenttweaker:microversium> * 4)
+    .inputs(<ore:ingotMicroversium>.firstItem * 4)
     .outputs(<contenttweaker:microverse_casing>)
     .buildAndRegister();
 

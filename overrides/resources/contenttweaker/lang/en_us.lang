@@ -12,6 +12,7 @@ material.ardite=Ardite
 material.manyullyn=Manyullyn
 material.omnium=Omnium
 material.draconium=Draconium
+material.microversium=Microversium
 
 item.contenttweaker.omnicoin.name=Omnipenny [1]
 item.contenttweaker.omnicoin5.name=Omninickel [5]
@@ -214,18 +215,3 @@ item.contenttweaker.ultradensehydrogen.name=Ultra Dense Hydrogen
 
 tile.contenttweaker.microverse_casing.name=Microverse Projector Casing
 tile.contenttweaker.microverse_vent.name=Microverse Projector Vent
-
-item.contenttweaker.microversium.name=Microversium Ingot
-
-
-
-
-
-
-
-
-
-
-
-
-
