@@ -43,6 +43,7 @@ ardite.addFlags(["GENERATE_PLATE"]);
 val manyullyn = MaterialRegistry.createIngotMaterial(714, "manyullyn", 0x9949cc, "dull", 2);
 manyullyn.addFlags(["GENERATE_PLATE"]);
 
+pulsatingIron.setCableProperties(8, 1, 0);
 conductiveIron.setCableProperties(32, 1, 0);
 energeticAlloy.setCableProperties(128, 1, 0);
 vibrantAlloy.setCableProperties(512, 1, 0);
@@ -57,7 +58,7 @@ val microversium = MaterialRegistry.createIngotMaterial(715, "microversium", 0x8
 microversium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_GEAR", "GENERATE_LONG_ROD"]);
 
 /*
- Note to maintainers: certain metaitem IDs can be shifted if you try to add 
+ Note to maintainers: certain metaitem IDs can be shifted if you try to add
  blocks in ID range gaps, which can silently break the scripts. For consistency,
  new ported material IDs must start one larger than the previous highest ID. To
  make this easier, always add new entries at the end of the file to maintain
