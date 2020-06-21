@@ -14593,7 +14593,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is your first §3Microverse Projector§r.\n\nThese structures are used to project §6Micro Miners§r into a §eMicroverse§r to obtain valuable loot such as §6ores§r, §6gems§r, and otherwise unobtainable items§r like §6Radium Salt§r and §6Naquadah Dust§r. §cKeep in mind that Micro Miners are single-use!§r\n\nMicroverse Projectors are §bGregTech§r multiblocks, which means that they\u0027re just as flexible as other machines in terms of the I/O block placement: §epositions of Buses and Hatches can be swapped with any Microverse Projector Casing§r.\n\nA single §6HV Energy Input§r supports missions up to 1024 EU/t. To process the rest you\u0027ll need to upgrade the multiblock to at least §eEV power§r, which is either §6two HV Energy Inputs§r, or §6one EV Energy Input§r. Missions will also overclock, increasing in speed each time the projector\u0027s energy tier increases and available power reaches the next multiple of four times the base mission power.\n\nHover your mouse over the Small Microverse Projector and press §bU§r to see all available missions.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
+          "desc:8": "This is your first §3Microverse Projector§r.\n\nThese structures are used to project §6Micro Miners§r into a §eMicroverse§r to obtain valuable loot such as §6ores§r, §6gems§r, and otherwise unobtainable items§r like §6Radium Salt§r and §6Naquadah Dust§r. §cKeep in mind that Micro Miners are single-use!§r\n\nMicroverse Projectors are §bGregTech§r multiblocks, which means that they\u0027re just as flexible as other machines in terms of the I/O block placement: §epositions of Buses and Hatches can be swapped with any Microverse Projector Casing§r.\n\nA single §6HV Energy Input§r supports missions up to 1024 EU/t. To process the rest you\u0027ll need to upgrade the multiblock to at least §eEV power§r, which is either §6two HV Energy Inputs§r, or §6one EV Energy Input§r. Missions will also overclock, increasing in speed each time the projector\u0027s energy tier increases and available power reaches the next multiple of four times the base mission power.\n\nHover your mouse over the Small Microverse Projector and press §bU§r to see all available missions.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26943,7 +26943,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending §6Tier Seven§r through §6Tier Ten Micro Miners§r into microverses.\n\nTier Seven missions will operate on §eLuV power§r, but higher energy tiers will be required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any §6Microverse Projector Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
+          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending Tier Seven through Tier Ten Micro Miners into microverses.\n\nTier Seven missions will operate on §eLuV power§r, but higher energy tiers will be required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any §6Microverse Projector Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -36500,14 +36500,14 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": "",
-            "id:8": "modularmachinery:itemmodularium"
+            "Damage:2": 10715,
+            "OreDict:8": "ingotMicroversium",
+            "id:8": "gregtech:meta_item_1"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Modularium Ingots",
+          "name:8": "Microversium Ingots",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -36545,9 +36545,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 64,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "modularmachinery:itemmodularium"
+              "Damage:2": 10715,
+              "OreDict:8": "ingotMicroversium",
+              "id:8": "gregtech:meta_item_1"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -47119,7 +47119,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§bMultiblock Tweaker§r adds an §einteractive in-world preview§r for all §bGregTech§r multiblocks! §6Shift-right-click§r a placed controller to activate a hologram depicting the default layout of the structure to help you with building. As you place blocks, the structure will be validated and the §efirst incorrect block§r it detects will be highlighted in red.\n\n§6Sneak-right-click§r to cycle from the full view through each layer. When on the final layer of the preview, this will remove the preview.\n\n§6Sneak-left-click§r to go back to the previous layer, or close the preview from the full view.\n\nIn the §eJEI previews§r for multiblocks, §6left-click§r and drag the mouse to rotate the preview horizontally. §6Shift-left-click§r to rotate it vertically.\n\nFor §bMultiblock Tweaker§r structures, you can additionally §6right-click§r and drag the mouse to pan the preview or §6shift-right-click§r and drag to zoom in or out.",
+          "desc:8": "You can §6sneak-right click§r the controllers of §bGregTech§r multiblock machines with an empty hand to enable §ethe interactive in-world preview§r! This will show you a hologram of how a machine must be built. However, it has a small quirk of displaying §ethe first errored block only§r.\n\n§6Sneak-right click§r again to toggle the per-layer display.\n\n§6Sneak-left click§r to go back a layer.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
