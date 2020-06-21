@@ -92,6 +92,22 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:40>);                   // Zom
 mods.enderio.SliceNSplice.removeRecipe(<enderio:item_capacitor_totemic>); // Totemic Capacitor
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);             // Totemic Capacitor
 
+
+// Restore Slice 'n' Splice recipes changed by updating Ender IO
+//Skeletal Contractor
+mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:45>); 
+mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
+    <enderio:item_alloy_ingot:7>, <minecraft:skull>, <enderio:item_alloy_ingot:7>,
+     <minecraft:rotten_flesh> , <gregtech:meta_item_2:32440> , <minecraft:rotten_flesh>
+], 20000);
+
+//Guardian Diode
+mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:56>);
+mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
+    <enderio:item_alloy_ingot:1>, <minecraft:prismarine_shard>, <enderio:item_alloy_ingot:1>,
+     <minecraft:prismarine_crystals>, <gregtech:meta_item_2:32440>, <minecraft:prismarine_crystals>
+], 20000);
+
 /*
 
   EnderIO Additions
