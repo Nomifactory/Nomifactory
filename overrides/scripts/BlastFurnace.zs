@@ -113,7 +113,6 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2016>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2016>]).outputs([<gregtech:meta_item_1:10016>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Microversium [tier 3]
-recipes.remove(<modularmachinery:itemmodularium>);
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<ore:ingotMicroversium>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<ore:ingotMicroversium>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 

@@ -1158,6 +1158,52 @@ recipes.addShapeless("mm_casing_conversion", <contenttweaker:microverse_casing>,
 recipes.addShapeless("mm_vent_conversion", <contenttweaker:microverse_vent>, [<modularmachinery:blockcasing:1>]);
 recipes.addShapeless("mm_ingot_conversion", <ore:ingotMicroversium>.firstItem, [<modularmachinery:itemmodularium>]);
 
+// Generate shapeless recipes for getting microversium back from the ModularMachinery item buses
+for meta in 0 .. 7 {
+    // tiny returns 4 from the casing, then there's 3 more ingots per tier
+    val count as int = (4 + meta * 3);
+
+    recipes.addShapeless("mm_inputbus_conversion_" ~ meta,
+        <ore:ingotMicroversium>.firstItem * count,
+        [itemUtils.getItem("modularmachinery:blockinputbus", meta)]);
+
+    recipes.addShapeless("mm_outputbus_conversion__" ~ meta, 
+        <ore:ingotMicroversium>.firstItem * count,
+        [itemUtils.getItem("modularmachinery:blockoutputbus", meta)]);
+}
+
+// Generate shapeless recipes for getting microversium back from the ModularMachinery fluid hatches
+for meta in 0 .. 8 {
+    // tiny returns 4 from the casing, then there's 3 more ingots per tier
+    val count as int = (4 + meta * 3);
+    
+    recipes.addShapeless("mm_fluidinput_refund_" ~ meta,
+        <ore:ingotMicroversium>.firstItem * count,
+        [itemUtils.getItem("modularmachinery:blockfluidinputhatch", meta)]);
+
+    recipes.addShapeless("mm_fluidoutput_refund_" ~ meta, 
+        <ore:ingotMicroversium>.firstItem * count,
+        [itemUtils.getItem("modularmachinery:blockfluidoutputhatch", meta)]);
+}
+
+// Generate Shapeless conversion recipes for getting the GTCE energy hatch back from ModularMachinery hatches.
+
+val energyInputHatches as int[] = [
+    714, 724, 734, 744, 754, 764, 774, 784
+] as int[];
+
+for idx,meta in energyInputHatches {
+    recipes.addShapeless("mm_energyinput_refund_" ~ idx,
+        itemUtils.getItem("gregtech:machine", meta),
+        [itemUtils.getItem("modularmachinery:blockenergyinputhatch", idx)]);
+
+    recipes.addShapeless("mm_energyoutput_refund_" ~ idx,
+        itemUtils.getItem("gregtech:machine", meta + 1),
+        [itemUtils.getItem("modularmachinery:blockenergyoutputhatch", idx)]);
+}
+
+/// End conversion code ///
+
 // Casing
 assembler.recipeBuilder()
     .duration(200)
