@@ -53,8 +53,7 @@ recipes.addShaped(<minecraft:shears>,[
 [<ore:plateIron>,<gregtech:meta_tool:9>]]);
 <minecraft:shears>.displayName = "Iron Shears";
 
-//Clay & Wool
-recipes.addShapeless(<minecraft:clay_ball> * 4, [<minecraft:clay>]);
+//Wool
 recipes.remove(<minecraft:string>);
 recipes.addShapeless(<minecraft:string> * 4, [<minecraft:wool>]);
 
@@ -883,4 +882,14 @@ fluid_extractor.recipeBuilder()
 	.fluidOutputs(<liquid:concrete>*1296)
 	.duration(720).EUt(32).buildAndRegister();
 
-recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]); 
+recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]);
+
+//Fix Wool macerator recipes
+macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:blockWool>)
+	.outputs(<minecraft:string> *4)
+	.duration(400).EUt(2).buildAndRegister();
+
+//Remove Unobtainable Clay recipe
+recipes.removeByRecipeName("thermalfoundation:clay_ball");

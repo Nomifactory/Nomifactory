@@ -33,6 +33,7 @@ deploy:
     file:
       - ./build/$SERVER_ARCHIVE.zip
       - ./build/$CLIENT_ARCHIVE.zip
+      - ./build/lang.zip
     on:
       tags: true
       condition: $TAGGED_RELEASE = true
@@ -56,6 +57,7 @@ deploy:
     file:
       - ./build/$SERVER_ARCHIVE.zip
       - ./build/$CLIENT_ARCHIVE.zip
+      - ./build/lang.zip
     on:
       branch: dev
       condition: $TAGGED_RELEASE = false

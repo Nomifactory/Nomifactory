@@ -135,6 +135,7 @@ lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14302> * 2]).outputs([<gregt
 lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14303> * 2]).outputs([<gregtech:meta_item_2:19303>]).duration(200).EUt(30).buildAndRegister();
 lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14972> * 2]).outputs([<gregtech:meta_item_2:19972>]).duration(200).EUt(30).buildAndRegister();
 lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14299> * 2]).outputs([<gregtech:meta_item_2:19299>]).duration(200).EUt(30).buildAndRegister();
+lathe.recipeBuilder().inputs([<ore:stickMicroversium> * 2]).outputs([<ore:stickLongMicroversium>.firstItem]).duration(200).EUt(30).buildAndRegister();
 
 //Neutronium Round
 recipes.remove(<gtadditions:ga_meta_item:2972>);	
