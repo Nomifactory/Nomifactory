@@ -19,7 +19,7 @@ furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
 //  Tier 0										Steel, Silicon
 //	Tier 1	[1000 temp]		120		Copper		Black Steel, Annealed Copper
 //	Tier 2	[1500 temp]		120		Copper		Aluminium, Kanthal, Energetic Alloy, Neodymium
-//	Tier 3	[1700 temp]		120		Copper		Stainless Steel, Nickel Zinc Ferrite, Ilmenite, Silicon Boule, Vibrant Alloy, Red Steel, Nickel Zinc Ferrite, Palladium, Modularium
+//	Tier 3	[1700 temp]		120		Copper		Stainless Steel, Nickel Zinc Ferrite, Ilmenite, Silicon Boule, Vibrant Alloy, Red Steel, Nickel Zinc Ferrite, Palladium, Microversium
 //	Tier 4	[2100 temp]		480		Kanthal		Titanium, Nichrome, Yttrium
 //	Tier 5	[2700 temp]		480		Kanthal		Tungstencarbide, Tungstensteel, Glowstone Doped Boule
 //	Tier 6	[3000 temp]		480		Nichrome	Tungsten, Niobium
@@ -112,10 +112,9 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2049>]).outputs([<gr
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2016>], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2016>]).outputs([<gregtech:meta_item_1:10016>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
-//Modularium [tier 3]
-recipes.remove(<modularmachinery:itemmodularium>);
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+//Microversium [tier 3]
+blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<ore:ingotMicroversium>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<ore:ingotMicroversium>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nichrome [tier 4]
 blast_furnace.findRecipe(480, [<gregtech:meta_item_1:10044> * 4,<gregtech:meta_item_1:10016>], [null]).remove();
