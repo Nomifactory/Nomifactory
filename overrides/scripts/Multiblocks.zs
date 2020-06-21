@@ -1032,7 +1032,7 @@ val lunarminingstation = Builder.start(loc, id)
             .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
             .setAmountAtLeast('I', 1)
             .where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
-            .setAmountAtLeast('#', 60)
+            .setAmountAtLeast('#', 45)
             .where('#', <metastate:gregtech:machine_casing:6>)
             .build())
     .addDesign(
