@@ -4738,7 +4738,7 @@
     },
     "68:10": {
       "preRequisites:11": [
-        197
+        542
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10409,7 +10409,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r.",
+          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Crystal Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
