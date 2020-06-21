@@ -253,5 +253,5 @@ recipes.addShaped(<solarflux:solar_panel_5> * 4, [
 
 recipes.addShaped(<solarflux:solar_panel_4> * 2, [
 	[<solarflux:solar_panel_3>, <solarflux:photovoltaic_cell_2>, <solarflux:solar_panel_3>],	
-	[<modularmachinery:itemmodularium>, <enderio:block_alloy:8>, <modularmachinery:itemmodularium>],	
-	[<modularmachinery:itemmodularium>,<enderio:item_endergy_conduit:1>,<modularmachinery:itemmodularium>]]);	
+	[<ore:ingotMicroversium>, <enderio:block_alloy:8>, <ore:ingotMicroversium>],	
+	[<ore:ingotMicroversium>,<enderio:item_endergy_conduit:1>,<ore:ingotMicroversium>]]);	

@@ -46,6 +46,7 @@ global implosion        as RecipeMap = RecipeMap.getByName("implosion_compressor
 global lathe            as RecipeMap = RecipeMap.getByName("lathe");
 global macerator        as RecipeMap = RecipeMap.getByName("macerator");
 global mixer            as RecipeMap = RecipeMap.getByName("mixer");
+global packager         as RecipeMap = RecipeMap.getByName("packer");
 global pyro             as RecipeMap = RecipeMap.getByName("pyro");
 global reactor          as RecipeMap = RecipeMap.getByName("chemical_reactor");
 global saw              as RecipeMap = RecipeMap.getByName("cutting_saw");
