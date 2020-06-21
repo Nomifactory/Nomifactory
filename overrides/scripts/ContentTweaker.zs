@@ -219,6 +219,11 @@ excitationcoil.maxStackSize = 64;
 excitationcoil.register();
 
 var block_dust = VanillaFactory.createBlock("block_dust", <blockmaterial:sand>);
+block_dust.blockSoundType = <soundtype:cloth>;
+block_dust.toolClass = "shovel";
+block_dust.toolLevel = 0;
+block_dust.blockHardness = 0.4;
+block_dust.blockResistance = 0.4;
 block_dust.gravity = true;
 block_dust.register();
 
