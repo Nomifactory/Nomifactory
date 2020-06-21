@@ -218,8 +218,8 @@ var excitationcoil = VanillaFactory.createItem("excitationcoil");
 excitationcoil.maxStackSize = 64;
 excitationcoil.register();
 
-var block_dust = VanillaFactory.createItem("block_dust");
-block_dust.maxStackSize = 64;
+var block_dust = VanillaFactory.createBlock("block_dust", <blockmaterial:sand>);
+block_dust.gravity = true;
 block_dust.register();
 
 var endstonedust = VanillaFactory.createItem("endstonedust");

@@ -126,7 +126,7 @@ item.contenttweaker.endstonedust.name=Endstone Dust
 item.contenttweaker.lapisarmorplate.name=Heavy Lapis Plate
 item.contenttweaker.carbonarmorplate.name=Heavy Carbon Plate
 item.contenttweaker.redstonearmorplate.name=Heavy Redstone Plate
-item.contenttweaker.block_dust.name=Dust Block
+tile.contenttweaker.block_dust.name=Dust Block
 item.contenttweaker.blazepowder.name=Blaze Powder
 item.contenttweaker.grainsofinnocence.name=Grains Of Innocence
 
