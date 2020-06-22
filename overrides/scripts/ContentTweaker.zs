@@ -4,6 +4,7 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.Fluid;
 
 import mods.contenttweaker.AxisAlignedBB;
 
@@ -306,54 +307,49 @@ var solidifiedxenon = VanillaFactory.createItem("solidifiedxenon");
 solidifiedxenon.maxStackSize = 64;
 solidifiedxenon.register();
 
-var krypton= VanillaFactory.createFluid("krypton", Color.fromHex("73f93e"));
-var neon = VanillaFactory.createFluid("neon", Color.fromHex("f435eb"));
-var xenon = VanillaFactory.createFluid("xenon", Color.fromHex("8d1f9b"));
-var elementalreduction = VanillaFactory.createFluid("elementalreduction", Color.fromHex("588c5a"));
-var einsteinium = VanillaFactory.createFluid("einsteinium", Color.fromHex("ddc10b"));
-var awakeneddraconium = VanillaFactory.createFluid("awakeneddraconium", Color.fromHex("ff890c"));
-var californium = VanillaFactory.createFluid("californium", Color.fromHex("9b110c"));
-var berkelium = VanillaFactory.createFluid("berkelium", Color.fromHex("ba5710"));
-var curium = VanillaFactory.createFluid("curium", Color.fromHex("421e5b"));
-var neptunium = VanillaFactory.createFluid("neptunium", Color.fromHex("c3dbc6"));
-var plutonium2 = VanillaFactory.createFluid("plutonium2", Color.fromHex("f73663"));
-var uranium233 = VanillaFactory.createFluid("uranium233", Color.fromHex("187a30"));
-var moltencreativeportabletank = VanillaFactory.createFluid("moltencreativeportabletank", Color.fromHex("a02cba"));
-var moltencrystalmatrix = VanillaFactory.createFluid("moltencrystalmatrix", Color.fromHex("4cffed"));
-var moltennetherstar = VanillaFactory.createFluid("moltennetherstar", Color.fromHex("f2f2d8"));
-var moltenempoweredrestonia = VanillaFactory.createFluid("moltenempoweredrestonia", Color.fromHex("ff0000"));
-var moltenempoweredpalis = VanillaFactory.createFluid("moltenempoweredpalis", Color.fromHex("0026ff"));
-var moltenempoweredenori = VanillaFactory.createFluid("moltenempoweredenori", Color.fromHex("e6e6e6"));
-var moltenempowereddiamatine = VanillaFactory.createFluid("moltenempowereddiamatine", Color.fromHex("00fbff"));
-var moltenempoweredemeradic = VanillaFactory.createFluid("moltenempoweredemeradic", Color.fromHex("00ff00"));
-var moltenempoweredvoid = VanillaFactory.createFluid("moltenempoweredvoid", Color.fromHex("e0e0e0"));
-var moltensoularium = VanillaFactory.createFluid("moltensoularium", Color.fromHex("6b4411"));
-var moltendarksoularium = VanillaFactory.createFluid("moltendarksoularium", Color.fromHex("422805"));
-krypton.register();
-neon.register();
-xenon.register();
-elementalreduction.register();
-einsteinium.register();
-awakeneddraconium.register();
-californium.register();
-berkelium.register();
-curium.register();
-neptunium.register();
-plutonium2.register();
-uranium233.register();
-moltencreativeportabletank.register();
-moltencrystalmatrix.register();
-moltennetherstar.register();
-moltenempoweredrestonia.register();
-moltenempoweredpalis.register();
-moltenempoweredenori.register();
-moltenempowereddiamatine.register();
-moltenempoweredemeradic.register();
-moltenempoweredvoid.register();
-moltensoularium.register();
-moltendarksoularium.register();
+function makeFluid(name as string,
+                   hexColor as string,
+                   gaseous as bool,
+                   viscosity as int,
+                   rarity as string,
+                   luminosity as int) {
+    val fluid as Fluid = VanillaFactory.createFluid(name, Color.fromHex(hexColor));
+    fluid.gaseous = gaseous;
+    fluid.viscosity = viscosity;
+    fluid.density = gaseous ? -viscosity : viscosity;
+    fluid.rarity = rarity;
+    fluid.luminosity = luminosity;
+    fluid.register();
+}
 
+//        name                          color       gas?    viscosity   rarity      light
+makeFluid("krypton",                    "73f93e",   true,   500,        "RARE",     0);
+makeFluid("neon",                       "f435eb",   true,   500,        "RARE",     0);
+makeFluid("xenon",                      "8d1f9b",   true,   500,        "RARE",     0);
 
+makeFluid("elementalreduction",         "588c5a",   true,   2000,       "COMMON",   7);
+
+makeFluid("einsteinium",                "ddc10b",   false,  4096,       "COMMON",   0);
+makeFluid("californium",                "9b110c",   false,  3072,       "COMMON",   0);
+makeFluid("berkelium",                  "ba5710",   false,  2048,       "COMMON",   0);
+makeFluid("curium",                     "421e5b",   false,  1024,       "COMMON",   0);
+makeFluid("neptunium",                  "c3dbc6",   false,  1024,       "COMMON",   0);
+makeFluid("plutonium2",                 "f73663",   false,  1024,       "COMMON",   0);
+makeFluid("uranium233",                 "187a30",   false,  1024,       "COMMON",   0);
+
+makeFluid("moltencreativeportabletank", "a02cba",   false,  1,          "EPIC",     0);
+makeFluid("awakeneddraconium",          "ff890c",   false,  2000,       "COMMON",   0);
+makeFluid("moltencrystalmatrix",        "4cffed",   false,  2000,       "COMMON",   0);
+makeFluid("moltensoularium",            "6b4411",   false,  1000,       "COMMON",   0);
+makeFluid("moltendarksoularium",        "422805",   false,  1000,       "COMMON",   0);
+makeFluid("moltennetherstar",           "f2f2d8",   false,  100,        "COMMON",   15);
+
+makeFluid("moltenempoweredrestonia",    "ff0000",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempoweredpalis",       "0026ff",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempoweredenori",       "e6e6e6",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempowereddiamatine",   "00fbff",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempoweredemeradic",    "00ff00",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempoweredvoid",        "e0e0e0",   false,  10000,      "COMMON",   15);
 
 var universalnavigator = VanillaFactory.createItem("universalnavigator");
 universalnavigator.maxStackSize = 64;
