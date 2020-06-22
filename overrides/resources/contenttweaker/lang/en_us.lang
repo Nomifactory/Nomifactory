@@ -203,7 +203,7 @@ item.contenttweaker.ultimate_gem.name=Ultimate Gem
 
 item.contenttweaker.dragonlairdata.name=Dragon Lair Data
 item.contenttweaker.witherrealmdata.name=Wither Realm Data
-item.contenttweaker.denseoilshale.name=Dense Oilsands Ore
+tile.contenttweaker.denseoilshale.name=Dense Oilsands Ore
 item.contenttweaker.impossiblerealmdata.name=Impossible Realm Data
 item.contenttweaker.sentientgear.name=Sentient Gear Core
 item.contenttweaker.lairoftheclockworkkingdata.name=Lair Of The Clockwork King Data

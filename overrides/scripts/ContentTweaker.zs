@@ -635,9 +635,8 @@ sentientgear.rarity = "epic";
 sentientgear.maxStackSize = 64;
 sentientgear.register();
 
-var denseoilshale = VanillaFactory.createItem("denseoilshale");
-denseoilshale.maxStackSize = 64;
-denseoilshale.rarity = "uncommon";
+var denseoilshale = VanillaFactory.createBlock("denseoilshale", <blockmaterial:rock>);
+denseoilshale.blockSoundType = <soundtype:stone>;
 denseoilshale.register();
 
 var densehydrogen = VanillaFactory.createItem("densehydrogen");
