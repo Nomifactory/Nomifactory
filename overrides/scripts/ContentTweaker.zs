@@ -222,7 +222,7 @@ excitationcoil.axisAlignedBB = AxisAlignedBB.create(
      0.0 / 16.0,
      4.0 / 16.0,
     12.0 / 16.0,
-     8.0 / 16.0,
+     9.0 / 16.0,
     12.0 / 16.0
 );
 excitationcoil.lightValue = 1;
