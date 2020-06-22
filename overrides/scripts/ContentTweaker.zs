@@ -5,6 +5,8 @@ import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.Color;
 
+import mods.contenttweaker.AxisAlignedBB;
+
 
 var smallgearextrudershape = VanillaFactory.createItem("smallgearextrudershape");
 smallgearextrudershape.maxStackSize = 64;
@@ -214,8 +216,17 @@ var blazepowder = VanillaFactory.createItem("blazepowder");
 blazepowder.maxStackSize = 64;
 blazepowder.register();
 
-var excitationcoil = VanillaFactory.createItem("excitationcoil");
-excitationcoil.maxStackSize = 64;
+var excitationcoil = VanillaFactory.createBlock("excitationcoil", <blockmaterial:iron>);
+excitationcoil.axisAlignedBB = AxisAlignedBB.create(
+     4.0 / 16.0,
+     0.0 / 16.0,
+     4.0 / 16.0,
+    12.0 / 16.0,
+     8.0 / 16.0,
+    12.0 / 16.0
+);
+excitationcoil.lightValue = 1;
+excitationcoil.fullBlock = false;
 excitationcoil.register();
 
 var block_dust = VanillaFactory.createBlock("block_dust", <blockmaterial:sand>);
