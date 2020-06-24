@@ -51,3 +51,20 @@ if(!isNull(ae2)) {
         }
     }
 }
+
+/* Hide filled fluid containers from JEI */
+val containers = [
+    <gregtech:meta_item_1:32762>, //Cell
+    <gregtech:meta_item_1:32405>, //Steel Cell
+    <gregtech:meta_item_1:32406>  //Tungstensteel Cell
+] as IItemStack[];
+
+    
+for container in containers {
+    for liquid in game.liquids {
+        //greg containers
+        mods.jei.JEI.hide(container.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
+        //ceramics clay buckets
+        mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: liquid.name, Amount: 1000}}));
+    }
+}
