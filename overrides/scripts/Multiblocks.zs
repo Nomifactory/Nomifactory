@@ -1224,35 +1224,85 @@ makeShaped("multiblock_controller_base", <gregtech:machine:3000>,
 	 "MSM",
 	 "CMC"],
 	{ C : <ore:circuitAdvanced>,
-	  M : <ore:ingotMicroversium>,
+	  M : <contenttweaker:microverse_casing>,
 	  S : <extrautils2:screen> }
 );
 
-val controllers = [
-    <gregtech:machine:3000>,
-    <gregtech:machine:3001>,
-    <gregtech:machine:3002>,
-    <gregtech:machine:3003>,
-    <gregtech:machine:3004>,
-    <gregtech:machine:3005>,
-    <gregtech:machine:3006>,
-    <gregtech:machine:3007>] as IItemStack[];
+// Small Microverse Projector
 
-function makeRecipe(i as int, result as IItemStack) {
-    val grid = [[null, null, null],
-                [null, null, null],
-                [null, null, null]] as IIngredient[][];
+makeShaped("small_microverse_controller", <gregtech:machine:3001>,
+    ["CBC",
+     "BSB",
+     "CBC"],
+    { C : <ore:circuitAdvanced>, //T3
+      B : <contenttweaker:microverse_casing>,
+      S : <extrautils2:screen> });
 
-    grid[i / 3][i % 3] = <ore:multiblockController>;
+// Medium Microverse Projector
 
-    recipes.addShaped("multiblock_controller_"+i, result, grid);
-}
+makeShaped("medium_microverse_controller", <gregtech:machine:3002>,
+    ["CBC",
+     "BSB",
+     "CBC"],
+    { C : <ore:circuitExtreme>, //T4
+      B : <contenttweaker:microverse_casing>,
+      S : <extrautils2:screen> });
 
-for i, controller in controllers {
-    makeRecipe(i, controller);
+// Large Microverse Projector
 
-    <ore:multiblockController>.add(controller);
-}
+makeShaped("large_microverse_controller", <gregtech:machine:3003>,
+    ["CBC",
+     "BSB",
+     "CBC"],
+    { C : <ore:circuitElite>, //T5
+      B : <contenttweaker:microverse_casing>,
+      S : <extrautils2:screen> });
+
+// Oil Drilling Rig
+
+makeShaped("oil_drilling_rig", <gregtech:machine:3004>,
+    ["CBC",
+     "BSB",
+     "FPF"],
+    { C : <ore:circuitAdvanced>, //T3
+      B : <gregtech:metal_casing:4>, //Solid Steel Machine Casing
+      S : <extrautils2:screen>,
+      P : <inspirations:pipe>,
+      F : <gregtech:frame_steel>});
+
+// Naquadah Reactor MK 1
+
+makeShaped("naquadah_reactor_1", <gregtech:machine:3005>,
+    ["NCN",
+     "GSG",
+     "PPP"],
+    { C : <ore:circuitElite>, //T5
+      G : <nuclearcraft:reactor_casing_transparent>,
+      S : <extrautils2:screen>,
+      P : <appliedenergistics2:spatial_pylon>,
+      N : <extendedcrafting:material:33>}); //Omnium Nugget
+
+// Naquadah Reactor MK 2
+
+makeShaped("naquadah_reactor_2", <gregtech:machine:3006>,
+    ["NCN",
+     "GSG",
+     "PPP"],
+    { C : <ore:circuitMaster>, //T6
+      G : <nuclearcraft:reactor_casing_transparent>,
+      S : <extrautils2:screen>,
+      P : <appliedenergistics2:spatial_pylon>,
+      N : <extendedcrafting:material:32>}); //Omnium Ingot
+
+// Lunar Mining Station
+
+makeShaped("lunar_mining_station", <gregtech:machine:3007>,
+    ["CLC",
+     "LSL",
+     "CLC"],
+    { C : <ore:circuitExtreme>, //T4
+      L : <gregtech:machine_casing:6>, //LuV Machine Casing
+      S : <extrautils2:screen>}); 
 
 ///////////////////////////////////////////////
 ////////////  Multiblock Recipes  /////////////
