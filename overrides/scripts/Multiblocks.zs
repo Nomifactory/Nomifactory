@@ -1202,6 +1202,30 @@ for idx,meta in energyInputHatches {
         [itemUtils.getItem("modularmachinery:blockenergyoutputhatch", idx)]);
 }
 
+val controllers = [
+    <gregtech:machine:3000>,
+    <gregtech:machine:3001>,
+    <gregtech:machine:3002>,
+    <gregtech:machine:3003>,
+    <gregtech:machine:3004>,
+    <gregtech:machine:3005>,
+    <gregtech:machine:3006>,
+    <gregtech:machine:3007>] as IItemStack[];
+
+function makeRecipe(i as int, result as IItemStack) {
+    val grid = [[null, null, null],
+                [null, null, null],
+                [null, null, null]] as IIngredient[][];
+
+    grid[i / 3][i % 3] = <modularmachinery:blockcontroller>;
+
+    recipes.addShaped("multiblock_controller_"+i, result, grid);
+}
+
+for i, controller in controllers {
+    makeRecipe(i, controller);
+}
+
 /// End conversion code ///
 
 // Casing

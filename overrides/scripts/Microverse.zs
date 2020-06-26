@@ -21,8 +21,6 @@ recipes.remove(<modularmachinery:blockcontroller>);
 
 <ore:multiblockController>.add(<modularmachinery:blockcontroller>);
 
-recipes.addShapeless(<ore:ingotMicroversium>.firstItem * 4, [<modularmachinery:blockcontroller>]);
-
 //                 XXXXXXXXXX                            XXXXXXXXXX
 //              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
 //            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
