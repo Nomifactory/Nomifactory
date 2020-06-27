@@ -201,9 +201,6 @@ autoclave.recipeBuilder()
 <gregtech:meta_item_1:15214>.addTooltip("Draconium Lens");
 
 
-
-
-
 /* ******* GTCE Precision Laser Engraver ****** */
 
 // RAM Wafer - level 1
@@ -314,6 +311,12 @@ lathe.recipeBuilder()
 	.inputs([<gregtech:meta_item_1:14299> * 2])
 	.outputs([<gregtech:meta_item_2:19299>])
 	.duration(200).EUt(30).buildAndRegister();
+  
+// Microversium Long Rod
+lathe.recipeBuilder()
+  .inputs([<ore:stickMicroversium> * 2])
+  .outputs([<ore:stickLongMicroversium>.firstItem])
+  .duration(200).EUt(30).buildAndRegister();
 
 
 /* ******* GTCE Brewery ******* */

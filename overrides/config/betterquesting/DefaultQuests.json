@@ -1590,7 +1590,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products.\n\nTurning §6Coal§r into §6Coal Coke§r will not only make it more useful as fuel, but will also produce §9Phenol§r, which you\u0027ll need for circuits.\n\nThe Pyrolyse oven is also the source of several other fluids that can be distilled for useful ingredients.",
+          "desc:8": "The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products.\n\nTurning §6Coal§r into §6Coal Coke§r will not only make it more useful as fuel, but will also produce §9Phenol§r, which you\u0027ll need for circuits.\n\nThe Pyrolyse oven is also the source of several other fluids that can be distilled for useful ingredients.\n\nYou can §6sneak-right click§r the controller to enable the in-world preview.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -4110,7 +4110,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Electric Blast Furnace§r is a major, major milestone in your §bGregTech§r career. It has the power to smelt more advanced materials. The first of which, §6Aluminium§r, is going to be important in the immediate future.\n\nThere is a diagram of how to build the EBF in JEI. The second and third levels must be a 3x3 square shape of Coil Blocks (§6Cupronickel§r is the only type of coil block you have access to for now) with an empty center.\n\nHowever, the bottom and top layers are very flexible. The §6EBF Controller§r must be on the §ebottom layer§r of the structure, and on the §emiddle of an outer edge§r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with §6Heatproof Machine Casings§r. It\u0027s worth noting that you must §euse at least 10 Heatproof Machine Casings in your layout or the structure will not form§r.\n\nThis quest calls for two energy hatches, a fluid input and output, and an item input and output, which is a total of six positions. Their specific order and placement don\u0027t matter, as long as you can access them. The seventh position is your EBF controller, leaving eleven gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\"\n\nYou\u0027ll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power.",
+          "desc:8": "The §3Electric Blast Furnace§r is a major, major milestone in your §bGregTech§r career. It has the power to smelt more advanced materials. The first of which, §6Aluminium§r, is going to be important in the immediate future.\n\nThere is a diagram of how to build the EBF in JEI. The second and third levels must be a 3x3 square shape of Coil Blocks (§6Cupronickel§r is the only type of coil block you have access to for now) with an empty center. You can also §6sneak-right click§r the controller to enable the in-world preview.\n\nHowever, the bottom and top layers are very flexible. The §6EBF Controller§r must be on the §ebottom layer§r of the structure, and on the §emiddle of an outer edge§r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with §6Heatproof Machine Casings§r. It\u0027s worth noting that you must §euse at least 10 Heatproof Machine Casings in your layout or the structure will not form§r.\n\nThis quest calls for two energy hatches, a fluid input and output, and an item input and output, which is a total of six positions. Their specific order and placement don\u0027t matter, as long as you can access them. The seventh position is your EBF controller, leaving eleven gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\"\n\nYou\u0027ll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -4738,7 +4738,7 @@
     },
     "68:10": {
       "preRequisites:11": [
-        197
+        542
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10409,7 +10409,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Quantum Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r.",
+          "desc:8": "With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Crystal Circuit§r.\n\nAs the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won\u0027t be available until you can make a §3ZPM Assembling Machine§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -11530,13 +11530,13 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Air§r can be sent into the §3Vacuum Freezer§r to turn it into §9Liquid Air§r.\n\nLiquid Air can be sent into a §3Cryogenic Distillation Tower§r to break it down into its components. Keep in mind that Modular Machines output fluids into the first Fluid Hatch possible, so expect outputs appearing in different hatches every time.\n\nNote that despite accepting EU power, §nModular Machines will not overclock§r.\n\nIt\u0027s also highly advised to feed the tower FE (RF) instead of EU due to Modular Machines having issues with disconnecting from EU cables sometimes.",
+          "desc:8": "§9Air§r can be sent into the §3Vacuum Freezer§r to turn it into §9Liquid Air§r.\n\nLiquid Air can be sent into a §3Cryogenic Distillation Tower§r to break it down into its components.\n\n§9Noble Gases§r can be broken further into other valuable products, so it\u0027s advised to have at least two Cryogenic Distillation Towers.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3000,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -11579,9 +11579,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3000,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 52,
@@ -11597,21 +11597,21 @@
             },
             "3:10": {
               "Count:3": 5,
-              "Damage:2": 3,
+              "Damage:2": 733,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidoutputhatch"
+              "id:8": "gregtech:machine"
             },
             "4:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 734,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 732,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidinputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -14587,18 +14587,19 @@
       "preRequisites:11": [
         214,
         400,
-        385
+        385,
+        132
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is your first §aMicroverse Projector§r.\n\nIn this modpack, Microverse Projectors are used to launch §6Micro Miners§r to obtain valuable loot, which includes but isn\u0027t not limited to §6ore, §6gems, various dusts and otherwise unobtainable items§r like Radium Salt or Naquadah Dust.\n\nUnlike GregTech multiblocks, Modular Machines must be constructed exactly as dictated by the blueprint. Make sure the Quantum Compressor is facing the controller, too.\n\nThis quest calls for an §6HV Energy Input§r. Make sure to §nalways check the energy requirement§r before launching Micro Miners! Not checking the requirement (and not upgrading the energy input hatch) will result in complete loss of input items: the Energy Input Hatch must match or be higher than the §aFE/t§r value of the recipe. Hover over different energy inputs to see how much power they can accept.\n\nSearch \"Microverse Projector\" in JEI to see blueprints, left-click a blueprint to see the multiblock preview and press U over the blueprint to see all recipes.\n\nYes, Micro Miners are single-use.",
+          "desc:8": "This is your first §3Microverse Projector§r.\n\nThese structures are used to project §6Micro Miners§r into a §eMicroverse§r to obtain valuable loot such as §6ores§r, §6gems§r, and otherwise unobtainable items§r like §6Radium Salt§r and §6Naquadah Dust§r. §cKeep in mind that Micro Miners are single-use!§r\n\nMicroverse Projectors are §bGregTech§r multiblocks, which means that they\u0027re just as flexible as other machines in terms of the I/O block placement: §epositions of Buses and Hatches can be swapped with any Microverse Projector Casing§r.\n\nA single §6HV Energy Input§r supports missions up to 1024 EU/t. To process the rest you\u0027ll need to upgrade the multiblock to at least §eEV power§r, which is either §6two HV Energy Inputs§r, or §6one EV Energy Input§r. Missions will also overclock, increasing in speed each time the projector\u0027s energy tier increases and available power reaches the next multiple of four times the base mission power.\n\nHover your mouse over the Small Microverse Projector and press §bU§r to see all available missions.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3001,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -14643,7 +14644,7 @@
               "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "1:10": {
               "Count:3": 1,
@@ -14653,27 +14654,27 @@
             },
             "2:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 710,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
+              "id:8": "gregtech:machine"
             },
             "3:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_vent"
             },
             "4:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3001,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 722,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidinputhatch"
+              "id:8": "gregtech:machine"
             },
             "6:10": {
               "Count:3": 4,
@@ -14683,15 +14684,15 @@
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 734,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 5,
+              "Damage:2": 731,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockoutputbus"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -19402,7 +19403,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Time to get fusing!\n\nThe §3Fusion Reactor§r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows.\n\nThe §bJEI§r preview shows §e§eall valid hatch locations§r, but you don\u0027t actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §6LuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It\u0027s possible to use input/output hatches in every valid location, if you prefer.\n\nBecause of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you\u0027ll need to craft an additional §a28 casings§r.\n\nEach §aEnergy Input Hatch§r increases the reactor\u0027s power buffer. The \"Energy to Start\" value of a recipe is drained instantly when the reactor switches from the previous recipe it ran (or no previous recipe) to a different recipe. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes.\n\nIf you can\u0027t provide sufficient starting power or continuous energy, §cthe craft might be voided§r. Make sure you have enough power to start up the reactor and to run the recipe to completion.\n\nFusion Reactors don\u0027t overclock, and they gate the next tier of materials, so you will eventually want to make more than one.",
+          "desc:8": "Time to get fusing!\n\nThe §3Fusion Reactor§r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. §6Sneak-right click§r the controller to enable the in-world preview.\n\nThe §bJEI§r preview shows §e§eall valid hatch locations§r, but you don\u0027t actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §6LuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It\u0027s possible to use input/output hatches in every valid location, if you prefer.\n\nBecause of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you\u0027ll need to craft an additional §a28 casings§r.\n\nEach §aEnergy Input Hatch§r increases the reactor\u0027s power buffer. The \"Energy to Start\" value of a recipe is drained instantly when the reactor switches from the previous recipe it ran (or no previous recipe) to a different recipe. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes.\n\nIf you can\u0027t provide sufficient starting power or continuous energy, §cthe craft might be voided§r. Make sure you have enough power to start up the reactor and to run the recipe to completion.\n\nFusion Reactors don\u0027t overclock, and they gate the next tier of materials, so you will eventually want to make more than one.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26639,18 +26640,19 @@
     },
     "407:10": {
       "preRequisites:11": [
-        386
+        386,
+        132
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Medium Microverse Projector§r is a more powerful projector required for sending Tier Four through Tier Six Micro Miners into microverses.\n\nWhile some of the miners run on IV power, make a §6LuV Energy Input§r so you don\u0027t have to replace it later or accidentally try to run a Tier Six on IV power. Always check the voltage required on a recipe, as you will §close a miner§r if you can\u0027t supply enough power to complete the mission; ModMachines will continue to eat incoming power without making progress.\n\nWhen building the multiblock, be sure to place the §6Quantum Compressors§r to face the same direction as the controller block (this is the usual reason for the structure not forming).",
+          "desc:8": "The §3Medium Microverse Projector§r is a more powerful projector required for sending §6Tier Four§r through §6Tier Six Micro Miners§r into microverses.\n\nInitial missions can operate on §eIV power§r, while §eLuV power§r is required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any §6Microverse Projector Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3002,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -26693,15 +26695,15 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3002,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 54,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "2:10": {
               "Count:3": 26,
@@ -26717,9 +26719,9 @@
             },
             "4:10": {
               "Count:3": 4,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_vent"
             },
             "5:10": {
               "Count:3": 1,
@@ -26729,21 +26731,15 @@
             },
             "6:10": {
               "Count:3": 1,
-              "Damage:2": 5,
+              "Damage:2": 710,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 731,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
-            },
-            "8:10": {
-              "Count:3": 1,
-              "Damage:2": 6,
-              "OreDict:8": "",
-              "id:8": "modularmachinery:blockoutputbus"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -26941,18 +26937,19 @@
     },
     "411:10": {
       "preRequisites:11": [
-        386
+        386,
+        192
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending Tier Seven through Tier Ten Micro Miners into microverses.\n\nWhile some of the miners run on lower power, make a §6UV Energy Input§r so you don\u0027t have to replace it later or accidentally run something on insufficient power. Always check the voltage required on a recipe, as you will §close a miner§r if you can\u0027t supply enough power to complete the mission; ModMachines will continue to eat incoming power without making progress and breaking the structure voids the current craft.\n\nWhen building the multiblock, be sure to place the §6Quantum Compressors§r to face the same direction as the controller block (this is the usual reason for the structure not forming).",
+          "desc:8": "The §3Large Microverse Projector§r is a more powerful projector required for sending §6Tier Seven§r through §6Tier Ten Micro Miners§r into microverses.\n\nTier Seven missions will operate on §eLuV power§r, but higher energy tiers will be required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any §6Microverse Projector Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3003,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -26995,9 +26992,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3003,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 248,
@@ -27009,7 +27006,7 @@
               "Count:3": 130,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "3:10": {
               "Count:3": 72,
@@ -27025,27 +27022,21 @@
             },
             "5:10": {
               "Count:3": 4,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_vent"
             },
             "6:10": {
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 720,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
+              "id:8": "gregtech:machine"
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 6,
+              "Damage:2": 731,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockoutputbus"
-            },
-            "8:10": {
-              "Count:3": 1,
-              "Damage:2": 7,
-              "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -27059,7 +27050,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Lunar Mining Station§r is a large multiblock structure used for mining gases from the moon. It is an excellent (though not the only) source of §9Deuterium§r or §9Helium-3§r, depending on what kind of §6Rover§r you use.\n\nRovers only have a 10% chance to break while mining, so a stack of them will last quite a while.\n\nBecause this structure must be placed on the Moon, it is a good idea to use mechanisms like §aEnder Tanks§r or a §6Quantum Link Chamber§r for teleporting the fluids back to your base.\n\nMake sure to keep it chunk-loaded!\n\n",
+          "desc:8": "The §3Lunar Mining Station§r is a large multiblock structure used for mining gases from the moon. It is an excellent (though not the only) source of §9Deuterium§r or §9Helium-3§r, depending on what kind of §6Rover§r you use. \n\nRovers only have a 10% chance to break while mining, so a stack of them will last quite a while.\n\nWhile both available recipes require §eMV power§r, you can overclock it with higher tiers of power. The positions of hatches and buses can be swapped with any §6LuV Machine Casing§r.\n\n§6Sneak-right click§r the controller to enable the in-world preview.\n\nBecause this structure must be placed on the Moon, it is a good idea to use mechanisms like §aEnder Tanks§r or a §6Quantum Link Chamber§r for teleporting the fluids back to your base.\n\nMake sure to keep it chunk-loaded!\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27108,9 +27099,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3007,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 56,
@@ -27150,21 +27141,15 @@
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 743,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidoutputhatch"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 700,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
-            },
-            "9:10": {
-              "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -32041,7 +32026,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Naquadah Reactor Mk1§r is a structure used to generate considerable amounts of RF power from decaying §6Enriched Naquadah§r or §6Naquadria§r into §6Lead§r.\n\n§eKnown issue: Modular Machine energy output hatches cause a lot of lag by scanning a large region around it for the presence of a Draconic Evolution Energy Core to output into. This will hopefully be addressed in a future update.",
+          "desc:8": "The §3Naquadah Reactor Mk1§r is a structure used to generate considerable amounts of EU power from decaying §6Enriched Naquadah§r or §6Naquadria§r into §6Lead§r.\n\nYou\u0027ll have to use a §6CEU§r if you want to convert EU to RF.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32090,9 +32075,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3005,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "1:10": {
               "Count:3": 3,
@@ -32116,13 +32101,13 @@
               "Count:3": 14,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcasing"
+              "id:8": "contenttweaker:microverse_casing"
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 7,
+              "Damage:2": 765,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyoutputhatch"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -34095,12 +34080,13 @@
     },
     "549:10": {
       "preRequisites:11": [
-        154
+        89,
+        98
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "If you don\u0027t like the idea of mining out Oilsands veins, you can build an §3Oil Drilling Rig§r.\n\nYou\u0027ll need to provide it with power, §9Drilling Fluid§r, and a steady supply of §6Pipes§r. The Pipes only have a 1% chance to have one be used up per bucket of §9Oil§r drilled.",
+          "desc:8": "If you don\u0027t like the idea of mining out Oilsands veins, you can build an §3Oil Drilling Rig§r.\n\nYou\u0027ll need to provide it with power, §9Drilling Fluid§r, and a steady supply of §6Pipes§r. The Pipes only have a 1% chance to break per bucket of §9Oil§r drilled.\n\nYou\u0027ll need to supply at least §eHV power§r to your rig, and it will overclock with higher energy tiers. Positions of hatches and buses can be swapped with any §6Solid Steel Machine Casing§r.\n\nIf the multiblock preview in §bJEI§r is confusing, note that you can §ehold shift and drag-right-click§r to scale the preview to fit the window. Place then §6sneak-right click§r the controller block with an empty hand to enable the in-world preview.\n\nKeep in mind when placing the structure that there are 12 pipes that extend downward from the level of the controller.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34128,7 +34114,20 @@
         }
       },
       "questID:3": 549,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin100"
+            }
+          }
+        }
+      },
       "tasks:9": {
         "0:10": {
           "autoConsume:1": 0,
@@ -34170,33 +34169,33 @@
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 3004,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockcontroller"
+              "id:8": "gregtech:machine"
             },
             "6:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 734,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockenergyinputhatch"
+              "id:8": "gregtech:machine"
             },
             "7:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 703,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidoutputhatch"
+              "id:8": "gregtech:machine"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 702,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockfluidinputhatch"
+              "id:8": "gregtech:machine"
             },
             "9:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 700,
               "OreDict:8": "",
-              "id:8": "modularmachinery:blockinputbus"
+              "id:8": "gregtech:machine"
             },
             "10:10": {
               "Count:3": 1,
@@ -36492,7 +36491,8 @@
     },
     "594:10": {
       "preRequisites:11": [
-        214
+        214,
+        400
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36501,16 +36501,16 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": "",
-            "id:8": "modularmachinery:itemmodularium"
+            "Damage:2": 10715,
+            "OreDict:8": "ingotMicroversium",
+            "id:8": "gregtech:meta_item_1"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Modularium Ingots",
+          "name:8": "Microversium Ingots",
           "partysinglereward:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -36546,9 +36546,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 64,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "modularmachinery:itemmodularium"
+              "Damage:2": 10715,
+              "OreDict:8": "ingotMicroversium",
+              "id:8": "gregtech:meta_item_1"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -43332,7 +43332,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of RF energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?",
+          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -43384,6 +43384,12 @@
               "Damage:2": 4,
               "OreDict:8": "",
               "id:8": "extendedcrafting:storage"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 3006,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -47108,6 +47114,43 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "775:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§bMultiblock Tweaker§r adds an §einteractive in-world preview§r for all §bGregTech§r multiblocks! §6Shift-right-click§r a placed controller to activate a hologram depicting the default layout of the structure to help you with building. As you place blocks, the structure will be validated and the §efirst incorrect block§r it detects will be highlighted in red.\n\n§6Sneak-right-click§r to cycle from the full view through each layer. When on the final layer of the preview, this will remove the preview.\n\n§6Sneak-left-click§r to go back to the previous layer, or close the preview from the full view.\n\nIn the §eJEI previews§r for multiblocks, §6left-click§r and drag the mouse to rotate the preview horizontally. §6Shift-left-click§r to rotate it vertically.\n\nFor §bMultiblock Tweaker§r structures, you can additionally §6right-click§r and drag the mouse to pan the preview or §6shift-right-click§r and drag to zoom in or out.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": "",
+            "id:8": "gregtech:frame_steel"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Multiblock Machine Previews",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 775,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -47435,15 +47478,15 @@
           "id:3": 402,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -881,
-          "y:3": 52
+          "x:3": -868,
+          "y:3": 24
         },
         "44:10": {
           "id:3": 403,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -881,
-          "y:3": 12
+          "x:3": -912,
+          "y:3": 24
         },
         "45:10": {
           "id:3": 413,
@@ -47631,8 +47674,8 @@
           "id:3": 755,
           "sizeX:3": 35,
           "sizeY:3": 35,
-          "x:3": -881,
-          "y:3": 92
+          "x:3": -912,
+          "y:3": 68
         },
         "72:10": {
           "id:3": 774,
@@ -47640,6 +47683,13 @@
           "sizeY:3": 24,
           "x:3": -924,
           "y:3": 240
+        },
+        "73:10": {
+          "id:3": 775,
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -868,
+          "y:3": 68
         }
       }
     },
@@ -52220,7 +52270,7 @@
       "livesdef:3": 3,
       "livesmax:3": 10,
       "pack_name:8": "Omnifactory",
-      "pack_version:3": 1,
+      "pack_version:3": 2,
       "party_enable:1": 1
     }
   }
