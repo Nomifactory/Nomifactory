@@ -1248,7 +1248,7 @@ makeShaped("multiblock_controller_base", <gregtech:machine:3000>,
 	 "MSM",
 	 "CMC"],
 	{ C : <ore:circuitAdvanced>,
-	  M : <contenttweaker:microverse_casing>,
+	  M : <gregtech:metal_casing:3>, //Frost Proof Machine Casing
 	  S : <extrautils2:screen> }
 );
 
