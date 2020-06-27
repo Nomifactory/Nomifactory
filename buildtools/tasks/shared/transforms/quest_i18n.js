@@ -22,7 +22,9 @@ function flat(cur, pre) {
  * @returns {string}
  */
 function escapeString(origin) {
-    return origin.replace(/\n/g, "%n");
+    return origin
+        .replace(/%/g, "%%")
+        .replace(/\n/g, "%n");
 }
 
 function editKey(dbName, keyName) {

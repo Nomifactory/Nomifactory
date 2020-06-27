@@ -36491,7 +36491,8 @@
     },
     "594:10": {
       "preRequisites:11": [
-        214
+        214,
+        400
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36509,7 +36510,7 @@
           "lockedprogress:1": 1,
           "name:8": "Microversium Ingots",
           "partysinglereward:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
