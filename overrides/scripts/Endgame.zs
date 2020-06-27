@@ -433,4 +433,4 @@ makeShaped("of_processing_array", <gregtech:machine:2507>,
        H : <gregtech:machine:505>, //Machine Hull (IV)
        C : <ore:circuitMaster>, //T6 Circuit
        S : <gregtech:meta_item_1:32725>, //Quantum Star
-       B : <gregtech:meta_item_1:32597>}); //IV Tier Lapatronic
+       B : <gregtech:machine:10697>}); //IV Tier 16x CEF
