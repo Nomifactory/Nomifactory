@@ -19116,7 +19116,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Lumium§r-based machine hulls, Assembling Machine built, and §6Quantum Processor Mainframes§r squared away, you can finally get on the path to making a Ludicrous Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Crystal Circuits§r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes up to 8192 EU/t for improved speed at the cost of relatively more power.",
+          "desc:8": "With your §6Lumium§r-based machine hulls, Assembling Machine built, and §6Quantum Processor Mainframes§r squared away, you can finally get on the path to making a Ludicrous Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Crystal Circuits§r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes that consume up to 8192 EU/t for improved speed at the cost of relatively more power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32517,7 +32517,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Titanium§r-based machine hulls and §6Microprocessor Mainframes§r squared away, you can finally get on the path to making an Extreme Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Nanocircuits§r, as well as handling crafting recipes up to 2048 EU/t. It can also optionally overclock recipes up to 512 EU/t for improved speed at the cost of relatively more power.",
+          "desc:8": "With your §6Titanium§r-based machine hulls and §6Microprocessor Mainframes§r squared away, you can finally get on the path to making an Extreme Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Nanocircuits§r, as well as handling crafting recipes up to 2048 EU/t. It can also optionally overclock recipes that consume up to 512 EU/t for improved speed at the cost of relatively more power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32713,7 +32713,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Tungstensteel§r-based machine hulls and §6Nanoprocessor Mainframes§r squared away, you can finally get on the path to making an Insane Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Quantum Circuits§r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes up to 2048 EU/t for improved speed at the cost of relatively more power.",
+          "desc:8": "With your §6Tungstensteel§r-based machine hulls and §6Nanoprocessor Mainframes§r squared away, you can finally get on the path to making an Insane Voltage §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Quantum Circuits§r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes that consume up to 2048 EU/t for improved speed at the cost of relatively more power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32935,7 +32935,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3HV Assembling Machine§r unlocks §6Microcircuits§r, as well as handling crafting recipes up to 512 EU/t.\n\nIt can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power.",
+          "desc:8": "The §3HV Assembling Machine§r unlocks §6Microcircuits§r, as well as handling crafting recipes that consume up to 512 EU/t.\n\nIt can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33001,7 +33001,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your §6Iridium§r-based machine hulls and §6Crystal Processor Mainframes§r squared away, you can finally get on the path to making a ZPM §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Wetware Circuits§r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes up to 32768 EU/t for improved speed at the cost of relatively more power.",
+          "desc:8": "With your §6Iridium§r-based machine hulls and §6Crystal Processor Mainframes§r squared away, you can finally get on the path to making a ZPM §3Assembling Machine§r.\n\nThis tier of Assembling Machine unlocks §6Wetware Circuits§r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes that consume up to 32768 EU/t for improved speed at the cost of relatively more power.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
