@@ -28,11 +28,13 @@ function createClientDirs(cb) {
 }
 
 /**
- * Copies the modpack manifest.
+ * Saves the modpack manifest.
  */
-function copyClientManifest() {
-	return src("../manifest.json")
-		.pipe(dest(CLIENT_DEST_FOLDER));
+function saveModpackManifest(cb) {
+	const manifestPath = path.join(CLIENT_DEST_FOLDER, "manifest.json");
+	fs.writeFileSync(manifestPath, JSON.stringify(global.MODPACK_MANIFEST, null, "  "));
+	
+	cb();
 }
 
 /**
@@ -105,7 +107,7 @@ function zipClient() {
 
 module.exports = [
 	createClientDirs,
-	copyClientManifest,
+	saveModpackManifest,
 	copyClientOverrides,
 	copyClientLicense,
 	fetchModList,
