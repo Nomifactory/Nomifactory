@@ -53,7 +53,7 @@ if(!isNull(ae2)) {
 }
 
 /* Hide filled fluid containers from JEI */
-for liquid in game.liquid {
+for liquid in game.liquids {
     //greg containers
     val containers = [
     <gregtech:meta_item_1:32762>, //Cell
