@@ -47,7 +47,17 @@ if(!isNull(ae2)) {
 
     for item in ae2Items {
         if(item.displayName has "Cable Facade") {
-            mods.jei.JEI.hide(item);
+
+            if(item.displayName has "Block of Omnium") {
+
+                item.addTooltip(format.darkAqua("Facades can be crafted from most blocks, but are hidden from JEI to reduce clutter"));
+            }
+            else {
+               mods.jei.JEI.hide(item); 
+            }
         }
     }
 }
+
+//Hiding the GTCE omnium block facade version
+mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 8, item: "gregtech:compressed_17"}));
