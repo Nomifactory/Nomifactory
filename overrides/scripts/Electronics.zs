@@ -295,8 +295,8 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metai
 
 <contenttweaker:microprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Four circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(360).buildAndRegister();
+assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(360).buildAndRegister();
 
 
 
@@ -727,7 +727,7 @@ recipes.addShaped(<enderio:item_endergy_conduit:11> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 	[<gregtech:cable:354>,<enderio:item_endergy_conduit:10>,<gregtech:cable:354>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
-<enderio:item_endergy_conduit:11>.displayName = "Superconducter Energy Conduit";
+<enderio:item_endergy_conduit:11>.displayName = "Superconductor Energy Conduit";
 assembler.recipeBuilder().inputs([<gregtech:cable:354>* 2, <enderio:item_endergy_conduit:10>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:11> * 4]).duration(80).EUt(16).buildAndRegister();
 	
 //removing bad field generator assembling recipes
@@ -826,11 +826,7 @@ recipes.addShaped(<gregtech:machine:501>, [
 	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>], 
 	[<ore:cableGtSingleTin>, <gregtech:machine_casing:1>, <ore:cableGtSingleTin>]]);	
 assembler.findRecipe(16, [<gregtech:cable:5071> * 2, <gregtech:machine_casing:1>], [<liquid:plastic> * 288]).remove();	
-	
-recipes.addShaped(<gregtech:machine:509>, [
-	[<gregtech:meta_item_1:12145>, <moreplates:neutronium_plate>, <gregtech:meta_item_1:12145>], 
-	[<ore:wireGtSingleSuperconductor>, <gregtech:machine_casing:9>, <ore:wireGtSingleSuperconductor>]]);	
-	
+
 recipes.addShaped(<gregtech:meta_item_1:32600>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_2:16018>, <ore:stickIron>], 
 	[<gregtech:meta_item_2:16018>, <ore:stickIronMagnetic>, <gregtech:meta_item_2:16018>],
@@ -900,17 +896,12 @@ for i, wrench in wrenches {
         [<ore:plateWroughtIron>,          wrench       , <ore:plateWroughtIron>],
         [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
 
-    // MAX Machine Casing
-    recipes.addShaped("of_max_casing_wrench"+i, <gregtech:machine_casing:9>, [
-        [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>], 
-        [<moreplates:neutronium_plate>,             wrench           , <moreplates:neutronium_plate>], 
-        [<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>]]);
 
     // Modularium Machine Casing
-    recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>,               wrench             , <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]]);
+    recipes.addShaped("of_microverse_casing_wrench"+i, <contenttweaker:microverse_casing> *2, [
+        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>], 
+        [<ore:ingotMicroversium>,          wrench        , <ore:ingotMicroversium>], 
+        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>]]);
 
     // LuV Machine Casing
     recipes.addShaped("of_luv_casing_wrench"+i, <gregtech:machine_casing:6>, [
@@ -919,8 +910,7 @@ for i, wrench in wrenches {
         [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
 }
 
-//MAX Casing - Assembler
-assembler.recipeBuilder().inputs(<moreplates:neutronium_plate> * 8).outputs([<gregtech:machine_casing:9>]).duration(30).EUt(16).buildAndRegister();
+
 
 assembler.findRecipe(16,[<gregtech:meta_item_1:12197> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12197> * 2, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	

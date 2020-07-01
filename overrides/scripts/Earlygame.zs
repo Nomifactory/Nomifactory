@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 //Plantball
 recipes.addShaped(<gregtech:meta_item_2:32570>, [
@@ -52,8 +53,7 @@ recipes.addShaped(<minecraft:shears>,[
 [<ore:plateIron>,<gregtech:meta_tool:9>]]);
 <minecraft:shears>.displayName = "Iron Shears";
 
-//Clay & Wool
-recipes.addShapeless(<minecraft:clay_ball> * 4, [<minecraft:clay>]);
+//Wool
 recipes.remove(<minecraft:string>);
 recipes.addShapeless(<minecraft:string> * 4, [<minecraft:wool>]);
 
@@ -261,8 +261,8 @@ recipes.addShaped(<enderio:item_yeta_wrench>, [
 <gregtech:machine:722>.displayName = "Fluid Input Hatch (MV)";
 <gregtech:machine:732>.displayName = "Fluid Input Hatch (HV)";
 <gregtech:machine:742>.displayName = "Fluid Input Hatch (EV)";
-<gregtech:machine:752>.displayName = "Fluid Input Hatch (LuV)";
-<gregtech:machine:762>.displayName = "Fluid Input Hatch (IV)";
+<gregtech:machine:752>.displayName = "Fluid Input Hatch (IV)";
+<gregtech:machine:762>.displayName = "Fluid Input Hatch (LuV)";
 <gregtech:machine:772>.displayName = "Fluid Input Hatch (ZPM)";
 <gregtech:machine:782>.displayName = "Fluid Input Hatch (UV)";
 <gregtech:machine:792>.displayName = "Fluid Input Hatch (MAX)";
@@ -271,8 +271,8 @@ recipes.addShaped(<enderio:item_yeta_wrench>, [
 <gregtech:machine:723>.displayName = "Fluid Output Hatch (MV)";
 <gregtech:machine:733>.displayName = "Fluid Output Hatch (HV)";
 <gregtech:machine:743>.displayName = "Fluid Output Hatch (EV)";
-<gregtech:machine:753>.displayName = "Fluid Output Hatch (LuV)";
-<gregtech:machine:763>.displayName = "Fluid Output Hatch (IV)";
+<gregtech:machine:753>.displayName = "Fluid Output Hatch (IV)";
+<gregtech:machine:763>.displayName = "Fluid Output Hatch (LuV)";
 <gregtech:machine:773>.displayName = "Fluid Output Hatch (ZPM)";
 <gregtech:machine:783>.displayName = "Fluid Output Hatch (UV)";
 <gregtech:machine:793>.displayName = "Fluid Output Hatch (MAX)";
@@ -288,9 +288,9 @@ reactor.recipeBuilder().inputs([<contenttweaker:block_dust>]).fluidInputs([<liqu
 reactor.recipeBuilder().inputs([<contenttweaker:block_dust>]).fluidInputs([<liquid:water> * 1000]).outputs(<minecraft:clay>).EUt(15).duration(20).buildAndRegister();
 reactor.recipeBuilder().inputs([<minecraft:magma>]).fluidOutputs(<liquid:lava> * 1000).EUt(30).duration(120).buildAndRegister();
 reactor.recipeBuilder().inputs([<thermalfoundation:fertilizer>]).fluidInputs(<liquid:ammonia> * 100).outputs(<thermalfoundation:fertilizer:1>).EUt(30).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<thermalfoundation:fertilizer>]).fluidInputs(<liquid:ammonia> * 100).outputs(<thermalfoundation:fertilizer:1>).EUt(30).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
-reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
+// recipes for Manganese Oxides - currently unused
+// reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
+// reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
 mixer.recipeBuilder().inputs([<minecraft:redstone>,<minecraft:glowstone_dust>]).outputs(<nuclearcraft:compound:2> * 2).EUt(22).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2239>,<gregtech:meta_item_1:2026>]).outputs(<minecraft:glowstone_dust> * 2).EUt(15).duration(80).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:2071>]).outputs(<gregtech:meta_item_1:2189> * 2).EUt(15).duration(40).buildAndRegister();
@@ -321,9 +321,14 @@ recipes.addShapeless(<extrautils2:endershard> * 8, [<minecraft:ender_pearl>]);
 assembler.findRecipe(2, [<minecraft:blaze_powder>,<minecraft:ender_pearl>], [null]).remove();
 assembler.findRecipe(2, [<minecraft:ender_pearl> * 6,<minecraft:blaze_rod>], [null]).remove();
 mixer.findRecipe(8, [<gregtech:meta_item_1:2184> * 3,<gregtech:meta_item_1:2229>,<gregtech:meta_item_1:2044>], [null]).remove();
-reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
-reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2125> * 6,<gregtech:meta_item_1:2063>]).outputs([<gregtech:meta_item_1:1038> * 7]).fluidOutputs([<liquid:chlorine> * 3500]).EUt(240).duration(300).buildAndRegister();
 
+// Magnesium Chloride decomposition
+reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
+electrolyzer.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2125>*3])
+    .outputs([<gregtech:meta_item_1:2038>])
+    .fluidOutputs([<liquid:chlorine>*2000])
+    .duration(720).EUt(30).buildAndRegister();
 
 reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
 reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
@@ -441,8 +446,36 @@ recipes.addShapeless(<gregtech:meta_item_1:32517>,[<gregtech:meta_item_1:32500>,
 recipes.addShapeless(<gregtech:meta_item_1:32519>,[<gregtech:meta_item_1:32500>,<gregtech:meta_item_1:2063>,<gregtech:meta_item_1:2063>]);	//Small Sodium
 recipes.addShapeless(<gregtech:meta_item_1:32518>,[<gregtech:meta_item_1:32500>,<gregtech:meta_item_1:2036>,<gregtech:meta_item_1:2036>]);	//Small Lithium
 
+// Small Battery Hull
 recipes.remove(<gregtech:meta_item_1:32500>);
-recipes.addShaped(<gregtech:meta_item_1:32500>, [[<ore:cableGtSingleRedAlloy>], [<gregtech:meta_item_1:12071>], [<gregtech:meta_item_1:12071>]]);
+recipes.addShaped(<gregtech:meta_item_1:32500>, [
+	[<ore:cableGtSingleRedAlloy>], 
+	[<gregtech:meta_item_1:12071>], 
+	[<gregtech:meta_item_1:12071>]]);
+
+// Add Corrected Small Battery Hull recipe to Assembler
+assembler.findRecipe(1, [<gregtech:meta_item_1:12091>, <gregtech:cable:5071>],[<liquid:plastic>*144]).remove();
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:12071>, <gregtech:cable:5237>])
+	.fluidInputs([<liquid:plastic>*144])	
+	.outputs([<gregtech:meta_item_1:32500>])
+	.duration(800).EUt(1).buildAndRegister();
+
+// Correct the Macerating recipe for Small Battery Hull
+macerator.findRecipe(8, [<gregtech:meta_item_1:32500>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32500>)
+	.outputs(<gregtech:meta_item_1:2071>)
+	.duration(30).EUt(8).buildAndRegister();
+
+// Add Corrected Small Battery Hull recipe to fluid extractor
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:32500>], [null]).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32500>)
+	.fluidOutputs(<liquid:tin>*144)
+	.duration(80).EUt(32).buildAndRegister();
+
+
 recipes.removeByRecipeName("gregtech:electric_motor/electric_motor_lv_steel");
 
 recipes.remove(<gregtech:machine:210>);
@@ -810,3 +843,53 @@ furnace.addRecipe(<enderio:item_alloy_ingot:4>, <gregtech:meta_item_1:2700>, 0.0
 
 recipes.addShaped(<gregtech:meta_item_2:26033>, [[<gregtech:meta_item_1:14033>, <gregtech:meta_item_1:12033>, <gregtech:meta_item_1:14033>],[<gregtech:meta_item_1:12033>, <gregtech:meta_tool:11>, <gregtech:meta_item_1:12033>], [<gregtech:meta_item_1:14033>, <gregtech:meta_item_1:12033>, <gregtech:meta_item_1:14033>]]);
 
+//Fix Light Gray Spray Can being uncraftable
+assembler.findRecipe(8, [<gregtech:meta_item_1:32402>, <gregtech:meta_item_2:32422>], [null]).remove();
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32402>, <ore:dyeLightGray>)
+	.outputs(<gregtech:meta_item_1:32446>)
+	.duration(200).EUt(8).buildAndRegister();
+
+
+makeShaped("of_sponge", <minecraft:sponge>,
+	["PPP",
+	 "PMP",
+	 "PPP"],
+	{ P : <gregtech:meta_item_2:32570>,  // Plant Ball
+	  M : <inspirations:mulch>});
+
+// Bronze Casing Assembler recipe
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:12095>*6, <minecraft:brick_block>)
+	.outputs(<gregtech:metal_casing>*3)
+	.duration(50).EUt(16).buildAndRegister();
+
+//Fix unintended Concrete powerder skips
+
+macerator.findRecipe(8, [<gregtech:concrete>], [null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:concrete>], [null]).remove();
+
+
+recipes.removeByRecipeName("gregtech:block_decompress_concrete");
+
+macerator.recipeBuilder()
+	.inputs(<gregtech:concrete>)
+	.outputs(<gregtech:meta_item_1:2296> *9)
+	.duration(270).EUt(8).buildAndRegister();
+
+fluid_extractor.recipeBuilder()
+	.inputs(<gregtech:concrete>)
+	.fluidOutputs(<liquid:concrete>*1296)
+	.duration(720).EUt(32).buildAndRegister();
+
+recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]);
+
+//Fix Wool macerator recipes
+macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:blockWool>)
+	.outputs(<minecraft:string> *4)
+	.duration(400).EUt(2).buildAndRegister();
+
+//Remove Unobtainable Clay recipe
+recipes.removeByRecipeName("thermalfoundation:clay_ball");

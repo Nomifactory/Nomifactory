@@ -136,7 +136,11 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	#blockTitanium
 	<ore:blockTitanium> : [
 		<libvulpes:metal0:7>
-	]
+	],
+	#blockFuelCoke
+	<ore:blockFuelCoke> : [
+		<thermalfoundation:storage_resource:1>
+	]		
 };
 
 for oreDictEntry, items in blocksDisabled {
@@ -373,7 +377,6 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustEndstone>: [
 		<nuclearcraft:gem_dust:11>
 	]
-
 };
 
 for oreDictEntry, items in dustsDisabled {
@@ -384,6 +387,7 @@ for oreDictEntry, items in dustsDisabled {
 }
 
 <ore:dustArdite>.add(<enderio:item_material:30>);
+<ore:dustMoon>.add(<contenttweaker:moondust>);
 
 //////////////////////////////
 //			Gems            //
@@ -541,7 +545,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productingot:6>,
 		<thermalfoundation:material:160>,
 		<nuclearcraft:alloy:5>
-	]
+	],
+
+    #ingotUranium235
+    <ore:ingotUranium235> : [
+        <gregtech:meta_item_1:10076>,
+    ],
 
 };
 
@@ -825,6 +834,11 @@ var platesDisabled as IItemStack[][IOreDictEntry] = {
 	#plateTitanium
 	<ore:plateTitanium> : [
 		<libvulpes:productplate:7>
+	],
+
+	#plateNeutronium
+	<ore:plateNeutronium> : [
+		<gregtech:meta_item_1:12972>
 	]
 };
 
@@ -959,7 +973,8 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:itemSilicon> : [
 		<enderio:item_material:5>,
 		<nuclearcraft:gem:6>,
-		<appliedenergistics2:material:5>
+		<appliedenergistics2:material:5>,
+		<libvulpes:productingot:3>
 	],
 
 	#Arsenic
@@ -990,6 +1005,12 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
 <ore:blockAluminum>.add(<gregtech:compressed_0:0>);
+
+<ore:blockCoalCoke>.add(<gregtech:compressed_15:4>);
+
+//Add moreplates neutronium plate to gtce neutronium ore dict
+<ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
+
 
 ////////////////////////////////
 //			Removals          //
@@ -1037,7 +1058,6 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:block_compost>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_energizer>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_enervator>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_treasure_chest>);
-mods.jei.JEI.removeAndHide(<actuallyadditions:block_furnace_solar>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_heat_collector>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_item_repairer>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_greenhouse_glass>);
@@ -1092,7 +1112,6 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:solargenerator>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:railgun>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:blocklens>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:forcefieldprojector>);
-mods.jei.JEI.removeAndHide(<advancedrocketry:pipesealer>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:spaceelevatorcontroller>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:beacon>);
 mods.jei.JEI.removeAndHide(<advancedrocketry:thermitetorch>);
@@ -1186,6 +1205,7 @@ mods.jei.JEI.removeAndHide(<armorplus:obsidian_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:emerald_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:redstone_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:coal_bow>);
+mods.jei.JEI.removeAndHide(<armorplus:book_lore>);
 
 
 //Avaritia Removals
@@ -1487,6 +1507,12 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:450>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:451>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:452>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:453>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:32707>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:32708>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32480>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32466>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32482>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
 
 
 //Inspirations Removals
@@ -1507,57 +1533,6 @@ mods.jei.JEI.removeAndHide(<morefurnaces:furnaceblock:4>);
 //More Plates Removals
 mods.jei.JEI.removeAndHide(<moreplates:hammer>);
 
-
-//Nuclearcraft Removals
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_cell>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:portable_ender_chest>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:solar_panel_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:decay_generator>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:voltaic_pile_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_basic>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_advanced>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_du>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:lithium_ion_battery_elite>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:1>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:2>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:ingot_oxide:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:1>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:2>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:dust_oxide:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:4>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:13>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:8>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:11>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:7>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:8>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:3>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:alloy:14>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:turbine_rotor_blade_sic_sic_cmc>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:4>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:6>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:7>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:compound:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:part:13>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:block_depleted_thorium>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:block_depleted_uranium>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:6>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem_dust:10>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:uranium:9>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:uranium:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:upgrade>);
-
-<ore:ingotUranium235>.remove(<gregtech:meta_item_1:10076>);
 
 //Standard Expansion Removals
 mods.jei.JEI.removeAndHide(<bq_standard:loot_chest>);
@@ -1598,6 +1573,9 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_aluminum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_nickel>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_electrum>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_invar>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:rockwool:*>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:864>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:865>);
 
 
 //Custom Materials Removals
@@ -1627,7 +1605,150 @@ mods.jei.JEI.removeAndHide(<libvulpes:battery>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery:1>);
 mods.jei.JEI.removeAndHide(<libvulpes:productfan:6>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
-mods.jei.JEI.removeAndHide(<nuclearcraft:gem:6>);
+
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
+
+//Modular Machinery removals
+
+recipes.remove(<modularmachinery:blockenergyinputhatch:0>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:1>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:2>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:3>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:4>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:5>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:6>);
+recipes.remove(<modularmachinery:blockenergyinputhatch:7>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:0>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:1>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:2>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:3>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:4>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:5>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:6>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:7>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:0>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:1>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:2>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:3>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:4>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:5>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:6>);
+recipes.remove(<modularmachinery:blockfluidinputhatch:7>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:0>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:1>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:2>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:3>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:4>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:5>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:6>);
+recipes.remove(<modularmachinery:blockfluidoutputhatch:7>);
+recipes.remove(<modularmachinery:blockinputbus:0>);
+recipes.remove(<modularmachinery:blockinputbus:1>);
+recipes.remove(<modularmachinery:blockinputbus:2>);
+recipes.remove(<modularmachinery:blockinputbus:3>);
+recipes.remove(<modularmachinery:blockinputbus:4>);
+recipes.remove(<modularmachinery:blockinputbus:5>);
+recipes.remove(<modularmachinery:blockinputbus:6>);
+recipes.remove(<modularmachinery:blockinputbus:7>);
+recipes.remove(<modularmachinery:blockoutputbus:0>);
+recipes.remove(<modularmachinery:blockoutputbus:1>);
+recipes.remove(<modularmachinery:blockoutputbus:2>);
+recipes.remove(<modularmachinery:blockoutputbus:3>);
+recipes.remove(<modularmachinery:blockoutputbus:4>);
+recipes.remove(<modularmachinery:blockoutputbus:5>);
+recipes.remove(<modularmachinery:blockoutputbus:6>);
+recipes.remove(<modularmachinery:blockoutputbus:7>);
+recipes.remove(<modularmachinery:blockcasing:0>); // Machine Casing
+recipes.remove(<modularmachinery:blockcasing:1>); // Machine Vent
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:2>); // Firebox Casing
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:3>); // Machine Gearbox
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:4>); // Reinforced Machine Casing
+mods.jei.JEI.removeAndHide(<modularmachinery:blockcasing:5>); // Machine Circuitry
+recipes.remove(<modularmachinery:itemmodularium>);
+
+mods.jei.JEI.removeAndHide(<modulardiversity:blockbiomedetector>);
+mods.jei.JEI.removeAndHide(<modulardiversity:blockdaylightdetector>);
+mods.jei.JEI.removeAndHide(<modulardiversity:blockweatherdetector>);
+
+//                 XXXXXXXXXX                            XXXXXXXXXX
+//              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
+//            XXXXXXXXXXXXX XXXX                      XXXX XXXXXXXXXXXXX
+//           XXXXXXXXXXXXX XXXXX                      XXXXX XXXXXXXXXXXXX
+//          XXXXXXXXXXXXX XXXXXX                      XXXXXX XXXXXXXXXXXXX
+//         XXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXX
+//        XXXXXXXXXXXXXXXXXXXXXX                      XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXX  XXXXX            XXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXXXX  XXXXXXXX        XXXXXXXX  XXXXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXXXX    XXXXXXXX        XXXXXXXX    XXXXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXXXXXXXXXX
+//      XXXXXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXXXXX
+//      XXXXXXXXXXXX          XXXXXXXXXXXXXXXXXXXXXXXXXX          XXXXXXXXXXXX
+//      XXXXXXXXXX        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXX
+//       XXXXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXXXXXXXX
+//        XXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
+// XXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     XXXX
+// XXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXX
+// XXXXXXXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//  XXXXXXXX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXX
+//   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXX
+//         XXX    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    XXX
+//            XXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXX
+//       XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXXXXX   XXXXXXXX     XXXXXXXX     XXXXXXXX   XXXXXXXXXXXXXXXXX
+//    XXXXXXXXXXXXXX    XXXXXXXXX                    XXXXXXXXX    XXXXXXXXXXXXXX
+//     XXXXXXXXXX      XXXXXXXX                       XXXXXXXXX      XXXXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                     XXXXXXXX                        XXXXXXXX
+//                      XXXXXXX                        XXXXXXX
+//                      XXXXXX                          XXXXXX
+//                      XXXXX                            XXXXX
 
 //Lumberaxe Removal
 mods.jei.JEI.removeAndHide(<lumberjack:infinity_lumberaxe>);
@@ -1775,6 +1896,27 @@ solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 144).notConsumable(
 solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<avaritia:block_resource>]).duration(200).EUt(30).buildAndRegister();
 recipes.addShapeless(<avaritia:resource:4>, [<gregtech:meta_item_1:10972>]);
 
+// Signalum Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateSignalum>.firstItem])
+    .fluidInputs(<liquid:signalum> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
+// Enderium Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateEnderium>.firstItem])
+    .fluidInputs(<liquid:enderium> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
+// Crystal Matrix Plate
+solidifier.recipeBuilder()
+    .outputs([<ore:plateCrystalMatrix>.firstItem])
+    .fluidInputs(<liquid:moltencrystalmatrix> * 144)
+    .notConsumable(<gregtech:meta_item_1:32301>)
+    .duration(200).EUt(30).buildAndRegister();
+
 
 //Redstone Alloy
 <ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
@@ -1786,8 +1928,6 @@ mods.jei.JEI.removeAndHide(<enderio:item_alloy_nugget:3>);
 recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>]);
 
 //Circuits
-<ore:lvcef>.add(<gregtech:machine:10661>);
-<ore:lvcef>.add(<gregtech:machine:10665>);
 <ore:circuitBasic>.add(<contenttweaker:refinedcircuit>);
 <ore:circuitGood>.add(<contenttweaker:combinationcircuit>);
 <ore:circuitGood>.add(<contenttweaker:electronicprocessor>);
@@ -1806,7 +1946,14 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:circuitUltimate>.add(<contenttweaker:quantumprocessormainframe>);
 <ore:circuitUltimate>.add(<contenttweaker:crystalprocessorarray>);
 <ore:circuitSuperconductor>.add(<contenttweaker:crystalprocessormainframe>);
+
+
+//Misc
+<ore:lvcef>.add(<gregtech:machine:10661>);
+<ore:lvcef>.add(<gregtech:machine:10665>);
 <ore:dustEndstone>.add(<contenttweaker:endstonedust>);
+
+//Removals
 <ore:craftingLensLime>.remove(<gregtech:meta_item_1:15219>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15111>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15331>);
@@ -1839,29 +1986,42 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
 <ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
 
-//Extra EnderIO Stuff
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
+// GTCE Conductive Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:15>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:2>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10703>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9703>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10704>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9704>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:3>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10705>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9705>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:4>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10701>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9701>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10702>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9702>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:1>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:10>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10712>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9712>);
 
+// GTCE Energetic Alloy
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9701>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10701>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:0>);
+
+// GTCE Vibrant Alloy
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9702>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10702>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:1>);
+
+// GTCE Pulsating Iron
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9703>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10703>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:2>);
+
+// GTCE Dark Steel
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9704>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10704>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:3>);
+
+// GTCE Electrical Steel
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9705>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10705>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:4>);
+
+// GTCE End Steel
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9712>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10712>);
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:10>);
+
+mods.jei.JEI.removeAndHide(<gregtech:compressed_17:14>); // Block of Lignite Coke
 
 //Nuggets
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:193>);
@@ -1918,21 +2078,21 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
+//Thermal Coal Coke Decomposition 
+recipes.addShapeless(<gregtech:meta_item_1:8357> * 9, [<thermalfoundation:storage_resource:1>]);
+
 // Temporary recipe to convert endstone dusts
 recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
 <contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
 <contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
 
-recipes.addShapeless(<gregtech:meta_item_1:12972>, [<moreplates:neutronium_plate>]);		//neutronium plate exchange
-recipes.addShapeless(<moreplates:neutronium_plate>, [<gregtech:meta_item_1:12972>]);		//neutronium plate exchange
-recipes.addShaped(<gregtech:frame_neutronium> * 4, [
-	[<moreplates:neutronium_plate>, <moreplates:neutronium_plate>, <moreplates:neutronium_plate>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>, <gregtech:meta_item_1:14972>],
-	[<gregtech:meta_item_1:14972>, <gregtech:meta_tool:8>, <gregtech:meta_item_1:14972>]]);
+//neutronium plate exchange
+recipes.addShapeless("of_exchange_neutronium_plate",
+    <moreplates:neutronium_plate>,
+    [<gregtech:meta_item_1:12972>]);
 
-
-
-
+// Workaround for DE Fusion Custom recipe not liking strings in the NBT
+<ore:compressedoctadiccap>.add(compressedoctadiccap);
 
 /////////////////////////////////
 //  One Ingot To Rule Them All //

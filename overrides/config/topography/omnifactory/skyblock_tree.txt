@@ -1,3 +1,0 @@
-
-//Sets the spawn structure for the dimension.
-setSpawnStructure("basic tree")

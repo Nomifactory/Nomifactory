@@ -43,6 +43,7 @@ global implosion        as RecipeMap = RecipeMap.getByName("implosion_compressor
 global lathe            as RecipeMap = RecipeMap.getByName("lathe");
 global macerator        as RecipeMap = RecipeMap.getByName("macerator");
 global mixer            as RecipeMap = RecipeMap.getByName("mixer");
+global packager         as RecipeMap = RecipeMap.getByName("packer");
 global pyro             as RecipeMap = RecipeMap.getByName("pyro");
 global reactor          as RecipeMap = RecipeMap.getByName("chemical_reactor");
 global saw              as RecipeMap = RecipeMap.getByName("cutting_saw");
@@ -125,6 +126,28 @@ function textToIngredients(ingredients as IIngredient[][],
     }
 
     return ingredients;
+}
+
+/* Same as above, but for standard 3x3 shapeless recipes. */
+function makeShapeless3(name as string,
+                        output as IItemStack,
+                        recipe as string[],
+                        replacements as IIngredient[string]) {
+
+    var ingredients = [null,null,null,
+                       null,null,null,
+                       null,null,null] as IIngredient[];
+
+    for i, str in recipe {
+        for j in 0 .. str.length {
+            var item = str[j];
+            if " " != item { // blanks are nulls, ignore them
+                ingredients[str.length*i+j] = replacements[item];
+            }
+        }
+    }
+
+    recipes.addShapeless(name, output, ingredients);
 }
 
 function makeShaped(name as string,

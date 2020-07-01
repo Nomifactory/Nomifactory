@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMap;
 
@@ -119,3 +120,99 @@ for variant in gemVariants {
 
 	}
 }
+
+//Remove more Flawless gem recipes for other gem variants
+
+val extraGems as IOreDictEntry[] = 
+	[
+		<ore:gemFlawlessGreenSapphire>,
+		<ore:gemExquisiteGreenSapphire>,
+		<ore:gemFlawlessTopaz>,
+		<ore:gemExquisiteTopaz>,		
+		<ore:gemFlawlessAlmandine>,
+		<ore:gemExquisiteAlmandine>,
+		<ore:gemFlawlessVinteum>,
+		<ore:gemExquisiteVinteum>,
+		<ore:gemFlawlessGarnetYellow>,
+		<ore:gemExquisiteGarnetYellow>,
+		<ore:gemFlawlessOlivine>,
+		<ore:gemExquisiteOlivine>,						
+		<ore:gemFlawlessOpal>,
+		<ore:gemExquisiteOpal>,
+		<ore:gemFlawlessRutile>,
+		<ore:gemExquisiteRutile>,
+		<ore:gemFlawlessSapphire>,
+		<ore:gemExquisiteSapphire>,
+		<ore:gemFlawlessGarnetRed>,
+		<ore:gemExquisiteGarnetRed>,				
+		<ore:gemFlawlessGlass>,
+		<ore:gemExquisiteGlass>,
+		<ore:gemChippedGlass>,
+		<ore:gemFlawedGlass>,
+		<ore:gemFlawlessJasper>,
+		<ore:gemExquisiteJasper>,
+		<ore:gemFlawlessTanzanite>,
+		<ore:gemExquisiteTanzanite>,
+		<ore:gemFlawlessAmethyst>,
+		<ore:gemExquisiteAmethyst>						
+	];
+
+
+// Remove leftover Macerator recipes
+for uselessEntry in extraGems as IOreDictEntry[] {
+	val recipe = macerator.findRecipe(8, [uselessEntry.firstItem], [null]);
+
+	if (!isNull(recipe)) {
+		recipe.remove();
+	}
+
+}
+
+//Removing Rod recipes
+//Topaz
+recipes.removeShaped(<gregtech:meta_item_1:14190>, [[<*>, <*>],[<gregtech:meta_item_2:24190>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14190>*2, [[<*>, <*>],[<gregtech:meta_item_2:25190>, null]]);
+//Almandine
+recipes.removeShaped(<gregtech:meta_item_1:14085>, [[<*>, <*>],[<gregtech:meta_item_2:24085>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14085>*2,[[<*>, <*>],[<gregtech:meta_item_2:25085>, null]]);
+//Vinteum
+recipes.removeShaped(<gregtech:meta_item_1:14247>, [[<*>, <*>],[<gregtech:meta_item_2:24247>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14247>*2, [[<*>, <*>],[<gregtech:meta_item_2:25247>, null]]);
+//Yellow Garnet
+recipes.removeShaped(<gregtech:meta_item_1:14244>, [[<*>, <*>],[<gregtech:meta_item_2:24244>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14244>*2, [[<*>, <*>],[<gregtech:meta_item_2:25244>, null]]);
+//Olivine
+recipes.removeShaped(<gregtech:meta_item_1:14212>, [[<*>, <*>],[<gregtech:meta_item_2:24212>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14212>*2, [[<*>, <*>],[<gregtech:meta_item_2:25212>, null]]);
+//Opal
+recipes.removeShaped(<gregtech:meta_item_1:14213>, [[<*>, <*>],[<gregtech:meta_item_2:24213>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14213>*2, [[<*>, <*>],[<gregtech:meta_item_2:25213>, null]]);
+//Rutile
+recipes.removeShaped(<gregtech:meta_item_1:14122>, [[<*>, <*>],[<gregtech:meta_item_2:24122>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14122>*2, [[<*>, <*>],[<gregtech:meta_item_2:25122>, null]]);
+//Sapphire
+recipes.removeShaped(<gregtech:meta_item_1:14157>, [[<*>, <*>],[<gregtech:meta_item_2:24157>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14157>*2, [[<*>, <*>],[<gregtech:meta_item_2:25157>, null]]);
+//Red Garnet
+recipes.removeShaped(<gregtech:meta_item_1:14243>, [[<*>, <*>],[<gregtech:meta_item_2:24243>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14243>*2, [[<*>, <*>],[<gregtech:meta_item_2:25243>, null]]);
+//Jasper
+recipes.removeShaped(<gregtech:meta_item_1:14206>, [[<*>, <*>],[<gregtech:meta_item_2:24206>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14206>*2, [[<*>, <*>],[<gregtech:meta_item_2:25206>, null]]);
+//Tanzanite
+recipes.removeShaped(<gregtech:meta_item_1:14187>, [[<*>, <*>],[<gregtech:meta_item_2:24187>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14187>*2, [[<*>, <*>],[<gregtech:meta_item_2:25187>, null]]);
+//Amethyst
+recipes.removeShaped(<gregtech:meta_item_1:14214>, [[<*>, <*>],[<gregtech:meta_item_2:24214>, null]]);
+recipes.removeShaped(<gregtech:meta_item_1:14214>*2,[[<*>, <*>],[<gregtech:meta_item_2:25214>, null]]);
+
+
+
+//Impossible Blast Furnace Recipe
+blast_furnace.findRecipe(480, [<ore:gemExquisiteOlivine>.firstItem, <gregtech:meta_item_1:12212>*10], [<liquid:helium>*5000]).remove();
+
+//Fluid Extracting Glass Crystals
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:23209>],[null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:22209>],[null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:25209>],[null]).remove();
+fluid_extractor.findRecipe(32, [<gregtech:meta_item_2:24209>],[null]).remove();

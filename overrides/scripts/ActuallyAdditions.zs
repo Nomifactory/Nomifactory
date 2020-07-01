@@ -9,7 +9,6 @@ mods.thermalexpansion.Compactor.removeGearRecipe(<actuallyadditions:item_crystal
 mods.thermalexpansion.Compactor.removeGearRecipe(<actuallyadditions:item_crystal_empowered:4> * 4);
 mods.thermalexpansion.Compactor.removeGearRecipe(<actuallyadditions:item_crystal_empowered:5> * 4);
 
-mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered>);
 
 
 //Empowered Restonia
