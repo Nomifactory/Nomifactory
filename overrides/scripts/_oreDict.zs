@@ -439,6 +439,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotCobalt> : [
 	],
 
+	#ingotConductiveIron
+	<ore:ingotConductiveIron> : [
+		<gregtech:meta_item_1:10700>
+	],
+
 	#ingotCopper
 	<ore:ingotCopper> : [
 		<libvulpes:productingot:4>,
@@ -446,15 +451,34 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<forestry:ingot_copper>
 	],
 
+	#ingotDarkSteel
+	<ore:ingotDarkSteel> : [
+		<gregtech:meta_item_1:10704>
+	],	
+
+	#ingotElectricalSteel
+	<ore:ingotElectricalSteel> : [
+		<gregtech:meta_item_1:10705>
+	],
+
 	#ingotElectrum
 	<ore:ingotElectrum> : [
 		<thermalfoundation:material:161>
 	],
 
-
 	#ingotEnderium
 	<ore:ingotEnderium> : [
 		<gregtech:meta_item_1:10708>
+	],
+
+	#ingotEndSteel
+	<ore:ingotEndSteel> : [
+		<gregtech:meta_item_1:10712>
+	],
+
+	#ingotEnergeticAlloy
+	<ore:ingotEnergeticAlloy> : [
+		<gregtech:meta_item_1:10701>
 	],
 
 	#ingotGraphite
@@ -507,6 +531,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:134>
 	],
 
+	#ingotPulsatingIron
+	<ore:ingotPulsatingIron> : [
+		<gregtech:meta_item_1:10703>
+	],
+
 	#ingotTin
 	<ore:ingotTin> : [
 		<libvulpes:productingot:5>,
@@ -545,6 +574,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productingot:6>,
 		<thermalfoundation:material:160>,
 		<nuclearcraft:alloy:5>
+	],
+
+	#ingotVibrantAlloy
+	<ore:ingotVibrantAlloy> : [
+		<gregtech:meta_item_1:10702>
 	],
 
     #ingotUranium235
