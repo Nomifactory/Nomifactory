@@ -42668,6 +42668,12 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "deepmoblearning:data_model_thermal_elemental"
+            },
+            "7:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "deepmoblearning:data_model_slime"
             }
           },
           "taskID:8": "bq_standard:retrieval"
