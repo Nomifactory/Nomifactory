@@ -285,6 +285,27 @@ for liquid, items in liquidMap {
         .duration(98).EUt(8).buildAndRegister();
 }
 
+val packagerArray = [
+    [<enderio:item_alloy_nugget:6>,<enderio:item_alloy_ingot:6>],
+    [<enderio:item_alloy_nugget:8>,<enderio:item_alloy_ingot:8>],
+    [<enderio:item_alloy_nugget:5>,<enderio:item_alloy_ingot:5>],
+    [<enderio:item_alloy_nugget:4>,<enderio:item_alloy_ingot:4>],
+    [<enderio:item_alloy_nugget:1>,<enderio:item_alloy_ingot:1>],
+    [<enderio:item_alloy_nugget:0>,<enderio:item_alloy_ingot:0>],
+    [<enderio:item_alloy_nugget:2>,<enderio:item_alloy_ingot:2>]
+] as IItemStack[][];
+
+for nugget in packagerArray {
+    
+    packager.findRecipe(12, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte}), nugget[0] * 9], [null]).remove();
+
+    packager.recipeBuilder()
+        .inputs(nugget[0]*9)
+        .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+        .outputs(nugget[1])
+        .duration(10).EUt(12).buildAndRegister();
+}
+
 
 //Furnace Recipes
 //End Steel
