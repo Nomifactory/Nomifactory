@@ -1572,8 +1572,4 @@ makeExtremeRecipe9(<contenttweaker:ultimate_power_storage>,
 recipes.addShapeless(<extendedcrafting:material:7>*9,[<extendedcrafting:storage:1>]);
 
 //Nether Star Nugget Recombination
-makeShaped("of_star_from_nuggets", <minecraft:nether_star>,
-    ["NNN",
-     "NNN",
-     "NNN"],
-    { N : <extendedcrafting:material:140> });
+recipes.addShapeless("of_star_from_nuggets",<minecraft:nether_star>,[<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>]);
