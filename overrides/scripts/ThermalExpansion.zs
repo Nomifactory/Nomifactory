@@ -320,6 +320,8 @@ recipes.addShaped(<contenttweaker:excitationcoil>, [
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>],
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>]]);
 
+<contenttweaker:excitationcoil>.addTooltip(format.darkGray(format.italic("Crafting component only.")));
+
 recipes.addShaped(<thermalfoundation:material:515>, [
 	[<gregtech:meta_item_1:14026>, <minecraft:redstone>, null],
 	[<minecraft:redstone>, <gregtech:meta_item_1:14026>, <minecraft:redstone>],
