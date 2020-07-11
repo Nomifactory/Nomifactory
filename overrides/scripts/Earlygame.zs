@@ -344,7 +344,6 @@ reactor.recipeBuilder().fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethyl
 //Remove phosphorus pentoxide, not used anywhere aside from duping phosphorus
 reactor.findRecipe(30, [<gregtech:meta_item_1:2466>], [<liquid:water> * 6000]).remove();
 reactor.findRecipe(30, [<gregtech:meta_item_1:2050> * 4], [<liquid:oxygen> * 10000]).remove();
-electrolyzer.findRecipe(30, [<gregtech:meta_item_1:2466> * 14], null).remove();
 
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:466>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:1466>);
