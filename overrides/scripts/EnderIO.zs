@@ -421,8 +421,7 @@ val peaceful = [
     "minecraft:polar_bear",
     "minecraft:llama",
     "minecraft:parrot",
-    "minecraft:villager",
-    "thermalfoundation:blizz"
+    "minecraft:villager"
 
 ] as string[];
 
