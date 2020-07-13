@@ -327,7 +327,7 @@ makeFluid("krypton",                    "73f93e",   true,   500,        "RARE", 
 makeFluid("neon",                       "f435eb",   true,   500,        "RARE",     0);
 makeFluid("xenon",                      "8d1f9b",   true,   500,        "RARE",     0);
 
-makeFluid("elementalreduction",         "588c5a",   true,   2000,       "COMMON",   7);
+makeFluid("elementalreduction",         "588c5a",   false,  2000,       "COMMON",   7);
 
 makeFluid("einsteinium",                "ddc10b",   false,  4096,       "COMMON",   0);
 makeFluid("californium",                "9b110c",   false,  3072,       "COMMON",   0);
