@@ -320,6 +320,8 @@ recipes.addShaped(<contenttweaker:excitationcoil>, [
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>],
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>]]);
 
+<contenttweaker:excitationcoil>.addTooltip(format.darkGray(format.italic("Crafting component only.")));
+
 recipes.addShaped(<thermalfoundation:material:515>, [
 	[<gregtech:meta_item_1:14026>, <minecraft:redstone>, null],
 	[<minecraft:redstone>, <gregtech:meta_item_1:14026>, <minecraft:redstone>],
@@ -434,6 +436,28 @@ for liquid,items in liquidMap {
 		.notConsumable(<gregtech:meta_item_1:32309>)
 		.outputs(items[2] * 9)
 		.duration(98).EUt(8).buildAndRegister();
+}
+
+//Correct Packager Recipes
+
+val packagerArray2 = [
+
+	[<thermalfoundation:material:231>, <thermalfoundation:material:167>],
+	[<thermalfoundation:material:230>, <thermalfoundation:material:166>],
+	[<thermalfoundation:material:229>, <thermalfoundation:material:165>]
+
+] as IItemStack[][];
+
+for nuggets in packagerArray2 {
+	
+	packager.findRecipe(12, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte}), nuggets[0] * 9], [null]).remove();
+
+	packager.recipeBuilder()
+		.inputs(nuggets[0] * 9)
+        .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+        .outputs(nuggets[1])
+        .duration(10).EUt(12).buildAndRegister();
+        
 }
 
 //Furnace Recipes

@@ -435,7 +435,6 @@ makeShaped("of_sponge", <minecraft:sponge>,
 	  M : <inspirations:mulch>});
 
 
-
 /* ******* Shapeless Crafting Recipes ******* */
 
 //Inspirations Pipe
@@ -1011,12 +1010,6 @@ compressor.recipeBuilder()
 
 /* ******* Wiremill Recipes ******* */
 
-//Pulsating Wire Wiremill
-wiremill.recipeBuilder()
-	.inputs([<enderio:item_alloy_ingot:5>])
-	.outputs([<contenttweaker:pulsatingwire> * 2])
-	.duration(40).EUt(16).buildAndRegister();
-
 //Omnium wire
 wiremill.recipeBuilder()
 	.inputs([<extendedcrafting:material:32>])
@@ -1040,12 +1033,6 @@ autoclave.recipeBuilder()
 
 
 /* ******* Fluid Extractor Recipes ******* */
-
-//Pulsating Wire Fluid Extractor
-fluid_extractor.recipeBuilder()
-	.inputs([<contenttweaker:pulsatingwire>])
-	.fluidOutputs([<liquid:pulsating_iron>*72])
-	.duration(40).EUt(32).buildAndRegister();
 
 
 // Add Corrected Small Battery Hull recipe to fluid extractor
@@ -1100,7 +1087,6 @@ recipes.removeByRecipeName("thermalfoundation:clay_ball");
 //Remove phosphorus pentoxide, not used anywhere aside from duping phosphorus
 reactor.findRecipe(30, [<gregtech:meta_item_1:2466>], [<liquid:water> * 6000]).remove();
 reactor.findRecipe(30, [<gregtech:meta_item_1:2050> * 4], [<liquid:oxygen> * 10000]).remove();
-electrolyzer.findRecipe(30, [<gregtech:meta_item_1:2466> * 14], null).remove();
 
 
 //Fix unintended Concrete powder skips

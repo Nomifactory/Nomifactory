@@ -10,7 +10,7 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "Omnifactory - 1.2.2 - Community Update",
+  "name": "Omnifactory",
   "version": "1.2.2",
   "author": "OmnifactoryDevs",
   "projectID": 313440,
@@ -767,7 +767,7 @@
     },
     {
       "projectID": 386188,
-      "fileID": 2978456,
+      "fileID": 2993433,
       "required": true
     },
     {
@@ -787,7 +787,7 @@
     },
     {
       "projectID": 383632,
-      "fileID": 2957647,
+      "fileID": 3000477,
       "required": true
     }
   ],
