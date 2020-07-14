@@ -1951,6 +1951,13 @@ solidifier.recipeBuilder()
     .notConsumable(<gregtech:meta_item_1:32301>)
     .duration(200).EUt(30).buildAndRegister();
 
+// Lumium Plate
+solidifier.recipeBuilder()
+	.outputs([<ore:plateLumium>.firstItem])
+	.fluidInputs(<liquid:lumium> * 144)
+	.notConsumable(<gregtech:meta_item_1:32301>)
+	.duration(200).EUt(30).buildAndRegister();
+
 
 //Redstone Alloy
 <ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
