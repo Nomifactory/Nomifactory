@@ -1698,7 +1698,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you\u0027re most likely to have access to at this point are:\n\n1) A Diamond Pickaxe or Diamond Mining Hammer.\n\n2) A Platinum Mining Hammer (not pickaxe though).\n\n3) A Cobalt Pickaxe (smelted from Cobaltite).",
+          "desc:8": "You\u0027ll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you\u0027re most likely to have access to at this point are:\n\n1) A Diamond Pickaxe or Diamond Mining Hammer.\n\n2) A Platinum Mining Hammer (not pickaxe though).",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
