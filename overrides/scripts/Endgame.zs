@@ -450,3 +450,6 @@ reactor.recipeBuilder()
   .duration(600).EUt(1920).buildAndRegister();
 
 reactor.findRecipe(1920, [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
+
+//Remove Duplicate Lead-Zinc Solution recipe
+centrifuge.findRecipe(30, [null], [<liquid:lead_zinc_solution> * 7000]).remove();
