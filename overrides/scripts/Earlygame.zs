@@ -930,9 +930,9 @@ for mat in material {
 	 	 "SRF",
 	 	 "PDP"],
 		{ P : plate,  
-	  	  H : <ore:craftingToolHardHammer>,
+	  	  H : <ore:craftingToolHardHammer>.firstItem.withEmptyTag(),
 	  	  S : screw,
 	  	  R : ring,
-	  	  F : <ore:craftingToolFile>,
-	  	  D : <ore:craftingToolScrewdriver>});
+	  	  F : <ore:craftingToolFile>.firstItem.withEmptyTag(),
+	  	  D : <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()});
 }
