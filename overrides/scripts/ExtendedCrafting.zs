@@ -1012,7 +1012,7 @@ makeExtremeRecipe7(<contenttweaker:exoticmaterialscatalyst>,
       Q : <gregtech:meta_item_1:10303>,
       R : <gregtech:meta_item_1:10304>,
       S : <gregtech:meta_item_1:10714>,
-      T : <modularmachinery:itemmodularium>,
+      T : <ore:ingotMicroversium>,
       U : <redstonearsenal:material:32>,
       V : <simplyjetpacks:metaitemmods:3>,
       W : <thermalfoundation:material:136>,
@@ -1570,3 +1570,10 @@ makeExtremeRecipe9(<contenttweaker:ultimate_power_storage>,
 
 //Luminessence de-blockifying recipe
 recipes.addShapeless(<extendedcrafting:material:7>*9,[<extendedcrafting:storage:1>]);
+
+//Nether Star Nugget Recombination
+makeShaped("of_star_from_nuggets", <minecraft:nether_star>,
+    ["NNN",
+     "NNN",
+     "NNN"],
+    { N : <extendedcrafting:material:140> });

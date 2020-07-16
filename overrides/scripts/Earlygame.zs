@@ -53,8 +53,7 @@ recipes.addShaped(<minecraft:shears>,[
 [<ore:plateIron>,<gregtech:meta_tool:9>]]);
 <minecraft:shears>.displayName = "Iron Shears";
 
-//Clay & Wool
-recipes.addShapeless(<minecraft:clay_ball> * 4, [<minecraft:clay>]);
+//Wool
 recipes.remove(<minecraft:string>);
 recipes.addShapeless(<minecraft:string> * 4, [<minecraft:wool>]);
 
@@ -262,8 +261,8 @@ recipes.addShaped(<enderio:item_yeta_wrench>, [
 <gregtech:machine:722>.displayName = "Fluid Input Hatch (MV)";
 <gregtech:machine:732>.displayName = "Fluid Input Hatch (HV)";
 <gregtech:machine:742>.displayName = "Fluid Input Hatch (EV)";
-<gregtech:machine:752>.displayName = "Fluid Input Hatch (LuV)";
-<gregtech:machine:762>.displayName = "Fluid Input Hatch (IV)";
+<gregtech:machine:752>.displayName = "Fluid Input Hatch (IV)";
+<gregtech:machine:762>.displayName = "Fluid Input Hatch (LuV)";
 <gregtech:machine:772>.displayName = "Fluid Input Hatch (ZPM)";
 <gregtech:machine:782>.displayName = "Fluid Input Hatch (UV)";
 <gregtech:machine:792>.displayName = "Fluid Input Hatch (MAX)";
@@ -272,8 +271,8 @@ recipes.addShaped(<enderio:item_yeta_wrench>, [
 <gregtech:machine:723>.displayName = "Fluid Output Hatch (MV)";
 <gregtech:machine:733>.displayName = "Fluid Output Hatch (HV)";
 <gregtech:machine:743>.displayName = "Fluid Output Hatch (EV)";
-<gregtech:machine:753>.displayName = "Fluid Output Hatch (LuV)";
-<gregtech:machine:763>.displayName = "Fluid Output Hatch (IV)";
+<gregtech:machine:753>.displayName = "Fluid Output Hatch (IV)";
+<gregtech:machine:763>.displayName = "Fluid Output Hatch (LuV)";
 <gregtech:machine:773>.displayName = "Fluid Output Hatch (ZPM)";
 <gregtech:machine:783>.displayName = "Fluid Output Hatch (UV)";
 <gregtech:machine:793>.displayName = "Fluid Output Hatch (MAX)";
@@ -345,7 +344,6 @@ reactor.recipeBuilder().fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethyl
 //Remove phosphorus pentoxide, not used anywhere aside from duping phosphorus
 reactor.findRecipe(30, [<gregtech:meta_item_1:2466>], [<liquid:water> * 6000]).remove();
 reactor.findRecipe(30, [<gregtech:meta_item_1:2050> * 4], [<liquid:oxygen> * 10000]).remove();
-electrolyzer.findRecipe(30, [<gregtech:meta_item_1:2466> * 14], null).remove();
 
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:466>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:1466>);
@@ -498,7 +496,6 @@ furnace.remove(<minecraft:iron_nugget> * 3, <gregtech:meta_item_1:2148>);
 furnace.addRecipe(<minecraft:iron_ingot>, <gregtech:meta_item_1:2148>, 0.0);
 furnace.addRecipe(<minecraft:iron_ingot>, <gregtech:meta_item_1:3148>, 0.0);
 
-wiremill.recipeBuilder().inputs([<enderio:item_alloy_ingot:5>]).outputs([<contenttweaker:pulsatingwire> * 2]).duration(40).EUt(16).buildAndRegister();
 wiremill.recipeBuilder().inputs([<extendedcrafting:material:32>]).outputs([<gregtech:cable:709> * 2]).duration(100).EUt(50000).buildAndRegister();
 
 centrifuge.findRecipe(30, [<gregtech:meta_item_1:2231> * 5], [null]).remove();
@@ -883,8 +880,17 @@ fluid_extractor.recipeBuilder()
 	.fluidOutputs(<liquid:concrete>*1296)
 	.duration(720).EUt(32).buildAndRegister();
 
-recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]); 
+recipes.addShapeless(<gregtech:meta_item_1:2296>*9, [<gregtech:concrete>]);
 
+//Fix Wool macerator recipes
+macerator.findRecipe(2, [<minecraft:wool>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:blockWool>)
+	.outputs(<minecraft:string> *4)
+	.duration(400).EUt(2).buildAndRegister();
+
+//Remove Unobtainable Clay recipe
+recipes.removeByRecipeName("thermalfoundation:clay_ball");
 
 //Restore Pump Recipes
 
