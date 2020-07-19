@@ -939,11 +939,11 @@ mixer.recipeBuilder()
 function smoreIngredient(
             stack as IItemStack,
             fluid as ILiquidStack,
-            mould as IItemStack) {
+            mold as IItemStack) {
     // Solidification
     solidifier.recipeBuilder()
         .outputs(stack)
-        .notConsumable(mould)
+        .notConsumable(mold)
         .fluidInputs(fluid * 144)
         .duration(100).EUt(16).buildAndRegister();
 
@@ -954,16 +954,16 @@ function smoreIngredient(
         .duration(100).EUt(16).buildAndRegister();
 }
 
-var ballMould  as IItemStack = <gregtech:meta_item_1:32307>;
-var plateMould as IItemStack = <gregtech:meta_item_1:32301>;
-var ingotMould as IItemStack = <gregtech:meta_item_1:32306>;
+var ballMold  as IItemStack = <gregtech:meta_item_1:32307>;
+var plateMold as IItemStack = <gregtech:meta_item_1:32301>;
+var ingotMold as IItemStack = <gregtech:meta_item_1:32306>;
 
-smoreIngredient(<nuclearcraft:marshmallow>, <fluid:marshmallow>, ballMould);
-smoreIngredient(<nuclearcraft:milk_chocolate>, <fluid:milk_chocolate>, plateMould);
-smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMould);
-smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMould);
-smoreIngredient(<nuclearcraft:gelatin>, <fluid:gelatin>, plateMould);
-smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMould);
+smoreIngredient(<nuclearcraft:marshmallow>, <fluid:marshmallow>, ballMold);
+smoreIngredient(<nuclearcraft:milk_chocolate>, <fluid:milk_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:gelatin>, <fluid:gelatin>, plateMold);
+smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMold);
 
 // Advanced *S'more *S'mingots
 
