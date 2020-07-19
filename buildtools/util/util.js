@@ -19,3 +19,18 @@ exports.libraryToPath = (library) => {
 		return newURL;
 	}
 }
+
+/**
+ * Checks if given environmental variables are set.
+ * Throws when if a variable is unset.
+ * 
+ * @param {string[]} vars
+ * @throws
+ */
+exports.checkEnvironmentalVariables = (vars) => {
+	vars.forEach((vari) => {
+		if (!process.env[vari] || process.env[vari] == "") {
+			throw new Error(`Environmental variable ${vari} is unset.`);
+		}
+	});
+}

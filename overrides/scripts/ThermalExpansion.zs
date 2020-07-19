@@ -320,6 +320,8 @@ recipes.addShaped(<contenttweaker:excitationcoil>, [
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>],
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>]]);
 
+<contenttweaker:excitationcoil>.addTooltip(format.darkGray(format.italic("Crafting component only.")));
+
 recipes.addShaped(<thermalfoundation:material:515>, [
 	[<gregtech:meta_item_1:14026>, <minecraft:redstone>, null],
 	[<minecraft:redstone>, <gregtech:meta_item_1:14026>, <minecraft:redstone>],
@@ -436,6 +438,28 @@ for liquid,items in liquidMap {
 		.duration(98).EUt(8).buildAndRegister();
 }
 
+//Correct Packager Recipes
+
+val packagerArray2 = [
+
+	[<thermalfoundation:material:231>, <thermalfoundation:material:167>],
+	[<thermalfoundation:material:230>, <thermalfoundation:material:166>],
+	[<thermalfoundation:material:229>, <thermalfoundation:material:165>]
+
+] as IItemStack[][];
+
+for nuggets in packagerArray2 {
+	
+	packager.findRecipe(12, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte}), nuggets[0] * 9], [null]).remove();
+
+	packager.recipeBuilder()
+		.inputs(nuggets[0] * 9)
+        .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+        .outputs(nuggets[1])
+        .duration(10).EUt(12).buildAndRegister();
+        
+}
+
 //Furnace Recipes
 //Enderium
 furnace.remove(<gregtech:meta_item_1:10708>, <gregtech:meta_item_1:2708>);
@@ -469,3 +493,15 @@ furnace.remove(<thermalfoundation:rockwool:7>, <thermalfoundation:material:864>)
 recipes.removeByRecipeName("thermalexpansion:satchel_1");
 recipes.removeByRecipeName("thermalexpansion:satchel_7");
 
+//Pure Certus
+mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:10>, <appliedenergistics2:crystal_seed>.withTag({progress: 0}), <minecraft:glowstone_dust>, 40000);
+
+//Pure Nether Quartz
+mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:11>, <appliedenergistics2:crystal_seed:600>.withTag({progress: 600}), <minecraft:glowstone_dust>, 40000);
+
+//Pure Fluix
+mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:12>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <minecraft:glowstone_dust>, 40000);
+
+mods.jei.JEI.addDescription(<appliedenergistics2:material:10>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
+mods.jei.JEI.addDescription(<appliedenergistics2:material:11>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
+mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");

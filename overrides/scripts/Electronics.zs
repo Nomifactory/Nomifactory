@@ -745,7 +745,7 @@ assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_ite
 //Item conduit - by hand
 recipes.addShaped(<enderio:item_item_conduit> * 4, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
-	[<contenttweaker:pulsatingwire>,<contenttweaker:pulsatingwire>,<contenttweaker:pulsatingwire>], 
+	[<ore:wireGtSinglePulsatingIron>,<ore:wireGtSinglePulsatingIron>,<ore:wireGtSinglePulsatingIron>],
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 
 //redstone conduit - by hand
@@ -774,7 +774,7 @@ assembler.recipeBuilder()
 
 //item conduit - assembler
 assembler.recipeBuilder()
-    .inputs([<contenttweaker:pulsatingwire> * 3, <ore:itemConduitBinder> * 6])
+    .inputs([<ore:wireGtSinglePulsatingIron> * 3, <ore:itemConduitBinder> * 6])
     .outputs([<enderio:item_item_conduit> * 8])
     .duration(80).EUt(16).buildAndRegister();
 
@@ -898,10 +898,10 @@ for i, wrench in wrenches {
 
 
     // Modularium Machine Casing
-    recipes.addShaped("of_modular_casing_wrench"+i, <modularmachinery:blockcasing> *2, [
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>,               wrench             , <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]]);
+    recipes.addShaped("of_microverse_casing_wrench"+i, <contenttweaker:microverse_casing> *2, [
+        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>], 
+        [<ore:ingotMicroversium>,          wrench        , <ore:ingotMicroversium>], 
+        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>]]);
 
     // LuV Machine Casing
     recipes.addShaped("of_luv_casing_wrench"+i, <gregtech:machine_casing:6>, [
