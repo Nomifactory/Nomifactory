@@ -1286,6 +1286,22 @@ mods.jei.JEI.removeAndHide(<armorplus:blue_stone_brick_wall>);
 mods.jei.JEI.removeAndHide(<armorplus:green_stone_brick_wall>);
 mods.jei.JEI.removeAndHide(<armorplus:yellow_stone_brick_wall>);
 mods.jei.JEI.removeAndHide(<armorplus:purple_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_boots>);
 
 
 //Avaritia Removals
