@@ -344,7 +344,6 @@ reactor.recipeBuilder().fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethyl
 //Remove phosphorus pentoxide, not used anywhere aside from duping phosphorus
 reactor.findRecipe(30, [<gregtech:meta_item_1:2466>], [<liquid:water> * 6000]).remove();
 reactor.findRecipe(30, [<gregtech:meta_item_1:2050> * 4], [<liquid:oxygen> * 10000]).remove();
-electrolyzer.findRecipe(30, [<gregtech:meta_item_1:2466> * 14], null).remove();
 
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:466>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:1466>);
@@ -497,7 +496,6 @@ furnace.remove(<minecraft:iron_nugget> * 3, <gregtech:meta_item_1:2148>);
 furnace.addRecipe(<minecraft:iron_ingot>, <gregtech:meta_item_1:2148>, 0.0);
 furnace.addRecipe(<minecraft:iron_ingot>, <gregtech:meta_item_1:3148>, 0.0);
 
-wiremill.recipeBuilder().inputs([<enderio:item_alloy_ingot:5>]).outputs([<contenttweaker:pulsatingwire> * 2]).duration(40).EUt(16).buildAndRegister();
 wiremill.recipeBuilder().inputs([<extendedcrafting:material:32>]).outputs([<gregtech:cable:709> * 2]).duration(100).EUt(50000).buildAndRegister();
 
 centrifuge.findRecipe(30, [<gregtech:meta_item_1:2231> * 5], [null]).remove();

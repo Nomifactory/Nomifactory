@@ -1,3 +1,5 @@
+const util = require("../../util/util");
+
 const vars = [
 	"GITHUB_TOKEN",
 	"TRAVIS_REPO_SLUG",
@@ -10,11 +12,7 @@ const vars = [
  * the build if something is unset.
  */
 function checkEnvironmentalVariables(cb) {
-	vars.forEach(vari => {
-		if (!process.env[vari] || process.env[vari] == "") {
-			cb(`Environmental variable ${vari} is unset.`);
-		}
-	})
+	util.checkEnvironmentalVariables(vars);
 
 	if (!(/.+\/.+/.exec(process.env.TRAVIS_REPO_SLUG))) {
 		cb(`Malformed repository slug.`);

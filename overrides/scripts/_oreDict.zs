@@ -140,7 +140,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	#blockFuelCoke
 	<ore:blockFuelCoke> : [
 		<thermalfoundation:storage_resource:1>
-	]		
+	]
 };
 
 for oreDictEntry, items in blocksDisabled {
@@ -439,6 +439,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotCobalt> : [
 	],
 
+	#ingotConductiveIron
+	<ore:ingotConductiveIron> : [
+		<gregtech:meta_item_1:10700>
+	],
+
 	#ingotCopper
 	<ore:ingotCopper> : [
 		<libvulpes:productingot:4>,
@@ -446,15 +451,34 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<forestry:ingot_copper>
 	],
 
+	#ingotDarkSteel
+	<ore:ingotDarkSteel> : [
+		<gregtech:meta_item_1:10704>
+	],	
+
+	#ingotElectricalSteel
+	<ore:ingotElectricalSteel> : [
+		<gregtech:meta_item_1:10705>
+	],
+
 	#ingotElectrum
 	<ore:ingotElectrum> : [
 		<thermalfoundation:material:161>
 	],
 
-
 	#ingotEnderium
 	<ore:ingotEnderium> : [
 		<gregtech:meta_item_1:10708>
+	],
+
+	#ingotEndSteel
+	<ore:ingotEndSteel> : [
+		<gregtech:meta_item_1:10712>
+	],
+
+	#ingotEnergeticAlloy
+	<ore:ingotEnergeticAlloy> : [
+		<gregtech:meta_item_1:10701>
 	],
 
 	#ingotGraphite
@@ -507,6 +531,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:134>
 	],
 
+	#ingotPulsatingIron
+	<ore:ingotPulsatingIron> : [
+		<gregtech:meta_item_1:10703>
+	],
+
 	#ingotTin
 	<ore:ingotTin> : [
 		<libvulpes:productingot:5>,
@@ -545,6 +574,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:productingot:6>,
 		<thermalfoundation:material:160>,
 		<nuclearcraft:alloy:5>
+	],
+
+	#ingotVibrantAlloy
+	<ore:ingotVibrantAlloy> : [
+		<gregtech:meta_item_1:10702>
 	],
 
     #ingotUranium235
@@ -1917,6 +1951,13 @@ solidifier.recipeBuilder()
     .notConsumable(<gregtech:meta_item_1:32301>)
     .duration(200).EUt(30).buildAndRegister();
 
+// Lumium Plate
+solidifier.recipeBuilder()
+	.outputs([<ore:plateLumium>.firstItem])
+	.fluidInputs(<liquid:lumium> * 144)
+	.notConsumable(<gregtech:meta_item_1:32301>)
+	.duration(200).EUt(30).buildAndRegister();
+
 
 //Redstone Alloy
 <ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
@@ -1951,6 +1992,7 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 //Misc
 <ore:lvcef>.add(<gregtech:machine:10661>);
 <ore:lvcef>.add(<gregtech:machine:10665>);
+<ore:wireGtSinglePulsatingIron>.add(<contenttweaker:pulsatingwire>);
 <ore:dustEndstone>.add(<contenttweaker:endstonedust>);
 
 //Removals
@@ -2078,13 +2120,18 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
-//Thermal Coal Coke Decomposition 
+//Thermal Coal Coke Decomposition
 recipes.addShapeless(<gregtech:meta_item_1:8357> * 9, [<thermalfoundation:storage_resource:1>]);
 
 // Temporary recipe to convert endstone dusts
 recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
 <contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
 <contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
+
+// Temporary recipe to convert pulsating iron wire that is probably unnecessary anyway.
+recipes.addShapeless(<ore:wireGtSinglePulsatingIron>.firstItem, [<contenttweaker:pulsatingwire>]);
+<contenttweaker:pulsatingwire>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<contenttweaker:pulsatingwire>.addTooltip(format.red("Please use the GregTech variant of Pulsating Iron Wire."));
 
 //neutronium plate exchange
 recipes.addShapeless("of_exchange_neutronium_plate",
