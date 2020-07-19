@@ -365,21 +365,6 @@ recipes.addShaped(<thermalfoundation:material:1028> * 4,[
 	[<thermalfoundation:material:1025>, <gregtech:meta_item_1:2111>, <thermalfoundation:material:1024>],
 	[<thermalfoundation:material:1025>, <thermalfoundation:material:1027>, <thermalfoundation:material:1027>]]);
 
-
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:258>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:273>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:288>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:304>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:416>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:368>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:369>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:432>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:433>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:673>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:674>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:704>);
-
-
 <thermalfoundation:material:72>.displayName = "Mana Infused Metal Dust";
 blast_furnace.recipeBuilder().inputs([<thermalfoundation:material:72>]).fluidInputs(<liquid:mana> * 250).outputs(<thermalfoundation:material:136>).property("temperature", 2141).duration(400).EUt(400).buildAndRegister();
 
@@ -492,3 +477,16 @@ furnace.remove(<thermalfoundation:rockwool:7>, <thermalfoundation:material:864>)
 //Satchel Removal
 recipes.removeByRecipeName("thermalexpansion:satchel_1");
 recipes.removeByRecipeName("thermalexpansion:satchel_7");
+
+//Pure Certus
+mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:10>, <appliedenergistics2:crystal_seed>.withTag({progress: 0}), <minecraft:glowstone_dust>, 40000);
+
+//Pure Nether Quartz
+mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:11>, <appliedenergistics2:crystal_seed:600>.withTag({progress: 600}), <minecraft:glowstone_dust>, 40000);
+
+//Pure Fluix
+mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:12>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <minecraft:glowstone_dust>, 40000);
+
+mods.jei.JEI.addDescription(<appliedenergistics2:material:10>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
+mods.jei.JEI.addDescription(<appliedenergistics2:material:11>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
+mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft."); 
