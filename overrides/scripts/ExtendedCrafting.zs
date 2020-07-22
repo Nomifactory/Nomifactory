@@ -1128,9 +1128,10 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>,
 
 
 ////////////////////////// Creative Vending Upgrade ///////////////////////
-val creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 500000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 250000});
-val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte});
+val creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 500000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 250000}, false);
+val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}, false);
 val creativebuffer = <appliedenergistics2:creative_energy_cell>;
+val creativejetpack = <simplyjetpacks:itemjetpack>.withTag({JetpackParticleType: 3}, false);
 
 makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
     ["ABBBBBBBA",
@@ -1145,20 +1146,20 @@ makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
     { A : <storagedrawers:upgrade_creative>,
       B : <avaritia:resource:6>,
       C : <draconicevolution:creative_rf_source>,
-      D : creativecell,
+      D : creativecell.only(isCreative),
       E : <extrautils2:creativeenergy>,
       F : <extrautils2:drum:4>,
       G : <extrautils2:passivegenerator:6>,
       H : <avaritia:infinity_helmet>,
       I : <avaritia:infinity_chestplate>,
-      J : <simplyjetpacks:itemjetpack>,
+      J : creativejetpack,
       K : <avaritia:infinity_sword>,
       L : <avaritia:infinity_pants>,
       M : <avaritia:infinity_boots>,
       S : <solarflux:solar_panel_infinity>,
-      T : creativetank,
+      T : creativetank.only(isCreative),
       U : creativebuffer,
-      W : <thermalcultivation:watering_can:32000>,
+      W : <thermalcultivation:watering_can:32000>.withTag({Water: 0, Mode: 4}, false),
       X : <thermalexpansion:capacitor:32000> });
 
 solidifier.recipeBuilder()
@@ -1214,7 +1215,7 @@ makeExtremeRecipe9(<avaritia:infinity_sword>,
       D : <armorplus:super_star_sword>,
       E : <armorplus:ender_dragon_sword>,
       F : <draconicevolution:wyvern_sword>,
-      G : <draconicevolution:draconic_sword>,
+      G : <draconicevolution:draconic_sword>.withTag({Energy: 0}, false),
       H : <avaritia:skullfire_sword>,
       N : <avaritia:resource:5> });
 
@@ -1266,11 +1267,11 @@ makeExtremeRecipe9(creativecell,
      "ABCDEDCBA",
      "AABCDCBAA",
      "AAABCBAAA"],
-    { A : basiccell,
-      B : hardenedcell,
-      C : reinforcedcell,
-      D : signalumcell,
-      E : resonantcell,
+    { A : basiccellIng,
+      B : hardenedcellIng,
+      C : reinforcedcellIng,
+      D : signalumcellIng,
+      E : resonantcellIng,
       F : <contenttweaker:ultimate_power_storage>,
       G : <avaritia:resource:5> });
 
@@ -1342,11 +1343,11 @@ makeExtremeRecipe9(<thermalcultivation:watering_can:32000>,
      "   DDBBB ",
      "    CCC  ",
      "         "],
-    { A : <thermalcultivation:watering_can>.withTag({Water:0, Mode:0}),
-      B : <thermalcultivation:watering_can:1>.withTag({Water:0, Mode:0}),
-      C : <thermalcultivation:watering_can:2>.withTag({Water:0, Mode:0}),
-      D : <thermalcultivation:watering_can:3>.withTag({Water:0, Mode:0}),
-      E : <thermalcultivation:watering_can:4>.withTag({Water:0, Mode:0}),
+    { A : <thermalcultivation:watering_can>.withTag({Water:0, Mode:0}, false),
+      B : <thermalcultivation:watering_can:1>.withTag({Water:0, Mode:0}, false),
+      C : <thermalcultivation:watering_can:2>.withTag({Water:0, Mode:0}, false),
+      D : <thermalcultivation:watering_can:3>.withTag({Water:0, Mode:0}, false),
+      E : <thermalcultivation:watering_can:4>.withTag({Water:0, Mode:0}, false),
       I : <avaritia:resource:5>});
 
 makeExtremeRecipe9(<solarflux:solar_panel_infinity>,
@@ -1411,7 +1412,7 @@ makeShaped("sj2_Enderium_plating",
            plateShape, { P : <ore:plateEnderium> });
 
 // Creative Jetpack
-makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
+makeExtremeRecipe9(creativejetpack,
     ["  A   E  ",
      " AAA EEE ",
      " ABAIEFE ",
@@ -1444,11 +1445,11 @@ makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
      "CDEFGFEDC",
      "BCDEFEDCB",
      "ABCDEDCBA"],
-    { A: <thermalexpansion:capacitor>,
-      B: <thermalexpansion:capacitor:1>,
-      C: <thermalexpansion:capacitor:2>,
-      D: <thermalexpansion:capacitor:3>,
-      E: <thermalexpansion:capacitor:4>,
+    { A: <thermalexpansion:capacitor>.withTag({Energy: 0}, false),
+      B: <thermalexpansion:capacitor:1>.withTag({Energy: 0}, false),
+      C: <thermalexpansion:capacitor:2>.withTag({Energy: 0}, false),
+      D: <thermalexpansion:capacitor:3>.withTag({Energy: 0}, false),
+      E: <thermalexpansion:capacitor:4>.withTag({Energy: 0}, false),
       F: <draconicevolution:draconium_capacitor>,
       G: <draconicevolution:draconium_capacitor:1>,
       H: <contenttweaker:ultimate_power_storage>,
@@ -1490,15 +1491,20 @@ var xu13 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_ice"});
 var xu14 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_death"});
 var xu15 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"});
 var xu16 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"});
-var dynamo0 = <thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
-var dynamo1 = <thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
-var dynamo3 = <thermalexpansion:dynamo:3>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
-var dynamo5 = <thermalexpansion:dynamo:5>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
+var dynamo0 = <thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
+var dynamo1 = <thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
+var dynamo3 = <thermalexpansion:dynamo:3>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
+var dynamo5 = <thermalexpansion:dynamo:5>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
 
 recipes.addShapeless(dynamo0, [<thermalexpansion:dynamo>,<thermalfoundation:upgrade:35>]);
 recipes.addShapeless(dynamo1, [<thermalexpansion:dynamo:1>,<thermalfoundation:upgrade:35>]);
 recipes.addShapeless(dynamo3, [<thermalexpansion:dynamo:3>,<thermalfoundation:upgrade:35>]);
 recipes.addShapeless(dynamo5, [<thermalexpansion:dynamo:5>,<thermalfoundation:upgrade:35>]);
+
+dynamo0 = dynamo0.only(isResonant);
+dynamo1 = dynamo1.only(isResonant);
+dynamo3 = dynamo3.only(isResonant);
+dynamo5 = dynamo5.only(isResonant);
 
 //Ultimate Collections
 
