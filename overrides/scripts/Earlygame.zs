@@ -891,3 +891,27 @@ macerator.recipeBuilder()
 
 //Remove Unobtainable Clay recipe
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
+
+//Add Chisel Stone recipes to Chemical Reactor
+chemreactor.recipeBuilder()
+  .inputs(<minecraft:cobblestone>*8)
+  .fluidInputs([<liquid:lava>*250])
+  .outputs(<chisel:basalt2:7>*8)
+  .duration(40).EUt(16).buildAndRegister();
+
+chemreactor.recipeBuilder()
+  .inputs(<minecraft:cobblestone>*8,<ore:dustCalcium>*1)
+  .outputs(<chisel:limestone2:7>*8)
+  .duration(40).EUt(16).buildAndRegister();
+
+chemreactor.recipeBuilder()
+  .inputs(<minecraft:cobblestone>*8,<ore:dustCalcite>*1)
+  .outputs(<chisel:marble2:7>*8)
+  .duration(5).EUt(16).buildAndRegister();
+
+//Balance Marble Dust Macerator recipe
+macerator.findRecipe(8, [<ore:stoneMarble>]).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:stoneMarble>)
+	.outputs(<gregtech:meta_item_1:2245>)
+	.duration(150).EUt(8).buildAndRegister();
