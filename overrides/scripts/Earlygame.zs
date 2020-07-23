@@ -890,7 +890,7 @@ macerator.recipeBuilder()
 	.duration(400).EUt(2).buildAndRegister();
 
 //Remove Unobtainable Clay recipe
-recipes.removeByRecipeName("thermalfoundation:clay_ball");
+recipes.removeByRecipeName("thermalfoundation:clay_ball"); 
 
 //Add Chisel Stone recipes to Chemical Reactor
 chemreactor.recipeBuilder()
