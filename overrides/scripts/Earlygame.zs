@@ -938,3 +938,38 @@ for mat in material {
 	  	  F : <ore:craftingToolFile>.firstItem.withEmptyTag(),
 	  	  D : <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()});
 }
+
+
+
+
+
+
+
+
+//Vinyl Acetate
+electrolyzer.recipeBuilder()
+	.fluidInputs(<liquid:vinyl_acetate> * 12000)
+	.outputs(<ore:dustCarbon>.firstItem * 4)
+	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
+	.duration(288).EUt(60).buildAndRegister();
+
+//Polyvinyl Acetate
+electrolyzer.recipeBuilder()
+	.fluidInputs(<liquid:polyvinyl_acetate> * 12000)
+	.outputs(<ore:dustCarbon>.firstItem * 4)
+	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
+	.duration(288).EUt(60).buildAndRegister();
+
+//Methyl Acetate
+electrolyzer.recipeBuilder()
+	.fluidInputs(<liquid:methyl_acetate> * 11000)
+	.outputs(<ore:dustCarbon>.firstItem * 3)
+	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
+	.duration(264).EUt(60).buildAndRegister();
+
+//Dichlorobenzene
+electrolyzer.recipeBuilder()
+	.fluidInputs(<liquid:dichlorobenzene> * 12000)
+	.outputs(<ore:dustCarbon>.firstItem * 6)
+	.fluidOutputs(<liquid:chlorine> * 2000, <liquid:hydrogen> * 4000)
+	.duration(576).EUt(60).buildAndRegister();
