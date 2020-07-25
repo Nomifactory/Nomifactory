@@ -47294,7 +47294,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Now that you have access to §6Awakened Cores§r, the §eenergy storage core§r from §bDraconic Evolution§r is a great way to store all the power required to continue crafting these power hungry late game items.\n\nThe §eenergy storage core§r is a multiblock structure that can be upgraded to store more and more energy with increasing tier. See the §bDraconic Evolution§r manual for more information on the material requirements for each tier. No matter the tier, §6Energy Pylons§r are required to input and output energy input the multiblock structure.\n\nOnce you have the materials together for your desired tier, §eenergy storage core§r can build itself, simply access the GUI of the §6Energy Core§r.\n\nIt is recommended to leave the final tier of the multiblock, tier 8, untill after you reach the §6Creative Tank§r, as it requires large amounts of §6Awakened Draconium§r.",
+          "desc:8": "Now that you have access to §6Awakened Cores§r, the §eenergy storage core§r from §bDraconic Evolution§r is a great way to store all the power required to continue crafting these power hungry late game items.\n\nThe §eenergy storage core§r is a multiblock structure that can be upgraded to store more and more energy with increasing tier. See the §bDraconic Evolution§r manual for more information on the material requirements for each tier. No matter the tier, §6Energy Pylons§r are required to input and output energy for the multiblock structure.\n\nOnce you have the materials together for your desired tier, §eenergy storage core§r can build itself; simply access the GUI of the §6Energy Core§r.\n\nIt is recommended to leave the final tier of the multiblock, tier 8, until after you reach the §6Creative Tank§r, as it requires large amounts of §6Awakened Draconium§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47314,7 +47314,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 778,
