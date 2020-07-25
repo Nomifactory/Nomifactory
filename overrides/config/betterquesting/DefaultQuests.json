@@ -42238,7 +42238,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.\n\nIt will also be vital for processing §5Motes of Omnium§f.",
+          "desc:8": "The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.\n\nIt will also be vital for processing §5Motes of Omnium§f.\n\nAs usual, any §6Item Input Bus§r or §6Item Output Bus§r can be used, bar §eULV§r, but are not required so that you can choose your own. Similarly, any §6Energy Input Hatch§r above §eLV§r can be used, but is not required by the quest.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42290,6 +42290,12 @@
               "Damage:2": 513,
               "OreDict:8": "",
               "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 22,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "gregtech:metal_casing"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -43338,7 +43344,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
+          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1. The materials it requires are similar to the Mk1, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a §6UV Energy Output Hatch§r.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -43394,6 +43400,12 @@
             "1:10": {
               "Count:3": 1,
               "Damage:2": 3006,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 785,
               "OreDict:8": "",
               "id:8": "gregtech:machine"
             }
