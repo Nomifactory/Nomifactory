@@ -823,3 +823,44 @@ thermal_sep.recipeBuilder()
     .inputs([<gregtech:meta_item_1:10076>])
     .duration(3200).EUt(48).buildAndRegister();
 
+// Add tiny fuel clumps to the GTCE Packager
+var clumps = [
+    
+    [<nuclearcraft:thorium:2> , <nuclearcraft:thorium>], 
+    [<nuclearcraft:thorium:6> , <nuclearcraft:thorium:4> ],
+    [<nuclearcraft:uranium:2> , <nuclearcraft:uranium>],
+    [<nuclearcraft:uranium:6> , <nuclearcraft:uranium:4> ],
+    [<nuclearcraft:uranium:10> , <nuclearcraft:uranium:8>],
+    [<nuclearcraft:neptunium:2> , <nuclearcraft:neptunium> ],
+    [<nuclearcraft:neptunium:6> , <nuclearcraft:neptunium:4>],
+    [<nuclearcraft:plutonium:2> , <nuclearcraft:plutonium>],
+    [<nuclearcraft:plutonium:6> , <nuclearcraft:plutonium:4>],
+    [<nuclearcraft:plutonium:10> , <nuclearcraft:plutonium:8>],
+    [<nuclearcraft:plutonium:14> , <nuclearcraft:plutonium:12>],
+    [<nuclearcraft:americium:2> , <nuclearcraft:americium>],
+    [<nuclearcraft:americium:6> , <nuclearcraft:americium:4>],
+    [<nuclearcraft:americium:10> , <nuclearcraft:americium:8>],
+    [<nuclearcraft:curium:2> , <nuclearcraft:curium>],
+    [<nuclearcraft:curium:6> , <nuclearcraft:curium:4>],
+    [<nuclearcraft:curium:10> , <nuclearcraft:curium:8>],
+    [<nuclearcraft:curium:14> , <nuclearcraft:curium:12>],
+    [<nuclearcraft:berkelium:2> , <nuclearcraft:berkelium>],
+    [<nuclearcraft:berkelium:6> , <nuclearcraft:berkelium:4>],
+    [<nuclearcraft:californium:2> , <nuclearcraft:californium>],
+    [<nuclearcraft:californium:6> , <nuclearcraft:californium:4>],
+    [<nuclearcraft:californium:10> , <nuclearcraft:californium:8>],
+    [<nuclearcraft:californium:14> , <nuclearcraft:californium:12>]
+
+] as IItemStack[][];
+
+
+for iso in clumps {
+    
+    packager.recipeBuilder()
+        .inputs(iso[0]*9)
+        .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+        .outputs(iso[1])
+        .duration(10).EUt(12).buildAndRegister();
+
+    
+}

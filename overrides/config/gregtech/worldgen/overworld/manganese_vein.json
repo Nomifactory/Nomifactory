@@ -2,7 +2,7 @@
   "weight": 25,
   "density": 0.3,
   "max_height": 30,
-  "min_height": 20,
+  "min_height": 10,
   "dimension_filter": ["name:*(overworld|lostcities)"],
   "generator": {
     "type": "ellipsoid",
