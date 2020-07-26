@@ -1,6 +1,10 @@
+#debug
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.data.IData;
+import crafttweaker.recipes.IRecipeFunction;
 import scripts.CommonVars.makeShaped as makeShaped;
 
 //Plantball
@@ -120,6 +124,77 @@ recipes.addShaped(<storagedrawers:controllerslave>, [
 	[<gregtech:meta_item_1:12033>,<gregtech:meta_item_1:12033>,<gregtech:meta_item_1:12033>],
 	[<ore:circuitBasic>, <storagedrawers:customdrawers>, <ore:circuitBasic>],
 	[<gregtech:meta_item_1:12033>, <minecraft:gold_block>, <gregtech:meta_item_1:12033>]]);
+
+// Framing recipes
+val framingMaterial as IIngredient = <*>.only(function(stack as IItemStack) as bool {
+    if(!stack.isItemBlock) {
+        return false;
+    }
+    return stack.asBlock().definition.getStateFromMeta(stack.metadata).opaqueCube;
+});
+
+val customDrawerOut = <storagedrawers:customdrawers>.withTag({
+    display: {
+        Name: "Frame your drawers by hand!",
+        Lore: [
+            "Top left: sides",
+            "Top right: trim",
+            "Middle left: front"
+        ]
+    },
+    MatS: {
+        id: "extendedcrafting:storage",
+        Count: 1 as byte,
+        Damage: 4 as short
+    }
+});
+
+function asData(stack as IItemStack) as IData {
+    return {
+        id: stack.definition.id,
+        Count: 1 as byte,
+        Damage: stack.metadata
+    } as IData;
+}
+
+<ore:handFramedThree>.add(<storagedrawers:customdrawers:*>,
+                          <framedcompactdrawers:framed_drawer_controller>,
+                          <framedcompactdrawers:framed_compact_drawer>,
+                          <framedcompactdrawers:framed_slave>);
+
+<ore:handFramed>.addAll(<ore:handFramedThree>);
+<ore:handFramed>.add(<storagedrawers:customtrim>);
+
+for front in [true, false] as bool[] {
+    for trim in [true, false] as bool[] {
+        val ingredients as IIngredient[][] = [
+            [
+                framingMaterial.marked("MatS"),
+                trim ? framingMaterial.marked("MatT") : null
+            ],
+            [
+                front ? framingMaterial.marked("MatF") : null,
+                (front ? <ore:handFramedThree> : <ore:handFramed>).marked("drawer")
+            ]
+        ];
+
+        recipes.addShaped(
+            "hand_framing_" + (trim ? "trim_" : "") + (front ? "front_" : "") + "side",
+            customDrawerOut,
+            ingredients,
+            function(out, ins, cInfo) {
+                var tag = {} as IData[string];
+                for key, stack in ins {
+                    if(key != "drawer") {
+                        tag[key] = asData(stack);
+                    }
+                }
+                val ret as any[any] = tag;
+                return ins.drawer.withTag(ret as IData) * 1;
+            } as IRecipeFunction
+        );
+    }
+}
 
 recipes.remove(<rangedpumps:pump>);
 recipes.addShaped(<rangedpumps:pump>, [
