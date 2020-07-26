@@ -1996,7 +1996,6 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 //Misc
 <ore:lvcef>.add(<gregtech:machine:10661>);
 <ore:lvcef>.add(<gregtech:machine:10665>);
-<ore:wireGtSinglePulsatingIron>.add(<contenttweaker:pulsatingwire>);
 
 //Removals
 <ore:craftingLensLime>.remove(<gregtech:meta_item_1:15219>);

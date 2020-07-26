@@ -209,10 +209,6 @@ var moondust = VanillaFactory.createItem("moondust");
 moondust.maxStackSize = 64;
 moondust.register();
 
-var pulsatingwire = VanillaFactory.createItem("pulsatingwire");
-pulsatingwire.maxStackSize = 64;
-pulsatingwire.register();
-
 var blazepowder = VanillaFactory.createItem("blazepowder");
 blazepowder.maxStackSize = 64;
 blazepowder.register();
