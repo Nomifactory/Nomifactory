@@ -2,6 +2,7 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
+import crafttweaker.recipes.ICraftingInfo;
 import scripts.CommonVars.makeShaped as makeShaped;
 
 //Conductive Iron Thruster
@@ -185,61 +186,73 @@ recipes.addShaped(leadstonejetpack, [
 	[<ore:plateLead>,                  <simplyjetpacks:metaitem:4>,  <ore:plateLead>],
 	[<simplyjetpacks:metaitemmods:26>, null,                         <simplyjetpacks:metaitemmods:26>]]);
 
+val transferTag as IRecipeFunction = function(out as IItemStack, ins as IItemStack[string], cInfo as ICraftingInfo) as IItemStack {
+    return out.withTag(ins.jetpack.tag);
+};
+
 //Electrical Steel Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe2");
 recipes.addShaped(electricalsteeljetpack, [
-	[<ore:plateElectricalSteel>,      <enderio:item_basic_capacitor:1>, <ore:plateElectricalSteel>],
-	[<ore:plateElectricalSteel>,      conductiveironjetpack,            <ore:plateElectricalSteel>],
-	[<simplyjetpacks:metaitemmods:8>, null,                             <simplyjetpacks:metaitemmods:8>]]);
+	[<ore:plateElectricalSteel>,      <enderio:item_basic_capacitor:1>,        <ore:plateElectricalSteel>],
+	[<ore:plateElectricalSteel>,      conductiveironjetpack.marked("jetpack"), <ore:plateElectricalSteel>],
+	[<simplyjetpacks:metaitemmods:8>, null,                                    <simplyjetpacks:metaitemmods:8>]],
+	transferTag);
 
 //Hardened Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe31");
 recipes.addShaped(hardenedjetpack, [
-	[<ore:plateInvar>,                 <thermalexpansion:capacitor:1>, <ore:plateInvar>],
-	[<ore:plateInvar>,                 leadstonejetpack,               <ore:plateInvar>],
-	[<simplyjetpacks:metaitemmods:27>, null,                           <simplyjetpacks:metaitemmods:27>]]);
+	[<ore:plateInvar>,                 <thermalexpansion:capacitor:1>,     <ore:plateInvar>],
+	[<ore:plateInvar>,                 leadstonejetpack.marked("jetpack"), <ore:plateInvar>],
+	[<simplyjetpacks:metaitemmods:27>, null,                               <simplyjetpacks:metaitemmods:27>]],
+	transferTag);
 
 //Energetic Alloy Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe3");
 recipes.addShaped(energeticjetpack, [
-	[<ore:plateEnergeticAlloy>,       <enderio:item_basic_capacitor:2>, <ore:plateEnergeticAlloy>],
-	[<ore:plateEnergeticAlloy>,       electricalsteeljetpack,           <ore:plateEnergeticAlloy>],
-	[<simplyjetpacks:metaitemmods:9>, null,                             <simplyjetpacks:metaitemmods:9>]]);
+	[<ore:plateEnergeticAlloy>,       <enderio:item_basic_capacitor:2>,         <ore:plateEnergeticAlloy>],
+	[<ore:plateEnergeticAlloy>,       electricalsteeljetpack.marked("jetpack"), <ore:plateEnergeticAlloy>],
+	[<simplyjetpacks:metaitemmods:9>, null,                                     <simplyjetpacks:metaitemmods:9>]],
+	transferTag);
 
 //Reinforced Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe32");
 recipes.addShaped(reinforcedjetpack, [
-	[<ore:plateElectrum>,              <thermalexpansion:capacitor:2>, <ore:plateElectrum>],
-	[<ore:plateElectrum>,              hardenedjetpack,                <ore:plateElectrum>],
-	[<simplyjetpacks:metaitemmods:28>, null,                           <simplyjetpacks:metaitemmods:28>]]);
+	[<ore:plateElectrum>,              <thermalexpansion:capacitor:2>,    <ore:plateElectrum>],
+	[<ore:plateElectrum>,              hardenedjetpack.marked("jetpack"), <ore:plateElectrum>],
+	[<simplyjetpacks:metaitemmods:28>, null,                              <simplyjetpacks:metaitemmods:28>]],
+	transferTag);
 
 //Vibrant Alloy Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe4");
 recipes.addShaped(vibrantjetpack, [
-	[<gregtech:meta_item_1:12702>,     compressedoctadiccap, <gregtech:meta_item_1:12702>],
-	[<gregtech:meta_item_1:12702>,     energeticjetpack,     <gregtech:meta_item_1:12702>],
-	[<simplyjetpacks:metaitemmods:10>, null,                 <simplyjetpacks:metaitemmods:10>]]);
+	[<gregtech:meta_item_1:12702>,     compressedoctadiccap,               <gregtech:meta_item_1:12702>],
+	[<gregtech:meta_item_1:12702>,     energeticjetpack.marked("jetpack"), <gregtech:meta_item_1:12702>],
+	[<simplyjetpacks:metaitemmods:10>, null,                               <simplyjetpacks:metaitemmods:10>]],
+	transferTag);
 
 //Resonant Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe33");
 recipes.addShaped(resonantjetpack, [
-	[<ore:plateEnderium>,              <thermalexpansion:capacitor:4>, <ore:plateEnderium>],
-	[<ore:plateEnderium>,              reinforcedjetpack,              <ore:plateEnderium>],
-	[<simplyjetpacks:metaitemmods:29>, null,                           <simplyjetpacks:metaitemmods:29>]]);
+	[<ore:plateEnderium>,              <thermalexpansion:capacitor:4>,      <ore:plateEnderium>],
+	[<ore:plateEnderium>,              reinforcedjetpack.marked("jetpack"), <ore:plateEnderium>],
+	[<simplyjetpacks:metaitemmods:29>, null,                                <simplyjetpacks:metaitemmods:29>]],
+	transferTag);
 
 //Dark Soularium JetPlate
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe5");
 recipes.addShaped(darksoulariumjetplate, [
-	[<enderio:item_material:16>,       <extrautils2:angelring:*>,  <enderio:item_material:16>],
-	[<simplyjetpacks:metaitemmods:4>,  armoredvibrantjetpack,      <simplyjetpacks:metaitemmods:4>],
-	[<simplyjetpacks:metaitemmods:11>, doublecompressedoctadiccap, <simplyjetpacks:metaitemmods:11>]]);
+	[<enderio:item_material:16>,       <extrautils2:angelring:*>,               <enderio:item_material:16>],
+	[<simplyjetpacks:metaitemmods:4>,  armoredvibrantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:4>],
+	[<simplyjetpacks:metaitemmods:11>, doublecompressedoctadiccap,              <simplyjetpacks:metaitemmods:11>]],
+	transferTag);
 
 //Flux-Infused Jetplate
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe34");
 recipes.addShaped(fluxinfusedjetplate, [
-	[compressedoctadiccap,             <extrautils2:angelring:*>,          compressedoctadiccap],
-	[<simplyjetpacks:metaitemmods:21>, armoredresonantjetpack,             <simplyjetpacks:metaitemmods:21>],
-	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>, <simplyjetpacks:metaitemmods:30>]]);
+	[compressedoctadiccap,             <extrautils2:angelring:*>,                compressedoctadiccap],
+	[<simplyjetpacks:metaitemmods:21>, armoredresonantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:21>],
+	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>,       <simplyjetpacks:metaitemmods:30>]],
+	transferTag);
 
 /* Fix Armored Jetpacks */
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe15"); // conductive iron
@@ -253,35 +266,43 @@ recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshapeless3"); // resonan
 
 recipes.addShapeless("armored_conductive_iron_jetpack",
                      armoredconductiveironjetpack,
-                     [conductiveironjetpack, <simplyjetpacks:metaitemmods:12>]);
+                     [conductiveironjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:12>],
+                     transferTag);
 
 recipes.addShapeless("armored_electrical_steel_jetpack",
                      armoredelectricalsteeljetpack,
-                     [electricalsteeljetpack, <simplyjetpacks:metaitemmods:13>]);
+                     [electricalsteeljetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:13>],
+                     transferTag);
 
 recipes.addShapeless("armored_energetic_jetpack",
                      armoredenergeticjetpack,
-                     [energeticjetpack, <simplyjetpacks:metaitemmods:14>]);
+                     [energeticjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:14>],
+                     transferTag);
 
 recipes.addShapeless("armored_vibrant_jetpack",
                      armoredvibrantjetpack,
-                     [vibrantjetpack, <simplyjetpacks:metaitemmods:15>]);
+                     [vibrantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:15>],
+                     transferTag);
 
 recipes.addShapeless("armored_leadstone_jetpack",
                      armoredleadstonejetpack,
-                     [leadstonejetpack, <simplyjetpacks:metaitemmods:22>]);
+                     [leadstonejetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:22>],
+                     transferTag);
 
 recipes.addShapeless("armored_hardened_jetpack",
                      armoredhardenedjetpack,
-                     [hardenedjetpack, <simplyjetpacks:metaitemmods:23>]);
+                     [hardenedjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:23>],
+                     transferTag);
 
 recipes.addShapeless("armored_reinforced_jetpack",
                      armoredreinforcedjetpack,
-                     [reinforcedjetpack, <simplyjetpacks:metaitemmods:24>]);
+                     [reinforcedjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:24>],
+                     transferTag);
 
 recipes.addShapeless("armored_resonant_jetpack",
                      armoredresonantjetpack,
-                     [resonantjetpack, <simplyjetpacks:metaitemmods:25>]);
+                     [resonantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:25>],
+                     transferTag);
 
 //Add Jetpack Nbt Resetting recipes
 

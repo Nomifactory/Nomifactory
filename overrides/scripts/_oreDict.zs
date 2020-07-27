@@ -99,7 +99,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockNeutronium
 	<ore:blockNeutronium> : [
-		<gregtech:compressed_18>
+		<gregtech:compressed_18:1>
 	],
 
 	#blockNetherstar
@@ -1972,10 +1972,15 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 
 //Circuits
 <ore:circuitBasic>.add(<contenttweaker:refinedcircuit>);
+<ore:circuitBasic>.remove(<gregtech:meta_item_2:32507>);
+
 <ore:circuitGood>.add(<contenttweaker:combinationcircuit>);
 <ore:circuitGood>.add(<contenttweaker:electronicprocessor>);
 <ore:circuitGood>.add(<contenttweaker:refinedprocessor>);
 <ore:circuitGood>.add(<contenttweaker:microcircuit>);
+<ore:circuitGood>.remove(<gregtech:meta_item_2:32489>);
+<ore:circuitGood>.remove(<gregtech:meta_item_2:32490>);
+
 <ore:circuitAdvanced>.add(<contenttweaker:refinedprocessorarray>);
 <ore:circuitAdvanced>.add(<contenttweaker:electronicprocessorarray>);
 <ore:circuitExtreme>.add(<contenttweaker:refinedprocessormainframe>);
