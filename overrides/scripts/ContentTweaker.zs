@@ -663,10 +663,12 @@ var smingots as string[] = [
 
 function getItemFoodEaten(duration as int) as IItemFoodEaten {
     return function(stack, world, player) {
-        var potions = [ // These can't resolve when the script is run, so resolve them within the function.
+        val potions = [ // These can't resolve when the script is run, so resolve them within the function.
             <potion:minecraft:absorption>,
             <potion:minecraft:speed>,
-            <potion:minecraft:haste>
+            <potion:minecraft:haste>,
+            <potion:minecraft:saturation>,
+            <potion:minecraft:health_boost>
         ] as IPotion[];
         for potion in potions {
             player.addPotionEffect(potion.makePotionEffect(duration, 1));
@@ -683,8 +685,9 @@ for smingot in smingots {
     saturation = (saturation * 2) + 1;
     potionDuration = potionDuration * 2;
 
-    var foodRep = VanillaFactory.createItemFood(smingot, heal);
+    val foodRep = VanillaFactory.createItemFood(smingot, heal);
     foodRep.saturation = saturation;
+    foodRep.alwaysEdible = true;
     foodRep.onItemFoodEaten = getItemFoodEaten(potionDuration);
 
     foodRep.register();
