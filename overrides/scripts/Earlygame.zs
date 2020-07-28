@@ -21,21 +21,14 @@ furnace.addRecipe(<minecraft:slime_ball> * 2, <gregtech:meta_item_2:32570>, 0.0)
 
 //Mining Hammers
 <thermalfoundation:tool.hammer_stone>.displayName = "Stone Mining Hammer";
-<thermalfoundation:tool.hammer_stone>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_tin>.displayName = "Tin Mining Hammer";
-<thermalfoundation:tool.hammer_tin>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_copper>.displayName = "Copper Mining Hammer";
-<thermalfoundation:tool.hammer_copper>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_nickel>.displayName = "Nickel Mining Hammer";
-<thermalfoundation:tool.hammer_nickel>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_platinum>.displayName = "Platinum Mining Hammer";
-<thermalfoundation:tool.hammer_platinum>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_bronze>.displayName = "Bronze Mining Hammer";
-<thermalfoundation:tool.hammer_bronze>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_iron>.displayName = "Iron Mining Hammer";
-<thermalfoundation:tool.hammer_iron>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
 <thermalfoundation:tool.hammer_diamond>.displayName = "Diamond Mining Hammer";
-<thermalfoundation:tool.hammer_diamond>.addTooltip(format.red("Do not break GT multiblocks with a hammer, pieces will be deleted!"));
+
 
 recipes.remove(<storagedrawers:upgrade_template>);
 recipes.addShaped(<storagedrawers:upgrade_template> * 2, [
