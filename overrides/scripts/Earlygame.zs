@@ -973,3 +973,47 @@ electrolyzer.recipeBuilder()
 	.outputs(<ore:dustCarbon>.firstItem * 6)
 	.fluidOutputs(<liquid:chlorine> * 2000, <liquid:hydrogen> * 4000)
 	.duration(576).EUt(60).buildAndRegister();
+
+
+//Implosion Compressor Recipes (Adding back the dynamite)
+
+val implosioninputs = [
+	[<gregtech:meta_item_1:2244>, <gregtech:meta_item_1:8244>],
+	[<gregtech:meta_item_1:2219>, <minecraft:ender_eye>],
+	[<gregtech:meta_item_1:2085>, <gregtech:meta_item_1:8085>],
+	[<gregtech:meta_item_1:2218>, <minecraft:ender_pearl>],
+	[<gregtech:meta_item_1:2247>, <gregtech:meta_item_1:8247>],
+	[<gregtech:meta_item_1:2212>, <gregtech:meta_item_1:8212>],
+	[<gregtech:meta_item_1:2209>, <gregtech:meta_item_1:8209>],
+	[<gregtech:meta_item_1:2187>, <gregtech:meta_item_1:8187>],
+	[<gregtech:meta_item_1:2206>, <gregtech:meta_item_1:8206>],
+	[<gregtech:meta_item_1:2213>, <gregtech:meta_item_1:8213>],
+	[<gregtech:meta_item_1:2092>, <gregtech:meta_item_1:8092>],
+	[<gregtech:meta_item_1:2190>, <gregtech:meta_item_1:8190>],
+	[<gregtech:meta_item_1:2157>, <gregtech:meta_item_1:8157>],
+	[<gregtech:meta_item_1:2243>, <gregtech:meta_item_1:8243>],
+	[<gregtech:meta_item_1:2154>, <gregtech:meta_item_1:8154>],
+	[<gregtech:meta_item_1:2331>, <minecraft:nether_star>],
+	[<gregtech:meta_item_1:2113>, <minecraft:emerald>],
+	[<gregtech:meta_item_1:2117>, <gregtech:meta_item_1:8117>],
+	[<gregtech:meta_item_1:2122>, <gregtech:meta_item_1:8122>],
+	[<gregtech:meta_item_1:2214>, <gregtech:meta_item_1:8214>]
+
+] as IItemStack[][];
+
+for input in implosioninputs {
+
+implosion.recipeBuilder()
+	.inputs([input[0] * 4])
+	.outputs([input[1] * 3, <gregtech:meta_item_1:110> * 2])
+	.property("explosives", <gregtech:meta_item_1:32629> * 32)
+	.duration(20).EUt(30).buildAndRegister();
+
+}
+
+//Omnium
+implosion.recipeBuilder()
+	.inputs([<extendedcrafting:singularity_ultimate>])
+	.outputs(<extendedcrafting:material:33>)
+	.property("explosives", <gregtech:meta_item_1:32629> * 8)
+	.duration(20).EUt(30).buildAndRegister();
