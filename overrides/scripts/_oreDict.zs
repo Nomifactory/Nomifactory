@@ -99,7 +99,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockNeutronium
 	<ore:blockNeutronium> : [
-		<gregtech:compressed_18:1>
+		<gregtech:compressed_18>
 	],
 
 	#blockNetherstar
