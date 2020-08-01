@@ -1605,8 +1605,8 @@ large_microverse.recipeMap
     .EUt(31250)
     .inputs(<contenttweaker:tiersevenship>,
             <contenttweaker:quantumflux> * 32,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:dragonlairdata> * 32)
     .outputs(<draconicevolution:dragon_heart> * 32,
              <minecraft:dragon_egg> * 64,
@@ -1632,8 +1632,8 @@ large_microverse.recipeMap
     .duration(1500)
     .EUt(31250)
     .inputs(<contenttweaker:tiersevenship>,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:gemsensor>,
             <contenttweaker:dragonlairdata> * 64,
             <contenttweaker:dragonlairdata> * 64,
@@ -1649,10 +1649,10 @@ large_microverse.recipeMap
     .EUt(62500)
     .inputs(<contenttweaker:tiereightship>,
             <contenttweaker:quantumflux> * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:witherrealmdata> * 64,
             <contenttweaker:witherrealmdata> * 64)
     .outputs(<gregtech:meta_item_1:32725> * 32,
@@ -1669,10 +1669,10 @@ large_microverse.recipeMap
     .EUt(62500)
     .inputs(<contenttweaker:tiereightship>,
             <contenttweaker:quantumflux> * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:lairofthechaosguardiandata>)
     .outputs(<draconicevolution:chaos_shard> * 4,
              <minecraft:dragon_egg> * 64,
