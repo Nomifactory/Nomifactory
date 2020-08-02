@@ -382,7 +382,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 8, <metait
 assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:crystalcircuit> * 8]).duration(100).EUt(86000).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:crystalcircuit> * 8]).duration(100).EUt(86000).buildAndRegister();
 
-recipes.addShapeless(<contenttweaker:crystalcircuit>, [<gregtech:meta_item_2:32496>]);	
 
 
 /////////////////   Tier Six Circuits | Master Tier   ///////////////////////
