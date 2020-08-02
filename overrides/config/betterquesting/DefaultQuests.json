@@ -13149,7 +13149,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "FUSION!\n\nThis baby can do any fusion recipe, notably giving you access to §6Neutronium§r.\n\nThe multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitions permitted.\n\nObviously though, this one uses §6Fusion Machine Casing Mk II§r and only works with §aUV Energy Input Hatches§r.",
+          "desc:8": "FUSION!\n\nThis baby can do any fusion recipe, notably giving you access to §6Neutronium§r.\n\nThe multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitutions permitted.\n\nObviously though, this one uses §6Fusion Machine Casing Mk II§r and only works with §aUV Energy Input Hatches§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
