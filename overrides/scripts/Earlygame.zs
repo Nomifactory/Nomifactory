@@ -1028,3 +1028,11 @@ implosion.recipeBuilder()
 	.outputs(<extendedcrafting:material:33>)
 	.property("explosives", <gregtech:meta_item_1:32629> * 8)
 	.duration(20).EUt(30).buildAndRegister();
+
+//Custom Byproduct chances: Revert macerator chances to old behavior
+
+RecipeMap.chanceFunction = function(chance as int,
+									boostPerTier as int,
+									tier as int) as int {
+	return chance * pow(2, tier);
+};
