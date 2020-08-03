@@ -14215,7 +14215,7 @@
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
-            "1:10": {
+            "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
@@ -47352,6 +47352,71 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "779:10": {
+      "preRequisites:11": [
+        21
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Now that you have acquired §6Steel§6§r, your path to infinite cobblestone awaits.\n\nCobblestone has several uses, however the main use is for renewable §6Aluminium§r via the cobbleworks processing line into clay dust. Set this up soon, so you can start stockpiling useful materials.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "nuclearcraft:cobblestone_generator"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Infinite Cobblestone",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 779,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 1,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "nuclearcraft:cobblestone_generator"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -47891,6 +47956,13 @@
           "sizeY:3": 36,
           "x:3": -868,
           "y:3": 68
+        },
+        "74:10": {
+          "id:3": 779,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -696,
+          "y:3": 108
         }
       }
     },
