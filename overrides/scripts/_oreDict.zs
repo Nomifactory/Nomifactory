@@ -1046,10 +1046,6 @@ for oreDictEntry, items in miscDisabled {
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
 
 
-<ore:gemDilithium>.remove(<libvulpes:productgem>);
-<ore:crystalDilithium>.add(<libvulpes:productgem>);
-
-
 ////////////////////////////////
 //			Removals          //
 ////////////////////////////////
