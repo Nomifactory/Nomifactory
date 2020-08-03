@@ -27159,7 +27159,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Fluid Extractors§r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or §6Rubber Sheets§r into liquid §9Rubber§r.\n\nWhen you have access to §6Steel§r, you can make molds and use §3Fluid Solidifiers§r to form various components more efficiently from fluids, like §6Gears§r.",
+          "desc:8": "§3Fluid Extractors§r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or §6Rubber Sheets§r into liquid §9Rubber§r.\n\nWhen you have access to §6Steel§r, you can make molds and use §3Fluid Solidifiers§r to form various components more efficiently from fluids, like §6Gears§r.\n\nThis quest will take the LV, MV, or HV version of the §3Fluid Extractor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27209,7 +27209,7 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 300,
-              "OreDict:8": "",
+              "OreDict:8": "questbookFluidExtractor",
               "id:8": "gregtech:machine"
             }
           },
@@ -47372,7 +47372,6 @@
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "Infinite Cobblestone",
-          "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
