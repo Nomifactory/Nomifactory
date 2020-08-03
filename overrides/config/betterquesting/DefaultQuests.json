@@ -14168,7 +14168,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Even simple rockets demand §6Heavy Plates§r for their construction. In this case, made out of §6Steel§r.",
+          "desc:8": "Even simple rockets demand §6Heavy Plates§r for their construction. In this case, made out of §6Steel§r. This plate requires at least an §6MV Compressor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -14215,12 +14215,6 @@
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 211,
-              "OreDict:8": "",
-              "id:8": "gregtech:machine"
-            },
             "1:10": {
               "Count:3": 1,
               "Damage:2": 0,
