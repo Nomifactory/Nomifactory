@@ -47361,7 +47361,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Now that you have acquired §6Steel§6§r, your path to infinite cobblestone awaits.\n\nCobblestone has several uses, however the main use is for renewable §6Aluminium§r via the cobbleworks processing line into clay dust. Set this up soon, so you can start stockpiling useful materials.",
+          "desc:8": "Now that you have acquired §6Steel§6§r, your path to infinite cobblestone awaits! The §6Cobblestone Generator§r continuously outputs cobblestone into adjacent inventories, and can be upgraded to produce it even faster.\n\nCobblestone can be processed into many useful materials:\n\n§6Gravel§r is useful for making conduits and §9Concrete§r.\n\n§6Sand§r is useful for §6Glass§r, which can be turned into §6Nether Quartz§r.\n\nFinally, §6Dust§r can be turned into §6Clay§r which is both a reliable source of §6Aluminium§r and very important for automating §bDeep Mob Learning§r.\n\nSet up a §ecobbleworks§r soon, so you can stockpile all these useful materials.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
