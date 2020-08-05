@@ -42234,7 +42234,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.\n\nIt will also be vital for processing §5Motes of Omnium§f.\n\nAs usual, any §6Item Input Bus§r or §6Item Output Bus§r can be used, bar §eULV§r, but are not required so that you can choose your own. Similarly, any §6Energy Input Hatch§r above §eLV§r can be used, but is not required by the quest.",
+          "desc:8": "The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.\n\nIt will also be vital for processing §5Motes of Omnium§f.\n\nIn addition to the controller and casings, you will need one §eLV or better§r §6Item Input Bus§r, §6Item Output Bus§r, and §6Energy Input Hatch§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
