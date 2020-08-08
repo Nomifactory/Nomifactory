@@ -570,6 +570,11 @@ tierfourship.rarity = "uncommon";
 tierfourship.maxStackSize = 16;
 tierfourship.register();
 
+var tierfourandhalfship = VanillaFactory.createItem("tierfourandhalfship");
+tierfourandhalfship.rarity = "uncommon";
+tierfourandhalfship.maxStackSize = 16;
+tierfourandhalfship.register();
+
 var tierfiveship = VanillaFactory.createItem("tierfiveship");
 tierfiveship.rarity = "rare";
 tierfiveship.maxStackSize = 16;

@@ -403,6 +403,8 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 
 <contenttweaker:tierfourship>.addTooltip(format.white(
 	format.italic("Harvests ultra cold materials from the deepest parts of empty space.")));
+<contenttweaker:tierfourandhalfship>.addTooltip(format.white(
+	format.italic("Beats the living hell out of the creatures found in various microverses.")));
 <contenttweaker:tierfiveship>.addTooltip(format.white(
 	format.italic("Harvests strange materials from End microverses.")));
 <contenttweaker:tiersixship>.addTooltip(format.italic(
