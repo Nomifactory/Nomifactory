@@ -213,7 +213,7 @@ makeExtremeRecipe7(<contenttweaker:tierfourandhalfship>,
 	  T : <simplyjetpacks:metaitemmods:9>,
 	  W : <contenttweaker:tungstencarbideplating>,
 	  A : <gregtech:meta_item_1:32652>,
-	  S : <redstonearsenal:tool.sword_flux> }
+	  I : <redstonearsenal:tool.sword_flux> }
 );
 
 // Tier 2 Guidance
