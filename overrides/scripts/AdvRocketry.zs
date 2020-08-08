@@ -126,6 +126,14 @@ compressor.recipeBuilder()
 	.EUt(8000)
 	.buildAndRegister();
 
+// Lumium
+compressor.recipeBuilder()
+	.inputs([<thermalfoundation:material:358> * 2])
+	.outputs(<contenttweaker:lumiumplating>)
+	.duration(200)
+	.EUt(8000)
+	.buildAndRegister();
+
 // Iridium
 compressor.recipeBuilder()
 	.inputs([<ore:plateIridium> * 2])
