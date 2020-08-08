@@ -189,25 +189,6 @@ var thermalcloth = VanillaFactory.createItem("thermalcloth");
 thermalcloth.maxStackSize = 64;
 thermalcloth.register();
 
-var omnicoin = VanillaFactory.createItem("omnicoin");
-omnicoin.maxStackSize = 64;
-omnicoin.register();
-
-var omnicoin5 = VanillaFactory.createItem("omnicoin5");
-omnicoin5.maxStackSize = 64;
-omnicoin5.rarity = "uncommon";
-omnicoin5.register();
-
-var omnicoin25 = VanillaFactory.createItem("omnicoin25");
-omnicoin25.maxStackSize = 64;
-omnicoin25.rarity = "rare";
-omnicoin25.register();
-
-var omnicoin100 = VanillaFactory.createItem("omnicoin100");
-omnicoin100.maxStackSize = 64;
-omnicoin100.rarity = "epic";
-omnicoin100.register();
-
 var moondust = VanillaFactory.createItem("moondust");
 moondust.maxStackSize = 64;
 moondust.register();
