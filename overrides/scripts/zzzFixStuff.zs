@@ -129,3 +129,8 @@ recipes.addShapeless("of_crystal_matrix_decomp", <avaritia:resource:1> * 9, [<av
     Anti-Footgun: remove recipe for max energy hatch
  */
 recipes.removeByRecipeName("gregtech:energy_input_hatch_max");
+
+/*
+    :^)
+ */
+furnace.setFuel(<minecraft:reeds>, 0);
