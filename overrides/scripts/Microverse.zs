@@ -379,55 +379,6 @@ makeExtremeRecipe9(<contenttweaker:tiertenship>,
 
 recipes.removeByRecipeName("avaritia:items/resource/neutron_nugget");
 
-// Impossible Realm Data Recipes
-makeShaped("of_impossiblerealmdata_x1", <contenttweaker:impossiblerealmdata>,
-	["OEO",
-	 "EOE",
-	 "OEO"],
-	{ E : <actuallyadditions:item_solidified_experience>,
-	  O : <deepmoblearning:living_matter_overworldian> });
-
-makeShaped("of_impossiblerealmdata_x2", <contenttweaker:impossiblerealmdata> * 2,
-	["HEH",
-	 "EHE",
-	 "HEH"],
-	{ E : <actuallyadditions:item_solidified_experience>,
-	  H : <deepmoblearning:living_matter_hellish> });
-
-makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4,
-	["XEX",
-	 "EXE",
-	 "XEX"],
-	{ E : <actuallyadditions:item_solidified_experience>,
-	  X : <deepmoblearning:living_matter_extraterrestrial> });
-
-// Dragon Lair Data
-makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
-	["IHH",
-	 "HHH",
-	 "HHH"],
-	{ I : <contenttweaker:impossiblerealmdata>,
-	  H : <deepmoblearning:living_matter_hellish> }
-);
-
-// Wither Realm Data
-makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
-	["IXX",
-	 "XXX",
-	 "XXX"],
-	{ I : <contenttweaker:impossiblerealmdata>,
-	  X : <deepmoblearning:living_matter_extraterrestrial> }
-);
-
-// Quantum Flux Recipes
-makeShaped("of_quantumflux_a", <contenttweaker:quantumflux>,
-	[" X ",
-	 "XMX",
-	 " X "],
-	{ M : <enderio:item_material:14>,
-	  X : <deepmoblearning:living_matter_extraterrestrial> }
-);
-
 makeShaped("of_quantumflux_b", <contenttweaker:quantumflux>,
 	[" M ",
 	 "MDM",
@@ -493,19 +444,6 @@ makeShaped("of_ultradensehydrogen", <contenttweaker:ultradensehydrogen>,
 
 // Ultra Dense -> Dense decomposition
 recipes.addShapeless(<contenttweaker:densehydrogen> * 9, [<contenttweaker:ultradensehydrogen>]);
-
-
-// Extraterrestrial Matter
-recipes.remove(<deepmoblearning:living_matter_extraterrestrial>);
-makeShaped("of_dml_living_matter_extraterrestrial",
-	<deepmoblearning:living_matter_extraterrestrial>,
-	[" H ",
-	 "HEH",
-	 " H "],
-	{ H : <deepmoblearning:living_matter_hellish>,
-	  E : <minecraft:ender_pearl> }
-);
-
 
 // Lunar Mining Station Rovers:
 

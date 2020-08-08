@@ -2,9 +2,6 @@ import crafttweaker.item.IIngredient;
 import mods.gregtech.recipe.RecipeMap;
 import scripts.CommonVars.makeShaped as makeShaped;
 
-<deepmoblearning:glitch_fragment>.addTooltip(format.aqua(format.italic(
-    "Obtained by crushing Glitch Hearts against Obsidian.")));
-
 <appliedenergistics2:material:1>.addTooltip(format.aqua(format.italic(
     "Obtained by charging with RF power in the AE2 Charger.")));
 

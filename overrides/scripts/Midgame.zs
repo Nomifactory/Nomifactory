@@ -234,21 +234,6 @@ recipes.addShaped(<actuallyadditions:block_canola_press>, [
 	[<gregtech:meta_item_1:12184>, <actuallyadditions:item_misc:8>, <gregtech:meta_item_1:12184>]]);
 <actuallyadditions:block_canola_press>.addTooltip(format.green("Turns Canola into Canola Oil. Requires RF."));  
 
-//Deep Learner
-recipes.remove(<deepmoblearning:deep_learner>);
-recipes.addShaped(<deepmoblearning:deep_learner>, [[null,null,null],[<scannable:module_monster>,<scannable:scanner>,<scannable:module_monster>],[null,null,null]]);
-
-// Deep Mob Learning book
-recipes.remove(
-	<patchouli:guide_book>
-		.withTag({"patchouli:book": "deepmoblearning:book"})
-);
-recipes.addShapeless(
-	<patchouli:guide_book>
-		.withTag({"patchouli:book": "deepmoblearning:book"}),
-	[<ore:book>, <forestry:crafting_material>]
-);
-
 //Moon Materials
 macerator.findRecipe(8, [<minecraft:blaze_rod>], [null]).remove();
 macerator.recipeBuilder().inputs([<advancedrocketry:moonturf>]).outputs([<contenttweaker:moondust>]).duration(200).EUt(400).buildAndRegister();
