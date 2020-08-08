@@ -562,3 +562,22 @@ saw.findRecipe(48, [<gregtech:meta_item_2:32468>],[<liquid:lubricant>*22]).remov
 
 engraver.findRecipe(480, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32441>], [null]).remove();
 engraver.findRecipe(1920, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32442>], [null]).remove();
+
+<ore:wrenchTank>.add(<thermalexpansion:wrench>)
+
+events.onPlayerInteractBlock(function(evt as crafttweaker.event.PlayerInteractBlockEvent) as void {
+    if (evt.cancelled || // cancelled
+        !evt.player.isSneaking || // not sneaking
+        !evt.usingItem || // items aren't to be used
+	isNull(evt.player.currentItem) || // no item is held
+	<ore:wrenchTank> has evt.player.currentItem || // not a wrench
+	isNull(evt.block) || // no block
+	evt.block.definition.id != "thermalexpansion:tank" || // not a portable tank
+	isNull(evt.block.data) || // no tile entity
+	isNull(evt.block.data.Creative) || // no "Creative" key on the tag
+	evt.block.data.Creative as byte != 1) { // not creative
+        return; // return if not a creative tank, or not holding a crescent hammer
+    }
+    evt.player.give(<thermalexpansion:tank>.withTag(evt.block.tag));
+    evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
+});
