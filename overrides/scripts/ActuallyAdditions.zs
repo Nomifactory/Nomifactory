@@ -286,7 +286,6 @@ recipes.addShaped(<actuallyadditions:item_drill:3>, [
 //Drill Core
 recipes.remove(<actuallyadditions:item_misc:16>);
 <actuallyadditions:item_misc:16>.addTooltip(format.red("Acquired by exploration of Lost Cities buildings or vanilla dungeons."));
-<actuallyadditions:item_misc:16>.addTooltip(format.red("Also can be purchased for Omnicoins."));
 
 //Vertical Digger	
 recipes.remove(<actuallyadditions:block_miner>);
