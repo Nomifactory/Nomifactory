@@ -208,12 +208,6 @@ recipes.addShaped(<gregtech:machine:61>, [
 	[<ore:cableGtSingleCopper>, <ore:cableGtSingleCopper>, <gregtech:machine:502>],
 	[<ore:circuitGood>, <ore:circuitGood>, <ore:cableGtSingleCopper>]]);
 
-//LV Piston
-recipes.addShaped(<gregtech:meta_item_1:32640>, [
-	[<gregtech:meta_item_1:12197>,<gregtech:meta_item_1:12197>,<gregtech:meta_item_1:12197>],
-	[<ore:cableGtSingleTin>, <gregtech:meta_item_1:14197>,<gregtech:meta_item_1:14197>],
-	[<ore:cableGtSingleTin>, <gregtech:meta_item_1:32600>, <gregtech:meta_item_2:26197>]]);
-
 <simplefluidtanks:wrench>.displayName = "Multiblock Fluid Tank Wrench";
 <simplefluidtanks:tankitem>.displayName = "Multiblock Fluid Tank Block";
 <simplefluidtanks:valveitem>.displayName = "Multiblock Fluid Tank Valve";
