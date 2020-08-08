@@ -108,30 +108,6 @@ recipes.addShaped(<appliedenergistics2:part:302>, [[<moreplates:fluix_plate>, <m
 recipes.remove(<appliedenergistics2:part:520>);	
 recipes.addShapeless(<appliedenergistics2:part:520>, [<appliedenergistics2:part:380>, <gregtech:meta_item_1:12216>, <appliedenergistics2:material:22>]);
 
-//Export Bus
-recipes.remove(<appliedenergistics2:part:260>);	
-recipes.addShaped(<appliedenergistics2:part:260>, [
-	[<gregtech:meta_item_1:12001>, <appliedenergistics2:material:43>, <gregtech:meta_item_1:12001>], 
-	[null, <gregtech:meta_item_1:32641>, null]]);
-
-//Fluid Export Bus
-recipes.remove(<appliedenergistics2:part:261>);	
-recipes.addShaped(<appliedenergistics2:part:261>, [
-	[<gregtech:meta_item_1:12216>, <appliedenergistics2:material:43>, <gregtech:meta_item_1:12216>], 
-	[null, <gregtech:meta_item_1:32641>, null]]);
-
-//Import Bus
-recipes.remove(<appliedenergistics2:part:240>);	
-recipes.addShaped(<appliedenergistics2:part:240>, [
-	[null, <appliedenergistics2:material:44>, null], 
-	[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:32641>, <gregtech:meta_item_1:12001>]]);
-
-//Fluid Import Bus
-recipes.remove(<appliedenergistics2:part:241>);	
-recipes.addShaped(<appliedenergistics2:part:241>, [
-	[null, <appliedenergistics2:material:44>, null], 
-	[<gregtech:meta_item_1:12216>, <gregtech:meta_item_1:32641>, <gregtech:meta_item_1:12216>]]);
-
 //Storage Bus
 recipes.remove(<appliedenergistics2:part:220>);	
 recipes.addShapeless(<appliedenergistics2:part:220>, [<gregtech:meta_item_1:32641>, <appliedenergistics2:interface>]);

@@ -290,7 +290,7 @@ makeShaped("pauto_packager",
 		"TIT",
 	], {
 		M: <packagedauto:me_package_component>, // ME Packaging Component
-		I: <appliedenergistics2:part:240>,      // ME Import Bus
+		I: <appliedenergistics2:interface>,      // ME Interface
 		T: <ore:plateTitanium>,   // Titanium Plate
 		C: <ore:circuitExtreme>,  // T4 Circuit
 		X: <extrautils2:crafter>, // ExU2 Crafter
@@ -304,7 +304,7 @@ makeShaped("pauto_unpackager",
 		"TET",
 	], {
 		M: <packagedauto:me_package_component>, // ME Packaging Component
-		E: <appliedenergistics2:part:260>,      // ME Export Bus
+		E: <appliedenergistics2:interface>,      // ME Interface
 		T: <ore:plateTitanium>,   // Titanium Plate
 		C: <ore:circuitExtreme>,  // T4 Circuit
 		X: <extrautils2:crafter>, // ExU2 Crafter
