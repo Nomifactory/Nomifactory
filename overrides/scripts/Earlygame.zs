@@ -177,9 +177,6 @@ recipes.remove(<appliedenergistics2:quartz_glass>);
 recipes.addShaped(<simplyjetpacks:metaitem:4>, [[<minecraft:leather>, <ore:plateSteel>, <minecraft:leather>]]);
 
 //EIO Alloys
-alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10197>, <gregtech:meta_item_1:2106>]).outputs([<gregtech:meta_item_1:10184>]).duration(200).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10197>, <gregtech:meta_item_1:2101>]).outputs([<gregtech:meta_item_1:10184>]).duration(200).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10197>, <gregtech:meta_item_1:2012>]).outputs([<gregtech:meta_item_1:10184>]).duration(200).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>, <minecraft:obsidian>]).outputs([<enderio:item_alloy_ingot:6>]).duration(240).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>, <actuallyadditions:item_crystal:3>]).outputs([<enderio:item_alloy_ingot:6>]).duration(240).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>, <gregtech:meta_item_1:2061>]).outputs([<enderio:item_alloy_ingot>]).duration(120).EUt(16).buildAndRegister();
