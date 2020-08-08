@@ -194,6 +194,27 @@ makeExtremeRecipe7(<contenttweaker:tierfourship>,
 	  W : <contenttweaker:tungstencarbideplating> }
 );
 
+/////////////	 Tier Four and Half Space Ship  	  //////////////////
+makeExtremeRecipe7(<contenttweaker:tierfourandhalfship>,
+	["  LGL  ",
+	 "I PWP I",
+	 "APPCPPA",
+	 " PPBPP ",
+	 "PWFWFWP",
+	 "PDPBPDP",
+	 "  TTT  "],
+	{ C : <gregtech:machine:806>,
+	  B : <gregtech:meta_item_1:32672>,
+	  D : <thermalexpansion:dynamo:3>,
+	  F : <thermalexpansion:frame:147>,
+	  G : <contenttweaker:t1guidance>,
+	  L : <contenttweaker:t2laser>,
+	  P : <contenttweaker:lumiumplating>,
+	  T : <simplyjetpacks:metaitemmods:9>,
+	  W : <contenttweaker:tungstencarbideplating>,
+	  A : <gregtech:meta_item_1:32652>,
+	  S : <redstonearsenal:tool.sword_flux> }
+);
 
 // Tier 2 Guidance
 makeShaped("of_t2guidance", <contenttweaker:t2guidance>,
