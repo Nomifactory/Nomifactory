@@ -1531,7 +1531,6 @@ medium_microverse.recipeMap
              <minecraft:bone> * 64,
              <minecraft:bone> * 64,
              <minecraft:bone> * 64,
-             <enderio:block_infinity> * 16,
              <minecraft:skull:2> * 32,
              <minecraft:rotten_flesh> * 64,
              <minecraft:rotten_flesh> * 64,
