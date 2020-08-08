@@ -15,7 +15,7 @@ import mods.gregtech.material.Material;
 //Primitive Circuit
 recipes.remove(<metaitem:circuit.basic>);
 recipes.addShaped(<metaitem:circuit.basic>, [
-	[<metaitem:component.resistor>, <ore:plateWroughtIron>, <metaitem:component.resistor>], 
+	[<metaitem:component.resistor>, <ore:plateSteel>, <metaitem:component.resistor>], 
 	[<metaitem:circuit.vacuum_tube>, <metaitem:board.coated>, <metaitem:circuit.vacuum_tube>], 
 	[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>]]);
 
@@ -148,9 +148,9 @@ recipes.addShaped(<gregtech:machine:2039>, [
 
 recipes.remove(<metaitem:circuit.good>);
 recipes.addShaped(<contenttweaker:combinationcircuit>, [
-	[<ore:plateWroughtIron>, <metaitem:circuit.basic>, <ore:cableGtSingleRedAlloy>], 
+	[<ore:plateSteel>, <metaitem:circuit.basic>, <ore:cableGtSingleRedAlloy>], 
 	[<metaitem:circuit.basic>, <metaitem:component.diode>, <metaitem:circuit.basic>], 
-	[<ore:cableGtSingleRedAlloy>, <metaitem:circuit.basic>, <ore:plateWroughtIron>]]);
+	[<ore:cableGtSingleRedAlloy>, <metaitem:circuit.basic>, <ore:plateSteel>]]);
 
 <metaitem:board.phenolic>.displayName = "Phenolic Substrate";
 <metaitem:board.phenolic>.clearTooltip();
@@ -805,9 +805,9 @@ recipes.removeByRecipeName("gregtech:casing_lv");
 // remove the steel plate assembler recipe for LV casing
 assembler.findRecipe(16, [<gregtech:meta_item_1:12184> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();
 
-// use wrought iron instead
+// use wrought iron instead (lol no)
 assembler.recipeBuilder()
-    .inputs(<ore:plateWroughtIron> * 8)
+    .inputs(<ore:plateSteel> * 8)
     .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8}))
     .outputs([<gregtech:machine_casing:1>])
     .duration(30).EUt(16).buildAndRegister();
@@ -823,7 +823,7 @@ assembler.recipeBuilder()
 //LV Hull
 recipes.remove(<gregtech:machine:501>);	
 recipes.addShaped(<gregtech:machine:501>, [
-	[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>], 
+	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], 
 	[<ore:cableGtSingleTin>, <gregtech:machine_casing:1>, <ore:cableGtSingleTin>]]);	
 assembler.findRecipe(16, [<gregtech:cable:5071> * 2, <gregtech:machine_casing:1>], [<liquid:plastic> * 288]).remove();	
 
@@ -892,9 +892,9 @@ for i, wrench in wrenches {
 
     // LV Machine Casing
     recipes.addShaped("of_lv_casing_wrench"+i, <gregtech:machine_casing:1>, [
-        [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
-        [<ore:plateWroughtIron>,          wrench       , <ore:plateWroughtIron>],
-        [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
+        [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+        [<ore:plateSteel>,  wrench         , <ore:plateSteel>],
+        [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
 
 
     // Modularium Machine Casing
@@ -910,9 +910,6 @@ for i, wrench in wrenches {
         [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
 }
 
-
-
-assembler.findRecipe(16,[<gregtech:meta_item_1:12197> * 8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12197> * 2, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12033> * 2, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
 assembler.findRecipe(4, [<gregtech:meta_item_1:12197> * 6, <gregtech:meta_item_1:32766>.withTag({Configuration: 6})], [null]).remove();	
