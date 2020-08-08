@@ -891,3 +891,20 @@ macerator.recipeBuilder()
 
 //Remove Unobtainable Clay recipe
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
+
+//Compressed Materials Recipes
+
+macerator.recipeBuilder()
+	.inputs(<extrautils2:compressedcobblestone>)
+	.outputs(<extrautils2:compressedgravel>)
+	.duration(144).EUt(10).buildAndRegister();
+
+macerator.recipeBuilder()
+	.inputs(<extrautils2:compressedgravel>)
+	.outputs(<extrautils2:compressedsand>)
+	.duration(144).EUt(10).buildAndRegister();
+
+macerator.recipeBuilder()
+	.inputs(<extrautils2:compressedsand>)
+	.outputs(<contenttweaker:block_dust> * 9)
+	.duration(144).EUt(10).buildAndRegister();
