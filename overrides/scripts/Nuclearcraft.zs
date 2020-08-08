@@ -846,8 +846,11 @@ for iso in clumps {
         .outputs(iso[1])
         .duration(10).EUt(12).buildAndRegister();
 
-
 }
+
+packager.findRecipe(12, [<ore:nuggetUranium235>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
+packager.findRecipe(12, [<ore:nuggetPlutonium241>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
+
 
 // Oh yeah it's S'more time
 
