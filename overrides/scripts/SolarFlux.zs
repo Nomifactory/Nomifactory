@@ -84,8 +84,6 @@ recipes.addShapeless(<minecraft:string> * 5, [<minecraft:web>]);
 recipes.remove(<minecraft:magma_cream>);
 alloy.recipeBuilder().inputs([<minecraft:slime>,<minecraft:redstone>]).outputs([<minecraft:magma_cream>]).duration(40).EUt(8).buildAndRegister();
 
-recipes.addShapeless(<minecraft:skull:1>, [<minecraft:skull>,<minecraft:skull>,<minecraft:skull>,<deepmoblearning:living_matter_hellish>]);
-
 //Removes the unobtainable dirt recipe
 recipes.removeByRecipeName("thermalfoundation:block_dirt");
 
