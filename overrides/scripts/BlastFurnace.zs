@@ -39,8 +39,6 @@ furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
 //	Tier 20	[9700 temp]		500000	Fusion		Neutronium Nugget, 
 
 //Steel [tier 0]
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2184>], [null]).remove();	
-blast_furnace.findRecipe(120, [<minecraft:iron_ingot>], [<liquid:oxygen> * 1000]).remove();	
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10140>], [<liquid:oxygen> * 1000]).remove();	
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10197>], [<liquid:oxygen> * 1000]).remove();	
 
