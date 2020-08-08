@@ -689,6 +689,14 @@ macerator.recipeBuilder()
 	.EUt(500)
 	.buildAndRegister();
 
+// Prismarine Crystals
+macerator.recipeBuilder()
+	.inputs([<minecraft:prismarine_shard>])
+	.outputs([<minecraft:prismarine_crystals> * 4])
+	.duration(20)
+	.EUt(16)
+	.buildAndRegister();
+
 // Launch Pad
 recipes.remove(<advancedrocketry:launchpad>);
 makeShaped("ar_launchpad",

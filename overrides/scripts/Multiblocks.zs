@@ -1518,6 +1518,94 @@ medium_microverse.recipeMap
              <gregtech:ore_osmium_0> * 16)
     .buildAndRegister();
 
+// Tier 4.5: Lumium Microminer - Mission 1: Overworld Mobs
+medium_microverse.recipeMap
+    .recipeBuilder()
+    .duration(800)
+    .EUt(3750)
+    .inputs(<contenttweaker:tierfourandhalfship>,
+            <contenttweaker:quantumflux> * 8,
+            <thermalfoundation:material:1026> * 64,
+            <ore:treeSapling>)
+    .outputs(<minecraft:skull> * 32,
+             <minecraft:bone> * 64,
+             <minecraft:bone> * 64,
+             <minecraft:bone> * 64,
+             <enderio:block_infinity> * 16,
+             <minecraft:skull:2> * 32,
+             <minecraft:rotten_flesh> * 64,
+             <minecraft:rotten_flesh> * 64,
+             <minecraft:rotten_flesh> * 64,
+             <minecraft:skull:4> * 32,
+             <minecraft:gunpowder> * 64,
+             <minecraft:slime> * 64,
+             <armorplus:material:1> * 64)
+    .buildAndRegister();
+
+// Tier 4.5: Lumium Microminer - Mission 2: Hellish Mobs
+medium_microverse.recipeMap
+    .recipeBuilder()
+    .duration(1000)
+    .EUt(3750)
+    .inputs(<contenttweaker:tierfourandhalfship>,
+            <contenttweaker:quantumflux> * 8,
+            <thermalfoundation:material:1026> * 64,
+            <minecraft:netherrack>)
+    .outputs(<minecraft:blaze_rod> * 64,
+             <minecraft:blaze_rod> * 64,
+             <minecraft:ghast_tear> * 64,
+             <minecraft:skull:1>* 32,
+             <armorplus:material:2> * 64,
+             <armorplus:material:2> * 64,
+             <minecraft:magma_cream> * 64)
+    .buildAndRegister();
+
+// Tier 4.5: Lumium Microminer - Mission 3: End Mobs
+medium_microverse.recipeMap
+    .recipeBuilder()
+    .duration(1200)
+    .EUt(3750)
+    .inputs(<contenttweaker:tierfourandhalfship>,
+            <contenttweaker:quantumflux> * 8,
+            <thermalfoundation:material:1026> * 64,
+            <minecraft:end_stone>)
+    .outputs(<enderio:block_enderman_skull> * 32,
+             <gregtech:compressed_9:14> * 16,
+             <minecraft:shulker_shell> * 64,
+             <minecraft:shulker_shell> * 64,
+             <darkutils:shulker_pearl> * 64)
+    .buildAndRegister();
+
+// Tier 4.5: Lumium Microminer - Mission 4: Dragon Fight
+medium_microverse.recipeMap
+    .recipeBuilder()
+    .duration(2000)
+    .EUt(10000)
+    .inputs(<contenttweaker:tierfourandhalfship>,
+            <contenttweaker:quantumflux> * 8,
+            <thermalfoundation:material:1026> * 64,
+            <minecraft:ender_eye> * 16)
+    .outputs(<contenttweaker:dragonlairdata> * 64,
+             <contenttweaker:dragonlairdata> * 64,
+             <contenttweaker:dragonlairdata> * 64,
+             <contenttweaker:dragonlairdata> * 64,
+             <minecraft:skull:5>)
+    .buildAndRegister();
+
+// Tier 4.5: Lumium Microminer - Mission 4: Wither Fight
+medium_microverse.recipeMap
+    .recipeBuilder()
+    .duration(2000)
+    .EUt(10000)
+    .inputs(<contenttweaker:tierfourandhalfship>,
+            <contenttweaker:quantumflux> * 8,
+            <thermalfoundation:material:1026> * 64,
+            <armorplus:material:2> * 64)
+    .outputs(<contenttweaker:witherrealmdata> * 64,
+             <contenttweaker:witherrealmdata> * 64,
+             <extendedcrafting:storage:2> * 64)
+    .buildAndRegister();
+
 // Tier 5: Iridium Microminer - Mission 1: Marble Ores
 medium_microverse.recipeMap
     .recipeBuilder()
