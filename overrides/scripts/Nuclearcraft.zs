@@ -852,6 +852,29 @@ packager.findRecipe(12, [<ore:nuggetUranium235>.firstItem * 9, <gregtech:meta_it
 packager.findRecipe(12, [<ore:nuggetPlutonium241>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
 
 
+/*
+    === Fixing weird GT <-> NC recipe interactions ===
+
+    U-235 is not consistent with other recipes from GT. This corrects that.
+ */
+
+/*
+    First, remove the crafting table recipe that turns U235 clumps into a GT ingot.
+    This recipe overlaps the NuclearCraft tiny to full clump recipe.
+    Form GT uranium with a solidifer.
+ */
+recipes.removeByRecipeName("gregtech:nugget_assembling_uranium235");
+
+// remove the NC clumps => GT block recipe
+recipes.removeByRecipeName("gregtech:block_compress_uranium235");
+
+// replace with a consistent GT ingots => GT block recipe
+recipes.addShapeless("gregtech_block_compress_uranium235",
+    <gregtech:compressed_3:13>,
+    [<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,
+     <gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,
+     <gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>]);
+
 // Oh yeah it's S'more time
 
 // Graham Crackers
