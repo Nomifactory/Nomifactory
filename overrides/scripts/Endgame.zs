@@ -56,7 +56,6 @@ electrolyzer.recipeBuilder()
     .outputs([<minecraft:quartz>])
     .duration(100).EUt(20).buildAndRegister();
 
-reactor.findRecipe(8, [<gregtech:meta_item_1:10052> * 3], [null]).remove();
 
 autoclave.findRecipe(40, [<gregtech:meta_item_1:2012>], [<liquid:platinum> * 1]).remove();
 

@@ -9,6 +9,7 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.Recipe;
 
 import scripts.CommonVars.makeShaped as makeShaped;
+import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 import scripts.CommonVars.makeCompacting3 as makeCompacting3;
 
 //////////////////////////////////////////////////////////////
@@ -862,12 +863,53 @@ makeCompacting3("gregtech_nugget_assembling_uranium235", <gregtech:meta_item_1:1
 recipes.removeByRecipeName("gregtech:block_compress_uranium235");
 makeCompacting3("gregtech_block_compress_uranium235", <gregtech:compressed_3:13>, <gregtech:meta_item_1:10076>);
 
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.uranium._235");
+makeCompacting3("nuclearcraft_item.nuclearcraft.uranium._235", <nuclearcraft:uranium:4>, <nuclearcraft:uranium:6>);
+
+recipes.removeByRecipeName("gregtech:nugget_disassembling_uranium235");
+recipes.addShapeless("gregtech_nugget_disassembling_uranium235", <gregtech:meta_item_1:9076> * 9, [<gregtech:meta_item_1:10076>]);
+
 // Pu241
 recipes.removeByRecipeName("gregtech:nugget_assembling_plutonium241");
 makeCompacting3("gregtech_nugget_assembling_plutonium241", <gregtech:meta_item_1:10053>, <gregtech:meta_item_1:9053>);
 
 recipes.removeByRecipeName("gregtech:block_compress_plutonium241");
 makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:compressed_2:8>, <gregtech:meta_item_1:10053>);
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.plutonium._241");
+makeCompacting3("nuclearcraft_item.nuclearcraft.plutonium._235", <nuclearcraft:plutonium:8>, <nuclearcraft:plutonium:10>);
+
+recipes.removeByRecipeName("gregtech:nugget_disassembling_plutonium241");
+recipes.addShapeless("gregtech_nugget_disassembling_plutonium241", <gregtech:meta_item_1:9053> * 9, [<gregtech:meta_item_1:10053>]);
+
+// Also fix the fuels since those use oredict...
+function makeLEFuel(name as string,
+                    output as IItemStack,
+                    replacements as IIngredient[string]) {
+    makeShapeless3(name, output, ["ABB","BBB","BBB"], replacements);
+}
+
+function makeHEFuel(name as string,
+                    output as IItemStack,
+                    replacements as IIngredient[string]) {
+    makeShapeless3(name, output, ["AAA","ABB","BBB"], replacements);
+}
+
+var U235 as IIngredient[string] = {"A":<nuclearcraft:uranium:4>, "B":<nuclearcraft:uranium:8>};
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_uranium.leu_235");
+makeLEFuel("nuclearcraft_item.nuclearcraft.fuel_uranium.leu_235", <nuclearcraft:fuel_uranium:4>, U235);
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_uranium.heu_235");
+makeHEFuel("nuclearcraft_item.nuclearcraft.fuel_uranium.heu_235", <nuclearcraft:fuel_uranium:6>, U235);
+
+
+var P241 as IIngredient[string] = {"A":<nuclearcraft:plutonium:8>, "B":<nuclearcraft:plutonium:12>};
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_plutonium.lep_241");
+makeLEFuel("nuclearcraft_item.nuclearcraft.fuel_plutonium.lep_241", <nuclearcraft:fuel_plutonium:4>, P241);
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_plutonium.hep_241");
+makeHEFuel("nuclearcraft_item.nuclearcraft.fuel_plutonium.hep_241", <nuclearcraft:fuel_plutonium:6>, P241);
+
 
 
 // Oh yeah it's S'more time

@@ -2197,15 +2197,6 @@ recipes.addShapeless("of_exchange_neutronium_plate",
 // Workaround for DE Fusion Custom recipe not liking strings in the NBT
 <ore:compressedoctadiccap>.add(compressedoctadiccap);
 
-// Remove GTCE isotopes from OreDict to fix NC clashes, but not from JEI
-<ore:nuggetPlutonium241>.remove(<gregtech:meta_item_1:9053>);
-<ore:ingotPlutonium241>.remove(<gregtech:meta_item_1:10053>);
-<ore:blockPlutonium241>.remove(<gregtech:compressed_2:8>);
-
-<ore:nuggetUranium235>.remove(<gregtech:meta_item_1:9076>);
-<ore:ingotUranium235>.remove(<gregtech:meta_item_1:10076>);
-<ore:blockUranium235>.remove(<gregtech:compressed_3:13>);
-
 /////////////////////////////////
 //  One Ingot To Rule Them All //
 /////////////////////////////////
