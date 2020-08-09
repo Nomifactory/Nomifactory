@@ -580,12 +580,6 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotVibrantAlloy> : [
 		<gregtech:meta_item_1:10702>
 	],
-
-    #ingotUranium235
-    <ore:ingotUranium235> : [
-        <gregtech:meta_item_1:10076>,
-    ],
-
 };
 
 for oreDictEntry, items in ingotsDisabled {
@@ -2081,8 +2075,6 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:material:195>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:200>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:228>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:1>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9075>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9076>);
 mods.jei.JEI.removeAndHide(<libvulpes:productnugget:3>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:164>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:storage_alloy:4>);
@@ -2149,6 +2141,15 @@ recipes.addShapeless("of_exchange_neutronium_plate",
 
 // Workaround for DE Fusion Custom recipe not liking strings in the NBT
 <ore:compressedoctadiccap>.add(compressedoctadiccap);
+
+// Remove GTCE isotopes from OreDict to fix NC clashes, but not from JEI
+<ore:nuggetPlutonium241>.remove(<gregtech:meta_item_1:9053>);
+<ore:ingotPlutonium241>.remove(<gregtech:meta_item_1:10053>);
+<ore:blockPlutonium241>.remove(<gregtech:compressed_2:8>);
+
+<ore:nuggetUranium235>.remove(<gregtech:meta_item_1:9076>);
+<ore:ingotUranium235>.remove(<gregtech:meta_item_1:10076>);
+<ore:blockUranium235>.remove(<gregtech:compressed_3:13>);
 
 /////////////////////////////////
 //  One Ingot To Rule Them All //
