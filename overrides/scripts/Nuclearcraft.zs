@@ -9,6 +9,7 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.Recipe;
 
 import scripts.CommonVars.makeShaped as makeShaped;
+import scripts.CommonVars.makeCompacting3 as makeCompacting3;
 
 //////////////////////////////////////////////////////////////
 /////////////////       Nuclearcraft       ///////////////////
@@ -852,28 +853,22 @@ packager.findRecipe(12, [<ore:nuggetUranium235>.firstItem * 9, <gregtech:meta_it
 packager.findRecipe(12, [<ore:nuggetPlutonium241>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
 
 
-/*
-    === Fixing weird GT <-> NC recipe interactions ===
+/*  Remove NC/GTCE overlapping block and nugget recipes and replace with non-oredict ones */
 
-    U-235 is not consistent with other recipes from GT. This corrects that.
- */
-
-/*
-    First, remove the crafting table recipe that turns U235 clumps into a GT ingot.
-    This recipe overlaps the NuclearCraft tiny to full clump recipe.
-    Form GT uranium with a solidifer.
- */
+// U235
 recipes.removeByRecipeName("gregtech:nugget_assembling_uranium235");
+makeCompacting3("gregtech_nugget_assembling_uranium235", <gregtech:meta_item_1:10076>, <gregtech:meta_item_1:9076>);
 
-// remove the NC clumps => GT block recipe
 recipes.removeByRecipeName("gregtech:block_compress_uranium235");
+makeCompacting3("gregtech_block_compress_uranium235", <gregtech:compressed_3:13>, <gregtech:meta_item_1:10076>);
 
-// replace with a consistent GT ingots => GT block recipe
-recipes.addShapeless("gregtech_block_compress_uranium235",
-    <gregtech:compressed_3:13>,
-    [<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,
-     <gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,
-     <gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>,<gregtech:meta_item_1:10076>]);
+// Pu241
+recipes.removeByRecipeName("gregtech:nugget_assembling_plutonium241");
+makeCompacting3("gregtech_nugget_assembling_plutonium241", <gregtech:meta_item_1:10053>, <gregtech:meta_item_1:9053>);
+
+recipes.removeByRecipeName("gregtech:block_compress_plutonium241");
+makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:compressed_2:8>, <gregtech:meta_item_1:10053>);
+
 
 // Oh yeah it's S'more time
 
