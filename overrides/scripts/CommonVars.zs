@@ -155,9 +155,9 @@ function makeCompacting3(name as string,
                          output as IItemStack,
                          input as IIngredient) {
     recipes.addShapeless(name, output,
-        [[input,input,input],
-         [input,input,input],
-         [input,input,input]]);
+        [input,input,input,
+         input,input,input,
+         input,input,input] as IIngredient[]);
 }
 
 function makeShaped(name as string,
