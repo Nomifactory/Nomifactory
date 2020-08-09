@@ -1010,3 +1010,17 @@ while i < smingots.length {
 
     i += 1;
 }
+
+
+//Dust smelting into ingot
+furnace.remove(<gregtech:meta_item_1:10052>);
+//Tiny pile smelting into nugget
+furnace.remove(<gregtech:meta_item_1:9052>);
+//Solidifying into block
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 1296]).remove();
+//Solidifying into nugget
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
+//Solidifying into plates
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32301>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
+//Solidifying into ingots
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
