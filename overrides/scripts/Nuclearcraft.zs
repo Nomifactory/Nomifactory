@@ -1093,8 +1093,22 @@ for liquid, values in liq {
 
 }
 
-
+//NC Thorium 230 Block
 fluid_extractor.recipeBuilder()
     .inputs(<nuclearcraft:block_depleted_thorium>)
     .fluidOutputs(<liquid:thorium> * 1296)
     .duration(720).EUt(32).buildAndRegister();
+
+//Remove Duping Thorium via extra Thorium230 tiny Pile
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:2069>], [null]).remove();
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:10069>], [null]).remove();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2069>)
+    .outputs(<nuclearcraft:thorium:4>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10069>)
+    .outputs(<nuclearcraft:thorium:4>)
+    .duration(3200).EUt(48).buildAndRegister();
