@@ -1068,3 +1068,27 @@ solidifier.findRecipe(8, [<gregtech:meta_item_1:32301>.withTag({not_consumed: 1 
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
 
 recipes.removeByRecipeName("chisel:uncraft_blockuranium");
+
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_uranium>)
+    .fluidOutputs(<liquid:uranium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+val liq as int[][ILiquidStack] = {
+    
+    //Fluid : duration, power
+    <liquid:water> * 178 : [3808, 30],
+    <liquid:distilled_water> * 134 : [2475, 30],
+    <liquid:lubricant> * 44 : [952, 30]
+
+};
+
+for liquid, values in liq {
+   
+   saw.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_uranium>)
+    .fluidInputs(liquid)
+    .outputs(<gregtech:meta_item_1:12075> * 9)
+    .duration(values[0]).EUt(values[1]).buildAndRegister();
+
+}
