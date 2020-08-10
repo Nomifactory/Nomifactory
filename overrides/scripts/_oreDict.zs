@@ -1393,6 +1393,8 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:252>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:253>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:493>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:525>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:526>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:527>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:811>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:812>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:813>);
