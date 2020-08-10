@@ -1066,3 +1066,5 @@ solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>.withTag({not_consumed: 1 
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32301>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
 //Solidifying into ingots
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
+
+recipes.removeByRecipeName("chisel:uncraft_blockuranium");
