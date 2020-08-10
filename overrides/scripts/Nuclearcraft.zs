@@ -1112,3 +1112,17 @@ thermal_sep.recipeBuilder()
     .inputs(<gregtech:meta_item_1:10069>)
     .outputs(<nuclearcraft:thorium:4>)
     .duration(3200).EUt(48).buildAndRegister();
+
+//Remove Duping Uranium via extra Uranium 235 tiny Pile
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:2075>], [null]).remove();
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:10075>], [null]).remove();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2075>)
+    .outputs(<nuclearcraft:uranium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10075>)
+    .outputs(<nuclearcraft:uranium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
