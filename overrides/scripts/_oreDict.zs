@@ -2037,6 +2037,10 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
 <ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
 
+<ore:questbookFluidExtractor>.add(<gregtech:machine:300>); // LV Fluid Extractor
+<ore:questbookFluidExtractor>.add(<gregtech:machine:301>); // MV Fluid Extractor
+<ore:questbookFluidExtractor>.add(<gregtech:machine:302>); // HV Fluid Extractor
+
 // GTCE Conductive Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);

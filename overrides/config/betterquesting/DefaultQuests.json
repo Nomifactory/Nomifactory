@@ -14168,7 +14168,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Even simple rockets demand §6Heavy Plates§r for their construction. In this case, made out of §6Steel§r.",
+          "desc:8": "Even simple rockets demand §6Heavy Plates§r for their construction. In this case, made out of §6Steel§r. This plate requires at least an §6MV Compressor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -14216,12 +14216,6 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 211,
-              "OreDict:8": "",
-              "id:8": "gregtech:machine"
-            },
-            "1:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
@@ -16110,7 +16104,7 @@
     "238:10": {
       "preRequisites:11": [
         241,
-        411
+        256
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16505,7 +16499,8 @@
     "244:10": {
       "preRequisites:11": [
         262,
-        271
+        258,
+        239
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17310,7 +17305,8 @@
     "256:10": {
       "preRequisites:11": [
         257,
-        411
+        411,
+        330
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17441,7 +17437,6 @@
     },
     "258:10": {
       "preRequisites:11": [
-        329,
         274
       ],
       "properties:10": {
@@ -18326,8 +18321,8 @@
     },
     "271:10": {
       "preRequisites:11": [
-        239,
-        258
+        776,
+        331
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22252,7 +22247,6 @@
     "331:10": {
       "preRequisites:11": [
         239,
-        330,
         607
       ],
       "properties:10": {
@@ -23428,7 +23422,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The full complexity of §bNuclearCraft§r is far too much for the scope of this quest guide, so §eyou\u0027re encouraged to watch a tutorial or read a guide online§r. For the purposes of this particular quest, you\u0027ll be building a cheap breeder reactor to make §6Plutonium§r.\n\nFirst, set up your 54 §6Reactor Casings§r to encase a 3x3 cube shape of empty air. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 3x3 space.\n\nNext, create a hole so you can get inside the cube. Place the §6Reactor Cells§r in all 8 corners. Then the §6Lapis Coolers§r will go between them: 4 on the top layer and 4 on the bottom layer. At this point, the top and botom layers should have eight blocks each with an empty middle, and the middle layer is fully empty. In the middle layer, place the 4 §6Graphite Blocks§r on the corners, and the 4 §6Glowstone Coolers§r on the sides (so they touch both Lapis Coolers). Now the cube should be full, except for an empty column in the middle. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior.\n\nFinally, place the §3Fission Reactor Controller§r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong.\n\nThe lever is placed on the reactor, as a redstone signal is required for it to start working. §cReactors can overheat and melt if the temperature exceeds its ability to cool.§r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a §aRedstone Conduit§r, a §aRedstone Sensor Filter§r (on the input channel), and a §aRedstone NOT Filter§r (on the output channel). Make sure input and output are on the same channel color.",
+          "desc:8": "The full complexity of §bNuclearCraft§r is far too much for the scope of this quest guide, so §eyou\u0027re encouraged to watch a tutorial or read a guide online§r. For the purposes of this particular quest, you\u0027ll be building a cheap breeder reactor to make §6Plutonium§r. This is a very basic reactor and can be changed to run faster and safer.\n\nFirst, set up your 54 §6Reactor Casings§r to encase a 3x3 cube shape of empty air. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 3x3 space.\n\nNext, create a hole so you can get inside the cube. Place the §6Reactor Cells§r in all 8 corners. Then the §6Lapis Coolers§r will go between them: 4 on the top layer and 4 on the bottom layer. At this point, the top and botom layers should have eight blocks each with an empty middle, and the middle layer is fully empty. In the middle layer, place the 4 §6Graphite Blocks§r on the corners, and the 4 §6Glowstone Coolers§r on the sides (so they touch both Lapis Coolers). Now the cube should be full, except for an empty column in the middle. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior.\n\nFinally, place the §3Fission Reactor Controller§r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong.\n\nThe lever is placed on the reactor, as a redstone signal is required for it to start working. §cReactors can overheat and melt if the temperature exceeds its ability to cool.§r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a §aRedstone Conduit§r, a §aRedstone Sensor Filter§r (on the input channel), and a §aRedstone NOT Filter§r (on the output channel). Make sure input and output are on the same channel color.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27045,7 +27039,8 @@
     },
     "412:10": {
       "preRequisites:11": [
-        232
+        232,
+        527
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -27164,7 +27159,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Fluid Extractors§r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or §6Rubber Sheets§r into liquid §9Rubber§r.\n\nWhen you have access to §6Steel§r, you can make molds and use §3Fluid Solidifiers§r to form various components more efficiently from fluids, like §6Gears§r.",
+          "desc:8": "§3Fluid Extractors§r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or §6Rubber Sheets§r into liquid §9Rubber§r.\n\nWhen you have access to §6Steel§r, you can make molds and use §3Fluid Solidifiers§r to form various components more efficiently from fluids, like §6Gears§r.\n\nThis quest will take the LV, MV, or HV version of the §3Fluid Extractor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27214,7 +27209,7 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 300,
-              "OreDict:8": "",
+              "OreDict:8": "questbookFluidExtractor",
               "id:8": "gregtech:machine"
             }
           },
@@ -35015,8 +35010,7 @@
     },
     "564:10": {
       "preRequisites:11": [
-        331,
-        607
+        331
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -37825,7 +37819,7 @@
     },
     "615:10": {
       "preRequisites:11": [
-        58
+        260
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42239,7 +42233,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.\n\nIt will also be vital for processing §5Motes of Omnium§f.",
+          "desc:8": "The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.\n\nIt will also be vital for processing §5Motes of Omnium§f.\n\nIn addition to the controller and casings, you will need one §eLV or better§r §6Item Input Bus§r, §6Item Output Bus§r, and §6Energy Input Hatch§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42291,6 +42285,12 @@
               "Damage:2": 513,
               "OreDict:8": "",
               "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 22,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "gregtech:metal_casing"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -43260,8 +43260,8 @@
     },
     "695:10": {
       "preRequisites:11": [
-        313,
-        694
+        694,
+        243
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -43339,7 +43339,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
+          "desc:8": "The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1. The materials it requires are similar to the Mk1, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a §6UV Energy Output Hatch§r.\n\nThis is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -43395,6 +43395,12 @@
             "1:10": {
               "Count:3": 1,
               "Damage:2": 3006,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 785,
               "OreDict:8": "",
               "id:8": "gregtech:machine"
             }
@@ -47159,6 +47165,71 @@
         }
       }
     },
+    "776:10": {
+      "preRequisites:11": [
+        258
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§6Awakened Cores§6§r are the third tier of §bDraconic Evolution§r core, and are common components of endgame recipes.\n\nThese cores are made with §6Awakened Draconium§r and also cost §e3 Billion RF§r to craft.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "draconicevolution:awakened_core"
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Awakened Core",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 776,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "draconicevolution:awakened_core"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
     "777:10": {
       "preRequisites:11": [
         344
@@ -47205,6 +47276,141 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "moreplates:empowered_diamatine_gear"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "778:10": {
+      "preRequisites:11": [
+        776
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Now that you have §6Awakened Cores§r, you can make the §eEnergy Storage Core§r from §bDraconic Evolution§r. It\u0027s a great way to store all the energy required to craft power-hungry late game items.\n\nThe §eEnergy Storage Core§r is a multiblock structure that can be upgraded to store increasingly immense amounts of RF energy. See the §bDraconic Evolution§r manual for more information on the material requirements for each tier.\n\n§6Energy Pylons§r are required to input and output energy from the core. Each pylon allows movement in a single direction, so you need at least two.\n\nOnce you have the materials together for your desired tier, § the structure can build itself: simply access the GUI of the §6Energy Core§r, set the tier, and click Assemble. Items will be automatically used from your inventory. Once the structure is built, you can access the core\u0027s GUI again through §6Energy Core Stabilizers§r to activate it.\n\nIt is recommended to postpone Tier 8 until after you reach the §dCreative Portable Tank§r, as it requires large amounts of §6Awakened Draconium§r.\n\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "draconicevolution:energy_storage_core"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Power Storage on a Massive Level",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 778,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "draconicevolution:energy_storage_core"
+            },
+            "1:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "draconicevolution:energy_pylon"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "779:10": {
+      "preRequisites:11": [
+        21
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Now that you have acquired §6Steel§6§r, your path to infinite cobblestone awaits! The §6Cobblestone Generator§r continuously outputs cobblestone into adjacent inventories, and can be upgraded to produce it even faster.\n\nCobblestone can be processed into many useful materials:\n\n§6Gravel§r is useful for making conduits and §9Concrete§r.\n\n§6Sand§r is useful for §6Glass§r, which can be turned into §6Nether Quartz§r.\n\nFinally, §6Dust§r can be turned into §6Clay§r which is both a reliable source of §6Aluminium§r and very important for automating §bDeep Mob Learning§r.\n\nSet up a §ecobbleworks§r soon, so you can stockpile all these useful materials.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "nuclearcraft:cobblestone_generator"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Infinite Cobblestone",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 779,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 1,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "nuclearcraft:cobblestone_generator"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -47749,6 +47955,13 @@
           "sizeY:3": 36,
           "x:3": -868,
           "y:3": 68
+        },
+        "74:10": {
+          "id:3": 779,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -708,
+          "y:3": 96
         }
       }
     },
@@ -49333,55 +49546,48 @@
           "y:3": 288
         },
         "119:10": {
-          "id:3": 695,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -528,
-          "y:3": 324
-        },
-        "120:10": {
           "id:3": 732,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -300,
           "y:3": 180
         },
-        "121:10": {
+        "120:10": {
           "id:3": 745,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -480,
           "y:3": 252
         },
-        "122:10": {
+        "121:10": {
           "id:3": 746,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -840,
           "y:3": 216
         },
-        "123:10": {
+        "122:10": {
           "id:3": 748,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -840,
           "y:3": 252
         },
-        "124:10": {
+        "123:10": {
           "id:3": 751,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -840,
           "y:3": 180
         },
-        "125:10": {
+        "124:10": {
           "id:3": 756,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -828,
           "y:3": -36
         },
-        "126:10": {
+        "125:10": {
           "id:3": 773,
           "sizeX:3": 0,
           "sizeY:3": 0,
@@ -50191,7 +50397,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
-          "y:3": 324
+          "y:3": 360
         },
         "10:10": {
           "id:3": 240,
@@ -50225,8 +50431,8 @@
           "id:3": 244,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 384
+          "x:3": 84,
+          "y:3": 360
         },
         "15:10": {
           "id:3": 251,
@@ -50260,7 +50466,7 @@
           "id:3": 256,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 60,
+          "x:3": 108,
           "y:3": 228
         },
         "20:10": {
@@ -50274,7 +50480,7 @@
           "id:3": 258,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
+          "x:3": 84,
           "y:3": 288
         },
         "22:10": {
@@ -50330,14 +50536,14 @@
           "id:3": 271,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 324
+          "x:3": 120,
+          "y:3": 408
         },
         "30:10": {
           "id:3": 274,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
+          "x:3": 120,
           "y:3": 288
         },
         "31:10": {
@@ -50491,15 +50697,15 @@
           "id:3": 330,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 300,
-          "y:3": 132
+          "x:3": 120,
+          "y:3": 168
         },
         "53:10": {
           "id:3": 331,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 300,
-          "y:3": 324
+          "sizeX:3": 48,
+          "sizeY:3": 48,
+          "x:3": 252,
+          "y:3": 396
         },
         "54:10": {
           "id:3": 332,
@@ -50561,8 +50767,8 @@
           "id:3": 351,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": 324
+          "x:3": 156,
+          "y:3": 288
         },
         "63:10": {
           "id:3": 389,
@@ -50603,7 +50809,7 @@
           "id:3": 411,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": 130,
+          "x:3": 54,
           "y:3": 234
         },
         "69:10": {
@@ -50720,10 +50926,10 @@
         },
         "85:10": {
           "id:3": 564,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": 252,
-          "y:3": 372
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": 198,
+          "y:3": 450
         },
         "86:10": {
           "id:3": 607,
@@ -50754,46 +50960,67 @@
           "y:3": 180
         },
         "90:10": {
+          "id:3": 695,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": 0
+        },
+        "91:10": {
           "id:3": 696,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -66,
           "y:3": 450
         },
-        "91:10": {
+        "92:10": {
           "id:3": 733,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 96
         },
-        "92:10": {
+        "93:10": {
           "id:3": 744,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -408,
           "y:3": 96
         },
-        "93:10": {
+        "94:10": {
           "id:3": 749,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 180,
           "y:3": 36
         },
-        "94:10": {
+        "95:10": {
           "id:3": 750,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 164
         },
-        "95:10": {
+        "96:10": {
           "id:3": 753,
           "sizeX:3": 20,
           "sizeY:3": 20,
           "x:3": -183,
           "y:3": 166
+        },
+        "97:10": {
+          "id:3": 776,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 120,
+          "y:3": 324
+        },
+        "98:10": {
+          "id:3": 778,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 156,
+          "y:3": 324
         }
       }
     },
@@ -50848,22 +51075,22 @@
           "id:3": 321,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -144,
-          "y:3": -186
+          "x:3": -147,
+          "y:3": -180
         },
         "5:10": {
           "id:3": 322,
           "sizeX:3": 42,
           "sizeY:3": 42,
-          "x:3": -102,
+          "x:3": -105,
           "y:3": -204
         },
         "6:10": {
           "id:3": 354,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -6,
-          "y:3": -186
+          "x:3": -9,
+          "y:3": -180
         },
         "7:10": {
           "id:3": 355,
@@ -51569,7 +51796,7 @@
           "id:3": 777,
           "sizeX:3": 42,
           "sizeY:3": 42,
-          "x:3": -54,
+          "x:3": -57,
           "y:3": -204
         }
       }
