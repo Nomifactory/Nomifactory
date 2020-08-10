@@ -1083,14 +1083,26 @@ val liq as int[][ILiquidStack] = {
 
 };
 
-for liquid, values in liq {
-   
-   saw.recipeBuilder()
-    .inputs(<nuclearcraft:block_depleted_uranium>)
-    .fluidInputs(liquid)
-    .outputs(<gregtech:meta_item_1:12075> * 9)
-    .duration(values[0]).EUt(values[1]).buildAndRegister();
+val blocks = [
 
+    //Uranium
+    [<nuclearcraft:block_depleted_uranium>, <gregtech:meta_item_1:12075> * 9],
+    //Americium
+    [<nuclearcraft:block_depleted_americium>, <gregtech:meta_item_1:12002> * 9]
+
+] as IItemStack[][];
+
+for blockItem in blocks {
+
+    for liquid, values in liq {
+   
+        saw.recipeBuilder()
+            .inputs(blockItem[0])
+            .fluidInputs(liquid)
+            .outputs(blockItem[1])
+            .duration(values[0]).EUt(values[1]).buildAndRegister();
+
+    }
 }
 
 //NC Thorium 230 Block
@@ -1098,6 +1110,32 @@ fluid_extractor.recipeBuilder()
     .inputs(<nuclearcraft:block_depleted_thorium>)
     .fluidOutputs(<liquid:thorium> * 1296)
     .duration(720).EUt(32).buildAndRegister();
+
+//Californium 252 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_californium>)
+    .fluidOutputs(<liquid:californium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Berklium 247 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_berkelium>)
+    .fluidOutputs(<liquid:berkelium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Curium 246 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_curium>)
+    .fluidOutputs(<liquid:curium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Americium 243 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_americium>)
+    .fluidOutputs(<liquid:americium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+
 
 //Remove Duping Thorium via extra Thorium230 tiny Pile
 thermal_sep.findRecipe(48, [<gregtech:meta_item_1:2069>], [null]).remove();
