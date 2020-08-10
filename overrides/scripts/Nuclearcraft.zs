@@ -1088,7 +1088,9 @@ val blocks = [
     //Uranium
     [<nuclearcraft:block_depleted_uranium>, <gregtech:meta_item_1:12075> * 9],
     //Americium
-    [<nuclearcraft:block_depleted_americium>, <gregtech:meta_item_1:12002> * 9]
+    [<nuclearcraft:block_depleted_americium>, <gregtech:meta_item_1:12002> * 9],
+    //Thorium
+    [<nuclearcraft:block_depleted_thorium>, <gregtech:meta_item_1:12069> * 9]
 
 ] as IItemStack[][];
 
@@ -1135,7 +1137,17 @@ fluid_extractor.recipeBuilder()
     .fluidOutputs(<liquid:americium> * 1296)
     .duration(720).EUt(32).buildAndRegister();
 
+//Neptunium 237 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_neptunium>)
+    .fluidOutputs(<liquid:neptunium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
 
+//Plutonium 242 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_plutonium>)
+    .fluidOutputs(<liquid:plutonium2> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
 
 //Remove Duping Thorium via extra Thorium230 tiny Pile
 thermal_sep.findRecipe(48, [<gregtech:meta_item_1:2069>], [null]).remove();
@@ -1163,4 +1175,16 @@ thermal_sep.recipeBuilder()
 thermal_sep.recipeBuilder()
     .inputs(<gregtech:meta_item_1:10075>)
     .outputs(<nuclearcraft:uranium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+//Adding Thermal Centrifuge Recipes for GTCE Pu241 -> NC Pu241
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10053>)
+    .outputs(<nuclearcraft:plutonium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2053>)
+    .outputs(<nuclearcraft:plutonium:8>)
     .duration(3200).EUt(48).buildAndRegister();
