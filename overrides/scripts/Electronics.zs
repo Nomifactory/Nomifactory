@@ -33,16 +33,6 @@ recipes.addShaped(<metaitem:board.coated> * 3, [
 	[<ore:slabWood>,<ore:slabWood>,<ore:slabWood>],
 	[null,<metaitem:rubber_drop>,null]]);
 	
-	
-	
-//Glass Tube
-recipes.addShaped(<metaitem:component.glass.tube>, [
-	[null, <minecraft:glass_pane>, null],
-	[<minecraft:glass_pane>, null, <minecraft:glass_pane>],
-	[null, <minecraft:glass_pane>, null]]);
-
-	
-	
 //Electronic Circuit
 
 <metaitem:circuit.basic_electronic>.displayName = "Electronic Circuit";
@@ -516,9 +506,6 @@ recipes.addShapeless(<gregtech:cable:5071>, [<gregtech:cable:71>,<gregtech:meta_
 recipes.addShapeless(<gregtech:cable:5237>, [<gregtech:cable:237>,<gregtech:meta_item_1:12152>]);		//red alloy
 recipes.addShapeless(<gregtech:cable:5018>, [<gregtech:cable:18>,<gregtech:meta_item_1:12152>]);		//copper
 
-//Rubber by hand
-recipes.addShaped(<gregtech:meta_item_1:12152>,[[<gregtech:meta_tool:6>],[<gregtech:meta_item_1:32627>],[<gregtech:meta_item_1:32627>]]);	
-
 //Resonant Clathrate
 furnace.remove(<minecraft:ender_pearl>);
 furnace.addRecipe(<forestry:crafting_material>, <thermalfoundation:material:895>, 0.0);
@@ -839,11 +826,6 @@ recipes.addShaped(<metaitem:component.diode> * 4, [[null, <minecraft:glass_pane>
 //Wood Pulp
 recipes.addShapeless(<gregtech:meta_item_1:2196> * 4,[<ore:logWood>,<gregtech:meta_tool:12>]);	
 
-//Charcoal
-furnace.addRecipe(<minecraft:coal:1>, <minecraft:log>, 0.0);
-
-//Red Alloy Dust
-recipes.addShapeless(<gregtech:meta_item_1:2237>, [<gregtech:meta_item_1:2018>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>]);
 
 //Scannable
 recipes.remove(<scannable:module_blank>);

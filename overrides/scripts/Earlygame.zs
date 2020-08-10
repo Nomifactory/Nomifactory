@@ -184,6 +184,10 @@ alloy.recipeBuilder().inputs([<minecraft:gold_ingot>, <minecraft:soul_sand>]).ou
 alloy.recipeBuilder().inputs([<enderio:item_alloy_ingot:6>, <ore:dustEndstone>]).outputs([<enderio:item_alloy_ingot:8>]).duration(300).EUt(120).buildAndRegister();
 alloy.recipeBuilder().inputs([<minecraft:glass>, <gregtech:meta_item_1:2202>]).outputs([<appliedenergistics2:quartz_glass> * 2]).duration(100).EUt(16).buildAndRegister();
 
+//Red Alloy
+alloy.recipeBuilder().inputs([<ore:ingotCopper>, <minecraft:redstone> * 4]).outputs([<gregtech:meta_item_1:10237>]).duration(180).EUt(16).buildAndRegister();
+
+
 //Ender Chest
 recipes.removeByRecipeName("enderstorage:ender_chest");
 recipes.addShaped(<enderstorage:ender_storage>, [
