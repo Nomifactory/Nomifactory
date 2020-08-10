@@ -1092,3 +1092,9 @@ for liquid, values in liq {
     .duration(values[0]).EUt(values[1]).buildAndRegister();
 
 }
+
+
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_thorium>)
+    .fluidOutputs(<liquid:thorium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
