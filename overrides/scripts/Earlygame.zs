@@ -886,3 +886,63 @@ macerator.recipeBuilder()
 
 //Remove Unobtainable Clay recipe
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
+
+/* 
+ * Early game adjustments
+ */
+
+// Fireclay Dust
+recipes.removeByRecipeName("gregtech:fireclay_dust");
+recipes.addShapeless(<ore:dustFireclay>.firstItem, [
+	<ore:dustClay> * 2, <ore:dustBrick> * 2
+]);
+
+centrifuge.findRecipe(30, [<ore:dustFireclay>.firstItem * 2], [null]).remove();
+centrifuge.recipeBuilder()
+    .inputs(<ore:dustFireclay>)
+    .outputs([<ore:dustClay>.firstItem * 2, <ore:dustBrick>.firstItem * 2])
+    .duration(45).EUt(30).buildAndRegister();
+
+// Brick Dust
+macerator.recipeBuilder()
+	.inputs(<ore:ingotBrick>)
+	.outputs(<ore:dustBrick>.firstItem)
+	.duration(35).EUt(8).buildAndRegister();
+
+// Farming Station
+recipes.removeByRecipeName("enderio:farming_station");
+makeShaped("farming_station", <enderio:block_farm_station>,
+	["VCV",
+	 "SHS",
+	 "GPG"],
+	{ V : <ore:itemVibrantCrystal>,
+	  P : <ore:itemPulsatingCrystal>,
+	  S : <ore:plateSteel>,
+	  G : <ore:gearIronInfinity>,
+	  H : <ore:itemSimpleMachineChassi>,
+	  C : <ore:circuitBasic>});
+
+// Steam Dynamo Augments
+recipes.removeByRecipeName("thermalexpansion:augment_26");
+
+// Pulsating Mesh
+alloy.recipeBuilder()
+	.inputs([<forestry:crafting_material>, <gregtech:meta_item_2:32505>])
+	.outputs([<forestry:crafting_material:1>])
+	.duration(180).EUt(16).buildAndRegister();
+
+// Yeet Charcoal from Furnace recipes
+furnace.remove(<minecraft:coal:1>);
+furnace.remove(<minecraft:coal:1>);
+furnace.remove(<minecraft:coal:1>);
+furnace.remove(<minecraft:coal:1>);
+furnace.remove(<minecraft:coal:1>);
+
+// Excavator
+recipes.removeByRecipeName("thermalfoundation:tool.excavator_iron");
+makeShaped("excavator_iron", <enderio:block_farm_station>,
+	[" S",
+	 "SIS",
+	 " I "],
+	{ S : <ore:plateSteel>,
+	  I : <minecraft:stick>});
