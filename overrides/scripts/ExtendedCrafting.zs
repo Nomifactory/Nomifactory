@@ -1132,7 +1132,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>,
      <actuallyadditions:item_crystal_empowered:5>,
      <enderio:item_material:16>,
      <enderio:item_material:15>,
-     <ore:gemDilithium>.firstItem,
+     <ore:crystalDilithium>.firstItem,
      <enderio:item_material:17>,
      <enderio:item_material:18>,
      <enderio:item_material:19>,
@@ -1570,3 +1570,10 @@ makeExtremeRecipe9(<contenttweaker:ultimate_power_storage>,
 
 //Luminessence de-blockifying recipe
 recipes.addShapeless(<extendedcrafting:material:7>*9,[<extendedcrafting:storage:1>]);
+
+//Nether Star Nugget Recombination
+makeShaped("of_star_from_nuggets", <minecraft:nether_star>,
+    ["NNN",
+     "NNN",
+     "NNN"],
+    { N : <extendedcrafting:material:140> });

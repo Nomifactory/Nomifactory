@@ -1,12 +1,12 @@
 require("./globals");
 
-const del      = require("del");
-const path     = require("path").posix;
+const del  = require("del");
+const path = require("path").posix;
 
 const { series } = require("gulp");
 
-const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
-const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
+const DEST_FOLDER = global.CONFIG.buildDestinationDirectory;
+const TEMP_FOLDER = path.join(DEST_FOLDER, "temp");
 
 /**
  * Clean-up. Recursively removes the destination folder.

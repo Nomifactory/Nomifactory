@@ -117,6 +117,12 @@ engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<greg
 <gregtech:meta_item_1:15214>.clearTooltip();
 <gregtech:meta_item_1:15214>.displayName = "Draconium Lens";
 <gregtech:meta_item_1:15214>.addTooltip("Draconium Lens");
+//Fix Draconium Lens Pulverization
+macerator.findRecipe(8, [<gregtech:meta_item_1:15214>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:15214>)
+	.outputs(<gregtech:meta_item_1:1710> * 3)
+	.EUt(8).duration(22).buildAndRegister();
 
 //Ender Star
 recipes.remove(<actuallyadditions:item_misc:19>);	
