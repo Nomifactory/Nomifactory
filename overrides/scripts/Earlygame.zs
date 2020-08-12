@@ -910,7 +910,7 @@ chemreactor.recipeBuilder()
   .duration(5).EUt(16).buildAndRegister();
 
 //Balance Marble Dust Macerator recipe
-macerator.findRecipe(8, [<ore:stoneMarble>]).remove();
+macerator.findRecipe(8, [<ore:stoneMarble>.firstItem]).remove();
 macerator.recipeBuilder()
 	.inputs(<ore:stoneMarble>)
 	.outputs(<gregtech:meta_item_1:2245>)
