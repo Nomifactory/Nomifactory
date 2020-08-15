@@ -1039,3 +1039,16 @@ RecipeMap.chanceFunction = function(chance as int,
 
 //Remove Extra Bonemeal Recipe
 macerator.findRecipe(8, [<minecraft:bone>], [null]).remove();
+
+//Adjust the recipe of the GTCE Crafting Station
+recipes.removeByRecipeName("gregtech:workbench_bronze");
+makeShaped("gtce_crafting_station", <gregtech:machine:825>,
+	["CWC",
+	 "IAI",
+	 "IHI"],
+	{ C : <minecraft:chest>,
+	  W : <minecraft:crafting_table>,
+	  I : <gregtech:meta_item_1:12033>, //Iron Plate
+	  A : <forestry:worktable>, //Worktable
+	  H : <ore:craftingToolHardHammer>.firstItem.withEmptyTag() //Hammer
+	  });
