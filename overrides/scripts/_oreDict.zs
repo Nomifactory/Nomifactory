@@ -1323,6 +1323,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_capacitor_vivid>);
 mods.jei.JEI.removeAndHide(<enderio:block_creative_spawner>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_crafter>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_wired_charger>);
+mods.jei.JEI.removeAndHide(<enderio:block_infinity_fog>);
 
 
 //Extended Crafting Removals
