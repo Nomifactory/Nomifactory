@@ -1550,7 +1550,7 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_armor>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32578>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32579>);
-recipes.removeByRecipeName("gregtech:bone_to_bonemeal");
+recipes.removeByRecipeName("gregtech:bone_to_bone_meal");
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);

@@ -1036,3 +1036,6 @@ RecipeMap.chanceFunction = function(chance as int,
 									tier as int) as int {
 	return chance * pow(2, tier);
 };
+
+//Remove Extra Bonemeal Recipe
+macerator.findRecipe(8, [<minecraft:bone>], [null]).remove();
