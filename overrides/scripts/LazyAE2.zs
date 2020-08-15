@@ -116,6 +116,14 @@ recipes.addShaped(<threng:machine:4>, [
   [<threng:material:0>, <threng:material:4>, <threng:material:0>]
 ]);
 
+// crystal energizer
+recipes.remove(<threng:machine:5>);
+recipes.addShaped(<threng:machine:5>, [
+  [<threng:material:0>, <appliedenergistics2:charger>, <threng:material:0>],
+  [<gregtech:meta_item_1:32499>, <gregtech:machine:683>, <gregtech:meta_item_1:32499>],
+  [<threng:material:0>, <threng:material:4>, <threng:material:0>]
+]);
+
 // mass assembler frame
 recipes.remove(<threng:big_assembler:0>);
 recipes.addShaped(<threng:big_assembler:0> * 3, [
