@@ -1037,8 +1037,24 @@ RecipeMap.chanceFunction = function(chance as int,
 	return chance * pow(2, tier);
 };
 
-//Remove Extra Bonemeal Recipe
+//Slight nerf to Bone Meal Recipe
 macerator.findRecipe(8, [<minecraft:bone>], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<minecraft:bone>)
+	.outputs(<minecraft:dye:15> * 4)
+	.duration(60).EUt(8).buildAndRegister();
+
+//Adjust the Bone Meal by hand recipe
+recipes.removeByRecipeName("gregtech:bone_to_bone_meal");
+recipes.addShapeless(<minecraft:dye:15> * 3,
+	[<minecraft:bone>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+
+//Adjust Bone Meal Compressor recipe to prevent dupe
+macerator.findRecipe(8, [<minecraft:dye:15> * 3], [null]).remove();
+macerator.recipeBuilder()
+	.inputs(<minecraft:dye:15> * 4)
+	.outputs(<minecraft:bone>)
+	.duration(20).EUt(8).buildAndRegister();
 
 //Adjust the recipe of the GTCE Crafting Station
 recipes.removeByRecipeName("gregtech:workbench_bronze");
