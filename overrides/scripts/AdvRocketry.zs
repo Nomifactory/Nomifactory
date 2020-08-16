@@ -963,6 +963,19 @@ makeShaped("ar_planetselector_holo",
 		H: <libvulpes:holoprojector>,
 	});
 
+// Advanced Machine Structure
+recipes.remove(<libvulpes:advstructuremachine>);
+makeShaped("ar_advanced_structure", 
+	<libvulpes:advstructuremachine>, [
+		"RPR",
+		"PSP",
+		"RPR",
+	], {
+		P: <gregtech:meta_item_1:12072>,
+		R: <gregtech:meta_item_1:14072>,
+		S: <libvulpes:structuremachine>,
+	});
+
 // Space Suit Upgrades
 // Hover Upgrade
 assembler.recipeBuilder()
