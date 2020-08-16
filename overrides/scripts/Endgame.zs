@@ -81,7 +81,7 @@ makeShaped("of_composition_sensor", <advancedrocketry:satelliteprimaryfunction:1
 
 //Wetware Boards
 assembler.findRecipe(480,
-    [<metaitem:board.multilayer.fiber_reinforced>, <metaitem:circuit.good>],
+    [<metaitem:board.multilayer.fiber_reinforced>, <ore:circuitGood>.firstItem],
     [<liquid:polystyrene> * 144]).remove();
 
 reactor.recipeBuilder()
