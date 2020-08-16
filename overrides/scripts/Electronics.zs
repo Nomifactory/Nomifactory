@@ -134,6 +134,11 @@ recipes.addShaped(<gregtech:machine:2039>, [
 	[<ore:wireGtQuadrupleNaquadahAlloy>, <gregtech:meta_item_2:32501>, <ore:wireGtQuadrupleNaquadahAlloy>]]);
 
 
+//Recipe for integrated circuit with configuration NBT
+recipes.remove(<gregtech:meta_item_1:32766>);
+recipes.addShapeless(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}),[<ore:circuitBasic>]);
+
+
 
 	
 
