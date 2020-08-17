@@ -86,7 +86,22 @@
                 "type" : "quit"
             }
         },
-        
+
+        "update":
+        {
+            "text" : "Update Notes",
+            "posX" : 125,
+            "posY" : 26,
+            "width" : 120,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/OmnifactoryDevs/Omnifactory/blob/dev/UpdateNotes.md"
+            }
+        },
+		
         "changelog":
         {
             "text" : "Changes",
@@ -113,10 +128,10 @@
             "text" : "Join Us On Discord!",
             "posX" : 4,
             "posY" : 26,
-            "width" : 240,
-            "height" : 20,
-            "alignment" : "left_center",
-            "action" : 
+            "width" : 120,
+			"height" : 20,
+			"alignment" : "left_center",
+			"action" : 
             {
                 "type" : "openLink",
                 "link" : "https://discord.gg/jEEq7u5"
