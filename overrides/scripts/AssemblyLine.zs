@@ -332,26 +332,15 @@ assembly_line.recipeBuilder()
 
 //ZPM Robot Arm
 //Removal
-
-/*for cir in <ore:circuitElite>.items {
-
-var recipe = assembly_line.findRecipe(81290,
+assembly_line.findRecipe(81920,
 		[<gregtech:meta_item_1:32646>,
 		 <gregtech:meta_item_1:10303>,
 		 <gregtech:meta_item_1:32607> * 2,
-		 cir * 8,
+		 <ore:circuitElite>.firstItem * 8,
 		 <gregtech:meta_item_1:14303> * 16,
 		 <gregtech:meta_item_1:17303> * 16,
 		 <gregtech:cable:6195> * 16],
-		[<fluid:lubricant> * 750, <fluid:soldering_alloy> * 1152]);
-
-		if(!isNull(recipe)) {
-
-			recipe.remove();
-			print("Correct Circuit is " ~ cir.displayName);
-		}
-
-} */
+		[<liquid:lubricant> * 750, <liquid:soldering_alloy> * 1152]).remove();
 
 assembly_line.recipeBuilder()
 	.inputs(<ore:circuitExtreme> * 12, //T4 Circuit
