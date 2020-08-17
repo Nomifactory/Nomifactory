@@ -745,7 +745,7 @@ val oildrillingrig = Builder.start(loc, id)
             .where('G', <metastate:gregtech:turbine_casing:1>)
             .where('P', <metastate:inspirations:pipe:0>)
             .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-            .where('E', MetaTileEntities.ENERGY_INPUT_HATCH[4], IFacing.north())
+            .where('E', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.north())
             .where('Q', MetaTileEntities.FLUID_IMPORT_HATCH[1], IFacing.east())
             .where('O', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.south())
             .build())
@@ -1061,7 +1061,7 @@ val lunarminingstation = Builder.start(loc, id)
                 "    A    ",
                 "   L L   ",
                 "   L L   ",
-                "  LLLLL ",
+                "   LLL   ",
                 "   LGL   ",
                 "   LLL   ",
                 "    L    ",
@@ -1102,7 +1102,7 @@ val lunarminingstation = Builder.start(loc, id)
                 "    A    ",
                 "   L L   ",
                 "   L L   ",
-                "  LLLLL  ",
+                "   LLL   ",
                 "   LGL   ",
                 "   LLL   ",
                 "    L    ",
@@ -1605,8 +1605,8 @@ large_microverse.recipeMap
     .EUt(31250)
     .inputs(<contenttweaker:tiersevenship>,
             <contenttweaker:quantumflux> * 32,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:dragonlairdata> * 32)
     .outputs(<draconicevolution:dragon_heart> * 32,
              <minecraft:dragon_egg> * 64,
@@ -1632,8 +1632,8 @@ large_microverse.recipeMap
     .duration(1500)
     .EUt(31250)
     .inputs(<contenttweaker:tiersevenship>,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:gemsensor>,
             <contenttweaker:dragonlairdata> * 64,
             <contenttweaker:dragonlairdata> * 64,
@@ -1649,10 +1649,10 @@ large_microverse.recipeMap
     .EUt(62500)
     .inputs(<contenttweaker:tiereightship>,
             <contenttweaker:quantumflux> * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:witherrealmdata> * 64,
             <contenttweaker:witherrealmdata> * 64)
     .outputs(<gregtech:meta_item_1:32725> * 32,
@@ -1669,10 +1669,10 @@ large_microverse.recipeMap
     .EUt(62500)
     .inputs(<contenttweaker:tiereightship>,
             <contenttweaker:quantumflux> * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
-            <ore:gemDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
+            <ore:crystalDilithium>.firstItem * 64,
             <contenttweaker:lairofthechaosguardiandata>)
     .outputs(<draconicevolution:chaos_shard> * 4,
              <minecraft:dragon_egg> * 64,

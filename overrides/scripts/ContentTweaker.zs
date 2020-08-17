@@ -8,6 +8,9 @@ import mods.contenttweaker.Fluid;
 
 import mods.contenttweaker.AxisAlignedBB;
 
+import mods.contenttweaker.IItemFoodEaten;
+import crafttweaker.potions.IPotion;
+
 
 var smallgearextrudershape = VanillaFactory.createItem("smallgearextrudershape");
 smallgearextrudershape.maxStackSize = 64;
@@ -661,3 +664,42 @@ microverse_casing.register();
 
 var microverse_vent = VanillaFactory.createBlock("microverse_vent", <blockmaterial:iron>);
 microverse_vent.register();
+
+var smingots as string[] = [
+    "eightsmore",
+    "sixteensmore",
+    "thirtytwosmore",
+    "sixtyfoursmore"
+] as string[];
+
+function getItemFoodEaten(duration as int) as IItemFoodEaten {
+    return function(stack, world, player) {
+        val potions = [ // These can't resolve when the script is run, so resolve them within the function.
+            <potion:minecraft:absorption>,
+            <potion:minecraft:speed>,
+            <potion:minecraft:haste>,
+            <potion:minecraft:saturation>,
+            <potion:minecraft:health_boost>
+        ] as IPotion[];
+        for potion in potions {
+            player.addPotionEffect(potion.makePotionEffect(duration, 1));
+        }
+    } as IItemFoodEaten;
+}
+
+var heal = 44;
+var saturation = 8.6 as float;
+var potionDuration = 1200;
+
+for smingot in smingots {
+    heal = (heal * 2) + 4;
+    saturation = (saturation * 2) + 1;
+    potionDuration = potionDuration * 2;
+
+    val foodRep = VanillaFactory.createItemFood(smingot, heal);
+    foodRep.saturation = saturation;
+    foodRep.alwaysEdible = true;
+    foodRep.onItemFoodEaten = getItemFoodEaten(potionDuration);
+
+    foodRep.register();
+}
