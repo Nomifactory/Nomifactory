@@ -363,7 +363,7 @@ assembly_line.recipeBuilder()
 			<gregtech:meta_item_1:32607> * 2, //Electric Motor (ZPM)
 			<gregtech:meta_item_2:26303>, //HSS-E Gear
 			<gregtech:meta_item_1:32646>) //Electric Piston (ZPM)
-	.fluidInputs(<fluid:lubricant> * 750, <fluid:soldering_alloy> * 1152)
+	.fluidInputs(<liquid:lubricant> * 750, <liquid:soldering_alloy> * 1152)
 	.outputs(<gregtech:meta_item_1:32656>)
 	.duration(600).EUt(81920).buildAndRegister();
 

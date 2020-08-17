@@ -1045,6 +1045,26 @@ for oreDictEntry, items in miscDisabled {
 //Add moreplates neutronium plate to gtce neutronium ore dict
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
 
+/*for cir in <ore:circuitElite>.items {
+
+var recipe = assembly_line.findRecipe(81290,
+		[<gregtech:meta_item_1:32646>,
+		 <gregtech:meta_item_1:10303>,
+		 <gregtech:meta_item_1:32607> * 2,
+		 cir * 8,
+		 <gregtech:meta_item_1:14303> * 16,
+		 <gregtech:meta_item_1:17303> * 16,
+		 <gregtech:cable:6195> * 16],
+		[<liquid:lubricant> * 750, <liquid:soldering_alloy> * 1152]);
+
+		if(!isNull(recipe)) {
+
+			recipe.remove();
+			print("Correct Circuit is " ~ cir.displayName);
+		}
+
+} */
+
 
 ////////////////////////////////
 //			Removals          //
