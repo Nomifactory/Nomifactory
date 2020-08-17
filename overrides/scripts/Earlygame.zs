@@ -1050,8 +1050,8 @@ recipes.addShapeless(<minecraft:dye:15> * 3,
 	[<minecraft:bone>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
 
 //Adjust Bone Meal Compressor recipe to prevent dupe
-macerator.findRecipe(8, [<minecraft:dye:15> * 3], [null]).remove();
-macerator.recipeBuilder()
+compressor.findRecipe(8, [<minecraft:dye:15> * 3], [null]).remove();
+compressor.recipeBuilder()
 	.inputs(<minecraft:dye:15> * 4)
 	.outputs(<minecraft:bone>)
 	.duration(20).EUt(8).buildAndRegister();
