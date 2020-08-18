@@ -44,11 +44,78 @@ function playerIsNotWrenchingACreativeTank(evt as PlayerInteractBlockEvent) as b
 	return isNotCreativeTank(getEventBlock(evt)) || isNotWrenching(evt.player);
 }
 
+function coerceNullByte(data as IData) as byte {
+    return isNull(data) ? 0 as byte : data as byte;
+}
+
+function coerceNullInt(data as IData) as int {
+    return isNull(data) ? 0 as int : data as int;
+}
+
+function getTankItemTag(data as IData) as IData {
+    // BlockTank#getItemStackTag
+    // https://github.com/CoFH/ThermalExpansion/blob/1.12/src/main/java/cofh/thermalexpansion/block/storage/BlockTank.java#L193
+
+    // BlockCoreTile#getItemStackTag
+    // https://github.com/CoFH/CoFHCore/blob/3119c11b853a04a5ff8fa76b97199291f6a40699/src/main/java/cofh/core/block/BlockCoreTile.java#L233
+
+    // naming skipped
+
+    var tag = {
+        Creative: coerceNullByte(data.Creative),
+        Level: coerceNullByte(data.Level)
+    } as IData;
+
+    // security skipped
+    // not augmentable
+
+    tag += {
+        RSControl: 0 as byte
+    } as IData;
+
+    // not reconfigurable
+    // not energy handler
+
+    // return
+    // BlockTank#getItemStackTag
+
+    // holding enchantment skipped
+
+    val fluidStackFluidName = data.FluidName;
+    if (isNull(fluidStackFluidName))
+        return tag; // no fluid stored, don't write fluid or lock
+
+    // FluidStack#writeToNBT
+    // https://github.com/MinecraftForge/MinecraftForge/blob/87a63bc5e08f7f1e7085fc62c7800a4071c94291/src/main/java/net/minecraftforge/fluids/FluidStack.java#L105
+
+    var fluidTag = {
+        FluidName: fluidStackFluidName,
+        Amount: coerceNullInt(data.Amount),
+    } as IData;
+
+    val fluidStackTag = data.Tag;
+    if (!isNull(fluidStackTag)) {
+        fluidTag += {
+            Tag: fluidStackTag
+        } as IData;
+    }
+
+    // return
+    // BlockTank#getItemStackTag
+
+    tag += {
+        Fluid: fluidTag,
+        Lock: coerceNullByte(tag.Lock)
+    };
+
+    return tag;
+}
+
 events.onPlayerInteractBlock(function(evt as PlayerInteractBlockEvent) as void {
 	if (playerIsNotWrenchingACreativeTank(evt))
 		return;
 
-	evt.player.give(<thermalexpansion:tank>.withTag(getEventBlock(evt).data));
+	evt.player.give(<thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data)));
 	evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
 	evt.cancellationResult = "SUCCESS";
 	evt.cancel();
