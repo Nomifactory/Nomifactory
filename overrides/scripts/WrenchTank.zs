@@ -30,14 +30,9 @@ function getEventBlock(evt as PlayerInteractBlockEvent) as IBlock {
     return isNull(evt.position) ? null : evt.world.getBlock(evt.position);
 }
 
-function isClient(world as IWorld) as bool {
-    return isNull(world) || // no world
-        world.remote; // client world
-}
-
 function playerIsNotWrenchingACreativeTank(evt as PlayerInteractBlockEvent) as bool {
 	// gracefully handle unusual circumstances
-	if(isNull(evt) || isClient(evt.world) || evt.canceled || evt.useItem == "DENY")
+	if (isNull(evt) || isNull(evt.world) || evt.canceled || evt.useItem == "DENY")
 		return true;
 
 	return isNotCreativeTank(getEventBlock(evt)) || isNotWrenching(evt.player);
@@ -73,7 +68,17 @@ function getTankItemTag(data as IData) as IData {
         Level: coerceNullByte(data.Level)
     } as IData;
 
-    // security skipped
+
+    if (!isNull(data.OwnerUUID) && // cofh.core.init.CoreProps.DEFAULT_OWNER
+        data.OwnerUUID as string != "1ef1a6f0-87bc-4e78-0a0b-c6824eb787ea") {
+        tag += {
+            Secure: 1 as byte,
+            Access: coerceNullByte(data.Access),
+            OwnerUUID: data.OwnerUUID,
+            Owner: isNull(data.Owner) ? "[None]" : data.Owner
+        };
+    }
+
     // not augmentable
 
     tag += {
@@ -122,8 +127,12 @@ events.onPlayerInteractBlock(function(evt as PlayerInteractBlockEvent) as void {
 	if (playerIsNotWrenchingACreativeTank(evt))
 		return;
 
-	evt.player.give(<thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data)));
-	evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
 	evt.cancellationResult = "SUCCESS";
 	evt.cancel();
+
+	if (evt.world.remote)
+	    return;
+
+    evt.player.give(<thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data)));
+    evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
 });
