@@ -123,16 +123,27 @@ function getTankItemTag(data as IData) as IData {
     return tag;
 }
 
+function dropTank(evt as PlayerInteractBlockEvent) as void {
+	if (evt.world.remote)
+	    return;
+
+    // dummy entity to drop the item with
+    val dummy = <entity:minecraft:arrow>.createEntity(evt.world);
+    dummy.posX = evt.x as double + 0.5;
+    dummy.posY = evt.y as double + 0.5;
+    dummy.posZ = evt.z as double + 0.5;
+
+    dummy.dropItem(<thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data)));
+
+    evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
+}
+
 events.onPlayerInteractBlock(function(evt as PlayerInteractBlockEvent) as void {
 	if (playerIsNotWrenchingACreativeTank(evt))
 		return;
 
+    dropTank(evt);
+
 	evt.cancellationResult = "SUCCESS";
 	evt.cancel();
-
-	if (evt.world.remote)
-	    return;
-
-    evt.player.give(<thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data)));
-    evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
 });
