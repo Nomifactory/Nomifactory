@@ -1,5 +1,4 @@
 import crafttweaker.block.IBlock;
-import crafttweaker.world.IWorld;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.block.IBlockPattern;
@@ -128,9 +127,14 @@ function getTankItemTag(data as IData) as IData {
     return tag;
 }
 
-function dropTank(evt as PlayerInteractBlockEvent) as void {
-	if (evt.world.remote)
-	    return;
+function dropTank(evt as PlayerInteractBlockEvent) as bool {
+    if (evt.world.remote)
+        return true;
+
+    val stack = <thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data));
+
+    if (!evt.world.setBlockState(<blockstate:minecraft:air>, evt.position))
+        return false;
 
     // dummy entity to drop the item with
     val dummy = <entity:minecraft:arrow>.createEntity(evt.world);
@@ -138,17 +142,15 @@ function dropTank(evt as PlayerInteractBlockEvent) as void {
     dummy.posY = evt.y as double + 0.5;
     dummy.posZ = evt.z as double + 0.5;
 
-    dummy.dropItem(<thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data)));
-
-    evt.world.setBlockState(<metastate:minecraft:air:0>, evt.position);
+    dummy.dropItem(stack);
 }
 
 events.onPlayerInteractBlock(function(evt as PlayerInteractBlockEvent) as void {
 	if (playerIsNotWrenchingACreativeTank(evt))
 		return;
 
-    dropTank(evt);
-
-	evt.cancellationResult = "SUCCESS";
-	evt.cancel();
+    if (dropTank(evt)) {
+        evt.cancellationResult = "SUCCESS";
+        evt.cancel();
+	}
 });
