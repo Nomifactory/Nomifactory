@@ -1,0 +1,66 @@
+/* CHANGELOG MENU */
+
+
+
+{
+    "images":
+    {
+
+    },
+    
+    "buttons":
+    {
+        "back":
+        {
+            "text" : "Back",
+            "posX" : 4,
+            "posY" : 100,
+            "width" : 120,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.mainmenu"
+            }
+        },
+        "web" :
+        {
+            "text" : "Web Link",
+            "posX" : 125,
+            "posY" : 100,
+            "width" : 120,
+            "height" : 20,
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/OmnifactoryDevs/Omnifactory/blob/dev/UpdateNotes.md"
+            }            
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },		
+		
+		"update_text":
+        {
+            "text" : "web:https://gist.githubusercontent.com/ALongStringOfNumbers/12c0c76e8572d4e1645a661d1e3a3399/raw/ef8af16054fd224c411c701210ec05cb2c81129d/UpdateNotes.txt",
+            "posX" : 2,
+            "posY" : 0,
+            "color" : -1,
+            "alignment" : "center"
+        }
+    },
+    
+    "other":
+    {  
+
+    }
+}
