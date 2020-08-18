@@ -5,7 +5,12 @@ import crafttweaker.data.IData;
 import crafttweaker.block.IBlockPattern;
 import crafttweaker.event.PlayerInteractBlockEvent;
 
-<ore:wrenchTank>.add(<thermalfoundation:wrench>, <enderio:item_yeta_wrench>);
+<ore:wrenchTank>.add(<thermalfoundation:wrench>,
+                     <enderio:item_yeta_wrench>,
+                     <redstonearsenal:tool.wrench_flux>,
+                     <redstonearsenal:tool.battlewrench_flux>);
+
+<ore:wrenchTank>.addAll(<ore:craftingToolWrench>);
 
 static tankBlock as IBlock = <thermalexpansion:tank> as IBlock;
 
