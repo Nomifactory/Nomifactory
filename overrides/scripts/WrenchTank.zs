@@ -58,9 +58,17 @@ function getTankItemTag(data as IData) as IData {
     // BlockCoreTile#getItemStackTag
     // https://github.com/CoFH/CoFHCore/blob/3119c11b853a04a5ff8fa76b97199291f6a40699/src/main/java/cofh/core/block/BlockCoreTile.java#L233
 
-    // naming skipped
+    var tag = {} as IData;
 
-    var tag = {
+    if (!isNull(data.Name)) {
+        tag += {
+            display: {
+                Name: data.Name
+            }
+        };
+    }
+
+    tag += {
         Creative: coerceNullByte(data.Creative),
         Level: coerceNullByte(data.Level)
     } as IData;
@@ -69,7 +77,7 @@ function getTankItemTag(data as IData) as IData {
     // not augmentable
 
     tag += {
-        RSControl: 0 as byte
+        RSControl: isNull(data.RS) ? 0 as byte : coerceNullByte(data.RS.Mode)
     } as IData;
 
     // not reconfigurable
@@ -78,24 +86,24 @@ function getTankItemTag(data as IData) as IData {
     // return
     // BlockTank#getItemStackTag
 
-    // holding enchantment skipped
+    if (coerceNullInt(data.EncHolding) > 0) {
+        tag += (<enchantment:cofhcore:holding> * (data.EncHolding as int)).makeTag();
+    }
 
-    val fluidStackFluidName = data.FluidName;
-    if (isNull(fluidStackFluidName))
+    if (isNull(data.FluidName))
         return tag; // no fluid stored, don't write fluid or lock
 
     // FluidStack#writeToNBT
     // https://github.com/MinecraftForge/MinecraftForge/blob/87a63bc5e08f7f1e7085fc62c7800a4071c94291/src/main/java/net/minecraftforge/fluids/FluidStack.java#L105
 
     var fluidTag = {
-        FluidName: fluidStackFluidName,
+        FluidName: data.FluidName,
         Amount: coerceNullInt(data.Amount),
     } as IData;
 
-    val fluidStackTag = data.Tag;
-    if (!isNull(fluidStackTag)) {
+    if (!isNull(data.Tag)) {
         fluidTag += {
-            Tag: fluidStackTag
+            Tag: data.Tag
         } as IData;
     }
 
@@ -104,7 +112,7 @@ function getTankItemTag(data as IData) as IData {
 
     tag += {
         Fluid: fluidTag,
-        Lock: coerceNullByte(tag.Lock)
+        Lock: coerceNullByte(data.Lock)
     };
 
     return tag;
