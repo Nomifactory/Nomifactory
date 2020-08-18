@@ -38,20 +38,15 @@
         }
     },
     
-    "texts":
-    {
-        "mojang":
-        {
-            "text" : "",
-            "posX" : -197,
-            "posY" : -10,
-            "color" : -1,
-            "alignment" : "bottom_right"
-        },		
-		
+    "labels":
+    {		
 		"update_text":
         {
-            "text" : "web:https://gist.githubusercontent.com/ALongStringOfNumbers/12c0c76e8572d4e1645a661d1e3a3399/raw/ef8af16054fd224c411c701210ec05cb2c81129d/UpdateNotes.txt",
+            "text" :
+            {
+                "type" : "web",
+                "url" : "https://gist.githubusercontent.com/ALongStringOfNumbers/12c0c76e8572d4e1645a661d1e3a3399/raw/ef8af16054fd224c411c701210ec05cb2c81129d/UpdateNotes.txt"
+            },
             "posX" : 2,
             "posY" : 0,
             "color" : -1,
@@ -62,5 +57,8 @@
     "other":
     {  
 
-    }
+    },
+
+    "background" : "options"
+
 }
