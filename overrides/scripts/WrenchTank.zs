@@ -1,4 +1,3 @@
-#debug
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;
 import crafttweaker.player.IPlayer;
