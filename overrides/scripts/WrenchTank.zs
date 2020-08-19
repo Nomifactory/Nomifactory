@@ -50,90 +50,13 @@ function coerceNullInt(data as IData) as int {
     return isNull(data) ? 0 as int : data as int;
 }
 
-function getTankItemTag(data as IData) as IData {
-    // BlockTank#getItemStackTag
-    // https://github.com/CoFH/ThermalExpansion/blob/1.12/src/main/java/cofh/thermalexpansion/block/storage/BlockTank.java#L193
-
-    // BlockCoreTile#getItemStackTag
-    // https://github.com/CoFH/CoFHCore/blob/3119c11b853a04a5ff8fa76b97199291f6a40699/src/main/java/cofh/core/block/BlockCoreTile.java#L233
-
-    var tag = {} as IData;
-
-    if (!isNull(data.Name)) {
-        tag += {
-            display: {
-                Name: data.Name
-            }
-        };
-    }
-
-    tag += {
-        Creative: coerceNullByte(data.Creative),
-        Level: coerceNullByte(data.Level)
-    } as IData;
-
-
-    if (!isNull(data.OwnerUUID) && // cofh.core.init.CoreProps.DEFAULT_OWNER
-        data.OwnerUUID as string != "1ef1a6f0-87bc-4e78-0a0b-c6824eb787ea") {
-        tag += {
-            Secure: 1 as byte,
-            Access: coerceNullByte(data.Access),
-            OwnerUUID: data.OwnerUUID,
-            Owner: isNull(data.Owner) ? "[None]" : data.Owner
-        };
-    }
-
-    // not augmentable
-
-    tag += {
-        RSControl: isNull(data.RS) ? 0 as byte : coerceNullByte(data.RS.Mode)
-    } as IData;
-
-    // not reconfigurable
-    // not energy handler
-
-    // return
-    // BlockTank#getItemStackTag
-
-    if (coerceNullInt(data.EncHolding) > 0) {
-        tag += (<enchantment:cofhcore:holding> * (data.EncHolding as int)).makeTag();
-    }
-
-    if (isNull(data.FluidName))
-        return tag; // no fluid stored, don't write fluid or lock
-
-    // FluidStack#writeToNBT
-    // https://github.com/MinecraftForge/MinecraftForge/blob/87a63bc5e08f7f1e7085fc62c7800a4071c94291/src/main/java/net/minecraftforge/fluids/FluidStack.java#L105
-
-    var fluidTag = {
-        FluidName: data.FluidName,
-        Amount: coerceNullInt(data.Amount),
-    } as IData;
-
-    if (!isNull(data.Tag)) {
-        fluidTag += {
-            Tag: data.Tag
-        } as IData;
-    }
-
-    // return
-    // BlockTank#getItemStackTag
-
-    tag += {
-        Fluid: fluidTag,
-        Lock: coerceNullByte(data.Lock)
-    };
-
-    return tag;
-}
-
 function dropTank(evt as PlayerInteractBlockEvent) as bool {
     if (evt.world.remote)
         return true;
 
-    val stack = <thermalexpansion:tank>.withTag(getTankItemTag(getEventBlock(evt).data));
+    val stack = evt.world.getPickedBlock(evt.position, evt.player.getRayTrace(4, 0), evt.player);
 
-    if (!evt.world.setBlockState(<blockstate:minecraft:air>, evt.position))
+    if (isNull(stack) || !evt.world.setBlockState(<blockstate:minecraft:air>, evt.position))
         return false;
 
     // dummy entity to drop the item with
