@@ -1,56 +1,42 @@
 import crafttweaker.block.IBlock;
 import crafttweaker.player.IPlayer;
-import crafttweaker.data.IData;
 import crafttweaker.block.IBlockPattern;
 import crafttweaker.event.PlayerInteractBlockEvent;
 
-<ore:wrenchTank>.add(<thermalfoundation:wrench>,
-                     <enderio:item_yeta_wrench>,
-                     <redstonearsenal:tool.wrench_flux>,
-                     <redstonearsenal:tool.battlewrench_flux>);
+<ore:wrenchCustom>.add(<thermalfoundation:wrench>,
+                       <enderio:item_yeta_wrench>,
+                       <redstonearsenal:tool.wrench_flux>,
+                       <redstonearsenal:tool.battlewrench_flux>);
 
-<ore:wrenchTank>.addAll(<ore:craftingToolWrench>);
+<ore:wrenchCustom>.addAll(<ore:craftingToolWrench>);
 
-static tankBlock as IBlock = <thermalexpansion:tank> as IBlock;
+static wrenchables as IBlockPattern = <thermalexpansion:tank> as IBlock |
+                                      <thermalexpansion:cell> as IBlock |
+                                      <extrautils2:creativeenergy> as IBlock |
+                                      <extrautils2:passivegenerator:6> as IBlock |
+                                      <extrautils2:drum:4> as IBlock;
 
-function isNotCreativeTank(block as IBlock) as bool {
+function isNotWrenchable(block as IBlock) as bool {
 	return isNull(block) || // no block
-		!(tankBlock has block) || // not a portable tank
-		isNull(block.data) || // no tile entity
-		isNull(block.data.Creative) || // no "Creative" key on the tag
-		block.data.Creative as byte != 1; // not a creative tank
+		!(wrenchables has block); // not wrenchable
 }
 
 function isNotWrenching(player as IPlayer) as bool {
 	return isNull(player) || // no player
 		!player.isSneaking || // not sneaking
 		isNull(player.currentItem) || // no item is held
-		!(<ore:wrenchTank> has player.currentItem); // not a wrench
+		!(<ore:wrenchCustom> has player.currentItem); // not a wrench
 }
 
-function getEventBlock(evt as PlayerInteractBlockEvent) as IBlock {
-    // evt.block doesn't properly represent the tile entity at the position,
-    // so get it directly from the world
-    return isNull(evt.position) ? null : evt.world.getBlock(evt.position);
-}
-
-function playerIsNotWrenchingACreativeTank(evt as PlayerInteractBlockEvent) as bool {
+function playerIsNotWrenchingWrenchable(evt as PlayerInteractBlockEvent) as bool {
 	// gracefully handle unusual circumstances
 	if (isNull(evt) || isNull(evt.world) || evt.canceled || evt.useItem == "DENY")
 		return true;
 
-	return isNotCreativeTank(getEventBlock(evt)) || isNotWrenching(evt.player);
+	return isNotWrenching(evt.player) || isNotWrenchable(evt.block);
 }
 
-function coerceNullByte(data as IData) as byte {
-    return isNull(data) ? 0 as byte : data as byte;
-}
-
-function coerceNullInt(data as IData) as int {
-    return isNull(data) ? 0 as int : data as int;
-}
-
-function dropTank(evt as PlayerInteractBlockEvent) as bool {
+function dropItem(evt as PlayerInteractBlockEvent) as bool {
     if (evt.world.remote)
         return true;
 
@@ -69,10 +55,10 @@ function dropTank(evt as PlayerInteractBlockEvent) as bool {
 }
 
 events.onPlayerInteractBlock(function(evt as PlayerInteractBlockEvent) as void {
-	if (playerIsNotWrenchingACreativeTank(evt))
+	if (playerIsNotWrenchingWrenchable(evt))
 		return;
 
-    if (dropTank(evt)) {
+    if (dropItem(evt)) {
         evt.cancellationResult = "SUCCESS";
         evt.cancel();
 	}
