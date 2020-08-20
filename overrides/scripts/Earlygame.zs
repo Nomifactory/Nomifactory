@@ -480,7 +480,6 @@ recipes.addShapeless(<gregtech:cable:7700> * 2, [<gregtech:cable:8700>]);
 recipes.addShapeless(<gregtech:cable:6700> * 2, [<gregtech:cable:7700>]);
 recipes.addShapeless(<gregtech:cable:5700> * 2, [<gregtech:cable:6700>]);
 
-
 recipes.addShapeless(<gregtech:meta_item_1:2700>, [<gregtech:meta_item_1:2033>,<minecraft:redstone>]);
 recipes.addShapeless(<minecraft:flint>, [<gregtech:meta_tool:12>, <minecraft:gravel:*>, <minecraft:gravel:*>]);
 
@@ -1265,7 +1264,6 @@ val compressorArray = [
 	Components(<ore:ingotOsmiridium>,		<ore:plateOsmiridium>,10),
 	Components(<ore:ingotOsmium>,			<ore:plateOsmium>,10),
 	Components(<ore:ingotPalladium>,		<ore:platePalladium>,10),
-	Components(<ore:ingotPlutonium>,		<ore:platePlutonium>,10),
 	Components(<ore:ingotPlatinum>,		<ore:platePlatinum>,10),
 	Components(<ore:ingotPlutonium241>,	<ore:platePlutonium241>,10),
 	Components(<ore:ingotPotassium>,		<ore:platePotassium>,10),
