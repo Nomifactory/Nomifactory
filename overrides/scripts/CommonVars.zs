@@ -150,6 +150,16 @@ function makeShapeless3(name as string,
     recipes.addShapeless(name, output, ingredients);
 }
 
+/* 3x3 shapeless compacting recipe. */
+function makeCompacting3(name as string,
+                         output as IItemStack,
+                         input as IIngredient) {
+    recipes.addShapeless(name, output,
+        [input,input,input,
+         input,input,input,
+         input,input,input] as IIngredient[]);
+}
+
 function makeShaped(name as string,
                     output as IItemStack,
                     recipe as string[],

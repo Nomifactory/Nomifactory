@@ -124,6 +124,11 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<libvulpes:metal0:6>
 	],
 
+	#blockPlutonium
+	<ore:blockPlutonium> : [
+		<gregtech:compressed_2:7>
+	],
+
 	#blockTin
 	<ore:blockTin> : [
 		<thermalfoundation:storage:1>,
@@ -322,6 +327,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustQuartz> : [
 		<appliedenergistics2:material:3>,
 		<actuallyadditions:item_dust:5>
+	],
+
+	#dustPlutonium
+	<ore:dustPlutonium> : [
+		<gregtech:meta_item_1:2052>
 	],
 
 	#dustSaltpeter
@@ -532,6 +542,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:134>
 	],
 
+	#ingotPlutonium
+	<ore:ingotPlutonium> : [
+		<gregtech:meta_item_1:10052>
+	],
+
 	#ingotPulsatingIron
 	<ore:ingotPulsatingIron> : [
 		<gregtech:meta_item_1:10703>
@@ -581,12 +596,6 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotVibrantAlloy> : [
 		<gregtech:meta_item_1:10702>
 	],
-
-    #ingotUranium235
-    <ore:ingotUranium235> : [
-        <gregtech:meta_item_1:10076>,
-    ],
-
 };
 
 for oreDictEntry, items in ingotsDisabled {
@@ -609,6 +618,11 @@ var sticksDisabled as IItemStack[][IOreDictEntry] = {
 	#stickCopper
 	<ore:stickCopper> : [
 		<libvulpes:productrod:4>
+	],
+
+	#stickPlutonium
+	<ore:stickPlutonium> : [
+		<gregtech:meta_item_1:14052>
 	],
 
 	#stickSteel
@@ -672,6 +686,11 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:nuggetIridium> : [
 		<thermalfoundation:material:199>,
 		<libvulpes:productnugget:10>
+	],
+
+	#nuggetPlutonium
+	<ore:nuggetPlutonium> : [
+		<gregtech:meta_item_1:9052>
 	],
 
 	<ore:nuggetTin> : [
@@ -842,6 +861,11 @@ var platesDisabled as IItemStack[][IOreDictEntry] = {
 	#platePlatinum
 	<ore:platePlatinum> : [
 		<thermalfoundation:material:326>
+	],
+
+	#platePlutonium
+	<ore:platePlutonium> : [
+		<gregtech:meta_item_1:12052>
 	],
 
 	#plateSilicon
@@ -1015,6 +1039,31 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	#Arsenic
 	<ore:dustArsenic> : [
 		<nuclearcraft:gem_dust:10>
+	],
+
+	#boltPlutonium
+	<ore:boltPlutonium> : [
+		<gregtech:meta_item_1:16052>
+	],
+
+	#dustSmallPlutonium
+	<ore:dustSmallPlutonium> : [
+		<gregtech:meta_item_1:1052>
+	],
+
+	#dustTinyPlutonium
+	<ore:dustTinyPlutonium> : [
+		<gregtech:meta_item_1:52>
+	],
+
+	#screwPlutonium
+	<ore:screwPlutonium> : [
+		<gregtech:meta_item_1:17052>
+	],
+
+	#stickLongPlutonium
+	<ore:stickLongPlutonium> : [
+		<gregtech:meta_item_2:19052>
 	]
 };
 
@@ -2095,8 +2144,6 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:material:195>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:200>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:228>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:1>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9075>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9076>);
 mods.jei.JEI.removeAndHide(<libvulpes:productnugget:3>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:164>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:storage_alloy:4>);
