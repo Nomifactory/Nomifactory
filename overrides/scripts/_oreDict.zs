@@ -2212,26 +2212,6 @@ recipes.addShapeless("of_exchange_neutronium_plate",
 // Workaround for DE Fusion Custom recipe not liking strings in the NBT
 <ore:compressedoctadiccap>.add(compressedoctadiccap);
 
-val xtones as IMod = loadedMods["xtones"];
-if(!isNull(xtones)) {
-    val xtonesItems as IItemStack[] = xtones.items;
-
-    for item in xtonesItems {
-
-    	if(item.displayName has "Lamp" | item.displayName has "Tile") {
-    		//Skip the lamp and base block
-    	}
-    	else {
-    		var oreName as string = "block" ~ item.displayName;
-
-    		var oreDictEntry as IOreDictEntry = oreDict[oreName];
-
-    		oreDictEntry.add(item);
-    	}
-    }
- 
-}
-
 
 /////////////////////////////////
 //  One Ingot To Rule Them All //
