@@ -8,8 +8,6 @@ import crafttweaker.event.PlayerInteractBlockEvent;
                        <redstonearsenal:tool.wrench_flux>,
                        <redstonearsenal:tool.battlewrench_flux>);
 
-<ore:wrenchCustom>.addAll(<ore:craftingToolWrench>);
-
 static wrenchables as IBlockPattern = <thermalexpansion:tank> as IBlock |
                                       <thermalexpansion:cell> as IBlock |
                                       <extrautils2:creativeenergy> as IBlock |
