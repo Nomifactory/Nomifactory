@@ -92,6 +92,22 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:40>);                   // Zom
 mods.enderio.SliceNSplice.removeRecipe(<enderio:item_capacitor_totemic>); // Totemic Capacitor
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);             // Totemic Capacitor
 
+
+// Restore Slice 'n' Splice recipes changed by updating Ender IO
+//Skeletal Contractor
+mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:45>); 
+mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
+    <enderio:item_alloy_ingot:7>, <minecraft:skull>, <enderio:item_alloy_ingot:7>,
+     <minecraft:rotten_flesh> , <gregtech:meta_item_2:32440> , <minecraft:rotten_flesh>
+], 20000);
+
+//Guardian Diode
+mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:56>);
+mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
+    <enderio:item_alloy_ingot:1>, <minecraft:prismarine_shard>, <enderio:item_alloy_ingot:1>,
+     <minecraft:prismarine_crystals>, <gregtech:meta_item_2:32440>, <minecraft:prismarine_crystals>
+], 20000);
+
 /*
 
   EnderIO Additions
@@ -155,17 +171,23 @@ recipes.addShapeless(
 
 */
 
-// Enlightened Quite Clear Glass
+// Enlightened Clear Glass
 alloy.recipeBuilder()
-    .inputs([<enderio:block_fused_glass:0>, <minecraft:glowstone>])
+    .inputs([<enderio:block_fused_glass:*>, <minecraft:glowstone>])
     .outputs([<enderio:block_enlightened_fused_glass:0>])
     .duration(160)
     .EUt(16)
     .buildAndRegister();
 
+//Dark Clear Glass
+alloy.recipeBuilder()
+    .inputs([<enderio:block_fused_glass:*>, <actuallyadditions:item_misc:5>])
+    .outputs(<enderio:block_dark_fused_glass>)
+    .duration(200).EUt(32).buildAndRegister();
+
 // Enlightened Fused Quartz
 alloy.recipeBuilder()
-    .inputs([<enderio:block_fused_quartz:0>, <minecraft:glowstone>])
+    .inputs([<enderio:block_fused_quartz:*>, <minecraft:glowstone>])
     .outputs([<enderio:block_enlightened_fused_quartz:0>])
     .duration(160)
     .EUt(16)
@@ -173,7 +195,7 @@ alloy.recipeBuilder()
 
 //Dark Fused Quarz
 alloy.recipeBuilder()
-    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
+    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_quartz:*>])
     .outputs([<enderio:block_dark_fused_quartz:0>])
     .duration(200)
     .EUt(32)
@@ -331,3 +353,92 @@ furnace.addRecipe(<enderio:item_alloy_ingot:0>, <gregtech:meta_item_1:2705>);
 //Dark Steel
 furnace.remove(<gregtech:meta_item_1:10704>, <gregtech:meta_item_1:2704>);
 furnace.addRecipe(<enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:2704>);
+
+// Tokens
+
+val hostile = [
+    "minecraft:wither_skeleton",
+    "minecraft:stray",
+    "minecraft:husk",
+    "minecraft:zombie_villager",
+    "minecraft:evocation_illager",
+    "minecraft:zombie_horse",
+    "minecraft:vex",
+    "minecraft:vindication_illager",
+    "minecraft:illusion_illager",
+    "minecraft:creeper",
+    "minecraft:skeleton",
+    "minecraft:spider",
+    "minecraft:giant",
+    "minecraft:zombie",
+    "minecraft:slime",
+    "minecraft:ghast",
+    "minecraft:zombie_pigman",
+    "minecraft:enderman",
+    "minecraft:cave_spider",
+    "minecraft:silverfish",
+    "minecraft:blaze",
+    "minecraft:magma_cube",
+    "minecraft:witch",
+    "minecraft:endermite",
+    "minecraft:guardian",
+    "minecraft:shulker",
+    "thermalfoundation:blizz",
+    "thermalfoundation:blitz",
+    "thermalfoundation:basalz",
+    "draconicevolution:chaosguardian",
+    "deepmoblearning:glitch",
+    "deepmoblearning:trial_enderman",
+    "deepmoblearning:trial_spider",
+    "deepmoblearning:trial_cave_spider",
+    "deepmoblearning:trial_slime",
+    "armorplus:ender_dragon_zombie",  
+    "armorplus:ice_golem",
+    "armorplus:overlord_of_the_guardians",
+    "armorplus:skeletal_king",
+    "armorplus:witherling",
+    "armorplus:demonic_dragon",
+    "nuclearcraft:feral_ghoul"
+
+    ] as string[];
+
+val peaceful = [
+    "minecraft:donkey",
+    "minecraft:mule",
+    "minecraft:bat",
+    "minecraft:pig",
+    "minecraft:sheep",
+    "minecraft:cow",
+    "minecraft:chicken",
+    "minecraft:squid",
+    "minecraft:wolf",
+    "minecraft:mooshroom",
+    "minecraft:snowman",
+    "minecraft:ocelot",
+    "minecraft:villager_golem",
+    "minecraft:horse",
+    "minecraft:rabbit",
+    "minecraft:polar_bear",
+    "minecraft:llama",
+    "minecraft:parrot",
+    "minecraft:villager"
+
+] as string[];
+
+var combined as string[] = hostile;
+
+for mob in peaceful {
+    combined += mob;
+}
+
+//Monster Token
+mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:79>);
+mods.enderio.SoulBinder.addRecipe(<enderio:item_material:79>, <darkutils:filter:3>, hostile, 25000, 1);
+
+//Animal Token
+mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:78>);
+mods.enderio.SoulBinder.addRecipe(<enderio:item_material:78>, <darkutils:filter:4>, peaceful, 25000, 1);
+
+//Player Token
+mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:80>);
+mods.enderio.SoulBinder.addRecipe(<enderio:item_material:80>, <darkutils:filter>, combined, 25000, 1);

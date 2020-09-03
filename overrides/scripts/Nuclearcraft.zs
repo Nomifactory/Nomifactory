@@ -1,6 +1,7 @@
 import crafttweaker.game.IGame;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.mods.IMod;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
@@ -106,8 +107,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:boron:2>),
     Removal(<nuclearcraft:boron:3>),
     Removal(<nuclearcraft:chest_hazmat>),
-    Removal(<nuclearcraft:cocoa_butter>),
-    Removal(<nuclearcraft:cocoa_solids>),
     Removal(<nuclearcraft:compound:0>), // Calcium Sulfate
     Removal(<nuclearcraft:compound:1>), // Crystal Binder
     Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
@@ -118,7 +117,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:compound:8>), // Dimensional Blend
     Removal(<nuclearcraft:compound:9>), // Carbon-Manganese Blend
     Removal(<nuclearcraft:compound:10>), // Alugentum Dust
-    Removal(<nuclearcraft:dark_chocolate>),
     Removal(<nuclearcraft:decay_generator>),
     Removal(<nuclearcraft:dry_earth>),
     Removal(<nuclearcraft:dust:10>), // Zirconium Dust
@@ -134,7 +132,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:fusion_electromagnet_idle>),
     Removal(<nuclearcraft:fusion_electromagnet_transparent_idle>),
     Removal(<nuclearcraft:geiger_counter>),
-    Removal(<nuclearcraft:gelatin>),
     Removal(<nuclearcraft:gem:0>), // all NC gems
     Removal(<nuclearcraft:gem:1>),
     Removal(<nuclearcraft:gem:2>),
@@ -149,8 +146,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
     Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic
     Removal(<nuclearcraft:gem_dust:11>),// Crushed End Stone
-    Removal(<nuclearcraft:graham_cracker>),
-    Removal(<nuclearcraft:ground_cocoa_nibs>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_copper>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_hard_carbon>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_thermoconducting>),
@@ -179,9 +174,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:lithium_ion_battery_du>),
     Removal(<nuclearcraft:lithium_ion_battery_elite>),
     Removal(<nuclearcraft:lithium_ion_cell>),
-    Removal(<nuclearcraft:marshmallow>),
-    Removal(<nuclearcraft:milk_chocolate>),
-    Removal(<nuclearcraft:moresmore>),
     Removal(<nuclearcraft:part:5>),  // Magnesium Diboride Solenoid
     Removal(<nuclearcraft:part:6>),  // Bioplastic
     Removal(<nuclearcraft:part:11>), // Empty Frame
@@ -193,7 +185,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:rad_shielding:1>), // Medium Rad Shielding
     Removal(<nuclearcraft:rad_shielding:2>), // Heavy Rad Shielding
     Removal(<nuclearcraft:rad_x>),
-    Removal(<nuclearcraft:roasted_cocoa_beans>, true),
     Removal(<nuclearcraft:salt_fission_beam>),
     Removal(<nuclearcraft:salt_fission_computer_port>),
     Removal(<nuclearcraft:salt_fission_distributor>),
@@ -206,7 +197,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:salt_fission_vent>),
     Removal(<nuclearcraft:salt_fission_vessel>),
     Removal(<nuclearcraft:salt_fission_wall>),
-    Removal(<nuclearcraft:smore>),
     Removal(<nuclearcraft:solar_panel_advanced>),
     Removal(<nuclearcraft:solar_panel_basic>),
     Removal(<nuclearcraft:solar_panel_du>),
@@ -230,7 +220,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:turbine_rotor_shaft>),
     Removal(<nuclearcraft:turbine_rotor_stator>),
     Removal(<nuclearcraft:turbine_wall>),
-    Removal(<nuclearcraft:unsweetened_chocolate>),
     Removal(<nuclearcraft:upgrade:0>), // Speed Upgrade (NC Machines)
     Removal(<nuclearcraft:upgrade:1>), // Energy Upgrade (NC Machines)
     Removal(<nuclearcraft:voltaic_pile_advanced>),
@@ -380,10 +369,7 @@ val ncFluids as string[] = [
     "boron11",
     "boron_nitride_solution",
     "calcium_sulfate_solution",
-    "chocolate_liquor",
-    "cocoa_butter",
     "condensate_water",
-    "dark_chocolate",
     "diborane",
     "ethanol",
     "ethene",
@@ -392,10 +378,8 @@ val ncFluids as string[] = [
     "flibe",
     "fluorite_water",
     "fluoromethane",
-    "gelatin",
     "hard_carbon",
     "high_pressure_steam",
-    "hydrated_gelatin",
     "hydrofluoric_acid",
     "koh",
     "lif",
@@ -407,9 +391,7 @@ val ncFluids as string[] = [
     "low_pressure_steam",
     "low_quality_steam",
     "manganese_dioxide",
-    "marshmallow",
     "milk",
-    "milk_chocolate",
     "nak",
     "nak_hot",
     "naoh",
@@ -424,10 +406,8 @@ val ncFluids as string[] = [
     "sic_vapor",
     "sodium_fluoride_solution",
     "sodium_hydroxide_solution",
-    "sugar",
     "sulfur",
-    "tough",
-    "unsweetened_chocolate"
+    "tough"
 ] as string[];
 
 for fluid in ncFluids {
@@ -474,7 +454,11 @@ for fluid in sharedFluids {
     }
 }
 
-// End of mass removals, now for replacements:
+// End of mass removals.
+
+mods.jei.JEI.addItem(<nuclearcraft:foursmore>); // This disappeared apparently.
+
+// Now for replacements:
 
 recipes.remove(<nuclearcraft:compound:2>);
 mixer.recipeBuilder()
@@ -825,8 +809,8 @@ thermal_sep.recipeBuilder()
 
 // Add tiny fuel clumps to the GTCE Packager
 var clumps = [
-    
-    [<nuclearcraft:thorium:2> , <nuclearcraft:thorium>], 
+
+    [<nuclearcraft:thorium:2> , <nuclearcraft:thorium>],
     [<nuclearcraft:thorium:6> , <nuclearcraft:thorium:4> ],
     [<nuclearcraft:uranium:2> , <nuclearcraft:uranium>],
     [<nuclearcraft:uranium:6> , <nuclearcraft:uranium:4> ],
@@ -855,12 +839,156 @@ var clumps = [
 
 
 for iso in clumps {
-    
+
     packager.recipeBuilder()
         .inputs(iso[0]*9)
         .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
         .outputs(iso[1])
         .duration(10).EUt(12).buildAndRegister();
 
-    
+}
+
+packager.findRecipe(12, [<ore:nuggetUranium235>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
+packager.findRecipe(12, [<ore:nuggetPlutonium241>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
+
+
+// Oh yeah it's S'more time
+
+// Graham Crackers
+compressor.recipeBuilder()
+    .outputs(<nuclearcraft:graham_cracker>)
+    .inputs([<ore:dustWheat> * 2])
+    .duration(400).EUt(2).buildAndRegister();
+
+// Gelatin from meat
+macerator.recipeBuilder()
+    .outputs(<nuclearcraft:gelatin>)
+    .inputs([<ore:dustSmallMeat>])
+    .duration(40).EUt(30).buildAndRegister();
+
+// Gelatin from fish
+var fishes as IItemStack[] = [
+    <minecraft:fish>,
+    <minecraft:fish:1>,
+    <minecraft:fish:2>,
+    <minecraft:fish:3>
+] as IItemStack[];
+
+for fish in fishes {
+    macerator.recipeBuilder()
+        .outputs(<nuclearcraft:gelatin> * 4)
+        .inputs([fish])
+        .duration(160).EUt(30).buildAndRegister();
+}
+
+// Hydrated gelatin
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:hydrated_gelatin> * 144)
+    .fluidInputs([<fluid:gelatin> * 144, <fluid:water> * 500])
+    .duration(50).EUt(8).buildAndRegister();
+
+// Molten sugar
+fluid_extractor.recipeBuilder()
+    .fluidOutputs(<fluid:sugar> * 144)
+    .inputs(<ore:dustSugar>)
+    .duration(32).EUt(2).buildAndRegister();
+
+// Marshmallow fluid
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:marshmallow> * 144)
+    .fluidInputs(<fluid:sugar> * 72, <fluid:hydrated_gelatin> * 144)
+    .duration(100).EUt(30).buildAndRegister();
+
+// Cocoa nibs
+macerator.recipeBuilder()
+    .outputs(<nuclearcraft:ground_cocoa_nibs>)
+    .inputs(<nuclearcraft:roasted_cocoa_beans>)
+    .duration(100).EUt(20).buildAndRegister();
+
+// Cocoa butter
+fluid_extractor.recipeBuilder()
+    .fluidOutputs(<fluid:cocoa_butter> * 144)
+    .outputs(<nuclearcraft:cocoa_solids>)
+    .inputs([<nuclearcraft:ground_cocoa_nibs>])
+    .duration(32).EUt(2).buildAndRegister();
+
+// Chocolate liquor
+blast_furnace.recipeBuilder()
+    .fluidOutputs(<fluid:chocolate_liquor> * 144)
+    .outputs(<ore:dustTinyCarbon>.firstItem)
+    .inputs([<nuclearcraft:ground_cocoa_nibs>])
+    .property("temperature", 307) // ah yes, blast furnace temperatures
+    .duration(100).EUt(120).buildAndRegister();
+
+// Unsweetened chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:unsweetened_chocolate> * 288)
+    .fluidInputs([<fluid:cocoa_butter> * 144, <fluid:chocolate_liquor> * 144])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Dark (best) chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:dark_chocolate> * 144)
+    .fluidInputs([<fluid:unsweetened_chocolate> * 144, <fluid:sugar> * 72])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Milk chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:milk_chocolate> * 288)
+    .fluidInputs([<fluid:dark_chocolate> * 144, <fluid:milk> * 250])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Solidification and Fluid Extraction
+function smoreIngredient(
+            stack as IItemStack,
+            fluid as ILiquidStack,
+            mold as IItemStack) {
+    // Solidification
+    solidifier.recipeBuilder()
+        .outputs(stack)
+        .notConsumable(mold)
+        .fluidInputs(fluid * 144)
+        .duration(100).EUt(16).buildAndRegister();
+
+    // Fluid Extraction
+    fluid_extractor.recipeBuilder()
+        .fluidOutputs(fluid * 144)
+        .inputs(stack)
+        .duration(100).EUt(16).buildAndRegister();
+}
+
+var ballMold  as IItemStack = <gregtech:meta_item_1:32307>;
+var plateMold as IItemStack = <gregtech:meta_item_1:32301>;
+var ingotMold as IItemStack = <gregtech:meta_item_1:32306>;
+
+smoreIngredient(<nuclearcraft:marshmallow>, <fluid:marshmallow>, ballMold);
+smoreIngredient(<nuclearcraft:milk_chocolate>, <fluid:milk_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:gelatin>, <fluid:gelatin>, plateMold);
+smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMold);
+
+// Advanced *S'more *S'mingots
+
+var smingots as IItemStack[] = [
+    <nuclearcraft:foursmore>,
+    <contenttweaker:eightsmore>,
+    <contenttweaker:sixteensmore>,
+    <contenttweaker:thirtytwosmore>,
+    <contenttweaker:sixtyfoursmore>
+] as IItemStack[];
+
+var i = 1;
+while i < smingots.length {
+    var inSmingot = smingots[i - 1];
+    var outSmingot = smingots[i];
+
+    makeShaped(outSmingot.definition.id.replaceAll(":", "_"), outSmingot,
+        ["PC",
+         "MP"],
+        { P: inSmingot,
+          C: <nuclearcraft:milk_chocolate>,
+          M: <nuclearcraft:marshmallow> });
+
+    i += 1;
 }

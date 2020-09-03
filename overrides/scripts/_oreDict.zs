@@ -99,7 +99,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockNeutronium
 	<ore:blockNeutronium> : [
-		<gregtech:compressed_18:1>
+		<gregtech:compressed_18>
 	],
 
 	#blockNetherstar
@@ -120,7 +120,8 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockSteel
 	<ore:blockSteel> : [
-		<thermalfoundation:storage_alloy>
+		<thermalfoundation:storage_alloy>,
+		<libvulpes:metal0:6>
 	],
 
 	#blockTin
@@ -1046,6 +1047,12 @@ for oreDictEntry, items in miscDisabled {
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
 
 
+<ore:gemDilithium>.remove(<libvulpes:productgem>);
+<ore:crystalDilithium>.add(<libvulpes:productgem>);
+
+<ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
+
+
 ////////////////////////////////
 //			Removals          //
 ////////////////////////////////
@@ -1072,6 +1079,7 @@ mods.jei.JEI.hideCategory("xu2_machine_extrautils2:crusher");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator_survival");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator");
 mods.jei.JEI.hide(<appliedenergistics2:facade>);
+mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
 
 
 //Actually Additions Removals
@@ -1315,6 +1323,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_capacitor_vivid>);
 mods.jei.JEI.removeAndHide(<enderio:block_creative_spawner>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_crafter>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_wired_charger>);
+mods.jei.JEI.removeAndHide(<enderio:block_infinity_fog>);
 
 
 //Extended Crafting Removals
@@ -1638,7 +1647,12 @@ mods.jei.JEI.removeAndHide(<libvulpes:coil0:10>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery:1>);
 mods.jei.JEI.removeAndHide(<libvulpes:productfan:6>);
-mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:9>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:7>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:6>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:4>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:1>);
+
 
 //                 XXXXXXXXXX                            XXXXXXXXXX
 //              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
@@ -2032,6 +2046,10 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 
 <ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
 <ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
+
+<ore:questbookFluidExtractor>.add(<gregtech:machine:300>); // LV Fluid Extractor
+<ore:questbookFluidExtractor>.add(<gregtech:machine:301>); // MV Fluid Extractor
+<ore:questbookFluidExtractor>.add(<gregtech:machine:302>); // HV Fluid Extractor
 
 // GTCE Conductive Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
