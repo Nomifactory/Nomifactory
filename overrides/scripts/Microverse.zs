@@ -449,6 +449,17 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 <actuallyadditions:item_solidified_experience>.addTooltip(
 	format.green("Can be made in an Experience Solidifier."));
 
+// Solidified Experience
+solidifier.recipeBuilder()
+    .fluidInputs([<liquid:xpjuice> * 160])
+    .notConsumable(<gregtech:meta_item_1:32307>)
+    .outputs(<actuallyadditions:item_solidified_experience>)
+    .duration(500).EUt(16).buildAndRegister();
+
+fluid_extractor.recipeBuilder()
+	.inputs(<actuallyadditions:item_solidified_experience>)
+	.fluidOutputs(<liquid:xpjuice> * 160)
+	.duration(80).EUt(32).buildAndRegister();
 
 <contenttweaker:tierfourship>.addTooltip(format.white(
 	format.italic("Harvests ultra cold materials from the deepest parts of empty space.")));
