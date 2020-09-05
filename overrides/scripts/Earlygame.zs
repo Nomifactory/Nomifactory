@@ -355,7 +355,6 @@ makeShaped("of_obsidian_furnace", <morefurnaces:furnaceblock:3>,
 	  F : <morefurnaces:furnaceblock:2> //Diamond Furnace
 	  });
 
-
 // Small Battery Hull
 recipes.remove(<gregtech:meta_item_1:32500>);
 recipes.addShaped(<gregtech:meta_item_1:32500>, [
@@ -587,21 +586,6 @@ furnace.setFuel(<gregtech:meta_item_1:2012>, 1200);
 <gregtech:machine:773>.displayName = "Fluid Output Hatch (ZPM)";
 <gregtech:machine:783>.displayName = "Fluid Output Hatch (UV)";
 <gregtech:machine:793>.displayName = "Fluid Output Hatch (MAX)";
-
-<morefurnaces:furnaceblock>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:1>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:1>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:2>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:2>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:3>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:3>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:5>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:5>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:6>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:7>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:6>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:7>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
 
 <simplefluidtanks:wrench>.displayName = "Multiblock Fluid Tank Wrench";
 <simplefluidtanks:tankitem>.displayName = "Multiblock Fluid Tank Block";
