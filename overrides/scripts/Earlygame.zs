@@ -423,20 +423,6 @@ recipes.addShaped(<morefurnaces:furnaceblock:3>, [
 	[<morefurnaces:furnaceblock:2>, <minecraft:obsidian>, <morefurnaces:furnaceblock:2>],
 	[<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
 
-<morefurnaces:furnaceblock>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:1>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:1>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:2>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:2>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:3>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:3>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:5>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:5>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:6>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:7>.addTooltip(format.red("If you pick up this item while it has fuel in the fuel slot, the fuel will be destroyed."));
-<morefurnaces:furnaceblock:6>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
-<morefurnaces:furnaceblock:7>.addTooltip(format.red("Remove all fuel you wish to keep from the fuel slots before breaking this with a pick."));
 
 recipes.removeByRecipeName("gregtech:conductive_iron_cable_1");
 recipes.addShapeless(<gregtech:cable:5700>,[<gregtech:cable:700>,<gregtech:meta_item_1:12152>]);
