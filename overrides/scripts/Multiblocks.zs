@@ -73,7 +73,7 @@ val cryodist = Builder.start(loc, id)
 
             .setAmountAtMost('@', 2)
             .where('@', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
-            .setAmountAtLeast('U', 5)
+            .setAmountAtLeast('U', 4)
             .where('U', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
             .setAmountAtLeast('#', 50)
             .where('#', <metastate:gregtech:metal_casing:3>)
