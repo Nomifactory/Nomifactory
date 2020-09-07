@@ -35732,7 +35732,7 @@
     },
     "582:10": {
       "preRequisites:11": [
-        527
+        298
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35741,14 +35741,14 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 166,
+            "Damage:2": 32,
             "OreDict:8": "",
-            "id:8": "thermalfoundation:material"
+            "id:8": "redstonearsenal:material"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Lumium Ingots",
+          "name:8": "Fluxed Electrum Ingots",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -35786,9 +35786,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 64,
-              "Damage:2": 166,
+              "Damage:2": 32,
               "OreDict:8": "",
-              "id:8": "thermalfoundation:material"
+              "id:8": "redstonearsenal:material"
             }
           },
           "taskID:8": "bq_standard:retrieval"
