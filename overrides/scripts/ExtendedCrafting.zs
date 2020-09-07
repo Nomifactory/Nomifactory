@@ -1130,7 +1130,6 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>,
 ////////////////////////// Creative Vending Upgrade ///////////////////////
 val creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 500000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 250000}, false);
 val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}, false);
-val creativebuffer = <appliedenergistics2:creative_energy_cell>;
 val creativejetpack = <simplyjetpacks:itemjetpack>.withTag({JetpackParticleType: 3}, false);
 
 makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
@@ -1158,7 +1157,7 @@ makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
       M : <avaritia:infinity_boots>,
       S : <solarflux:solar_panel_infinity>,
       T : creativetank.only(isCreative),
-      U : creativebuffer,
+      U : <appliedenergistics2:creative_energy_cell>,
       W : <thermalcultivation:watering_can:32000>.withTag({Water: 0, Mode: 4}, false),
       X : <thermalexpansion:capacitor:32000> });
 
@@ -1313,7 +1312,7 @@ makeExtremeRecipe9(<extrautils2:drum:4>,
       F : <gregtech:machine:2200> });
 
 
-makeExtremeRecipe9(creativebuffer,
+makeExtremeRecipe9(<appliedenergistics2:creative_energy_cell>,
     ["IBCDEDCBI",
      "BCDEFEDCB",
      "CDEFGFEDC",
