@@ -932,7 +932,10 @@ recipes.addShaped(<gregtech:machine:500>, [
 	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], 
 	[<ore:cableGtSingleRedAlloy>, <gregtech:machine_casing>, <ore:cableGtSingleRedAlloy>]]);	
 	
-//Pyro Oven
+//Pyrolyse Oven
+
+//Remove SoG duplicated Recipes
+
 pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [null]).remove();	
 pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 400]).remove();	
 pyro.findRecipe(192, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
@@ -944,14 +947,83 @@ pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag(
 pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [<liquid:nitrogen> * 400]).remove();	
 pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 9})], [<liquid:nitrogen> * 400]).remove();
 pyro.findRecipe(96, [<minecraft:sugar> * 23, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [<liquid:nitrogen> * 400]).remove();	
-pyro.findRecipe(64, [<minecraft:sugar> * 23, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [null]).remove();		
-pyro.recipeBuilder().inputs([<ore:logWood> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0})).fluidInputs([<liquid:steam> * 4000]).outputs([<minecraft:coal:1> * 20]).fluidOutputs([<liquid:creosote> * 4000]).duration(600).EUt(30).buildAndRegister();
-pyro.recipeBuilder().inputs([<ore:logWood> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1})).fluidInputs([<liquid:steam> * 4000]).outputs([<minecraft:coal:1> * 20]).fluidOutputs([<liquid:wood_vinegar> * 3000]).duration(600).EUt(30).buildAndRegister();
-pyro.recipeBuilder().inputs([<ore:logWood> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 2})).fluidInputs([<liquid:steam> * 4000]).outputs([<minecraft:coal:1> * 20]).fluidOutputs([<liquid:wood_gas> * 1500]).duration(600).EUt(30).buildAndRegister();
-pyro.recipeBuilder().inputs([<ore:logWood> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3})).fluidInputs([<liquid:steam> * 4000]).outputs([<minecraft:coal:1> * 20]).fluidOutputs([<liquid:wood_tar> * 1500]).duration(600).EUt(30).buildAndRegister();
-pyro.recipeBuilder().inputs([<ore:logWood> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 4})).fluidInputs([<liquid:steam> * 4000]).outputs([<minecraft:coal:1> * 20]).fluidOutputs([<liquid:charcoal_byproducts> * 4000]).duration(600).EUt(30).buildAndRegister();
-pyro.recipeBuilder().inputs([<minecraft:coal> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1})).fluidInputs([<liquid:steam> * 4000]).outputs([<gregtech:meta_item_1:8357> * 20]).fluidOutputs([<liquid:phenol> * 1000]).duration(600).EUt(30).buildAndRegister();
-pyro.recipeBuilder().inputs([<gregtech:meta_item_1:2106> * 16]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1})).fluidInputs([<liquid:steam> * 4000]).outputs([<gregtech:meta_item_1:2357> * 20]).fluidOutputs([<liquid:phenol> * 1000]).duration(600).EUt(30).buildAndRegister();
+pyro.findRecipe(64, [<minecraft:sugar> * 23, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [null]).remove();
+
+//Remove GTCE Recipes
+pyro.findRecipe(96, [<ore:gemCoal>.firstItem * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [null]).remove();
+pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [null]).remove();	
+pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 400]).remove();	
+pyro.findRecipe(192, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
+pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 3})], [null]).remove();	
+pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 4})], [<liquid:nitrogen> * 400]).remove();	
+pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 5})], [null]).remove();	
+pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 6})], [<liquid:nitrogen> * 400]).remove();	
+pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 7})], [null]).remove();	
+pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [<liquid:nitrogen> * 400]).remove();	
+pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 9})], [<liquid:nitrogen> * 400]).remove();
+
+//Creosote and Charcoal
+pyro.recipeBuilder()
+	.inputs([<ore:logWood> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<minecraft:coal:1> * 20])
+	.fluidOutputs([<liquid:creosote> * 4000])
+	.duration(600).EUt(30).buildAndRegister();
+
+//Wood Vinegar and Charcoal
+pyro.recipeBuilder()
+	.inputs([<ore:logWood> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<minecraft:coal:1> * 20])
+	.fluidOutputs([<liquid:wood_vinegar> * 3000])
+	.duration(600).EUt(30).buildAndRegister();
+
+//Wood Gas and Charcoal
+pyro.recipeBuilder()
+	.inputs([<ore:logWood> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 2}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<minecraft:coal:1> * 20])
+	.fluidOutputs([<liquid:wood_gas> * 1500])
+	.duration(600).EUt(30).buildAndRegister();
+
+//Wood Tar and Charcoal
+pyro.recipeBuilder()
+	.inputs([<ore:logWood> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<minecraft:coal:1> * 20])
+	.fluidOutputs([<liquid:wood_tar> * 1500])
+	.duration(600).EUt(30).buildAndRegister();
+
+//Charcoal Byproducts and Charcoal
+pyro.recipeBuilder()
+	.inputs([<ore:logWood> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 4}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<minecraft:coal:1> * 20])
+	.fluidOutputs([<liquid:charcoal_byproducts> * 4000])
+	.duration(600).EUt(30).buildAndRegister();
+
+//Phenol and Coke
+pyro.recipeBuilder()
+	.inputs([<minecraft:coal> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<gregtech:meta_item_1:8357> * 20])
+	.fluidOutputs([<liquid:phenol> * 1000])
+	.duration(600).EUt(30).buildAndRegister();
+
+//Phenol and Coke dust
+pyro.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:2106> * 16])
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:steam> * 4000])
+	.outputs([<gregtech:meta_item_1:2357> * 20])
+	.fluidOutputs([<liquid:phenol> * 1000])
+	.duration(600).EUt(30).buildAndRegister();
 
 reactor.recipeBuilder().inputs(<metaitem:board.coated>).fluidInputs([<liquid:phenol> * 100]).outputs([<metaitem:board.phenolic>]).duration(100).EUt(8).buildAndRegister();
 
