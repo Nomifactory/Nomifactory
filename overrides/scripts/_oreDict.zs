@@ -1557,6 +1557,7 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_armor>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32578>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32579>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:826>);
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
