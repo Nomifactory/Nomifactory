@@ -106,7 +106,7 @@ item.contenttweaker.neutroniumplating.name= Neutronium Heavy Plating
 item.contenttweaker.heartofauniverse.name=Heart Of A Universe
 item.contenttweaker.radiationlayer.name=Radiation Layer
 item.contenttweaker.pressurelayer.name=Pressure Layer
-item.contenttweaker.excitationcoil.name=Excitation Coil
+tile.contenttweaker.excitationcoil.name=Excitation Coil
 item.contenttweaker.unpreparedspacehelmet.name=Unprepared Space Helmet
 item.contenttweaker.unpreparedspacechestpiece.name=Unprepared Space Chestpiece
 item.contenttweaker.unpreparedspaceleggings.name=Unprepared Space Leggings
@@ -126,7 +126,7 @@ item.contenttweaker.endstonedust.name=Endstone Dust
 item.contenttweaker.lapisarmorplate.name=Heavy Lapis Plate
 item.contenttweaker.carbonarmorplate.name=Heavy Carbon Plate
 item.contenttweaker.redstonearmorplate.name=Heavy Redstone Plate
-item.contenttweaker.block_dust.name=Dust Block
+tile.contenttweaker.block_dust.name=Dust Block
 item.contenttweaker.blazepowder.name=Blaze Powder
 item.contenttweaker.grainsofinnocence.name=Grains Of Innocence
 
@@ -203,7 +203,7 @@ item.contenttweaker.ultimate_gem.name=Ultimate Gem
 
 item.contenttweaker.dragonlairdata.name=Dragon Lair Data
 item.contenttweaker.witherrealmdata.name=Wither Realm Data
-item.contenttweaker.denseoilshale.name=Dense Oilsands Ore
+tile.contenttweaker.denseoilshale.name=Dense Oilsands Ore
 item.contenttweaker.impossiblerealmdata.name=Impossible Realm Data
 item.contenttweaker.sentientgear.name=Sentient Gear Core
 item.contenttweaker.lairoftheclockworkkingdata.name=Lair Of The Clockwork King Data
@@ -215,3 +215,8 @@ item.contenttweaker.ultradensehydrogen.name=Ultra Dense Hydrogen
 
 tile.contenttweaker.microverse_casing.name=Microverse Projector Casing
 tile.contenttweaker.microverse_vent.name=Microverse Projector Vent
+
+item.contenttweaker.eightsmore.name=EightS'more OctoS'mingot
+item.contenttweaker.sixteensmore.name=SixteenS'more HexadecaS'mingot
+item.contenttweaker.thirtytwosmore.name=Half-stack-o'-S'more TriacontadyoS'mingot
+item.contenttweaker.sixtyfoursmore.name=Stack-o'-S'more HexecontatessaraS'mingot
