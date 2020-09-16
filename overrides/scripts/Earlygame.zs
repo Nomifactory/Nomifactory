@@ -1068,3 +1068,10 @@ makeShaped("gtce_crafting_station", <gregtech:machine:825>,
 	  A : <forestry:worktable>, //Worktable
 	  H : <ore:craftingToolHardHammer>.firstItem.withEmptyTag() //Hammer
 	  });
+
+//Add Decomposition Recipe for Polyphenylene Sulfide
+electrolyzer.recipeBuilder()
+	.fluidInputs(<liquid:polyphenylene_sulfide> * 11000)
+	.outputs(<gregtech:meta_item_1:2012> * 6, <gregtech:meta_item_1:2065>)
+	.fluidOutputs(<liquid:hydrogen> * 4000)
+	.duration(288).EUt(128).buildAndRegister();
