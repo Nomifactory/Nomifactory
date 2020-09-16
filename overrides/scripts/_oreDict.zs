@@ -1558,6 +1558,11 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_armor>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32578>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32579>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:826>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:9354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:8354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:7354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:6354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:5354>);
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
