@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
@@ -144,13 +145,18 @@ lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14299> * 2]).outputs([<gregt
 lathe.recipeBuilder().inputs([<ore:stickMicroversium> * 2]).outputs([<ore:stickLongMicroversium>.firstItem]).duration(200).EUt(30).buildAndRegister();
 
 //Neutronium Round
-recipes.remove(<gtadditions:ga_meta_item:2972>);	
 lathe.findRecipe(8, [<gregtech:meta_item_1:9972>], [null]).remove();	
-lathe.recipeBuilder().inputs([<avaritia:resource:3>]).outputs([<gtadditions:ga_meta_item:2972>]).duration(5000).EUt(8).buildAndRegister();
+lathe.recipeBuilder().inputs([<avaritia:resource:3>]).outputs([<gtadditions:ga_meta_item:2972>]).duration(100).EUt(8).buildAndRegister();
+//Neutronium Round by Hand
+recipes.remove(<gtadditions:ga_meta_item:2972>);
+makeShaped("neutronium_round", <gtadditions:ga_meta_item:2972>,
+	["FN ",
+	 "N  ",
+	 "   "],
+	{ F : <ore:craftingToolFile>.firstItem.withEmptyTag(),
+	  N : <avaritia:resource:3> //Neutronium Nugget
+	  });
 
-//HSS-E Round
-lathe.findRecipe(8, [<gregtech:meta_item_1:9303>], [null]).remove();	
-lathe.recipeBuilder().inputs([<gregtech:meta_item_1:9303>]).outputs([<gtadditions:ga_meta_item:2303>]).duration(1480).EUt(8).buildAndRegister();
 
 	
 //Brewery
