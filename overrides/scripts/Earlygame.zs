@@ -1078,3 +1078,7 @@ electrolyzer.recipeBuilder()
 
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.autoclave.iv");
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.laser_engraver.iv");
+recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.lv");
+recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.mv");
+recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.hv");
+recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.ev");
