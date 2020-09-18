@@ -1075,3 +1075,6 @@ electrolyzer.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:2012> * 6, <gregtech:meta_item_1:2065>)
 	.fluidOutputs(<liquid:hydrogen> * 4000)
 	.duration(288).EUt(128).buildAndRegister();
+
+recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.autoclave.iv");
+recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.laser_engraver.iv");

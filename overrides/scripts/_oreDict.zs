@@ -1563,6 +1563,11 @@ mods.jei.JEI.removeAndHide(<gregtech:cable:8354>);
 mods.jei.JEI.removeAndHide(<gregtech:cable:7354>);
 mods.jei.JEI.removeAndHide(<gregtech:cable:6354>);
 mods.jei.JEI.removeAndHide(<gregtech:cable:5354>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32134>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32133>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32132>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32131>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32018>);
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
