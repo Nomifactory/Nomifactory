@@ -736,7 +736,7 @@ macerator.recipeBuilder()
 autoclave.recipeBuilder()
 	.inputs([<ore:dustDilithium> * 4])
 	.fluidInputs(<liquid:deuterium> * 1000)
-	.outputs([<ore:gemDilithium>.firstItem * 4])
+	.outputs([<ore:crystalDilithium>.firstItem * 4])
 	.duration(400)
 	.EUt(110)
 	.buildAndRegister();
@@ -961,6 +961,19 @@ makeShaped("ar_planetselector_holo",
 		C: <ore:circuitGood>,
 		G: <minecraft:glowstone>,
 		H: <libvulpes:holoprojector>,
+	});
+
+// Advanced Machine Structure
+recipes.remove(<libvulpes:advstructuremachine>);
+makeShaped("ar_advanced_structure", 
+	<libvulpes:advstructuremachine>, [
+		"RPR",
+		"PSP",
+		"RPR",
+	], {
+		P: <gregtech:meta_item_1:12072>,
+		R: <gregtech:meta_item_1:14072>,
+		S: <libvulpes:structuremachine>,
 	});
 
 // Space Suit Upgrades

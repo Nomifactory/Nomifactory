@@ -38,7 +38,7 @@ recipes.addShaped(<enderio:item_material:70>, [[<minecraft:sugar>, <minecraft:mi
 recipes.addShaped(<minecraft:cake>, [[<minecraft:milk_bucket> | <ceramics:clay_bucket:1>, <minecraft:milk_bucket> | <ceramics:clay_bucket:1>, <minecraft:milk_bucket> | <ceramics:clay_bucket:1>], [<minecraft:sugar>, <ore:egg>, <minecraft:sugar>], [<actuallyadditions:item_misc:4>,<actuallyadditions:item_misc:4>,<actuallyadditions:item_misc:4>]]);
 
 //Overworld Cake
-recipes.addShaped(<dimensionaledibles:overworld_cake>, [[<minecraft:redstone>, <gregtech:meta_item_1:2026>, <minecraft:redstone>], [<ore:treeSapling>, <enderio:item_material:70>, <ore:treeSapling>],[<thermalfoundation:material:816>,<minecraft:diamond>,<thermalfoundation:material:816>]]);
+recipes.addShaped(<dimensionaledibles:overworld_cake>, [[<minecraft:redstone>, <gregtech:meta_item_1:2026>, <minecraft:redstone>], [<ore:treeSapling>, <enderio:item_material:70>, <ore:treeSapling>],[<gregtech:meta_item_2:32570>,<minecraft:diamond>,<gregtech:meta_item_2:32570>]]);
 <dimensionaledibles:overworld_cake>.addTooltip(format.darkAqua(format.italic("Refill using Oak Saplings.")));
 
 //Nether Cake
