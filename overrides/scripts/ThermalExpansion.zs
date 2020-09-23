@@ -369,7 +369,7 @@ recipes.addShaped(<extrautils2:trashcanenergy>, [
 
 //Mana Powder
 recipes.addShaped(<thermalfoundation:material:1028> * 4,[
-	[<ore:dustAerotheum>, <ore:dustAerotheum>, <thermalfoundation:material:1024>],
+	[<thermalfoundation:material:1026>, <thermalfoundation:material:1026>, <thermalfoundation:material:1024>],
 	[<thermalfoundation:material:1025>, <gregtech:meta_item_1:2111>, <thermalfoundation:material:1024>],
 	[<thermalfoundation:material:1025>, <thermalfoundation:material:1027>, <thermalfoundation:material:1027>]]);
 
