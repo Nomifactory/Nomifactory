@@ -588,6 +588,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<gregtech:meta_item_1:10703>
 	],
 
+	#ingotRedstoneAlloy
+	<ore:ingotRedstoneAlloy> : [
+		<enderio:item_alloy_ingot:3>
+	],
+
 	#ingotTin
 	<ore:ingotTin> : [
 		<libvulpes:productingot:5>,
