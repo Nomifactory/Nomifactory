@@ -60,9 +60,34 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<actuallyadditions:block_misc:5>
 	],
 
+	#blockConductiveIron
+	<ore:blockConductiveIron> : [
+		<gregtech:compressed_16:15>
+	],
+
+	#blockDarkSteel
+	<ore:blockDarkSteel> : [
+		<gregtech:compressed_17:3>
+	],
+
 	#blockElectrum
 	<ore:blockElectrum> : [
 		<thermalfoundation:storage_alloy:1>
+	],
+
+	#blockElectricalSteel
+	<ore:blockElectricalSteel> : [
+		<gregtech:compressed_17:4>
+	],
+
+	#blockEndSteel
+	<ore:blockEndSteel> : [
+		<gregtech:compressed_17:10>
+	],
+
+	#blockEnergeticAlloy
+	<ore:blockEnergeticAlloy> : [
+		<gregtech:compressed_17>
 	],
 
 	#blockGraphite
@@ -129,6 +154,11 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<gregtech:compressed_2:7>
 	],
 
+	#blockPulsatingIron
+	<ore:blockPulsatingIron> : [
+		<gregtech:compressed_17:2>
+	],
+
 	#blockTin
 	<ore:blockTin> : [
 		<thermalfoundation:storage:1>,
@@ -139,6 +169,12 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:storage:1>,
 		<libvulpes:metal0:5>
 	],
+
+	#blockVibrantAlloy
+	<ore:blockVibrantAlloy> : [
+		<gregtech:compressed_17:1>
+	],
+
 	#blockTitanium
 	<ore:blockTitanium> : [
 		<libvulpes:metal0:7>
@@ -550,6 +586,11 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	#ingotPulsatingIron
 	<ore:ingotPulsatingIron> : [
 		<gregtech:meta_item_1:10703>
+	],
+
+	#ingotRedstoneAlloy
+	<ore:ingotRedstoneAlloy> : [
+		<enderio:item_alloy_ingot:3>
 	],
 
 	#ingotTin

@@ -8,6 +8,7 @@ import mods.contenttweaker.Color;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.Material;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 /////////////////   Tier One Circuits | Basic Tier   ///////////////////////	
 
@@ -874,41 +875,43 @@ recipes.addShaped(<gregtech:machine:514>, [
 	[<ore:circuitGood>, <gregtech:machine:500>, <ore:circuitGood>], 
 	[<gregtech:meta_item_1:32640>, <gregtech:meta_item_1:32610>, <ore:wireGtQuadrupleCupronickel>]]);
 	
-//ULV Casing
+<ore:wrenches>.addItems([<gregtech:meta_tool:8>.withEmptyTag(), <gregtech:meta_tool:29>.withEmptyTag(), <gregtech:meta_tool:30>.withEmptyTag(), <gregtech:meta_tool:31>.withEmptyTag()]);
+
+val wrench = <ore:wrenches>;
+
+
+// ULV Machine Casing
 recipes.remove(<gregtech:machine_casing>);
+makeShaped("of_ulv_casing", <gregtech:machine_casing>,
+	["PPP",
+	 "PWP",
+	 "PPP"],
+	{ P : <ore:plateIron>,  //Iron Plate
+	  W : wrench});
 
-var wrenches = [
-    <gregtech:meta_tool:8>,
-    <gregtech:meta_tool:29>,
-    <gregtech:meta_tool:30>,
-    <gregtech:meta_tool:31>] as IItemStack[];
+// LV Machine Casing
+makeShaped("of_lv_casing", <gregtech:machine_casing:1>,
+	["PPP",
+	 "PWP",
+	 "PPP"],
+	{ P : <ore:plateWroughtIron>,  //Wrought Iron Plate
+	  W : wrench});
 
-for i, wrench in wrenches {
-    // ULV Machine Casing
-    recipes.addShaped("of_ulv_casing_wrench"+i, <gregtech:machine_casing>, [
-        [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
-        [<ore:plateIron>,      wrench    , <ore:plateIron>],
-        [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+// Microversium Machine Casing
+makeShaped("of_microverse_casing", <contenttweaker:microverse_casing> * 2,
+	["PPP",
+	 "PWP",
+	 "PPP"],
+	{ P : <ore:ingotMicroversium>,  //Microversium Ingot
+	  W : wrench});
 
-    // LV Machine Casing
-    recipes.addShaped("of_lv_casing_wrench"+i, <gregtech:machine_casing:1>, [
-        [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
-        [<ore:plateWroughtIron>,          wrench       , <ore:plateWroughtIron>],
-        [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
-
-
-    // Modularium Machine Casing
-    recipes.addShaped("of_microverse_casing_wrench"+i, <contenttweaker:microverse_casing> *2, [
-        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>], 
-        [<ore:ingotMicroversium>,          wrench        , <ore:ingotMicroversium>], 
-        [<ore:ingotMicroversium>, <ore:ingotMicroversium>, <ore:ingotMicroversium>]]);
-
-    // LuV Machine Casing
-    recipes.addShaped("of_luv_casing_wrench"+i, <gregtech:machine_casing:6>, [
-        [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>], 
-        [<ore:plateLumium>,       wrench     , <ore:plateLumium>], 
-        [<ore:plateLumium>, <ore:plateLumium>, <ore:plateLumium>]]);
-}
+// LuV Machine Casing
+makeShaped("of_luv_casing", <gregtech:machine_casing:6>,
+	["PPP",
+	 "PWP",
+	 "PPP"],
+	{ P : <ore:plateLumium>,  //Lumium Plate
+	  W : wrench});
 
 
 
