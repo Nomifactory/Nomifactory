@@ -1,5 +1,5 @@
 {
-	"images":
+    "images":
     {
         "title":
         {
@@ -20,7 +20,7 @@
             "posY" : -46,
             "width" : 120,
             "height" : 20,
-			"alignment" : "left_center",
+            "alignment" : "left_center",
             "action" : 
             {
                 "type" : "openGui",
@@ -35,7 +35,7 @@
             "posY" : -46,
             "width" : 120,
             "height" : 20,
-			"alignment" : "left_center",
+            "alignment" : "left_center",
             "action" : 
             {
                 "type" : "openGui",
@@ -50,7 +50,7 @@
             "posY" : -22,
             "width" : 120,
             "height" : 20,
-			"alignment" : "left_center",
+            "alignment" : "left_center",
             "action" : 
             {
                 "type" : "openGui",
@@ -65,7 +65,7 @@
             "posY" : -22,
             "width" : 120,
             "height" : 20,
-			"alignment" : "left_center",
+            "alignment" : "left_center",
             "action" : 
             {
                 "type" : "openGui",
@@ -80,57 +80,57 @@
             "posY" : 74,
             "width" : 240,
             "height" : 20,
-			"alignment" : "left_center",
+            "alignment" : "left_center",
             "action" : 
             {
                 "type" : "quit"
             }
         },
-		
+        
         "changelog":
         {
             "text" : "Changes",
             "posX" : 125,
             "posY" : 2,
             "width" : 120,
-			"height" : 20,
-			"alignment" : "left_center",
-			"wrappedButton" : 401
+            "height" : 20,
+            "alignment" : "left_center",
+            "wrappedButton" : 401
         },
-		
+        
         "reportbug":
         {
             "text" : "Issues",
             "posX" : 4,
             "posY" : 2,
             "width" : 120,
-			"height" : 20,
-			"alignment" : "left_center",
-			"wrappedButton" : 402
+            "height" : 20,
+            "alignment" : "left_center",
+            "wrappedButton" : 402
         },
-		"discord":
+        "discord":
         {
             "text" : "Join Us On Discord!",
             "posX" : 4,
             "posY" : 26,
             "width" : 240,
-			"height" : 20,
-			"alignment" : "left_center",
-			"action" : 
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
             {
                 "type" : "openLink",
                 "link" : "https://discord.gg/jEEq7u5"
             }
         },
-		"akliz":
+        "akliz":
         {
             "text" : "Rent Your Own Omnifactory Server!",
             "posX" : 4,
             "posY" : 50,
             "width" : 240,
-			"height" : 20,
-			"alignment" : "left_center",
-			"action" : 
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
             {
                 "type" : "openLink",
                 "link" : "https://www.akliz.net/manage/aff.php?aff=266"
@@ -139,8 +139,8 @@
     },
     "labels":
     {        
-		
-		"mojang":
+        
+        "mojang":
         {
             "text" : "Copyright Mojang AB. Do not distribute!",
             "posX" : -197,
