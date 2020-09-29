@@ -66,11 +66,11 @@ recipes.addShaped(<advancedrocketry:structuretower> * 3, [
  *	Pressure Tanks
  */
 
-val arTanks as IItemStack[IItemStack]  = {
-	<advancedrocketry:pressuretank>: hardenedtank,
-	<advancedrocketry:pressuretank:1>: reinforcedtank,
-	<advancedrocketry:pressuretank:2>: signalumtank,
-	<advancedrocketry:pressuretank:3>: resonanttank,
+val arTanks as IIngredient[IItemStack]  = {
+	<advancedrocketry:pressuretank>:   hardenedtankIng,
+	<advancedrocketry:pressuretank:1>: reinforcedtankIng,
+	<advancedrocketry:pressuretank:2>: signalumtankIng,
+	<advancedrocketry:pressuretank:3>: resonanttankIng,
 };
 
 var counter = -1;
