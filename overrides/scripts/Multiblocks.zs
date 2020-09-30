@@ -282,6 +282,12 @@ function space(maxIron as int, maxGold as int) as IBlockMatcher {
             & maxOf("iron", maxIron));
 }
 
+<ore:questbookSpace>.add(<chisel:diamond:3>,
+                         <chisel:diamond:4>
+                         // including the other blocks may cause confusion,
+                         // so this feature will be kept secret
+                         );
+
 var infoBuilder = FactoryMultiblockShapeInfo.start()
     .aisle(
         "CCCCC",
