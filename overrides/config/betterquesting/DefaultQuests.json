@@ -7097,8 +7097,6 @@
     },
     "103:10": {
       "preRequisites:11": [
-        237,
-        83
       ],
       "properties:10": {
         "betterquesting:10": {
