@@ -7,12 +7,7 @@ import crafttweaker.recipes.IRecipeFunction;
 
 import mods.gregtech.recipe.RecipeMap;
 
-/*
-[[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>]]); */
+import scripts.CommonVars.makeShapedF as makeShapedF;
 
 //////////////////////////////////////////////////////////////
 /////////////       Thermal Expansion       //////////////////
@@ -58,32 +53,44 @@ function updateTank(level as byte) as IRecipeFunction {
     };
 }
 
-recipes.addShaped(hardenedtank,
-    [[<actuallyadditions:item_crystal:1>, <gregtech:meta_item_1:12126>, <actuallyadditions:item_crystal:1>],
-     [<gregtech:meta_item_1:12126>,        basictankIng.marked("tank"),       <gregtech:meta_item_1:12126>],
-     [<actuallyadditions:item_crystal:1>, <gregtech:meta_item_1:12126>, <actuallyadditions:item_crystal:1>]],
-	updateTank(1)
+var tankShape as string[] = ["ABA",
+                             "BCB",
+                             "ABA"];
+
+makeShapedF("of_hardenedtank",
+    hardenedtank,
+    tankShape,
+    { A : <actuallyadditions:item_crystal:1>,
+      B : <gregtech:meta_item_1:12126>,
+      C : basictankIng.marked("tank")},
+    updateTank(1)
 );
 
-recipes.addShaped(reinforcedtank,
-    [[<thermalfoundation:material:1026>, <gregtech:meta_item_1:12112>, <thermalfoundation:material:1026>],
-	 [<gregtech:meta_item_1:12112>,      hardenedtankIng.marked("tank"),     <gregtech:meta_item_1:12112>],
-	 [<thermalfoundation:material:1026>, <gregtech:meta_item_1:12112>, <thermalfoundation:material:1026>]],
-	updateTank(2)
+makeShapedF("of_reinforcedtank",
+    reinforcedtank,
+    tankShape,
+    { A : <thermalfoundation:material:1026>,
+      B : <gregtech:meta_item_1:12112>,
+      C : hardenedtankIng.marked("tank")},
+    updateTank(2)
 );
 
-recipes.addShaped(signalumtank,
-    [[<thermalfoundation:material:1027>, <thermalfoundation:material:357>, <thermalfoundation:material:1027>],
-	 [<thermalfoundation:material:357>,  reinforcedtankIng.marked("tank"),  <thermalfoundation:material:357>],
-	 [<thermalfoundation:material:1027>, <thermalfoundation:material:357>, <thermalfoundation:material:1027>]],
-	updateTank(3)
+makeShapedF("of_signalumtank",
+    signalumtank,
+    tankShape,
+    { A : <thermalfoundation:material:1027>,
+      B : <thermalfoundation:material:357>,
+      C : reinforcedtankIng.marked("tank")},
+    updateTank(3)
 );
 
-recipes.addShaped(resonanttank,
-    [[<thermalfoundation:material:1024>, <thermalfoundation:material:359>, <thermalfoundation:material:1024>],
-	 [<thermalfoundation:material:359>,   signalumtankIng.marked("tank"),   <thermalfoundation:material:359>],
-	 [<thermalfoundation:material:1024>, <thermalfoundation:material:359>, <thermalfoundation:material:1024>]],
-	updateTank(4)
+makeShapedF("of_resonanttank",
+    resonanttank,
+    tankShape,
+    { A : <thermalfoundation:material:1024>,
+      B : <thermalfoundation:material:359>,
+      C : signalumtankIng.marked("tank")},
+    updateTank(4)
 );
 
 
