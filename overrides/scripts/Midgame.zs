@@ -160,15 +160,15 @@ for recipe in brewer.recipes {
 }
 
 var customBrewerRecipes as int[IIngredient] = {
-	<gregtech:meta_item_2:32570>: 180 , //Plant Ball
-	<ore:treeSapling>           : 100 ,
-	<minecraft:reeds>           : 100 ,
-	<minecraft:potato>          : 80  ,
-	<minecraft:beetroot>        : 60  ,
-	<minecraft:carrot>          : 60  ,
-	<minecraft:cactus>          : 60  ,
-	<minecraft:brown_mushroom>  : 60  ,
-	<minecraft:red_mushroom>    : 60
+	<gregtech:meta_item_2:32570> : 180 , // Plant Ball
+	<ore:treeSapling>            : 100 ,
+	<minecraft:reeds>            : 100 ,
+	<minecraft:potato>           : 80  ,
+	<minecraft:beetroot>         : 60  ,
+	<minecraft:carrot>           : 60  ,
+	<minecraft:cactus>           : 60  ,
+	<minecraft:brown_mushroom>   : 60  ,
+	<minecraft:red_mushroom>     : 60
 };
 
 for ingredient, amount in customBrewerRecipes {
