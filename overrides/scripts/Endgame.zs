@@ -519,6 +519,22 @@ assembly_line.recipeBuilder()
     .outputs(<gtadditions:ga_meta_item:32124>)
     .duration(2000).EUt(300000).buildAndRegister();
 
+
+//Neutronium Round
+recipes.remove(<gtadditions:ga_meta_item:2972>);  
+lathe.findRecipe(8, [<gregtech:meta_item_1:9972>], [null]).remove();  
+lathe.recipeBuilder()
+  .inputs([<avaritia:resource:3>])
+  .outputs([<gtadditions:ga_meta_item:2972>])
+  .duration(5000).EUt(8).buildAndRegister();
+
+//HSS-E Round
+lathe.findRecipe(8, [<gregtech:meta_item_1:9303>], [null]).remove();  
+lathe.recipeBuilder()
+  .inputs([<gregtech:meta_item_1:9303>])
+  .outputs([<gtadditions:ga_meta_item:2303>])
+  .duration(1480).EUt(8).buildAndRegister();
+
 //Remove Data Orbs
 assembler.findRecipe(1200,
     [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64, 
@@ -561,3 +577,4 @@ saw.findRecipe(48, [<gregtech:meta_item_2:32468>],[<liquid:lubricant>*22]).remov
 
 engraver.findRecipe(480, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32441>], [null]).remove();
 engraver.findRecipe(1920, [<gregtech:meta_item_1:15113>, <gregtech:meta_item_2:32442>], [null]).remove();
+
