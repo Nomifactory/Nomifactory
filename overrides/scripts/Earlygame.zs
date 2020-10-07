@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import scripts.CommonVars.makeShaped as makeShaped;
 
 //Plantball
@@ -529,108 +530,113 @@ furnace.setFuel(<gregtech:meta_item_1:10204>, 1200);
 furnace.setFuel(<gregtech:meta_item_1:2204>, 1200);
 furnace.setFuel(<gregtech:meta_item_1:2012>, 1200);
 
+val compressorRecipes as IItemStack[IIngredient] = {
+	<minecraft:diamond>             : <ore:plateDiamond>.firstItem              ,
+	<minecraft:emerald>             : <ore:plateEmerald>.firstItem              ,
+	<ore:gemAlmandine>              : <ore:plateAlmandine>.firstItem            ,
+	<ore:gemBlueTopaz>              : <ore:plateBlueTopaz>.firstItem            ,
+	<ore:gemGreenSapphire>          : <ore:plateGreenSapphire>.firstItem        ,
+	<ore:gemRutile>                 : <ore:plateRutile>.firstItem               ,
+	<ore:ingotAluminium>            : <ore:plateAluminium>.firstItem            ,
+	<ore:ingotAmericium>            : <ore:plateAmericium>.firstItem            ,
+	<ore:ingotAnnealedCopper>       : <ore:plateAnnealedCopper>.firstItem       ,
+	<ore:ingotAntimony>             : <ore:plateAntimony>.firstItem             ,
+	<ore:ingotArdite>               : <ore:plateArdite>.firstItem               ,
+	<ore:ingotBatteryAlloy>         : <ore:plateBatteryAlloy>.firstItem         ,
+	<ore:ingotBeryllium>            : <ore:plateBeryllium>.firstItem            ,
+	<ore:ingotBlackSteel>           : <ore:plateBlackSteel>.firstItem           ,
+	<ore:ingotBrass>                : <ore:plateBrass>.firstItem                ,
+	<ore:ingotBronze>               : <ore:plateBronze>.firstItem               ,
+	<ore:ingotChrome>               : <ore:plateChrome>.firstItem               ,
+	<ore:ingotCobalt>               : <ore:plateCobalt>.firstItem               ,
+	<ore:ingotCobaltBrass>          : <ore:plateCobaltBrass>.firstItem          ,
+	<ore:ingotConductiveIron>       : <ore:plateConductiveIron>.firstItem       ,
+	<ore:ingotCopper>               : <ore:plateCopper>.firstItem               ,
+	<ore:ingotCupronickel>          : <ore:plateCupronickel>.firstItem          ,
+	<ore:ingotDarkSteel>            : <ore:plateDarkSteel>.firstItem            ,
+	<ore:ingotElectricalSteel>      : <ore:plateElectricalSteel>.firstItem      ,
+	<ore:ingotElectrum>             : <ore:plateElectrum>.firstItem             ,
+	<ore:ingotElectrumFlux>         : <ore:plateElectrumFlux>.firstItem         ,
+	<ore:ingotEnderium>             : <ore:plateEnderium>.firstItem             ,
+	<ore:ingotEndSteel>             : <ore:plateEndSteel>.firstItem             ,
+	<ore:ingotEnergeticAlloy>       : <ore:plateEnergeticAlloy>.firstItem       ,
+	<ore:ingotEpoxid>               : <ore:plateEpoxid>.firstItem               ,
+	<ore:ingotErbium>               : <ore:plateErbium>.firstItem               ,
+	<ore:ingotEuropium>             : <ore:plateEuropium>.firstItem             ,
+	<ore:ingotGallium>              : <ore:plateGallium>.firstItem              ,
+	<ore:ingotGold>                 : <gregtech:meta_item_1:12026>              ,
+	<ore:ingotGraphite>             : <ore:plateGraphite>.firstItem             ,
+	<ore:ingotInvar>                : <ore:plateInvar>.firstItem                ,
+	<ore:ingotIridium>              : <gregtech:meta_item_1:12032>              ,
+	<ore:ingotIron>                 : <ore:plateIron>.firstItem                 ,
+	<ore:ingotKanthal>              : <ore:plateKanthal>.firstItem              ,
+	<ore:ingotLead>                 : <ore:plateLead>.firstItem                 ,
+	<ore:ingotLithium>              : <ore:plateLithium>.firstItem              ,
+	<ore:ingotLumium>               : <ore:plateLumium>.firstItem               ,
+	<ore:ingotMagnalium>            : <ore:plateMagnalium>.firstItem            ,
+	<ore:ingotManganese>            : <ore:plateManganese>.firstItem            ,
+	<ore:ingotManyullyn>            : <ore:plateManyullyn>.firstItem            ,
+	<ore:ingotNeodymium>            : <ore:plateNeodymium>.firstItem            ,
+	<ore:ingotNichrome>             : <ore:plateNichrome>.firstItem             ,
+	<ore:ingotNickel>               : <ore:plateNickel>.firstItem               ,
+	<ore:ingotNiobium>              : <ore:plateNiobium>.firstItem              ,
+	<ore:ingotNiobiumNitride>       : <ore:plateNiobiumNitride>.firstItem       ,
+	<ore:ingotOsmiridium>           : <ore:plateOsmiridium>.firstItem           ,
+	<ore:ingotOsmium>               : <ore:plateOsmium>.firstItem               ,
+	<ore:ingotPalladium>            : <ore:platePalladium>.firstItem            ,
+	<ore:ingotPlatinum>             : <ore:platePlatinum>.firstItem             ,
+	<ore:ingotPlutonium241>         : <ore:platePlutonium241>.firstItem         ,
+	<ore:ingotPotassium>            : <ore:platePotassium>.firstItem            ,
+	<ore:ingotPotassium>            : <ore:platePotassium>.firstItem            ,
+	<ore:ingotPraseodymium>         : <ore:platePraseodymium>.firstItem         ,
+	<ore:ingotPromethium>           : <ore:platePromethium>.firstItem           ,
+	<ore:ingotPulsatingIron>        : <ore:platePulsatingIron>.firstItem        ,
+	<ore:ingotRedAlloy>             : <ore:plateRedAlloy>.firstItem             ,
+	<ore:ingotReinforcedEpoxyResin> : <ore:plateReinforcedEpoxyResin>.firstItem ,
+	<ore:ingotRubidium>             : <ore:plateRubidium>.firstItem             ,
+	<ore:ingotSamarium>             : <ore:plateSamarium>.firstItem             ,
+	<ore:ingotScandium>             : <ore:plateScandium>.firstItem             ,
+	<ore:ingotSignalum>             : <ore:plateSignalum>.firstItem             ,
+	<ore:ingotSilicon>              : <ore:plateSilicon>.firstItem              ,
+	<ore:ingotSilver>               : <ore:plateSilver>.firstItem               ,
+	<ore:ingotSodium>               : <ore:plateSodium>.firstItem               ,
+	<ore:ingotSolderingAlloy>       : <ore:plateSolderingAlloy>.firstItem       ,
+	<ore:ingotStainlessSteel>       : <ore:plateStainlessSteel>.firstItem       ,
+	<ore:ingotSteel>                : <ore:plateSteel>.firstItem                ,
+	<ore:ingotStrontium>            : <ore:plateStrontium>.firstItem            ,
+	<ore:ingotTantalum>             : <ore:plateTantalum>.firstItem             ,
+	<ore:ingotTellurium>            : <ore:plateTellurium>.firstItem            ,
+	<ore:ingotTerbium>              : <ore:plateTerbium>.firstItem              ,
+	<ore:ingotThorium>              : <ore:plateThorium>.firstItem              ,
+	<ore:ingotThulium>              : <ore:plateThulium>.firstItem              ,
+	<ore:ingotThulium>              : <ore:plateThulium>.firstItem              ,
+	<ore:ingotTin>                  : <ore:plateTin>.firstItem                  ,
+	<ore:ingotTinAlloy>             : <ore:plateTinAlloy>.firstItem             ,
+	<ore:ingotTitanium>             : <ore:plateTitanium>.firstItem             ,
+	<ore:ingotTungsten>             : <ore:plateTungsten>.firstItem             ,
+	<ore:ingotTungstenCarbide>      : <ore:plateTungstenCarbide>.firstItem      ,
+	<ore:ingotTungstenSteel>        : <ore:plateTungstenSteel>.firstItem        ,
+	<ore:ingotUranium>              : <ore:plateUranium>.firstItem              ,
+	<ore:ingotVanadium>             : <ore:plateVanadium>.firstItem             ,
+	<ore:ingotVibrantAlloy>         : <ore:plateVibrantAlloy>.firstItem         ,
+	<ore:ingotWroughtIron>          : <ore:plateWroughtIron>.firstItem          ,
+	<ore:ingotYttrium>              : <ore:plateYttrium>.firstItem              ,
+	<ore:ingotYttriumBariumCuprate> : <ore:plateYttriumBariumCuprate>.firstItem ,
+	<ore:ingotZinc>                 : <ore:plateZinc>.firstItem                 
+};
 
+for input, output in compressorRecipes {
+	compressor.recipeBuilder()
+	.inputs(input)
+	.outputs(output)
+	.duration(100).EUt(10).buildAndRegister();
+}
 
-
-compressor.recipeBuilder().inputs(<ore:ingotAluminium>).outputs(<ore:plateAluminium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotAmericium>).outputs(<ore:plateAmericium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotAntimony>).outputs(<ore:plateAntimony>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotBeryllium>).outputs(<ore:plateBeryllium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotChrome>).outputs(<ore:plateChrome>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotCobalt>).outputs(<ore:plateCobalt>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotCopper>).outputs(<ore:plateCopper>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotErbium>).outputs(<ore:plateErbium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotEuropium>).outputs(<ore:plateEuropium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotGallium>).outputs(<ore:plateGallium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotGold>).outputs(<gregtech:meta_item_1:12026>).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotIridium>).outputs(<gregtech:meta_item_1:12032>).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotIron>).outputs(<ore:plateIron>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotLead>).outputs(<ore:plateLead>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotLithium>).outputs(<ore:plateLithium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotManganese>).outputs(<ore:plateManganese>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotNeodymium>).outputs(<ore:plateNeodymium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotNickel>).outputs(<ore:plateNickel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotNiobium>).outputs(<ore:plateNiobium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotOsmium>).outputs(<ore:plateOsmium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPalladium>).outputs(<ore:platePalladium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPlatinum>).outputs(<ore:platePlatinum>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPlutonium241>).outputs(<ore:platePlutonium241>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPotassium>).outputs(<ore:platePotassium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSilicon>).outputs(<ore:plateSilicon>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPotassium>).outputs(<ore:platePotassium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPraseodymium>).outputs(<ore:platePraseodymium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPromethium>).outputs(<ore:platePromethium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotRubidium>).outputs(<ore:plateRubidium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSamarium>).outputs(<ore:plateSamarium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSilver>).outputs(<ore:plateSilver>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSodium>).outputs(<ore:plateSodium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotStrontium>).outputs(<ore:plateStrontium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTantalum>).outputs(<ore:plateTantalum>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTellurium>).outputs(<ore:plateTellurium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTerbium>).outputs(<ore:plateTerbium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotThorium>).outputs(<ore:plateThorium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotThulium>).outputs(<ore:plateThulium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTin>).outputs(<ore:plateTin>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotThulium>).outputs(<ore:plateThulium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotVanadium>).outputs(<ore:plateVanadium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotYttrium>).outputs(<ore:plateYttrium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTitanium>).outputs(<ore:plateTitanium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotUranium>).outputs(<ore:plateUranium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotZinc>).outputs(<ore:plateZinc>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotAnnealedCopper>).outputs(<ore:plateAnnealedCopper>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotBrass>).outputs(<ore:plateBrass>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotBronze>).outputs(<ore:plateBronze>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotCupronickel>).outputs(<ore:plateCupronickel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotElectrum>).outputs(<ore:plateElectrum>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotInvar>).outputs(<ore:plateInvar>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotBatteryAlloy>).outputs(<ore:plateBatteryAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotEpoxid>).outputs(<ore:plateEpoxid>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<minecraft:diamond>).outputs(<ore:plateDiamond>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<minecraft:emerald>).outputs(<ore:plateEmerald>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotMagnalium>).outputs(<ore:plateMagnalium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSolderingAlloy>).outputs(<ore:plateSolderingAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotStainlessSteel>).outputs(<ore:plateStainlessSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSteel>).outputs(<ore:plateSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotGraphite>).outputs(<ore:plateGraphite>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotOsmiridium>).outputs(<ore:plateOsmiridium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTungstenSteel>).outputs(<ore:plateTungstenSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTungsten>).outputs(<ore:plateTungsten>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTungstenCarbide>).outputs(<ore:plateTungstenCarbide>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotConductiveIron>).outputs(<ore:plateConductiveIron>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotEnergeticAlloy>).outputs(<ore:plateEnergeticAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotVibrantAlloy>).outputs(<ore:plateVibrantAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotDarkSteel>).outputs(<ore:plateDarkSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotPulsatingIron>).outputs(<ore:platePulsatingIron>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotElectricalSteel>).outputs(<ore:plateElectricalSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotLumium>).outputs(<ore:plateLumium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotSignalum>).outputs(<ore:plateSignalum>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotEnderium>).outputs(<ore:plateEnderium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotEndSteel>).outputs(<ore:plateEndSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotManyullyn>).outputs(<ore:plateManyullyn>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotArdite>).outputs(<ore:plateArdite>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotReinforcedEpoxyResin>).outputs(<ore:plateReinforcedEpoxyResin>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotBlackSteel>).outputs(<ore:plateBlackSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotYttriumBariumCuprate>).outputs(<ore:plateYttriumBariumCuprate>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotWroughtIron>).outputs(<ore:plateWroughtIron>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotTinAlloy>).outputs(<ore:plateTinAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotRedAlloy>).outputs(<ore:plateRedAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotCobaltBrass>).outputs(<ore:plateCobaltBrass>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotElectrumFlux>).outputs(<ore:plateElectrumFlux>.firstItem).duration(100).EUt(10).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotNeutronium>).outputs(<ore:plateNeutronium>.firstItem).duration(100).EUt(30000).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotInfinity>).outputs(<ore:plateInfinity>.firstItem).duration(100).EUt(30000).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotDraconium>).outputs(<ore:plateDraconium>.firstItem).duration(100).EUt(3000).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotDraconiumAwakened>).outputs(<ore:plateDraconiumAwakened>.firstItem).duration(100).EUt(8000).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotCrystalMatrix>).outputs(<ore:plateCrystalMatrix>.firstItem).duration(100).EUt(8000).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotScandium>).outputs(<ore:plateScandium>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemAlmandine>).outputs(<ore:plateAlmandine>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemBlueTopaz>).outputs(<ore:plateBlueTopaz>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemGreenSapphire>).outputs(<ore:plateGreenSapphire>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemRutile>).outputs(<ore:plateRutile>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotKanthal>).outputs(<ore:plateKanthal>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotNiobiumNitride>).outputs(<ore:plateNiobiumNitride>.firstItem).duration(100).EUt(10).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:ingotNichrome>).outputs(<ore:plateNichrome>.firstItem).duration(100).EUt(10).buildAndRegister();
-
-
 
 recipes.removeByRecipeName("gregtech:tin_cable_4");
 recipes.removeByRecipeName("gregtech:tin_cable_2");
