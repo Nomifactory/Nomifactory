@@ -410,26 +410,7 @@ recipes.addShaped(<actuallyadditions:block_furnace_solar>, [
 	
 	
 	
+mods.jei.JEI.addDescription(<actuallyadditions:item_misc:13>, "Canola can be turned into Canola Oil via a Canola Press. This is a somewhat slow machine and requres RF to function");
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	print("--- ActuallyAdditions.zs initialized ---");
+print("--- ActuallyAdditions.zs initialized ---");

@@ -3,15 +3,11 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
+import crafttweaker.recipes.IRecipeFunction;
 
 import mods.gregtech.recipe.RecipeMap;
 
-/*
-[[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>]]); */
+import scripts.CommonVars.makeShapedF as makeShapedF;
 
 //////////////////////////////////////////////////////////////
 /////////////       Thermal Expansion       //////////////////
@@ -51,41 +47,51 @@ recipes.addShaped(basictank, [
 	[<ore:blockGlassHardened>,null,<ore:blockGlassHardened>],
 	[<gregtech:meta_item_1:12018>, <thermalfoundation:material:512>, <gregtech:meta_item_1:12018>]]);
 
-recipes.addShaped(hardenedtank, [
-	[<actuallyadditions:item_crystal:1>, <gregtech:meta_item_1:12126>, <actuallyadditions:item_crystal:1>],
-	[<gregtech:meta_item_1:12126>,basictank.marked("tank"),<gregtech:meta_item_1:12126>],
-	[<actuallyadditions:item_crystal:1>, <gregtech:meta_item_1:12126>, <actuallyadditions:item_crystal:1>]],
-	function(out, ins, cInfo){
-		return ins.tank.updateTag({Level: 1 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+function updateTank(level as byte) as IRecipeFunction {
+    return function(out, ins, cInfo) as IItemStack {
+        return ins.tank.updateTag({Level: level});
+    };
+}
 
-recipes.addShaped(reinforcedtank, [
-	[<thermalfoundation:material:1026>, <gregtech:meta_item_1:12112>, <thermalfoundation:material:1026>],
-	[<gregtech:meta_item_1:12112>,hardenedtank.marked("tank"),<gregtech:meta_item_1:12112>],
-	[<thermalfoundation:material:1026>, <gregtech:meta_item_1:12112>, <thermalfoundation:material:1026>]],
-	function(out, ins, cInfo) {
-		return ins.tank.updateTag({Level: 2 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+var tankShape as string[] = ["ABA",
+                             "BCB",
+                             "ABA"];
 
-recipes.addShaped(signalumtank, [
-	[<thermalfoundation:material:1027>, <thermalfoundation:material:357>, <thermalfoundation:material:1027>],
-	[<thermalfoundation:material:357>,reinforcedtank.marked("tank"),<thermalfoundation:material:357>],
-	[<thermalfoundation:material:1027>, <thermalfoundation:material:357>, <thermalfoundation:material:1027>]],
-	function(out, ins, cInfo){
-		return ins.tank.updateTag({Level: 3 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+makeShapedF("of_hardenedtank",
+    hardenedtank,
+    tankShape,
+    { A : <actuallyadditions:item_crystal:1>,
+      B : <gregtech:meta_item_1:12126>,
+      C : basictankIng.marked("tank")},
+    updateTank(1)
+);
 
-recipes.addShaped(resonanttank, [
-	[<thermalfoundation:material:1024>, <thermalfoundation:material:359>, <thermalfoundation:material:1024>],
-	[<thermalfoundation:material:359>,signalumtank.marked("tank"),<thermalfoundation:material:359>],
-	[<thermalfoundation:material:1024>, <thermalfoundation:material:359>, <thermalfoundation:material:1024>]],
-	function(out, ins, cInfo){
-		return ins.tank.updateTag({Level: 4 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+makeShapedF("of_reinforcedtank",
+    reinforcedtank,
+    tankShape,
+    { A : <thermalfoundation:material:1026>,
+      B : <gregtech:meta_item_1:12112>,
+      C : hardenedtankIng.marked("tank")},
+    updateTank(2)
+);
+
+makeShapedF("of_signalumtank",
+    signalumtank,
+    tankShape,
+    { A : <thermalfoundation:material:1027>,
+      B : <thermalfoundation:material:357>,
+      C : reinforcedtankIng.marked("tank")},
+    updateTank(3)
+);
+
+makeShapedF("of_resonanttank",
+    resonanttank,
+    tankShape,
+    { A : <thermalfoundation:material:1024>,
+      B : <thermalfoundation:material:359>,
+      C : signalumtankIng.marked("tank")},
+    updateTank(4)
+);
 
 
 mods.jei.JEI.addItem(basictank);

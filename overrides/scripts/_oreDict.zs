@@ -60,9 +60,34 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<actuallyadditions:block_misc:5>
 	],
 
+	#blockConductiveIron
+	<ore:blockConductiveIron> : [
+		<gregtech:compressed_16:15>
+	],
+
+	#blockDarkSteel
+	<ore:blockDarkSteel> : [
+		<gregtech:compressed_17:3>
+	],
+
 	#blockElectrum
 	<ore:blockElectrum> : [
 		<thermalfoundation:storage_alloy:1>
+	],
+
+	#blockElectricalSteel
+	<ore:blockElectricalSteel> : [
+		<gregtech:compressed_17:4>
+	],
+
+	#blockEndSteel
+	<ore:blockEndSteel> : [
+		<gregtech:compressed_17:10>
+	],
+
+	#blockEnergeticAlloy
+	<ore:blockEnergeticAlloy> : [
+		<gregtech:compressed_17>
 	],
 
 	#blockGraphite
@@ -120,7 +145,18 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockSteel
 	<ore:blockSteel> : [
-		<thermalfoundation:storage_alloy>
+		<thermalfoundation:storage_alloy>,
+		<libvulpes:metal0:6>
+	],
+
+	#blockPlutonium
+	<ore:blockPlutonium> : [
+		<gregtech:compressed_2:7>
+	],
+
+	#blockPulsatingIron
+	<ore:blockPulsatingIron> : [
+		<gregtech:compressed_17:2>
 	],
 
 	#blockTin
@@ -133,6 +169,12 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:storage:1>,
 		<libvulpes:metal0:5>
 	],
+
+	#blockVibrantAlloy
+	<ore:blockVibrantAlloy> : [
+		<gregtech:compressed_17:1>
+	],
+
 	#blockTitanium
 	<ore:blockTitanium> : [
 		<libvulpes:metal0:7>
@@ -321,6 +363,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustQuartz> : [
 		<appliedenergistics2:material:3>,
 		<actuallyadditions:item_dust:5>
+	],
+
+	#dustPlutonium
+	<ore:dustPlutonium> : [
+		<gregtech:meta_item_1:2052>
 	],
 
 	#dustSaltpeter
@@ -531,9 +578,19 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:134>
 	],
 
+	#ingotPlutonium
+	<ore:ingotPlutonium> : [
+		<gregtech:meta_item_1:10052>
+	],
+
 	#ingotPulsatingIron
 	<ore:ingotPulsatingIron> : [
 		<gregtech:meta_item_1:10703>
+	],
+
+	#ingotRedstoneAlloy
+	<ore:ingotRedstoneAlloy> : [
+		<enderio:item_alloy_ingot:3>
 	],
 
 	#ingotTin
@@ -580,12 +637,6 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:ingotVibrantAlloy> : [
 		<gregtech:meta_item_1:10702>
 	],
-
-    #ingotUranium235
-    <ore:ingotUranium235> : [
-        <gregtech:meta_item_1:10076>,
-    ],
-
 };
 
 for oreDictEntry, items in ingotsDisabled {
@@ -608,6 +659,11 @@ var sticksDisabled as IItemStack[][IOreDictEntry] = {
 	#stickCopper
 	<ore:stickCopper> : [
 		<libvulpes:productrod:4>
+	],
+
+	#stickPlutonium
+	<ore:stickPlutonium> : [
+		<gregtech:meta_item_1:14052>
 	],
 
 	#stickSteel
@@ -671,6 +727,11 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:nuggetIridium> : [
 		<thermalfoundation:material:199>,
 		<libvulpes:productnugget:10>
+	],
+
+	#nuggetPlutonium
+	<ore:nuggetPlutonium> : [
+		<gregtech:meta_item_1:9052>
 	],
 
 	<ore:nuggetTin> : [
@@ -841,6 +902,11 @@ var platesDisabled as IItemStack[][IOreDictEntry] = {
 	#platePlatinum
 	<ore:platePlatinum> : [
 		<thermalfoundation:material:326>
+	],
+
+	#platePlutonium
+	<ore:platePlutonium> : [
+		<gregtech:meta_item_1:12052>
 	],
 
 	#plateSilicon
@@ -1014,6 +1080,31 @@ var miscDisabled as IItemStack[][IOreDictEntry] = {
 	#Arsenic
 	<ore:dustArsenic> : [
 		<nuclearcraft:gem_dust:10>
+	],
+
+	#boltPlutonium
+	<ore:boltPlutonium> : [
+		<gregtech:meta_item_1:16052>
+	],
+
+	#dustSmallPlutonium
+	<ore:dustSmallPlutonium> : [
+		<gregtech:meta_item_1:1052>
+	],
+
+	#dustTinyPlutonium
+	<ore:dustTinyPlutonium> : [
+		<gregtech:meta_item_1:52>
+	],
+
+	#screwPlutonium
+	<ore:screwPlutonium> : [
+		<gregtech:meta_item_1:17052>
+	],
+
+	#stickLongPlutonium
+	<ore:stickLongPlutonium> : [
+		<gregtech:meta_item_2:19052>
 	]
 };
 
@@ -1049,6 +1140,8 @@ for oreDictEntry, items in miscDisabled {
 <ore:gemDilithium>.remove(<libvulpes:productgem>);
 <ore:crystalDilithium>.add(<libvulpes:productgem>);
 
+<ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
+
 
 ////////////////////////////////
 //			Removals          //
@@ -1076,6 +1169,7 @@ mods.jei.JEI.hideCategory("xu2_machine_extrautils2:crusher");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator_survival");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:generator");
 mods.jei.JEI.hide(<appliedenergistics2:facade>);
+mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
 
 
 //Actually Additions Removals
@@ -1319,6 +1413,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_capacitor_vivid>);
 mods.jei.JEI.removeAndHide(<enderio:block_creative_spawner>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_crafter>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_wired_charger>);
+mods.jei.JEI.removeAndHide(<enderio:block_infinity_fog>);
 
 
 //Extended Crafting Removals
@@ -1642,7 +1737,12 @@ mods.jei.JEI.removeAndHide(<libvulpes:coil0:10>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery>);
 mods.jei.JEI.removeAndHide(<libvulpes:battery:1>);
 mods.jei.JEI.removeAndHide(<libvulpes:productfan:6>);
-mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:9>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:7>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:6>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:4>);
+mods.jei.JEI.removeAndHide(<libvulpes:productsheet:1>);
+
 
 //                 XXXXXXXXXX                            XXXXXXXXXX
 //              XXXXXXXXXXXXXXX                        XXXXXXXXXXXXXXX
@@ -2037,6 +2137,10 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:questbookCanning>.add(<gregtech:machine:140>); // LV Canning
 <ore:questbookCanning>.add(<gregtech:machine:141>); // MV Canning
 
+<ore:questbookFluidExtractor>.add(<gregtech:machine:300>); // LV Fluid Extractor
+<ore:questbookFluidExtractor>.add(<gregtech:machine:301>); // MV Fluid Extractor
+<ore:questbookFluidExtractor>.add(<gregtech:machine:302>); // HV Fluid Extractor
+
 // GTCE Conductive Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
@@ -2081,8 +2185,6 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:material:195>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:200>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:228>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:1>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9075>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9076>);
 mods.jei.JEI.removeAndHide(<libvulpes:productnugget:3>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:164>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:storage_alloy:4>);

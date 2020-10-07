@@ -66,11 +66,11 @@ recipes.addShaped(<advancedrocketry:structuretower> * 3, [
  *	Pressure Tanks
  */
 
-val arTanks as IItemStack[IItemStack]  = {
-	<advancedrocketry:pressuretank>: hardenedtank,
-	<advancedrocketry:pressuretank:1>: reinforcedtank,
-	<advancedrocketry:pressuretank:2>: signalumtank,
-	<advancedrocketry:pressuretank:3>: resonanttank,
+val arTanks as IIngredient[IItemStack]  = {
+	<advancedrocketry:pressuretank>:   hardenedtankIng,
+	<advancedrocketry:pressuretank:1>: reinforcedtankIng,
+	<advancedrocketry:pressuretank:2>: signalumtankIng,
+	<advancedrocketry:pressuretank:3>: resonanttankIng,
 };
 
 var counter = -1;
@@ -961,6 +961,19 @@ makeShaped("ar_planetselector_holo",
 		C: <ore:circuitGood>,
 		G: <minecraft:glowstone>,
 		H: <libvulpes:holoprojector>,
+	});
+
+// Advanced Machine Structure
+recipes.remove(<libvulpes:advstructuremachine>);
+makeShaped("ar_advanced_structure", 
+	<libvulpes:advstructuremachine>, [
+		"RPR",
+		"PSP",
+		"RPR",
+	], {
+		P: <gregtech:meta_item_1:12072>,
+		R: <gregtech:meta_item_1:14072>,
+		S: <libvulpes:structuremachine>,
 	});
 
 // Space Suit Upgrades
