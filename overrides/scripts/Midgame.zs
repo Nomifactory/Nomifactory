@@ -1,5 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.data.IData;
 
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
@@ -154,60 +155,29 @@ lathe.recipeBuilder().inputs([<gregtech:meta_item_1:9303>]).outputs([<gtaddition
 
 	
 //Brewery
-	
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:for.honey> * 180]).remove();		
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:juice> * 180]).remove();		
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:1>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:2>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:3>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:4>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:5>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:for.honey> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:juice> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice> * 20]).remove();
+for recipe in brewer.recipes {
+	recipe.remove();
+}
 
+var customBrewerRecipes as int[IIngredient] = {
+	<gregtech:meta_item_2:32570>: 180 , //Plant Ball
+	<ore:treeSapling>           : 100 ,
+	<minecraft:reeds>           : 100 ,
+	<minecraft:potato>          : 80  ,
+	<minecraft:beetroot>        : 60  ,
+	<minecraft:carrot>          : 60  ,
+	<minecraft:cactus>          : 60  ,
+	<minecraft:brown_mushroom>  : 60  ,
+	<minecraft:red_mushroom>    : 60
+};
 
-brewer.recipeBuilder().inputs(<gregtech:meta_item_2:32570>).fluidInputs([<liquid:water> * 180]).fluidOutputs([<liquid:biomass> * 180]).duration(1440).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<ore:treeSapling>).fluidInputs([<liquid:water> * 100]).fluidOutputs([<liquid:biomass> * 100]).duration(800).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:potato>).fluidInputs([<liquid:water> * 80]).fluidOutputs([<liquid:biomass> * 80]).duration(640).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:beetroot>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:carrot>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:cactus>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:reeds>).fluidInputs([<liquid:water> * 100]).fluidOutputs([<liquid:biomass> * 100]).duration(800).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:brown_mushroom>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:red_mushroom>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-
+for ingredient, amount in customBrewerRecipes {
+	brewer.recipeBuilder()
+		.inputs(ingredient)
+		.fluidInputs([<liquid:water> * amount])
+		.fluidOutputs([<liquid:biomass> * amount])
+		.duration(amount * 8).EUt(3).buildAndRegister();
+}
 
 //Fermenter
 fermenter.recipeBuilder().fluidInputs([<liquid:canolaoil> * 100]).fluidOutputs([<liquid:refinedcanolaoil> * 100]).duration(400).EUt(2).buildAndRegister();
