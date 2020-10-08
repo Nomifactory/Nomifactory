@@ -67,3 +67,7 @@ mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 8, item: "gregte
 for liquid in game.liquids {
     mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: liquid.name, Amount: 1000}}));
 }
+
+//Hide the two special case buckets
+mods.jei.JEI.hide(<ceramics:clay_bucket:1>);
+mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: "betterquesting.placeholder", Amount: 1000}}));
