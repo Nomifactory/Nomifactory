@@ -68,7 +68,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	#blockDarkSteel
 	<ore:blockDarkSteel> : [
 		<gregtech:compressed_17:3>
-  ],
+	],
   
 	#blockDraconium
 	<ore:blockDraconium> : [
