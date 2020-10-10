@@ -447,7 +447,9 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 	  B : <gregtech:machine:322> }
 );
 <actuallyadditions:item_solidified_experience>.addTooltip(
-	format.green("Can be made in an Experience Solidifier."));
+	format.green("Drops from monsters, and can be made in"));
+<actuallyadditions:item_solidified_experience>.addTooltip(
+	format.green("a Fluid Solidifier or Experience Solidifier."));
 
 // Solidified Experience
 solidifier.recipeBuilder()
