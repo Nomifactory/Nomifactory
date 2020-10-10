@@ -1374,7 +1374,7 @@ mods.jei.JEI.removeAndHide(<armorplus:obsidian_pickaxe>);
 mods.jei.JEI.removeAndHide(<armorplus:infused_lava_pickaxe>);
 mods.jei.JEI.removeAndHide(<armorplus:guardian_pickaxe>);
 mods.jei.JEI.removeAndHide(<armorplus:super_star_pickaxe>);
-mods.jei.JEI.removeAndHide(<armorplus:ender_dragon_pickaxe>)
+mods.jei.JEI.removeAndHide(<armorplus:ender_dragon_pickaxe>);
 
 
 //Avaritia Removals
