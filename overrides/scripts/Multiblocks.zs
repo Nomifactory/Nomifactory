@@ -274,11 +274,11 @@ function maxOf(key as string, count as int) as IBlockMatcher {
 function space(maxIron as int, maxGold as int) as IBlockMatcher {
     return checkSpace(<metastate:chisel:diamond:3>, "purple") |
            checkSpace(<metastate:chisel:diamond:4>, "black") |
-           (checkSpace(<metastate:chisel:gold:11>, "purple") |
-            checkSpace(<metastate:chisel:gold:12>, "black")
+           ((checkSpace(<metastate:chisel:gold:11>, "purple") |
+             checkSpace(<metastate:chisel:gold:12>, "black"))
             & maxOf("gold", maxGold)) |
-           (checkSpace(<metastate:chisel:iron:11>, "purple") |
-            checkSpace(<metastate:chisel:iron:12>, "black")
+           ((checkSpace(<metastate:chisel:iron:11>, "purple") |
+             checkSpace(<metastate:chisel:iron:12>, "black"))
             & maxOf("iron", maxIron));
 }
 
