@@ -239,6 +239,16 @@ fluidextractor.recipeBuilder()
 	.fluidOutputs([<liquid:awakeneddraconium> * 1296])
 	.duration(200).EUt(30).buildAndRegister();
 
+fluidextractor.recipeBuilder()
+	.inputs(<moreplates:awakened_draconium_gear>)
+	.fluidOutputs([<liquid:awakeneddraconium> * 576])
+	.duration(200).EUt(30).buildAndRegister();
+
+fluidextractor.recipeBuilder()
+	.inputs(<moreplates:awakened_draconium_plate>)
+	.fluidOutputs([<liquid:awakeneddraconium> * 144])
+	.duration(200).EUt(30).buildAndRegister();
+
 solidifier.recipeBuilder()
 	.fluidInputs(<liquid:awakeneddraconium> * 144)
 	.notConsumable(<gregtech:meta_item_1:32309>)
@@ -261,4 +271,10 @@ solidifier.recipeBuilder()
 	.fluidInputs(<liquid:awakeneddraconium> * 144)
 	.notConsumable(<gregtech:meta_item_1:32301>)
 	.outputs([<moreplates:awakened_draconium_plate>])
+	.duration(200).EUt(30).buildAndRegister();
+
+solidifier.recipeBuilder()
+	.fluidInputs(<liquid:awakeneddraconium> * 576)
+	.notConsumable(<gregtech:meta_item_1:32303>)
+	.outputs([<moreplates:awakened_draconium_gear>])
 	.duration(200).EUt(30).buildAndRegister();
