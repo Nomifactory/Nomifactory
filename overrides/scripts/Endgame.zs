@@ -437,7 +437,7 @@ makeShaped("of_processing_array", <gregtech:machine:2507>,
      { A : <gregtech:meta_item_1:32654>, //Robot Arm (IV)
        H : <gregtech:machine:505>, //Machine Hull (IV)
        C : <ore:circuitMaster>, //T6 Circuit
-       S : <gregtech:meta_item_1:32725>, //Quantum Star
+       S : <advsolars:sunnarium>, //Sunnarium
        B : <gregtech:machine:10697>}); //IV Tier 16x CEF 
 
 
