@@ -14578,10 +14578,9 @@
     },
     "216:10": {
       "preRequisites:11": [
-        214,
-        400,
         385,
-        132
+        132,
+        782
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -14599,7 +14598,7 @@
           "lockedprogress:1": 1,
           "name:8": "Small Microverse Projector",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -35732,7 +35731,7 @@
     },
     "582:10": {
       "preRequisites:11": [
-        527
+        298
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35741,14 +35740,14 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 166,
+            "Damage:2": 32,
             "OreDict:8": "",
-            "id:8": "thermalfoundation:material"
+            "id:8": "redstonearsenal:material"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Lumium Ingots",
+          "name:8": "Fluxed Electrum Ingots",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -35786,9 +35785,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 64,
-              "Damage:2": 166,
+              "Damage:2": 32,
               "OreDict:8": "",
-              "id:8": "thermalfoundation:material"
+              "id:8": "redstonearsenal:material"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -47416,6 +47415,188 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "780:10": {
+      "preRequisites:11": [
+        688
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Once you have obtained your§e §rfi§rrst §rpiece of §6Hellish Matter§6§r, travel to the §r§eNether§r becomes available.\n\nIt is not required to travel to the nether for any reason in this pack, although you may find it an easy source of §6Glowstone§r, §6Soul Sand§r, and your initial pieces of §6Sulfur§r before you make a §eBlaze Model§r from §c§bDeep Mob Learning§r.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "dimensionaledibles:nether_cake"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "To the Nether",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 780,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "dimensionaledibles:nether_cake"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "781:10": {
+      "preRequisites:11": [
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Numismatic Dynamo§r is the main source of power through the Mid Game of the pack. Paired with a §6§r§aLapidary Calibration Augment§r and a self-sustaining §e§r§bDeep Mob Learning§r setup, this dynamo can burn through §6Diamonds§r to produce large amounts of §eRF power§r.\n\nJust like other §bThermal Expansion§r dynamos, the §6Numismatic Dynamo§r can be given tier upgrades to produce more power and gain access to more §e§r§aAugment Slots§r.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": "",
+            "id:8": "thermalexpansion:dynamo",
+            "tag:10": {
+              "Energy:3": 0,
+              "Facing:1": 1,
+              "Level:1": 0,
+              "RSControl:1": 0
+            }
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Numismatic Power",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 781,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": "",
+              "id:8": "thermalexpansion:dynamo",
+              "tag:10": {
+                "Energy:3": 0,
+                "Facing:1": 1,
+                "Level:1": 0,
+                "RSControl:1": 0
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 720,
+              "OreDict:8": "",
+              "id:8": "thermalexpansion:augment"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "782:10": {
+      "preRequisites:11": [
+        400,
+        214
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Hidden gathering quest for SMP",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 0,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:air"
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "\"Deuterium\" or \"I Don\u0027t Like Space\"",
+          "questlogic:8": "OR",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 782,
+      "rewards:9": {},
+      "tasks:9": {}
     }
   },
   "questLines:9": {
@@ -47962,6 +48143,13 @@
           "sizeY:3": 24,
           "x:3": -708,
           "y:3": 96
+        },
+        "75:10": {
+          "id:3": 780,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -444,
+          "y:3": 48
         }
       }
     },
@@ -48690,6 +48878,13 @@
           "sizeY:3": 24,
           "x:3": -180,
           "y:3": 84
+        },
+        "101:10": {
+          "id:3": 781,
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -354,
+          "y:3": 402
         }
       }
     },
@@ -52547,6 +52742,13 @@
           "sizeY:3": 18,
           "x:3": 529,
           "y:3": 459
+        },
+        "53:10": {
+          "id:3": 782,
+          "sizeX:3": 0,
+          "sizeY:3": 0,
+          "x:3": 612,
+          "y:3": 612
         }
       }
     }

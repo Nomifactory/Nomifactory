@@ -651,7 +651,7 @@ alloy.recipeBuilder()
 // basic => reinforced
 recipes.addShapeless("basic_to_reinforced_energy_cell_conversion",
     reinforcedcell,
-    [basiccell.marked("cell"),<thermalfoundation:upgrade:33>],
+    [basiccellIng.marked("cell"),<thermalfoundation:upgrade:33>],
     function(out, ins, cInfo) {
         return ins.cell.updateTag({Level: 2 as byte, Creative: 0 as byte});
     } as IRecipeFunction
@@ -660,7 +660,7 @@ recipes.addShapeless("basic_to_reinforced_energy_cell_conversion",
 // basic => signalum
 recipes.addShapeless("basic_to_signalum_energy_cell_conversion",
     signalumcell,
-    [basiccell.marked("cell"),<thermalfoundation:upgrade:34>],
+    [basiccellIng.marked("cell"),<thermalfoundation:upgrade:34>],
     function(out, ins, cInfo) {
         return ins.cell.updateTag({Level: 3 as byte, Creative: 0 as byte});
     } as IRecipeFunction
@@ -669,7 +669,7 @@ recipes.addShapeless("basic_to_signalum_energy_cell_conversion",
 // basic => resonant
 recipes.addShapeless("basic_to_resonant_energy_cell_conversion",
     resonantcell,
-    [basiccell.marked("cell"),<thermalfoundation:upgrade:35>],
+    [basiccellIng.marked("cell"),<thermalfoundation:upgrade:35>],
     function(out, ins, cInfo) {
         return ins.cell.updateTag({Level: 4 as byte, Creative: 0 as byte});
     } as IRecipeFunction
@@ -686,25 +686,25 @@ val upgradeTierByOne as IRecipeFunction =
 // Upgrade Kit
 recipes.addShapeless("basic_to_hardened_energy_cell_upgrade",
     hardenedcell,
-    [basiccell.marked("cell"), <thermalfoundation:upgrade>],
+    [basiccellIng.marked("cell"), <thermalfoundation:upgrade>],
     upgradeTierByOne
 );
 
 recipes.addShapeless("hardened_to_reinforced_energy_cell_upgrade",
     reinforcedcell,
-    [hardenedcell.marked("cell"), <thermalfoundation:upgrade:1>],
+    [hardenedcellIng.marked("cell"), <thermalfoundation:upgrade:1>],
     upgradeTierByOne
 );
 
 recipes.addShapeless("reinforced_to_signalum_energy_cell_upgrade",
     signalumcell,
-    [reinforcedcell.marked("cell"), <thermalfoundation:upgrade:2>],
+    [reinforcedcellIng.marked("cell"), <thermalfoundation:upgrade:2>],
     upgradeTierByOne
 );
 
 recipes.addShapeless("signalum_to_resonant_energy_cell_upgrade",
     resonantcell,
-    [signalumcell.marked("cell"), <thermalfoundation:upgrade:3>],
+    [signalumcellIng.marked("cell"), <thermalfoundation:upgrade:3>],
     upgradeTierByOne
 );
 
