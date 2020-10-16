@@ -876,3 +876,10 @@ macerator.recipeBuilder()
 
 //Remove Unobtainable Clay recipe
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
+
+//Add recipe for Iron Trapdoor
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:12033> * 4)
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 6, not_consumed: 1 as byte}))
+	.outputs(<minecraft:iron_trapdoor>)
+	.duration(200).EUt(16).buildAndRegister();
