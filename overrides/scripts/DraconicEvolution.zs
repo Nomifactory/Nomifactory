@@ -111,8 +111,8 @@ solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [<liquid:draconium> * 1
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:draconium> * 1296]).remove();
 
 //Nugget Recipe
-solidifier.recipeBuilder().
-	fluidInputs(<liquid:draconium> * 144)
+solidifier.recipeBuilder()
+	.fluidInputs(<liquid:draconium> * 144)
 	.notConsumable(<gregtech:meta_item_1:32309>)
 	.outputs([<draconicevolution:nugget> * 9])
 	.duration(200).EUt(30).buildAndRegister();
