@@ -918,11 +918,11 @@ for mat in material {
 	 	 "SRF",
 	 	 "PDP"],
 		{ P : plate,  
-	  	  H : <ore:craftingToolHardHammer>.firstItem.withEmptyTag(),
+	  	  H : <ore:gtceHardHammers>,
 	  	  S : screw,
 	  	  R : ring,
-	  	  F : <ore:craftingToolFile>.firstItem.withEmptyTag(),
-	  	  D : <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()});
+	  	  F : <ore:gtceFiles>,
+	  	  D : <ore:gtceScrewdrivers>});
 }
 
 
@@ -1040,7 +1040,7 @@ macerator.recipeBuilder()
 //Adjust the Bone Meal by hand recipe
 recipes.removeByRecipeName("gregtech:bone_to_bone_meal");
 recipes.addShapeless(<minecraft:dye:15> * 3,
-	[<minecraft:bone>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+	[<minecraft:bone>, <ore:gtceMortars>]);
 
 //Adjust Bone Meal Compressor recipe to prevent dupe
 compressor.findRecipe(8, [<minecraft:dye:15> * 3], [null]).remove();
@@ -1059,7 +1059,7 @@ makeShaped("gtce_crafting_station", <gregtech:machine:825>,
 	  W : <minecraft:crafting_table>,
 	  I : <gregtech:meta_item_1:12033>, //Iron Plate
 	  A : <forestry:worktable>, //Worktable
-	  H : <ore:craftingToolHardHammer>.firstItem.withEmptyTag() //Hammer
+	  H : <ore:gtceHardHammers> //Hammer
 	  });
 
 //Add Decomposition Recipe for Polyphenylene Sulfide
