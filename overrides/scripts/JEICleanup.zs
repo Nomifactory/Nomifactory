@@ -80,6 +80,5 @@ recipes.removeShaped(<gregtech:meta_tool:32>, [
                     [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32539>]]);
 
 recipes.removeShaped(<gregtech:meta_tool:32>, [
-                    [null, null, null],
                     [<ore:gtceWrenches>, <*>, <ore:gtceScrewdrivers>],
                     [null, <gregtech:meta_item_2:32576>, null]]);
