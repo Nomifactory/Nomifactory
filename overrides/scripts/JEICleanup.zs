@@ -61,3 +61,25 @@ if(!isNull(ae2)) {
 
 //Hiding the GTCE omnium block facade version
 mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 8, item: "gregtech:compressed_17"}));
+
+
+// Remove Jackhammer Crafting Recipes
+recipes.removeShaped(<gregtech:meta_tool:32>, [ 
+                    [<gregtech:meta_item_1:17072>, <*>, <*>],
+                    [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:21072> ,<gregtech:meta_item_1:13072>],
+                    [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32537>]]);
+
+recipes.removeShaped(<gregtech:meta_tool:32>, [ 
+                    [<gregtech:meta_item_1:17072>, <*>, <*>],
+                    [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:21072> ,<gregtech:meta_item_1:13072>],
+                    [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32538>]]);
+
+recipes.removeShaped(<gregtech:meta_tool:32>, [ 
+                    [<gregtech:meta_item_1:17072>, <*>, <*>],
+                    [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:21072> ,<gregtech:meta_item_1:13072>],
+                    [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32539>]]);
+
+recipes.removeShaped(<gregtech:meta_tool:32>, [
+                    [null, null, null],
+                    [<ore:gtceWrenches>, <*>, <ore:gtceScrewdrivers>],
+                    [null, <gregtech:meta_item_2:32576>, null]]);

@@ -1568,6 +1568,18 @@ mods.jei.JEI.removeAndHide(<enderio:block_creative_spawner>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_crafter>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_wired_charger>);
 mods.jei.JEI.removeAndHide(<enderio:block_infinity_fog>);
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet"}));
 
 
 //Extended Crafting Removals
@@ -1800,6 +1812,9 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32480>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32466>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32482>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32576>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:21072>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_tool:32>.withTag({"GT.ToolStats": {Material: "darmstadtium"}}));
 
 
 //Inspirations Removals

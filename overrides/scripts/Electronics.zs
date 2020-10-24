@@ -875,9 +875,8 @@ recipes.addShaped(<gregtech:machine:514>, [
 	[<ore:circuitGood>, <gregtech:machine:500>, <ore:circuitGood>], 
 	[<gregtech:meta_item_1:32640>, <gregtech:meta_item_1:32610>, <ore:wireGtQuadrupleCupronickel>]]);
 	
-<ore:wrenches>.addItems([<gregtech:meta_tool:8>.withEmptyTag(), <gregtech:meta_tool:29>.withEmptyTag(), <gregtech:meta_tool:30>.withEmptyTag(), <gregtech:meta_tool:31>.withEmptyTag()]);
 
-val wrench = <ore:wrenches>;
+val wrench = <ore:gtceWrenches>;
 
 
 // ULV Machine Casing
