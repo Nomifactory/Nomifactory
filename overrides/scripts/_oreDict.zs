@@ -1161,6 +1161,39 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
 
+//Create Universal GTCE Oredict for tools that can be used to reference by oredict and encapsulates all tools.
+//Works for any material tool, any damage tool, electric or non-electric
+
+//GTCE Tools
+<ore:gtceWrenches>.addItems([
+	<gregtech:meta_tool:8>.withEmptyTag(), 
+	<gregtech:meta_tool:29>.withEmptyTag(), 
+	<gregtech:meta_tool:30>.withEmptyTag(), 
+	<gregtech:meta_tool:31>.withEmptyTag()]);
+
+<ore:gtceScrewdrivers>.addItems([
+	<gregtech:meta_tool:11>.withEmptyTag(), 
+	<gregtech:meta_tool:34>.withEmptyTag()]);
+
+<ore:gtceHardHammers>.addItems([
+	<gregtech:meta_tool:6>.withEmptyTag()]);
+
+<ore:gtceSaws>.addItems([
+	<gregtech:meta_tool:5>.withEmptyTag(),
+	<gregtech:meta_tool:16>.withEmptyTag(), 
+	<gregtech:meta_tool:26>.withEmptyTag(), 
+	<gregtech:meta_tool:27>.withEmptyTag(), 
+	<gregtech:meta_tool:28>.withEmptyTag(), 
+	<gregtech:meta_tool:33>.withEmptyTag()]);
+
+<ore:gtceFiles>.addItems([
+	<gregtech:meta_tool:9>.withEmptyTag()]);
+
+<ore:gtceMortars>.addItems([
+	<gregtech:meta_tool:12>.withEmptyTag()]);
+
+<ore:gtceWireCutters>.addItems([
+	<gregtech:meta_tool:13>.withEmptyTag()]);
 
 ////////////////////////////////
 //			Removals          //

@@ -118,11 +118,6 @@ global armoredresonantjetpack   as IItemStack  = <simplyjetpacks:itemjetpack:17>
 global fluxinfusedjetplate      as IItemStack  = <simplyjetpacks:itemjetpack:18>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 
 
-//GTCE Tools
-<ore:gtceWrenches>.addItems([<gregtech:meta_tool:8>.withEmptyTag(), <gregtech:meta_tool:29>.withEmptyTag(), <gregtech:meta_tool:30>.withEmptyTag(), <gregtech:meta_tool:31>.withEmptyTag()]);
-
-<ore:gtceScrewdrivers>.addItems([<gregtech:meta_tool:11>.withEmptyTag(), <gregtech:meta_tool:34>.withEmptyTag()]);
-
 
 /*
  Converts a text representation of a crafting grid recipe into an array of
