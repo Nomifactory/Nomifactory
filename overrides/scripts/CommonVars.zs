@@ -117,6 +117,8 @@ global armoredreinforcedjetpack as IItemStack  = <simplyjetpacks:itemjetpack:16>
 global armoredresonantjetpack   as IItemStack  = <simplyjetpacks:itemjetpack:17>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 global fluxinfusedjetplate      as IItemStack  = <simplyjetpacks:itemjetpack:18>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 
+
+
 /*
  Converts a text representation of a crafting grid recipe into an array of
  ingredients.

@@ -69,6 +69,11 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:blockDarkSteel> : [
 		<gregtech:compressed_17:3>
 	],
+  
+	#blockDraconium
+	<ore:blockDraconium> : [
+		<gregtech:compressed_17:9>
+	],
 
 	#blockElectrum
 	<ore:blockElectrum> : [
@@ -267,6 +272,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 		<actuallyadditions:item_dust:2>,
 		<nuclearcraft:gem_dust>
 	],
+
+	#dustDraconium
+	<ore:dustDraconium> : [
+		<gregtech:meta_item_1:2710>
+	],	
 
 	#dustElectrum
 	<ore:dustElectrum> : [
@@ -501,7 +511,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	#ingotDarkSteel
 	<ore:ingotDarkSteel> : [
 		<gregtech:meta_item_1:10704>
-	],	
+	],
+
+	#ingotDraconium
+	<ore:ingotDraconium> : [
+		<gregtech:meta_item_1:10710>
+	],
 
 	#ingotElectricalSteel
 	<ore:ingotElectricalSteel> : [
@@ -714,6 +729,10 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:nuggetCopper> : [
 		<thermalfoundation:material:192>,
 		<libvulpes:productnugget:4>
+	],
+
+	<ore:nuggetDraconium> : [
+		<gregtech:meta_item_1:9710>
 	],
 
 	<ore:nuggetElectrum> : [
@@ -1141,6 +1160,41 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
 
+//Create Universal GTCE Oredict for tools that can be used to reference by oredict and encapsulates all tools.
+//Works for any material tool, any damage tool, electric or non-electric
+
+//GTCE Tools
+<ore:gtceWrenches>.addItems([
+	<gregtech:meta_tool:8>.withEmptyTag(), 
+	<gregtech:meta_tool:29>.withEmptyTag(), 
+	<gregtech:meta_tool:30>.withEmptyTag(), 
+	<gregtech:meta_tool:31>.withEmptyTag()]);
+
+<ore:gtceScrewdrivers>.addItems([
+	<gregtech:meta_tool:11>.withEmptyTag(), 
+	<gregtech:meta_tool:34>.withEmptyTag()]);
+
+<ore:gtceHardHammers>.addItems([
+	<gregtech:meta_tool:6>.withEmptyTag()]);
+
+<ore:gtceSaws>.addItems([
+	<gregtech:meta_tool:5>.withEmptyTag(),
+	<gregtech:meta_tool:16>.withEmptyTag(), 
+	<gregtech:meta_tool:26>.withEmptyTag(), 
+	<gregtech:meta_tool:27>.withEmptyTag(), 
+	<gregtech:meta_tool:28>.withEmptyTag(), 
+	<gregtech:meta_tool:33>.withEmptyTag()]);
+
+<ore:gtceFiles>.addItems([
+	<gregtech:meta_tool:9>.withEmptyTag()]);
+
+<ore:gtceMortars>.addItems([
+	<gregtech:meta_tool:12>.withEmptyTag()]);
+
+<ore:gtceWireCutters>.addItems([
+	<gregtech:meta_tool:13>.withEmptyTag()]);
+
+
 ////////////////////////////////
 //			Removals          //
 ////////////////////////////////
@@ -1547,6 +1601,18 @@ mods.jei.JEI.removeAndHide(<enderio:block_creative_spawner>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_crafter>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_wired_charger>);
 mods.jei.JEI.removeAndHide(<enderio:block_infinity_fog>);
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet"}));
 
 
 //Extended Crafting Removals
@@ -1793,6 +1859,9 @@ mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32133>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32132>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32131>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32018>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32576>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:21072>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_tool:32>.withTag({"GT.ToolStats": {Material: "darmstadtium"}}));
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
@@ -2135,34 +2204,6 @@ solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 16).notConsumable(<greg
 furnace.remove(<gregtech:meta_item_1:10709>);
 furnace.addRecipe(<extendedcrafting:material:32>, <gregtech:meta_item_1:2709>, 0.0);
 recipes.addShapeless(<extendedcrafting:material:32>, [<gregtech:meta_item_1:10709>]);
-
-//Draconium
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:9>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10710>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9710>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2710>);
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:draconium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [<liquid:draconium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:draconium> * 1296]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10710>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9710>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:compressed_17:9>], [null]).remove();
-solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 144).notConsumable(<gregtech:meta_item_1:32309>).outputs([<draconicevolution:nugget> * 9]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<draconicevolution:draconium_ingot>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<draconicevolution:draconium_block>]).duration(200).EUt(30).buildAndRegister();
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>]);
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>]);
-furnace.remove(<gregtech:meta_item_1:9710>);
-recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10710>]);
-
-//Awakened Draconium
-fluidextractor.recipeBuilder().inputs(<draconicevolution:nugget:1>).fluidOutputs([<liquid:awakeneddraconium> * 16]).duration(200).EUt(30).buildAndRegister();
-fluidextractor.recipeBuilder().inputs(<draconicevolution:draconic_ingot>).fluidOutputs([<liquid:awakeneddraconium> * 144]).duration(200).EUt(30).buildAndRegister();
-fluidextractor.recipeBuilder().inputs(<draconicevolution:draconic_block>).fluidOutputs([<liquid:awakeneddraconium> * 1296]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 144).notConsumable(<gregtech:meta_item_1:32309>).outputs([<draconicevolution:nugget:1> * 9]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<draconicevolution:draconic_ingot>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<draconicevolution:draconic_block>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 144).notConsumable(<gregtech:meta_item_1:32301>).outputs([<moreplates:awakened_draconium_plate>]).duration(200).EUt(30).buildAndRegister();
 
 //Neutronium
 <ore:ingotNeutronium>.add(<avaritia:resource:4>);

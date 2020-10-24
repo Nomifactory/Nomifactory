@@ -64,3 +64,24 @@ mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 8, item: "gregte
 
 //Adding a tooltop to the GTCE facade
 <gregtech:meta_item_2:32509>.withTag({Facade: {id: "minecraft:stone", Count: 1 as byte, Damage: 0 as short}}).addTooltip(format.darkAqua("GTCE Cable facades can be made from most non-tile-entites, and craft into different amounts based on the metal used."));
+
+
+// Remove Jackhammer Crafting Recipes
+recipes.removeShaped(<gregtech:meta_tool:32>, [ 
+                    [<gregtech:meta_item_1:17072>, <*>, <*>],
+                    [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:21072> ,<gregtech:meta_item_1:13072>],
+                    [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32537>]]);
+
+recipes.removeShaped(<gregtech:meta_tool:32>, [ 
+                    [<gregtech:meta_item_1:17072>, <*>, <*>],
+                    [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:21072> ,<gregtech:meta_item_1:13072>],
+                    [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32538>]]);
+
+recipes.removeShaped(<gregtech:meta_tool:32>, [ 
+                    [<gregtech:meta_item_1:17072>, <*>, <*>],
+                    [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:21072> ,<gregtech:meta_item_1:13072>],
+                    [<gregtech:meta_item_1:32642>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32539>]]);
+
+recipes.removeShaped(<gregtech:meta_tool:32>, [
+                    [<ore:gtceWrenches>, <*>, <ore:gtceScrewdrivers>],
+                    [null, <gregtech:meta_item_2:32576>, null]]);
