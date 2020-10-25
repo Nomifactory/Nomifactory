@@ -26701,7 +26701,7 @@
             "2:10": {
               "Count:3": 26,
               "Damage:2": 3,
-              "OreDict:8": "",
+              "OreDict:8": "questbookSpace",
               "id:8": "chisel:diamond"
             },
             "3:10": {
@@ -26992,7 +26992,7 @@
             "1:10": {
               "Count:3": 248,
               "Damage:2": 3,
-              "OreDict:8": "",
+              "OreDict:8": "questbookSpace",
               "id:8": "chisel:diamond"
             },
             "2:10": {
