@@ -66,6 +66,15 @@ mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 8, item: "gregte
 <gregtech:meta_item_2:32509>.withTag({Facade: {id: "minecraft:stone", Count: 1 as byte, Damage: 0 as short}}).addTooltip(format.darkAqua("GTCE Cable facades can be made from most non-tile-entites, and craft into different amounts based on the metal used."));
 
 
+/* Hide filled ceramics clay buckets from JEI */
+for liquid in game.liquids {
+    mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: liquid.name, Amount: 1000}}));
+}
+
+//Hide the two special case buckets
+mods.jei.JEI.hide(<ceramics:clay_bucket:1>);
+mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: "betterquesting.placeholder", Amount: 1000}}));
+
 // Remove Jackhammer Crafting Recipes
 recipes.removeShaped(<gregtech:meta_tool:32>, [ 
                     [<gregtech:meta_item_1:17072>, <*>, <*>],
