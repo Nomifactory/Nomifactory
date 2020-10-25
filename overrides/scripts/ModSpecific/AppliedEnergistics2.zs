@@ -28,11 +28,11 @@ if (<appliedenergistics2:controller> as bool) {
 	recipes.removeByRecipeName("appliedenergistics2:network/blocks/controller");
 	makeShaped("me_controller", <appliedenergistics2:controller>,
 		["PFP",
-		"FAF",
-		"PFP"],
+		 "FAF",
+		 "PFP"],
 		{ F : <ore:crystalPureFluix>,
-		P : <ore:plateDarkSteel>,
-		A : <appliedenergistics2:energy_acceptor>});
+		  P : <ore:plateDarkSteel>,
+		  A : <appliedenergistics2:energy_acceptor>});
 
 	// Dense Conduit
 	assembler.recipeBuilder()
