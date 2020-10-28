@@ -44,7 +44,7 @@ function orElse(tag as IData, other as IData) as IData {
 
 function makeFramedState(state as IBlockState) as IBlockState {
     val id as string = state.block.definition.id;
-    if id == "storagedrawers:trim" || id == "storagedrawers:controllerslave" {
+    if id == "storagedrawers:trim" {
         return <block:storagedrawers:customtrim>.block.definition.defaultState;
     }
     return (id == "storagedrawers:basicdrawers" ? <block:storagedrawers:customdrawers> :
