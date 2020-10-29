@@ -351,3 +351,8 @@ reactor.recipeBuilder()
     .buildAndRegister();
 // end Fix for #357
 
+fluid_canner.recipeBuilder()
+	.inputs(<minecraft:glass_bottle>)
+	.fluidInputs(<liquid:xpjuice> * 500)
+	.outputs(<minecraft:experience_bottle>)
+	.duration(1500).EUt(4).buildAndRegister();
