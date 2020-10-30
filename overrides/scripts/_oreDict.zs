@@ -405,7 +405,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#dustSulur
 	<ore:dustSulfur>: [
 		<thermalfoundation:material:771>,
-		<nuclearcraft:gem_dust:3>
+		<nuclearcraft:gem_dust:6>
 	],
 
 	#dustTin
