@@ -1075,3 +1075,7 @@ recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.lv");
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.mv");
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.hv");
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.ev");
+
+
+//Add back quartz block decompression recipe
+recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
