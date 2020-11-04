@@ -1079,3 +1079,31 @@ recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.ev");
 
 //Add back quartz block decompression recipe
 recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
+
+//Fix glowstone block recipe conflict in cutting saw
+saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:water> * 73]).remove();
+saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:distilled_water> * 55]).remove();
+saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:lubricant> * 18]).remove();
+
+saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:water> * 73]).remove();
+saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:distilled_water> * 55]).remove();
+saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:lubricant> * 18]).remove();
+
+	
+saw.recipeBuilder()
+	.inputs(<minecraft:glowstone>)
+	.fluidInputs(<liquid:water> * 5)
+	.outputs(<gregtech:meta_item_1:12330> * 4)
+	.duration(200).EUt(16).buildAndRegister();
+
+saw.recipeBuilder()
+	.inputs(<minecraft:glowstone>)
+	.fluidInputs(<liquid:distilled_water> * 3)
+	.outputs(<gregtech:meta_item_1:12330> * 4)
+	.duration(130).EUt(16).buildAndRegister();
+
+saw.recipeBuilder()
+	.inputs(<minecraft:glowstone>)
+	.fluidInputs(<liquid:lubricant> * 1)
+	.outputs(<gregtech:meta_item_1:12330> * 4)
+	.duration(50).EUt(16).buildAndRegister();
