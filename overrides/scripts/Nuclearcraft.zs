@@ -113,7 +113,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:compound:1>), // Crystal Binder
     Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
     Removal(<nuclearcraft:compound:4>), // Potassium Fluoride
-    Removal(<nuclearcraft:compound:5>), // Sodium Hydroxide
     Removal(<nuclearcraft:compound:6>), // Potassium Hydroxide
     Removal(<nuclearcraft:compound:7>), // Borax
     Removal(<nuclearcraft:compound:8>), // Dimensional Blend
