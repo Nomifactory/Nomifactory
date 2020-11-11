@@ -1107,3 +1107,13 @@ saw.recipeBuilder()
 	.fluidInputs(<liquid:lubricant> * 1)
 	.outputs(<gregtech:meta_item_1:12330> * 4)
 	.duration(50).EUt(16).buildAndRegister();
+
+//Re-adding the old GTCE granite recipe, as it is being relied on.
+//Due to GTCE's weird recipe removal for items that share an oredict, only one of the items need to be removed
+macerator.findRecipe(8, [<minecraft:stone:1>], [null]).remove();
+
+macerator.recipeBuilder()
+	.inputs(<ore:stoneGranite>)
+	.outputs(<gregtech:meta_item_1:2251>)
+	.chancedOutput(<gregtech:meta_item_1:2069>, 100, 100)
+	.duration(150).EUt(8).buildAndRegister();
