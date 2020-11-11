@@ -1076,10 +1076,6 @@ recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.mv");
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.hv");
 recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.ev");
 
-
-//Add back quartz block decompression recipe
-recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
-
 //Fix glowstone block recipe conflict in cutting saw
 saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:water> * 73]).remove();
 saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:distilled_water> * 55]).remove();
