@@ -111,13 +111,6 @@ blast_furnace.recipeBuilder()
     .property("temperature", 9600)
     .duration(40).EUt(500000).buildAndRegister();
 
-//Neutron Reflector
-assembler.findRecipe(120,
-    [<gregtech:meta_item_1:12007> * 30,
-     <gregtech:meta_item_1:12300> * 3,
-     <gregtech:meta_item_2:32435>],
-    [<liquid:tin_alloy> * 13824]).remove();
-
 //Superconductor Wires
 assembler.findRecipe(512,
     [<gregtech:cable:200> * 3,
@@ -449,6 +442,3 @@ reactor.recipeBuilder()
   .duration(600).EUt(1920).buildAndRegister();
 
 reactor.findRecipe(1920, [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
-
-//Remove Duplicate Lead-Zinc Solution recipe
-centrifuge.findRecipe(30, [null], [<liquid:lead_zinc_solution> * 7000]).remove();

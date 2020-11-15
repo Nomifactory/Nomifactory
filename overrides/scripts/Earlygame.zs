@@ -324,7 +324,6 @@ electrolyzer.recipeBuilder()
     .duration(720).EUt(30).buildAndRegister();
 
 reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
-reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
 
 
 reactor.findRecipe(384, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000]).remove();
@@ -1068,13 +1067,6 @@ electrolyzer.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:2012> * 6, <gregtech:meta_item_1:2065>)
 	.fluidOutputs(<liquid:hydrogen> * 4000)
 	.duration(288).EUt(128).buildAndRegister();
-
-recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.autoclave.iv");
-recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.laser_engraver.iv");
-recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.lv");
-recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.mv");
-recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.hv");
-recipes.removeByRecipeName("gtadditions:ga_gregtech.machine.polarizer.ev");
 
 //Fix glowstone block recipe conflict in cutting saw
 saw.findRecipe(30, [<minecraft:glowstone>], [<liquid:water> * 73]).remove();

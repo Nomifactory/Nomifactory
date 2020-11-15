@@ -936,18 +936,7 @@ recipes.addShaped(<gregtech:machine:500>, [
 	
 //Pyrolyse Oven
 
-//Remove SoG duplicated Recipes
-
-pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [null]).remove();	
-pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 400]).remove();	
-pyro.findRecipe(192, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [null]).remove();	
-pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 3})], [null]).remove();	
-pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 4})], [<liquid:nitrogen> * 400]).remove();	
-pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 5})], [null]).remove();	
-pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 6})], [<liquid:nitrogen> * 400]).remove();	
-pyro.findRecipe(64, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 7})], [null]).remove();	
-pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], [<liquid:nitrogen> * 400]).remove();	
-pyro.findRecipe(96, [<minecraft:log> * 16, <gregtech:meta_item_1:32766>.withTag({Configuration: 9})], [<liquid:nitrogen> * 400]).remove();
+//Remove SoG Recipes
 pyro.findRecipe(96, [<minecraft:sugar> * 23, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], [<liquid:nitrogen> * 400]).remove();	
 pyro.findRecipe(64, [<minecraft:sugar> * 23, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [null]).remove();
 

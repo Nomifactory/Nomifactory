@@ -15,7 +15,6 @@ recipes.addShaped(<enderio:block_attractor_obelisk>, [[null, <ore:itemAttractorC
 
 //Tower Processing
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
-tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
 tower.recipeBuilder().fluidInputs([<liquid:biomass> * 1000]).fluidOutputs([<liquid:bio.ethanol> * 700, <liquid:water> * 300]).duration(120).EUt(120).buildAndRegister();
 
 distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
