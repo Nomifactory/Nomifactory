@@ -442,3 +442,5 @@ reactor.recipeBuilder()
   .duration(600).EUt(1920).buildAndRegister();
 
 reactor.findRecipe(1920, [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
+
+fusion_reactor.findRecipe(32768, [null], [<liquid:lithium> * 16, <liquid:tungsten> * 16]).remove();
