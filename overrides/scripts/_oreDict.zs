@@ -2123,6 +2123,7 @@ recipes.addShapeless(<ore:dustWood>.firstItem, [<thermalfoundation:material:800>
 recipes.addShapeless(<minecraft:nether_star> * 9, [<extendedcrafting:storage:2>]);
 solidifier.recipeBuilder().fluidInputs(<liquid:moltennetherstar> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<extendedcrafting:storage:2>]).duration(200).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<minecraft:nether_star>).fluidOutputs([<liquid:moltennetherstar> * 144]).duration(40).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<extendedcrafting:storage:2>).fluidOutputs([<liquid:moltennetherstar> * 1296]).duration(360).EUt(30).buildAndRegister();
 
 //Molten Empowered Restonia
 solidifier.recipeBuilder().fluidInputs(<liquid:moltenempoweredrestonia> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<actuallyadditions:block_crystal_empowered>]).duration(400).EUt(30).buildAndRegister();
