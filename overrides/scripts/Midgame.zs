@@ -365,3 +365,10 @@ reactor.recipeBuilder()
 	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_heavy_fuel> * 8000])
 	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:heavy_fuel> * 8000])
 	.duration(160).EUt(30).buildAndRegister();
+
+fluid_canner.recipeBuilder()
+	.inputs(<minecraft:glass_bottle>)
+	.fluidInputs(<liquid:xpjuice> * 500)
+	.outputs(<minecraft:experience_bottle>)
+	.duration(1500).EUt(4).buildAndRegister();
+

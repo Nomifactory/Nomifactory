@@ -6348,7 +6348,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Farmer§r can be used to automate the planting and gathering crops, including §6Potatoes§r, §6Canola§r, §6Carrots§r, and §6Beetroot§r.\n\nDoesn\u0027t do trees, though.",
+          "desc:8": "The §3Farmer§r can be used to automate the planting and gathering of crops, including §6Potatoes§r, §6Canola§r, §6Carrots§r, and §6Beetroot§r.\n\nDoesn\u0027t do trees, though.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -11910,7 +11910,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A simple combination of §9Nitrogen§r and §9Oxygen§r, the two most common elements in the air, yet this substance is very toxic. Chemistry is wierd.",
+          "desc:8": "A simple combination of §9Nitrogen§r and §9Oxygen§r, the two most common elements in the air, yet this substance is very toxic. Chemistry is weird.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26701,7 +26701,7 @@
             "2:10": {
               "Count:3": 26,
               "Damage:2": 3,
-              "OreDict:8": "",
+              "OreDict:8": "questbookSpace",
               "id:8": "chisel:diamond"
             },
             "3:10": {
@@ -26992,7 +26992,7 @@
             "1:10": {
               "Count:3": 248,
               "Damage:2": 3,
-              "OreDict:8": "",
+              "OreDict:8": "questbookSpace",
               "id:8": "chisel:diamond"
             },
             "2:10": {
@@ -46434,7 +46434,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
+          "ignoreNBT:1": 0,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {

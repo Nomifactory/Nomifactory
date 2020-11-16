@@ -113,7 +113,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:compound:1>), // Crystal Binder
     Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
     Removal(<nuclearcraft:compound:4>), // Potassium Fluoride
-    Removal(<nuclearcraft:compound:5>), // Sodium Hydroxide
     Removal(<nuclearcraft:compound:6>), // Potassium Hydroxide
     Removal(<nuclearcraft:compound:7>), // Borax
     Removal(<nuclearcraft:compound:8>), // Dimensional Blend
@@ -143,7 +142,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:gem:6>),
     Removal(<nuclearcraft:gem_dust:4>), // Hexagonal Boron Nitride
     Removal(<nuclearcraft:gem_dust:5>), // Crushed Fluorite
-    Removal(<nuclearcraft:gem_dust:6>), // Sulfur
     Removal(<nuclearcraft:gem_dust:8>), // Crushed Villiaumite
     Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
     Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic

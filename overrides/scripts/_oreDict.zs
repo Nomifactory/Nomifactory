@@ -395,6 +395,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustSilicon>: [
 		<libvulpes:productdust:3>
 	],
+	
+	#dustSodiumHydroxide
+	<ore:dustSodiumHydroxide>: [
+		<nuclearcraft:compound:5>
+	],
 
 	#dustSteel
 	<ore:dustSteel> : [
@@ -405,7 +410,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#dustSulur
 	<ore:dustSulfur>: [
 		<thermalfoundation:material:771>,
-		<nuclearcraft:gem_dust:3>
+		<nuclearcraft:gem_dust:6>
 	],
 
 	#dustTin
