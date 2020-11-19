@@ -17,6 +17,15 @@ val sideIngredient = (<xtones:zane> | framingMaterial).marked("MatS");
 val trimIngredient = (<extendedcrafting:storage:4> | framingMaterial).marked("MatT");
 val frontIngredient = (<xtones:zane:15> | framingMaterial).marked("MatF");
 
+<ore:handFramedThree>.add(<storagedrawers:customdrawers:*>,
+                          <framedcompactdrawers:framed_drawer_controller>,
+                          <framedcompactdrawers:framed_compact_drawer>,
+                          <framedcompactdrawers:framed_slave>,
+                          <contenttweaker:hand_framing_tool>);
+
+<ore:handFramed>.addAll(<ore:handFramedThree>);
+<ore:handFramed>.add(<storagedrawers:customtrim>);
+
 function addInfo(stack as IItemStack) as IItemStack {
     return stack.withDisplayName("Frame your drawers by hand!")
         .withLore([
@@ -34,29 +43,52 @@ function asData(stack as IItemStack) as IData {
     } as IData;
 }
 
-<ore:handFramedThree>.add(<storagedrawers:customdrawers:*>,
-                          <framedcompactdrawers:framed_drawer_controller>,
-                          <framedcompactdrawers:framed_compact_drawer>,
-                          <framedcompactdrawers:framed_slave>,
-                          <contenttweaker:hand_framing_tool>);
-
-<ore:handFramed>.addAll(<ore:handFramedThree>);
-<ore:handFramed>.add(<storagedrawers:customtrim>);
+static matKeys as string[] = [
+    "MatS",
+    "MatF",
+    "MatT",
+] as string[];
 
 function getRecipeOutput(out as IItemStack,
                          ins as IItemStack[string],
                          cInfo as ICraftingInfo) as IItemStack
 {
-    var tag = {} as IData[string];
-    for key, stack in ins {
-        if(key != "drawer") {
-            tag[key] = asData(stack);
+    val fromTag as IData[string] =
+        isNull(ins.drawer.tag) ?
+        {} as IData[string] :
+        ins.drawer.tag.asMap();
+
+    val tag = {} as IData[string];
+    for key, value in fromTag {
+        if !(matKeys has key) {
+            // it's not enough to just transfer the data as-is:
+            // taped drawers preserve the block's framing rather
+            // than taking on the new frame, so replace that too.
+            if (key == "tile") {
+                val tileTag = {} as IData[string];
+                for tileKey, tileVal in value.asMap() {
+                    if !(matKeys has tileKey) {
+                        tileTag[tileKey] = tileVal;
+                    }
+                }
+                for matKey in matKeys {
+                    if (ins has matKey) {
+                        tileTag[matKey] = asData(ins[matKey]);
+                    }
+                }
+                val tileData as any[any] = tileTag;
+                tag[key] = tileData as IData;
+            } else {
+                tag[key] = value;
+            }
         }
     }
-    if (!isNull(ins.drawer.tag) &&
-        ins.drawer.tag has "sticks") {
-        tag["sticks"] = ins.drawer.tag.sticks;
+    for key in matKeys {
+        if (ins has key) {
+            tag[key] = asData(ins[key]);
+        }
     }
+
     val ret as any[any] = tag;
     return ins.drawer.withTag(ret as IData) * 1;
 }
@@ -98,10 +130,18 @@ for front in [true, false] as bool[] {
     }
 }
 
+function getNested(inTag as IData, keys as string[], alt as IData) as IData {
+    var tag = inTag;
+    for key in keys {
+        if isNull(tag) return alt;
+        tag = tag.memberGet(key);
+    }
+    return isNull(tag) ? alt : tag;
+}
+
 val sticksIngredient = <ore:stickWood>.transformConsume(64);
 val sticksRecipeFunction = function(out, ins, cinfo) {
-    val sticksTag = ins.hft.tag.sticks;
-    var sticks as int = (isNull(sticksTag) ? 0 : sticksTag as int);
+    var sticks as int = getNested(ins.hft.tag, ["sticks"], 0) as int;
     for k, v in ins {
         if k != "hft" {
             sticks += v.amount;
@@ -122,15 +162,6 @@ for stickStacks in 1 .. 9 {
         ingredients,
         sticksRecipeFunction
     );
-}
-
-function getNested(inTag as IData, keys as string[], alt as IData) as IData {
-    var tag = inTag;
-    for key in keys {
-        if isNull(tag) return alt;
-        tag = tag.memberGet(key);
-    }
-    return isNull(tag) ? alt : tag;
 }
 
 <contenttweaker:hand_framing_tool>.addAdvancedTooltip(

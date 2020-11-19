@@ -62,12 +62,12 @@ function overrideData(data as IData) as IData {
     if !isNull(data as IData[string]) {
         val dataMap = data as IData[string];
         val built as IData[string] = {};
-	// because for some reason strings as maps convert to
+        // because for some reason strings as maps convert to
         // a singleton map mapping themselves to themselves.
-	val dataString = data as string;
-	if (dataMap has dataString && dataMap[dataString] as string == dataString) {
-	    return 0 as IData;
-	}
+        val dataString = data as string;
+        if (dataMap has dataString && dataMap[dataString] as string == dataString) {
+            return 0 as IData;
+        }
         for k, v in dataMap {
             built[k] = overrideData(v);
         }
