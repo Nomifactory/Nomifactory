@@ -442,3 +442,27 @@ mods.enderio.SoulBinder.addRecipe(<enderio:item_material:78>, <darkutils:filter:
 //Player Token
 mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:80>);
 mods.enderio.SoulBinder.addRecipe(<enderio:item_material:80>, <darkutils:filter>, combined, 25000, 1);
+
+//Fixing Multismelter output of the dusts of the GTCE variants of Ender IO ingots
+val materialList as IItemStack[][] = [
+    
+    [<gregtech:meta_item_1:2705>, <enderio:item_alloy_ingot>],
+    [<gregtech:meta_item_1:2701>, <enderio:item_alloy_ingot:1>],
+    [<gregtech:meta_item_1:2702>, <enderio:item_alloy_ingot:2>],
+    [<gregtech:meta_item_1:2704>, <enderio:item_alloy_ingot:6>],
+    [<gregtech:meta_item_1:2712>, <enderio:item_alloy_ingot:8>],
+    [<gregtech:meta_item_1:2703>, <enderio:item_alloy_ingot:5>],
+    [<gregtech:meta_item_1:2700>, <enderio:item_alloy_ingot:4>]
+
+
+] as IItemStack[][];
+
+
+for dust in materialList {
+
+    GTfurnace.recipeBuilder()
+    .inputs(dust[0])
+    .outputs(dust[1])
+    .duration(128).EUt(4).buildAndRegister();
+
+}

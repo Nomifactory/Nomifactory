@@ -41,6 +41,8 @@ global fluidextractor    as RecipeMap = RecipeMap.getByName("fluid_extractor");
 global forming           as RecipeMap = RecipeMap.getByName("forming_press");
 global freezer           as RecipeMap = RecipeMap.getByName("vacuum_freezer");
 global fusion_reactor    as RecipeMap = RecipeMap.getByName("fusion_reactor");
+//Recipe Map for Gregtech Furnace recipes, different from vanilla furnace map
+global GTfurnace         as RecipeMap = RecipeMap.getByName("furnace");
 global hammer            as RecipeMap = RecipeMap.getByName("forge_hammer");
 global implosion         as RecipeMap = RecipeMap.getByName("implosion_compressor");
 global lathe             as RecipeMap = RecipeMap.getByName("lathe");
