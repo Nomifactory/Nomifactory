@@ -687,3 +687,27 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:water> * 16000, <liquid:soldering_alloy> * 2880)
     .outputs(<gtadditions:ga_meta_item:32124>)
     .duration(2000).EUt(300000).buildAndRegister();
+
+//Wetware Mainframe
+assembly_line.recipeBuilder()
+	.inputs(<gregtech:meta_item_2:32456> * 4,
+			<gregtech:frame_tritanium> * 4,
+			<gregtech:meta_item_2:32457> * 16,
+			<gregtech:meta_item_2:32458> * 24,
+			<gregtech:meta_item_2:32485> * 16,
+			<gregtech:meta_item_2:32500> * 8,
+			<gregtech:cable:354> * 32,
+			<gregtech:meta_item_2:32460> * 32,
+			<gregtech:meta_item_1:19391> * 64,
+			<gregtech:meta_item_2:32459> * 64)
+	.fluidInputs(<liquid:water> * 10000, <liquid:soldering_alloy> * 2880)
+	.outputs(<gregtech:meta_item_2:32501>)
+	.duration(2000).EUt(300000).buildAndRegister();
+
+assembly_line.findRecipe(300000,
+	[<gregtech:meta_item_2:32456> * 4, <gregtech:frame_tritanium> * 4,
+	 <gregtech:meta_item_2:32458> * 32, <gregtech:meta_item_2:32485> * 16,
+	 <gregtech:meta_item_2:32500> * 8, <gregtech:cable:1354> * 16,
+	 <gregtech:meta_item_2:32460> * 32, <gregtech:meta_item_1:19391> * 64,
+	 <gregtech:meta_item_2:32459> * 32, <gregtech:meta_item_2:32457> * 32],
+	 [<liquid:water> * 10000, <liquid:soldering_alloy> * 2880]).remove();
