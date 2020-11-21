@@ -828,10 +828,41 @@ recipes.addShaped(<gregtech:machine:501>, [
 	[<ore:cableGtSingleTin>, <gregtech:machine_casing:1>, <ore:cableGtSingleTin>]]);	
 assembler.findRecipe(16, [<gregtech:cable:5071> * 2, <gregtech:machine_casing:1>], [<liquid:plastic> * 288]).remove();	
 
+//LV Motor - with Fine Copper Wires
 recipes.addShaped(<gregtech:meta_item_1:32600>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_2:16018>, <ore:stickIron>], 
 	[<gregtech:meta_item_2:16018>, <ore:stickIronMagnetic>, <gregtech:meta_item_2:16018>],
 	[<ore:stickIron>, <gregtech:meta_item_2:16018>, <ore:cableGtSingleTin>]]);
+
+//LV Motor - Assembler (iron parts)
+assembler.findRecipe(10,
+    [<ore:cableGtSingleTin>.firstItem * 2,
+     <ore:stickIron>.firstItem * 2,
+     <ore:stickIronMagnetic>.firstItem],
+    [<liquid:copper> * 288]).remove();
+
+assembler.recipeBuilder()
+    .outputs(<gregtech:meta_item_1:32600>)
+    .inputs(<ore:cableGtSingleTin> * 2,
+            <ore:stickIron> * 2,
+            <ore:stickIronMagnetic>)
+    .fluidInputs(<liquid:copper> * 144)
+    .duration(600).EUt(10).buildAndRegister();
+
+//LV Motor - Assembler (steel parts)
+assembler.findRecipe(10,
+    [<ore:cableGtSingleTin>.firstItem * 2,
+     <ore:stickSteel>.firstItem * 2,
+     <ore:stickSteelMagnetic>.firstItem],
+    [<liquid:copper> * 288]).remove();
+
+assembler.recipeBuilder()
+    .outputs(<gregtech:meta_item_1:32600>)
+    .inputs(<ore:cableGtSingleTin> * 2,
+            <ore:stickSteel> * 2,
+            <ore:stickSteelMagnetic>)
+    .fluidInputs(<liquid:copper> * 144)
+    .duration(600).EUt(10).buildAndRegister();
 
 //Diode
 recipes.remove(<metaitem:component.diode>);
