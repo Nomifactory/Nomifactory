@@ -158,7 +158,7 @@ for stickStacks in 1 .. 9 {
     }
     recipes.addShapeless(
         "hand_framing_tool_sticks_" + stickStacks,
-        <contenttweaker:hand_framing_tool>,
+        <contenttweaker:hand_framing_tool>.withTag({sticks: stickStacks}),
         ingredients,
         sticksRecipeFunction
     );
