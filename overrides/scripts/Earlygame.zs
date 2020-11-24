@@ -883,3 +883,9 @@ assembler.recipeBuilder()
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 6}))
 	.outputs(<minecraft:iron_trapdoor>)
 	.duration(200).EUt(16).buildAndRegister();
+
+assembler.findRecipe(96, [<gregtech:fluid_pipe:1235>, <gregtech:meta_item_1:32613>], [null]).remove();
+
+assembler.findRecipe(148, [<gregtech:meta_item_1:32614>, <gregtech:fluid_pipe:2235>], [null]).remove();
+
+assembler.findRecipe(256, [<gregtech:meta_item_1:32614> * 2, <gregtech:fluid_pipe:3235>], [null]).remove();
