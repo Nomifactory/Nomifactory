@@ -5,6 +5,7 @@ import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.ICraftingInfo;
 import crafttweaker.data.IData;
 import crafttweaker.formatting.IFormattedText;
+import mods.jei.JEI;
 
 val framingMaterial as IIngredient = <*>.only(function(stack as IItemStack) as bool {
     if(!stack.isItemBlock) {
@@ -192,4 +193,14 @@ recipes.addShaped(
     [[null, null, <storagedrawers:framingtable>],
      [null, <ore:stickWood>, null],
      [<ore:stickWood>, null, null]]
+);
+
+JEI.addDescription(
+    <contenttweaker:hand_framing_tool>,
+    "item.contenttweaker.hand_framing_tool.desc1",
+    "item.contenttweaker.hand_framing_tool.desc2",
+    "item.contenttweaker.hand_framing_tool.desc3",
+    "item.contenttweaker.hand_framing_tool.desc4",
+    "item.contenttweaker.hand_framing_tool.desc5",
+    "item.contenttweaker.hand_framing_tool.desc6"
 );
