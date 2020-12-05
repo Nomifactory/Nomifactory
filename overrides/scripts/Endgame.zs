@@ -444,3 +444,12 @@ reactor.recipeBuilder()
 reactor.findRecipe(1920, [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
 
 fusion_reactor.findRecipe(32768, [null], [<liquid:lithium> * 16, <liquid:tungsten> * 16]).remove();
+
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtdouble_splitting");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtquadruple_splitting");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtoctal_splitting");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gthex_splitting");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtoctal_doubling");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtquadruple_doubling");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtdouble_doubling");
+recipes.removeByRecipeName("gtadditions:superonducter_wire_gtsingle_doubling");
