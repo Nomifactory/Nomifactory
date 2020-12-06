@@ -17,22 +17,12 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_restonia_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <gregtech:meta_item_1:8085>, <gregtech:meta_item_1:10237>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "sulfuric_acid", Amount: 1000}}), <extendedcrafting:material:19>, 1000000, 400);
 
-//Empowered Restonia Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_restonia_gear>, <moreplates:restonia_gear>, <gregtech:compressed_4:1>, <gregtech:compressed_10:15>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "tritium", Amount: 1000}}), <extendedcrafting:material:13>, 1000000, 400);
-
-
-
 
 //Empowered Palis 
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:1>);
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:1>);
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_palis_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal:1>, <gregtech:meta_item_1:8157>, <thermalfoundation:material:136>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <extendedcrafting:material:16>, 1000000, 400);
-
-//Empowered Palis Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_palis_gear>, <moreplates:palis_gear>, <gregtech:compressed_7:11>, <thermalfoundation:storage:8>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "osmiridium", Amount: 1000}}), <extendedcrafting:material:10>, 1000000, 400);
-
-
 
 
 //Empowered Enori
@@ -41,11 +31,6 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_enori_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <gregtech:meta_item_1:8226>, <enderio:item_alloy_ingot:8>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "helium", Amount: 1000}}), <extendedcrafting:material:14>, 1000000, 400);
 
-//Empowered Enori Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_enori_gear>, <moreplates:enori_gear>, <gregtech:compressed_10:5>, <enderio:block_alloy:8>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "helium3", Amount: 1000}}), <extendedcrafting:material:8>, 1000000, 400);
-
-
-
 
 //Empowered Void Crystal
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
@@ -53,21 +38,12 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_void_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <actuallyadditions:item_misc:5>, <enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "carbon", Amount: 1000}}), <extendedcrafting:material:15>, 1000000, 400);
 
-//Empowered Void Crystal Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_void_gear>, <moreplates:void_gear>, <actuallyadditions:block_misc:2>, <enderio:block_alloy:6>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "naquadria", Amount: 1000}}), <extendedcrafting:material:9>, 1000000, 400);
-
-
-
 
 //Empowered Diamatine
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:2>);
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:2>);
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_diamatine_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <extendedcrafting:material:40>, <extendedcrafting:material:24>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "nitrogen_dioxide", Amount: 1000}}), <extendedcrafting:material:18>, 1000000, 400);
-
-//Empowered Diamatine Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_diamatine_gear>, <moreplates:diamatine_gear>, <extendedcrafting:storage:6>, <extendedcrafting:storage:3>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "noble_gases", Amount: 1000}}), <extendedcrafting:material:12>, 1000000, 400);
-
 
 
 
@@ -77,8 +53,6 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_emeradic_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <contenttweaker:stabilizeduranium>, <enderio:item_alloy_ingot:2>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "argon", Amount: 1000}}), <extendedcrafting:material:17>, 1000000, 400);
 
-//Empowered Emerald Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_emeradic_gear>, <moreplates:emeradic_gear>, <gregtech:compressed_3:12>, <enderio:block_alloy:2>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "krypton", Amount: 1000}}), <extendedcrafting:material:11>, 1000000, 400);
 	
 //Snad	
 recipes.remove(<snad:snad>);
