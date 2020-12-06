@@ -62,6 +62,10 @@ if(!isNull(ae2)) {
 //Hiding the GTCE omnium block facade version
 mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 8, item: "gregtech:compressed_17"}));
 
+//Adding a tooltop to the GTCE facade
+<gregtech:meta_item_2:32509>.withTag({Facade: {id: "minecraft:stone", Count: 1 as byte, Damage: 0 as short}}).addTooltip(format.darkAqua("GTCE Cable facades can be made from most non-tile-entites, and craft into different amounts based on the metal used."));
+
+
 /* Hide filled ceramics clay buckets from JEI */
 for liquid in game.liquids {
     mods.jei.JEI.hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: liquid.name, Amount: 1000}}));

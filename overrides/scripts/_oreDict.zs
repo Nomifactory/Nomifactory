@@ -1160,7 +1160,6 @@ for oreDictEntry, items in miscDisabled {
 //Add moreplates neutronium plate to gtce neutronium ore dict
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
 
-
 <ore:gemDilithium>.remove(<libvulpes:productgem>);
 <ore:crystalDilithium>.add(<libvulpes:productgem>);
 
@@ -1199,6 +1198,7 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:gtceWireCutters>.addItems([
 	<gregtech:meta_tool:13>.withEmptyTag()]);
+
 
 ////////////////////////////////
 //			Removals          //
@@ -1713,12 +1713,6 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:510>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:525>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:527>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:526>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:811>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:812>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:813>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:814>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:815>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:816>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:1001>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10650>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10651>);
@@ -1850,10 +1844,23 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32480>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32466>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32482>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_armor>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32578>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32579>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:826>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:9354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:8354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:7354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:6354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:5354>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32134>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32133>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32132>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32131>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32018>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32576>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:21072>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_tool:32>.withTag({"GT.ToolStats": {Material: "darmstadtium"}}));
-
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);

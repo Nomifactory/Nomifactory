@@ -101,11 +101,6 @@ solidifier.recipeBuilder()
 // decomposition for crystal matrix block
 recipes.addShapeless("of_crystal_matrix_decomp", <avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
 
-/*
-    Anti-Footgun: remove recipe for max energy hatch
- */
-recipes.removeByRecipeName("gregtech:energy_input_hatch_max");
-
 
 /*
     Airtight Seal books for the low price of 900 omnicoins!

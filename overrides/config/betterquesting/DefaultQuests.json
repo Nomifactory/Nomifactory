@@ -1005,7 +1005,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.",
+          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.\n\nFor slightly more materials, the §3Crafting Station§f from §bGregTech CE§r is another viable choice. In addition to performing all the functions the §3Worktable§f does, it has dedicated slots for tool storage and an inventory view to easily see all the items in the crafting storage.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1698,7 +1698,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you\u0027re most likely to have access to at this point are:\n\n1) A Diamond Pickaxe or Diamond Mining Hammer.\n\n2) A Platinum Mining Hammer (not pickaxe though).\n\n3) A Cobalt Pickaxe (smelted from Cobaltite).",
+          "desc:8": "You\u0027ll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you\u0027re most likely to have access to at this point are:\n\n1) A Diamond Pickaxe or Diamond Mining Hammer.\n\n2) A Platinum Mining Hammer (not pickaxe though).",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
