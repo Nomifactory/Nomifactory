@@ -466,3 +466,7 @@ for dust in materialList {
     .duration(128).EUt(4).buildAndRegister();
 
 }
+
+recipes.addShapeless(<enderio:block_cap_bank:1>, [<enderio:block_cap_bank:1>]);
+recipes.addShapeless(<enderio:block_cap_bank:2>, [<enderio:block_cap_bank:2>]);
+recipes.addShapeless(<enderio:block_cap_bank:3>, [<enderio:block_cap_bank:3>]);
