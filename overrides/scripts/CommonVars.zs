@@ -41,6 +41,8 @@ global fluidextractor    as RecipeMap = RecipeMap.getByName("fluid_extractor");
 global forming           as RecipeMap = RecipeMap.getByName("forming_press");
 global freezer           as RecipeMap = RecipeMap.getByName("vacuum_freezer");
 global fusion_reactor    as RecipeMap = RecipeMap.getByName("fusion_reactor");
+//Recipe Map for Gregtech Furnace recipes, different from vanilla furnace map
+global GTfurnace         as RecipeMap = RecipeMap.getByName("furnace");
 global hammer            as RecipeMap = RecipeMap.getByName("forge_hammer");
 global implosion         as RecipeMap = RecipeMap.getByName("implosion_compressor");
 global lathe             as RecipeMap = RecipeMap.getByName("lathe");
@@ -117,6 +119,8 @@ global armoredreinforcedjetpack as IItemStack  = <simplyjetpacks:itemjetpack:16>
 global armoredresonantjetpack   as IItemStack  = <simplyjetpacks:itemjetpack:17>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 global fluxinfusedjetplate      as IItemStack  = <simplyjetpacks:itemjetpack:18>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 
+
+
 /*
  Converts a text representation of a crafting grid recipe into an array of
  ingredients.
@@ -151,10 +155,12 @@ function textToIngredients(ingredients as IIngredient[][],
 }
 
 /* Same as above, but for standard 3x3 shapeless recipes. */
-function makeShapeless3(name as string,
-                        output as IItemStack,
-                        recipe as string[],
-                        replacements as IIngredient[string]) {
+function makeShapeless3FA(name as string,
+                          output as IItemStack,
+                          recipe as string[],
+                          replacements as IIngredient[string],
+                          recipeFunction as IRecipeFunction,
+                          recipeAction as IRecipeAction) {
 
     var ingredients = [null,null,null,
                        null,null,null,
@@ -169,7 +175,23 @@ function makeShapeless3(name as string,
         }
     }
 
-    recipes.addShapeless(name, output, ingredients);
+    recipes.addShapeless(name, output, ingredients, recipeFunction, recipeAction);
+}
+
+// Support varying arities so RecipeFunction/Action may be optionally used
+function makeShapeless3F(name as string,
+                         output as IItemStack,
+                         recipe as string[],
+                         replacements as IIngredient[string],
+                         recipeFunction as IRecipeFunction) {
+    makeShapeless3FA(name, output, recipe, replacements, recipeFunction, null);
+}
+
+function makeShapeless3(name as string,
+                        output as IItemStack,
+                        recipe as string[],
+                        replacements as IIngredient[string]) {
+    makeShapeless3F(name, output, recipe, replacements, null);
 }
 
 /* 3x3 shapeless compacting recipe. */
@@ -182,10 +204,12 @@ function makeCompacting3(name as string,
          input,input,input] as IIngredient[]);
 }
 
-function makeShaped(name as string,
-                    output as IItemStack,
-                    recipe as string[],
-                    replacements as IIngredient[string]) {
+function makeShapedFA(name as string,
+                      output as IItemStack,
+                      recipe as string[],
+                      replacements as IIngredient[string],
+                      recipeFunction as IRecipeFunction,
+                      recipeAction as IRecipeAction) {
 
     var ingredients =
         [[null,null,null],
@@ -193,7 +217,24 @@ function makeShaped(name as string,
          [null,null,null]] as IIngredient[][];
 
     recipes.addShaped(name, output,
-        textToIngredients(ingredients, output, recipe, replacements));
+        textToIngredients(ingredients, output, recipe, replacements),
+        recipeFunction, recipeAction);
+}
+
+// Support varying arities so RecipeFunction/Action may be optionally used
+function makeShapedF(name as string,
+                     output as IItemStack,
+                     recipe as string[],
+                     replacements as IIngredient[string],
+                     recipeFunction as IRecipeFunction) {
+    makeShapedFA(name, output, recipe, replacements, recipeFunction, null);
+}
+
+function makeShaped(name as string,
+                    output as IItemStack,
+                    recipe as string[],
+                    replacements as IIngredient[string]) {
+    makeShapedF(name, output, recipe, replacements, null);
 }
 
 function makeExtremeRecipe5(output as IItemStack,

@@ -24,3 +24,9 @@ recipemap.oildrillingrig.name=Oil Drilling
 recipemap.naquadahreactormk1.name=Naquadah Decay (Mk1)
 recipemap.naquadahreactormk2.name=Naquadah Decay (Mk2)
 recipemap.lunarminingstation.name=Lunar Mining
+
+gregtech.recipe.chance=Chance: %s%%; doubled each tier
+
+gregtech.multiblock.fusion_reactor_mk1.description=The Fusion Reactor Mark 1 is a large multiblock structure used for fusing elements into heavier ones. The Mark 1 Fusion Reactor can use LuV, ZPM or UV Energy Hatches. For every Hatch it has its buffer increases by 10M EU.
+gregtech.multiblock.fusion_reactor_mk2.description=The Fusion Reactor Mark 2 is a large multiblock structure used for fusing elements into heavier ones. The Mark 2 Fusion Reactor can use ZPM or UV Energy Hatches. For every Hatch it has its buffer increases by 20M EU.
+gregtech.multiblock.fusion_reactor_mk3.description=The Fusion Reactor Mark 3 is a large multiblock structure used for fusing elements into heavier ones. The Mark 3 Fusion Reactor can only use UV Energy Hatches. For every Hatch it has its buffer increases by 40M EU.

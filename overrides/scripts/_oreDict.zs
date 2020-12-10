@@ -69,6 +69,11 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:blockDarkSteel> : [
 		<gregtech:compressed_17:3>
 	],
+  
+	#blockDraconium
+	<ore:blockDraconium> : [
+		<gregtech:compressed_17:9>
+	],
 
 	#blockElectrum
 	<ore:blockElectrum> : [
@@ -268,6 +273,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 		<nuclearcraft:gem_dust>
 	],
 
+	#dustDraconium
+	<ore:dustDraconium> : [
+		<gregtech:meta_item_1:2710>
+	],	
+
 	#dustElectrum
 	<ore:dustElectrum> : [
 		<thermalfoundation:material:97>
@@ -385,6 +395,11 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:dustSilicon>: [
 		<libvulpes:productdust:3>
 	],
+	
+	#dustSodiumHydroxide
+	<ore:dustSodiumHydroxide>: [
+		<nuclearcraft:compound:5>
+	],
 
 	#dustSteel
 	<ore:dustSteel> : [
@@ -395,7 +410,7 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 	#dustSulur
 	<ore:dustSulfur>: [
 		<thermalfoundation:material:771>,
-		<nuclearcraft:gem_dust:3>
+		<nuclearcraft:gem_dust:6>
 	],
 
 	#dustTin
@@ -501,7 +516,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	#ingotDarkSteel
 	<ore:ingotDarkSteel> : [
 		<gregtech:meta_item_1:10704>
-	],	
+	],
+
+	#ingotDraconium
+	<ore:ingotDraconium> : [
+		<gregtech:meta_item_1:10710>
+	],
 
 	#ingotElectricalSteel
 	<ore:ingotElectricalSteel> : [
@@ -714,6 +734,10 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	<ore:nuggetCopper> : [
 		<thermalfoundation:material:192>,
 		<libvulpes:productnugget:4>
+	],
+
+	<ore:nuggetDraconium> : [
+		<gregtech:meta_item_1:9710>
 	],
 
 	<ore:nuggetElectrum> : [
@@ -1136,11 +1160,44 @@ for oreDictEntry, items in miscDisabled {
 //Add moreplates neutronium plate to gtce neutronium ore dict
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
 
-
 <ore:gemDilithium>.remove(<libvulpes:productgem>);
 <ore:crystalDilithium>.add(<libvulpes:productgem>);
 
 <ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
+
+//Create Universal GTCE Oredict for tools that can be used to reference by oredict and encapsulates all tools.
+//Works for any material tool, any damage tool, electric or non-electric
+
+//GTCE Tools
+<ore:gtceWrenches>.addItems([
+	<gregtech:meta_tool:8>.withEmptyTag(), 
+	<gregtech:meta_tool:29>.withEmptyTag(), 
+	<gregtech:meta_tool:30>.withEmptyTag(), 
+	<gregtech:meta_tool:31>.withEmptyTag()]);
+
+<ore:gtceScrewdrivers>.addItems([
+	<gregtech:meta_tool:11>.withEmptyTag(), 
+	<gregtech:meta_tool:34>.withEmptyTag()]);
+
+<ore:gtceHardHammers>.addItems([
+	<gregtech:meta_tool:6>.withEmptyTag()]);
+
+<ore:gtceSaws>.addItems([
+	<gregtech:meta_tool:5>.withEmptyTag(),
+	<gregtech:meta_tool:16>.withEmptyTag(), 
+	<gregtech:meta_tool:26>.withEmptyTag(), 
+	<gregtech:meta_tool:27>.withEmptyTag(), 
+	<gregtech:meta_tool:28>.withEmptyTag(), 
+	<gregtech:meta_tool:33>.withEmptyTag()]);
+
+<ore:gtceFiles>.addItems([
+	<gregtech:meta_tool:9>.withEmptyTag()]);
+
+<ore:gtceMortars>.addItems([
+	<gregtech:meta_tool:12>.withEmptyTag()]);
+
+<ore:gtceWireCutters>.addItems([
+	<gregtech:meta_tool:13>.withEmptyTag()]);
 
 
 ////////////////////////////////
@@ -1338,6 +1395,141 @@ mods.jei.JEI.removeAndHide(<armorplus:emerald_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:redstone_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:coal_bow>);
 mods.jei.JEI.removeAndHide(<armorplus:book_lore>);
+mods.jei.JEI.removeAndHide(<armorplus:dusk>);
+mods.jei.JEI.removeAndHide(<armorplus:noon>);
+mods.jei.JEI.removeAndHide(<armorplus:midnight>);
+mods.jei.JEI.removeAndHide(<armorplus:dawn>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_overworld>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_the_nether>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_the_end>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_sacrifice>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_the_realm>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_arena>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_the_shaper>);
+mods.jei.JEI.removeAndHide(<armorplus:map_of_the_elder>);
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:ender_dragon_zombie"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:ice_golem"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:overlord_of_the_guardians"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:skeletal_king"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:witherling"}}));
+mods.jei.JEI.removeAndHide(<minecraft:spawn_egg>.withTag({EntityTag: {id: "armorplus:demonic_dragon"}}));
+mods.jei.JEI.removeAndHide(<armorplus:white_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:red_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:black_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:blue_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:green_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:purple_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:yellow_stone_brick>);
+mods.jei.JEI.removeAndHide(<armorplus:white_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:red_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:black_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:blue_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:green_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:yellow_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:purple_stone_brick_tower>);
+mods.jei.JEI.removeAndHide(<armorplus:white_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:red_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:black_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:blue_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:green_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:yellow_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:purple_stone_brick_corner>);
+mods.jei.JEI.removeAndHide(<armorplus:white_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:red_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:black_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:blue_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:green_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:yellow_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:purple_stone_brick_wall>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:chainmail_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:iron_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:gold_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_helmet>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_chestplate>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_leggings>);
+mods.jei.JEI.removeAndHide(<armorplus:diamond_boots>);
+mods.jei.JEI.removeAndHide(<armorplus:trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:pig_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:sheep_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:cow_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:chicken_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:horse_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:rabbit_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:bat_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:ocelot_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:parrot_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:polar_bear_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:wolf_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:creeper_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:blaze_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:spider_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:cave_spider_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:guardian_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:zombie_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:enderman_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:endermite_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:stray_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:evoker_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:vex_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:vindicator_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:ghast_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:husk_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:shulker_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:magma_cube_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:silverfish_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:skeleton_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:witch_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:zombie_villager_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:zombie_pigman_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:wither_skeleton_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:slime_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:elder_guardian_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:wither_boss_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:ender_dragon_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:skeletal_king_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:guardian_overlord_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:demonic_dragon_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:the_lord_of_everything_trophy>);
+mods.jei.JEI.removeAndHide(<armorplus:coal_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:lapis_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:redstone_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:emerald_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:obsidian_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:infused_lava_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:guardian_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:super_star_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:ender_dragon_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:empty_sword_display>);
+mods.jei.JEI.removeAndHide(<armorplus:emerald_arrow>);
+mods.jei.JEI.removeAndHide(<armorplus:obsidian_arrow>);
+mods.jei.JEI.removeAndHide(<armorplus:guardian_arrow>);
+mods.jei.JEI.removeAndHide(<armorplus:super_star_arrow>);
+mods.jei.JEI.removeAndHide(<armorplus:coal_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:lapis_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:redstone_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:emerald_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:obsidian_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:infused_lava_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:guardian_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:super_star_battle_axe>);
+mods.jei.JEI.removeAndHide(<armorplus:coal_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:lapis_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:redstone_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:emerald_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:obsidian_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:infused_lava_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:guardian_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:super_star_pickaxe>);
+mods.jei.JEI.removeAndHide(<armorplus:ender_dragon_pickaxe>);
 
 
 //Avaritia Removals
@@ -1414,6 +1606,18 @@ mods.jei.JEI.removeAndHide(<enderio:block_creative_spawner>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_crafter>);
 mods.jei.JEI.removeAndHide(<enderio:block_simple_wired_charger>);
 mods.jei.JEI.removeAndHide(<enderio:block_infinity_fog>);
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest", "enderio:enabled": 1 as byte}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye"}));
+mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet"}));
 
 
 //Extended Crafting Removals
@@ -1509,12 +1713,6 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:510>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:525>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:527>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:526>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:811>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:812>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:813>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:814>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:815>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:816>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:1001>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10650>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10651>);
@@ -1646,7 +1844,23 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32480>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32466>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32482>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32468>);
-
+mods.jei.JEI.removeAndHide(<gregtech:meta_armor>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32578>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32579>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:826>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:9354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:8354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:7354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:6354>);
+mods.jei.JEI.removeAndHide(<gregtech:cable:5354>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32134>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32133>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32132>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32131>);
+mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32018>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32576>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:21072>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_tool:32>.withTag({"GT.ToolStats": {Material: "darmstadtium"}}));
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
@@ -1916,6 +2130,7 @@ recipes.addShapeless(<ore:dustWood>.firstItem, [<thermalfoundation:material:800>
 recipes.addShapeless(<minecraft:nether_star> * 9, [<extendedcrafting:storage:2>]);
 solidifier.recipeBuilder().fluidInputs(<liquid:moltennetherstar> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<extendedcrafting:storage:2>]).duration(200).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<minecraft:nether_star>).fluidOutputs([<liquid:moltennetherstar> * 144]).duration(40).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<extendedcrafting:storage:2>).fluidOutputs([<liquid:moltennetherstar> * 1296]).duration(360).EUt(30).buildAndRegister();
 
 //Molten Empowered Restonia
 solidifier.recipeBuilder().fluidInputs(<liquid:moltenempoweredrestonia> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<actuallyadditions:block_crystal_empowered>]).duration(400).EUt(30).buildAndRegister();
@@ -1989,34 +2204,6 @@ solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 16).notConsumable(<greg
 furnace.remove(<gregtech:meta_item_1:10709>);
 furnace.addRecipe(<extendedcrafting:material:32>, <gregtech:meta_item_1:2709>, 0.0);
 recipes.addShapeless(<extendedcrafting:material:32>, [<gregtech:meta_item_1:10709>]);
-
-//Draconium
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:9>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10710>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9710>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2710>);
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:draconium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [<liquid:draconium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:draconium> * 1296]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10710>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9710>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:compressed_17:9>], [null]).remove();
-solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 144).notConsumable(<gregtech:meta_item_1:32309>).outputs([<draconicevolution:nugget> * 9]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<draconicevolution:draconium_ingot>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<draconicevolution:draconium_block>]).duration(200).EUt(30).buildAndRegister();
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>]);
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>]);
-furnace.remove(<gregtech:meta_item_1:9710>);
-recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10710>]);
-
-//Awakened Draconium
-fluidextractor.recipeBuilder().inputs(<draconicevolution:nugget:1>).fluidOutputs([<liquid:awakeneddraconium> * 16]).duration(200).EUt(30).buildAndRegister();
-fluidextractor.recipeBuilder().inputs(<draconicevolution:draconic_ingot>).fluidOutputs([<liquid:awakeneddraconium> * 144]).duration(200).EUt(30).buildAndRegister();
-fluidextractor.recipeBuilder().inputs(<draconicevolution:draconic_block>).fluidOutputs([<liquid:awakeneddraconium> * 1296]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 144).notConsumable(<gregtech:meta_item_1:32309>).outputs([<draconicevolution:nugget:1> * 9]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<draconicevolution:draconic_ingot>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<draconicevolution:draconic_block>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:awakeneddraconium> * 144).notConsumable(<gregtech:meta_item_1:32301>).outputs([<moreplates:awakened_draconium_plate>]).duration(200).EUt(30).buildAndRegister();
 
 //Neutronium
 <ore:ingotNeutronium>.add(<avaritia:resource:4>);

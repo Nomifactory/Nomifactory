@@ -938,7 +938,7 @@ makeShaped("ar_hovercraft",
 		E: <advancedrocketry:rocketmotor>,    // Liquid Engine
 		C: <ore:circuitGood>,    // T2 Circuit
 		M: <extrautils2:screen>, // ExU2 Screen
-		D: <ore:gemDilithium>,   // Dilithium Crystal
+		D: <ore:crystalDilithium>,   // Dilithium Crystal
 	});
 
 // Planet Selector

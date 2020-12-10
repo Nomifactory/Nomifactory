@@ -410,7 +410,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§aMining Hammers§r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 of blocks and mine quickly, so they\u0027re absolutely worth investing your first few ingots of metal into§..\n\n§6Stone§f is the cheapest Mining Hammer, but naturally it breaks quickly. Since you have some §6Iron§f already, consider using those on your first few mining expeditions.\n\nThe best Mining Hammers are §6Diamond§f and §6Platinum§f. Other Mining Hammers are also good but wear out more quickly.\n\n§c§nNEVER break GregTech machines with mining hammers!§r\n\n",
+          "desc:8": "§aMining Hammers§r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 of blocks and mine quickly, so they\u0027re absolutely worth investing your first few ingots of metal into§..\n\n§6Stone§f is the cheapest Mining Hammer, but naturally it breaks quickly. Since you have some §6Iron§f already, consider using those on your first few mining expeditions.\n\nThe best Mining Hammers are §6Diamond§f and §6Platinum§f. Other Mining Hammers are also good but wear out more quickly.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1005,7 +1005,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.",
+          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.\n\nFor slightly more materials, the §3Crafting Station§f from §bGregTech CE§r is another viable choice. In addition to performing all the functions the §3Worktable§f does, it has dedicated slots for tool storage and an inventory view to easily see all the items in the crafting storage.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1698,7 +1698,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you\u0027re most likely to have access to at this point are:\n\n1) A Diamond Pickaxe or Diamond Mining Hammer.\n\n2) A Platinum Mining Hammer (not pickaxe though).\n\n3) A Cobalt Pickaxe (smelted from Cobaltite).",
+          "desc:8": "You\u0027ll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you\u0027re most likely to have access to at this point are:\n\n1) A Diamond Pickaxe or Diamond Mining Hammer.\n\n2) A Platinum Mining Hammer (not pickaxe though).",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6348,7 +6348,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Farmer§r can be used to automate the planting and gathering crops, including §6Potatoes§r, §6Canola§r, §6Carrots§r, and §6Beetroot§r.\n\nDoesn\u0027t do trees, though.",
+          "desc:8": "The §3Farmer§r can be used to automate the planting and gathering of crops, including §6Potatoes§r, §6Canola§r, §6Carrots§r, and §6Beetroot§r.\n\nDoesn\u0027t do trees, though.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6833,7 +6833,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With the §6Stabilized Einsteinium§r you harvested from a microverse, you should now have access to everything you need to synthesize your first §dMote of Omnium§r.\n\nYou\u0027re gonna need to make a lot of these as you push into the End Game, so make sure your §eautomation is supplying you with a stock of all of the ingredients§r. That\u0027s what those quests in the End Game tab have been about about all along!",
+          "desc:8": "With the §6Stabilized Einsteinium§r you harvested from a microverse, you should now have access to everything you need to synthesize your first §dMote of Omnium§r.\n\nYou\u0027re gonna need to make a lot of these as you push into the End Game, so make sure your §eautomation is supplying you with a stock of all of the ingredients§r. That\u0027s what those quests in the End Game tab have been about all along!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -7096,10 +7096,7 @@
       }
     },
     "103:10": {
-      "preRequisites:11": [
-        237,
-        83
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -11913,7 +11910,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A simple combination of §9Nitrogen§r and §9Oxygen§r, the two most common elements in the air, yet this substance is very toxic. Chemistry is wierd.",
+          "desc:8": "A simple combination of §9Nitrogen§r and §9Oxygen§r, the two most common elements in the air, yet this substance is very toxic. Chemistry is weird.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -14581,10 +14578,9 @@
     },
     "216:10": {
       "preRequisites:11": [
-        214,
-        400,
         385,
-        132
+        132,
+        782
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -14602,7 +14598,7 @@
           "lockedprogress:1": 1,
           "name:8": "Small Microverse Projector",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -22054,7 +22050,7 @@
     },
     "328:10": {
       "preRequisites:11": [
-        93
+        71
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -26042,7 +26038,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Multi Smelter§r is an absolute smelting unit, and is most likely the best furnace added by a mod.\n\nIt\u0027s a 3x3x3 multiblock machine capable of §esmelting huge amounts of items per second§r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second.\n\nHover over different coil blocks: the higher the §elevel§r, the more items a Multi Smelter can smelt per operation: §e16 items per level§r. The most basic Multi Smelter essentially does 16 items in the same time as a furnace does one. With a set of level 4 coil blocks, that jumps to 64 items per operation.\n\nThis quest doesn\u0027t ask for coils, hatches or buses: feel free to choose whatever combination you want. You\u0027ll need §a8 coil blocks§r, §a1 input bus§r, §a1 output bus§r and at least §a1 energy hatch§r of any tier.\n\n",
+          "desc:8": "The §3Multi Smelter§r is an absolute smelting unit, and is most likely the best furnace added by a mod.\n\nIt\u0027s a 3x3x3 multiblock machine capable of §esmelting huge amounts of items per second§r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second.\n\nHover over different coil blocks: the higher the §elevel§r, the more items a Multi Smelter can smelt per operation: §e32 items per level§r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of level 4 coil blocks, that jumps to 128 items per operation.\n\nThis quest doesn\u0027t ask for coils, hatches or buses: feel free to choose whatever combination you want. You\u0027ll need §a8 coil blocks§r, §a1 input bus§r, §a1 output bus§r and at least §a1 energy hatch§r of any tier.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26705,7 +26701,7 @@
             "2:10": {
               "Count:3": 26,
               "Damage:2": 3,
-              "OreDict:8": "",
+              "OreDict:8": "questbookSpace",
               "id:8": "chisel:diamond"
             },
             "3:10": {
@@ -26996,7 +26992,7 @@
             "1:10": {
               "Count:3": 248,
               "Damage:2": 3,
-              "OreDict:8": "",
+              "OreDict:8": "questbookSpace",
               "id:8": "chisel:diamond"
             },
             "2:10": {
@@ -38344,7 +38340,7 @@
     },
     "623:10": {
       "preRequisites:11": [
-        58
+        260
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46438,7 +46434,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
+          "ignoreNBT:1": 0,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -47136,7 +47132,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§bMultiblock Tweaker§r adds an §einteractive in-world preview§r for all §bGregTech§r multiblocks! §6Shift-right-click§r a placed controller to activate a hologram depicting the default layout of the structure to help you with building. As you place blocks, the structure will be validated and the §efirst incorrect block§r it detects will be highlighted in red.\n\n§6Sneak-right-click§r to cycle from the full view through each layer. When on the final layer of the preview, this will remove the preview.\n\n§6Sneak-left-click§r to go back to the previous layer, or close the preview from the full view.\n\nIn the §eJEI previews§r for multiblocks, §6left-click§r and drag the mouse to rotate the preview horizontally. §6Shift-left-click§r to rotate it vertically.\n\nFor §bMultiblock Tweaker§r structures, you can additionally §6right-click§r and drag the mouse to pan the preview or §6shift-right-click§r and drag to zoom in or out.",
+          "desc:8": "§bMultiblock Tweaker§r adds an §einteractive in-world preview§r for all §bGregTech§r multiblocks! §6Shift-right-click§r a placed controller to activate a hologram depicting the default layout of the structure to help you with building. As you place blocks, the structure will be validated and the §efirst incorrect block§r it detects will be highlighted in red.\n\n§6Sneak-right-click§r to cycle from the full view through each layer. When on the final layer of the preview, this will remove the preview.\n\n§6Sneak-left-click§r to go back to the previous layer, or close the preview from the full view.\n\nIn the §eJEI previews§r for multiblocks, §6left-click§r and drag the mouse to rotate the preview horizontally. §6Shift-left-click§r to rotate it vertically.\n\nAdditionally, you can §6right-click§r and drag the mouse to pan the preview or §6shift-right-click§r and drag to zoom in or out.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47567,6 +47563,40 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "782:10": {
+      "preRequisites:11": [
+        400,
+        214
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Hidden gathering quest for SMP",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 0,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:air"
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "\"Deuterium\" or \"I Don\u0027t Like Space\"",
+          "questlogic:8": "OR",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 782,
+      "rewards:9": {},
+      "tasks:9": {}
     }
   },
   "questLines:9": {
@@ -52712,6 +52742,13 @@
           "sizeY:3": 18,
           "x:3": 529,
           "y:3": 459
+        },
+        "53:10": {
+          "id:3": 782,
+          "sizeX:3": 0,
+          "sizeY:3": 0,
+          "x:3": 612,
+          "y:3": 612
         }
       }
     }
