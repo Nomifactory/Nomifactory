@@ -29,14 +29,6 @@ var outputInputMap as IIngredient[][IItemStack] = {
 		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "sulfuric_acid", Amount: 1000}}),
 		<extendedcrafting:material:19>		//conflux component
 	],
-	#Empowered Restonia Gear
-	<moreplates:empowered_restonia_gear> : [
-		<moreplates:restonia_gear>,	//input
-		<ore:blockAlmandine>,	
-		<ore:blockRedAlloy>,
-		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "tritium", Amount: 1000}}),
-		<extendedcrafting:material:13>
-	],
 	#Empowered Palis
 	<actuallyadditions:block_crystal_empowered:1> : [
 		 <actuallyadditions:block_crystal:1>, 
@@ -44,14 +36,6 @@ var outputInputMap as IIngredient[][IItemStack] = {
 		 <ore:ingotMithril>, 
 		 <metaitem:fluid_cell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), 
 		 <extendedcrafting:material:16>
-	],
-	#Empowered Palis Gear
-	<moreplates:empowered_palis_gear>: [
-		<moreplates:palis_gear>, 
-		<ore:blockSapphire>,
-		<ore:blockMithril>,
-		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "osmiridium", Amount: 1000}}), 
-		<extendedcrafting:material:10>
 	],
 	#Empowered Diamatine
 	<actuallyadditions:block_crystal_empowered:2> : [
@@ -61,14 +45,6 @@ var outputInputMap as IIngredient[][IItemStack] = {
 		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "nitrogen_dioxide", Amount: 1000}}), 
 		<extendedcrafting:material:18>
 	],
-	#Empowered Diamatine Gear
-	<moreplates:empowered_diamatine_gear> : [
-		<moreplates:diamatine_gear>, 
-		<extendedcrafting:storage:6>, 
-		<extendedcrafting:storage:3>, 
-		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "noble_gases", Amount: 1000}}), 
-		<extendedcrafting:material:12>
-	],
 	#Empowered Void Crystal
 	<actuallyadditions:block_crystal_empowered:3> : [
 		<actuallyadditions:block_crystal:3>, 
@@ -76,14 +52,6 @@ var outputInputMap as IIngredient[][IItemStack] = {
 		<ore:ingotDarkSteel>,
 		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "carbon", Amount: 1000}}), 
 		<extendedcrafting:material:15>
-	],
-	#Empowered Void Crystal Gear
-	<moreplates:empowered_void_gear> : [
-		<moreplates:void_gear>, 
-		<ore:blockQuartzBlack>,
-		<ore:blockDarkSteel>,
-		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "naquadria", Amount: 1000}}), 
-		<extendedcrafting:material:9>
 	],
 	#Empowered Emeradic
 	<actuallyadditions:block_crystal_empowered:4> : [
@@ -93,14 +61,6 @@ var outputInputMap as IIngredient[][IItemStack] = {
 		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "argon", Amount: 1000}}), 
 		<extendedcrafting:material:17>
 	],
-	#Empowered Emerald Gear
-	<moreplates:empowered_emeradic_gear>: [
-		<moreplates:emeradic_gear>, 
-		<ore:blockUranium>,
-		<ore:blockVibrantAlloy>,
-		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "krypton", Amount: 1000}}), 
-		<extendedcrafting:material:11>
-	],
 	#Empowered Enori
 	<actuallyadditions:block_crystal_empowered:5> : [
 		<actuallyadditions:block_crystal:5>, 
@@ -108,14 +68,6 @@ var outputInputMap as IIngredient[][IItemStack] = {
 		<ore:ingotEndSteel>,
 		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "helium", Amount: 1000}}), 
 		<extendedcrafting:material:14>
-	],
-	#Empowered Enori Gear
-	<moreplates:empowered_enori_gear> : [
-		<moreplates:enori_gear>, 
-		<ore:blockApatite>,
-		<ore:blockEndSteel>,
-		<metaitem:fluid_cell>.withTag({Fluid: {FluidName: "helium3", Amount: 1000}}), 
-		<extendedcrafting:material:8>
 	]
 };
 
