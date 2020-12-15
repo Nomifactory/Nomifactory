@@ -1478,7 +1478,7 @@ small_microverse.recipeMap
              <gregtech:meta_item_2:25154> * 16,
              <gregtech:meta_item_2:25154> * 16,
              <gregtech:meta_item_2:25154> * 16,
-             <gregtech:ore_almandine_0:6> * 64,
+             <gregtech:ore_sapphire_0:6> * 64,
              <gregtech:ore_gold_0:6> * 64,
              <gregtech:ore_silver_0:6> * 64)
     .buildAndRegister();
@@ -1505,7 +1505,7 @@ small_microverse.recipeMap
              <gregtech:ore_tin_0:6> * 64,
              <gregtech:ore_redstone_0:6> * 64,
              <gregtech:ore_certus_quartz_0:6> * 64,
-             <gregtech:ore_sapphire_0:6> * 64)
+             <gregtech:ore_almandine_0:6> * 64)
     .buildAndRegister();
 
 // Tier 4: Signalum Microminer - Mission 1: Dense Oil / Infinity Blocks
