@@ -407,7 +407,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 	 "HHH",
 	 "HHH"],
 	{ I : <contenttweaker:impossiblerealmdata>,
-	  H : <deepmoblearning:living_matter_hellish> }
+	  H : <deepmoblearning:living_matter_extraterrestrial> }
 );
 
 // Wither Realm Data
@@ -416,7 +416,7 @@ makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 	 "XXX",
 	 "XXX"],
 	{ I : <contenttweaker:impossiblerealmdata>,
-	  X : <deepmoblearning:living_matter_extraterrestrial> }
+	  X : <deepmoblearning:living_matter_hellish> }
 );
 
 // Quantum Flux Recipes
