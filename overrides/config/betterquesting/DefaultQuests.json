@@ -19845,7 +19845,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A gear forged from §6Empowered Restonia Crystal§r.\n\nWhile you can empower gears directly, it makes much more sense to solidify them.",
+          "desc:8": "A gear forged from §6Empowered Restonia Crystal§r.\n\nMade from fluid solidification.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21573,7 +21573,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A gear forged from §6Empowered Void Crystal§r.\n\nWhile you can empower gears directly, it makes much more sense to solidify them.",
+          "desc:8": "A gear forged from §6Empowered Void Crystal§r.\n\nMade from fluid solidification.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21625,7 +21625,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A gear forged from §6Empowered Palis Crystal§r.\n\nWhile you can empower gears directly, it makes much more sense to solidify them.",
+          "desc:8": "A gear forged from §6Empowered Palis Crystal§r.\n\nMade from fluid solidification.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21677,7 +21677,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A gear forged from §6Empowered Emeradic Crystal§r.\n\nWhile you can empower gears directly, it makes much more sense to solidify them.",
+          "desc:8": "A gear forged from §6Empowered Emeradic Crystal§r.\n\nMade from fluid solidification.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -23719,7 +23719,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A gear forged from §6Empowered Enori Crystal§r.\n\nWhile you can empower gears directly, it makes much more sense to solidify them.",
+          "desc:8": "A gear forged from §6Empowered Enori Crystal§r.\n\nMade from fluid solidification.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47236,7 +47236,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A gear forged from §6Empowered Diamantine Crystal§6§r.\n\n§rWhile you can empower gears directly, it makes much more sense to solidify them.",
+          "desc:8": "A gear forged from §6Empowered Diamantine Crystal§6§r.\n\nMade from fluid solidification.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
