@@ -22847,10 +22847,7 @@
             "Count:3": 1,
             "Damage:2": 32213,
             "OreDict:8": "",
-            "id:8": "gregtech:meta_item_2",
-            "tag:10": {
-              "Charge:4": 4000000
-            }
+            "id:8": "gregtech:meta_item_2"
           },
           "ismain:1": 0,
           "issilent:1": 0,
