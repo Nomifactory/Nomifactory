@@ -346,3 +346,7 @@ recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
 	[<gregtech:meta_item_1:32724>, null, <gregtech:meta_item_1:32724>],
 	[null, <appliedenergistics2:material:41>, null],
 	[null, null, null]]);
+
+//skystone and skystone dust
+alloy.recipeBuilder() .inputs(<minecraft:stone>, <minecraft:end_stone>).outputs(<appliedenergistics2:sky_stone_block>).duration(200).EUt(16).buildAndRegister();
+macerator.recipeBuilder().inputs(<appliedenergistics2:sky_stone_block>).outputs(<appliedenergistics2:material:45>).duration(45).EUt(8).buildAndRegister();
