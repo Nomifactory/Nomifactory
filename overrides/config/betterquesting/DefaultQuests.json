@@ -1005,7 +1005,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.\n\nFor slightly more materials, the §3Crafting Station§f from §bGregTech CE§r is another viable choice. In addition to performing all the functions the §3Worktable§f does, it has dedicated slots for tool storage and an inventory view to easily see all the items in the crafting storage.",
+          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47598,6 +47598,70 @@
       "questID:3": 782,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "783:10": {
+      "preRequisites:11": [
+        13
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Slightly more expensive than the §3Forestry§r Worktable is the §6Crafting Station§r from §3Gregtech§r.\n\nThe Crafting Station is similar to the Worktable in that it can store and lock recipes in it so that you can easily go back and craft those recipes later. It also has an internal inventory like the Forestry Workbench.\n\nThere are several advantages that the §6Crafting Station§r has over the Worktable though. The Crafting Station has a dedicated tool row, to store all your §3Gregtech§r tools that you will be using in recipes. In addition, the Crafting Station can pull ingredients from neighboring inventories to complete recipes. \n\nThe available ingredients from neighboring inventories are visible through the §eStorage§r tab on the Crafting Station, and you can also place items into this tab to send them to available neighboring inventories.\n\n§c§lNote:§r There is currently an issue with right clicking the results of a recipe from the output slot if there are more than 1 resultant item in which half of the outputs are §cvoided§r. ",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 825,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Better Workbench?",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 783,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 825,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -52351,6 +52415,13 @@
           "sizeY:3": 36,
           "x:3": -204,
           "y:3": -24
+        },
+        "48:10": {
+          "id:3": 783,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 144,
+          "y:3": 60
         }
       }
     },
