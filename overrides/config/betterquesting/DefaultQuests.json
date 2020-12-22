@@ -26033,7 +26033,8 @@
     },
     "398:10": {
       "preRequisites:11": [
-        89
+        89,
+        130
       ],
       "properties:10": {
         "betterquesting:10": {
