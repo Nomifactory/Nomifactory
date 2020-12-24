@@ -47724,6 +47724,78 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "785:10": {
+      "preRequisites:11": [
+        532
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Now that you are entering the §b§eHV§r age, you should be aware that soon you will no longer be able to cover your wires with simple rubber. All wires §eEV§r+ can only be covered with §6Silicone Rubber§r or §6Styrene-Butadiene Rubber§r. However, §6Silicone Rubber§r can be used to cover wires of all future power tiers, while §6Styrene-Butadiene Rubber§r can only be used until §eLuV§r wires.\n\n§6§6§rThere are several ways to make §6Silicone Rubber§r, but most methods rely on fluids that you have already made for other processing lines, so it should not be that difficult to make, and will cover all your wire covering needs for all future tiers.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "forge:bucketfilled",
+            "tag:10": {
+              "Amount:3": 1000,
+              "FluidName:8": "silicon_rubber"
+            }
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "New Cable Coverings",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 785,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "forge:bucketfilled",
+              "tag:10": {
+                "Amount:3": 1000,
+                "FluidName:8": "silicon_rubber"
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -49922,6 +49994,13 @@
           "sizeY:3": 0,
           "x:3": -168,
           "y:3": 84
+        },
+        "126:10": {
+          "id:3": 785,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -696,
+          "y:3": 12
         }
       }
     },
