@@ -47833,6 +47833,70 @@
           "taskID:8": "bq_standard:checkbox"
         }
       }
+    },
+    "787:10": {
+      "preRequisites:11": [
+        81
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Farming Station§r is the best Early game automated Tree Farm, and is very fast at churning out wood.\n\nTo run, the §6Farming Station§r requires an §eAxe§r and §eShears§r. You can use fancy tools such as th§re §aDark Backhoe§r or §aFlux Infused Axe§r and §aOmniwrench§r, or you can make §aStone Tools§r from a cobblestone generator and some sticks, or even §aDiamond Tools§r using diamonds from your §3Deep Mob Learning§r setup.\n\nThe Farming Station can be used as a source of §eRubber§r as well, if you harvest Rubber Trees. §e",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "enderio:block_farm_station"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Farming Station",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 787,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "enderio:block_farm_station"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -49128,6 +49192,13 @@
           "sizeY:3": 36,
           "x:3": -354,
           "y:3": 402
+        },
+        "103:10": {
+          "id:3": 787,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -432,
+          "y:3": 216
         }
       }
     },
