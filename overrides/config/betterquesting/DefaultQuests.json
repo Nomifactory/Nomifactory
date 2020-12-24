@@ -47797,6 +47797,42 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "786:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "This pack has §3Effortless Building§r, which is a mod used to easily create varying shapes and building large structures.\n\n§3Effortless Building§r is accessed through pressing the §6Alt§r key, and then choosing a mode that you would like to build in.\n\nOnce a mode is selected, you can choose the starting location of the structure by §6right clicking§r on a blockspace with your desired building block. Then you can move your cursor to another blockspace to see a preview of the final structure. To finish building the structure, simply §6right click§r on the desired ending block with your building material.\n\nTo exit the current mode, simply pressed §6Alt§r once again and select the §eNormal§r mode.\n\nIf you find the initial available building space a little too limited you can craft and eat §ereach upgrades§r, which will increase the area that you can build at one time.\n\nOverall, §3Effortless Building§r is a powerful mod that will allow the construction of large structures with ease.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "effortlessbuilding:reach_upgrade1"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Effortless Building",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 786,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -52571,6 +52607,13 @@
           "sizeY:3": 24,
           "x:3": 48,
           "y:3": 108
+        },
+        "49:10": {
+          "id:3": 786,
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -204,
+          "y:3": 192
         }
       }
     },
