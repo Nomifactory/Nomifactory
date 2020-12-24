@@ -47668,7 +47668,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "These are the basic cables used by §3Applied Energistics§r to transport network connectivity. Due to the fact that channels are disabled, these cables will be your main method of transporting network connectivity, rather than the dense cables.\n\nThese cables do not share blockspace with conduits or cables for other mods, so they can be somewhat unweildy to build with, but they do accept §3Applied Energistics§r§6§r §6Facades§r, so they can be hidden very easily.\n\nLater you can make a varient of the cable that can share blockspace with §3Ender IO§r conduits.",
+          "desc:8": "These are the basic cables used by §3Applied Energistics§r to transport network connectivity. Due to the fact that channels are disabled, these cables will be your main method of transporting network connectivity, rather than the dense cables.\n\nThese cables do not share blockspace with conduits or cables for other mods, so they can be somewhat unweildy to build with, but they do accept §3Applied Energistics§r§6§r §6Facades§r, so they can be hidden very easily.\n\nLater you can make a variant of the cable that can share blockspace with §3Ender IO§r conduits.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
