@@ -47961,6 +47961,82 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "789:10": {
+      "preRequisites:11": [
+        278
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Although not completely required for full automation of §3Deep Mob Learning§r, §6Filters§r, when combined with §6Robot Arms§r, make for a powerful combination to §ekeep specific items in stock§r in machines, with the Filter specifing which materials are allowed, and the Robot Arm moving the materials. If you don\u0027t care about the amount of items, §aFilters§r can also be combined with §aConveyors§r or the Machine\u0027s §aAuto Output Functionality§r.\n\nThe §aFilters§r have 9 configurable slots and whitelist/blacklist modes, and can be applied to multiple sides of machines.\n\nIf you do not want to use §3Gregtech§r §aFilters§r for automating §3Deep Mob Learning§r, there is also the §6Limited Item Filter§r from §3Ender IO§r that works with conduits.\n\nBeyond just the simple §aItem Filters§r, there is also the §aFluid Filter§r than can be combined with §aPumps§r or the §aAuto Output§r of a machine to block or allow specified Fluids.\n\nAdditionally, the §6Ore Dictionary Filter§r§r is a powerful tool that has a specialized filter which uses ore dictionary entries and supports \"*\" as a wildcard, e. g. \"§6ingotHot*§r\" will match all hot ingots, and \"§6dustTiny*§r\" will match all tiny piles.\n\nAll Filters can be configured using ghost items from the §3JEI§r search list.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 32729,
+            "OreDict:8": "",
+            "id:8": "gregtech:meta_item_1"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Filters",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 789,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 32729,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 32102,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 32628,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -48521,6 +48597,13 @@
           "sizeY:3": 24,
           "x:3": -596,
           "y:3": 296
+        },
+        "77:10": {
+          "id:3": 789,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -624,
+          "y:3": 12
         }
       }
     },
