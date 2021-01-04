@@ -47897,6 +47897,70 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "788:10": {
+      "preRequisites:11": [
+        727
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Although maybe not relevant quite yet, the §6Smart Filter§r from §3Gregtech§r is an important tool in automating dust electrolysis. \n\nWhen combined with a §6Robot Arm§r on §eSupply Exact§r mode, and the §eElectrolyzer§r preset selected, the Robot Arm will supply the exact number of dusts required by any Electrolyzer recipe. This will ensure that the correct amount of dusts always end up inside the Electrolyzer, and that the Electrolyzer will never clog.\n\nThe Smart Filter also has §6Sifter§r and §6Centrifuge§r§r modes, although the former machine is not used in this pack.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 32103,
+            "OreDict:8": "",
+            "id:8": "gregtech:meta_item_1"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Smart Filter",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 788,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 32103,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -48287,7 +48351,7 @@
           "id:3": 539,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -576,
+          "x:3": -568,
           "y:3": 276
         },
         "53:10": {
@@ -48450,6 +48514,13 @@
           "sizeY:3": 24,
           "x:3": -492,
           "y:3": 96
+        },
+        "76:10": {
+          "id:3": 788,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -596,
+          "y:3": 296
         }
       }
     },
