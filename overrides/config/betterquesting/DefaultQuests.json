@@ -1406,7 +1406,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Alloy Smelter",
+          "name:8": "LV Alloy Smelter",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -18271,7 +18271,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Macerator",
+          "name:8": "LV Macerator",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -47068,7 +47068,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Lathe§r is an important machine that makes rods less expensive to craft.",
+          "desc:8": "The §3Lathe§r is an important machine that makes rods less expensive to craft.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47079,7 +47079,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Lathe",
+          "name:8": "LV Lathe",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
