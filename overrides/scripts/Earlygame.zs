@@ -284,7 +284,6 @@ reactor.recipeBuilder().inputs([<thermalfoundation:fertilizer>]).fluidInputs(<li
 // recipes for Manganese Oxides - currently unused
 // reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
 // reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
-mixer.recipeBuilder().inputs([<minecraft:redstone>,<minecraft:glowstone_dust>]).outputs(<nuclearcraft:compound:2> * 2).EUt(22).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2239>,<gregtech:meta_item_1:2026>]).outputs(<minecraft:glowstone_dust> * 2).EUt(15).duration(80).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:2071>]).outputs(<gregtech:meta_item_1:2189> * 2).EUt(15).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2307>,<enderio:item_material:20> * 4,<contenttweaker:grainsofinnocence>,<enderio:item_material:36>]).fluidInputs([<liquid:pulsating_iron> * 576, <liquid:neptunium> * 144]).outputs(<gregtech:meta_item_1:2309>).EUt(8000).duration(400).buildAndRegister();

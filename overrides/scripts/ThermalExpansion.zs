@@ -392,7 +392,6 @@ recipes.addShaped(<thermalexpansion:frame>, [
 <thermalexpansion:frame:64>.displayName = "Thermal Machine Casing";
 
 recipes.remove(<thermalexpansion:frame:64>);
-recipes.remove(<nuclearcraft:compound:2>);
 recipes.addShaped(<thermalexpansion:frame:64>, [
 	[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>],
 	[<thermalfoundation:material:136>, null, <thermalfoundation:material:136>],
