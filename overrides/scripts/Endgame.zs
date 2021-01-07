@@ -368,6 +368,16 @@ alloy.recipeBuilder()
     .outputs(<moreplates:neutronium_plate>)
     .duration(10000).EUt(16).buildAndRegister();
 
+//Unpackager Recipes
+unpackager.findRecipe(12, [<ore:ingotNeutronium>.firstItem, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [null]).remove();
+unpackager.recipeBuilder()
+    .inputs(<ore:ingotNeutronium>.firstItem)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+    .outputs(<avaritia:resource:3>)
+    .duration(10).EUt(12).buildAndRegister();
+
+//Add conversion recipe
+recipes.addShapeless(<avaritia:resource:3>, [<gregtech:meta_item_1:9972>]);
 
 
 //Remove Data Orbs
