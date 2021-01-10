@@ -48102,6 +48102,70 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "791:10": {
+      "preRequisites:11": [
+        524
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Processing Array§r is a §3Gregtech§r multiblock that allows for processing multiple recipes in parallel in a single stucture and is extremely useful for saving space.\n\nUp to 16 of the same recipe can be processed in parallel by placing the machines for the recipe in the input bus of the multiblock structure, as well as the ingredients for the recipe you want to processing. Note that each machine will still draw the full voltage required for the recipe, which may be more than a single §aEnergy Input Hatch§r can provide. This is why the §6Processing Array§r has an astounding Hatch limit, and can support up to §e8 Energy Inputs§r on the structure. This is also why this quest only asks for the §6Processing Array Controller§r, because the required number of Inputs, Outputs, and Casings is highly variable.\n\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 2507,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Processing Array",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 791,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 2507,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -51763,6 +51827,13 @@
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": 324
+        },
+        "99:10": {
+          "id:3": 791,
+          "sizeX:3": 48,
+          "sizeY:3": 48,
+          "x:3": -396,
+          "y:3": -12
         }
       }
     },
