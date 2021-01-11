@@ -48105,7 +48105,9 @@
     },
     "791:10": {
       "preRequisites:11": [
-        524
+        524,
+        676,
+        675
       ],
       "properties:10": {
         "betterquesting:10": {
