@@ -1055,36 +1055,3 @@ assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>]
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_steel");
 recipes.removeByRecipeName("gregtech:small_coil_copper_ferrite");
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_ferrite");
-
-// Fix lapotron crystal recipes
-val lapotronRecipe as string[] =
-	["PAP",
-	 "PBP",
-	 "PAP"] as string[];
-
-recipes.removeByRecipeName("gregtech:lapotron_crystal_lapis");
-
-makeShaped("gregtech_lapotron_crystal_lapis",
-	<gregtech:meta_item_2:32213>,
-	lapotronRecipe,
-	{ P : <ore:plateLapis>,
-	  A : <ore:circuitAdvanced>,
-	  B : <gregtech:meta_item_2:32212>});
-
-recipes.removeByRecipeName("gregtech:lapotron_crystal_lazurite");
-
-makeShaped("gregtech_lapotron_crystal_lazurite",
-	<gregtech:meta_item_2:32213>,
-	lapotronRecipe,
-	{ P : <ore:plateLazurite>,
-	  A : <ore:circuitAdvanced>,
-	  B : <gregtech:meta_item_2:32212>});
-
-recipes.removeByRecipeName("gregtech:lapotron_crystal_sodalite");
-
-makeShaped("gregtech_lapotron_crystal_sodalite",
-	<gregtech:meta_item_2:32213>,
-	lapotronRecipe,
-	{ P : <ore:plateSodalite>,
-	  A : <ore:circuitAdvanced>,
-	  B : <gregtech:meta_item_2:32212>});
