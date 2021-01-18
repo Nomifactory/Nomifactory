@@ -185,9 +185,11 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10045>,<gregtech:met
 
 //Naquadah [tier 11]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2307>], [null]).remove();	
-freezer.findRecipe(120, [<gregtech:meta_item_1:11307>], [null]).remove();
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:11307>);	
-furnace.addRecipe(<gregtech:meta_item_1:10307>, <gregtech:meta_item_1:2307>, 0.0);
+blast_furnace.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:2307>)
+	.outputs(<gregtech:meta_item_1:11307>)
+	.property("temperature", 5400)
+	.EUt(1920).duration(200).buildAndRegister();
 
 //Naquadah Doped Boule [tier 11]
 blast_furnace.findRecipe(1920, [<gregtech:compressed_2:15> * 9, <gregtech:meta_item_1:10307>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:argon> * 8000]).remove();	
