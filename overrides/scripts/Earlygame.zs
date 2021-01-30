@@ -314,14 +314,6 @@ assembler.findRecipe(2, [<minecraft:blaze_powder>,<minecraft:ender_pearl>], [nul
 assembler.findRecipe(2, [<minecraft:ender_pearl> * 6,<minecraft:blaze_rod>], [null]).remove();
 mixer.findRecipe(8, [<gregtech:meta_item_1:2184> * 3,<gregtech:meta_item_1:2229>,<gregtech:meta_item_1:2044>], [null]).remove();
 
-// Magnesium Chloride decomposition
-reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
-electrolyzer.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2125>*3])
-    .outputs([<gregtech:meta_item_1:2038>])
-    .fluidOutputs([<liquid:chlorine>*2000])
-    .duration(720).EUt(30).buildAndRegister();
-
 reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
 
 
