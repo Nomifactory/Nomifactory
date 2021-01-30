@@ -891,7 +891,6 @@ for mat in material {
 	var rotor = allRotor.firstItem;
 
 	//Assembler Recipe
-	assembler.findRecipe(24, [plate * 4, ring], [null]).remove();
 	assembler.recipeBuilder()
 		.inputs(plate*4, ring)
 		.fluidInputs(<liquid:soldering_alloy> * 32)
