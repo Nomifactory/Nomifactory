@@ -47838,12 +47838,13 @@
     },
     "787:10": {
       "preRequisites:11": [
-        81
+        81,
+        272
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §6Farming Station§r is the best Early game automated Tree Farm, and is very fast at churning out wood.\n\nTo run, the §6Farming Station§r requires an §eAxe§r and §eShears§r. You can use fancy tools such as th§re §aDark Backhoe§r or §aFlux Infused Axe§r and §aOmniwrench§r, or you can make §aStone Tools§r from a cobblestone generator and some sticks, or even §aDiamond Tools§r using diamonds from your §3Deep Mob Learning§r setup.\n\nThe Farming Station can be used as a source of §eRubber§r as well, if you harvest Rubber Trees. §e",
+          "desc:8": "The §3Farming Station§r is a machine that automates growing and harvesting trees and crops around it, based on what items you put in it.\n\nThe Farming Station will principally collect crops, saplings, and wood, but it will also collect things like §6Apples§r from Oak Trees and §6Sticky Resin§r from Rubber Trees. It can also collect leaves if you want it to.\n\nLike other §bEnderIO§r machines, it requires an §6RF capacitor§r. The quality of capacitor affects the overall size of the farm as well as the speed and energy at which it operates.\n\nYou can configure which crops or tree types will be planted relative to the Farming Station by placing the crop or sapling in the various quadrants in the GUI. Clicking the lock button will ensure that the stack placed there won\u0027t be completely consumed, as that could lead to plants migrating to other quadrants.\n\nIn addition to power, the Farming Station§r requires specific §etools§r (and usually a supply of §9Water§r) to operate. If you\u0027re missing anything, the machine will refuse to operate and displays a message over itself to let you know.\n\nFor planting §6crops§r or §6saplings§r, you need a §aHoe§r.\nFor chopping §6trees§r, you need an §aAxe§r. To collect §6leaves§r, you also need §aShears§r.\n\nTool durability is consumed as the farm performs work, so the tools will eventually break. You can make §aStone Tools§r from a cobblestone generator and some sticks, or even §aDiamond Tools§r using diamonds from your §3Deep Mob Learning§r setup.\n\nAlternately, you can invest in fancier tools such as th§re §aDark Backhoe§r (which is designed for use in the Farming Station), or even unbreakable tools much later like the §aFlux Infused Axe§r and §aOmniwrench§r (shears).\n\nThe Farming Station also has a lesser-known feature: it respects enchantments and upgrades on your tools. Tools with §eEmpowered§r upgrades will be ejected into the output slots when they run out of charge (if they don\u0027t break first). Tools with the §eMending§r enchantment are similarly ejected when they are about to break.\n\nYou can use these properties to your advantage.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
