@@ -122,7 +122,7 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2133>], [null]).remove();
 furnace.addRecipe(<gregtech:meta_item_1:10133>, <gregtech:meta_item_1:2133>, 0.0);
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10044> * 4,<gregtech:meta_item_1:10016>]).outputs([<gregtech:meta_item_1:11133> * 5]).property("temperature", 2100).duration(800).EUt(480).buildAndRegister();
 
-//Titanium [tier 4] TODO: Remove
+//Titanium [tier 4]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2072>], [null]).remove();
 
 
