@@ -47908,7 +47908,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Although maybe not relevant quite yet, the §6Smart Filter§r from §3Gregtech§r is an important tool in automating dust electrolysis. \n\nWhen combined with a §6Robot Arm§r on §eSupply Exact§r mode, and the §eElectrolyzer§r preset selected, the Robot Arm will supply the exact number of dusts required by any Electrolyzer recipe. This will ensure that the correct amount of dusts always end up inside the Electrolyzer, and that the Electrolyzer will never clog.\n\nThe Smart Filter also has §6Sifter§r and §6Centrifuge§r§r modes, although the former machine is not used in this pack.",
+          "desc:8": "The §6Smart Item Filter§r from §3GregTech§r is an important tool when automating otherwise troublesome machines. It is a cover which filters item transfer based on whether a valid recipe exists for those items in a specified machine.\n\nThis is powerful in combination with movement covers like the §6Robot Arm§r. If you place this filter on the §eElectrolyzer§r mode in a Robot Arm set to §eSupply Exact§r mode, the Robot Arm will transfer precisely the right amounts of all valid items into an §3Electrolyzer§r so it will operate without clogging. There\u0027s no other way to accomplish this feat!\n\nThis filter also has §eSifter§r and §eCentrifuge§r§r modes for use with those machines (though §3Sifters§r are not in §5Omnifactory§r). It does not have modes for any other machines.\n\nThe §eDefault§r button lets you click it to §eIgnore Fluids§r, which is useful when you have recipes that also require fluids (like §9Hydrogen§r in an Electrolyzer). Since Robot Arms can\u0027t move fluids, it would otherwise prevent the cover from working.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47919,7 +47919,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Smart Filter",
+          "name:8": "Smart Item Filter",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -47940,7 +47940,7 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "contenttweaker:omnicoin"
+              "id:8": "contenttweaker:omnicoin5"
             }
           }
         }
