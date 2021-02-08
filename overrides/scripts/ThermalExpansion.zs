@@ -510,9 +510,9 @@ mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crys
 val liquids as int[][ILiquidStack] = {
     
     //Fluid : duration, power
-    <liquid:water> * 150 : [800, 30],
-    <liquid:distilled_water> * 120 : [534, 30],
-    <liquid:lubricant> * 30 : [200, 30]
+    <liquid:water> * 73 : [1568, 30],
+    <liquid:distilled_water> * 55 : [1019, 30],
+    <liquid:lubricant> * 18 : [392, 30]
 
 };
 
