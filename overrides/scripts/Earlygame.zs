@@ -314,10 +314,6 @@ assembler.findRecipe(2, [<minecraft:blaze_powder>,<minecraft:ender_pearl>], [nul
 assembler.findRecipe(2, [<minecraft:ender_pearl> * 6,<minecraft:blaze_rod>], [null]).remove();
 mixer.findRecipe(8, [<gregtech:meta_item_1:2184> * 3,<gregtech:meta_item_1:2229>,<gregtech:meta_item_1:2044>], [null]).remove();
 
-
-reactor.findRecipe(384, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000]).remove();
-reactor.recipeBuilder().notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1})).fluidInputs(<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000).fluidOutputs(<liquid:ammonia> * 4000).EUt(100).duration(320).buildAndRegister();
-
 //Ammonia Recipe: Changes the EU/t
 reactor.findRecipe(384, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000]).remove();
 reactor.recipeBuilder()
@@ -330,7 +326,8 @@ reactor.recipeBuilder()
 reactor.findRecipe(480, [null], [<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000]).remove();
 reactor.recipeBuilder()
 	.fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000)
-	.fluidOutputs(<liquid:dimethylhidrazine> * 1000,<liquid:hydrochloric_acid> * 1000).EUt(120).duration(960).buildAndRegister();
+	.fluidOutputs(<liquid:dimethylhidrazine> * 1000,<liquid:hydrochloric_acid> * 1000)
+	.EUt(120).duration(960).buildAndRegister();
 
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
