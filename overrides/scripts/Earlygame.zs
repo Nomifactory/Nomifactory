@@ -336,9 +336,9 @@ reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 20
 reactor.findRecipe(30, [<gregtech:meta_item_1:2050>], [<liquid:oxygen> * 2500, <liquid:water> * 1500]).remove();
 
 reactor.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:2050>)
-	.fluidInputs([<liquid:oxygen> * 4000, <liquid:hydrogen> * 4000])
-	.fluidOutputs(<liquid:phosphoric_acid> * 1000)
+	.inputs(<gregtech:meta_item_1:2050> * 2)
+	.fluidInputs([<liquid:oxygen> * 5000, <liquid:water> * 3000])
+	.fluidOutputs(<liquid:phosphoric_acid> * 2000)
 	.duration(320).EUt(16).buildAndRegister();
 
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
