@@ -31296,7 +31296,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes. You can get it from electrolyzing §6Salt§r, among other sources.\n\nUsing a §3Mixer§r, you can create §9Salt Water§r and electrolyze that instead of plain Salt, which §edoubles the yield per Salt§r and provides you with useful §6Sodium Hydroxide§r (NaOH).",
+          "desc:8": "You\u0027ll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes, and you primarily get it from electrolyzing either §6Salt§r or §6Rock Salt§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
