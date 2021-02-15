@@ -332,9 +332,6 @@ reactor.recipeBuilder()
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:466>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:1466>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2466>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
 
