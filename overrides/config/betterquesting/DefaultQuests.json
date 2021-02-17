@@ -12057,7 +12057,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Ethenone§r and §9Nitric Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r.",
+          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Nitric Acid§r, §9Ethenone§r, and §9Acetic Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18651,7 +18651,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.",
+          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.\n\nAlternatively, you can combine §P§6Phosphorous Pentoxide§r and §WWater§r for a much faster reaction.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
