@@ -5341,7 +5341,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Exquisite Gems§r are mostly needed for crafting special materials.\n\nIf you don\u0027t need them for that though, they can be cut through two cycles in a §3Cutting Machine§r into eight of the basic versions of that gem.",
+          "desc:8": "§6Exquisite Gems§r are mostly needed for crafting special materials.\n\nIf you don\u0027t need them for that though, they can be cut through two cycles in a §3Cutting Machine§r into eight of the basic version of that gem.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
