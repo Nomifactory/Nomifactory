@@ -314,31 +314,33 @@ assembler.findRecipe(2, [<minecraft:blaze_powder>,<minecraft:ender_pearl>], [nul
 assembler.findRecipe(2, [<minecraft:ender_pearl> * 6,<minecraft:blaze_rod>], [null]).remove();
 mixer.findRecipe(8, [<gregtech:meta_item_1:2184> * 3,<gregtech:meta_item_1:2229>,<gregtech:meta_item_1:2044>], [null]).remove();
 
-// Magnesium Chloride decomposition
-reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
-electrolyzer.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2125>*3])
-    .outputs([<gregtech:meta_item_1:2038>])
-    .fluidOutputs([<liquid:chlorine>*2000])
-    .duration(720).EUt(30).buildAndRegister();
-
-reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
-
-
+//Ammonia Recipe: Changes the EU/t
 reactor.findRecipe(384, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000]).remove();
-reactor.recipeBuilder().notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1})).fluidInputs(<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000).fluidOutputs(<liquid:ammonia> * 4000).EUt(100).duration(320).buildAndRegister();
+reactor.recipeBuilder()
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs(<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000)
+	.fluidOutputs(<liquid:ammonia> * 1000)
+	.EUt(100).duration(320).buildAndRegister();
 
+//Dimethylhydrazine: Changes the EU/t
 reactor.findRecipe(480, [null], [<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000]).remove();
-reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 1000, <liquid:hypochlorous_acid> * 1000]).remove();
-reactor.recipeBuilder().fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000).fluidOutputs(<liquid:dimethylhidrazine> * 1000,<liquid:diluted_hydrochloric_acid> * 1000).EUt(120).duration(960).buildAndRegister();
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000)
+	.fluidOutputs(<liquid:dimethylhidrazine> * 1000,<liquid:hydrochloric_acid> * 1000)
+	.EUt(120).duration(960).buildAndRegister();
 
-//Remove phosphorus pentoxide, not used anywhere aside from duping phosphorus
-reactor.findRecipe(30, [<gregtech:meta_item_1:2466>], [<liquid:water> * 6000]).remove();
-reactor.findRecipe(30, [<gregtech:meta_item_1:2050> * 4], [<liquid:oxygen> * 10000]).remove();
+//Remove other recipe for Dimethylhydrazine
+reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:466>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:1466>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2466>);
+//Phosphoric Acid, fix mol amounts
+reactor.findRecipe(30, [<gregtech:meta_item_1:2050>], [<liquid:oxygen> * 2500, <liquid:water> * 1500]).remove();
+
+reactor.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:2050> * 2)
+	.fluidInputs([<liquid:oxygen> * 5000, <liquid:water> * 3000])
+	.fluidOutputs(<liquid:phosphoric_acid> * 2000)
+	.duration(320).EUt(16).buildAndRegister();
+
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
 
@@ -901,7 +903,6 @@ for mat in material {
 	var rotor = allRotor.firstItem;
 
 	//Assembler Recipe
-	assembler.findRecipe(24, [plate * 4, ring], [null]).remove();
 	assembler.recipeBuilder()
 		.inputs(plate*4, ring)
 		.fluidInputs(<liquid:soldering_alloy> * 32)
