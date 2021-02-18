@@ -18651,7 +18651,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.\n\nAlternatively, you can combine §P§6Phosphorous Pentoxide§r and §WWater§r for a much faster reaction.",
+          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.\n\nAlternatively, you can combine §6Phosphorous Pentoxide§r and Water for a much faster reaction.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21730,7 +21730,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nYou\u0027ll need to upgrade your §3Electric Blast Furnace§r with a set of §6HSS-G§r coils to smelt this material.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r.",
+          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
