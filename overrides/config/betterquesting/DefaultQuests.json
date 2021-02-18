@@ -12057,7 +12057,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Ethenone§r and §9Nitric Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r.",
+          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Nitric Acid§r, §9Ethenone§r, and §9Acetic Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18651,7 +18651,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.",
+          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.\n\nAlternatively, you can combine §6Phosphorous Pentoxide§r and Water for a much faster reaction.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21131,7 +21131,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6HSS-G§r is the fifth coil material available, increasing your EBF\u0027s operating temperature to 5400K so it can process more advanced materials.",
+          "desc:8": "§6HSS-G§r is the fifth coil material available, increasing your EBF\u0027s operating temperature to 5400K so it can process more advanced materials, such as §6Naquadah§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21730,7 +21730,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nUnlike most materials at this point, Naquadah can be smelted in a standard furnace.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r.",
+          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31296,7 +31296,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes. You can get it from electrolyzing §6Salt§r, among other sources.\n\nUsing a §3Mixer§r, you can create §9Salt Water§r and electrolyze that instead of plain Salt, which §edoubles the yield per Salt§r and provides you with useful §6Sodium Hydroxide§r (NaOH).",
+          "desc:8": "You\u0027ll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes, and you primarily get it from electrolyzing either §6Salt§r or §6Rock Salt§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
