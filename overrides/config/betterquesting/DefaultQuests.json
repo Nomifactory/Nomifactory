@@ -3136,7 +3136,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Being able to fly is nice. This is the first jetpack that uses §bEnderIO§r materials.\n\nThere\u0027s also a quest chain for §bThermal Expansion§r material Jetpacks (starting with the §6Leadstone Jetpack§r). Eventually you\u0027ll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really like flying.",
+          "desc:8": "Being able to fly is nice. This is the first jetpack that uses §bEnderIO§r materials.\n\nThere\u0027s also a quest chain for §bThermal Expansion§r material Jetpacks (starting with the §6Leadstone Jetpack§r). Eventually you\u0027ll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -3968,7 +3968,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Batteries§r are §bGregTech §rpower storage for §aEU§r energy.\n\nAlthough there are several types of rechargeable batteries you can make, §6Cadmium Batteries§r are the best ones, as they have the most storage capacity. §6Lithium§r is second best, and §6Sodium§r is third.\n\n§6Lithium§r is possible to find inside of §6Tungsten§r veins, however, they are fairly rare. Consider \"buying\" some Lithium with §dOmnicoins§r.\n\n§6Cadmium§r is so tough to get at this point, it's not even worth considering. However, §6Sodium§r is plentiful. You can get Sodium by smelting §6Salt§r, with other options becoming available later.",
+          "desc:8": "§6Batteries§r are §bGregTech §rpower storage for §aEU§r energy.\n\nAlthough there are several types of rechargeable batteries you can make, §6Cadmium Batteries§r are the best ones, as they have the most storage capacity. §6Lithium§r is second best, and §6Sodium§r is third.\n\n§6Lithium§r is possible to find inside of §6Tungsten§r veins, however, they are fairly rare. Consider \"buying\" some Lithium with §dOmnicoins§r.\n\n§6Cadmium§r is so tough to get at this point, it\u0027s not even worth considering. However, §6Sodium§r is plentiful. You can get Sodium by smelting §6Salt§r, with other options becoming available later.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -4349,7 +4349,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aME Chest§r is somewhat impractical to use on its own, but it\u0027s a necessary ingredient for the much more useful §6ME Drive§r.\n\nThis is a rudimentary digital item storage device. By placing a §6Storage Cell§r inside it, you can access the contents as though you were looking through a chest. You can carry the disk to another location and place it down in a different ME Chest if you want, and the items will come with it.\n\n§cDon\u0027t put Storage Cells inside other portable mod inventories like a Satchel, (or vice-versa) as you risk corrupting the contents of the Satchel and the Storage Cell.§r There\u0027re technical reasons why this happens (NBT overflow), and it\u0027s not unique to these items, but that\u0027s not really worth going into.\n\n",
+          "desc:8": "The §aME Chest§r is somewhat impractical to use on its own, but it\u0027s a necessary ingredient for the much more useful §6ME Drive§r.\n\nThis is a rudimentary digital item storage device. By placing a §6Storage Cell§r inside it, you can access the contents as though you were looking through a chest. You can carry the disk to another location and place it down in a different ME Chest if you want, and the items will come with it.\n\n§cDon\u0027t put Storage Cells inside other portable mod inventories like a Satchel, (or vice-versa) as you risk corrupting the contents of the Satchel and the Storage Cell.§r There\u0027s technical reasons why this happens (NBT overflow), and it\u0027s not unique to these items, but that\u0027s not really worth going into.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6972,7 +6972,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "*Slaps §6ME Drive§r* this bad boy can fit so many §6Storage Cells§r in it!\n\nWith ten slots for Storage Cells, you can store a huge number of items inside this single block, and search through them all with a §6Terminal§r. You just gotta make all those Storage Cells.\n\nIf you somehow run out of room, you can make another ME Drive for even more slots! So, many cells, so many items!",
+          "desc:8": "*Slaps §6ME Drive§r* this bad boy can fit so many §6Storage Cells§r in it!\n\nWith ten slots for Storage Cells, you can store a huge number of items inside this single block, and search through them all with a §6Terminal§r. You just gotta make all those Storage Cells.\n\nIf you somehow run out of room, you can make another ME Drive for even more slots! So many cells, so many items!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9790,7 +9790,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Another common component of any machine that uses fluids. Also, usable as a cover for moving fluids between GregTech machines and adjacent tanks or machines.\n\nYou can use Paper Rings or Rubber Rings, but both will require a Knife to craft. A stick and a piece of flint will make a Knife with low durability, or check the recipe for metal ones.",
+          "desc:8": "Another common component of any machine that uses fluids. Also usable as a cover for moving fluids between GregTech machines and adjacent tanks or machines.\n\nYou can use Paper Rings or Rubber Rings, but both will require a Knife to craft. A stick and a piece of flint will make a Knife with low durability, or check the recipe for metal ones.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9922,7 +9922,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A perfect material for making chopsticks.\n\nAlso, the tier material for Extreme Voltage (EV).",
+          "desc:8": "A perfect material for making chopsticks.\n\nAlso the tier material for Extreme Voltage (EV).",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -10311,7 +10311,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With tier three circuits in hand, it\u0027s time to make a §3Distillation Tower§r, which is the gatekeeper for more advanced plastics like §6Epoxy§r and doing petrochemistry.\n\nThe Distillation Tower is a highly flexible multiblock structure, able to be anywhere from §62 blocks high to up to 12 high§r (11 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. §cAny output fluids in excess of available buses are voided§r. \n\nWhat you need the Distillation Tower for initially is to break down §9Biomass§r into §9Ethanol§r and §9Water§r. This recipe only has two outputs, so a §ethree-block-high Distillation Tower§r is just fine (the quest materials are for such a tower; if you want to build it bigger, you will need §ean additional 7 casings and 1 fluid output per floor§r).\n\nAny recipe with more than two fluids (like §9Oil§r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also, check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. §eYou can swap out your Energy Input for a higher tier one when that time comes§r.\n\nThe tower we\u0027ll be building at first is 3x3x3, with a hollow center. §6Fluid Input Hatch§r §emust go in the very center of the bottom 3x3 layer§r. The §6controller§r goes in the middle of an outer edge of the bottom layer. The §6Output Bus§r and an §6Energy Input Hatch§r can go wherever you can fit them on the bottom layer. The rest of the 3x3 must be filled with §6Clean Stainless Steel Casings§r. Each level above that is a ring of 7 Clean Stainless Steel Casings, one §6Fluid Output§r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top.",
+          "desc:8": "With tier three circuits in hand, it\u0027s time to make a §3Distillation Tower§r, which is the gatekeeper for more advanced plastics like §6Epoxy§r and doing petrochemistry.\n\nThe Distillation Tower is a highly flexible multiblock structure, able to be anywhere from §62 blocks high to up to 12 high§r (11 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. §cAny output fluids in excess of available buses are voided§r. \n\nWhat you need the Distillation Tower for initially is to break down §9Biomass§r into §9Ethanol§r and §9Water§r. This recipe only has two outputs, so a §ethree-block-high Distillation Tower§r is just fine (the quest materials are for such a tower; if you want to build it bigger, you will need §ean additional 7 casings and 1 fluid output per floor§r).\n\nAny recipe with more than two fluids (like §9Oil§r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. §eYou can swap out your Energy Input for a higher tier one when that time comes§r.\n\nThe tower we\u0027ll be building at first is 3x3x3, with a hollow center. §6Fluid Input Hatch§r §emust go in the very center of the bottom 3x3 layer§r. The §6controller§r goes in the middle of an outer edge of the bottom layer. The §6Output Bus§r and an §6Energy Input Hatch§r can go wherever you can fit them on the bottom layer. The rest of the 3x3 must be filled with §6Clean Stainless Steel Casings§r. Each level above that is a ring of 7 Clean Stainless Steel Casings, one §6Fluid Output§r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12682,7 +12682,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With §6Aluminium§r, you can replace the two §aLV Energy Input Hatches§r on your Electric Blast Furnace with a single MV one, if you want. When you\u0027re ready to move on to HV recipes in the EBF, you\u0027ll want to move up to HV Energy Input Hatches, and so on.\n\nHowever, remember to keep the MV area separate from your LV area. §eHooking up an LV machine to MV current will result in the machine being destroyed! Also, LV cables will burn up if you put MV current through them§r. That\u0027s why it\u0027s probably best to keep the areas separate until you\u0027re comfortable and confident with voltages. Eventually you can use transformers to switch voltages within a single setup, but don\u0027t feel forced to try that until you\u0027ve got a grasp on the basics.\n\nAll RF power is the same (it has no voltages), so you can use RF conduits to route power from wherever you\u0027re generating and storing it to §3CEFs§r for each voltage. You don\u0027t have to use this setup, but it\u0027s the most foolproof one for a beginner. And if you\u0027re an expert, well... you don\u0027t need my advice.\n\nFor your MV cables, you can use §6Copper§r to start with. §6Energetic Alloy cables§r are lossless though, so consider them if you\u0027re able to mass produce those ingots.",
+          "desc:8": "With §6Aluminium§r, you can replace the two §aLV Energy Input Hatches§r on your Electric Blast Furnace with a single MV one, if you want. When you\u0027re ready to move on to HV recipes in the EBF, you\u0027ll want to move up to HV Energy Input Hatches, and so on.\n\nHowever, remember to keep the MV area separate from your LV area. §eHooking up an LV machine to MV current will result in the machine being destroyed! Also LV cables will burn up if you put MV current through them§r. That\u0027s why it\u0027s probably best to keep the areas separate until you\u0027re comfortable and confident with voltages. Eventually you can use transformers to switch voltages within a single setup, but don\u0027t feel forced to try that until you\u0027ve got a grasp on the basics.\n\nAll RF power is the same (it has no voltages), so you can use RF conduits to route power from wherever you\u0027re generating and storing it to §3CEFs§r for each voltage. You don\u0027t have to use this setup, but it\u0027s the most foolproof one for a beginner. And if you\u0027re an expert, well... you don\u0027t need my advice.\n\nFor your MV cables, you can use §6Copper§r to start with. §6Energetic Alloy cables§r are lossless though, so consider them if you\u0027re able to mass produce those ingots.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -14447,7 +14447,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Moon is a barren, lifeless rock... So, why did you want to come here?\n\nOne major draw is that §6Moon Turf§r, which makes up the surface of the Moon, is an efficient means of obtaining §9Deuterium§r. It will be useful for producing §9Microversium§r, §9Tritium§r, plasmas from fusion, and crystallizing §6Dilithium§r.\n\nThere are also several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of §6Titanium§r (in the form of §6Rutile Ore§r and §6Ilmenite Ore§r) and §6Tungsten§r (in the form of §6Scheelite Ore§r and §6Tungstate Ore§r).\n\nMuch later you will also gain access to the §3Lunar Mining Station§r, which as the name suggests only works on the Moon.\n\n",
+          "desc:8": "The Moon is a barren, lifeless rock... So why did you want to come here?\n\nOne major draw is that §6Moon Turf§r, which makes up the surface of the Moon, is an efficient means of obtaining §9Deuterium§r. It will be useful for producing §9Microversium§r, §9Tritium§r, plasmas from fusion, and crystallizing §6Dilithium§r.\n\nThere are also several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of §6Titanium§r (in the form of §6Rutile Ore§r and §6Ilmenite Ore§r) and §6Tungsten§r (in the form of §6Scheelite Ore§r and §6Tungstate Ore§r).\n\nMuch later you will also gain access to the §3Lunar Mining Station§r, which as the name suggests only works on the Moon.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -14585,7 +14585,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is your first §3Microverse Projector§r.\n\nThese structures are used to project §6Micro Miners§r into a §eMicroverse§r to obtain valuable loot such as §6ores§r, §6gems§r, and otherwise unobtainable items§r like §6Radium Salt§r and §6Naquadah Dust§r. §cKeep in mind that Micro Miners are single-use!§r\n\nMicroverse Projectors are §bGregTech§r multiblocks, which means that they\u0027re just as flexible as other machines in terms of the I/O block placement: §epositions of Buses and Hatches can be swapped with any Microverse Projector Casing§r.\n\nA single §6HV Energy Input§r supports missions up to 1024 EU/t. To process the rest, you\u0027ll need to upgrade the multiblock to at least §eEV power§r, which is either §6two HV Energy Inputs§r, or §6one EV Energy Input§r. Missions will also overclock, increasing in speed each time the projector\u0027s energy tier increases and available power reaches the next multiple of four times the base mission power.\n\nHover your mouse over the Small Microverse Projector and press §bU§r to see all available missions.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
+          "desc:8": "This is your first §3Microverse Projector§r.\n\nThese structures are used to project §6Micro Miners§r into a §eMicroverse§r to obtain valuable loot such as §6ores§r, §6gems§r, and otherwise unobtainable items§r like §6Radium Salt§r and §6Naquadah Dust§r. §cKeep in mind that Micro Miners are single-use!§r\n\nMicroverse Projectors are §bGregTech§r multiblocks, which means that they\u0027re just as flexible as other machines in terms of the I/O block placement: §epositions of Buses and Hatches can be swapped with any Microverse Projector Casing§r.\n\nA single §6HV Energy Input§r supports missions up to 1024 EU/t. To process the rest, you\u0027ll need to upgrade the multiblock to at least §eEV power§r, which is either §6two HV Energy Inputs§r or §6one EV Energy Input§r. Missions will also overclock, increasing in speed each time the projector\u0027s energy tier increases and available power reaches the next multiple of four times the base mission power.\n\nHover your mouse over the Small Microverse Projector and press §bU§r to see all available missions.\n\n§6Sneak-right click§r the controller to enable the in-world preview.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -15015,7 +15015,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Methanol§r and §9Ammonia§r combine together to make §9Dimethylamine§r.\n\nI know you\u0027re expecting a Breaking Bad joke here, but I don\u0027t want to go for such low hanging fruit.",
+          "desc:8": "§9Methanol§r and §9Ammonia§r combine together to make §9Dimethylamine§r.\n\nI know you\u0027re expecting a Breaking Bad joke here, but I don\u0027t walt to go for such low hanging fruit.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -15722,7 +15722,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With your Rocket built, fuel loaded, and destination set, it\u0027s time for the prelaunch checklist.\n\n- §eMake sure you\u0027re wearing your Space Suit§r (all four pieces) and that it has a full tank of Oxygen. If you plan to stay on the Moon a while, maybe bring a gas charging pad and Ender Tank (being filled with Oxygen) with you.\n\nTeleportation:\n\n- If you decided to go with §aDislocators§r, make sure you take two with you: one bound to the Overworld, the other ready to bind to the Moon. Also, bring along a Pedestal to put the Overworld one on the Moon surface.\n\n- If you decided to go with §aTelepads§r, make sure you\u0027ve constructed a Telepad in the Overworld and that you\u0027re carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and materials for the second Telepad setup. Bring Dew of the Void and RF power (like a §6Solar Panel§r and a §6Capacitor Bank§r).\n\nIn either case, as soon as you land you will need to prepare the other half of the teleportation route, and chunkload it.\n\nWhen you\u0027re sure you\u0027re prepared, sit in your rocket and press §eSpace§r.\n\nLiftoff!",
+          "desc:8": "With your Rocket built, fuel loaded, and destination set, it\u0027s time for the prelaunch checklist.\n\n- §eMake sure you\u0027re wearing your Space Suit§r (all four pieces) and that it has a full tank of Oxygen. If you plan to stay on the Moon a while, maybe bring a gas charging pad and Ender Tank (being filled with Oxygen) with you.\n\nTeleportation:\n\n- If you decided to go with §aDislocators§r, make sure you take two with you: one bound to the Overworld, the other ready to bind to the Moon. Also bring along a Pedestal to put the Overworld one on the Moon surface.\n\n- If you decided to go with §aTelepads§r, make sure you\u0027ve constructed a Telepad in the Overworld and that you\u0027re carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and materials for the second Telepad setup. Bring Dew of the Void and RF power (like a §6Solar Panel§r and a §6Capacitor Bank§r).\n\nIn either case, as soon as you land you will need to prepare the other half of the teleportation route, and chunkload it.\n\nWhen you\u0027re sure you\u0027re prepared, sit in your rocket and press §eSpace§r.\n\nLiftoff!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24410,7 +24410,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§oNow this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.§r\n\nThe §d§dCreative Portable Tank§r is a major milestone. Great work!\n\nThis tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. The first fluid you should do this with is §dMolten Creative Portable Tank§r, so you can make as many more tanks as you want! You get exactly enough from a §6Heart of a Universe§r to do this.\n\nFrom there you can set up tanks with infinite quantities of every fluid you can think of.  §3Fluid Solidifiers§r can be used to make infinite of every element you can melt and solidify.\n\nThis is quite a game-changer as far as infrastructure goes. You\u0027ll find that many machines won\u0027t need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?\n\nAll that said, §ethe pack will still be challenging to complete§r. Infinite resources and power are nice, but it\u0027s not everything. There are plenty of materials you can\u0027t melt, and creative items will push your factory automation engineering skills to their limits.\n\nOnward to the final challenge: the §dCreative Vending Upgrade§r!\n\n",
+          "desc:8": "§oNow this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.§r\n\nThe §d§dCreative Portable Tank§r is a major milestone. Great work!\n\nThis tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. The first fluid you should do this with is §dMolten Creative Portable Tank§r, so you can make as many more tanks as you want! You get exactly enough from a §6Heart of a Universe§r to do this.\n\nFrom there you can set up tanks with infinite quantities of every fluid you can think of.  §3Fluid Solidifiers§r can be used to make infinite of every element you can melt and solidify.\n\nThis is quite a game-changer as far as infrastructure goes. You\u0027ll find that many machines won\u0027t need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?\n\nAll that said, §ethe pack will still be challenging to complete§r. Infinite resources and power is nice, but it\u0027s not everything. There are plenty of materials you can\u0027t melt, and creative items will push your factory automation engineering skills to their limits.\n\nOnward to the final challenge: the §dCreative Vending Upgrade§r!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -25810,7 +25810,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Basic §aFlux Capacitors§r hold a whopping lot of energy - §a10 million RF§r - and are useful for keeping your §aRF-powered§r equipment and tools charged.\n\nPut one into your newly crafted §3CEF§r to charge it. You can then put it in your inventory to charge your items with §aRF§r, or you can leave it in the CEF to act as a §a2.5 million EU§r battery!\n\nFlux Capacitor is a §bBauble§r, open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish.\n\nFinally, you can charge up all those depleted §6Dark Boots§r and §6The Ender§r swords you\u0027ve looted.",
+          "desc:8": "Basic §aFlux Capacitors§r hold a whopping lot of energy - §a10 million RF§r - and are useful for keeping your §aRF-powered§r equipment and tools charged.\n\nPut one into your newly crafted §3CEF§r to charge it. You can then put it in your inventory to charge your items with §aRF§r, or you can leave it in the CEF to act as a §a2.5 million EU§r battery!\n\nFlux Capacitor is a §bBauble§r, open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish.\n\nFinally you can charge up all those depleted §6Dark Boots§r and §6The Ender§r swords you\u0027ve looted.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30643,7 +30643,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also, works with §dOmnicoins§r.\n\nThe appearance can be customized by crafting the drawer into §aFramed Compacting Drawer§r and putting it into a §aFraming Table§r.",
+          "desc:8": "Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with §dOmnicoins§r.\n\nThe appearance can be customized by crafting the drawer into §aFramed Compacting Drawer§r and putting it into a §aFraming Table§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31120,7 +31120,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Note: this quest accepts both LV and MV Brewery.\n\nYou can turn §6Plant Balls§r and other various §6sugary crops§r into §9Biomass§r with a §3Brewery§r. Biomass is the first step towards making Plastic in the form of §9Polyethylene§r.\n\nThe Brewery is a very slow machine, but it requires almost no power. Building higher tier Breweries, or many LV ones, is necessary to brew enough Biomass for plastics.",
+          "desc:8": "Note: this quest accepts both LV and MV Brewery.\n\nYou can turn §6Plant Balls§r and other various §6sugary crops§r into §9Biomass§r with a §3Brewery§r. Biomass is the first step towards making Plastic in the form of §9Polyethylene§r.\n\nThe Brewery is a very very slow machine, but it requires almost no power. Building higher tier Breweries, or many LV ones, is necessary to brew enough Biomass for plastics.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31853,7 +31853,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Not as common a component, but used in a number of critical machines.\n\nAlso, useful as a machine cover for continuously moving items.",
+          "desc:8": "Not as common a component, but used in a number of critical machines.\n\nAlso useful as a machine cover for continuously moving items.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44734,7 +44734,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Your §3Chemical Reactors§r will be making a lot of different fluids. You\u0027ll need to manage the logistics of routing and storing all the different fluids you\u0027re automating.\n\nWherever possible, having one Chemical Reactor output directly into another machine that needs its output chemical saves you from having to figure out additional storage and routing. §aFluid Filters§r and §aPump covers§r are very useful for moving fluids around a compact processing pipeline.\n\nBut what about the final output fluids that you need elsewhere?\n\nOne option is to use the output tanks of the Chemical Reactors as a small storage buffer, letting it back up and stop crafting automatically. A §aFluid Storage Bus§r on the machine will expose the fluid to your ME Network. Whenever you need some of this fluid, your AE2 system will pull the needed fluid out and the machine will resume processing.\n\nThere\u0027re some catches with this approach though. First is that the inaccessible input tanks will also show up in AE but you won\u0027t be able to access them. You will want to set the Storage Bus to §eExport Only§r so AE doesn\u0027t try to store random fluids in the Chemical Reactor, and you may want to §ereduce the priority§r of the Storage Bus as well: this will signal to AE that you want it to remove fluids from that location first. Also, if multiple fluids are produced, §ethe machine will not resume processing if it doesn\u0027t have room for all fluid outputs§r.\n\nWhen you get access to them, it\u0027s probably just better to use single-fluid-formatted §aFluid Storage Cells§r and dump outputs into AE via Fluid Interfaces. You can fill up the cells, then pull the fluids out wherever else you need them.\n\n",
+          "desc:8": "Your §3Chemical Reactors§r will be making a lot of different fluids. You\u0027ll need to manage the logistics of routing and storing all the different fluids you\u0027re automating.\n\nWherever possible, having one Chemical Reactor output directly into another machine that needs its output chemical saves you from having to figure out additional storage and routing. §aFluid Filters§r and §aPump covers§r are very useful for moving fluids around a compact processing pipeline.\n\nBut what about the final output fluids that you need elsewhere?\n\nOne option is to use the output tanks of the Chemical Reactors as a small storage buffer, letting it back up and stop crafting automatically. A §aFluid Storage Bus§r on the machine will expose the fluid to your ME Network. Whenever you need some of this fluid, your AE2 system will pull the needed fluid out and the machine will resume processing.\n\nThere\u0027s some catches with this approach though. First is that the inaccessible input tanks will also show up in AE but you won\u0027t be able to access them. You will want to set the Storage Bus to §eExport Only§r so AE doesn\u0027t try to store random fluids in the Chemical Reactor, and you may want to §ereduce the priority§r of the Storage Bus as well: this will signal to AE that you want it to remove fluids from that location first. Also, if multiple fluids are produced, §ethe machine will not resume processing if it doesn\u0027t have room for all fluid outputs§r.\n\nWhen you get access to them, it\u0027s probably just better to use single-fluid-formatted §aFluid Storage Cells§r and dump outputs into AE via Fluid Interfaces. You can fill up the cells, then pull the fluids out wherever else you need them.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -45409,7 +45409,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A very power-efficient, if slow before upgrades, means of creating plates. Also, the only way to directly make plates from single gems.\n\nUpgrading the machine tier with §aUpgrade Kits§r and applying §aAugments§r to boost its crafting speed is a good idea.\n\nPlates and Platings that are gated specifically by later §bGregTech§r voltage tiers are not craftable in these (instead requiring a §3Compressor§r), but almost every single-ingredient recipe made in a Compressor is available.",
+          "desc:8": "A very power-efficient, if slow before upgrades, means of creating plates. Also the only way to directly make plates from single gems.\n\nUpgrading the machine tier with §aUpgrade Kits§r and applying §aAugments§r to boost its crafting speed is a good idea.\n\nPlates and Platings that are gated specifically by later §bGregTech§r voltage tiers are not craftable in these (instead requiring a §3Compressor§r), but almost every single-ingredient recipe made in a Compressor is available.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -46104,7 +46104,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This pack has §bBuilding Gadgets§r.\n\nThese devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn\u0027t make them from nothing.\n\nAlso, important to note that it won\u0027t work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines).\n\nBy default, the config GUI is bound to §6G§r.",
+          "desc:8": "This pack has §bBuilding Gadgets§r.\n\nThese devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn\u0027t make them from nothing.\n\nAlso important to note that it won\u0027t work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines).\n\nBy default, the config GUI is bound to §6G§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
