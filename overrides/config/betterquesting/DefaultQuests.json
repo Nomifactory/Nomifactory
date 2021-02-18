@@ -21131,7 +21131,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6HSS-G§r is the fifth coil material available, increasing your EBF\u0027s operating temperature to 5400K so it can process more advanced materials.",
+          "desc:8": "§6HSS-G§r is the fifth coil material available, increasing your EBF\u0027s operating temperature to 5400K so it can process more advanced materials, such as §6Naquadah§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21730,7 +21730,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nUnlike most materials at this point, Naquadah can be smelted in a standard furnace.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r.",
+          "desc:8": "An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.\n\nYou\u0027ll need to upgrade your §3Electric Blast Furnace§r with a set of §6HSS-G§r coils to smelt this material.\n\nIt can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
