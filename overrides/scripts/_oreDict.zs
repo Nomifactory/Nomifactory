@@ -1562,7 +1562,6 @@ mods.jei.JEI.removeAndHide(<avaritia:extreme_crafting_table>);
 mods.jei.JEI.removeAndHide(<avaritia:neutron_collector>);
 mods.jei.JEI.removeAndHide(<avaritia:neutronium_compressor>);
 mods.jei.JEI.removeAndHide(<avaritia:matter_cluster>);
-mods.jei.JEI.removeAndHide(<avaritia:matter_cluster>);
 
 
 //Deep Mob Learning Removals
@@ -1678,7 +1677,6 @@ mods.jei.JEI.removeAndHide(<extrautils2:analogcrafter>);
 
 
 //Gregtech Removals
-mods.jei.JEI.removeAndHide(<gregtech:machine:80>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:7>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:8>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:9>);
