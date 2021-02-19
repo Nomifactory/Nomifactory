@@ -348,5 +348,12 @@ recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
 	[null, null, null]]);
 
 //skystone and skystone dust
-alloy.recipeBuilder() .inputs(<minecraft:stone>, <minecraft:end_stone>).outputs(<appliedenergistics2:sky_stone_block>).duration(200).EUt(16).buildAndRegister();
-macerator.recipeBuilder().inputs(<appliedenergistics2:sky_stone_block>).outputs(<appliedenergistics2:material:45>).duration(45).EUt(8).buildAndRegister();
+alloy.recipeBuilder()
+	.outputs(<appliedenergistics2:sky_stone_block>)
+	.inputs(<minecraft:stone>, <minecraft:end_stone>)
+	.duration(200).EUt(16).buildAndRegister();
+
+macerator.recipeBuilder()
+	.outputs(<appliedenergistics2:material:45>)
+	.inputs(<appliedenergistics2:sky_stone_block>)
+	.duration(45).EUt(8).buildAndRegister();
