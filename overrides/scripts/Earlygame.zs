@@ -1105,3 +1105,13 @@ macerator.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:2251>)
 	.chancedOutput(<gregtech:meta_item_1:2069>, 100, 100)
 	.duration(150).EUt(8).buildAndRegister();
+
+//Adjust the recipe of the Rotor mold
+recipes.removeByRecipeName("gregtech:shape/mold/shape_mold_rotor");
+makeShaped("gtce_rotor_mold", <metaitem:shape.mold.rotor>,
+	["H  ",
+	 "   ",
+	 "  P"],
+	{ H : <ore:gtceHardHammers>,
+	  P : <metaitem:shape.empty>
+	  });
