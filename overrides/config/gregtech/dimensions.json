@@ -2,7 +2,7 @@
   "dims": [
     {
       "dimID": 0,
-      "dimName": "Lost Cities"
+      "dimName": "Overworld"
     },
     {
       "dimID": 1,
@@ -11,6 +11,10 @@
     {
       "dimID": -1,
       "dimName": "Nether"
+    },
+    {
+      "dimID": 111,
+      "dimName": "Lost Cities"
     }
   ]
 }

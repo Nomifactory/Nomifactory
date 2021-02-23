@@ -1115,3 +1115,7 @@ makeShaped("gtce_rotor_mold", <metaitem:shape.mold.rotor>,
 	{ H : <ore:gtceHardHammers>,
 	  P : <metaitem:shape.empty>
 	  });
+
+recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.lithium");
+recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.cadmium");
+recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.sodium");
