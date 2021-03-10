@@ -321,27 +321,6 @@ recipes.addShaped(<enderio:item_material:41>, [
 //Rose Gold Plate
 compressor.recipeBuilder().inputs([<gregtech:meta_item_1:10228>]).outputs([<gregtech:meta_item_1:12228>]).duration(100).EUt(10).buildAndRegister();
 
-//Add back fuel desulfurization recipes removed after the SoG update
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_naphtha> * 12000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:naphtha> * 12000])
-	.duration(160).EUt(30).buildAndRegister();
-
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_gas> * 16000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:gas> * 16000])
-	.duration(160).EUt(30).buildAndRegister();
-
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_light_fuel> * 12000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:light_fuel> * 12000])
-	.duration(160).EUt(30).buildAndRegister();
-
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_heavy_fuel> * 8000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:heavy_fuel> * 8000])
-	.duration(160).EUt(30).buildAndRegister();
-
 fluid_canner.recipeBuilder()
 	.inputs(<minecraft:glass_bottle>)
 	.fluidInputs(<liquid:xpjuice> * 500)
