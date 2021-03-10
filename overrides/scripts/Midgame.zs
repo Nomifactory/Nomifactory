@@ -275,14 +275,6 @@ assembler.recipeBuilder()
 //Engine Intake
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18072> * 4, <gregtech:fluid_pipe:2072> * 2, <gregtech:metal_casing:6>]).outputs([<gregtech:multiblock_casing>]).duration(400).EUt(16).buildAndRegister();
 
-//Lapotron Crystals
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesslapis");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedlazurite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedlapis");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesssodalite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedsodalite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesslazurite");
-
 
 assembler.findRecipe(2, [<gregtech:meta_item_1:12197> * 5, <minecraft:trapped_chest>], [null]).remove();	
 assembler.findRecipe(2, [<gregtech:meta_item_1:12033> * 5, <minecraft:trapped_chest>], [null]).remove();	
