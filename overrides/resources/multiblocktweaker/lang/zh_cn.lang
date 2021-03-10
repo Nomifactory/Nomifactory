@@ -1,3 +1,0 @@
-gregtech.multiblock.fusion_reactor_mk1.description=核聚变反应堆 Mk I 是一台可以通过聚变生产重元素的大型多方块机器。它可以使用LuV，ZPM或者UV等级的能源仓。每一个能源仓可以增加10MEU的能量缓存。
-gregtech.multiblock.fusion_reactor_mk2.description=核聚变反应堆 Mk II 是一台可以通过聚变生产重元素的大型多方块机器。它可以使用ZPM或者UV等级的能源仓。每一个能源仓可以增加20MEU的能量缓存。
-gregtech.multiblock.fusion_reactor_mk3.description=核聚变反应堆 Mk III 是一台可以通过聚变生产重元素的大型多方块机器。它只能使用UV等级的能源仓。每一个能源仓可以增加40MEU的能量缓存。
