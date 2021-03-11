@@ -1053,9 +1053,6 @@ makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
       K : <moreplates:empowered_restonia_gear>,
       L : <moreplates:empowered_void_gear> });
 <contenttweaker:eternalcatalyst>.addTooltip(format.darkGray(format.italic("Gaze into the Abyss...")));
-<gregtech:meta_item_1:32725>.clearTooltip();
-<gregtech:meta_item_1:32725>.addTooltip(format.darkPurple("Quantum Star"));
-<gregtech:meta_item_1:32725>.displayName = "Quantum Star";
 
 
 ////////////////////////// Infinity Ingot ///////////////////////
