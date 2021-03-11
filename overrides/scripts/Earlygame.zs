@@ -796,16 +796,6 @@ recipes.addShaped(<gregtech:machine:273>, [
 	[<gregtech:meta_item_1:32643>, <gregtech:machine:504>, <gregtech:fluid_pipe:2072>],
 	[<ore:wireGtQuadrupleNichrome>, <ore:wireGtQuadrupleNichrome>, <ore:circuitExtreme>]]);
 
-//conductive iron cables by hand
-recipes.addShapeless(<gregtech:cable:6700>, [<gregtech:cable:5700>,<gregtech:cable:5700>]);
-recipes.addShapeless(<gregtech:cable:7700>, [<gregtech:cable:6700>,<gregtech:cable:6700>]);
-recipes.addShapeless(<gregtech:cable:8700>, [<gregtech:cable:7700>,<gregtech:cable:7700>]);
-recipes.addShapeless(<gregtech:cable:9700>, [<gregtech:cable:8700>,<gregtech:cable:8700>]);
-
-recipes.addShapeless(<gregtech:cable:8700> * 2, [<gregtech:cable:9700>]);
-recipes.addShapeless(<gregtech:cable:7700> * 2, [<gregtech:cable:8700>]);
-recipes.addShapeless(<gregtech:cable:6700> * 2, [<gregtech:cable:7700>]);
-recipes.addShapeless(<gregtech:cable:5700> * 2, [<gregtech:cable:6700>]);
 
 
 recipes.addShapeless(<gregtech:meta_item_1:2700>, [<gregtech:meta_item_1:2033>,<minecraft:redstone>]);
