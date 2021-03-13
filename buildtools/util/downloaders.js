@@ -197,24 +197,16 @@ exports.ConcurrentRetryDownloader = ConcurrentRetryDownloader;
  * @typedef {object} ConcurrentRetryDownloaderOptions
  * @property {number} [maxRetries=5] Max retries.
  */
-const retryRequest = (maxRetries = 5, ...args) => {
-	return new Promise((resolve, reject) => {
-		const retry = (counter = 0) => {
-			counter++;
-
-			request(...args)
-				.then(resolve)
-				.catch((err) => {
-					if (counter == maxRetries) {
-						reject(err);
-					} else {
-						retry();
-					}
-				})
+const retryRequest = async (maxRetries = 5, ...args) => {
+	for (let i = 1; i <= maxRetries; i++) {
+		try {
+			return request(...args);
+		} catch (err) {
+			if (i == maxRetries) {
+				throw err;
+			}
 		}
-
-		retry();
-	})
+	}
 }
 
 exports.retryRequest = retryRequest;
