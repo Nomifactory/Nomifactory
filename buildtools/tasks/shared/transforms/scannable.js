@@ -23,7 +23,7 @@ async function transformScannable(cb) {
 				.replace(/#[^\r\n]+/gm, "")     // Comments
 				.replace(/^\s+$/gm, "")         // Trailing whitespaces
 				.replace(/[\r\n]{2,}/gm, "\n"); // Extra newlines
-				
+
 			return g0 + g1
 				+ ` <`
 				+ body + (body ? "" : "\n")

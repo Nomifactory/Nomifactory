@@ -3,9 +3,9 @@ const path = require("path").posix;
 
 /**
  * Config!
- * 
+ *
  * Uses ./config.default.js for default values.
- * 
+ *
  * Please create ./config.js and overwrite values as you see fit.
  * Don't modify the default file!
  */

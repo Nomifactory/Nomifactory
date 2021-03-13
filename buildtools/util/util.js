@@ -2,10 +2,10 @@ const LIBRARY_REG = /^(.+?):(.+?):(.+?)$/;
 
 /**
  * Parses the library name into path following the standard package naming convention.
- * 
+ *
  * Turns `package:name:version` into `package/name/version/name-version`.
- * 
- * @param {string} library 
+ *
+ * @param {string} library
  */
 exports.libraryToPath = (library) => {
 	const parsedLibrary = LIBRARY_REG.exec(library);
@@ -23,7 +23,7 @@ exports.libraryToPath = (library) => {
 /**
  * Checks if given environmental variables are set.
  * Throws when if a variable is unset.
- * 
+ *
  * @param {string[]} vars
  * @throws
  */

@@ -33,7 +33,7 @@ function createClientDirs(cb) {
 function saveModpackManifest(cb) {
 	const manifestPath = path.join(CLIENT_DEST_FOLDER, "manifest.json");
 	fs.writeFileSync(manifestPath, JSON.stringify(global.MODPACK_MANIFEST, null, "  "));
-	
+
 	cb();
 }
 
@@ -64,7 +64,7 @@ function copyClientOverrides() {
  */
 function fetchModList(cb) {
 	log("Fetching mods...");
-	
+
 	/**
 	 * Fetch file descriptions for download urls and hashes
 	 * by mapping files to Promises.

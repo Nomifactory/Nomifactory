@@ -18,7 +18,7 @@ async function setupOctokit(cb) {
 	octokit = new Octokit({
 		auth: process.env.GITHUB_TOKEN
 	});
-	
+
 	const parsedSlug = REGEX_SLUG.exec(process.env.TRAVIS_REPO_SLUG);
 	if (parsedSlug) {
 		global.LOCAL_STORAGE.GITHUB_OWNER = parsedSlug[1];
@@ -32,7 +32,7 @@ async function setupOctokit(cb) {
 
 /**
  * Remove the pre-release release.
- * 
+ *
  * Does nothing if the current build is tagged or the
  * pre-release release doesn't exist.
  *
@@ -67,7 +67,7 @@ async function fetchAndRemovePrereleaseRelease(cb) {
 
 /**
  * Remove the pre-release tag.
- * 
+ *
  * Does nothing if the current build is tagged or the
  * pre-release tag doesn't exist.
  *

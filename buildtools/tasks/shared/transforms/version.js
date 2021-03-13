@@ -27,7 +27,7 @@ async function transformManifestVersion(cb) {
 			if (!parsedSlug) {
 				cb(`Malformed GitHub repository slug: ${process.env.TRAVIS_REPO_SLUG}`);
 			}
-			
+
 			const slug = {
 				owner: parsedSlug[1],
 				repo: parsedSlug[2],
@@ -62,7 +62,7 @@ async function transformManifestVersion(cb) {
 	}
 
 	global.MODPACK_MANIFEST.name = versionTitle;
-	
+
 	const randomPatchesConfigFilePath = path.join(
 		SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, randomPatchesConfigFile
 	);
@@ -72,7 +72,7 @@ async function transformManifestVersion(cb) {
 	await fs.promises.writeFile(randomPatchesConfigFilePath, mustache.render(randomPatchesFile, {
 		title: versionTitle
 	}));
-	
+
 	cb();
 }
 

@@ -23,7 +23,7 @@ async function deployCurseForge(cb) {
 		if (!process.env[vari]) {
 			return cb(`Environmental variable ${vari} is unset.`);
 		}
-	});	
+	});
 
 	const tokenHeaders = {
 		"X-Api-Token": process.env.CURSEFORGE_API_TOKEN

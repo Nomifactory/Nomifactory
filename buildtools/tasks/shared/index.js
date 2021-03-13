@@ -52,7 +52,7 @@ function zipLang() {
 		src(path.join(resourcesPath, "**/*.lang"), opts)
 			.pipe(rename(f => {
 				f.dirname = path.join("assets", f.dirname);
-			}))	
+			}))
 	];
 
 	return merge(...streams)

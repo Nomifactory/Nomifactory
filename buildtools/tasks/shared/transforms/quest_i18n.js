@@ -6,9 +6,9 @@ let data = {};
 
 /**
  * Flatten Lists
- * 
- * @param {string[]} cur 
- * @param {string[]} pre 
+ *
+ * @param {string[]} cur
+ * @param {string[]} pre
  * @returns {string[]}
  */
 function flat(cur, pre) {
@@ -17,8 +17,8 @@ function flat(cur, pre) {
 
 /**
  * Escape text on quest books
- * 
- * @param {string} origin 
+ *
+ * @param {string} origin
  * @returns {string}
  */
 function escapeString(origin) {

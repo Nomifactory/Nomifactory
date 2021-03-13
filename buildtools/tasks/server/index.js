@@ -64,7 +64,7 @@ const DOWNLOADER = new ConcurrentRetryDownloader({
 
 /**
  * Wraps the `.download()` method of DOWNLOADER.
- * 
+ *
  * @param {FileDef[]} files Array of libraries to download.
  * @param {(error?) => void} callback Optional callback to call once everything is downloaded.
  */
@@ -92,7 +92,7 @@ const MOJANG_MAVEN = "https://libraries.minecraft.net/";
 
 /**
  * Library wrapper for downloadFiles.
- * 
+ *
  * @param {string[]} libraries Array of libraries to download.
  * @param {(error?) => void} callback Optional callback to call once everything is downloaded.
  */
@@ -139,7 +139,7 @@ const FORGE_MAVEN = "https://files.minecraftforge.net/maven/";
 
 /**
  * Download the Forge jar.
- * 
+ *
  * Extract, parse the profile data and download required libraries.
  */
 function downloadForge(cb) {
@@ -202,7 +202,7 @@ function downloadForge(cb) {
 
 						/**
 						 * Save the universal jar file name for later.
-						 * 
+						 *
 						 * We will need it to process launchscripts.
 						 */
 						global.LOCAL_STORAGE.forgeJar = forgeUniversalPath;
@@ -257,11 +257,11 @@ function downloadMinecraftServer(cb) {
 			retryRequest(
 				global.CONFIG.downloaderMaxRetries
 				, { uri: version.url, json: true }
-			).then((versionManifest) => {			
+			).then((versionManifest) => {
 				if (versionManifest.downloads && versionManifest.downloads.server) {
 					/**
 					 * Fetch the server jar file.
-					 * 
+					 *
 					 * Pass SHA1 hash to compare against the downloaded file.
 					 */
 					downloadAndSaveFiles([{
@@ -286,7 +286,7 @@ function downloadMinecraftServer(cb) {
  */
 function downloadMods(cb) {
 	log("Fetching mods...");
-	
+
 	/**
 	 * Fetch file descriptions for download urls and hashes
 	 * by mapping files to Promises.
@@ -304,7 +304,7 @@ function downloadMods(cb) {
 
 		/**
 		 * Download and save mod files.
-		 * 
+		 *
 		 * Pass mod fingerprints to compare against downloaded files.
 		 */
 		downloadAndSaveFiles(
@@ -348,7 +348,7 @@ function copyServerLicense() {
 
 /**
  * Copies files from ./launchscripts into dest folder and processes them using mustache.
- * 
+ *
  * Replaces jvmArgs, minRAM, maxRAM and forgeJar.
  */
 function processLaunchscripts() {

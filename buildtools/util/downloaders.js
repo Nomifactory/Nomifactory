@@ -26,15 +26,15 @@ const path = require("path").posix;
 
 /**
  * Concurrent downloader.
- * 
+ *
  * Supply with files. Subscribe to events. Call download.
- * 
+ *
  * @extends EventEmitter
  * @fires ConcurrentRetryDownloader#complete
  */
 class ConcurrentRetryDownloader extends EventEmitter {
 	/**
-	 * @param {ConcurrentRetryDownloaderOptions} options 
+	 * @param {ConcurrentRetryDownloaderOptions} options
 	 */
 	constructor(options = {}) {
 		super();
@@ -47,7 +47,7 @@ class ConcurrentRetryDownloader extends EventEmitter {
 	}
 
 	/**
-	 * @param {FileDef} fileDef 
+	 * @param {FileDef} fileDef
 	 */
 	__emitStart(fileDef) {
 		/**
@@ -63,7 +63,7 @@ class ConcurrentRetryDownloader extends EventEmitter {
 	}
 
 	/**
-	 * @param {FileDef} fileDef 
+	 * @param {FileDef} fileDef
 	 */
 	__emitComplete(fileDef, index, total, output, cacheHit) {
 		/**
@@ -86,7 +86,7 @@ class ConcurrentRetryDownloader extends EventEmitter {
 	}
 
 	/**
-	 * @param {FileDef} fileDef 
+	 * @param {FileDef} fileDef
 	 */
 	__emitRetry(fileDef, error, attempt) {
 		/**
@@ -103,11 +103,11 @@ class ConcurrentRetryDownloader extends EventEmitter {
 			, attempt: attempt
 			, error: error
 		});
-	}	
+	}
 
 	/**
 	 * Downloads files in arbitrary order.
-	 * 
+	 *
 	 * @param {FileDef[]} files
 	 * @returns {Promise<void>}
 	 */
@@ -170,7 +170,7 @@ class ConcurrentRetryDownloader extends EventEmitter {
 							}
 
 							this.__emitComplete(fileDef, countDownloadedFiles++, total, buffer, cacheHit);
-							resolve();	
+							resolve();
 						})
 						.catch((error) => {
 							if (counter >= this.maxRetries) {
