@@ -200,7 +200,7 @@ exports.ConcurrentRetryDownloader = ConcurrentRetryDownloader;
 const retryRequest = async (maxRetries = 5, ...args) => {
 	for (let i = 1; i <= maxRetries; i++) {
 		try {
-			return request(...args);
+			return await request(...args);
 		} catch (err) {
 			if (i == maxRetries) {
 				throw err;
