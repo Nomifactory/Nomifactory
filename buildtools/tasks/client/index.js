@@ -5,7 +5,6 @@ const zip      = require("gulp-zip");
 const merge    = require("merge-stream");
 const rename   = require("gulp-rename");
 
-const { retryRequest } = require("../../util/downloaders.js");
 
 const { src, dest } = require("gulp");
 
@@ -13,6 +12,8 @@ const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
 const CLIENT_DEST_FOLDER = path.join(DEST_FOLDER, "client");
 const TEMP_FOLDER        = path.join(DEST_FOLDER, "temp");
+
+const { fetchModInfos } = require("../../util/util.js");
 
 function createClientDirs(cb) {
 	const toCreate = [
@@ -63,37 +64,34 @@ function copyClientOverrides() {
 /**
  * Fetches mod links and builds modlist.html.
  */
-function fetchModList(cb) {
-	log("Fetching mods...");
+async function fetchModList(cb) {
+	log("Fetching mod infos...");
 
-	/**
-	 * Fetch file descriptions for download urls and hashes
-	 * by mapping files to Promises.
-	 */
-	Promise.map(global.MODPACK_MANIFEST.files, file => {
-		return retryRequest(
-			global.CONFIG.downloaderMaxRetries
-			, {
-				uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${file.projectID}`
-				, json: true
-			}
-		)
-	}, { concurrency: global.CONFIG.downloaderConcurrency }).then(modInfos => {
-		const output = [
-			"<ul>\r\n",
-			...modInfos
-				.sort((a, b) => a.id - b.id)
-				.map(modInfo => {
-					return `\t<li><a href="${modInfo.websiteUrl}">${modInfo.name} (by ${
-						modInfo.authors[0].name
-					})</a></li>\r\n`
-				}),
-			"</ul>",
-		];
+	// Fetch project/addon infos.
+	const toFetch = global.MODPACK_MANIFEST.files.map(mod => mod.projectID);
+	const modInfos = await fetchModInfos(toFetch);
 
-		fs.writeFile(path.join(CLIENT_DEST_FOLDER, "modlist.html"), output.join(""), () => {
-			cb();
-		})
+	log(`Fetched ${modInfos.length} mod infos`);
+
+	// Create modlist.html
+	const output = [
+		"<ul>\r\n",
+		...modInfos
+			// Sort mods by their project IDs.
+			.sort((a, b) => a.id - b.id)
+
+			// Create a <li> node for each mod.
+			//
+			.map(modInfo => {
+				return `\t<li><a href="${modInfo.websiteUrl}">${modInfo.name || "Unknown"} (by ${
+					modInfo.authors.map((author) => author.name || "Someone").join(", ")
+				})</a></li>\r\n`
+			}),
+		"</ul>",
+	];
+
+	fs.writeFile(path.join(CLIENT_DEST_FOLDER, "modlist.html"), output.join(""), () => {
+		cb();
 	})
 }
 

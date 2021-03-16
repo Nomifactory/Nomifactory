@@ -34,3 +34,57 @@ exports.checkEnvironmentalVariables = (vars) => {
 		}
 	});
 }
+
+const log = require("fancy-log");
+const Promise = require("bluebird");
+const { retryRequest } = require("./downloaders");
+
+/**
+ * Fetches information about provided project IDs.
+ *
+ * @param {number[]} toFetch Project IDs to fetch.
+ * @returns {Object[]} Fetched mod infos.
+ */
+exports.fetchModInfos = async (toFetch) => {
+	const modInfos = await retryRequest(global.CONFIG.downloaderMaxRetries, {
+		uri: "https://addons-ecs.forgesvc.net/api/v2/addon/",
+		method: "post",
+		json: toFetch
+	});
+
+	if (!modInfos || modInfos.length === 0) {
+		throw new Error("Couldn't fetch mods due to empty response");
+	}
+
+	// In case we haven't received the proper amount of mod infos,
+	// try requesting them individually.
+	if (modInfos.length !== toFetch.length) {
+		const modInfoIDs = new Set(modInfos.map((mi) => mi.id));
+		const toFetchMissing = [...new Set(toFetch.filter(x => !modInfoIDs.has(x)))];
+
+		log.warn(`Couldn't fetch next project IDs in bulk: ${toFetchMissing.join(", ")}`);
+
+		// Try fetching mods individually, in case they've been deleted.
+		let count = 0;
+		const missingModInfos = await Promise.map(toFetchMissing, async (id) => {
+			log.info(`Fetching project ID ${id} directly... (${++count} / ${toFetchMissing.length})`);
+
+			try {
+				return await retryRequest(global.CONFIG.downloaderMaxRetries, {
+					uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${id}`,
+					json: true
+				});
+				// In case something fails to download; catch, rewrite, rethrow.
+			} catch (err) {
+				err.message = `Couldn't fetch project ID ${id}. ${err.message || "Unknown error"}`;
+				throw err;
+			}
+		});
+
+		// The code above is expected to throw and terminate the further execution,
+		// so we can just do this.
+		modInfos.push(...missingModInfos);
+	}
+
+	return modInfos;
+}

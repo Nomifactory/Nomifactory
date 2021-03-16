@@ -9,7 +9,7 @@ const through  = require("through2");
 
 const { src, dest } = require("gulp");
 
-const { ConcurrentRetryDownloader, retryRequest } = require("../../util/downloaders.js");
+const { ConcurrentRetryDownloader, retryRequest } = require("../../util/downloaders");
 
 const DEST_FOLDER        = global.CONFIG.buildDestinationDirectory;
 const SHARED_DEST_FOLDER = path.join(DEST_FOLDER, "shared");
