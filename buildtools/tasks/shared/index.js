@@ -1,9 +1,6 @@
 const fs       = require("fs");
 const log      = require("fancy-log");
 const path     = require("path").posix;
-const zip      = require("gulp-zip");
-const merge    = require("merge-stream");
-const rename   = require("gulp-rename");
 
 const { src, dest } = require("gulp");
 
@@ -40,29 +37,8 @@ function createSharedDirs(cb) {
 	cb();
 }
 
-/**
- * Zips the language files.
- */
-function zipLang() {
-	const resourcesPath = path.join(SHARED_DEST_FOLDER, global.OVERRIDES_FOLDER, "resources");
-
-	const opts = { nodir: true, base: resourcesPath };
-	const streams = [
-		src(path.join(resourcesPath, "pack.mcmeta"), opts),
-		src(path.join(resourcesPath, "**/*.lang"), opts)
-			.pipe(rename(f => {
-				f.dirname = path.join("assets", f.dirname);
-			}))
-	];
-
-	return merge(...streams)
-		.pipe(zip("lang.zip"))
-		.pipe(dest(DEST_FOLDER));
-}
-
 module.exports = [
 	createSharedDirs,
 	copyOverrides,
-	...require("./transforms"),
-	zipLang
+	...require("./transforms")
 ]
