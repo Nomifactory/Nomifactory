@@ -13144,7 +13144,8 @@
     },
     "195:10": {
       "preRequisites:11": [
-        196
+        258,
+        335
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19894,7 +19895,8 @@
       "preRequisites:11": [
         325,
         337,
-        344
+        344,
+        542
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22312,7 +22314,7 @@
     "332:10": {
       "preRequisites:11": [
         242,
-        533
+        795
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22377,7 +22379,8 @@
     },
     "333:10": {
       "preRequisites:11": [
-        332
+        332,
+        542
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22507,6 +22510,7 @@
     },
     "335:10": {
       "preRequisites:11": [
+        196,
         334
       ],
       "properties:10": {
@@ -45716,7 +45720,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A complex material from §bThermal Expansion§r cooked in an §3Electric Blast Furnace§r.\n\n§6Enderium§r doesn\u0027t require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking.\n\nAs with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile).",
+          "desc:8": "A complex material from §bThermal Expansion§r cooked in an §3Electric Blast Furnace§r.\n\n§6Enderium§r doesn\u0027t require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking.\n\nAs with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile).\n\nIn addition to its other uses, Enderium gets you access to §aResonant Upgrade Kits§r for machines and the §6Resonant Satchel§r. These quests can be found on the §eProgression§r tab.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48109,8 +48113,7 @@
     "791:10": {
       "preRequisites:11": [
         524,
-        676,
-        675
+        798
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -48123,7 +48126,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "Processing Array",
@@ -48532,6 +48535,71 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "798:10": {
+      "preRequisites:11": [
+        675,
+        676
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§6Sunnarium§r is an alloy formed from §6Stabilized Plutonium§r and §6Stabilized Curium§r in an IV or better §3Alloy Smelter§r.\n\nIt is a common ingredient in higher tier §6Solar Panels§r, as well as a crucial ingredient of the §3Processing Array§r.\n\nThis stuff takes a long time to produce so consider stocking it passively.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "advsolars:sunnarium"
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Sunnarium",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 798,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "advsolars:sunnarium"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -48544,10 +48612,10 @@
           "bg_size:3": 256,
           "desc:8": "GregTech Low Voltage Tier: start building a factory!\n\nGenerate resources with §bDeep Mob Learning§r.\n\nBuild an §3Electric Blast Furnace§r for smelting advanced materials and alloys.\n\nEarly §bEnderIO§r tech and §bApplied Energistics 2§r Digital Storage.",
           "icon:10": {
-            "Count:3": 0,
-            "Damage:2": 0,
+            "Count:3": 1,
+            "Damage:2": 511,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "gregtech:machine"
           },
           "name:8": "The Beginning",
           "visibility:8": "ALWAYS"
@@ -49118,10 +49186,10 @@
           "bg_size:3": 256,
           "desc:8": "GregTech Medium Voltage Tier: new machines and rudimentary ore processing.\n\nOrganic Chemistry for §6Plastics§r, and build a §3Distillation Tower§r.\n\n§bApplied Energistics 2§r automation. Explore §bActually Additions§r.",
           "icon:10": {
-            "Count:3": 0,
+            "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "contenttweaker:refinedcircuit"
           },
           "name:8": "Early Game",
           "visibility:8": "ALWAYS"
@@ -49867,10 +49935,10 @@
           "bg_size:3": 256,
           "desc:8": "GregTech High Voltage, Extreme Voltage, and Insane Voltage tiers:\n\n§6§3Cryogenic Distillation§r, and petrochemistry for §6Epoxy§r and §9Cetane Diesel§r.\n\nCraft §6Nether Stars§r and unlock §bThermal Expansion§r machines.\n\nBuild a§b NuclearCraft§r fission reactor to obtain new materials.\n\nBuild a Space Station and Warp Core.",
           "icon:10": {
-            "Count:3": 0,
-            "Damage:2": 0,
+            "Count:3": 1,
+            "Damage:2": 2,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "gregtech:warning_sign"
           },
           "name:8": "Mid Game",
           "visibility:8": "ALWAYS"
@@ -50779,22 +50847,29 @@
           "sizeY:3": 24,
           "x:3": -180,
           "y:3": 32
+        },
+        "129:10": {
+          "id:3": 798,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -300,
+          "y:3": 288
         }
       }
     },
     "3:10": {
       "lineID:3": 3,
-      "order:3": 7,
+      "order:3": 8,
       "properties:10": {
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
           "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress.",
           "icon:10": {
-            "Count:3": 0,
+            "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "questbook:itemquestbook"
           },
           "name:8": "Progression",
           "visibility:8": "ALWAYS"
@@ -51505,10 +51580,10 @@
           "bg_size:3": 256,
           "desc:8": "GregTech LuV, ZPM, and UV tiers:\n\nBuild §3Assembly Lines§r, §3Fusion Reactors§r, and more!\n\nAutomate in style with §bPackagedAuto§r. Climb the tiers of §6Micro Miners§r.\n\n§bDraconic Evolution§r for fusion crafting and energy storage.",
           "icon:10": {
-            "Count:3": 0,
-            "Damage:2": 0,
+            "Count:3": 1,
+            "Damage:2": 32501,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "gregtech:meta_item_2"
           },
           "name:8": "Late Game",
           "visibility:8": "ALWAYS"
@@ -51558,706 +51633,678 @@
           "y:3": 288
         },
         "6:10": {
-          "id:3": 195,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": 252,
-          "y:3": 36
-        },
-        "7:10": {
           "id:3": 196,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 192,
-          "y:3": 96
+          "x:3": -48,
+          "y:3": 340
         },
-        "8:10": {
+        "7:10": {
           "id:3": 238,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 192,
           "y:3": 228
         },
-        "9:10": {
+        "8:10": {
           "id:3": 239,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": 360
         },
-        "10:10": {
+        "9:10": {
           "id:3": 240,
           "sizeX:3": 72,
           "sizeY:3": 72,
           "x:3": 0,
           "y:3": 360
         },
-        "11:10": {
+        "10:10": {
           "id:3": 241,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": 192
         },
-        "12:10": {
+        "11:10": {
           "id:3": 242,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 368
         },
-        "13:10": {
+        "12:10": {
           "id:3": 243,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 48
         },
-        "14:10": {
+        "13:10": {
           "id:3": 244,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": 360
         },
-        "15:10": {
+        "14:10": {
           "id:3": 251,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -336,
           "y:3": 228
         },
-        "16:10": {
+        "15:10": {
           "id:3": 252,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -276,
           "y:3": 228
         },
-        "17:10": {
+        "16:10": {
           "id:3": 253,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
           "y:3": 132
         },
-        "18:10": {
+        "17:10": {
           "id:3": 254,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -168,
           "y:3": 228
         },
-        "19:10": {
+        "18:10": {
           "id:3": 256,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 108,
           "y:3": 228
         },
-        "20:10": {
+        "19:10": {
           "id:3": 257,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 72,
           "y:3": 192
         },
-        "21:10": {
+        "20:10": {
           "id:3": 258,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": 288
         },
-        "22:10": {
+        "21:10": {
           "id:3": 263,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 144
         },
-        "23:10": {
+        "22:10": {
           "id:3": 264,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -456,
           "y:3": 96
         },
-        "24:10": {
+        "23:10": {
           "id:3": 265,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -534,
           "y:3": 90
         },
-        "25:10": {
+        "24:10": {
           "id:3": 266,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 48
         },
-        "26:10": {
+        "25:10": {
           "id:3": 267,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 48
         },
-        "27:10": {
+        "26:10": {
           "id:3": 268,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -456,
           "y:3": 144
         },
-        "28:10": {
+        "27:10": {
           "id:3": 269,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -456,
           "y:3": 174
         },
-        "29:10": {
+        "28:10": {
           "id:3": 271,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 408
         },
-        "30:10": {
+        "29:10": {
           "id:3": 274,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 288
         },
-        "31:10": {
+        "30:10": {
           "id:3": 279,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 284
         },
-        "32:10": {
+        "31:10": {
           "id:3": 283,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -468,
           "y:3": 240
         },
-        "33:10": {
+        "32:10": {
           "id:3": 286,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -348,
           "y:3": 36
         },
-        "34:10": {
+        "33:10": {
           "id:3": 287,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 108,
           "y:3": 36
         },
-        "35:10": {
+        "34:10": {
           "id:3": 288,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": 96
         },
-        "36:10": {
+        "35:10": {
           "id:3": 289,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 240
         },
-        "37:10": {
+        "36:10": {
           "id:3": 291,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 288
         },
-        "38:10": {
+        "37:10": {
           "id:3": 292,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -408,
           "y:3": 336
         },
-        "39:10": {
+        "38:10": {
           "id:3": 295,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 72,
           "y:3": 132
         },
-        "40:10": {
+        "39:10": {
           "id:3": 312,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 64
         },
-        "41:10": {
+        "40:10": {
           "id:3": 313,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -212,
           "y:3": 64
         },
-        "42:10": {
+        "41:10": {
           "id:3": 314,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
           "y:3": 192
         },
-        "43:10": {
+        "42:10": {
           "id:3": 315,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -324,
           "y:3": 192
         },
-        "44:10": {
+        "43:10": {
           "id:3": 316,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 192
         },
-        "45:10": {
+        "44:10": {
           "id:3": 317,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 288
         },
-        "46:10": {
+        "45:10": {
           "id:3": 323,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -212,
           "y:3": 96
         },
-        "47:10": {
+        "46:10": {
           "id:3": 324,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 96
         },
-        "48:10": {
+        "47:10": {
           "id:3": 325,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 96
         },
-        "49:10": {
+        "48:10": {
           "id:3": 326,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -216,
           "y:3": 236
         },
-        "50:10": {
+        "49:10": {
           "id:3": 327,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 340
         },
-        "51:10": {
+        "50:10": {
           "id:3": 329,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": 132
         },
-        "52:10": {
+        "51:10": {
           "id:3": 330,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 168
         },
-        "53:10": {
+        "52:10": {
           "id:3": 331,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 252,
           "y:3": 396
         },
-        "54:10": {
+        "53:10": {
           "id:3": 332,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": 284
         },
-        "55:10": {
+        "54:10": {
           "id:3": 333,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": 312
         },
-        "56:10": {
+        "55:10": {
           "id:3": 334,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": 340
         },
-        "57:10": {
+        "56:10": {
           "id:3": 335,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -96,
           "y:3": 372
         },
-        "58:10": {
+        "57:10": {
           "id:3": 336,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 72
         },
-        "59:10": {
+        "58:10": {
           "id:3": 337,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 72,
           "y:3": 96
         },
-        "60:10": {
+        "59:10": {
           "id:3": 342,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": 96
         },
-        "61:10": {
+        "60:10": {
           "id:3": 345,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 132
         },
-        "62:10": {
+        "61:10": {
           "id:3": 351,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": 288
         },
-        "63:10": {
+        "62:10": {
           "id:3": 389,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -348,
           "y:3": 288
         },
-        "64:10": {
-          "id:3": 399,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 0
-        },
-        "65:10": {
+        "63:10": {
           "id:3": 406,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -300,
           "y:3": 288
         },
-        "66:10": {
+        "64:10": {
           "id:3": 407,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -377,
           "y:3": 234
         },
-        "67:10": {
+        "65:10": {
           "id:3": 408,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -252,
           "y:3": 288
         },
-        "68:10": {
+        "66:10": {
           "id:3": 411,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": 54,
           "y:3": 234
         },
-        "69:10": {
+        "67:10": {
           "id:3": 412,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -588,
           "y:3": 240
         },
-        "70:10": {
+        "68:10": {
           "id:3": 417,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": 132
         },
-        "71:10": {
+        "69:10": {
           "id:3": 519,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -102,
           "y:3": 450
         },
-        "72:10": {
-          "id:3": 521,
-          "sizeX:3": 20,
-          "sizeY:3": 20,
-          "x:3": -127,
-          "y:3": 166
-        },
-        "73:10": {
+        "70:10": {
           "id:3": 522,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
           "y:3": 96
         },
-        "74:10": {
+        "71:10": {
           "id:3": 523,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 0
         },
-        "75:10": {
+        "72:10": {
           "id:3": 524,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -456,
           "y:3": 0
         },
-        "76:10": {
+        "73:10": {
           "id:3": 525,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 0
         },
-        "77:10": {
+        "74:10": {
           "id:3": 529,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -468,
           "y:3": 36
         },
-        "78:10": {
+        "75:10": {
           "id:3": 531,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -456,
           "y:3": 204
         },
-        "79:10": {
+        "76:10": {
           "id:3": 533,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -96,
           "y:3": 228
         },
-        "80:10": {
+        "77:10": {
           "id:3": 534,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -228,
           "y:3": 336
         },
-        "81:10": {
+        "78:10": {
           "id:3": 535,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": 336
         },
-        "82:10": {
+        "79:10": {
           "id:3": 536,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": 132
         },
-        "83:10": {
+        "80:10": {
           "id:3": 537,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 312
         },
-        "84:10": {
+        "81:10": {
           "id:3": 560,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -180,
           "y:3": 132
         },
-        "85:10": {
+        "82:10": {
           "id:3": 564,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": 198,
           "y:3": 450
         },
-        "86:10": {
+        "83:10": {
           "id:3": 607,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 252,
           "y:3": 228
         },
-        "87:10": {
+        "84:10": {
           "id:3": 608,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": 48
         },
-        "88:10": {
+        "85:10": {
           "id:3": 612,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": 192
         },
-        "89:10": {
+        "86:10": {
           "id:3": 681,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": 66,
           "y:3": 12
         },
-        "90:10": {
+        "87:10": {
           "id:3": 695,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 0
         },
-        "91:10": {
+        "88:10": {
           "id:3": 696,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -66,
           "y:3": 450
         },
-        "92:10": {
+        "89:10": {
           "id:3": 733,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 96
         },
-        "93:10": {
+        "90:10": {
           "id:3": 744,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -408,
           "y:3": 96
         },
-        "94:10": {
-          "id:3": 749,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": 180,
-          "y:3": 36
-        },
-        "95:10": {
+        "91:10": {
           "id:3": 750,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 164
         },
-        "96:10": {
-          "id:3": 753,
-          "sizeX:3": 20,
-          "sizeY:3": 20,
-          "x:3": -183,
-          "y:3": 166
-        },
-        "97:10": {
+        "92:10": {
           "id:3": 776,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 324
         },
-        "98:10": {
+        "93:10": {
           "id:3": 778,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": 324
         },
-        "99:10": {
+        "94:10": {
           "id:3": 791,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -396,
           "y:3": -12
         },
-        "100:10": {
+        "95:10": {
           "id:3": 794,
           "sizeX:3": 0,
           "sizeY:3": 0,
           "x:3": 84,
           "y:3": 30
         },
-        "101:10": {
+        "96:10": {
           "id:3": 795,
           "sizeX:3": 20,
           "sizeY:3": 20,
-          "x:3": -108,
-          "y:3": 180
+          "x:3": -110,
+          "y:3": 286
         },
-        "102:10": {
+        "97:10": {
           "id:3": 796,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -112,
           "y:3": 96
         },
-        "103:10": {
+        "98:10": {
           "id:3": 797,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -112,
           "y:3": 64
+        },
+        "99:10": {
+          "id:3": 798,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -384,
+          "y:3": 48
         }
       }
     },
     "5:10": {
       "lineID:3": 5,
-      "order:3": 6,
+      "order:3": 7,
       "properties:10": {
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
           "desc:8": "You\u0027re in the endgame now...\n\nHarvest entire microverses and unlock the §dCreative Portable Tank§r.\n\nPut your automation to the ultimate test as you progress towards the final goal: the §dCreative Vending Upgrade§r.",
           "icon:10": {
-            "Count:3": 0,
+            "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "contenttweaker:heartofauniverse"
           },
           "name:8": "End Game",
           "visibility:8": "ALWAYS"
@@ -53031,10 +53078,10 @@
           "bg_size:3": 256,
           "desc:8": "Welcome to §5Omnifactory§r, I\u0027ll be your guide.",
           "icon:10": {
-            "Count:3": 0,
-            "Damage:2": 0,
+            "Count:3": 1,
+            "Damage:2": 32487,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "gregtech:meta_item_2"
           },
           "name:8": "Genesis",
           "visibility:8": "NORMAL"
@@ -53402,10 +53449,10 @@
           "bg_size:3": 256,
           "desc:8": "Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.\n\nConquer The End or invest in §bEnderIO §rfor teleportation technologies.\n\nBuild a rocket and go to the Moon (or don\u0027t, but it\u0027s fun).\n\nEither way, it\u0027s time to start mining §emicroverses§r.",
           "icon:10": {
-            "Count:3": 0,
+            "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "minecraft:air"
+            "id:8": "contenttweaker:tieroneship"
           },
           "name:8": "Into The Microverse",
           "visibility:8": "ALWAYS"
@@ -53789,6 +53836,97 @@
           "sizeY:3": 0,
           "x:3": 612,
           "y:3": 612
+        }
+      }
+    },
+    "8:10": {
+      "lineID:3": 8,
+      "order:3": 6,
+      "properties:10": {
+        "betterquesting:10": {
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "Create new elements and power your base with doughnuts!",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 2506,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "name:8": "Fun With Fusion",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "quests:9": {
+        "0:10": {
+          "id:3": 195,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 72,
+          "y:3": 0
+        },
+        "1:10": {
+          "id:3": 196,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": 36
+        },
+        "2:10": {
+          "id:3": 243,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -72,
+          "y:3": 0
+        },
+        "3:10": {
+          "id:3": 258,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 96,
+          "y:3": -36
+        },
+        "4:10": {
+          "id:3": 287,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -24,
+          "y:3": 0
+        },
+        "5:10": {
+          "id:3": 325,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": 36
+        },
+        "6:10": {
+          "id:3": 335,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": -36
+        },
+        "7:10": {
+          "id:3": 399,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": -36
+        },
+        "8:10": {
+          "id:3": 607,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 96,
+          "y:3": 36
+        },
+        "9:10": {
+          "id:3": 749,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": 0
         }
       }
     }
