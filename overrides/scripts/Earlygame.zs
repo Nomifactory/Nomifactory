@@ -1014,6 +1014,13 @@ implosion.recipeBuilder()
 
 }
 
+//Reinforced Iridium
+implosion.recipeBuilder()
+	.inputs(<gregtech:meta_item_2:32434>)
+	.property("explosives", <gregtech:meta_item_1:32629> * 64)
+	.outputs(<gregtech:meta_item_2:32435>)
+	.duration(20).EUt(30).buildAndRegister();
+
 //Omnium
 implosion.recipeBuilder()
 	.inputs([<extendedcrafting:singularity_ultimate>])
