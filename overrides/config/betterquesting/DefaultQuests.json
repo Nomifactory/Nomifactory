@@ -48183,7 +48183,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Dynamite§r is an exposive made from either §aNitrogen§r or §aGlycerol§r and §aNitration Mixture§r and is used in the §6Implosion Compressor§r.\n\n§6Tnt§r is another explosive that could be made instead of Dynamite, as §eDynamite does not process all recipes in the Implosion Compressor§r.",
+          "desc:8": "§6Dynamite§r is an explosive made from either §aNitrogen§r or §aGlycerol§r and §aNitration Mixture§r and is used in the §6Implosion Compressor§r.\n\n§6TNT§r is another explosive that could be made instead of Dynamite. You need fewer TNT per recipe it\u0027s used in relative to dynamite, but it has its own unique processing chain.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48251,7 +48251,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Tnt§r is an explosive made through §aWood Tar§r or §aSteam Cracked Oil Products§r and is used later on in the §6Implosion Compressor§r.\n\n§6Dynamite§r is another explosive item that can be used in the §6Implosion Compressor§r, however §eDynamite cannot process all Implosion Compressor recipes§r.",
+          "desc:8": "§6TNT§r is an explosive made through §aWood Tar§r or §aSteam Cracked Oil Products§r and is used later on in the §6Implosion Compressor§r.\n\n§6Dynamite§r is another explosive item that can be used in the §6Implosion Compressor§r, however §eDynamite cannot process all Implosion Compressor recipes§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48262,7 +48262,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Tnt",
+          "name:8": "TNT",
           "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -48327,7 +48327,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Tnt or Dyanmite",
+          "name:8": "TNT or Dyanmite",
           "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -48351,7 +48351,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §6Advanced System on Chip§r (ASoC) allows for creation of cheaper, final form §aTier 4§r and §aTier 6§r circuits.\n\nHowever, unlike the §6SoC§r, these circuits must be made in a §aZPM Assembling Machine§r.",
+          "desc:8": "The §6Advanced System-on-Chip§r (or §6ASoC§r) is the peak of component miniaturization. These are required for §6Wetware Circuits§r, and unlock the most efficient recipe for producing §6Quantum Circuits§r.\n\nHowever, unlike the §6SoC§r, these circuits must be made in a §aZPM Assembling Machine§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48362,7 +48362,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Advanced System on Chip",
+          "name:8": "Advanced System-on-Chip",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -48479,7 +48479,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §6System on Chip§r (SoC) allows for the creation of the final form of the first tiers of circuits in the cheapest maner possible.\n\nEach circuit tier requires a different tier §aAssembling Machine§r, so make sure you use the correct tier, or just make everything in the highest tier.",
+          "desc:8": "The §6System-on-Chip§r (or §6SoC§r) is a specialty component that miniaturizes all the typical circuit components (like §6SMDs§r) onto a single chip.\n\nThese are very useful as they unlock the most efficient recipes for creating §6Refined§r, §6Micro§r, and §6Nano Circuits§r.\n\nEach SoC-based circuit recipe requires a different minimum tier of §aAssembling Machine§r, with the Nano Circuits requiring §eLuV§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48490,7 +48490,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "System on Chip",
+          "name:8": "System-on-Chip",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -53933,7 +53933,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,
