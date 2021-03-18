@@ -3,7 +3,7 @@
  *
  * Why? I dunno.
  */
-const MURMUR_SKIP_BYTES = {
+const MURMUR_SKIP_BYTES: { [key: number]: boolean } = {
 	9: true,
 	10: true,
 	13: true,
@@ -18,7 +18,7 @@ import _sha1 from "sha1";
  *
  * This is what Twitch is using to fingerprint mod files.
  */
-export const murmurhash = (inputBuffer: Buffer, seed = 1): number => {
+export const murmurhash = (inputBuffer: Buffer, seed = 1): string => {
 	const output = Array.from(inputBuffer).fill(0);
 
 	let pos = 0;
@@ -40,13 +40,13 @@ import { HashDef } from "../types/hashDef";
  *
  * This is what Forge is using to check files.
  */
-export const sha21 = (inputBuffer: Buffer): string => {
+export const sha1 = (inputBuffer: Buffer): string => {
 	return _sha1(inputBuffer);
 };
 
-const hashFuncs = {
-	murmurhash: exports.murmurhash,
-	sha1: exports.sha1,
+const hashFuncs: { [key: string]: (buffer: Buffer) => string } = {
+	murmurhash: murmurhash,
+	sha1: sha1,
 };
 
 /**
@@ -63,9 +63,5 @@ export const compareBufferToHashDef = (buffer: Buffer, hashDef: HashDef): boolea
 	}
 
 	const sum = hashFuncs[hashDef.id](buffer);
-	if ((Array.isArray(hashDef.hashes) && hashDef.hashes.includes(sum)) || hashDef.hashes == sum) {
-		return true;
-	} else {
-		throw new Error(`Hash sum mismatch. (expected ${hashDef.hashes.toString()}, got ${sum})`);
-	}
+	return (Array.isArray(hashDef.hashes) && hashDef.hashes.includes(sum)) || hashDef.hashes == sum;
 };
