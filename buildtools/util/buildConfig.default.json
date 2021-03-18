@@ -12,7 +12,8 @@
 		"scripts/**/*"
 	],
 	"copyOverridesClientGlobs": [
-		"**/*"
+		"**/*",
+		"!resources/minecraft/textures/gui/title/background/**/*"
 	],
 	"buildDestinationDirectory": "../build",
 	"buildSourceDirectory": "../"

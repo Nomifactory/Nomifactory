@@ -8,6 +8,9 @@ import log from "fancy-log";
 import zip from "gulp-zip";
 import merge from "merge-stream";
 import rename from "gulp-rename";
+import imagemin from "gulp-imagemin";
+import pngToJpeg from "png-to-jpeg";
+import { MainMenuConfig } from "../../types/mainMenuConfig";
 
 /**
  * Checks and creates all necessary directories so we can build the client safely.
@@ -40,10 +43,19 @@ async function copyClientLicense() {
  */
 async function copyClientOverrides() {
 	const baseDir = upath.join(sharedDestDirectory, overridesFolder);
-	const globs = buildConfig.copyOverridesClientGlobs.map((glob) => upath.join(baseDir, glob));
+	const globs = buildConfig.copyOverridesClientGlobs.map((glob) => {
+		if (glob.startsWith("!")) {
+			return "!" + upath.join(baseDir, glob.substr(1));
+		} else {
+			return upath.join(baseDir, glob);
+		}
+	});
 
 	await new Promise((resolve) => {
-		gulp.src(globs).pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
+		gulp
+			.src(globs)
+			.pipe(gulp.dest(upath.join(clientDestDirectory, overridesFolder)))
+			.on("end", resolve);
 	});
 }
 
@@ -114,8 +126,64 @@ async function zipLang() {
 	});
 }
 
+const bgImageNamespace = "minecraft";
+const bgImagePath = "textures/gui/title/background";
+const mainMenuConfigPath = "config/CustomMainMenu/mainmenu.json";
+
+/**
+ * Minifies (converts to jpeg) main menu files so they don't take up 60% of the pack size.
+ */
+async function compressMainMenuImages() {
+	const mainMenuImages = [];
+	const bgImagePathReal = upath.join("resources", bgImageNamespace, bgImagePath);
+
+	// Convert each slideshow image to 80% jpg.
+	await new Promise((resolve) => {
+		gulp
+			.src(upath.join(sharedDestDirectory, overridesFolder, bgImagePathReal, "**/*"))
+			.pipe(imagemin([pngToJpeg({ quality: 80 })]))
+			.pipe(
+				rename((f) => {
+					// xd
+					f.extname = ".jpg";
+
+					// Ping back the file name so we don't have to scan the folder again.
+					mainMenuImages.push(`${f.basename}${f.extname}`);
+				}),
+			)
+			.pipe(gulp.dest(upath.join(clientDestDirectory, overridesFolder, bgImagePathReal)))
+			.on("end", resolve);
+	});
+
+	if (mainMenuImages.length > 0) {
+		// Read the CustomMainMenu config and parse it.
+		const mainMenuConfig: MainMenuConfig = JSON.parse(
+			(await fs.promises.readFile(upath.join(clientDestDirectory, overridesFolder, mainMenuConfigPath))).toString(),
+		);
+
+		// Fill the config with image paths using the weird "namespace:path" scheme.
+		mainMenuConfig.other.background.slideshow.images = mainMenuImages.map(
+			(img) => bgImageNamespace + ":" + upath.join(bgImagePath, img),
+		);
+
+		// Write it back.
+		return fs.promises.writeFile(
+			upath.join(clientDestDirectory, overridesFolder, mainMenuConfigPath),
+			JSON.stringify(mainMenuConfig, null, "  "),
+		);
+	}
+}
+
 export default gulp.series(
 	createClientDirs,
-	gulp.parallel(exportModpackManifest, copyClientLicense, copyClientOverrides, zipLang, fetchModList),
+	copyClientOverrides,
+	gulp.parallel(
+		exportModpackManifest,
+		copyClientLicense,
+		copyClientOverrides,
+		zipLang,
+		fetchModList,
+		compressMainMenuImages,
+	),
 	zipClient,
 );
