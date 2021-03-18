@@ -2701,7 +2701,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Until now you have been generating §aRF power§r with your §3Steam Dynamos§r, but §bGregTech§r machines require §aEU power§r. With your first §6circuit§r in hand, you are ready to build a §eLow Voltage (LV) §3CEF§r.\n\nThe §3CEF§r is a special device that §econverts §aRF power§r into §aEU power§r. CEFs come in two sizes: §e4 Amps§r and §e16 Amps§r, which have 4 and 16 inventory slots, respectively. Each slot in a CEF can hold a single §6Battery§r.\n\nYou don\u0027t §oneed§r to put §bGregTech§r batteries inside the CEF§r, but keep in mind that §ethe CEF will be restricted to at most outputting one amp per battery inside§r if you do. With no batteries, they will output up to their rated number of amps as needed.\n\n§aRF§r converts into §aEU§r at a §e4 to 1 ratio§r. §a100 RF§r becomes §a25 EU§r, and vice-versa. If you ever switch over to being primarily powered by §aEU§r, a device called the §3CEU§r can switch power from §aEU§r into §aRF§r.",
+          "desc:8": "§oNote: this quest accepts the 4x or 16x CEF (LV).§r\n\nUntil now you have been generating §aRF power§r with your §3Steam Dynamos§r, but §bGregTech§r machines require §aEU power§r. With your first §6circuit§r in hand, you are ready to build a §eLow Voltage (LV) §3CEF§r.\n\nThe §3CEF§r is a special device that §econverts §aRF power§r into §aEU power§r. CEFs come in two sizes: §e4 Amps§r and §e16 Amps§r, which have 4 and 16 inventory slots, respectively. Each slot in a CEF can hold a single §6Battery§r.\n\nYou don\u0027t §oneed§r to put §bGregTech§r batteries inside the CEF§r, but keep in mind that §ethe CEF will be restricted to at most outputting one amp per battery inside§r if you do. With no batteries, they will output up to their rated number of amps as needed.\n\n§aRF§r converts into §aEU§r at a §e4 to 1 ratio§r. §a100 RF§r becomes §a25 EU§r, and vice-versa. If you ever switch over to being primarily powered by §aEU§r, a device called the §3CEU§r can switch power from §aEU§r into §aRF§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48183,7 +48183,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Dynamite§r is an explosive made from either §aNitrogen§r or §aGlycerol§r and §aNitration Mixture§r and is used in the §6Implosion Compressor§r.\n\n§6TNT§r is another explosive that could be made instead of Dynamite. You need fewer TNT per recipe it\u0027s used in relative to dynamite, but it has its own unique processing chain.",
+          "desc:8": "§6Dynamite§r is an explosive made from either §aNitrogen§r or §aGlycerol§r and §aNitration Mixture§r. You can throw them to blow things up, but it is primarily a crafting ingredient you can use in the §3Implosion Compressor§r.\n\n§6TNT§r is another explosive that could be made instead of Dynamite. It\u0027s a stronger explosive so you need fewer TNT per recipe it\u0027s used in relative to dynamite, but it has its own unique processing chain.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48251,7 +48251,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6TNT§r is an explosive made through §aWood Tar§r or §aSteam Cracked Oil Products§r and is used later on in the §6Implosion Compressor§r.\n\n§6Dynamite§r is another explosive item that can be used in the §6Implosion Compressor§r, however §eDynamite cannot process all Implosion Compressor recipes§r.",
+          "desc:8": "§6TNT§r is an explosive made from §9Toluene§r, a distillation byproduct of §9Wood Tar§r or various §eSteam-Cracked Fuels§r. Besides its typical uses in Minecraft, it is a crafting ingredient you can use in the §3Implosion Compressor§r.\n\n§6Dynamite§r is an alternative explosive for the Implosion Compressor, though you need relatively more of them per craft.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53933,7 +53933,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,
