@@ -30118,7 +30118,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 0,
           "requiredItems:9": {
@@ -33771,14 +33771,14 @@
               }
             },
             "1:10": {
-              "Count:3": 3,
-              "Damage:2": 9071,
+              "Count:3": 2,
+              "Damage:2": 10126,
               "OreDict:8": "",
               "id:8": "gregtech:meta_item_1"
             },
             "2:10": {
-              "Count:3": 2,
-              "Damage:2": 10126,
+              "Count:3": 3,
+              "Damage:2": 9071,
               "OreDict:8": "",
               "id:8": "gregtech:meta_item_1"
             }
@@ -33789,7 +33789,8 @@
     },
     "545:10": {
       "preRequisites:11": [
-        544
+        544,
+        69
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -45943,8 +45944,8 @@
     },
     "753:10": {
       "preRequisites:11": [
-        545,
-        750
+        750,
+        799
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -48600,6 +48601,76 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "799:10": {
+      "preRequisites:11": [
+        545,
+        745
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Carry a whole lotta stuff!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": "",
+            "id:8": "thermalexpansion:satchel",
+            "tag:10": {
+              "Accessible:1": 1
+            }
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Signalum Satchel",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 799,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": "",
+              "id:8": "thermalexpansion:satchel",
+              "tag:10": {
+                "Accessible:1": 1
+              }
+            },
+            "1:10": {
+              "Count:3": 2,
+              "Damage:2": 165,
+              "OreDict:8": "",
+              "id:8": "thermalfoundation:material"
+            },
+            "2:10": {
+              "Count:3": 3,
+              "Damage:2": 9112,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -49004,8 +49075,8 @@
           "id:3": 545,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -672,
-          "y:3": 288
+          "x:3": -660,
+          "y:3": 336
         },
         "55:10": {
           "id:3": 548,
@@ -50404,7 +50475,7 @@
           "id:3": 261,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -468,
+          "x:3": -464,
           "y:3": 288
         },
         "66:10": {
@@ -50853,6 +50924,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -300,
+          "y:3": 288
+        },
+        "130:10": {
+          "id:3": 799,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -496,
           "y:3": 288
         }
       }
@@ -51497,7 +51575,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
-          "y:3": 168
+          "y:3": 204
         },
         "89:10": {
           "id:3": 755,
@@ -51568,6 +51646,13 @@
           "sizeY:3": 20,
           "x:3": -46,
           "y:3": 330
+        },
+        "99:10": {
+          "id:3": 799,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 96,
+          "y:3": 168
         }
       }
     },
