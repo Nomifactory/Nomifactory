@@ -3136,7 +3136,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Being able to fly is nice. This is the first jetpack that uses §bEnderIO§r materials.\n\nThere\u0027s also a quest chain for §bThermal Expansion§r material Jetpacks (starting with the §6Leadstone Jetpack§r). Eventually you\u0027ll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying.",
+          "desc:8": "Being able to fly is nice. This is the first jetpack that uses §bEnderIO§r materials.\n\nThere\u0027s also a quest chain for §bThermal Expansion§r material Jetpacks (starting with the §6Leadstone Jetpack§r). Eventually you\u0027ll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying.\n\nIf the §6Jetpack§r overview and information from §bThe One Probe§r conflict, they can be adjusted through the §bSimply Jetpacks 2§r §eConfiguration file§r or the command §6/topcfg§r respectively.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34351,7 +34351,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Being able to fly is pretty sick. It\u0027s also pretty expensive.\n\nIt\u0027s probably a bit premature to consider a §6jetpack§r at this point, but if you really want to craft this bad boy, I won\u0027t stop you.\n\nThere\u0027s also a quest chain for §bEnderIO§r Jetpacks (starting with the §6Conductive Iron Jetpack§r). Eventually you\u0027ll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying.",
+          "desc:8": "Being able to fly is pretty sick. It\u0027s also pretty expensive.\n\nIt\u0027s probably a bit premature to consider a §6jetpack§r at this point, but if you really want to craft this bad boy, I won\u0027t stop you.\n\nThere\u0027s also a quest chain for §bEnderIO§r Jetpacks (starting with the §6Conductive Iron Jetpack§r). Eventually you\u0027ll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying.\n\nIf the §6Jetpack§r overview and information from §bThe One Probe§r conflict, they can be adjusted through the §bSimply Jetpacks 2§r §eConfiguration file§r or the command §6/topcfg§r respectively.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
