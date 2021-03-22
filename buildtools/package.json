@@ -33,7 +33,6 @@
 		"gulp-rename": "^2.0.0",
 		"gulp-zip": "^5.1.0",
 		"merge-stream": "^2.0.0",
-		"murmurhash-32": "github:NotMyWing/murmurhash-js",
 		"mustache": "^4.1.0",
 		"png-to-jpeg": "^1.0.1",
 		"prettier": "^2.2.1",
