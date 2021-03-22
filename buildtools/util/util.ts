@@ -39,7 +39,17 @@ export const checkEnvironmentalVariables = (vars: string[]): void => {
 	});
 };
 
-export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Buffer> {
+export enum RetrievedFileDefReason {
+	Downloaded,
+	CacheHit,
+}
+
+export interface RetrievedFileDef {
+	reason: RetrievedFileDefReason;
+	contents: Buffer;
+}
+
+export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<RetrievedFileDef> {
 	const fileNameSha = sha1(fileDef.url);
 
 	const cachedFilePath = upath.join(buildConfig.downloaderCacheDirectory, fileNameSha);
@@ -47,6 +57,11 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Buffe
 		const file = await fs.promises.readFile(cachedFilePath);
 
 		if (file.length !== 0) {
+			const rFileDef = {
+				reason: RetrievedFileDefReason.CacheHit,
+				contents: file,
+			};
+
 			// Check hashes.
 			if (fileDef.hashes) {
 				if (
@@ -54,10 +69,10 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Buffe
 						return compareBufferToHashDef(file, hashDef);
 					})
 				) {
-					return file;
+					return rFileDef;
 				}
 			} else {
-				return file;
+				return rFileDef;
 			}
 		}
 	}
@@ -100,5 +115,8 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Buffe
 	await handle.write(data);
 	await handle.close();
 
-	return data;
+	return {
+		reason: RetrievedFileDefReason.Downloaded,
+		contents: data,
+	};
 }

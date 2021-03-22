@@ -1,11 +1,19 @@
 import bluebird from "bluebird";
-import { CurseForgeModInfo as CurseForgeProject } from "../types/curseForge";
+import { CurseForgeFetchedFileInfo, CurseForgeModInfo as CurseForgeProject } from "../types/curseForge";
 import log from "fancy-log";
 import request from "requestretry";
 
 export async function fetchProject(toFetch: number): Promise<CurseForgeProject> {
-	return await request({
+	return request({
 		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${toFetch}`,
+		json: true,
+		fullResponse: false,
+	});
+}
+
+export async function fetchFileInfo(projectID: number, fileID: number): Promise<CurseForgeFetchedFileInfo> {
+	return request({
+		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${projectID}/file/${fileID}`,
 		json: true,
 		fullResponse: false,
 	});

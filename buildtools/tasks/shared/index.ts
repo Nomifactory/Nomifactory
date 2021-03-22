@@ -2,7 +2,7 @@ import fs from "fs";
 import gulp from "gulp";
 import upath from "upath";
 import buildConfig from "../../buildConfig";
-import { modpackManifest, overridesFolder, sharedDestDirectory } from "../../globals";
+import { modpackManifest, overridesFolder, sharedDestDirectory, tempDirectory } from "../../globals";
 import del from "del";
 import { FileDef } from "../../types/fileDef";
 import Bluebird from "bluebird";
@@ -18,6 +18,10 @@ async function cleanUp() {
 async function createSharedDirs() {
 	if (!fs.existsSync(sharedDestDirectory)) {
 		await fs.promises.mkdir(sharedDestDirectory, { recursive: true });
+	}
+
+	if (!fs.existsSync(tempDirectory)) {
+		await fs.promises.mkdir(tempDirectory, { recursive: true });
 	}
 }
 
@@ -61,7 +65,7 @@ async function fetchExternalDependencies() {
 		await Bluebird.map(
 			depDefs,
 			async (depDef) => {
-				const file = await downloadOrRetrieveFileDef(depDef);
+				const file = (await downloadOrRetrieveFileDef(depDef)).contents;
 
 				await fs.promises.writeFile(upath.join(destDirectory, upath.basename(depDef.url)), file);
 			},

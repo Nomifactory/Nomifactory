@@ -1,4 +1,4 @@
-export interface Author {
+interface Author {
 	name: string;
 	url: string;
 	projectId: number;
@@ -9,7 +9,7 @@ export interface Author {
 	twitchId?: number;
 }
 
-export interface Attachment {
+interface Attachment {
 	id: number;
 	projectId: number;
 	description: string;
@@ -20,26 +20,26 @@ export interface Attachment {
 	status: number;
 }
 
-export interface Dependency {
+interface Dependency {
 	id: number;
 	addonId: number;
 	type: number;
 	fileId: number;
 }
 
-export interface Module {
+interface Module {
 	foldername: string;
 	type: number;
 }
 
-export interface SortableGameVersion {
+interface SortableGameVersion {
 	gameVersionPadded: string;
 	gameVersion: string;
 	gameVersionReleaseDate: Date;
 	gameVersionName: string;
 }
 
-export interface FileInfo {
+export interface CurseForgeFileInfo {
 	id: number;
 	displayName: string;
 	fileName: string;
@@ -69,7 +69,7 @@ export interface FileInfo {
 	isServerPack: boolean;
 }
 
-export interface Category {
+interface Category {
 	categoryId: number;
 	name: string;
 	url: string;
@@ -81,7 +81,7 @@ export interface Category {
 	gameId: number;
 }
 
-export interface CategorySection {
+interface CategorySection {
 	id: number;
 	gameId: number;
 	name: string;
@@ -91,7 +91,7 @@ export interface CategorySection {
 	gameCategoryId: number;
 }
 
-export interface GameVersionLatestFile {
+interface GameVersionLatestFile {
 	gameVersion: string;
 	projectFileId: number;
 	projectFileName: string;
@@ -108,7 +108,7 @@ export interface CurseForgeModInfo {
 	summary: string;
 	defaultFileId: number;
 	downloadCount: number;
-	latestFiles: FileInfo[];
+	latestFiles: CurseForgeFileInfo[];
 	categories: Category[];
 	status: number;
 	primaryCategoryId: number;
@@ -127,4 +127,34 @@ export interface CurseForgeModInfo {
 	dateReleased: Date;
 	isAvailable: boolean;
 	isExperiemental: boolean;
+}
+
+interface Dependency {
+	addonId: number;
+	type: number;
+}
+
+interface Module {
+	foldername: string;
+	fingerprint: unknown;
+}
+
+export interface CurseForgeFetchedFileInfo {
+	id: number;
+	displayName: string;
+	fileName: string;
+	fileDate: Date;
+	fileLength: number;
+	releaseType: number;
+	fileStatus: number;
+	downloadUrl: string;
+	isAlternate: boolean;
+	alternateFileId: number;
+	dependencies: Dependency[];
+	isAvailable: boolean;
+	modules: Module[];
+	packageFingerprint: number;
+	gameVersion: string[];
+	hasInstallScript: boolean;
+	gameVersionDateReleased: Date;
 }
