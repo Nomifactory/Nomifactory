@@ -28,8 +28,7 @@ export const libraryToPath = (library: string): string => {
 };
 
 /**
- * Checks if given environmental variables are set.
- * Throws when if a variable is unset.
+ * Checks if given environmental variables are set. Throws otherwise.
  */
 export const checkEnvironmentalVariables = (vars: string[]): void => {
 	vars.forEach((vari) => {
