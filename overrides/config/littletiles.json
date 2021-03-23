@@ -13,7 +13,9 @@
     "enableBed": true,
     "enableAnimationCollision": true,
     "enableCollisionMotion": true,
-    "dyeVolume": 2.0
+    "dyeVolume": 2.0,
+    "maxAllowedDensity": 2048,
+    "maxDoorDistance": 512
   },
   "survival": {
     "limitAffectedBlocks": true,
