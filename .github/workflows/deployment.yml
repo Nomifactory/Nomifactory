@@ -46,11 +46,6 @@ jobs:
       working-directory: ./buildtools
       run: npx gulp buildAll
 
-    - name: "Rename artifacts"
-      working-directory: ./buildtools
-      run: npx gulp postBuild
-      id: postBuild
-
     - uses: actions/upload-artifact@v2
       with:
         name: dev-preview-client
