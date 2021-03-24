@@ -46,9 +46,13 @@ jobs:
       working-directory: ./buildtools
       run: npx gulp buildAll
 
-    - name: "Upload artifacts to GitHub"
+    - name: "Rename artifacts"
       working-directory: ./buildtools
       run: npx gulp postBuild
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       id: postBuild
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: dev-preview
+        path: |
+          build/*.zip
