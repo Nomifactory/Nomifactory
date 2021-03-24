@@ -53,9 +53,17 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2231>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2231>]).outputs([<gregtech:meta_item_1:10231>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 //Annealed Copper [tier 1]
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10018>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<gregtech:meta_item_1:10087>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
+//Remove Annealed Copper recipes from Copper dust and ingot
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 1000]).remove();
+//Adjusting the Temperature and duration of Annealed Copper
+blast_furnace.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:10018>])
+	.fluidInputs([<liquid:oxygen> * 1000])
+	.circuit(1)
+	.outputs([<gregtech:meta_item_1:10087>])
+	.property("temperature", 1000)
+	.duration(200).EUt(120).buildAndRegister();
 
 //HSLA - unused
 //blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
