@@ -41,7 +41,7 @@ async function renameArtifacts() {
 	// Rename the server artifact.
 	await fs.promises.rename(
 		upath.join(buildConfig.buildDestinationDirectory, "client.zip"),
-		upath.join(buildConfig.buildDestinationDirectory, sanitize(`${artifactNameBody}.zip`)),
+		upath.join(buildConfig.buildDestinationDirectory, sanitize(`${artifactNameBody}-client.zip`)),
 	);
 }
 
