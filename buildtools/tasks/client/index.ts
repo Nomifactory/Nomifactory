@@ -5,8 +5,6 @@ import upath from "upath";
 import buildConfig from "../../buildConfig";
 import { fetchProjectsBulk } from "../../util/curseForgeAPI";
 import log from "fancy-log";
-import zip from "gulp-zip";
-import merge from "merge-stream";
 import rename from "gulp-rename";
 import imagemin from "gulp-imagemin";
 import pngToJpeg from "png-to-jpeg";
@@ -89,43 +87,6 @@ async function fetchModList() {
 	await fs.promises.writeFile(upath.join(clientDestDirectory, "modlist.html"), output.join(""));
 }
 
-/**
- * Zips the client directory.
- */
-async function zipClient() {
-	return await new Promise((resolve) => {
-		gulp
-			.src(upath.join(clientDestDirectory, "**"), { nodir: true, base: clientDestDirectory })
-			.pipe(zip("client.zip"))
-			.pipe(gulp.dest(buildConfig.buildDestinationDirectory))
-			.on("end", resolve);
-	});
-}
-
-/**
- * Zips the language files.
- */
-async function zipLang() {
-	const resourcesPath = upath.join(sharedDestDirectory, overridesFolder, "resources");
-
-	const opts = { nodir: true, base: resourcesPath };
-	const streams = [
-		gulp.src(upath.join(resourcesPath, "pack.mcmeta"), opts),
-		gulp.src(upath.join(resourcesPath, "**/*.lang"), opts).pipe(
-			rename((f) => {
-				f.dirname = upath.join("assets", f.dirname);
-			}),
-		),
-	];
-
-	return await new Promise((resolve) => {
-		merge(...streams)
-			.pipe(zip("lang.zip"))
-			.pipe(gulp.dest(buildConfig.buildDestinationDirectory))
-			.on("end", resolve);
-	});
-}
-
 const bgImageNamespace = "minecraft";
 const bgImagePath = "textures/gui/title/background";
 const mainMenuConfigPath = "config/CustomMainMenu/mainmenu.json";
@@ -177,13 +138,5 @@ async function compressMainMenuImages() {
 export default gulp.series(
 	createClientDirs,
 	copyClientOverrides,
-	gulp.parallel(
-		exportModpackManifest,
-		copyClientLicense,
-		copyClientOverrides,
-		zipLang,
-		fetchModList,
-		compressMainMenuImages,
-	),
-	zipClient,
+	gulp.parallel(exportModpackManifest, copyClientLicense, copyClientOverrides, fetchModList, compressMainMenuImages),
 );

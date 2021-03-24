@@ -55,16 +55,16 @@ jobs:
       with:
         name: dev-preview-client
         path: |
-          build/*-client.zip
+          build/client/**/*
 
     - uses: actions/upload-artifact@v2
       with:
         name: dev-preview-server
         path: |
-          build/*-server.zip
+          build/server/**/*
 
     - uses: actions/upload-artifact@v2
       with:
         name: dev-preview-lang
         path: |
-          build/lang.zip
+          build/lang/**/*

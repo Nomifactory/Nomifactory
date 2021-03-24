@@ -1,4 +1,3 @@
-import zip from "gulp-zip";
 import upath from "upath";
 import unzip from "unzipper";
 import through from "through2";
@@ -294,15 +293,6 @@ function processLaunchscripts() {
 		.pipe(dest(serverDestDirectory));
 }
 
-/**
- * Zips the server directory.
- */
-function zipServer() {
-	return src(upath.join(serverDestDirectory, "**"), { nodir: true, base: serverDestDirectory })
-		.pipe(zip("server.zip"))
-		.pipe(dest(buildConfig.buildDestinationDirectory));
-}
-
 export default gulp.series([
 	createServerDirs,
 	gulp.parallel(
@@ -314,5 +304,4 @@ export default gulp.series([
 		copyServerLicense,
 	),
 	processLaunchscripts,
-	zipServer,
 ]);
