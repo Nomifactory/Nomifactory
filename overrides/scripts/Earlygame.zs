@@ -332,15 +332,6 @@ reactor.recipeBuilder()
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
-//Phosphoric Acid, fix mol amounts
-reactor.findRecipe(30, [<gregtech:meta_item_1:2050>], [<liquid:oxygen> * 2500, <liquid:water> * 1500]).remove();
-
-reactor.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:2050> * 2)
-	.fluidInputs([<liquid:oxygen> * 5000, <liquid:water> * 3000])
-	.fluidOutputs(<liquid:phosphoric_acid> * 2000)
-	.duration(320).EUt(16).buildAndRegister();
-
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
 
