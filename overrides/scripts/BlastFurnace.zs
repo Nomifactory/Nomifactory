@@ -99,10 +99,10 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2232>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2232>]).outputs([<gregtech:meta_item_1:10232>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nickel Zinc Ferrite [tier 3]
+//Furnace Recipe from NZF dust
 furnace.addRecipe(<gregtech:meta_item_1:10424>, <gregtech:meta_item_1:2424>, 0.0);
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2423>], [<liquid:oxygen> * 2000]).remove();	
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2424>], [null]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2423>]).fluidInputs([<liquid:oxygen> * 2000]).outputs([<gregtech:meta_item_1:10424>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+//Remove the recipe from NZF dust
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2424>], [null]).remove();
 
 //Stainless Steel [tier 3]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2183>], [null]).remove();	
