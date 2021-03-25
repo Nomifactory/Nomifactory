@@ -141,7 +141,11 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2078>]).outputs([<gr
 //Tungstencarbide [tier 5]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2300>], [null]).remove();	
 blast_furnace.findRecipe(480, [<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>], [null]).remove();
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>]).outputs([<gregtech:meta_item_1:11300>]).property("temperature", 2700).duration(500).EUt(480).buildAndRegister();	
+blast_furnace.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>])
+	.outputs([<gregtech:meta_item_1:11300> * 2])
+	.property("temperature", 2700)
+	.duration(500).EUt(480).buildAndRegister();	
 furnace.addRecipe(<gregtech:meta_item_1:10300>, <gregtech:meta_item_1:2300>, 0.0);
 
 //Tungstensteel [tier 5]
