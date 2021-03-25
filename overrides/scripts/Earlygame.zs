@@ -1103,3 +1103,10 @@ recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.sodium");
 
 //Temporary removal of a duplicate recipe
 reactor.findRecipe(30, [<metaitem:dustSodiumBisulfate> * 7], [<liquid:water> * 1000]).remove();
+
+//Tetranitromethane recipe as a holdover
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:ethenone> * 2000, <liquid:nitric_acid> * 4000)
+	.fluidOutputs(<liquid:tetranitromethane> * 1000, <liquid:water> * 4000)
+	.outputs(<metaitem:dustCarbon> * 3)
+	.duration(480).EUt(120).buildAndRegister();
