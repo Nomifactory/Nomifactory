@@ -22,7 +22,6 @@
 		"@typescript-eslint/parser": "^4.18.0",
 		"bluebird": "^3.7.2",
 		"del": "^6.0.0",
-		"directory-tree": "^2.2.7",
 		"eslint": "^7.22.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-prettier": "^3.3.1",
