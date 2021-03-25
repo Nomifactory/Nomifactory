@@ -944,13 +944,6 @@ electrolyzer.recipeBuilder()
 	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
 	.duration(288).EUt(60).buildAndRegister();
 
-//Methyl Acetate
-electrolyzer.recipeBuilder()
-	.fluidInputs(<liquid:methyl_acetate> * 11000)
-	.outputs(<ore:dustCarbon>.firstItem * 3)
-	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
-	.duration(264).EUt(60).buildAndRegister();
-
 //Dichlorobenzene
 electrolyzer.recipeBuilder()
 	.fluidInputs(<liquid:dichlorobenzene> * 12000)
