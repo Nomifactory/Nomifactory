@@ -1100,3 +1100,6 @@ makeShaped("gtce_rotor_mold", <metaitem:shape.mold.rotor>,
 recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.lithium");
 recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.cadmium");
 recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.sodium");
+
+//Temporary removal of a duplicate recipe
+reactor.findRecipe(30, [<metaitem:dustSodiumBisulfate> * 7], [<liquid:water> * 1000]).remove();
