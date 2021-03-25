@@ -11,3 +11,18 @@ export const buildAll = gulp.series(sharedTasks, gulp.parallel(clientTasks, serv
 
 import checkTasks from "./tasks/checks";
 export const check = gulp.series(checkTasks);
+
+import * as zip from "./tasks/misc/zip";
+export const zipClient = zip.zipClient;
+export const zipServer = zip.zipServer;
+export const zipLang = zip.zipLang;
+export const zipAll = zip.zipAll;
+
+import * as gha from "./tasks/misc/gha";
+export const makeArtifactNames = gha.makeArtifactNames;
+
+import deployCurseForgeTask from "./tasks/deploy/curseforge";
+export const deployCurseForge = deployCurseForgeTask;
+
+import deployReleasesTask from "./tasks/deploy/releases";
+export const deployReleases = deployReleasesTask;

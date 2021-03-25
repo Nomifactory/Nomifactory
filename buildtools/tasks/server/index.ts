@@ -20,6 +20,7 @@ import {
 	sharedDestDirectory,
 	tempDirectory,
 } from "../../globals";
+import del from "del";
 
 const MOJANG_MAVEN = "https://libraries.minecraft.net/";
 const FORGE_VERSION_REG = /forge-(.+)/;
@@ -27,6 +28,10 @@ const FORGE_MAVEN = "https://files.minecraftforge.net/maven/";
 const LAUNCHERMETA_VERSION_MANIFEST = "https://launchermeta.mojang.com/mc/game/version_manifest.json";
 
 let g_forgeJar;
+
+async function serverCleanUp() {
+	await del(upath.join(serverDestDirectory, "*"), { force: true });
+}
 
 /**
  * Checks and creates all necessary directories so we can build the client safely.
@@ -261,6 +266,13 @@ function copyServerLicense() {
 }
 
 /**
+ * Copies the changelog file.
+ */
+function copyServerChangelog() {
+	return src(upath.join(sharedDestDirectory, "CHANGELOG.md")).pipe(dest(serverDestDirectory));
+}
+
+/**
  * Copies files from ./launchscripts into dest folder and processes them using mustache.
  *
  * Replaces jvmArgs, minRAM, maxRAM and forgeJar.
@@ -294,6 +306,7 @@ function processLaunchscripts() {
 }
 
 export default gulp.series([
+	serverCleanUp,
 	createServerDirs,
 	gulp.parallel(
 		downloadForge,
@@ -302,6 +315,7 @@ export default gulp.series([
 		copyServerOverrides,
 		copyServerfiles,
 		copyServerLicense,
+		copyServerChangelog,
 	),
 	processLaunchscripts,
 ]);

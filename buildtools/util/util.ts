@@ -6,6 +6,7 @@ import upath from "upath";
 import requestretry from "requestretry";
 import http from "http";
 import { compareBufferToHashDef } from "./hashes";
+import { execSync } from "child_process";
 
 const LIBRARY_REG = /^(.+?):(.+?):(.+?)$/;
 
@@ -118,4 +119,72 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Retri
 		reason: RetrievedFileDefReason.Downloaded,
 		contents: data,
 	};
+}
+
+export function makeArtifactNameBody(baseName: string, ref?: string, sha?: string): string {
+	if (!ref) {
+		return baseName;
+	}
+
+	if (!sha) {
+		throw new Error("SHA is expected to be passed along with REF");
+	}
+
+	let match, tag: string, branch: string;
+
+	// Determine and extract the tag/branch name.
+	if ((match = /refs\/(tags|heads)\/(.+)/i.exec(ref))) {
+		if (match[1] == "tags") {
+			tag = match[2];
+		} else {
+			branch = match[2];
+		}
+	} else {
+		throw new Error(`Invalid GITHUB_REF: ${ref}.`);
+	}
+
+	// Decide how we want to name the zips.
+	// Untagged: (repo)-(branch)-(7 symbols of SHA)
+	//   tagged: (repo)-(tag)
+	let artifactNameBody;
+	if (tag) {
+		artifactNameBody = `${baseName}-${tag}`;
+	} else {
+		const shortCommit = process.env.GITHUB_SHA.substr(0, 7);
+		artifactNameBody = `${baseName}-${branch}-${shortCommit}`;
+	}
+
+	return artifactNameBody;
+}
+
+/**
+ * Fetches the last tag known to Git using the current branch.
+ * @param {string | nil} before Tag to get the tag before.
+ * @returns string Git tag.
+ * @throws
+ */
+export function getLastGitTag(args?: string): string {
+	if (args) {
+		args = `"${args}^"`;
+	}
+
+	return execSync(`git describe --abbrev=0 --tags ${args || ""}`)
+		.toString()
+		.trim();
+}
+
+/**
+ * Generates a changelog based on the two provided Git refs.
+ * @param {string} since Lower boundary Git ref.
+ * @param {string} to Upper boundary Git ref.
+ * @param {string[]} dirs Optional scopes.
+ */
+export function getChangeLog(since = "HEAD", to = "HEAD", dirs: string[] = undefined): string {
+	const command = ["git log", '--date="format:%d %b %Y"', '--pretty="* %s - **%an** (%ad)"', `${since}..${to}`];
+
+	if (dirs) {
+		command.push("--", dirs.join(" -- "));
+	}
+
+	return execSync(command.join(" ")).toString().trim();
 }

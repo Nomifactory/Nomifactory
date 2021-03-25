@@ -6,10 +6,11 @@ import { modpackManifest, overridesFolder, sharedDestDirectory, tempDirectory } 
 import del from "del";
 import { FileDef } from "../../types/fileDef";
 import Bluebird from "bluebird";
-import { downloadOrRetrieveFileDef } from "../../util/util";
+import { downloadOrRetrieveFileDef, getChangeLog, getLastGitTag } from "../../util/util";
 
-async function cleanUp() {
-	await del(upath.join(buildConfig.buildDestinationDirectory, "*"), { force: true });
+async function sharedCleanUp() {
+	await del(upath.join(sharedDestDirectory, "*"), { force: true });
+	await del(upath.join(tempDirectory, "*"), { force: true });
 }
 
 /**
@@ -76,11 +77,40 @@ async function fetchExternalDependencies() {
 	}
 }
 
+/**
+ * Generates a changelog based on environmental variables.
+ */
+async function makeChangelog() {
+	let since = getLastGitTag();
+
+	// Back-compat.
+	if (since == "latest-dev-preview") {
+		since = getLastGitTag(since);
+	}
+
+	// If this is a tagged build, fetch the tag before last.
+	if (process.env.GITHUB_TAG) {
+		since = getLastGitTag(process.env.GITHUB_TAG);
+	}
+
+	const body = getChangeLog(since, "HEAD", ["../manifest.json", upath.join("..", modpackManifest.overrides)]);
+
+	let changelog;
+	if (body) {
+		changelog = `Changes since ${since}:\n\n${body}`;
+	} else {
+		changelog = `There haven't been any changes since ${since}.`;
+	}
+
+	return fs.promises.writeFile(upath.join(sharedDestDirectory, "CHANGELOG.md"), changelog);
+}
+
 import transforms from "./transforms";
 export default gulp.series(
-	cleanUp,
+	sharedCleanUp,
 	createSharedDirs,
 	copyOverrides,
+	makeChangelog,
 	fetchExternalDependencies,
 	gulp.parallel(transforms),
 );

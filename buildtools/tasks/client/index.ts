@@ -9,6 +9,11 @@ import rename from "gulp-rename";
 import imagemin from "gulp-imagemin";
 import pngToJpeg from "png-to-jpeg";
 import { MainMenuConfig } from "../../types/mainMenuConfig";
+import del from "del";
+
+async function clientCleanUp() {
+	await del(upath.join(clientDestDirectory, "*"), { force: true });
+}
 
 /**
  * Checks and creates all necessary directories so we can build the client safely.
@@ -34,6 +39,13 @@ async function copyClientLicense() {
 	await await new Promise((resolve) => {
 		gulp.src("../LICENSE.md").pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
 	});
+}
+
+/**
+ * Copies the changelog file.
+ */
+function copyClientChangelog() {
+	return gulp.src(upath.join(sharedDestDirectory, "CHANGELOG.md")).pipe(gulp.dest(clientDestDirectory));
 }
 
 /**
@@ -136,7 +148,15 @@ async function compressMainMenuImages() {
 }
 
 export default gulp.series(
+	clientCleanUp,
 	createClientDirs,
 	copyClientOverrides,
-	gulp.parallel(exportModpackManifest, copyClientLicense, copyClientOverrides, fetchModList, compressMainMenuImages),
+	gulp.parallel(
+		exportModpackManifest,
+		copyClientLicense,
+		copyClientOverrides,
+		copyClientChangelog,
+		fetchModList,
+		compressMainMenuImages,
+	),
 );
