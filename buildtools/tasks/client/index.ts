@@ -42,6 +42,15 @@ async function copyClientLicense() {
 }
 
 /**
+ * Copies the update notes file.
+ */
+function copyClientUpdateNotes() {
+	return new Promise((resolve) => {
+		gulp.src("../UPDATENOTES.md").pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
+	});
+}
+
+/**
  * Copies the changelog file.
  */
 function copyClientChangelog() {
@@ -156,6 +165,7 @@ export default gulp.series(
 		copyClientLicense,
 		copyClientOverrides,
 		copyClientChangelog,
+		copyClientUpdateNotes,
 		fetchModList,
 		compressMainMenuImages,
 	),

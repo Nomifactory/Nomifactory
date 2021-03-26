@@ -266,6 +266,13 @@ function copyServerLicense() {
 }
 
 /**
+ * Copies the update notes file.
+ */
+function copyServerUpdateNotes() {
+	return src("../UPDATENOTES.md").pipe(dest(serverDestDirectory));
+}
+
+/**
  * Copies the changelog file.
  */
 function copyServerChangelog() {
@@ -316,6 +323,7 @@ export default gulp.series([
 		copyServerfiles,
 		copyServerLicense,
 		copyServerChangelog,
+		copyServerUpdateNotes,
 	),
 	processLaunchscripts,
 ]);

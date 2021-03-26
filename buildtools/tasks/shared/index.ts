@@ -101,6 +101,10 @@ async function makeChangelog() {
 	const commitList = getChangeLog(since, to, [upath.join("..", modpackManifest.overrides)]);
 
 	const builder: string[] = [];
+	// If the UPDATENOTES.md file is present, prepend it verbatim.
+	if (fs.existsSync("../UPDATENOTES.md")) {
+		builder.push((await fs.promises.readFile("../UPDATENOTES.md")).toString());
+	}
 
 	// Push the title.
 	builder.push(`# Changes since ${since}`);
