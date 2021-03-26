@@ -6,10 +6,9 @@ import log from "fancy-log";
 import upath from "upath";
 import buildConfig from "../../buildConfig";
 import { makeArtifactNameBody } from "../../util/util";
-import { Octokit } from "@octokit/rest";
+import sanitize from "sanitize-filename";
 
 const CURSEFORGE_ENDPOINT = "https://minecraft.curseforge.com/";
-
 const variablesToCheck = ["CURSEFORGE_API_TOKEN", "CURSEFORGE_PROJECT_ID", "GITHUB_TAG"];
 
 /**
@@ -25,46 +24,18 @@ async function deployCurseForge(): Promise<void> {
 		}
 	});
 
-	const octokit = new Octokit({
-		auth: process.env.GITHUB_TOKEN,
-	});
-
-	const parsedSlug = /(.+)\/(.+)/.exec(process.env.GITHUB_REPOSITORY);
-	if (!parsedSlug) {
-		throw new Error("No/malformed GitHub repository slug provided.");
-	}
-
-	const repo = {
-		owner: parsedSlug[1],
-		repo: parsedSlug[2],
-	};
-
-	// Fetch the tag SHA
 	const tag = process.env.GITHUB_TAG;
-	const tagRef = await octokit.git.getRef({
-		ref: `tags/${tag}`,
-		...repo,
-	});
-
-	if (!tagRef) {
-		throw new Error(`Couldn't look up tag ${tag}`);
-	}
-
-	// Fetch the tag message
-	const tagInfo = await octokit.git.getTag({
-		tag_sha: tagRef.data.object.sha,
-		...repo,
-	});
-	const flavorText = tagInfo.data.message.replace(/\n/g, "");
+	const flavorTitle = process.env.BUILD_FLAVOR_TITLE;
+	const displayName = [modpackManifest.name, tag.replace(/^v/, ""), flavorTitle].filter(Boolean).join(" - ");
 
 	const files = [
 		{
-			name: makeArtifactNameBody(modpackManifest.name, process.env.GITHUB_REF, process.env.GITHUB_SHA) + "-client.zip",
-			displayName: `${modpackManifest.name} - ${tag} - ${flavorText}`,
+			name: sanitize((makeArtifactNameBody(modpackManifest.name) + "-client.zip").toLowerCase()),
+			displayName: displayName,
 		},
 		{
-			name: makeArtifactNameBody(modpackManifest.name, process.env.GITHUB_REF, process.env.GITHUB_SHA) + "-server.zip",
-			displayName: `${modpackManifest.name} - ${tag} - ${flavorText} Server`,
+			name: sanitize((makeArtifactNameBody(modpackManifest.name) + "-server.zip").toLowerCase()),
+			displayName: `${displayName} Server`,
 		},
 	];
 

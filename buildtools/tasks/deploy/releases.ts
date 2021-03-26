@@ -23,8 +23,8 @@ async function deployReleases(): Promise<void> {
 		}
 	});
 
-	const body = makeArtifactNameBody(modpackManifest.name, process.env.GITHUB_REF, process.env.GITHUB_SHA);
-	const files = ["client", "server", "lang"].map((file) => sanitize(`${body}-${file}.zip`));
+	const body = makeArtifactNameBody(modpackManifest.name);
+	const files = ["client", "server", "lang"].map((file) => sanitize(`${body}-${file}.zip`.toLowerCase()));
 
 	/**
 	 * Obligatory file check.
@@ -50,23 +50,8 @@ async function deployReleases(): Promise<void> {
 		repo: parsedSlug[2],
 	};
 
-	// Fetch the tag SHA
 	const tag = process.env.GITHUB_TAG;
-	const tagRef = await octokit.git.getRef({
-		ref: `tags/${tag}`,
-		...repo,
-	});
-
-	if (!tagRef) {
-		throw new Error(`Couldn't look up tag ${tag}`);
-	}
-
-	// Fetch the tag message
-	const tagInfo = await octokit.git.getTag({
-		tag_sha: tagRef.data.object.sha,
-		...repo,
-	});
-	const flavorText = tagInfo.data.message.replace(/\n/g, "");
+	const flavorTitle = process.env.BUILD_FLAVOR_TITLE;
 
 	// Since we've built everything beforehand, the changelog must be available in the shared directory.
 	const changelog = await (await fs.promises.readFile(upath.join(sharedDestDirectory, "CHANGELOG.md"))).toString();
@@ -75,7 +60,7 @@ async function deployReleases(): Promise<void> {
 	const release = await octokit.repos.createRelease({
 		tag_name: tag || "latest-dev-preview",
 		prerelease: !tag,
-		name: `${modpackManifest.name} - ${tag} - ${flavorText}`,
+		name: [modpackManifest.name, tag.replace(/^v/, ""), flavorTitle].filter(Boolean).join(" - "),
 		body: changelog,
 		...repo,
 	});

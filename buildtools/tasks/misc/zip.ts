@@ -4,6 +4,7 @@ import zip from "gulp-zip";
 import gulp from "gulp";
 import buildConfig from "../../buildConfig";
 import { makeArtifactNameBody } from "../../util/util";
+import sanitize from "sanitize-filename";
 
 async function zipFolder(path: string, zipName: string = upath.basename(path) + ".zip"): Promise<void> {
 	return new Promise((resolve) => {
@@ -18,21 +19,21 @@ async function zipFolder(path: string, zipName: string = upath.basename(path) + 
 export async function zipServer(): Promise<void> {
 	return zipFolder(
 		upath.join(serverDestDirectory),
-		makeArtifactNameBody(modpackManifest.name, process.env.GITHUB_REF, process.env.GITHUB_SHA) + "-server.zip",
+		sanitize((makeArtifactNameBody(modpackManifest.name) + "-server.zip").toLowerCase()),
 	);
 }
 
 export async function zipClient(): Promise<void> {
 	return zipFolder(
 		upath.join(clientDestDirectory),
-		makeArtifactNameBody(modpackManifest.name, process.env.GITHUB_REF, process.env.GITHUB_SHA) + "-client.zip",
+		sanitize((makeArtifactNameBody(modpackManifest.name) + "-client.zip").toLowerCase()),
 	);
 }
 
 export async function zipLang(): Promise<void> {
 	return zipFolder(
 		upath.join(langDestDirectory),
-		makeArtifactNameBody(modpackManifest.name, process.env.GITHUB_REF, process.env.GITHUB_SHA) + "-lang.zip",
+		sanitize((makeArtifactNameBody(modpackManifest.name) + "-lang.zip").toLowerCase()),
 	);
 }
 

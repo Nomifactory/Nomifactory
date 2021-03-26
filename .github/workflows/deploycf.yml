@@ -5,6 +5,9 @@ on:
       tag:
         description: 'Tag to checkout and deploy'
         required: true
+      flavorTitle:
+        description: 'Flavor title (e. g. "Community Update")'
+        required: false
 
 jobs:
   deploy:
@@ -12,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TAG: ${{ github.event.inputs.tag }}
+      BUILD_FLAVOR_TITLE: ${{ github.event.inputs.flavorTitle }}
 
     steps:
       - name: "Checkout code"
