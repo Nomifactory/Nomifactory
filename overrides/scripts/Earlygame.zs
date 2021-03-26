@@ -1110,3 +1110,5 @@ reactor.recipeBuilder()
 	.fluidOutputs(<liquid:tetranitromethane> * 1000, <liquid:water> * 4000)
 	.outputs(<metaitem:dustCarbon> * 3)
 	.duration(480).EUt(120).buildAndRegister();
+
+electrolyzer.findRecipe(60, [null], [<liquid:glycerol> * 1000]).remove();
