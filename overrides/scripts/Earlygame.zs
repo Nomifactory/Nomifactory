@@ -332,15 +332,6 @@ reactor.recipeBuilder()
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
-//Phosphoric Acid, fix mol amounts
-reactor.findRecipe(30, [<gregtech:meta_item_1:2050>], [<liquid:oxygen> * 2500, <liquid:water> * 1500]).remove();
-
-reactor.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:2050> * 2)
-	.fluidInputs([<liquid:oxygen> * 5000, <liquid:water> * 3000])
-	.fluidOutputs(<liquid:phosphoric_acid> * 2000)
-	.duration(320).EUt(16).buildAndRegister();
-
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
 
@@ -953,13 +944,6 @@ electrolyzer.recipeBuilder()
 	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
 	.duration(288).EUt(60).buildAndRegister();
 
-//Methyl Acetate
-electrolyzer.recipeBuilder()
-	.fluidInputs(<liquid:methyl_acetate> * 11000)
-	.outputs(<ore:dustCarbon>.firstItem * 3)
-	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
-	.duration(264).EUt(60).buildAndRegister();
-
 //Dichlorobenzene
 electrolyzer.recipeBuilder()
 	.fluidInputs(<liquid:dichlorobenzene> * 12000)
@@ -1116,3 +1100,15 @@ makeShaped("gtce_rotor_mold", <metaitem:shape.mold.rotor>,
 recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.lithium");
 recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.cadmium");
 recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.sodium");
+
+//Temporary removal of a duplicate recipe
+reactor.findRecipe(30, [<metaitem:dustSodiumBisulfate> * 7], [<liquid:water> * 1000]).remove();
+
+//Tetranitromethane recipe as a holdover
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:ethenone> * 2000, <liquid:nitric_acid> * 4000)
+	.fluidOutputs(<liquid:tetranitromethane> * 1000, <liquid:water> * 4000)
+	.outputs(<metaitem:dustCarbon> * 3)
+	.duration(480).EUt(120).buildAndRegister();
+
+electrolyzer.findRecipe(60, [null], [<liquid:glycerol> * 1000]).remove();
