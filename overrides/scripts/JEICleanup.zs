@@ -64,3 +64,13 @@ recipes.removeShaped(<gregtech:meta_tool:32>, [
 recipes.removeShaped(<gregtech:meta_tool:32>, [
                     [<ore:gtceWrenches>, <*>, <ore:gtceScrewdrivers>],
                     [null, <gregtech:meta_item_2:32576>, null]]);
+
+
+<gregtech:meta_item_2:32494>.removeTooltip("Quantum computing comes to life!");
+<gregtech:meta_item_2:32447>.removeTooltip("A Good Board");
+<gregtech:meta_item_2:32492>.removeTooltip("Smaller than ever");
+<gregtech:meta_item_2:32487>.removeTooltip("A Basic Circuit");
+//<gregtech:meta_item_1:32724>.removeTooltip("Quantum Eye");
+<gregtech:meta_item_2:32498>.removeTooltip("You have a feeling like it's watching you");
+<gregtech:meta_item_2:32499>.removeTooltip("Can run Minecraft");
+//<gregtech:meta_item_1:32725>.removeTooltip("Quantum Star");

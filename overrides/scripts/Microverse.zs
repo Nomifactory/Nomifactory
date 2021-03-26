@@ -248,11 +248,6 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 	  T : <simplyjetpacks:metaitemmods:29> }
 );
 
-<gregtech:meta_item_1:32724>.displayName = "Quantum Eye";
-<gregtech:meta_item_1:32724>.clearTooltip();
-<gregtech:meta_item_1:32724>.addTooltip(format.darkPurple("Quantum Eye"));
-
-
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
 makeExtremeRecipe9(<contenttweaker:tiersevenship>,

@@ -20,9 +20,7 @@ recipes.addShaped(<metaitem:circuit.basic>, [
 	[<metaitem:circuit.vacuum_tube>, <metaitem:board.coated>, <metaitem:circuit.vacuum_tube>], 
 	[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>]]);
 
-<gregtech:meta_item_2:32487>.displayName = "Primitive Circuit";
-<gregtech:meta_item_2:32487>.clearTooltip();
-<gregtech:meta_item_2:32487>.addTooltip("Primitive Circuit");
+
 <gregtech:meta_item_2:32487>.addTooltip(format.aqua(format.italic("This is the first Tier One circuit.")));
 	
 	
@@ -45,10 +43,6 @@ recipes.addShaped(<metaitem:component.glass.tube>, [
 	
 	
 //Electronic Circuit
-
-<metaitem:circuit.basic_electronic>.displayName = "Electronic Circuit";
-<metaitem:circuit.basic_electronic>.clearTooltip();
-<metaitem:circuit.basic_electronic>.addTooltip("Electronic Circuit");
 <metaitem:circuit.basic_electronic>.addTooltip(format.aqua(format.italic("This is the second Tier One circuit.")));
 
 assembler.findRecipe(8, [<metaitem:plate.integrated_logic_circuit>, <metaitem:component.resistor> * 2, <metaitem:component.capacitor>, <metaitem:board.phenolic>, <ore:wireFineCopper>.firstItem], [<liquid:tin> * 144]).remove();
@@ -152,10 +146,6 @@ recipes.addShaped(<contenttweaker:combinationcircuit>, [
 	[<ore:plateWroughtIron>, <metaitem:circuit.basic>, <ore:cableGtSingleRedAlloy>], 
 	[<metaitem:circuit.basic>, <metaitem:component.diode>, <metaitem:circuit.basic>], 
 	[<ore:cableGtSingleRedAlloy>, <metaitem:circuit.basic>, <ore:plateWroughtIron>]]);
-
-<metaitem:board.phenolic>.displayName = "Phenolic Substrate";
-<metaitem:board.phenolic>.clearTooltip();
-<metaitem:board.phenolic>.addTooltip("Phenolic Substrate");	
 	
 	
 	
@@ -240,10 +230,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metait
 
 
 //Microprocessor
-
-<metaitem:circuit.processor_assembly>.displayName = "Microprocessor";
-<metaitem:circuit.processor_assembly>.clearTooltip();
-<metaitem:circuit.processor_assembly>.addTooltip("Microprocessor");
 <metaitem:circuit.processor_assembly>.addTooltip(format.aqua(format.italic("This is the third Tier Three circuit.")));
 
 assembler.findRecipe(90, [<metaitem:circuit.advanced> * 2, <metaitem:component.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.plastic>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineRedAlloy>.firstItem * 12], [<liquid:tin> * 288]).remove();
@@ -259,10 +245,6 @@ assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:p
 
 
 //Nanocircuit
-
-<metaitem:circuit.nano_processor>.displayName = "Nanocircuit";
-<metaitem:circuit.nano_processor>.clearTooltip();
-<metaitem:circuit.nano_processor>.addTooltip("Nanocircuit");
 <metaitem:circuit.nano_processor>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Three circuit.")));
 
 assembler.findRecipe(480, [<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.epoxy>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineElectrum>.firstItem * 2], [<liquid:tin> * 144]).remove();
@@ -302,10 +284,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:
 
 
 //Nanoprocessor
-
-<metaitem:circuit.nano_processor_assembly>.displayName = "Nanoprocessor";
-<metaitem:circuit.nano_processor_assembly>.clearTooltip();
-<metaitem:circuit.nano_processor_assembly>.addTooltip("Nanoprocessor");
 <metaitem:circuit.nano_processor_assembly>.addTooltip(format.aqua(format.italic("This is the third Tier Four circuit.")));
 
 assembler.findRecipe(480, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:circuit.nano_processor> * 2, <metaitem:board.epoxy>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineElectrum>.firstItem * 6], [<liquid:tin> * 288]).remove();
@@ -317,10 +295,6 @@ assembler.recipeBuilder().inputs([<metaitem:circuit.nano_processor> * 3, <metait
 
 
 //Quantum Circuit
-
-<metaitem:circuit.quantum_processor>.displayName = "Quantum Circuit";
-<metaitem:circuit.quantum_processor>.clearTooltip();
-<metaitem:circuit.quantum_processor>.addTooltip("Quantum Circuit");
 <metaitem:circuit.quantum_processor>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Four circuit.")));
 
 assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <ore:wireFinePlatinum>.firstItem * 2], [<liquid:tin> * 144]).remove();
@@ -405,10 +379,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:
 
 
 //Crystal Processor
-
-<metaitem:circuit.energy_flow>.displayName = "Crystal Processor";
-<metaitem:circuit.energy_flow>.clearTooltip();
-<metaitem:circuit.energy_flow>.addTooltip("Crystal Processor");
 <metaitem:circuit.energy_flow>.addTooltip(format.aqua(format.italic("This is the third Tier Six circuit.")));
 
 assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.crystal_processor> * 2, <ore:wireFineNiobiumTitanium>.firstItem * 6], [<liquid:tin> * 288]).remove();
@@ -420,10 +390,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <conte
 
 
 //Wetware Circuit
-
-<metaitem:circuit.wetware_processor>.displayName = "Wetware Circuit";
-<metaitem:circuit.wetware_processor>.clearTooltip();
-<metaitem:circuit.wetware_processor>.addTooltip("Wetware Circuit");
 <metaitem:circuit.wetware_processor>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Six circuit.")));
 
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:32476> * 4, <gregtech:cable:308> * 4, <gregtech:meta_item_2:32449>]).fluidInputs(<liquid:sterilized_growth_medium> * 1000).outputs([<metaitem:circuit.wetware_processor> * 4]).duration(200).EUt(120000).buildAndRegister();
@@ -450,10 +416,6 @@ assembly_line.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metai
 
 
 //Wetware Processor
-
-<metaitem:circuit.wetware_assembly>.displayName = "Wetware Processor";
-<metaitem:circuit.wetware_assembly>.clearTooltip();
-<metaitem:circuit.wetware_assembly>.addTooltip("Wetware Processor");
 <metaitem:circuit.wetware_assembly>.addTooltip(format.aqua(format.italic("This is the third and final Tier Seven circuit.")));
 
 assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 16, <gregtech:meta_item_1:19391> * 16, <gregtech:meta_item_2:32460> * 16, <gregtech:meta_item_2:32458> * 8, <gregtech:meta_item_2:32457> * 8, <gregtech:meta_item_2:32498> * 2, <gregtech:meta_item_2:32449>, <enderio:item_material:42> * 2, <gregtech:meta_item_2:32485> * 4, <gregtech:cable:710> * 6).fluidInputs(<liquid:sterilized_growth_medium> * 2000).outputs(<gregtech:meta_item_2:32499>).duration(400).EUt(120000).buildAndRegister();
@@ -470,10 +432,6 @@ assembly_line.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 48, <g
  
  
 //Wetware Processor Array 
- 
-<metaitem:circuit.wetware_super_computer>.displayName = "Wetware Processor Array";
-<metaitem:circuit.wetware_super_computer>.clearTooltip();
-<metaitem:circuit.wetware_super_computer>.addTooltip("Wetware Processor Array");
 <metaitem:circuit.wetware_super_computer>.addTooltip(format.aqua(format.italic("This is the second and final Tier Eight circuit.")));
 
 assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 32, <gregtech:meta_item_1:19391> * 32, <gregtech:meta_item_2:32460> * 32, <gregtech:meta_item_2:32458> * 16, <gregtech:meta_item_2:32457> * 16, <gregtech:meta_item_1:12022> * 4, <gregtech:cable:354> * 8, <gregtech:meta_item_2:32499> * 2, <enderio:item_material:44> * 8).fluidInputs(<liquid:soldering_alloy> * 1152).outputs(<gregtech:meta_item_2:32500>).duration(600).EUt(122880).buildAndRegister();
@@ -483,9 +441,7 @@ assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 32, <gregtec
 /////////////////   Tier Nine Circuits | Infinite Tier   ///////////////////////
 
 
-<metaitem:circuit.wetware_mainframe>.displayName = "Wetware Processor Mainframe";
-<metaitem:circuit.wetware_mainframe>.clearTooltip();
-<metaitem:circuit.wetware_mainframe>.addTooltip("Wetware Processor Mainframe");
+
 <metaitem:circuit.wetware_mainframe>.addTooltip(format.aqua(format.italic("This is the first and only Tier Nine circuit.")));
 
 

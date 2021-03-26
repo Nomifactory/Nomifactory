@@ -53,9 +53,17 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2231>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2231>]).outputs([<gregtech:meta_item_1:10231>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 //Annealed Copper [tier 1]
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10018>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<gregtech:meta_item_1:10087>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
+//Remove Annealed Copper recipes from Copper dust and ingot
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 1000]).remove();
+//Adjusting the Temperature and duration of Annealed Copper
+blast_furnace.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:10018>])
+	.fluidInputs([<liquid:oxygen> * 1000])
+	.circuit(1)
+	.outputs([<gregtech:meta_item_1:10087>])
+	.property("temperature", 1000)
+	.duration(200).EUt(120).buildAndRegister();
 
 //HSLA - unused
 //blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
@@ -91,10 +99,10 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2232>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2232>]).outputs([<gregtech:meta_item_1:10232>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nickel Zinc Ferrite [tier 3]
+//Furnace Recipe from NZF dust
 furnace.addRecipe(<gregtech:meta_item_1:10424>, <gregtech:meta_item_1:2424>, 0.0);
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2423>], [<liquid:oxygen> * 2000]).remove();	
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2424>], [null]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2423>]).fluidInputs([<liquid:oxygen> * 2000]).outputs([<gregtech:meta_item_1:10424>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+//Remove the recipe from NZF dust
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2424>], [null]).remove();
 
 //Stainless Steel [tier 3]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2183>], [null]).remove();	
@@ -133,7 +141,11 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2078>]).outputs([<gr
 //Tungstencarbide [tier 5]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2300>], [null]).remove();	
 blast_furnace.findRecipe(480, [<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>], [null]).remove();
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>]).outputs([<gregtech:meta_item_1:11300>]).property("temperature", 2700).duration(500).EUt(480).buildAndRegister();	
+blast_furnace.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>])
+	.outputs([<gregtech:meta_item_1:11300> * 2])
+	.property("temperature", 2700)
+	.duration(500).EUt(480).buildAndRegister();	
 furnace.addRecipe(<gregtech:meta_item_1:10300>, <gregtech:meta_item_1:2300>, 0.0);
 
 //Tungstensteel [tier 5]
