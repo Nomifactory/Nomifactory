@@ -13,7 +13,7 @@ interface ExternalDependency {
 	sha: string;
 }
 
-interface File {
+export interface ModpackManifestFile {
 	projectID: number;
 	fileID: number;
 	required: boolean;
@@ -28,6 +28,6 @@ export interface ModpackManifest {
 	author: string;
 	projectID: number;
 	externalDependencies?: ExternalDependency[];
-	files: File[];
+	files: ModpackManifestFile[];
 	overrides: string;
 }

@@ -3,20 +3,38 @@ import { CurseForgeFetchedFileInfo, CurseForgeModInfo as CurseForgeProject } fro
 import log from "fancy-log";
 import request from "requestretry";
 
+const curseForgeProjectCache: { [key: number]: CurseForgeProject } = {};
 export async function fetchProject(toFetch: number): Promise<CurseForgeProject> {
-	return request({
+	if (curseForgeProjectCache[toFetch]) {
+		return curseForgeProjectCache[toFetch];
+	}
+
+	const project: CurseForgeProject = await request({
 		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${toFetch}`,
 		json: true,
 		fullResponse: false,
 	});
+
+	curseForgeProjectCache[toFetch] = project;
+	return project;
 }
 
+const fetchedFileInfoCache: { [key: string]: CurseForgeFetchedFileInfo } = {};
 export async function fetchFileInfo(projectID: number, fileID: number): Promise<CurseForgeFetchedFileInfo> {
-	return request({
+	const slug = `${projectID}/${fileID}`;
+
+	if (fetchedFileInfoCache[slug]) {
+		return fetchedFileInfoCache[slug];
+	}
+
+	const fileInfo: CurseForgeFetchedFileInfo = await request({
 		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${projectID}/file/${fileID}`,
 		json: true,
 		fullResponse: false,
 	});
+
+	fetchedFileInfoCache[slug] = fileInfo;
+	return fileInfo;
 }
 
 /**
@@ -27,15 +45,32 @@ export async function fetchFileInfo(projectID: number, fileID: number): Promise<
  * @returns CurseForge project infos.
  */
 export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgeProject[]> {
-	const modInfos: CurseForgeProject[] = await request.post({
+	const modInfos: CurseForgeProject[] = [];
+	const unfetched: number[] = [];
+
+	// Determine projects that have been fetched already.
+	toFetch.forEach((id) => {
+		const cached = curseForgeProjectCache[id];
+		if (cached) {
+			modInfos.push(cached);
+		} else {
+			unfetched.push(id);
+		}
+	});
+
+	// Augment the array of known projects with new info.
+	const fetched: CurseForgeProject[] = await request.post({
 		uri: "https://addons-ecs.forgesvc.net/api/v2/addon/",
 		json: toFetch,
 		fullResponse: false,
 	});
 
-	if (!modInfos || modInfos.length === 0) {
-		throw new Error("Couldn't fetch mods due to empty response");
-	}
+	modInfos.push(...fetched);
+
+	// Cache fetched stuff.
+	fetched.forEach((mi) => {
+		curseForgeProjectCache[mi.id] = mi;
+	});
 
 	// In case we haven't received the proper amount of mod infos,
 	// try requesting them individually.

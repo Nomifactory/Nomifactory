@@ -7,6 +7,10 @@ import requestretry from "requestretry";
 import http from "http";
 import { compareBufferToHashDef } from "./hashes";
 import { execSync } from "child_process";
+import { ModpackManifestFile } from "../types/modpackManifest";
+import { CurseForgeModInfo } from "../types/curseForge";
+import { fetchProject, fetchProjectsBulk } from "./curseForgeAPI";
+import Bluebird from "bluebird";
 
 const LIBRARY_REG = /^(.+?):(.+?):(.+?)$/;
 
@@ -163,11 +167,87 @@ export function getLastGitTag(args?: string): string {
  * @param {string[]} dirs Optional scopes.
  */
 export function getChangeLog(since = "HEAD", to = "HEAD", dirs: string[] = undefined): string {
-	const command = ["git log", '--date="format:%d %b %Y"', '--pretty="* %s - **%an** (%ad)"', `${since}..${to}`];
+	const command = [
+		"git log",
+		"--no-merges",
+		'--date="format:%d %b %Y"',
+		'--pretty="* %s - **%an** (%ad)"',
+		`${since}..${to}`,
+	];
 
 	if (dirs) {
 		command.push("--", dirs.join(" -- "));
 	}
 
 	return execSync(command.join(" ")).toString().trim();
+}
+
+/**
+ * Generates a changelog based on the two provided Git refs.
+ * @param {string} since Lower boundary Git ref.
+ * @param {string} to Upper boundary Git ref.
+ * @param {string[]} dirs Optional scopes.
+ */
+export function getFileAtRevision(path: string, revision = "HEAD"): string {
+	return execSync(`git show ${revision}:"${path}"`).toString().trim();
+}
+
+export interface ManifestFileListComparisonResult {
+	removed: CurseForgeModInfo[];
+	modified: CurseForgeModInfo[];
+	added: CurseForgeModInfo[];
+}
+
+export async function compareAndExpandManifestFileLists(
+	oldFiles: ModpackManifestFile[],
+	newFiles: ModpackManifestFile[],
+): Promise<ManifestFileListComparisonResult> {
+	// Map inputs for efficient joining.
+	const oldFileMap: { [key: number]: ModpackManifestFile } = oldFiles.reduce(
+		(map, file) => ((map[file.projectID] = file), map),
+		{},
+	);
+	const newFileMap: { [key: number]: ModpackManifestFile } = newFiles.reduce(
+		(map, file) => ((map[file.projectID] = file), map),
+		{},
+	);
+
+	const removed: CurseForgeModInfo[] = [],
+		modified: CurseForgeModInfo[] = [],
+		added: CurseForgeModInfo[] = [];
+
+	// Create a distinct map of project IDs.
+	const projectIDs = Array.from(new Set([...oldFiles.map((f) => f.projectID), ...newFiles.map((f) => f.projectID)]));
+
+	// Fetch projects in bulk and discard the result.
+	// Future calls to fetchProject() and fetchProjectsBulk() will hit the cache.
+	fetchProjectsBulk(projectIDs);
+
+	await Bluebird.map(
+		projectIDs,
+		async (projectID) => {
+			const oldFileInfo = oldFileMap[projectID];
+			const newFileInfo = newFileMap[projectID];
+
+			// Doesn't exist in new, but exists in old. Removed. Left outer join.
+			if (!newFileInfo && oldFileInfo) {
+				removed.push(await fetchProject(oldFileInfo.projectID));
+			}
+			// Doesn't exist in old, but exists in new. Added. Right outer join.
+			else if (newFileMap[projectID] && !oldFileMap[projectID]) {
+				added.push(await fetchProject(newFileInfo.projectID));
+			}
+			// Exists in both. Modified? Inner join.
+			else if (oldFileInfo.fileID != newFileInfo.fileID) {
+				modified.push(await fetchProject(newFileInfo.projectID));
+			}
+		},
+		{ concurrency: buildConfig.downloaderConcurrency },
+	);
+
+	return {
+		removed: removed,
+		modified: modified,
+		added: added,
+	};
 }
