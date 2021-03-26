@@ -46,7 +46,7 @@ async function copyClientLicense() {
  */
 function copyClientUpdateNotes() {
 	return new Promise((resolve) => {
-		gulp.src("../UPDATENOTES.md").pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
+		gulp.src("../UPDATENOTES.md", { allowEmpty: true }).pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
 	});
 }
 

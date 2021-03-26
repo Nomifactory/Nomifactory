@@ -269,7 +269,7 @@ function copyServerLicense() {
  * Copies the update notes file.
  */
 function copyServerUpdateNotes() {
-	return src("../UPDATENOTES.md").pipe(dest(serverDestDirectory));
+	return src("../UPDATENOTES.md", { allowEmpty: true }).pipe(dest(serverDestDirectory));
 }
 
 /**
