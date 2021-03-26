@@ -161,6 +161,7 @@ async function downloadMinecraftServer() {
 		uri: LAUNCHERMETA_VERSION_MANIFEST,
 		json: true,
 		fullResponse: false,
+		maxAttempts: 5,
 	});
 
 	/**
@@ -176,7 +177,7 @@ async function downloadMinecraftServer() {
 	/**
 	 * Fetch the version manifest file.
 	 */
-	const versionManifest = await request({ uri: version.url, json: true, fullResponse: false });
+	const versionManifest = await request({ uri: version.url, json: true, fullResponse: false, maxAttempts: 5 });
 
 	if (!(versionManifest.downloads && versionManifest.downloads.server)) {
 		throw new Error(`No server jar file found for ${version.id}`);

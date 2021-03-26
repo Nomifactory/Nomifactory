@@ -68,6 +68,7 @@ async function deployCurseForge(): Promise<void> {
 			method: "GET",
 			json: true,
 			fullResponse: false,
+			maxAttempts: 5,
 		})) || [];
 
 	const version = versionsManifest.find((m) => m.name == modpackManifest.minecraft.version);

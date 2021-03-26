@@ -113,6 +113,7 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Retri
 			fullResponse: false,
 			encoding: null,
 			retryStrategy: retryStrategy,
+			maxAttempts: 5,
 		}),
 	);
 

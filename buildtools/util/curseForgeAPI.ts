@@ -13,6 +13,7 @@ export async function fetchProject(toFetch: number): Promise<CurseForgeProject> 
 		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${toFetch}`,
 		json: true,
 		fullResponse: false,
+		maxAttempts: 5,
 	});
 
 	curseForgeProjectCache[toFetch] = project;
@@ -31,6 +32,7 @@ export async function fetchFileInfo(projectID: number, fileID: number): Promise<
 		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${projectID}/file/${fileID}`,
 		json: true,
 		fullResponse: false,
+		maxAttempts: 5,
 	});
 
 	fetchedFileInfoCache[slug] = fileInfo;
@@ -63,6 +65,7 @@ export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgePr
 		uri: "https://addons-ecs.forgesvc.net/api/v2/addon/",
 		json: toFetch,
 		fullResponse: false,
+		maxAttempts: 5,
 	});
 
 	modInfos.push(...fetched);
