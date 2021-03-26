@@ -4,7 +4,7 @@ This document containts only the most important things required to know when upd
 
 ## Updating to 1.3.0
 
-There are several things to be aware of when updating to Omnifactory version 1.2.3, and will be important to do when you get your world running.
+There are several things to be aware of when updating to Omnifactory version 1.3.0, and will be important to do when you get your world running.
 
 1. Run the command `/bq_admin default load` or click on the **Update Quests** button on the Main Menu of the Better Questing Questbook. This will update your Questbook to the latest version.
 2. Due to several issues, it was decided to remove the mod **Modular Machinery** and replace it with a custom Multiblock implementation creating Multiblocks using the api of GregTech Community Edition. These Multiblocks are created through a new mod called **Multiblock Tweaker**. There are several changes that need to be made due to this change, and your Multiblock structures from Modular Machinery will not function anymore.
