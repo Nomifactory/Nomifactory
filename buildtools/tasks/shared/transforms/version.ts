@@ -16,6 +16,12 @@ export default async function transformManifestVersion(): Promise<void> {
 		versionTitle = [modpackManifest.name, process.env.GITHUB_TAG.replace(/^v/, ""), flavorTitle]
 			.filter(Boolean)
 			.join(" - ");
+	}
+	// If SHA is provided and the build isn't tagged, append both the branch and short SHA.
+	else if (process.env.GITHUB_SHA && process.env.GITHUB_REF && process.env.GITHUB_REF.startsWith("refs/heads/")) {
+		const shortCommit = process.env.GITHUB_SHA.substr(0, 7);
+		const branch = /refs\/heads\/(.+)/.exec(process.env.GITHUB_REF);
+		versionTitle = `${modpackManifest.name} (${branch[1]} branch, ${shortCommit})`;
 	} else {
 		versionTitle = `${modpackManifest.name} (manual build)`;
 	}
