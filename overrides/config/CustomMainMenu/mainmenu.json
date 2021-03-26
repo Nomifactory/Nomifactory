@@ -97,32 +97,9 @@
             "alignment" : "left_center",
             "action" :
             {
-                "type" : "openGui",
-                //"link" : "https://github.com/OmnifactoryDevs/Omnifactory/blob/dev/UpdateNotes.md"
-                "gui" : "custom.updateNotes"
+                "type" : "openLink",
+                "link" : "https://github.com/OmnifactoryDevs/Omnifactory/blob/dev/UPDATENOTES.md"
             }
-        },
-		
-        "changelog":
-        {
-            "text" : "Changes",
-            "posX" : 125,
-            "posY" : 2,
-            "width" : 120,
-            "height" : 20,
-            "alignment" : "left_center",
-            "wrappedButton" : 401
-        },
-        
-        "reportbug":
-        {
-            "text" : "Issues",
-            "posX" : 4,
-            "posY" : 2,
-            "width" : 120,
-            "height" : 20,
-            "alignment" : "left_center",
-            "wrappedButton" : 402
         },
         "discord":
         {
@@ -130,9 +107,9 @@
             "posX" : 4,
             "posY" : 26,
             "width" : 120,
-			"height" : 20,
-			"alignment" : "left_center",
-			"action" : 
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
             {
                 "type" : "openLink",
                 "link" : "https://discord.gg/jEEq7u5"
