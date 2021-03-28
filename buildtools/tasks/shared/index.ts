@@ -36,7 +36,7 @@ async function createSharedDirs() {
  * Copies modpack overrides.
  */
 async function copyOverrides() {
-	await new Promise((resolve) => {
+	return new Promise((resolve) => {
 		gulp
 			.src(upath.join(buildConfig.buildSourceDirectory, overridesFolder, "**/*"))
 			.pipe(gulp.dest(upath.join(sharedDestDirectory, overridesFolder)))
@@ -69,7 +69,9 @@ async function fetchExternalDependencies() {
 			};
 		});
 
-		await Bluebird.map(
+		delete modpackManifest.externalDependencies;
+
+		return Bluebird.map(
 			depDefs,
 			async (depDef) => {
 				const file = (await downloadOrRetrieveFileDef(depDef)).contents;
@@ -78,8 +80,6 @@ async function fetchExternalDependencies() {
 			},
 			{ concurrency: buildConfig.downloaderConcurrency },
 		);
-
-		delete modpackManifest.externalDependencies;
 	}
 }
 
@@ -94,6 +94,10 @@ async function makeChangelog() {
 	if (process.env.GITHUB_TAG) {
 		since = getLastGitTag(process.env.GITHUB_TAG);
 		to = process.env.GITHUB_TAG;
+	}
+	// Back-compat in case this crap is still around.
+	else if (since == "latest-dev-preview") {
+		since = getLastGitTag(since);
 	}
 
 	const old = JSON.parse(getFileAtRevision("manifest.json", since)) as ModpackManifest;
@@ -126,6 +130,10 @@ async function makeChangelog() {
 			list: comparisonResult.removed,
 		},
 	].forEach((block) => {
+		if (block.list.length == 0) {
+			return;
+		}
+
 		builder.push("");
 		builder.push(block.name);
 		builder.push(
@@ -144,6 +152,12 @@ async function makeChangelog() {
 		builder.push(commitList);
 	}
 
+	// Check if the builder only contains the title.
+	if (builder.length == 1) {
+		builder.push("");
+		builder.push("There haven't been any changes.");
+	}
+
 	return fs.promises.writeFile(upath.join(sharedDestDirectory, "CHANGELOG.md"), builder.join("\n"));
 }
 
@@ -155,5 +169,5 @@ export default gulp.series(
 	copyOverrides,
 	makeChangelog,
 	fetchExternalDependencies,
-	gulp.parallel(transforms),
+	...transforms,
 );

@@ -36,7 +36,7 @@ export default async function transformManifestVersion(): Promise<void> {
 	const randomPatchesConfigFilePath = upath.join(sharedDestDirectory, overridesFolder, randomPatchesConfigFile);
 	const randomPatchesFile = (await fs.promises.readFile(randomPatchesConfigFilePath)).toString();
 
-	await fs.promises.writeFile(
+	return fs.promises.writeFile(
 		randomPatchesConfigFilePath,
 		mustache.render(randomPatchesFile, {
 			title: versionTitle,

@@ -151,12 +151,12 @@ export function makeArtifactNameBody(baseName: string): string {
  * @returns string Git tag.
  * @throws
  */
-export function getLastGitTag(args?: string): string {
-	if (args) {
-		args = `"${args}^"`;
+export function getLastGitTag(before?: string): string {
+	if (before) {
+		before = `"${before}^"`;
 	}
 
-	return execSync(`git describe --abbrev=0 --tags ${args || ""}`)
+	return execSync(`git describe --abbrev=0 --tags ${before || ""}`)
 		.toString()
 		.trim();
 }
@@ -222,7 +222,7 @@ export async function compareAndExpandManifestFileLists(
 
 	// Fetch projects in bulk and discard the result.
 	// Future calls to fetchProject() and fetchProjectsBulk() will hit the cache.
-	fetchProjectsBulk(projectIDs);
+	await fetchProjectsBulk(projectIDs);
 
 	await Bluebird.map(
 		projectIDs,

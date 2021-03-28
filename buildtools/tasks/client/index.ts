@@ -12,7 +12,7 @@ import { MainMenuConfig } from "../../types/mainMenuConfig";
 import del from "del";
 
 async function clientCleanUp() {
-	await del(upath.join(clientDestDirectory, "*"), { force: true });
+	return del(upath.join(clientDestDirectory, "*"), { force: true });
 }
 
 /**
@@ -20,7 +20,7 @@ async function clientCleanUp() {
  */
 async function createClientDirs() {
 	if (!fs.existsSync(clientDestDirectory)) {
-		await fs.promises.mkdir(clientDestDirectory, { recursive: true });
+		return fs.promises.mkdir(clientDestDirectory, { recursive: true });
 	}
 }
 
@@ -29,25 +29,21 @@ async function createClientDirs() {
  */
 async function exportModpackManifest() {
 	const manifestPath = upath.join(clientDestDirectory, "manifest.json");
-	await fs.promises.writeFile(manifestPath, JSON.stringify(modpackManifest, null, "  "));
+	return fs.promises.writeFile(manifestPath, JSON.stringify(modpackManifest, null, "  "));
 }
 
 /**
  * Copies the license file.
  */
 async function copyClientLicense() {
-	await await new Promise((resolve) => {
-		gulp.src("../LICENSE.md").pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
-	});
+	return gulp.src("../LICENSE.md").pipe(gulp.dest(clientDestDirectory));
 }
 
 /**
  * Copies the update notes file.
  */
 function copyClientUpdateNotes() {
-	return new Promise((resolve) => {
-		gulp.src("../UPDATENOTES.md", { allowEmpty: true }).pipe(gulp.dest(clientDestDirectory)).on("end", resolve);
-	});
+	return gulp.src("../UPDATENOTES.md", { allowEmpty: true }).pipe(gulp.dest(clientDestDirectory));
 }
 
 /**
@@ -70,7 +66,7 @@ async function copyClientOverrides() {
 		}
 	});
 
-	await new Promise((resolve) => {
+	return new Promise((resolve) => {
 		gulp
 			.src(globs)
 			.pipe(gulp.dest(upath.join(clientDestDirectory, overridesFolder)))
@@ -105,7 +101,7 @@ async function fetchModList() {
 		"</ul>",
 	];
 
-	await fs.promises.writeFile(upath.join(clientDestDirectory, "modlist.html"), output.join(""));
+	return fs.promises.writeFile(upath.join(clientDestDirectory, "modlist.html"), output.join(""));
 }
 
 const bgImageNamespace = "minecraft";
@@ -160,13 +156,11 @@ export default gulp.series(
 	clientCleanUp,
 	createClientDirs,
 	copyClientOverrides,
-	gulp.parallel(
-		exportModpackManifest,
-		copyClientLicense,
-		copyClientOverrides,
-		copyClientChangelog,
-		copyClientUpdateNotes,
-		fetchModList,
-		compressMainMenuImages,
-	),
+	exportModpackManifest,
+	copyClientLicense,
+	copyClientOverrides,
+	copyClientChangelog,
+	copyClientUpdateNotes,
+	fetchModList,
+	compressMainMenuImages,
 );

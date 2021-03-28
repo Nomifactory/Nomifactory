@@ -37,4 +37,4 @@ export async function zipLang(): Promise<void> {
 	);
 }
 
-export const zipAll = gulp.parallel(zipServer, zipClient, zipLang);
+export const zipAll = gulp.series(zipServer, zipClient, zipLang);

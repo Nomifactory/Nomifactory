@@ -16,7 +16,9 @@ export async function fetchProject(toFetch: number): Promise<CurseForgeProject> 
 		maxAttempts: 5,
 	});
 
-	curseForgeProjectCache[toFetch] = project;
+	if (project) {
+		curseForgeProjectCache[toFetch] = project;
+	}
 	return project;
 }
 
@@ -32,10 +34,12 @@ export async function fetchFileInfo(projectID: number, fileID: number): Promise<
 		uri: `https://addons-ecs.forgesvc.net/api/v2/addon/${projectID}/file/${fileID}`,
 		json: true,
 		fullResponse: false,
-		maxAttempts: 5,
 	});
 
-	fetchedFileInfoCache[slug] = fileInfo;
+	if (fileInfo) {
+		fetchedFileInfoCache[slug] = fileInfo;
+	}
+
 	return fileInfo;
 }
 
@@ -77,7 +81,7 @@ export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgePr
 
 	// In case we haven't received the proper amount of mod infos,
 	// try requesting them individually.
-	if (modInfos.length !== toFetch.length) {
+	if (unfetched.length !== toFetch.length) {
 		const modInfoIDs = new Set(modInfos.map((mi) => mi.id));
 		const toFetchMissing = [...new Set(toFetch.filter((x) => !modInfoIDs.has(x)))];
 
@@ -90,7 +94,7 @@ export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgePr
 
 			try {
 				// In case something fails to download; catch, rewrite, rethrow.
-				return fetchProject(id);
+				return await fetchProject(id);
 			} catch (err) {
 				err.message = `Couldn't fetch project ID ${id}. ${err.message || "Unknown error"}`;
 				throw err;

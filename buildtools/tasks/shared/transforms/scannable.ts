@@ -24,5 +24,5 @@ export default async function transformScannable(): Promise<void> {
 			return g0 + g1 + " <" + body + (body ? "" : "\n") + g0 + " >";
 		});
 
-	await fs.promises.writeFile(configPath, contents);
+	return fs.promises.writeFile(configPath, contents);
 }

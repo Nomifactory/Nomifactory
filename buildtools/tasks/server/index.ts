@@ -30,7 +30,7 @@ const LAUNCHERMETA_VERSION_MANIFEST = "https://launchermeta.mojang.com/mc/game/v
 let g_forgeJar;
 
 async function serverCleanUp() {
-	await del(upath.join(serverDestDirectory, "*"), { force: true });
+	return del(upath.join(serverDestDirectory, "*"), { force: true });
 }
 
 /**
@@ -38,7 +38,7 @@ async function serverCleanUp() {
  */
 async function createServerDirs() {
 	if (!fs.existsSync(serverDestDirectory)) {
-		await fs.promises.mkdir(serverDestDirectory, { recursive: true });
+		return fs.promises.mkdir(serverDestDirectory, { recursive: true });
 	}
 }
 
@@ -126,7 +126,7 @@ async function downloadForge() {
 	const libraries = forgeProfile.versionInfo.libraries.filter((x) => x.serverreq);
 	log(`Fetching ${libraries.length} server libraries...`);
 
-	Bluebird.map(
+	return Bluebird.map(
 		libraries,
 		async (library) => {
 			const libraryPath = libraryToPath(library.name) + ".jar";
@@ -195,7 +195,7 @@ async function downloadMinecraftServer() {
 		})
 	).contents;
 
-	await fs.promises.writeFile(upath.join(serverDestDirectory, `minecraft_server.${version.id}.jar`), serverJar);
+	return fs.promises.writeFile(upath.join(serverDestDirectory, `minecraft_server.${version.id}.jar`), serverJar);
 }
 
 /**
@@ -209,11 +209,12 @@ async function downloadMods() {
 		await fs.promises.mkdir(modsPath, { recursive: true });
 
 		let fetched = 0;
-		await Bluebird.map(
+		return Bluebird.map(
 			modpackManifest.files,
 			async (file) => {
 				const fileInfo = await fetchFileInfo(file.projectID, file.fileID);
 
+				if (!fileInfo) console.log(file);
 				const fileDef: FileDef = {
 					url: fileInfo.downloadUrl,
 					hashes: [{ id: "murmurhash", hashes: fileInfo.packageFingerprint }],
@@ -316,15 +317,13 @@ function processLaunchscripts() {
 export default gulp.series([
 	serverCleanUp,
 	createServerDirs,
-	gulp.parallel(
-		downloadForge,
-		downloadMinecraftServer,
-		downloadMods,
-		copyServerOverrides,
-		copyServerfiles,
-		copyServerLicense,
-		copyServerChangelog,
-		copyServerUpdateNotes,
-	),
+	downloadForge,
+	downloadMinecraftServer,
+	downloadMods,
+	copyServerOverrides,
+	copyServerfiles,
+	copyServerLicense,
+	copyServerChangelog,
+	copyServerUpdateNotes,
 	processLaunchscripts,
 ]);
