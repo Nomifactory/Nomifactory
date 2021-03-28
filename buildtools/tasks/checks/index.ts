@@ -14,7 +14,7 @@ const vars = [
  * Check required env. variables for vailidity and cancel
  * the build if something is unset.
  */
-function checkEnv() {
+async function checkEnv() {
 	checkEnvironmentalVariables(vars);
 
 	if (!/.+\/.+/.exec(process.env.GITHUB_REPOSITORY)) {
