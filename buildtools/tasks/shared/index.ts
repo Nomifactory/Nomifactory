@@ -7,7 +7,7 @@ import del from "del";
 import { FileDef } from "../../types/fileDef";
 import Bluebird from "bluebird";
 import {
-	compareAndExpandManifestFileLists,
+	compareAndExpandManifestDependencies,
 	downloadOrRetrieveFileDef,
 	getChangeLog,
 	getFileAtRevision,
@@ -113,7 +113,7 @@ async function makeChangelog() {
 	// Push the title.
 	builder.push(`# Changes since ${since}`);
 
-	const comparisonResult = await compareAndExpandManifestFileLists(old.files, current.files);
+	const comparisonResult = await compareAndExpandManifestDependencies(old, current);
 
 	// Push mod update blocks.
 	[
@@ -139,9 +139,9 @@ async function makeChangelog() {
 		builder.push(
 			...block.list
 				// Yeet invalid project names.
-				.filter((project) => !/project-\d*/.test(project.name))
-				.sort((a, b) => a.name.localeCompare(b.name))
-				.map((project) => `* ${project.name}`),
+				.filter((project) => !/project-\d*/.test(project))
+				.sort()
+				.map((name) => `* ${name}`),
 		);
 	});
 

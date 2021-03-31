@@ -8,7 +8,8 @@ interface Minecraft {
 	modLoaders?: ModLoader[];
 }
 
-interface ExternalDependency {
+export interface ExternalDependency {
+	name: string;
 	url: string;
 	sha: string;
 }

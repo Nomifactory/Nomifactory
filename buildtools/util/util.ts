@@ -7,8 +7,7 @@ import requestretry from "requestretry";
 import http from "http";
 import { compareBufferToHashDef } from "./hashes";
 import { execSync } from "child_process";
-import { ModpackManifestFile } from "../types/modpackManifest";
-import { CurseForgeModInfo } from "../types/curseForge";
+import { ModpackManifest, ModpackManifestFile, ExternalDependency } from "../types/modpackManifest";
 import { fetchProject, fetchProjectsBulk } from "./curseForgeAPI";
 import Bluebird from "bluebird";
 
@@ -194,31 +193,33 @@ export function getFileAtRevision(path: string, revision = "HEAD"): string {
 }
 
 export interface ManifestFileListComparisonResult {
-	removed: CurseForgeModInfo[];
-	modified: CurseForgeModInfo[];
-	added: CurseForgeModInfo[];
+	removed: string[];
+	modified: string[];
+	added: string[];
 }
 
-export async function compareAndExpandManifestFileLists(
-	oldFiles: ModpackManifestFile[],
-	newFiles: ModpackManifestFile[],
+export async function compareAndExpandManifestDependencies(
+	oldFiles: ModpackManifest,
+	newFiles: ModpackManifest,
 ): Promise<ManifestFileListComparisonResult> {
 	// Map inputs for efficient joining.
-	const oldFileMap: { [key: number]: ModpackManifestFile } = oldFiles.reduce(
+	const oldFileMap: { [key: number]: ModpackManifestFile } = oldFiles.files.reduce(
 		(map, file) => ((map[file.projectID] = file), map),
 		{},
 	);
-	const newFileMap: { [key: number]: ModpackManifestFile } = newFiles.reduce(
+	const newFileMap: { [key: number]: ModpackManifestFile } = newFiles.files.reduce(
 		(map, file) => ((map[file.projectID] = file), map),
 		{},
 	);
 
-	const removed: CurseForgeModInfo[] = [],
-		modified: CurseForgeModInfo[] = [],
-		added: CurseForgeModInfo[] = [];
+	const removed: string[] = [],
+		modified: string[] = [],
+		added: string[] = [];
 
 	// Create a distinct map of project IDs.
-	const projectIDs = Array.from(new Set([...oldFiles.map((f) => f.projectID), ...newFiles.map((f) => f.projectID)]));
+	const projectIDs = Array.from(
+		new Set([...oldFiles.files.map((f) => f.projectID), ...newFiles.files.map((f) => f.projectID)]),
+	);
 
 	// Fetch projects in bulk and discard the result.
 	// Future calls to fetchProject() and fetchProjectsBulk() will hit the cache.
@@ -232,19 +233,54 @@ export async function compareAndExpandManifestFileLists(
 
 			// Doesn't exist in new, but exists in old. Removed. Left outer join.
 			if (!newFileInfo && oldFileInfo) {
-				removed.push(await fetchProject(oldFileInfo.projectID));
+				removed.push((await fetchProject(oldFileInfo.projectID)).name);
 			}
 			// Doesn't exist in old, but exists in new. Added. Right outer join.
 			else if (newFileMap[projectID] && !oldFileMap[projectID]) {
-				added.push(await fetchProject(newFileInfo.projectID));
+				added.push((await fetchProject(newFileInfo.projectID)).name);
 			}
 			// Exists in both. Modified? Inner join.
 			else if (oldFileInfo.fileID != newFileInfo.fileID) {
-				modified.push(await fetchProject(newFileInfo.projectID));
+				modified.push((await fetchProject(newFileInfo.projectID)).name);
 			}
 		},
 		{ concurrency: buildConfig.downloaderConcurrency },
 	);
+
+	// Compare external dependencies the same way.
+	const oldExternalMap: { [key: string]: ExternalDependency } = (oldFiles.externalDependencies || []).reduce(
+		(map, file) => ((map[file.name] = file), map),
+		{},
+	);
+	const newExternalMap: { [key: string]: ExternalDependency } = (newFiles.externalDependencies || []).reduce(
+		(map, file) => ((map[file.name] = file), map),
+		{},
+	);
+
+	const externalNames = Array.from(
+		new Set([
+			...(oldFiles.externalDependencies || []).map((dep) => dep.name),
+			...(newFiles.externalDependencies || []).map((dep) => dep.name),
+		]),
+	);
+
+	externalNames.forEach(async (name) => {
+		const oldDep = oldExternalMap[name];
+		const newDep = newExternalMap[name];
+
+		// Doesn't exist in new, but exists in old. Removed. Left outer join.
+		if (!newDep && oldDep) {
+			removed.push(oldDep.name);
+		}
+		// Doesn't exist in old, but exists in new. Added. Right outer join.
+		else if (newDep && !oldDep) {
+			added.push(newDep.name);
+		}
+		// Exists in both. Modified? Inner join.
+		else if (oldDep.url != newDep.url || oldDep.name != newDep.name) {
+			modified.push(newDep.name);
+		}
+	});
 
 	return {
 		removed: removed,
