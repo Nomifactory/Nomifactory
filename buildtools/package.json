@@ -22,6 +22,7 @@
 		"@typescript-eslint/parser": "^4.18.0",
 		"bluebird": "^3.7.2",
 		"del": "^6.0.0",
+		"discord-webhook-node": "^1.1.8",
 		"eslint": "^7.22.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-prettier": "^3.3.1",

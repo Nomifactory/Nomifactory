@@ -26,3 +26,6 @@ export const deployCurseForge = deployCurseForgeTask;
 
 import deployReleasesTask from "./tasks/deploy/releases";
 export const deployReleases = deployReleasesTask;
+
+import fireNightlyWebhookTask from "./tasks/misc/webhook";
+export const fireNightlyWebhook = fireNightlyWebhookTask;
