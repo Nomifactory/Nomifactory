@@ -13,12 +13,14 @@
   "name": "Omnifactory",
   "author": "OmnifactoryDevs",
   "projectID": 313440,
-  "files": [
+  "externalDependencies": [
     {
-      "projectID": 310812,
-      "fileID": 2783832,
-      "required": true
-    },
+      "name": "Applied Energistics 2 Trousers Edition",
+      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/omni-fixes-v32/appliedenergistics2-rv6-stable-7.omni-fixes-v32.jar",
+      "sha": "c78bfaa6e4f612f5abb477d146471bd07cfcc177"
+    }
+  ],
+  "files": [
     {
       "projectID": 238403,
       "fileID": 2691084,
@@ -540,11 +542,6 @@
       "required": true
     },
     {
-      "projectID": 223794,
-      "fileID": 2747063,
-      "required": true
-    },
-    {
       "projectID": 237167,
       "fileID": 2985811,
       "required": true
@@ -770,9 +767,9 @@
       "required": true
     },
     {
-    "projectID": 237701,
-    "fileID": 2560638,
-    "required": true
+      "projectID": 237701,
+      "fileID": 2560638,
+      "required": true
     },
     {
       "projectID": 383632,
