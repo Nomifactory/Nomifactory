@@ -3,7 +3,7 @@
     {
         "title":
         {
-            "image" : "minecraft:textures/gui/title/background/top.png",
+            "image" : "minecraft:textures/gui/title/top.png",
             "posX" : -260,
             "posY" : -10,
             "width" : 512,
@@ -21,13 +21,13 @@
             "width" : 120,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "singleplayer"
             }
         },
-        
+
         "multiplayer":
         {
             "text" : "menu.multiplayer",
@@ -36,13 +36,13 @@
             "width" : 120,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "multiplayer"
             }
         },
-        
+
         "mods":
         {
             "text" : "fml.menu.mods",
@@ -51,13 +51,13 @@
             "width" : 120,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "mods"
             }
         },
-            
+
         "options":
         {
             "text" : "menu.options",
@@ -66,13 +66,13 @@
             "width" : 120,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "options"
             }
         },
-        
+
         "quit":
         {
             "text" : "menu.quit",
@@ -81,12 +81,12 @@
             "width" : 240,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "quit"
             }
         },
-        
+
         "changelog":
         {
             "text" : "Changes",
@@ -97,7 +97,7 @@
             "alignment" : "left_center",
             "wrappedButton" : 401
         },
-        
+
         "reportbug":
         {
             "text" : "Issues",
@@ -116,7 +116,7 @@
             "width" : 240,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "openLink",
                 "link" : "https://discord.gg/jEEq7u5"
@@ -130,7 +130,7 @@
             "width" : 240,
             "height" : 20,
             "alignment" : "left_center",
-            "action" : 
+            "action" :
             {
                 "type" : "openLink",
                 "link" : "https://www.akliz.net/manage/aff.php?aff=266"
@@ -138,8 +138,8 @@
         }
     },
     "labels":
-    {        
-        
+    {
+
         "mojang":
         {
             "text" : "Copyright Mojang AB. Do not distribute!",
@@ -149,7 +149,7 @@
             "alignment" : "bottom_right"
         }
     },
-    
+
     "other":
     {
         "background":
@@ -157,27 +157,6 @@
             "image" : "",
             "slideshow":
             {
-                "images" : [
-                    "minecraft:textures/gui/title/background/01_koslow#5221_2020-07-13_18.29.23.png",
-                    "minecraft:textures/gui/title/background/02_zefenglin#4068_unknown.png",
-                    "minecraft:textures/gui/title/background/03_koslow#5221_2020-07-15_12.47.13.png",
-                    "minecraft:textures/gui/title/background/04_twgecko#4094_2020-07-23_23.52.42.png",
-                    "minecraft:textures/gui/title/background/05_misterpemodder#0404_2020-04-16_00.02.35.png",
-                    "minecraft:textures/gui/title/background/06_koslow#5221_2020-07-22_15.51.02.png",
-                    "minecraft:textures/gui/title/background/07_sjihttam#1781_2020-01-16_13.41.00.png",
-                    "minecraft:textures/gui/title/background/08_immow#9906_unknown.png",
-                    "minecraft:textures/gui/title/background/09_max the potato#6258_2020-07-14_18.16.47.png",
-                    "minecraft:textures/gui/title/background/10_twgecko#4094_2020-07-28_01.02.15.png",
-                    "minecraft:textures/gui/title/background/11_thatguy#6588_2020-02-11_23.31.02.png",
-                    "minecraft:textures/gui/title/background/12_misterpemodder#0404_2020-07-14_00.47.49.png",
-                    "minecraft:textures/gui/title/background/title.png",
-                    "minecraft:textures/gui/title/background/title2.png",
-                    "minecraft:textures/gui/title/background/title3.png",
-                    "minecraft:textures/gui/title/background/title4.png",
-                    "minecraft:textures/gui/title/background/title5.png",
-                    "minecraft:textures/gui/title/background/title6.png",
-                    "minecraft:textures/gui/title/background/title7.png"
-                ],
                 "displayDuration" : 100,
                 "fadeDuration" : 40
             }
