@@ -10,6 +10,10 @@ import { execSync } from "child_process";
 import { ModpackManifest, ModpackManifestFile, ExternalDependency } from "../types/modpackManifest";
 import { fetchProject, fetchProjectsBulk } from "./curseForgeAPI";
 import Bluebird from "bluebird";
+import { VersionManifest } from "../types/versionManifest";
+import { VersionsManifest } from "../types/versionsManifest";
+import request from "requestretry";
+import log from "fancy-log";
 
 const LIBRARY_REG = /^(.+?):(.+?):(.+?)$/;
 
@@ -52,6 +56,12 @@ export interface RetrievedFileDef {
 	contents: Buffer;
 }
 
+/**
+ * Downloads/fetches files from the Interwebs.
+ *
+ * Internally hashes the URL of the provided FileDef and looks it up in the cache directory.
+ * In case of no cache hit, downloads the file and stores within the cache directory for later use.
+ */
 export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<RetrievedFileDef> {
 	const fileNameSha = sha1(fileDef.url);
 
@@ -84,45 +94,57 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Retri
 		await fs.promises.mkdir(buildConfig.downloaderCacheDirectory, { recursive: true });
 	}
 
-	const handle = await fs.promises.open(cachedFilePath, "w");
+	let handle: fs.promises.FileHandle;
+	try {
+		handle = await fs.promises.open(cachedFilePath, "w");
 
-	let hashFailed = false;
-	const retryStrategy = (err: Error, response: http.IncomingMessage, body: unknown) => {
-		// Verify hashes.
-		if (!err && fileDef.hashes && body) {
-			const success = fileDef.hashes.every((hashDef) => {
-				return compareBufferToHashDef(body as Buffer, hashDef);
-			});
+		let hashFailed = false;
+		const retryStrategy = (err: Error, response: http.IncomingMessage, body: unknown) => {
+			// Verify hashes.
+			if (!err && fileDef.hashes && body) {
+				const success = fileDef.hashes.every((hashDef) => {
+					return compareBufferToHashDef(body as Buffer, hashDef);
+				});
 
-			if (!success) {
-				if (hashFailed) {
-					throw new Error(`Couldn't verify checksums of ${upath.basename(fileDef.url)}`);
+				if (!success) {
+					if (hashFailed) {
+						throw new Error(`Couldn't verify checksums of ${upath.basename(fileDef.url)}`);
+					}
+
+					hashFailed = true;
+					return true;
 				}
-
-				hashFailed = true;
-				return true;
 			}
+			return requestretry.RetryStrategies.HTTPOrNetworkError(err, response, body);
+		};
+
+		const data: Buffer = Buffer.from(
+			await requestretry({
+				url: fileDef.url,
+				fullResponse: false,
+				encoding: null,
+				retryStrategy: retryStrategy,
+				maxAttempts: 5,
+			}),
+		);
+
+		await handle.write(data);
+		await handle.close();
+
+		return {
+			reason: RetrievedFileDefReason.Downloaded,
+			contents: data,
+		};
+	} catch (err) {
+		if (handle && (await handle.stat()).isFile()) {
+			log(`Couldn't download ${upath.basename(fileDef.url)}, cleaning up ${fileNameSha}...`);
+
+			await handle.close();
+			await fs.promises.unlink(cachedFilePath);
 		}
-		return requestretry.RetryStrategies.HTTPOrNetworkError(err, response, body);
-	};
 
-	const data: Buffer = Buffer.from(
-		await requestretry({
-			url: fileDef.url,
-			fullResponse: false,
-			encoding: null,
-			retryStrategy: retryStrategy,
-			maxAttempts: 5,
-		}),
-	);
-
-	await handle.write(data);
-	await handle.close();
-
-	return {
-		reason: RetrievedFileDefReason.Downloaded,
-		contents: data,
-	};
+		throw err;
+	}
 }
 
 /**
@@ -287,4 +309,40 @@ export async function compareAndExpandManifestDependencies(
 		modified: modified,
 		added: added,
 	};
+}
+
+const LAUNCHERMETA_VERSION_MANIFEST = "https://launchermeta.mojang.com/mc/game/version_manifest.json";
+
+/**
+ * Fetches the version manifest associated with the provided Minecraft version.
+ *
+ * @param minecraftVersion Minecraft version. (e. g., "1.12.2")
+ */
+export async function getVersionManifest(minecraftVersion: string): Promise<VersionManifest> {
+	/**
+	 * Fetch the manifest file of all Minecraft versions.
+	 */
+	const manifest: VersionsManifest = await request({
+		uri: LAUNCHERMETA_VERSION_MANIFEST,
+		json: true,
+		fullResponse: false,
+		maxAttempts: 5,
+	});
+
+	const version = manifest.versions.find((x) => x.id == minecraftVersion);
+	if (!version) {
+		return null;
+	}
+
+	/**
+	 * Fetch the version manifest file.
+	 */
+	const versionManifest: VersionManifest = await request({
+		uri: version.url,
+		json: true,
+		fullResponse: false,
+		maxAttempts: 5,
+	});
+
+	return versionManifest;
 }
