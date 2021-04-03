@@ -16,8 +16,8 @@
   "externalDependencies": [
     {
       "name": "Applied Energistics 2 Trousers Edition",
-      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/omni-fixes-v32/appliedenergistics2-rv6-stable-7.omni-fixes-v32.jar",
-      "sha": "c78bfaa6e4f612f5abb477d146471bd07cfcc177"
+      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/omni-fixes-v34b/appliedenergistics2-rv6-stable-7.omni-fixes-v34b.jar",
+      "sha": "f7d254c95cb9d68f5c5da3b55fd0db7b0dbd5375"
     }
   ],
   "files": [
