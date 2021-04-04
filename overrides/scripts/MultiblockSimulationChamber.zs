@@ -1,4 +1,3 @@
-#debug
 #modloaded deepmoblearning
 import mods.gregtech.multiblock.Builder;
 import mods.gregtech.multiblock.FactoryBlockPattern;
