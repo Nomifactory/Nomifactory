@@ -1,6 +1,5 @@
 {
   "weight": 120,
-  "priority": 100,
   "density": 1.0,
   "min_height": 10,
   "dimension_filter": ["name:*(overworld|lostcities)"],
