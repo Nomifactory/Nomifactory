@@ -46943,7 +46943,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Circuits along this line are LuV, and can all be substituted in recipes.\n\nThe pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce.\n\nMake sure to set up the wetware board production as soon as possible! These take very long time to make.\n\nIt\u0027s LuV, not LUV.\n",
+          "desc:8": "Circuits along this line are LuV, and can all be substituted in recipes.\n\nThe pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce.\n\nMake sure to set up the wetware board production as soon as possible! These take a very long time to make.\n\nIt\u0027s LuV, not LUV.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
