@@ -10416,7 +10416,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalcircuit"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The Fourth and Final Tier Five Circuits",
@@ -12489,7 +12489,8 @@
     },
     "184:10": {
       "preRequisites:11": [
-        154
+        154,
+        546
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12511,7 +12512,7 @@
           "lockedprogress:1": 1,
           "name:8": "Navigating Petrochem",
           "partysinglereward:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -13234,7 +13235,7 @@
           "lockedprogress:1": 1,
           "name:8": "Tritanium Ingot",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -16104,7 +16105,8 @@
     "238:10": {
       "preRequisites:11": [
         241,
-        256
+        411,
+        330
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16169,7 +16171,8 @@
     },
     "239:10": {
       "preRequisites:11": [
-        238
+        238,
+        256
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17043,8 +17046,7 @@
     },
     "252:10": {
       "preRequisites:11": [
-        314,
-        406
+        314
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17988,7 +17990,8 @@
     },
     "266:10": {
       "preRequisites:11": [
-        10
+        10,
+        529
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19272,7 +19275,8 @@
     },
     "286:10": {
       "preRequisites:11": [
-        198
+        198,
+        192
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19391,8 +19395,8 @@
     },
     "287:10": {
       "preRequisites:11": [
-        286,
-        243
+        243,
+        681
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19735,7 +19739,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The Third Tier Six Circuits",
@@ -19895,7 +19899,6 @@
       "preRequisites:11": [
         325,
         337,
-        344,
         542
       ],
       "properties:10": {
@@ -21326,7 +21329,6 @@
     },
     "316:10": {
       "preRequisites:11": [
-        522,
         750
       ],
       "properties:10": {
@@ -21392,7 +21394,6 @@
     },
     "317:10": {
       "preRequisites:11": [
-        243,
         258
       ],
       "properties:10": {
@@ -21727,7 +21728,7 @@
     "323:10": {
       "preRequisites:11": [
         313,
-        326
+        252
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21765,7 +21766,7 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "contenttweaker:omnicoin5"
+              "id:8": "contenttweaker:omnicoin25"
             }
           }
         }
@@ -21921,24 +21922,22 @@
       }
     },
     "326:10": {
-      "preRequisites:11": [
-        252
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Naquadah§r comes in a dust form and only from the Tier Five micro miner.\n\nGet some, it\u0027s important. More on this later.",
+          "desc:8": "",
           "globalshare:1": 0,
           "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 2307,
+            "Count:3": 0,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "gregtech:meta_item_1"
+            "id:8": "minecraft:air"
           },
-          "ismain:1": 1,
-          "issilent:1": 0,
-          "lockedprogress:1": 1,
-          "name:8": "Naquadah Dust",
+          "ismain:1": 0,
+          "issilent:1": 1,
+          "lockedprogress:1": 0,
+          "name:8": "Gap",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -21947,41 +21946,15 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "ALWAYS"
+          "visibility:8": "HIDDEN"
         }
       },
       "questID:3": 326,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "contenttweaker:omnicoin5"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {
         "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 2307,
-              "OreDict:8": "",
-              "id:8": "gregtech:meta_item_1"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     },
@@ -22314,7 +22287,8 @@
     "332:10": {
       "preRequisites:11": [
         242,
-        795
+        795,
+        533
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22327,7 +22301,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The Fourth And Final Tier Six Circuits",
@@ -22393,7 +22367,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The Third and Final Tier Seven Circuits",
@@ -22458,7 +22432,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The Second And Final Tier Eight Circuits",
@@ -22642,8 +22616,7 @@
     "337:10": {
       "preRequisites:11": [
         288,
-        733,
-        681
+        344
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22971,7 +22944,6 @@
     },
     "342:10": {
       "preRequisites:11": [
-        138,
         325,
         341
       ],
@@ -26537,7 +26509,6 @@
     },
     "406:10": {
       "preRequisites:11": [
-        251,
         408,
         209,
         386,
@@ -33080,7 +33051,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalprocessorarray"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The Second Tier Seven Circuits",
@@ -33145,7 +33116,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalprocessormainframe"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "The First Tier Eight Circuits",
@@ -33197,8 +33168,7 @@
     },
     "536:10": {
       "preRequisites:11": [
-        253,
-        560
+        323
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -34843,24 +34813,22 @@
       }
     },
     "560:10": {
-      "preRequisites:11": [
-        323
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Wires made from §6Naquadah§r are ZPM tier.\n\n§6Naquadah Cables§r are needed, among other things, for §6ZPM Machine Hulls§r.",
+          "desc:8": "",
           "globalshare:1": 0,
           "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 307,
+            "Count:3": 0,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "gregtech:cable"
+            "id:8": "minecraft:air"
           },
-          "ismain:1": 1,
-          "issilent:1": 0,
-          "lockedprogress:1": 1,
-          "name:8": "Naquadah Wires",
+          "ismain:1": 0,
+          "issilent:1": 1,
+          "lockedprogress:1": 0,
+          "name:8": "Gap",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -34869,41 +34837,15 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "ALWAYS"
+          "visibility:8": "HIDDEN"
         }
       },
       "questID:3": 560,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "contenttweaker:omnicoin5"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {
         "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 307,
-              "OreDict:8": "",
-              "id:8": "gregtech:cable"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     },
@@ -48348,7 +48290,6 @@
     "795:10": {
       "preRequisites:11": [
         288,
-        533,
         796
       ],
       "properties:10": {
@@ -48362,7 +48303,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "Advanced System-on-Chip",
@@ -48426,7 +48367,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "Naquadah Boules",
@@ -48668,6 +48609,104 @@
               "Damage:2": 9112,
               "OreDict:8": "",
               "id:8": "gregtech:meta_item_1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "800:10": {
+      "preRequisites:11": [
+        408,
+        209,
+        386,
+        389
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Now that you have §6Osmium§r and §6Iridium§r from the §6Tier Four Micro Miner§r, you can begin automating §bExtended Crafting§r recipes. While it is possible to use §6Automation Interfaces§r for this task, you have access to something §nvastly§r better§r: §bPackagedExCrafting§r.\n\nTo begin, you\u0027ll need to craft one of each extended §3Package Crafter§r listed on the right. Put an §3Unpackager§r on top of each one, and then a §3Packager§r on top of each Unpackager. These are all AE2 devices, so you\u0027ll need to connect them to an ME Network.\n\nNext, right-click the §3Package Recipe Encoder§r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You\u0027ll have to choose the appropriate table for the recipe you want to encode.\n\n§6Holders§r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press §6[+]§r in §bJEI§r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines.\n\nIf you\u0027ve done everything correctly, you should see the item appear as craftable in a Terminal.\n\nWhile it might seem that the crafting process is slow, §ePackagedAuto is excellent at parallelizing§r. You can surround an Unpackager with Crafters and it will use all of them. It\u0027s also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same.\n\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extendedcrafting:interface"
+          },
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Automating Extended Crafting",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 800,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "packagedexcrafting:advanced_crafter"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "packagedexcrafting:elite_crafter"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "packagedexcrafting:ultimate_crafter"
+            },
+            "3:10": {
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "packagedauto:unpackager"
+            },
+            "4:10": {
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "packagedauto:packager"
+            },
+            "5:10": {
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "packagedauto:recipe_holder"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -51702,127 +51741,127 @@
           "id:3": 99,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -168,
-          "y:3": 396
+          "x:3": -276,
+          "y:3": 420
         },
         "4:10": {
           "id:3": 121,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -324,
-          "y:3": 156
+          "x:3": -372,
+          "y:3": -132
         },
         "5:10": {
           "id:3": 155,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -408,
-          "y:3": 288
+          "x:3": -432,
+          "y:3": 312
         },
         "6:10": {
           "id:3": 196,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": 340
+          "x:3": -108,
+          "y:3": 354
         },
         "7:10": {
           "id:3": 238,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 192,
-          "y:3": 228
+          "x:3": 108,
+          "y:3": 240
         },
         "8:10": {
           "id:3": 239,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 204,
-          "y:3": 360
+          "x:3": 120,
+          "y:3": 384
         },
         "9:10": {
           "id:3": 240,
-          "sizeX:3": 72,
-          "sizeY:3": 72,
-          "x:3": 0,
-          "y:3": 360
+          "sizeX:3": 48,
+          "sizeY:3": 48,
+          "x:3": -72,
+          "y:3": 420
         },
         "10:10": {
           "id:3": 241,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 204,
-          "y:3": 192
+          "x:3": 120,
+          "y:3": 204
         },
         "11:10": {
           "id:3": 242,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 368
+          "x:3": -264,
+          "y:3": 384
         },
         "12:10": {
           "id:3": 243,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 24,
-          "y:3": 48
+          "x:3": -24,
+          "y:3": 60
         },
         "13:10": {
           "id:3": 244,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
-          "y:3": 360
+          "x:3": -12,
+          "y:3": 384
         },
         "14:10": {
           "id:3": 251,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -336,
-          "y:3": 228
+          "x:3": -384,
+          "y:3": -60
         },
         "15:10": {
           "id:3": 252,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -276,
-          "y:3": 228
+          "x:3": -306,
+          "y:3": 48
         },
         "16:10": {
           "id:3": 253,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": 132
+          "x:3": -372,
+          "y:3": 0
         },
         "17:10": {
           "id:3": 254,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -168,
+          "x:3": -276,
           "y:3": 228
         },
         "18:10": {
           "id:3": 256,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 108,
-          "y:3": 228
+          "x:3": 12,
+          "y:3": 240
         },
         "19:10": {
           "id:3": 257,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": 192
+          "x:3": 24,
+          "y:3": 204
         },
         "20:10": {
           "id:3": 258,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
-          "y:3": 288
+          "x:3": -12,
+          "y:3": 312
         },
         "21:10": {
           "id:3": 263,
@@ -51835,7 +51874,7 @@
           "id:3": 264,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -456,
+          "x:3": -480,
           "y:3": 96
         },
         "23:10": {
@@ -51863,63 +51902,63 @@
           "id:3": 268,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -456,
+          "x:3": -480,
           "y:3": 144
         },
         "27:10": {
           "id:3": 269,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -456,
+          "x:3": -480,
           "y:3": 174
         },
         "28:10": {
           "id:3": 271,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 408
+          "x:3": 24,
+          "y:3": 432
         },
         "29:10": {
           "id:3": 274,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 288
+          "x:3": 24,
+          "y:3": 312
         },
         "30:10": {
           "id:3": 279,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 284
+          "x:3": -264,
+          "y:3": 296
         },
         "31:10": {
           "id:3": 283,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -468,
-          "y:3": 240
+          "x:3": -492,
+          "y:3": 252
         },
         "32:10": {
           "id:3": 286,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -348,
-          "y:3": 36
+          "x:3": -384,
+          "y:3": 192
         },
         "33:10": {
           "id:3": 287,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 108,
-          "y:3": 36
+          "x:3": 60,
+          "y:3": 48
         },
         "34:10": {
           "id:3": 288,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -48,
+          "sizeX:3": 48,
+          "sizeY:3": 48,
+          "x:3": -108,
           "y:3": 96
         },
         "35:10": {
@@ -51934,448 +51973,434 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
-          "y:3": 288
+          "y:3": 312
         },
         "37:10": {
           "id:3": 292,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -408,
-          "y:3": 336
+          "x:3": -372,
+          "y:3": 312
         },
         "38:10": {
           "id:3": 295,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": 132
+          "x:3": 24,
+          "y:3": 144
         },
         "39:10": {
           "id:3": 312,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 64
+          "x:3": -216,
+          "y:3": -32
         },
         "40:10": {
           "id:3": 313,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -212,
-          "y:3": 64
+          "x:3": -216,
+          "y:3": 0
         },
         "41:10": {
           "id:3": 314,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": 192
+          "x:3": -372,
+          "y:3": 60
         },
         "42:10": {
           "id:3": 315,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -324,
-          "y:3": 192
+          "x:3": -372,
+          "y:3": -96
         },
         "43:10": {
           "id:3": 316,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 192
+          "x:3": -264,
+          "y:3": 156
         },
         "44:10": {
           "id:3": 317,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 24,
-          "y:3": 288
+          "x:3": -60,
+          "y:3": 312
         },
         "45:10": {
           "id:3": 323,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -212,
-          "y:3": 96
+          "x:3": -216,
+          "y:3": 60
         },
         "46:10": {
           "id:3": 324,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 96
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -222,
+          "y:3": 102
         },
         "47:10": {
           "id:3": 325,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 96
+          "x:3": 72,
+          "y:3": 108
         },
         "48:10": {
-          "id:3": 326,
-          "sizeX:3": 32,
-          "sizeY:3": 32,
-          "x:3": -216,
-          "y:3": 236
-        },
-        "49:10": {
           "id:3": 327,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 340
+          "x:3": -264,
+          "y:3": 352
         },
-        "50:10": {
+        "49:10": {
           "id:3": 329,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 132
+          "x:3": 120,
+          "y:3": 144
         },
-        "51:10": {
+        "50:10": {
           "id:3": 330,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 168
+          "x:3": 72,
+          "y:3": 180
         },
-        "52:10": {
+        "51:10": {
           "id:3": 331,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 252,
-          "y:3": 396
+          "x:3": 168,
+          "y:3": 420
         },
-        "53:10": {
+        "52:10": {
           "id:3": 332,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": 284
+          "x:3": -216,
+          "y:3": 384
         },
-        "54:10": {
+        "53:10": {
           "id:3": 333,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": 312
+          "x:3": -180,
+          "y:3": 384
         },
-        "55:10": {
+        "54:10": {
           "id:3": 334,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": 340
+          "x:3": -144,
+          "y:3": 384
+        },
+        "55:10": {
+          "id:3": 335,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -108,
+          "y:3": 384
         },
         "56:10": {
-          "id:3": 335,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": -96,
-          "y:3": 372
-        },
-        "57:10": {
           "id:3": 336,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
-          "y:3": 72
+          "x:3": -132,
+          "y:3": 60
         },
-        "58:10": {
+        "57:10": {
           "id:3": 337,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": 96
+          "x:3": 24,
+          "y:3": 108
         },
-        "59:10": {
+        "58:10": {
           "id:3": 342,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 156,
-          "y:3": 96
+          "x:3": 108,
+          "y:3": 108
         },
-        "60:10": {
+        "59:10": {
           "id:3": 345,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 132
+          "x:3": 72,
+          "y:3": 144
         },
-        "61:10": {
+        "60:10": {
           "id:3": 351,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 156,
-          "y:3": 288
+          "x:3": 60,
+          "y:3": 312
+        },
+        "61:10": {
+          "id:3": 389,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -312,
+          "y:3": -48
         },
         "62:10": {
-          "id:3": 389,
-          "sizeX:3": 36,
-          "sizeY:3": 36,
-          "x:3": -348,
-          "y:3": 288
-        },
-        "63:10": {
           "id:3": 406,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -300,
-          "y:3": 288
+          "x:3": -318,
+          "y:3": -6
         },
-        "64:10": {
+        "63:10": {
           "id:3": 407,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -377,
-          "y:3": 234
+          "x:3": -432,
+          "y:3": -54
+        },
+        "64:10": {
+          "id:3": 408,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -312,
+          "y:3": -84
         },
         "65:10": {
-          "id:3": 408,
-          "sizeX:3": 36,
-          "sizeY:3": 36,
-          "x:3": -252,
-          "y:3": 288
-        },
-        "66:10": {
           "id:3": 411,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": 54,
-          "y:3": 234
+          "x:3": 66,
+          "y:3": 246
         },
-        "67:10": {
+        "66:10": {
           "id:3": 412,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -588,
-          "y:3": 240
+          "x:3": 168,
+          "y:3": 48
         },
-        "68:10": {
+        "67:10": {
           "id:3": 417,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": 132
+          "x:3": -96,
+          "y:3": 156
         },
-        "69:10": {
+        "68:10": {
           "id:3": 519,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -102,
-          "y:3": 450
+          "x:3": -216,
+          "y:3": 432
         },
-        "70:10": {
+        "69:10": {
           "id:3": 522,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": 96
+          "x:3": -372,
+          "y:3": 126
         },
-        "71:10": {
+        "70:10": {
           "id:3": 523,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -528,
           "y:3": 0
         },
-        "72:10": {
+        "71:10": {
           "id:3": 524,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -456,
+          "x:3": -480,
           "y:3": 0
         },
-        "73:10": {
+        "72:10": {
           "id:3": 525,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -576,
           "y:3": 0
         },
-        "74:10": {
+        "73:10": {
           "id:3": 529,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": -468,
-          "y:3": 36
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -486,
+          "y:3": 42
         },
-        "75:10": {
+        "74:10": {
           "id:3": 531,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -456,
+          "x:3": -480,
           "y:3": 204
         },
-        "76:10": {
+        "75:10": {
           "id:3": 533,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": -96,
-          "y:3": 228
+          "x:3": -144,
+          "y:3": 300
         },
-        "77:10": {
+        "76:10": {
           "id:3": 534,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -228,
-          "y:3": 336
+          "x:3": -312,
+          "y:3": 312
         },
-        "78:10": {
+        "77:10": {
           "id:3": 535,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -192,
-          "y:3": 336
+          "x:3": -180,
+          "y:3": 312
         },
-        "79:10": {
+        "78:10": {
           "id:3": 536,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": 132
+          "x:3": -132,
+          "y:3": 204
         },
-        "80:10": {
+        "79:10": {
           "id:3": 537,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 312
+          "x:3": -264,
+          "y:3": 324
         },
-        "81:10": {
-          "id:3": 560,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -180,
-          "y:3": 132
-        },
-        "82:10": {
+        "80:10": {
           "id:3": 564,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": 198,
-          "y:3": 450
+          "x:3": 114,
+          "y:3": 474
         },
-        "83:10": {
+        "81:10": {
           "id:3": 607,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 252,
-          "y:3": 228
+          "x:3": 168,
+          "y:3": 240
         },
-        "84:10": {
+        "82:10": {
           "id:3": 608,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": 48
+          "x:3": -60,
+          "y:3": 60
         },
-        "85:10": {
+        "83:10": {
           "id:3": 612,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": 192
+          "x:3": -54,
+          "y:3": 204
         },
-        "86:10": {
+        "84:10": {
           "id:3": 681,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": 66,
-          "y:3": 12
+          "y:3": 2
         },
-        "87:10": {
+        "85:10": {
           "id:3": 695,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 24,
-          "y:3": 0
+          "x:3": -24,
+          "y:3": 24
         },
-        "88:10": {
+        "86:10": {
           "id:3": 696,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -66,
-          "y:3": 450
+          "x:3": -180,
+          "y:3": 432
         },
-        "89:10": {
+        "87:10": {
           "id:3": 733,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 24,
-          "y:3": 96
+          "x:3": -168,
+          "y:3": 60
         },
-        "90:10": {
+        "88:10": {
           "id:3": 744,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -408,
+          "x:3": -432,
           "y:3": 96
         },
-        "91:10": {
+        "89:10": {
           "id:3": 750,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
-          "y:3": 164
+          "x:3": -312,
+          "y:3": 108
         },
-        "92:10": {
+        "90:10": {
           "id:3": 776,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 324
+          "x:3": 24,
+          "y:3": 348
         },
-        "93:10": {
+        "91:10": {
           "id:3": 778,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 156,
-          "y:3": 324
+          "x:3": 60,
+          "y:3": 348
         },
-        "94:10": {
+        "92:10": {
           "id:3": 791,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": -396,
-          "y:3": -12
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -438,
+          "y:3": 42
         },
-        "95:10": {
+        "93:10": {
           "id:3": 794,
           "sizeX:3": 0,
           "sizeY:3": 0,
           "x:3": 84,
-          "y:3": 30
+          "y:3": 20
         },
-        "96:10": {
+        "94:10": {
           "id:3": 795,
-          "sizeX:3": 20,
-          "sizeY:3": 20,
-          "x:3": -110,
-          "y:3": 286
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -216,
+          "y:3": 221
         },
-        "97:10": {
+        "95:10": {
           "id:3": 796,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -112,
-          "y:3": 96
+          "x:3": -216,
+          "y:3": 156
         },
-        "98:10": {
+        "96:10": {
           "id:3": 797,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -112,
-          "y:3": 64
+          "x:3": -180,
+          "y:3": 156
         },
-        "99:10": {
+        "97:10": {
           "id:3": 798,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -384,
-          "y:3": 48
+          "x:3": -432,
+          "y:3": 0
         }
       }
     },
