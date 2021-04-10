@@ -1165,6 +1165,12 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
 
+//GTCE Marble
+mods.chisel.Carving.addVariation("marble", <gregtech:mineral>);
+
+//GTCE Basalt
+mods.chisel.Carving.addVariation("basalt", <gregtech:mineral:2>);
+
 //Create Universal GTCE Oredict for tools that can be used to reference by oredict and encapsulates all tools.
 //Works for any material tool, any damage tool, electric or non-electric
 
