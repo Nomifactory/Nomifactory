@@ -141,7 +141,7 @@ recipes.addShaped(<thermalfoundation:upgrade>, [
 recipes.remove(<thermalfoundation:upgrade:1>);
 recipes.addShaped(<thermalfoundation:upgrade:1>, [
 	[<gregtech:meta_item_2:26112>, <gregtech:meta_item_1:12112>, <gregtech:meta_item_2:26112>],
-	[<gregtech:meta_item_1:12112>, <gregtech:compressed_0>, <gregtech:meta_item_1:12112>],
+	[<gregtech:meta_item_1:12112>, <gregtech:meta_block_compressed_0:1>, <gregtech:meta_item_1:12112>],
 	[<gregtech:meta_item_2:26112>, <gregtech:meta_item_1:12112>, <gregtech:meta_item_2:26112>]]);
 
 //sig upgrade
