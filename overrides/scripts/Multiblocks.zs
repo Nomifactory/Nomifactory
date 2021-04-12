@@ -1562,7 +1562,7 @@ medium_microverse.recipeMap
              <gregtech:ore_bastnasite_0:12> * 64,
              <gregtech:ore_sphalerite_0:12> * 64,
              <gregtech:ore_monazite_0:12> * 64,
-             <gregtech:compressed_9:14> * 64,
+             <gregtech:meta_block_compressed_13:10> * 64, //Ender Pearl Block
              <gregtech:ore_osmium_0:12> * 16,
              <gregtech:meta_item_1:2009> * 64,
              <gregtech:ore_molybdenite_0:12> * 64,
@@ -1651,11 +1651,11 @@ large_microverse.recipeMap
              <minecraft:gold_block> * 64,
              <minecraft:gold_block> * 64,
              <minecraft:gold_block> * 64,
-             <gregtech:compressed_3> * 64,
-             <gregtech:compressed_3> * 64,
+             <gregtech:meta_block_compressed_3:14> * 64, //Silver block
+             <gregtech:meta_block_compressed_3:14> * 64, //Silver Block
              <minecraft:diamond_block> * 64,
              <minecraft:diamond_block> * 64,
-             <gregtech:compressed_2:6> * 64)
+             <gregtech:meta_block_compressed_3:3> * 64) //Platinum Block
     .buildAndRegister();
 
 // Tier 7: Draconium Microminer - Mission 2: Lair of the Chaos Guardian Data
