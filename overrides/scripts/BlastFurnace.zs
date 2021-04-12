@@ -203,8 +203,8 @@ blast_furnace.recipeBuilder()
 	.EUt(1920).duration(200).buildAndRegister();
 
 //Naquadah Doped Boule [tier 11]
-blast_furnace.findRecipe(1920, [<gregtech:compressed_2:15> * 9, <gregtech:meta_item_1:10307>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:argon> * 8000]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:compressed_2:15> * 9, <gregtech:meta_item_1:10307>]).fluidInputs([<liquid:argon> * 16000]).outputs([<gregtech:meta_item_2:32438>]).property("temperature", 5400).duration(1440).EUt(8000).buildAndRegister();
+blast_furnace.findRecipe(1920, [<gregtech:meta_block_compressed_3:13> * 9, <gregtech:meta_item_1:10307>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:argon> * 8000]).remove();	
+blast_furnace.recipeBuilder().inputs([<gregtech:meta_block_compressed_3:13> * 9, <gregtech:meta_item_1:10307>]).fluidInputs([<liquid:argon> * 16000]).outputs([<gregtech:meta_item_2:32438>]).property("temperature", 5400).duration(1440).EUt(8000).buildAndRegister();
 	
 //Osiridium [tier 12]		DISABLED IN FAVOR OF VANILLA RECIPE
 //blast_furnace.findRecipe(1920, [<gregtech:meta_item_1:10032> * 3, <gregtech:meta_item_1:10047>], [<liquid:helium>*1000]).remove();
