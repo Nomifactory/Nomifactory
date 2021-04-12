@@ -117,7 +117,7 @@ recipes.addShaped(<storagedrawers:controllerslave>, [
 recipes.remove(<rangedpumps:pump>);
 recipes.addShaped(<rangedpumps:pump>, [
 	[<minecraft:obsidian>, <gregtech:meta_item_1:32610>, <minecraft:obsidian>],
-	[<gregtech:meta_item_1:32610>, <gregtech:compressed_9:14>, <gregtech:meta_item_1:32610>],
+	[<gregtech:meta_item_1:32610>, <gregtech:meta_block_compressed_13:10>, <gregtech:meta_item_1:32610>], //Ender Pearl Block
 	[<minecraft:obsidian>, <gregtech:meta_item_1:32610>, <minecraft:obsidian>]]);
 <rangedpumps:pump>.displayName = "Ender Pump";
 
@@ -125,7 +125,7 @@ recipes.remove(<enderstorage:ender_storage:1>);
 recipes.addShaped(<enderstorage:ender_storage:1>, [
 	[<minecraft:blaze_rod>, <minecraft:wool>, <minecraft:blaze_rod>],
 	[<ore:obsidian>, basictank, <ore:obsidian>],
-	[<minecraft:blaze_rod>, <gregtech:compressed_9:14>, <minecraft:blaze_rod>]]);
+	[<minecraft:blaze_rod>, <gregtech:meta_block_compressed_13:10>, <minecraft:blaze_rod>]]); //Ender Pearl Block
 recipes.addShapeless(<enderstorage:ender_storage:1>, [<enderstorage:ender_storage:1>]);
 
 
@@ -146,7 +146,7 @@ recipes.remove(<extrautils2:ingredients:7>);
 recipes.remove(<extrautils2:ingredients:8>);
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <actuallyadditions:item_crystal>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <minecraft:redstone_block>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<gregtech:compressed_9:15>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<gregtech:meta_block_compressed_13:11>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister(); // Ender Eye Block
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <minecraft:diamond> * 4]).outputs([<extrautils2:ingredients:7>]).duration(800).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot:1> * 4]).outputs([<extrautils2:ingredients:6>]).duration(400).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot> * 4]).outputs([<extrautils2:ingredients:8>]).duration(400).EUt(16).buildAndRegister();
@@ -332,8 +332,8 @@ reactor.recipeBuilder()
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
-mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
-mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_29:2>); //Phos. Pentoxide
+mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 2, item: "gregtech:meta_block_compressed_29"}));
 
 //Lava Factory
 recipes.remove(<actuallyadditions:block_misc:7>);
