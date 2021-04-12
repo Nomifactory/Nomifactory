@@ -447,7 +447,7 @@ recipes.addShaped(<enderio:block_wired_charger>	, [
 //Coordinate Selector
 recipes.remove(<enderio:item_coord_selector>);
 recipes.addShaped(<enderio:item_coord_selector>	, [
-	[<gregtech:meta_item_1:32681>, <gregtech:compressed_9:15>, <gregtech:meta_item_1:12705>],
+	[<gregtech:meta_item_1:32681>, <gregtech:meta_block_compressed_13:11>, <gregtech:meta_item_1:12705>], //Ender Eye Block
 	[null, <enderio:item_material:13>, <gregtech:meta_item_1:12705>],
 	[null,null,<gregtech:meta_item_1:12705>]]);
 
