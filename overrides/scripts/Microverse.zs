@@ -248,11 +248,6 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 	  T : <simplyjetpacks:metaitemmods:29> }
 );
 
-<gregtech:meta_item_1:32724>.displayName = "Quantum Eye";
-<gregtech:meta_item_1:32724>.clearTooltip();
-<gregtech:meta_item_1:32724>.addTooltip(format.darkPurple("Quantum Eye"));
-
-
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
 makeExtremeRecipe9(<contenttweaker:tiersevenship>,
@@ -407,7 +402,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 	 "HHH",
 	 "HHH"],
 	{ I : <contenttweaker:impossiblerealmdata>,
-	  H : <deepmoblearning:living_matter_hellish> }
+	  H : <deepmoblearning:living_matter_extraterrestrial> }
 );
 
 // Wither Realm Data
@@ -416,7 +411,7 @@ makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 	 "XXX",
 	 "XXX"],
 	{ I : <contenttweaker:impossiblerealmdata>,
-	  X : <deepmoblearning:living_matter_extraterrestrial> }
+	  X : <deepmoblearning:living_matter_hellish> }
 );
 
 // Quantum Flux Recipes

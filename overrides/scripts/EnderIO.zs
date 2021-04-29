@@ -103,7 +103,7 @@ mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
 
 //Guardian Diode
 mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:56>);
-mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
+mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56>, [
     <enderio:item_alloy_ingot:1>, <minecraft:prismarine_shard>, <enderio:item_alloy_ingot:1>,
      <minecraft:prismarine_crystals>, <gregtech:meta_item_2:32440>, <minecraft:prismarine_crystals>
 ], 20000);
@@ -442,3 +442,34 @@ mods.enderio.SoulBinder.addRecipe(<enderio:item_material:78>, <darkutils:filter:
 //Player Token
 mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:80>);
 mods.enderio.SoulBinder.addRecipe(<enderio:item_material:80>, <darkutils:filter>, combined, 25000, 1);
+
+//Fixing Multismelter output of the dusts of the GTCE variants of Ender IO ingots
+val materialList as IItemStack[][] = [
+    
+    [<gregtech:meta_item_1:2705>, <enderio:item_alloy_ingot>],
+    [<gregtech:meta_item_1:2701>, <enderio:item_alloy_ingot:1>],
+    [<gregtech:meta_item_1:2702>, <enderio:item_alloy_ingot:2>],
+    [<gregtech:meta_item_1:2704>, <enderio:item_alloy_ingot:6>],
+    [<gregtech:meta_item_1:2712>, <enderio:item_alloy_ingot:8>],
+    [<gregtech:meta_item_1:2703>, <enderio:item_alloy_ingot:5>],
+    [<gregtech:meta_item_1:2700>, <enderio:item_alloy_ingot:4>]
+
+
+] as IItemStack[][];
+
+
+for dust in materialList {
+
+    GTfurnace.recipeBuilder()
+    .inputs(dust[0])
+    .outputs(dust[1])
+    .duration(128).EUt(4).buildAndRegister();
+
+}
+
+recipes.addShapeless(<enderio:block_cap_bank:1>, [<enderio:block_cap_bank:1>]);
+recipes.addShapeless(<enderio:block_cap_bank:2>, [<enderio:block_cap_bank:2>]);
+recipes.addShapeless(<enderio:block_cap_bank:3>, [<enderio:block_cap_bank:3>]);
+
+//Temporary Fix for the Flight Control Unit Recipe
+mods.enderio.SoulBinder.addRecipe(<simplyjetpacks:metaitemmods:6>, <simplyjetpacks:metaitemmods:5>, ["minecraft:bat"], 75000, 8);

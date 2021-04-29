@@ -629,7 +629,7 @@ alloy.recipeBuilder()
 recipes.remove(<thermalexpansion:frame:128>);
 recipes.addShaped(<thermalexpansion:frame:128>, [
 	[<gregtech:meta_item_1:12035>, <gregtech:meta_item_1:14035>, <gregtech:meta_item_1:12035>],
-	[<gregtech:meta_item_1:14035>, <enderio:block_cap_bank:3>.withTag({"enderio:energy": 0}), <gregtech:meta_item_1:14035>],
+	[<gregtech:meta_item_1:14035>, <enderio:block_cap_bank:3>.withTag({"enderio:energy": 0}, false), <gregtech:meta_item_1:14035>],
 	[<gregtech:meta_item_1:12035>, <gregtech:meta_item_1:14035>, <gregtech:meta_item_1:12035>]]);
 
 // Leadstone Energy Cell

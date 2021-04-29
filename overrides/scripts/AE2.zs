@@ -73,7 +73,23 @@ recipes.remove(<appliedenergistics2:part:16>);
 alloy.recipeBuilder().inputs([<appliedenergistics2:material:8>, <appliedenergistics2:part:140>]).outputs(<appliedenergistics2:part:16> * 2).duration(50).EUt(16).buildAndRegister();	
 
 //Covered Cable
-assembler.recipeBuilder().inputs([<appliedenergistics2:part:16>]).fluidInputs(<liquid:rubber> * 144).outputs(<appliedenergistics2:part:36>).duration(20).EUt(16).buildAndRegister();	
+assembler.recipeBuilder()
+	.inputs([<appliedenergistics2:part:16>])
+	.fluidInputs(<liquid:rubber> * 144)
+	.outputs(<appliedenergistics2:part:36>)
+	.duration(20).EUt(16).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs([<appliedenergistics2:part:16>])
+	.fluidInputs(<liquid:styrene_butadiene_rubber> * 96)
+	.outputs(<appliedenergistics2:part:36>)
+	.duration(20).EUt(16).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs([<appliedenergistics2:part:16>])
+	.fluidInputs(<liquid:silicon_rubber> * 72)
+	.outputs(<appliedenergistics2:part:36>)
+	.duration(20).EUt(16).buildAndRegister();
 	
 //ME Conduit
 recipes.remove(<enderio:item_me_conduit>);	
@@ -330,3 +346,14 @@ recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
 	[<gregtech:meta_item_1:32724>, null, <gregtech:meta_item_1:32724>],
 	[null, <appliedenergistics2:material:41>, null],
 	[null, null, null]]);
+
+//skystone and skystone dust
+alloy.recipeBuilder()
+	.outputs(<appliedenergistics2:sky_stone_block>)
+	.inputs(<minecraft:stone>, <minecraft:end_stone>)
+	.duration(200).EUt(16).buildAndRegister();
+
+macerator.recipeBuilder()
+	.outputs(<appliedenergistics2:material:45>)
+	.inputs(<appliedenergistics2:sky_stone_block>)
+	.duration(45).EUt(8).buildAndRegister();

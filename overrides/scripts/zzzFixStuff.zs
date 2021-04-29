@@ -2,6 +2,7 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Color;
+import crafttweaker.item.IItemStack;
 
 print("--- Exa is fixing stuff! ---");
 
@@ -101,11 +102,6 @@ solidifier.recipeBuilder()
 // decomposition for crystal matrix block
 recipes.addShapeless("of_crystal_matrix_decomp", <avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
 
-/*
-    Anti-Footgun: remove recipe for max energy hatch
- */
-recipes.removeByRecipeName("gregtech:energy_input_hatch_max");
-
 
 /*
     Airtight Seal books for the low price of 900 omnicoins!
@@ -115,4 +111,25 @@ recipes.addShaped("of_craft_airtight_seal",
     [[<contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>],
      [<contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>],
      [<contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>, <contenttweaker:omnicoin100>]]);
+
+//Temporary recipe for red alloy with annealed copper in EBF, and adjusting the times of red alloy
+//Red Alloy with annealed copper
+val coppers = [<metaitem:ingotAnnealedCopper>, <metaitem:dustAnnealedCopper>, <metaitem:ingotCopper>, <metaitem:dustCopper>] as IItemStack[];
+
+for copper in coppers {
+    blast_furnace.recipeBuilder()
+        .inputs(copper, <minecraft:redstone>)
+        .outputs(<metaitem:ingotRedAlloy> * 2)
+        .property("temperature", 1200)
+        .duration(880).EUt(30).buildAndRegister();
+
+    alloy.findRecipe(16, [<minecraft:redstone> * 4, copper], [null]).remove();
+    alloy.recipeBuilder()
+        .inputs(<minecraft:redstone> * 2, copper)
+        .outputs(<metaitem:ingotRedAlloy>)
+        .duration(100).EUt(16).buildAndRegister();
+}
+
+blast_furnace.findRecipe(120, [<minecraft:redstone>, <metaitem:ingotCopper>], [null]).remove();
+blast_furnace.findRecipe(120, [<minecraft:redstone>, <metaitem:dustCopper>], [null]).remove();
 
