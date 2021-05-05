@@ -1,37 +1,27 @@
-interface Install {
-	profileName: string;
-	target: string;
+interface Artifact {
 	path: string;
-	version: string;
-	filePath: string;
-	welcome: string;
-	minecraft: string;
-	mirrorList: string;
-	logo: string;
-	modList: string;
+	url: string;
+	sha1: string;
+	size: number;
+}
+
+interface Downloads {
+	artifact: Artifact;
 }
 
 interface Library {
 	name: string;
-	url: string;
-	serverreq?: boolean;
-	checksums: string[];
-	clientreq?: boolean;
+	downloads: Downloads;
 }
 
-interface VersionInfo {
+export interface ForgeProfile {
+	_comment_: string[];
 	id: string;
 	time: Date;
 	releaseTime: Date;
 	type: string;
-	minecraftArguments: string;
 	mainClass: string;
 	inheritsFrom: string;
-	jar: string;
+	minecraftArguments: string;
 	libraries: Library[];
-}
-
-export interface ForgeProfile {
-	install: Install;
-	versionInfo: VersionInfo;
 }
