@@ -1897,7 +1897,6 @@ mods.jei.JEI.removeAndHide(<bq_standard:loot_chest:102>);
 //Gregic Additions Removals
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32023>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32032>);
-mods.jei.JEI.removeAndHide(<gtadditions:ga_multiblock_casing>);
 
 
 //The One Probe Removals

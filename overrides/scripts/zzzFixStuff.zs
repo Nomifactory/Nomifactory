@@ -39,9 +39,6 @@ assembler.recipeBuilder().inputs([<gregtech:meta_item_1:12033> * 2]).notConsumab
 // Cauldron (nice for XU drums)
 assembler.recipeBuilder().inputs([<gregtech:meta_item_1:12033> * 7]).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 7})).outputs([<minecraft:cauldron>]).duration(70).EUt(16).buildAndRegister();
 
-// Assembly Line Casing
-assembler.recipeBuilder().inputs([<gregtech:meta_item_1:12184> * 4, <gregtech:meta_item_1:32654> * 2, <gregtech:frame_tungsten_steel>]).outputs([<gtadditions:ga_multiblock_casing:1> * 2]).duration(100).EUt(8000).buildAndRegister();
-
 
 /*
     === Advanced Rocketry ===
