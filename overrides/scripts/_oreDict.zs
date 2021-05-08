@@ -1864,6 +1864,8 @@ mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32018>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32576>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:21072>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_tool:32>.withTag({"GT.ToolStats": {Material: "darmstadtium"}}));
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32016>);
+
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
@@ -1897,7 +1899,6 @@ mods.jei.JEI.removeAndHide(<bq_standard:loot_chest:102>);
 //Gregic Additions Removals
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32023>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32032>);
-mods.jei.JEI.removeAndHide(<gtadditions:ga_multiblock_casing>);
 
 
 //The One Probe Removals
