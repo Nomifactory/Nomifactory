@@ -1206,6 +1206,11 @@ mods.chisel.Carving.addVariation("basalt", <gregtech:mineral:2>);
 	<gregtech:meta_tool:13>.withEmptyTag()]);
 
 
+//Setting Item Max Stacksize
+<minecraft:snowball>.maxStackSize=64;
+<minecraft:ender_pearl>.maxStackSize=64;
+
+
 ////////////////////////////////
 //			Removals          //
 ////////////////////////////////
