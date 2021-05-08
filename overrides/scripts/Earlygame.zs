@@ -210,19 +210,6 @@ recipes.addShaped(<gregtech:meta_item_1:32640>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_1:14197>,<gregtech:meta_item_1:14197>],
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_1:32600>, <gregtech:meta_item_2:26197>]]);
 
-<simplefluidtanks:wrench>.displayName = "Multiblock Fluid Tank Wrench";
-<simplefluidtanks:tankitem>.displayName = "Multiblock Fluid Tank Block";
-<simplefluidtanks:valveitem>.displayName = "Multiblock Fluid Tank Valve";
-recipes.remove(<simplefluidtanks:tankitem>);
-recipes.addShaped(<simplefluidtanks:tankitem> * 4, [
-	[<gregtech:meta_item_1:12033>, <minecraft:glass>, <gregtech:meta_item_1:12033>],
-	[<minecraft:glass>, null, <minecraft:glass>],
-	[<gregtech:meta_item_1:12033>, <minecraft:glass>, <gregtech:meta_item_1:12033>]]);
-recipes.remove(<simplefluidtanks:valveitem>);
-recipes.addShaped(<simplefluidtanks:valveitem>, [
-	[null, <minecraft:lever>],
-	[<simplefluidtanks:tankitem>, <gregtech:fluid_pipe:2095>]]);
-
 //Fluid Conduit
 mods.jei.JEI.removeAndHide(<enderio:item_liquid_conduit>);
 recipes.remove(<enderio:item_liquid_conduit:1>);
