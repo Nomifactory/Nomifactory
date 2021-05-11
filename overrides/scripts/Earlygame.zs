@@ -69,6 +69,7 @@ recipes.addShapeless(<minecraft:gravel>, [<minecraft:cobblestone>, <gregtech:met
 recipes.addShapeless(<minecraft:sand>, [<minecraft:gravel>, <gregtech:meta_tool:12>]);
 recipes.addShapeless(<contenttweaker:block_dust>, [<minecraft:sand>, <gregtech:meta_tool:12>]);
 recipes.addShapeless(<minecraft:clay>, [<contenttweaker:block_dust>,<minecraft:water_bucket>]);
+recipes.addShapeless(<minecraft:clay_ball>, [<gregtech:meta_item_1:2105>]);
 furnace.addRecipe(<forestry:crafting_material>, <gregtech:meta_item_1:2193>, 0.0);
 recipes.addShapeless(<minecraft:gravel>, [<minecraft:cobblestone>, <gregtech:meta_tool:12>]);
 
