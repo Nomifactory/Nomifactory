@@ -332,9 +332,6 @@ reactor.recipeBuilder()
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
-mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_29:2>); //Phos. Pentoxide
-mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 2, item: "gregtech:meta_block_compressed_29"}));
-
 //Lava Factory
 recipes.remove(<actuallyadditions:block_misc:7>);
 recipes.addShaped(<actuallyadditions:block_misc:7> * 2, [[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>],[<gregtech:meta_item_1:12184>, null, <gregtech:meta_item_1:12184>], [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>]]);
