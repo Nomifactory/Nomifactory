@@ -12,31 +12,17 @@
     "storagePerPixel": 1.0,
     "enableBed": true,
     "enableAnimationCollision": true,
-    "enableCollisionMotion": true,
-    "dyeVolume": 2.0,
-    "maxAllowedDensity": 2048,
-    "maxDoorDistance": 512
+    "enableCollisionMotion": true
   },
   "survival": {
-    "limitAffectedBlocks": true,
-    "maxAffectedBlocks": 9,
-    "harvestLevelBlock": 10,
+    "strictMining": false,
+    "limitEditBlocksSurvival": true,
+    "maxEditBlocks": 9,
+    "highestHarvestTierSurvival": 10,
     "editUnbreakable": false,
+    "limitPlaceBlocksSurvival": false,
+    "maxPlaceBlocks": 10,
     "minimumTransparency": 255,
-    "limitEditBlocks": true,
-    "maxEditBlocks": 10,
-    "limitPlaceBlocks": true,
-    "maxPlaceBlocks": 10
-  },
-  "creative": {
-    "limitAffectedBlocks": false,
-    "maxAffectedBlocks": 2,
-    "harvestLevelBlock": 4,
-    "editUnbreakable": true,
-    "minimumTransparency": 0,
-    "limitEditBlocks": false,
-    "maxEditBlocks": 10,
-    "limitPlaceBlocks": false,
-    "maxPlaceBlocks": 10
+    "dyeVolume": 2.0
   }
 }

@@ -6,10 +6,9 @@
     "useAltWhenFlying": true
   },
   "rendering": {
-    "hideVBOWarning": false,
-    "hideMipmapWarning": false,
     "useQuadCache": false,
     "useCubeCache": true,
+    "hideParticleBlock": false,
     "renderingThreadCount": 2,
     "highlightStructureBox": true,
     "previewLines": false,
