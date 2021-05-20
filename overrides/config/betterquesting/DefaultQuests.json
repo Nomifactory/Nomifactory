@@ -48188,11 +48188,8 @@
     },
     "793:10": {
       "preRequisites:11": [
-        546,
-        154,
-        165,
-        164,
-        166
+        802,
+        803
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -48209,7 +48206,7 @@
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "TNT",
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -48713,6 +48710,178 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "801:10": {
+      "preRequisites:11": [
+        154
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6§3Pyrolyse Oven§r can make more interesting products than just §9Phenol§r.\n\n§a§9Charcoal Byproducts§r breaks down into various wood products, such as§9 Wood Tar§r,§9 Wood Gas§r, and §a§9Wood Vinegar§r, each of which can be further broken down into various useful chemical compounds, such as §a§9Toluene§r, §a§9Methanol§r, etc.\n\nHowever, to take full advantage of decomposing these wood products, a §6§3Distillation Tower§r is required, so that all possible outputs can be obtained. You will need more§e Distillation Tower Slices§r than requested in the§r Distillation Tower quest, so be prepared to spend some more §6Stainless Steel§r.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "forge:bucketfilled",
+            "tag:10": {
+              "Amount:3": 1000,
+              "FluidName:8": "charcoal_byproducts"
+            }
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Pyrolyse Products",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 801,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "forge:bucketfilled",
+              "tag:10": {
+                "Amount:3": 1000,
+                "FluidName:8": "charcoal_byproducts"
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "forge:bucketfilled",
+              "tag:10": {
+                "Amount:3": 1000,
+                "FluidName:8": "wood_tar"
+              }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "forge:bucketfilled",
+              "tag:10": {
+                "Amount:3": 1000,
+                "FluidName:8": "wood_gas"
+              }
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "forge:bucketfilled",
+              "tag:10": {
+                "Amount:3": 1000,
+                "FluidName:8": "wood_vinegar"
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "802:10": {
+      "preRequisites:11": [
+        164,
+        165,
+        166,
+        801
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "How did you end up here?",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Get Your Toluene",
+          "questlogic:8": "OR",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "HIDDEN"
+        }
+      },
+      "questID:3": 802,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "803:10": {
+      "preRequisites:11": [
+        352,
+        153
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "You shouldn\u0027t be here",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Gell Your Toluene",
+          "questlogic:8": "OR",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "HIDDEN"
+        }
+      },
+      "questID:3": 803,
+      "rewards:9": {},
+      "tasks:9": {}
     }
   },
   "questLines:9": {
@@ -50036,6 +50205,13 @@
           "sizeY:3": 24,
           "x:3": -432,
           "y:3": 216
+        },
+        "104:10": {
+          "id:3": 801,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -308,
+          "y:3": 180
         }
       }
     },
@@ -50948,27 +51124,13 @@
           "y:3": 12
         },
         "127:10": {
-          "id:3": 792,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -372,
-          "y:3": 44
-        },
-        "128:10": {
-          "id:3": 793,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -180,
-          "y:3": 32
-        },
-        "129:10": {
           "id:3": 798,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -300,
           "y:3": 288
         },
-        "130:10": {
+        "128:10": {
           "id:3": 799,
           "sizeX:3": 24,
           "sizeY:3": 24,
@@ -52376,39 +52538,67 @@
           "y:3": 42
         },
         "94:10": {
+          "id:3": 792,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": 8
+        },
+        "95:10": {
+          "id:3": 793,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 120,
+          "y:3": 8
+        },
+        "96:10": {
           "id:3": 794,
           "sizeX:3": 0,
           "sizeY:3": 0,
           "x:3": 84,
           "y:3": 20
         },
-        "95:10": {
+        "97:10": {
           "id:3": 795,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -216,
           "y:3": 221
         },
-        "96:10": {
+        "98:10": {
           "id:3": 796,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -216,
           "y:3": 156
         },
-        "97:10": {
+        "99:10": {
           "id:3": 797,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -180,
           "y:3": 156
         },
-        "98:10": {
+        "100:10": {
           "id:3": 798,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -432,
           "y:3": 0
+        },
+        "101:10": {
+          "id:3": 802,
+          "sizeX:3": 0,
+          "sizeY:3": 0,
+          "x:3": 132,
+          "y:3": 16
+        },
+        "102:10": {
+          "id:3": 803,
+          "sizeX:3": 0,
+          "sizeY:3": 0,
+          "x:3": 128,
+          "y:3": 16
         }
       }
     },
