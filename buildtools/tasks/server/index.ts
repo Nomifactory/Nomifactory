@@ -15,7 +15,6 @@ import { modpackManifest, overridesFolder, serverDestDirectory, sharedDestDirect
 import del from "del";
 import { VersionManifest } from "../../types/versionManifest";
 
-const MOJANG_MAVEN = "https://libraries.minecraft.net/";
 const FORGE_VERSION_REG = /forge-(.+)/;
 const FORGE_MAVEN = "https://files.minecraftforge.net/maven/";
 
@@ -58,7 +57,7 @@ async function downloadForge() {
 	 */
 	const forgeMavenLibrary = `net.minecraftforge:forge:${minecraft.version}-${parsedForgeEntry[1]}`;
 	const forgeInstallerPath = libraryToPath(forgeMavenLibrary) + "-installer.jar";
-	const forgeUniversalPath = upath.basename(libraryToPath(forgeMavenLibrary) + "-universal.jar");
+	const forgeUniversalPath = upath.join("maven", libraryToPath(forgeMavenLibrary) + ".jar");
 
 	/**
 	 * Fetch the Forge installer
@@ -87,7 +86,7 @@ async function downloadForge() {
 			forgeUniversalJar = await file.buffer();
 		}
 		// Look for the installation profile.
-		else if (!forgeProfile && file.path == "install_profile.json") {
+		else if (!forgeProfile && file.path == "version.json") {
 			forgeProfile = JSON.parse((await file.buffer()).toString());
 		}
 
@@ -96,7 +95,7 @@ async function downloadForge() {
 		}
 	}
 
-	if (!(forgeProfile && forgeProfile.versionInfo && forgeProfile.versionInfo.libraries)) {
+	if (!forgeProfile || !forgeProfile.libraries) {
 		throw new Error("Malformed Forge installation profile.");
 	}
 
@@ -108,33 +107,32 @@ async function downloadForge() {
 	 * Move the universal jar into the dist folder.
 	 */
 	log("Extracting the Forge jar...");
-	await fs.promises.writeFile(upath.join(serverDestDirectory, forgeUniversalPath), forgeUniversalJar);
+	await fs.promises.writeFile(upath.join(serverDestDirectory, upath.basename(forgeUniversalPath)), forgeUniversalJar);
 
 	/**
 	 * Save the universal jar file name for later.
 	 *
 	 * We will need it to process launchscripts.
 	 */
-	g_forgeJar = forgeUniversalPath;
+	g_forgeJar = upath.basename(forgeUniversalPath);
 
 	/**
 	 * Finally, fetch libraries.
 	 */
-	const libraries = forgeProfile.versionInfo.libraries.filter((x) => x.serverreq);
+	const libraries = forgeProfile.libraries.filter((x) => Boolean(x?.downloads?.artifact?.url));
 	log(`Fetching ${libraries.length} server libraries...`);
 
 	return Bluebird.map(
 		libraries,
 		async (library) => {
-			const libraryPath = libraryToPath(library.name) + ".jar";
-			const url = library.url || MOJANG_MAVEN;
+			const libraryPath = library.downloads.artifact.path;
 
 			const def: FileDef = {
-				url: url + libraryPath,
+				url: library.downloads.artifact.url,
 			};
 
-			if (library.checksums) {
-				def.hashes = [{ id: "sha1", hashes: library.checksums }];
+			if (library.downloads.artifact.sha1) {
+				def.hashes = [{ id: "sha1", hashes: [library.downloads.artifact.sha1] }];
 			}
 
 			const destPath = upath.join(serverDestDirectory, "libraries", libraryPath);
