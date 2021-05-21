@@ -48882,6 +48882,57 @@
       "questID:3": 803,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "804:10": {
+      "preRequisites:11": [
+        286
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "There are a variety of ways that the §a§r§3Assembly Line§r can be automated. This is a placeholder quest for that eventual explanation.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "actuallyadditions:block_laser_relay_item"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "Assembly Line Automation",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 804,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -52599,6 +52650,13 @@
           "sizeY:3": 0,
           "x:3": 128,
           "y:3": 16
+        },
+        "103:10": {
+          "id:3": 804,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -340,
+          "y:3": 164
         }
       }
     },
