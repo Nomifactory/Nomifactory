@@ -275,14 +275,6 @@ assembler.recipeBuilder()
 //Engine Intake
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18072> * 4, <gregtech:fluid_pipe:2072> * 2, <gregtech:metal_casing:6>]).outputs([<gregtech:multiblock_casing>]).duration(400).EUt(16).buildAndRegister();
 
-//Lapotron Crystals
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesslapis");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedlazurite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedlapis");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesssodalite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedsodalite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesslazurite");
-
 
 assembler.findRecipe(2, [<gregtech:meta_item_1:12197> * 5, <minecraft:trapped_chest>], [null]).remove();	
 assembler.findRecipe(2, [<gregtech:meta_item_1:12033> * 5, <minecraft:trapped_chest>], [null]).remove();	
@@ -328,43 +320,6 @@ recipes.addShaped(<enderio:item_material:41>, [
 
 //Rose Gold Plate
 compressor.recipeBuilder().inputs([<gregtech:meta_item_1:10228>]).outputs([<gregtech:meta_item_1:12228>]).duration(100).EUt(10).buildAndRegister();
-
-
-// Fixes #357: CO2 output should be 4 buckets
-reactor.findRecipe(480,
-    [<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>],
-    [<liquid:chlorine> * 4000])
-    .remove();
-
-reactor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>])
-    .fluidInputs([<liquid:chlorine> * 4000])
-    .fluidOutputs([<liquid:carbon_monoxide> * 4000, <liquid:titanium_tetrachloride> * 1000])
-    .duration(500)
-    .EUt(480)
-    .buildAndRegister();
-// end Fix for #357
-
-//Add back fuel desulfurization recipes removed after the SoG update
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_naphtha> * 12000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:naphtha> * 12000])
-	.duration(160).EUt(30).buildAndRegister();
-
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_gas> * 16000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:gas> * 16000])
-	.duration(160).EUt(30).buildAndRegister();
-
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_light_fuel> * 12000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:light_fuel> * 12000])
-	.duration(160).EUt(30).buildAndRegister();
-
-reactor.recipeBuilder()
-	.fluidInputs([<liquid:hydrogen> * 2000, <liquid:sulfuric_heavy_fuel> * 8000])
-	.fluidOutputs([<liquid:hydrogen_sulfide> * 1000, <liquid:heavy_fuel> * 8000])
-	.duration(160).EUt(30).buildAndRegister();
 
 fluid_canner.recipeBuilder()
 	.inputs(<minecraft:glass_bottle>)

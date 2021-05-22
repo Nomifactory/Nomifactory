@@ -103,7 +103,7 @@ mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
 
 //Guardian Diode
 mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:56>);
-mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
+mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56>, [
     <enderio:item_alloy_ingot:1>, <minecraft:prismarine_shard>, <enderio:item_alloy_ingot:1>,
      <minecraft:prismarine_crystals>, <gregtech:meta_item_2:32440>, <minecraft:prismarine_crystals>
 ], 20000);

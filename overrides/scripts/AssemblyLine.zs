@@ -617,7 +617,7 @@ assembly_line.recipeBuilder()
 //UV Motor
 //Removal
 assembly_line.findRecipe(163840,
-		[<gregtech:compressed_14>,
+		[<gregtech:meta_block_compressed_18:11>,
 		 <gregtech:cable:7135> * 2,
 		 <gregtech:meta_item_2:19972> * 2,
 		 <gregtech:meta_item_1:18972> * 4,
@@ -637,7 +637,7 @@ assembly_line.recipeBuilder()
 			<gregtech:meta_item_2:19972> * 4, //Neutronium Long Rod
 			<gregtech:meta_item_1:18972> * 4, //Neutronium Ring
 			<gregtech:cable:7135> * 2, //4x Niobium-Titanium Wires
-			<gregtech:compressed_14>) //Block of Magnetic Neodynium
+			<gregtech:meta_block_compressed_18:11>) //Block of Magnetic Neodynium
 	.fluidInputs(<liquid:lubricant> * 2000, <liquid:soldering_alloy> * 1296)
 	.outputs(<gregtech:meta_item_1:32608>)
 	.duration(600).EUt(163840).buildAndRegister();

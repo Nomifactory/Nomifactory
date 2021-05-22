@@ -117,7 +117,7 @@ recipes.addShaped(<storagedrawers:controllerslave>, [
 recipes.remove(<rangedpumps:pump>);
 recipes.addShaped(<rangedpumps:pump>, [
 	[<minecraft:obsidian>, <gregtech:meta_item_1:32610>, <minecraft:obsidian>],
-	[<gregtech:meta_item_1:32610>, <gregtech:compressed_9:14>, <gregtech:meta_item_1:32610>],
+	[<gregtech:meta_item_1:32610>, <gregtech:meta_block_compressed_13:10>, <gregtech:meta_item_1:32610>], //Ender Pearl Block
 	[<minecraft:obsidian>, <gregtech:meta_item_1:32610>, <minecraft:obsidian>]]);
 <rangedpumps:pump>.displayName = "Ender Pump";
 
@@ -125,7 +125,7 @@ recipes.remove(<enderstorage:ender_storage:1>);
 recipes.addShaped(<enderstorage:ender_storage:1>, [
 	[<minecraft:blaze_rod>, <minecraft:wool>, <minecraft:blaze_rod>],
 	[<ore:obsidian>, basictank, <ore:obsidian>],
-	[<minecraft:blaze_rod>, <gregtech:compressed_9:14>, <minecraft:blaze_rod>]]);
+	[<minecraft:blaze_rod>, <gregtech:meta_block_compressed_13:10>, <minecraft:blaze_rod>]]); //Ender Pearl Block
 recipes.addShapeless(<enderstorage:ender_storage:1>, [<enderstorage:ender_storage:1>]);
 
 
@@ -146,7 +146,7 @@ recipes.remove(<extrautils2:ingredients:7>);
 recipes.remove(<extrautils2:ingredients:8>);
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <actuallyadditions:item_crystal>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <minecraft:redstone_block>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<gregtech:compressed_9:15>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<gregtech:meta_block_compressed_13:11>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister(); // Ender Eye Block
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <minecraft:diamond> * 4]).outputs([<extrautils2:ingredients:7>]).duration(800).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot:1> * 4]).outputs([<extrautils2:ingredients:6>]).duration(400).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot> * 4]).outputs([<extrautils2:ingredients:8>]).duration(400).EUt(16).buildAndRegister();
@@ -284,7 +284,6 @@ reactor.recipeBuilder().inputs([<thermalfoundation:fertilizer>]).fluidInputs(<li
 // recipes for Manganese Oxides - currently unused
 // reactor.recipeBuilder().inputs([<gregtech:meta_item_1:2039>]).fluidInputs(<liquid:oxygen> * 250).outputs(<nuclearcraft:dust_oxide:2>).EUt(15).duration(120).buildAndRegister();
 // reactor.recipeBuilder().inputs([<nuclearcraft:dust_oxide:2>]).fluidInputs(<liquid:phosphoric_acid> * 1000).outputs(<nuclearcraft:dust_oxide:2>).EUt(500).duration(120).buildAndRegister();
-mixer.recipeBuilder().inputs([<minecraft:redstone>,<minecraft:glowstone_dust>]).outputs(<nuclearcraft:compound:2> * 2).EUt(22).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2239>,<gregtech:meta_item_1:2026>]).outputs(<minecraft:glowstone_dust> * 2).EUt(15).duration(80).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:2071>]).outputs(<gregtech:meta_item_1:2189> * 2).EUt(15).duration(40).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2307>,<enderio:item_material:20> * 4,<contenttweaker:grainsofinnocence>,<enderio:item_material:36>]).fluidInputs([<liquid:pulsating_iron> * 576, <liquid:neptunium> * 144]).outputs(<gregtech:meta_item_1:2309>).EUt(8000).duration(400).buildAndRegister();
@@ -315,33 +314,23 @@ assembler.findRecipe(2, [<minecraft:blaze_powder>,<minecraft:ender_pearl>], [nul
 assembler.findRecipe(2, [<minecraft:ender_pearl> * 6,<minecraft:blaze_rod>], [null]).remove();
 mixer.findRecipe(8, [<gregtech:meta_item_1:2184> * 3,<gregtech:meta_item_1:2229>,<gregtech:meta_item_1:2044>], [null]).remove();
 
-// Magnesium Chloride decomposition
-reactor.findRecipe(240, [<gregtech:meta_item_1:2125> * 2,<gregtech:meta_item_1:2063>], [null]).remove();
-electrolyzer.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2125>*3])
-    .outputs([<gregtech:meta_item_1:2038>])
-    .fluidOutputs([<liquid:chlorine>*2000])
-    .duration(720).EUt(30).buildAndRegister();
-
-reactor.findRecipe(388, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 500, <liquid:hydrogen> * 3000, <liquid:nitrogen_dioxide> * 1000]).remove();
-
-
+//Ammonia Recipe: Changes the EU/t
 reactor.findRecipe(384, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000]).remove();
-reactor.recipeBuilder().notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1})).fluidInputs(<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000).fluidOutputs(<liquid:ammonia> * 4000).EUt(100).duration(320).buildAndRegister();
+reactor.recipeBuilder()
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs(<liquid:nitrogen> * 1000, <liquid:hydrogen> * 3000)
+	.fluidOutputs(<liquid:ammonia> * 1000)
+	.EUt(100).duration(320).buildAndRegister();
 
+//Dimethylhydrazine: Changes the EU/t
 reactor.findRecipe(480, [null], [<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000]).remove();
-reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 1000, <liquid:hypochlorous_acid> * 1000]).remove();
-reactor.recipeBuilder().fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000).fluidOutputs(<liquid:dimethylhidrazine> * 1000,<liquid:diluted_hydrochloric_acid> * 1000).EUt(120).duration(960).buildAndRegister();
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:chloramine> * 1000, <liquid:dimethylamine> * 1000)
+	.fluidOutputs(<liquid:dimethylhidrazine> * 1000,<liquid:hydrochloric_acid> * 1000)
+	.EUt(120).duration(960).buildAndRegister();
 
-//Remove phosphorus pentoxide, not used anywhere aside from duping phosphorus
-reactor.findRecipe(30, [<gregtech:meta_item_1:2466>], [<liquid:water> * 6000]).remove();
-reactor.findRecipe(30, [<gregtech:meta_item_1:2050> * 4], [<liquid:oxygen> * 10000]).remove();
-
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:466>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:1466>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2466>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
-mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
+//Remove other recipe for Dimethylhydrazine
+reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
 
 //Lava Factory
 recipes.remove(<actuallyadditions:block_misc:7>);
@@ -698,6 +687,7 @@ compressor.recipeBuilder().inputs(<ore:ingotBatteryAlloy>).outputs(<ore:plateBat
 compressor.recipeBuilder().inputs(<ore:ingotEpoxid>).outputs(<ore:plateEpoxid>.firstItem).duration(100).EUt(10).buildAndRegister();
 compressor.recipeBuilder().inputs(<minecraft:diamond>).outputs(<ore:plateDiamond>.firstItem).duration(100).EUt(10).buildAndRegister();
 compressor.recipeBuilder().inputs(<minecraft:emerald>).outputs(<ore:plateEmerald>.firstItem).duration(100).EUt(10).buildAndRegister();
+compressor.recipeBuilder().inputs(<ore:gemLapis>).outputs(<ore:plateLapis>.firstItem).duration(100).EUt(10).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotMagnalium>).outputs(<ore:plateMagnalium>.firstItem).duration(100).EUt(10).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotSolderingAlloy>).outputs(<ore:plateSolderingAlloy>.firstItem).duration(100).EUt(10).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:ingotStainlessSteel>).outputs(<ore:plateStainlessSteel>.firstItem).duration(100).EUt(10).buildAndRegister();
@@ -795,16 +785,6 @@ recipes.addShaped(<gregtech:machine:273>, [
 	[<gregtech:meta_item_1:32643>, <gregtech:machine:504>, <gregtech:fluid_pipe:2072>],
 	[<ore:wireGtQuadrupleNichrome>, <ore:wireGtQuadrupleNichrome>, <ore:circuitExtreme>]]);
 
-//conductive iron cables by hand
-recipes.addShapeless(<gregtech:cable:6700>, [<gregtech:cable:5700>,<gregtech:cable:5700>]);
-recipes.addShapeless(<gregtech:cable:7700>, [<gregtech:cable:6700>,<gregtech:cable:6700>]);
-recipes.addShapeless(<gregtech:cable:8700>, [<gregtech:cable:7700>,<gregtech:cable:7700>]);
-recipes.addShapeless(<gregtech:cable:9700>, [<gregtech:cable:8700>,<gregtech:cable:8700>]);
-
-recipes.addShapeless(<gregtech:cable:8700> * 2, [<gregtech:cable:9700>]);
-recipes.addShapeless(<gregtech:cable:7700> * 2, [<gregtech:cable:8700>]);
-recipes.addShapeless(<gregtech:cable:6700> * 2, [<gregtech:cable:7700>]);
-recipes.addShapeless(<gregtech:cable:5700> * 2, [<gregtech:cable:6700>]);
 
 
 recipes.addShapeless(<gregtech:meta_item_1:2700>, [<gregtech:meta_item_1:2033>,<minecraft:redstone>]);
@@ -902,7 +882,6 @@ for mat in material {
 	var rotor = allRotor.firstItem;
 
 	//Assembler Recipe
-	assembler.findRecipe(24, [plate * 4, ring], [null]).remove();
 	assembler.recipeBuilder()
 		.inputs(plate*4, ring)
 		.fluidInputs(<liquid:soldering_alloy> * 32)
@@ -963,13 +942,6 @@ electrolyzer.recipeBuilder()
 	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
 	.duration(288).EUt(60).buildAndRegister();
 
-//Methyl Acetate
-electrolyzer.recipeBuilder()
-	.fluidInputs(<liquid:methyl_acetate> * 11000)
-	.outputs(<ore:dustCarbon>.firstItem * 3)
-	.fluidOutputs(<liquid:oxygen> * 2000, <liquid:hydrogen> * 6000)
-	.duration(264).EUt(60).buildAndRegister();
-
 //Dichlorobenzene
 electrolyzer.recipeBuilder()
 	.fluidInputs(<liquid:dichlorobenzene> * 12000)
@@ -1013,6 +985,13 @@ implosion.recipeBuilder()
 	.duration(20).EUt(30).buildAndRegister();
 
 }
+
+//Reinforced Iridium
+implosion.recipeBuilder()
+	.inputs(<gregtech:meta_item_2:32434>)
+	.property("explosives", <gregtech:meta_item_1:32629> * 64)
+	.outputs(<gregtech:meta_item_2:32435>)
+	.duration(20).EUt(30).buildAndRegister();
 
 //Omnium
 implosion.recipeBuilder()
@@ -1105,3 +1084,29 @@ macerator.recipeBuilder()
 	.outputs(<gregtech:meta_item_1:2251>)
 	.chancedOutput(<gregtech:meta_item_1:2069>, 100, 100)
 	.duration(150).EUt(8).buildAndRegister();
+
+//Adjust the recipe of the Rotor mold
+recipes.removeByRecipeName("gregtech:shape/mold/shape_mold_rotor");
+makeShaped("gtce_rotor_mold", <metaitem:shape.mold.rotor>,
+	["H  ",
+	 "   ",
+	 "  P"],
+	{ H : <ore:gtceHardHammers>,
+	  P : <metaitem:shape.empty>
+	  });
+
+recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.lithium");
+recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.cadmium");
+recipes.removeByRecipeName("gregtech:scanner_battery.re.lv.sodium");
+
+//Temporary removal of a duplicate recipe
+reactor.findRecipe(30, [<metaitem:dustSodiumBisulfate> * 7], [<liquid:water> * 1000]).remove();
+
+//Tetranitromethane recipe as a holdover
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:ethenone> * 2000, <liquid:nitric_acid> * 4000)
+	.fluidOutputs(<liquid:tetranitromethane> * 1000, <liquid:water> * 4000)
+	.outputs(<metaitem:dustCarbon> * 3)
+	.duration(480).EUt(120).buildAndRegister();
+
+electrolyzer.findRecipe(60, [null], [<liquid:glycerol> * 1000]).remove();

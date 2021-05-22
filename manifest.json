@@ -3,7 +3,7 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2847",
+        "id": "forge-14.23.5.2855",
         "primary": true
       }
     ]
@@ -11,15 +11,16 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Omnifactory",
-  "version": "1.2.2",
   "author": "OmnifactoryDevs",
   "projectID": 313440,
-  "files": [
+  "externalDependencies": [
     {
-      "projectID": 310812,
-      "fileID": 2783832,
-      "required": true
-    },
+      "name": "Applied Energistics 2 Trousers Edition",
+      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/omni-fixes-v40/appliedenergistics2-rv6-stable-7.omni-fixes-v40c.jar",
+      "sha": "c020d2987ab5a447316b8d62b575b7b2a4bb92b5"
+    }
+  ],
+  "files": [
     {
       "projectID": 238403,
       "fileID": 2691084,
@@ -152,7 +153,7 @@
     },
     {
       "projectID": 261348,
-      "fileID": 2660801,
+      "fileID": 3143349,
       "required": true
     },
     {
@@ -307,7 +308,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3053037,
+      "fileID": 3231443,
       "required": true
     },
     {
@@ -422,7 +423,7 @@
     },
     {
       "projectID": 293327,
-      "fileID": 3139624,
+      "fileID": 3314162,
       "required": true
     },
     {
@@ -452,7 +453,7 @@
     },
     {
       "projectID": 308380,
-      "fileID": 2977147,
+      "fileID": 3214216,
       "required": true
     },
     {
@@ -482,12 +483,12 @@
     },
     {
       "projectID": 316751,
-      "fileID": 3112554,
+      "fileID": 3317240,
       "required": true
     },
     {
       "projectID": 237102,
-      "fileID": 3010492,
+      "fileID": 3157548,
       "required": true
     },
     {
@@ -527,7 +528,7 @@
     },
     {
       "projectID": 306770,
-      "fileID": 3087124,
+      "fileID": 3162874,
       "required": true
     },
     {
@@ -538,11 +539,6 @@
     {
       "projectID": 258881,
       "fileID": 2512758,
-      "required": true
-    },
-    {
-      "projectID": 223794,
-      "fileID": 2747063,
       "required": true
     },
     {
@@ -592,7 +588,7 @@
     },
     {
       "projectID": 398267,
-      "fileID": 3078079,
+      "fileID": 3146463,
       "required": true
     },
     {
@@ -607,7 +603,7 @@
     },
     {
       "projectID": 257814,
-      "fileID": 3097498,
+      "fileID": 3227279,
       "required": true
     },
     {
@@ -617,12 +613,12 @@
     },
     {
       "projectID": 257818,
-      "fileID": 3100846,
+      "fileID": 3227278,
       "required": true
     },
     {
       "projectID": 242223,
-      "fileID": 3056137,
+      "fileID": 3201179,
       "required": true
     },
     {
@@ -682,7 +678,7 @@
     },
     {
       "projectID": 250617,
-      "fileID": 2698094,
+      "fileID": 3158763,
       "required": true
     },
     {
@@ -697,7 +693,7 @@
     },
     {
       "projectID": 266784,
-      "fileID": 3131449,
+      "fileID": 3146549,
       "required": true
     },
     {
@@ -707,12 +703,12 @@
     },
     {
       "projectID": 278494,
-      "fileID": 2845668,
+      "fileID": 3137883,
       "required": true
     },
     {
       "projectID": 322861,
-      "fileID": 2899874,
+      "fileID": 3214400,
       "required": true
     },
     {
@@ -757,7 +753,7 @@
     },
     {
       "projectID": 386188,
-      "fileID": 3112569,
+      "fileID": 3317496,
       "required": true
     },
     {
@@ -771,9 +767,9 @@
       "required": true
     },
     {
-    "projectID": 237701,
-    "fileID": 2560638,
-    "required": true
+      "projectID": 237701,
+      "fileID": 2560638,
+      "required": true
     },
     {
       "projectID": 383632,
@@ -783,6 +779,11 @@
     {
       "projectID": 318255,
       "fileID": 2919497,
+      "required": true
+    },
+    {
+      "projectID": 361579,
+      "fileID": 3164181,
       "required": true
     }
   ],

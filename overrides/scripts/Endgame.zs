@@ -300,32 +300,32 @@ val trimPattern as string[] = ["N N",
 recipes.remove(<extendedcrafting:trimmed>);
 makeShaped("of_iron_trimmed_black_steel",
     <extendedcrafting:trimmed>, trimPattern,
-    { N : <ore:nuggetIron>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetIron>, C : <gregtech:meta_block_compressed_14:7> }); // Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:1>);
 makeShaped("of_gold_trimmed_black_steel",
     <extendedcrafting:trimmed:1>, trimPattern,
-    { N : <ore:nuggetGold>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetGold>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:2>);
 makeShaped("of_diamond_trimmed_black_steel",
     <extendedcrafting:trimmed:2>, trimPattern,
-    { N : <ore:nuggetDiamond>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetDiamond>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:3>);
 makeShaped("of_emerald_trimmed_black_steel",
     <extendedcrafting:trimmed:3>, trimPattern,
-    { N : <ore:nuggetEmerald>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetEmerald>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:4>);
 makeShaped("of_crystaltine_trimmed_black_steel",
     <extendedcrafting:trimmed:4>, trimPattern,
-    { N : <extendedcrafting:material:25>, C : <gregtech:compressed_10:10> });
+    { N : <extendedcrafting:material:25>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:5>);
 makeShaped("of_omnium_trimmed_black_steel",
     <extendedcrafting:trimmed:5>, trimPattern,
-    { N : <extendedcrafting:material:33>, C : <gregtech:compressed_10:10> });
+    { N : <extendedcrafting:material:33>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 
 //Remove hardcoded gtce neutronium recipes and replace with oredicted versions
@@ -368,6 +368,16 @@ alloy.recipeBuilder()
     .outputs(<moreplates:neutronium_plate>)
     .duration(10000).EUt(16).buildAndRegister();
 
+//Unpackager Recipes
+unpackager.findRecipe(12, [<ore:ingotNeutronium>.firstItem, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [null]).remove();
+unpackager.recipeBuilder()
+    .inputs(<ore:ingotNeutronium>.firstItem)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+    .outputs(<avaritia:resource:3>)
+    .duration(10).EUt(12).buildAndRegister();
+
+//Add conversion recipe
+recipes.addShapeless(<avaritia:resource:3>, [<gregtech:meta_item_1:9972>]);
 
 
 //Remove Data Orbs
@@ -442,14 +452,3 @@ reactor.recipeBuilder()
   .duration(600).EUt(1920).buildAndRegister();
 
 reactor.findRecipe(1920, [<gregtech:meta_item_2:32467>, <gregtech:cable:5354> * 8], [null]).remove();
-
-fusion_reactor.findRecipe(32768, [null], [<liquid:lithium> * 16, <liquid:tungsten> * 16]).remove();
-
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtdouble_splitting");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtquadruple_splitting");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtoctal_splitting");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gthex_splitting");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtoctal_doubling");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtquadruple_doubling");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtdouble_doubling");
-recipes.removeByRecipeName("gtadditions:superonducter_wire_gtsingle_doubling");

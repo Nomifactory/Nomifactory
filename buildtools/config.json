@@ -1,0 +1,13 @@
+{
+	"copyOverridesServerGlobs": [
+		"config/**/*",
+		"mods/**/*",
+		"scripts/**/*"
+	],
+	"copyOverridesClientGlobs": [
+		"**/*",
+		"!resources/minecraft/textures/gui/title/background/**"
+	],
+	"nightlyHookAvatar": "https://github.com/OmnifactoryDevs.png",
+	"nightlyHookName": "Nightly Builds"
+}

@@ -73,7 +73,7 @@ recipes.remove(<actuallyadditions:block_misc:6>);
 recipes.remove(<actuallyadditions:block_phantomface>);	
 recipes.addShaped(<actuallyadditions:block_phantomface>, [
 [null, <ore:chestWood>, null], 
-[<actuallyadditions:item_crystal_empowered:2>, <gregtech:compressed_9:14>, <actuallyadditions:item_crystal_empowered:2>], 
+[<actuallyadditions:item_crystal_empowered:2>, <gregtech:meta_block_compressed_13:10>, <actuallyadditions:item_crystal_empowered:2>], 
 [null, <actuallyadditions:item_misc:8>, null]]);
 	
 //AA Iron Casing
@@ -168,7 +168,7 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_la
 	[redPlate, furnGen, redPlate]]);
 	
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_redstone"}), [
-	[redPlate, <gregtech:compressed_11>, redPlate], 
+	[redPlate, <gregtech:meta_block_compressed_14:14>, redPlate], 
 	[redPlate, <extrautils2:machine>, redPlate], 
 	[redPlate, <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}), redPlate]]);
 	
@@ -193,7 +193,7 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ov
 	[redPlate, <extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}), redPlate]]);
 	
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}), [
-	[<gregtech:meta_item_1:12701>,<gregtech:compressed_14:14>,<gregtech:meta_item_1:12701>], 
+	[<gregtech:meta_item_1:12701>,<gregtech:meta_block_compressed_20:5>,<gregtech:meta_item_1:12701>], 
 	[<gregtech:meta_item_1:12701>,<extrautils2:machine>,<gregtech:meta_item_1:12701>], 
 	[redPlate, furnGen, redPlate]]);
 	
@@ -225,12 +225,12 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ic
 recipes.addShaped(<draconicevolution:generator>, [
 	[<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>], 
 	[<draconicevolution:draconium_ingot>,<extrautils2:machine>,<draconicevolution:draconium_ingot>], 
-	[<gregtech:compressed_11>, furnGen, <gregtech:compressed_11>]]);
+	[<gregtech:meta_block_compressed_14:14>, furnGen, <gregtech:meta_block_compressed_14:14>]]);
 		
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), [
 	[<gregtech:meta_item_1:12331>,<gregtech:meta_item_1:12331>,<gregtech:meta_item_1:12331>], 
 	[<gregtech:meta_item_1:12331>,<extrautils2:machine>,<gregtech:meta_item_1:12331>], 
-	[<gregtech:compressed_11>, <draconicevolution:generator>, <gregtech:compressed_11>]]);
+	[<gregtech:meta_block_compressed_14:14>, <draconicevolution:generator>, <gregtech:meta_block_compressed_14:14>]]);
 	
 	
 	
@@ -349,7 +349,7 @@ recipes.addShaped(<extrautils2:chunkloader>, [
 
 //Dragon Mill
 recipes.addShaped(<extrautils2:passivegenerator:8>, [
-	[<gregtech:compressed_3:10>,<gregtech:compressed_3:10>,<gregtech:compressed_3:10>], 
+	[<gregtech:meta_block_compressed_4:8>,<gregtech:meta_block_compressed_4:8>,<gregtech:meta_block_compressed_4:8>], 
 	[<extrautils2:ingredients:2>, <extendedcrafting:storage:2>, <extrautils2:ingredients:2>], 
 	[<extrautils2:decorativesolid:3>, <extrautils2:ingredients:2>, <extrautils2:decorativesolid:3>]]);
 	

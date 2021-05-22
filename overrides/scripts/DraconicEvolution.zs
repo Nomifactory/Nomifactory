@@ -99,7 +99,7 @@ recipes.addShaped(<draconicevolution:particle_generator>, [
 	[<actuallyadditions:block_crystal_empowered>, <minecraft:blaze_rod>, <actuallyadditions:block_crystal_empowered>]]);
 
 	//Draconium
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:9>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_44:6>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10710>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9710>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2710>);
