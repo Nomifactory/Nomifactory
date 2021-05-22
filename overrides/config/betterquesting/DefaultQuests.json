@@ -16885,9 +16885,9 @@
             },
             "3:10": {
               "Count:3": 15,
-              "Damage:2": 10,
+              "Damage:2": 8,
               "OreDict:8": "",
-              "id:8": "gregtech:compressed_3"
+              "id:8": "gregtech:meta_block_compressed_4"
             },
             "4:10": {
               "Count:3": 2,
@@ -23469,9 +23469,9 @@
             },
             "4:10": {
               "Count:3": 4,
-              "Damage:2": 5,
+              "Damage:2": 12,
               "OreDict:8": "",
-              "id:8": "gregtech:compressed_9"
+              "id:8": "gregtech:meta_block_compressed_12"
             },
             "5:10": {
               "Count:3": 54,
