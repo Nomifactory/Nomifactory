@@ -300,32 +300,32 @@ val trimPattern as string[] = ["N N",
 recipes.remove(<extendedcrafting:trimmed>);
 makeShaped("of_iron_trimmed_black_steel",
     <extendedcrafting:trimmed>, trimPattern,
-    { N : <ore:nuggetIron>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetIron>, C : <gregtech:meta_block_compressed_14:7> }); // Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:1>);
 makeShaped("of_gold_trimmed_black_steel",
     <extendedcrafting:trimmed:1>, trimPattern,
-    { N : <ore:nuggetGold>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetGold>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:2>);
 makeShaped("of_diamond_trimmed_black_steel",
     <extendedcrafting:trimmed:2>, trimPattern,
-    { N : <ore:nuggetDiamond>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetDiamond>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:3>);
 makeShaped("of_emerald_trimmed_black_steel",
     <extendedcrafting:trimmed:3>, trimPattern,
-    { N : <ore:nuggetEmerald>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetEmerald>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:4>);
 makeShaped("of_crystaltine_trimmed_black_steel",
     <extendedcrafting:trimmed:4>, trimPattern,
-    { N : <extendedcrafting:material:25>, C : <gregtech:compressed_10:10> });
+    { N : <extendedcrafting:material:25>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 recipes.remove(<extendedcrafting:trimmed:5>);
 makeShaped("of_omnium_trimmed_black_steel",
     <extendedcrafting:trimmed:5>, trimPattern,
-    { N : <extendedcrafting:material:33>, C : <gregtech:compressed_10:10> });
+    { N : <extendedcrafting:material:33>, C : <gregtech:meta_block_compressed_14:7> }); //Black Steel Block
 
 
 //Remove hardcoded gtce neutronium recipes and replace with oredicted versions

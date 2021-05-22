@@ -9,6 +9,11 @@ import crafttweaker.oredict.IOreDictEntry;
 
 print("-------------- Ore Dictionary Start --------------");
 
+//Ender IO was being annoying
+<ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
+<ore:nuggetRedstoneAlloy>.add(<gregtech:meta_item_1:9237>);
+<ore:blockRedstoneAlloy>.add(<gregtech:meta_block_compressed_14:13>);
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //			         																														 //
 //			This script file was originally written by the FTB Interactions team and has been adapted for use here with permission!          //
@@ -62,17 +67,17 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockConductiveIron
 	<ore:blockConductiveIron> : [
-		<gregtech:compressed_16:15>
+		<gregtech:meta_block_compressed_43:12>
 	],
 
 	#blockDarkSteel
 	<ore:blockDarkSteel> : [
-		<gregtech:compressed_17:3>
+		<gregtech:meta_block_compressed_44:0>
 	],
   
 	#blockDraconium
 	<ore:blockDraconium> : [
-		<gregtech:compressed_17:9>
+		<gregtech:meta_block_compressed_44:8>
 	],
 
 	#blockElectrum
@@ -82,17 +87,17 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockElectricalSteel
 	<ore:blockElectricalSteel> : [
-		<gregtech:compressed_17:4>
+		<gregtech:meta_block_compressed_44:1>
 	],
 
 	#blockEndSteel
 	<ore:blockEndSteel> : [
-		<gregtech:compressed_17:10>
+		<gregtech:meta_block_compressed_44:8>
 	],
 
 	#blockEnergeticAlloy
 	<ore:blockEnergeticAlloy> : [
-		<gregtech:compressed_17>
+		<gregtech:meta_block_compressed_43:13>
 	],
 
 	#blockGraphite
@@ -129,12 +134,12 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockNeutronium
 	<ore:blockNeutronium> : [
-		<gregtech:compressed_18>
+		<gregtech:meta_block_compressed_60:12>
 	],
 
 	#blockNetherstar
 	<ore:blockNetherstar> : [
-		<gregtech:compressed_15>
+		<gregtech:meta_block_compressed_20:11>
 	],
 
 	#blockPlatinum
@@ -156,12 +161,12 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockPlutonium
 	<ore:blockPlutonium> : [
-		<gregtech:compressed_2:7>
+		<gregtech:meta_block_compressed_3:4>
 	],
 
 	#blockPulsatingIron
 	<ore:blockPulsatingIron> : [
-		<gregtech:compressed_17:2>
+		<gregtech:meta_block_compressed_43:15>
 	],
 
 	#blockTin
@@ -177,7 +182,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 
 	#blockVibrantAlloy
 	<ore:blockVibrantAlloy> : [
-		<gregtech:compressed_17:1>
+		<gregtech:meta_block_compressed_43:14>
 	],
 
 	#blockTitanium
@@ -1153,9 +1158,9 @@ for oreDictEntry, items in miscDisabled {
 <ore:oreEmerald>.add(<minecraft:emerald_ore>);
 <ore:oreNetherQuartz>.add(<minecraft:quartz_ore>);
 
-<ore:blockAluminum>.add(<gregtech:compressed_0:0>);
+<ore:blockAluminum>.add(<gregtech:meta_block_compressed_0:1>);
 
-<ore:blockCoalCoke>.add(<gregtech:compressed_15:4>);
+<ore:blockCoalCoke>.add(<gregtech:meta_block_compressed_22:5>);
 
 //Add moreplates neutronium plate to gtce neutronium ore dict
 <ore:plateNeutronium>.add(<moreplates:neutronium_plate:0>);
@@ -1163,7 +1168,7 @@ for oreDictEntry, items in miscDisabled {
 <ore:gemDilithium>.remove(<libvulpes:productgem>);
 <ore:crystalDilithium>.add(<libvulpes:productgem>);
 
-<ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
+<ore:blockWarpCoreRim>.add(<gregtech:meta_block_compressed_4:8>);
 
 //GTCE Marble
 mods.chisel.Carving.addVariation("marble", <gregtech:mineral>);
@@ -1939,9 +1944,9 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:material:865>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9706>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9707>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9708>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:7>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:5>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:6>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_44:3>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_44:2>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_44:4>);
 
 //Lib Vulpes Removals
 mods.jei.JEI.removeAndHide(<libvulpes:gtplug>);
@@ -2186,7 +2191,7 @@ fluidextractor.recipeBuilder().inputs(<enderio:block_alloy:7>).fluidOutputs([<li
 //Omnium
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10709>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9709>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:8>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_44:5>);
 <ore:ingotOmnium>.add(<extendedcrafting:material:32>);
 <ore:nuggetOmnium>.add(<extendedcrafting:material:33>);
 <ore:blockOmnium>.add(<extendedcrafting:storage:4>);
@@ -2199,7 +2204,7 @@ extruder.findRecipe(64, [<gregtech:meta_item_1:10709> * 9,<gregtech:meta_item_1:
 alloy.findRecipe(32, [<gregtech:meta_item_1:10709> * 9,<gregtech:meta_item_1:32308>], [null]).remove();
 fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10709>], [null]).remove();
 fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9709>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:compressed_17:8>], [null]).remove();
+fluidextractor.findRecipe(32, [<gregtech:meta_block_compressed_44:5>], [null]).remove();
 fluidextractor.recipeBuilder().inputs(<extendedcrafting:material:33>).fluidOutputs([<liquid:omnium> * 16]).duration(25).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<extendedcrafting:material:32>).fluidOutputs([<liquid:omnium> * 144]).duration(200).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<extendedcrafting:storage:4>).fluidOutputs([<liquid:omnium> * 1296]).duration(1800).EUt(30).buildAndRegister();
@@ -2260,9 +2265,6 @@ solidifier.recipeBuilder()
 
 
 //Redstone Alloy
-<ore:ingotRedstoneAlloy>.add(<gregtech:meta_item_1:10237>);
-<ore:nuggetRedstoneAlloy>.add(<gregtech:meta_item_1:9237>);
-<ore:blockRedstoneAlloy>.add(<gregtech:compressed_10:15>);
 mods.jei.JEI.removeAndHide(<enderio:block_alloy:3>);
 mods.jei.JEI.removeAndHide(<enderio:item_alloy_nugget:3>);
 
@@ -2340,39 +2342,39 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 // GTCE Conductive Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10700>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_16:15>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockConductiveIron>);
 
 // GTCE Energetic Alloy
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9701>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10701>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:0>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockEnergeticAlloy>);
 
 // GTCE Vibrant Alloy
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9702>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10702>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:1>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockVibrantAlloy>);
 
 // GTCE Pulsating Iron
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9703>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10703>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:2>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockPulsatingIron>);
 
 // GTCE Dark Steel
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9704>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10704>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:3>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockDarkSteel>);
 
 // GTCE Electrical Steel
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9705>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10705>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:4>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockElectricalSteel>);
 
 // GTCE End Steel
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9712>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10712>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:10>);
+//mods.jei.JEI.removeAndHide(<metaitem:blockEndSteel>);
 
-mods.jei.JEI.removeAndHide(<gregtech:compressed_17:14>); // Block of Lignite Coke
+mods.jei.JEI.removeAndHide(<gregtech:meta_block_compressed_54:15>); // Block of Lignite Coke
 
 //Nuggets
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:193>);

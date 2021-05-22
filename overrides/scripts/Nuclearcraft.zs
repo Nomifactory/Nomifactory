@@ -657,7 +657,7 @@ makeShaped("of_nc_rtg_uranium", <nuclearcraft:rtg_uranium>,
      "ABA"],
     { A : <ore:plateBasic>,
       B : <ore:ingotGraphite>,
-      C : <gregtech:compressed_3:12> });
+      C : <gregtech:meta_block_compressed_4:11> }); //Uranium Block
 
 // Basic Plating
 recipes.remove(<nuclearcraft:part>);
@@ -859,7 +859,7 @@ recipes.removeByRecipeName("gregtech:nugget_assembling_uranium235");
 makeCompacting3("gregtech_nugget_assembling_uranium235", <gregtech:meta_item_1:10076>, <gregtech:meta_item_1:9076>);
 
 recipes.removeByRecipeName("gregtech:block_compress_uranium235");
-makeCompacting3("gregtech_block_compress_uranium235", <gregtech:compressed_3:13>, <gregtech:meta_item_1:10076>);
+makeCompacting3("gregtech_block_compress_uranium235", <gregtech:meta_block_compressed_4:12>, <gregtech:meta_item_1:10076>); //Uranium 235 Block
 
 recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.uranium._235");
 makeCompacting3("nuclearcraft_item.nuclearcraft.uranium._235", <nuclearcraft:uranium:4>, <nuclearcraft:uranium:6>);
@@ -872,7 +872,7 @@ recipes.removeByRecipeName("gregtech:nugget_assembling_plutonium241");
 makeCompacting3("gregtech_nugget_assembling_plutonium241", <gregtech:meta_item_1:10053>, <gregtech:meta_item_1:9053>);
 
 recipes.removeByRecipeName("gregtech:block_compress_plutonium241");
-makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:compressed_2:8>, <gregtech:meta_item_1:10053>);
+makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:meta_block_compressed_3:5>, <gregtech:meta_item_1:10053>); //Plutonium 241 block
 
 recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.plutonium._241");
 makeCompacting3("nuclearcraft_item.nuclearcraft.plutonium._235", <nuclearcraft:plutonium:8>, <nuclearcraft:plutonium:10>);
@@ -1149,7 +1149,7 @@ fluid_extractor.recipeBuilder()
 
 //Plutonium 244 Block (GTCE)
 fluid_extractor.recipeBuilder()
-    .inputs(<gregtech:compressed_2:7>)
+    .inputs(<gregtech:meta_block_compressed_3:4>) //Plutonium Block
     .fluidOutputs(<liquid:plutonium> * 1296)
     .duration(720).EUt(32).buildAndRegister();
 
