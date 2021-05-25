@@ -21,10 +21,6 @@ recipes.addShaped(<thermalfoundation:tool.shears_wood>, [[null,<minecraft:stick>
 //Rubber Tree
 recipes.addShapeless(<gregtech:sapling>, [<ore:treeSapling>,<gregtech:meta_item_1:32627>]);
 
-//Fertilizer
-recipes.remove(<forestry:fertilizer_compound>);
-recipes.addShaped(<forestry:fertilizer_compound> * 8, [[<minecraft:sand>,<gregtech:meta_item_1:8226>,<minecraft:sand>]]);
-
 
 recipes.remove(<dimensionaledibles:overworld_cake>);
 recipes.remove(<dimensionaledibles:nether_cake>);
@@ -47,6 +43,15 @@ recipes.addShaped(<dimensionaledibles:nether_cake>, [[<gregtech:meta_item_1:2333
 
 //End Cake
 recipes.addShaped(<dimensionaledibles:end_cake>, [[<ore:dustEndstone>,<ore:dustEndstone>,<ore:dustEndstone>], [<minecraft:ender_eye>, <enderio:item_material:70>, <minecraft:ender_eye>],[<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>]]);
+<dimensionaledibles:end_cake>.addTooltip(format.darkAqua(format.italic("Refill using Eyes of Ender.")));
+
+//Voidworld Cake
+recipes.addShaped(<dimensionaledibles:custom_cake>.withTag({dimID: 119, cakeName: "Void World"}), [[<actuallyadditions:item_crystal>,<actuallyadditions:item_crystal:1>,<actuallyadditions:item_crystal:4>], [<ore:dustPulsating>, <enderio:item_material:70>, <ore:dustPulsating>],[<gregtech:meta_item_1:12001>,<gregtech:meta_item_1:12001>,<gregtech:meta_item_1:12001>]]);
+<dimensionaledibles:custom_cake>.withTag({dimID: 119, cakeName: "Void World"}).addTooltip(format.darkAqua(format.italic("Refill using Pulsating Dust.")));
+
+mods.jei.JEI.addItem(<dimensionaledibles:custom_cake>.withTag({dimID: 119, cakeName: "Void World"}));
+
+
 
 //Void World Cake
 makeShaped("of_void_cake", <dimensionaledibles:custom_cake>.withTag({dimID: 119, cakeName: "Void World"}),
