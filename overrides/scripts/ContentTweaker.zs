@@ -10,6 +10,7 @@ import mods.contenttweaker.AxisAlignedBB;
 
 import mods.contenttweaker.IItemFoodEaten;
 import crafttweaker.potions.IPotion;
+import crafttweaker.oredict.IOreDict;
 
 
 var smallgearextrudershape = VanillaFactory.createItem("smallgearextrudershape");
@@ -703,3 +704,12 @@ for smingot in smingots {
 
     foodRep.register();
 }
+
+// Forestry removal items
+var pulsatingdust = VanillaFactory.createItem("pulsatingdust");
+pulsatingdust.maxStackSize = 64;
+pulsatingdust.register();
+
+var pulsatingmesh = VanillaFactory.createItem("pulsatingmesh");
+pulsatingmesh.maxStackSize = 64;
+pulsatingmesh.register();
