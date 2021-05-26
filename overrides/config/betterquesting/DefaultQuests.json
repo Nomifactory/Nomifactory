@@ -6479,7 +6479,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Sulfuric Acid§r is produced from §6Sulfur§r and §9Water§r. You\u0027ll need huge amounts of this for a whole range of chemical reactions, as it is a very common ingredient.\n\nSulfur can be electrolyzed from many things, but is also easily available via §bDeepMobLearning§r\u0027s §aBlaze Model§r.",
+          "desc:8": "§9Sulfuric Acid§r is produced from §6Sulfur§r and §9Water§r, albeit very slowly. You\u0027ll need huge amounts of this for a whole range of chemical reactions, as it is a very common ingredient.\n\nIf you have excess §9Oxygen§r, you could instead look into making §9Sulfuric Acid§r with §9Sulfur Trioxide§r, as it is much quicker.\n\nSulfur can be electrolyzed from many things, but is also easily available via §bDeep Mob Learning§r\u0027s §aBlaze Model§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6917,7 +6917,7 @@
           "lockedprogress:1": 1,
           "name:8": "Engineering Processor",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -7050,7 +7050,7 @@
           "lockedprogress:1": 1,
           "name:8": "Logic Processor",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -7263,7 +7263,7 @@
           "lockedprogress:1": 1,
           "name:8": "Calculation Processor",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -11463,7 +11463,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Sodium Hydroxide§r is an ingredient in §9Bio Diesel§r.\n\nThe primary sources are:\n\n- Combining §9Water§r and §6Sodium§r in a §3Chemical Reactor§r (also a good source of §9Hydrogen§r)\n- Splitting §9Salt Water§r in an §3Electrolyzer§r (also the best source of §9Chlorine§r).",
+          "desc:8": "§6Sodium Hydroxide§r is an ingredient in §9Bio Diesel§r.\n\nThe primary sources are:\n\n- Combining §9Water§r and §6Sodium§r in a §3Chemical Reactor§r (also a good source of §9Hydrogen§r)\n- Splitting §9Salt Water§r in an §3Electrolyzer§r (also a good source of §9Chlorine§r).\n- Combining §6Sodium Bisulfate§r and §9Water§r in a §3Chemical Reactor§r (The production of §6Sodium Bisulfate§r also yields a little §9Hydrochloric Acid§r)",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -11625,7 +11625,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The reaction that produces §9Bio Diesel§r is also the only source of §9Glycerol§r, which is an easy way to make §9Epichlorohydrin§r, an important ingredient of §9Epoxy§r.\n\nEven if you\u0027re otherwise going all in on petrochemistry for Epoxy, you\u0027ll probably end up with some Bio Diesel as a result of making Glycerol.\n\nBio Diesel can be used for power, but is probably better to convert to §9Nitro Diesel§r§r.",
+          "desc:8": "The reaction that produces §9Bio Diesel§r is also the only source of §9Glycerol§r, which is an easy way to make §9Epichlorohydrin§r, an important ingredient of §9Epoxy§r.\n\n§9Glycerol§r is also used in the production of §9§9Glycerol Trinitrate§r, an important step in making §6Dynamite§r, which can be used later in the §9§r§3Implosion Compressor§r.\n\nEven if you\u0027re otherwise going all in on petrochemistry for Epoxy, you\u0027ll probably end up with some Bio Diesel as a result of making Glycerol.\n\nBio Diesel can be used for power, but is probably better to convert to §9Nitro Diesel§r§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12057,7 +12057,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Nitric Acid§r, §9Ethenone§r, and §9Acetic Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r.",
+          "desc:8": "This is the additive that will bring our diesel fuel to the next level.\n\nMix §9Nitric Acid§r and §9Ethenone§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r.\n\nIn a newly added route, you can also mix §9Nitric Acid§r and §9Methyl Acetate§r in a §3Chemical Reactor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12277,7 +12277,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "There are several paths to §9Acetic Acid§r... probably the simplest is combining §9Oxygen§r, §9Hydrogen§r, and §6Carbon§r, but one of the several other methods may appeal to you more.\n\nLook through §bJEI§r for the various options.",
+          "desc:8": "There are several paths to §9Acetic Acid§r... probably the simplest is combining §9Oxygen§r, §9Hydrogen§r, and §6Carbon§r, but one of the several other methods may appeal to you more, especially if you have a §3Distillation Tower§r.\n\nLook through §bJEI§r for the various options.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12294,7 +12294,7 @@
           "lockedprogress:1": 1,
           "name:8": "Acetic Acid",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -23396,7 +23396,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The full complexity of §bNuclearCraft§r is far too much for the scope of this quest guide, so §eyou\u0027re encouraged to watch a tutorial or read a guide online§r. For the purposes of this particular quest, you\u0027ll be building a cheap breeder reactor to make §6Plutonium§r. This is a very basic reactor and can be changed to run faster and safer.\n\nFirst, set up your 54 §6Reactor Casings§r to encase a 3x3 cube shape of empty air. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 3x3 space.\n\nNext, create a hole so you can get inside the cube. Place the §6Reactor Cells§r in all 8 corners. Then the §6Lapis Coolers§r will go between them: 4 on the top layer and 4 on the bottom layer. At this point, the top and bottom layers should have eight blocks each with an empty middle, and the middle layer is fully empty. In the middle layer, place the 4 §6Graphite Blocks§r on the corners, and the 4 §6Glowstone Coolers§r on the sides (so they touch both Lapis Coolers). Now the cube should be full, except for an empty column in the middle. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior.\n\nFinally, place the §3Fission Reactor Controller§r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong.\n\nThe lever is placed on the reactor, as a redstone signal is required for it to start working. §cReactors can overheat and melt if the temperature exceeds its ability to cool.§r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a §aRedstone Conduit§r, a §aRedstone Sensor Filter§r (on the input channel), and a §aRedstone NOT Filter§r (on the output channel). Make sure input and output are on the same channel color.",
+          "desc:8": "The full complexity of §bNuclearCraft§r is far too much for the scope of this quest guide, so §eyou\u0027re encouraged to watch a tutorial or read a guide online§r. For the purposes of this particular quest, you\u0027ll be building a cheap breeder reactor to make §6Plutonium§r. This is a very basic reactor and can be changed to run faster and safer. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack.\n\nFirst, set up your 54 §6Reactor Casings§r to encase a 3x3 cube shape of empty air. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 3x3 space.\n\nNext, create a hole so you can get inside the cube. Place the §6Reactor Cells§r in all 8 corners. Then the §6Lapis Coolers§r will go between them: 4 on the top layer and 4 on the bottom layer. At this point, the top and bottom layers should have eight blocks each with an empty middle, and the middle layer is fully empty. In the middle layer, place the 4 §6Graphite Blocks§r on the corners, and the 4 §6Glowstone Coolers§r on the sides (so they touch both Lapis Coolers). Now the cube should be full, except for an empty column in the middle. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior.\n\nFinally, place the §3Fission Reactor Controller§r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong.\n\nThe lever is placed on the reactor, as a redstone signal is required for it to start working. §cReactors can overheat and melt if the temperature exceeds its ability to cool.§r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a §aRedstone Conduit§r, a §aRedstone Sensor Filter§r (on the input channel), and a §aRedstone NOT Filter§r (on the output channel). Make sure input and output are on the same channel color.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26426,7 +26426,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You can easily automate most §bGregTech§r machines with §aME Interfaces§r and processing §aPatterns§r early on by using the machines\u0027 auto-output feature.\n\nUse a §aGregTech Wrench§r to relocate the output side of a machine where you want it to be, right-click it with a §aGregTech Screwdriver§r to permit input on the output face, then put an ME Interface on that side of the machine.\n\nRight-click the machine and enable item auto-output (§6orange box§r in the bottom-left corner of the GUI).\n\nNow, stuff the ME Interface with processing patterns. The next time you order an item, the ME Interface will push ingredients into the machine, and the machine will push outputs back into the Interface once they\u0027re ready, completing the craft. No need to use conduits or import buses!",
+          "desc:8": "You can easily automate most §bGregTech§r machines with §aME Interfaces§r and processing §aPatterns§r early on by using the machines\u0027 auto-output feature.\n\nUse a §aGregTech Wrench§r to relocate the output side of a machine where you want it to be, right-click it with a §aGregTech Screwdriver§r to permit input on the output face, then put an ME Interface on that side of the machine.\n\nYou can also permit input from the output side by shift-right-clicking with a screwdriver on the output side via the machine grid.\n\nRight-click the machine and enable item auto-output (§6orange box§r in the bottom-left corner of the GUI).\n\nNow, stuff the ME Interface with processing patterns. The next time you order an item, the ME Interface will push ingredients into the machine, and the machine will push outputs back into the Interface once they\u0027re ready, completing the craft. No need to use conduits or import buses!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33856,7 +33856,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Note: this quest accepts both LV and MV Distillery.\n\nIf you don\u0027t feel up to making a §3Distillation Tower§r just yet, you can get §9Ethanol§r via a single block §3Distillery§r, a machine that gets one fluid and §cvoids the rest§r (in this case, Water). This defers the tower for a little while longer.\n\nHowever, the Distillation Tower is mandatory for advanced chemistry, as most things have more than one important output: §9Fermented Biomass§r, §9Charcoal Byproducts§r from your §3Pyrolyse Oven§r, and the entire line of petrochemicals from §9Oil§r, to name a few.\n\nCan\u0027t avoid it forever!\n\n",
+          "desc:8": "Note: this quest accepts both LV and MV Distillery.\n\nIf you don\u0027t feel up to making a §3Distillation Tower§r just yet, you can get §9Ethanol§r via a single block §3Distillery§r, a machine that gets one fluid output per §6Integrated Circuit§r configuration, while the §3Distillation Tower§r gives all possible outputs for the input fluid. This defers the tower for a little while longer.\n\nHowever, the Distillation Tower is mandatory for advanced chemistry, as most things have more than one important output: §9Fermented Biomass§r, §9Charcoal Byproducts§r from your §3Pyrolyse Oven§r, and the entire line of petrochemicals from §9Oil§r, to name a few.\n\nCan\u0027t avoid it forever!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
