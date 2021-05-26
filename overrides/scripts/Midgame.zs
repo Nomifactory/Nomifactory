@@ -257,7 +257,7 @@ mods.enderio.Vat.addRecipe(<liquid:ender_distillation> * 1000, 0.5, <liquid:ende
 mods.enderio.SoulBinder.addRecipe(<simplyjetpacks:metaitemmods:6>, <simplyjetpacks:metaitemmods:5>, ["ghast"], 75000, 300);
 
 assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:18>]).fluidInputs([<liquid:glowstone> * 4320]).outputs([<simplyjetpacks:metaitemmods:19>]).duration(2000).EUt(3000).buildAndRegister();
-assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs([<liquid:cryotheum> * 4320]).outputs([<simplyjetpacks:metaitemmods:21>]).duration(2000).EUt(8000).buildAndRegister();
+assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs([<liquid:cryotheum> * 7500]).outputs([<simplyjetpacks:metaitemmods:21>]).duration(2000).EUt(8000).buildAndRegister();
 
 
 //Gear Boxes Via Assembler
