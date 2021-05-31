@@ -1,6 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 /*
 
@@ -473,3 +474,24 @@ recipes.addShapeless(<enderio:block_cap_bank:3>, [<enderio:block_cap_bank:3>]);
 
 //Temporary Fix for the Flight Control Unit Recipe
 mods.enderio.SoulBinder.addRecipe(<simplyjetpacks:metaitemmods:6>, <simplyjetpacks:metaitemmods:5>, ["minecraft:bat"], 75000, 8);
+
+//Bonused Ender IO Light recipes
+makeShaped("enderio_light_glowstone", <enderio:block_electric_light> * 2,
+    ["GGG",
+     "WDW",
+     "WCW"],
+    { W : <metaitem:wafer.glowstone>,
+      D : <ore:dustGlowstone>,
+      G : <ore:fusedQuartz>,
+      C : <enderio:item_basic_capacitor:1>
+      });
+
+makeShaped("enderio_light_naquadah", <enderio:block_electric_light> * 4,
+    ["GGG",
+     "WDW",
+     "WCW"],
+    { W : <metaitem:wafer.naquadah>,
+      D : <ore:dustGlowstone>,
+      G : <ore:fusedQuartz>,
+      C : <enderio:item_basic_capacitor:2>
+      });
