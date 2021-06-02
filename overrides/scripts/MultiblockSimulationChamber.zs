@@ -20,6 +20,9 @@ import crafttweaker.world.IFacing;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemCondition;
 
+import scripts.CommonVars.makeShaped as makeShaped;
+
+
 // from DML's config
 val mobs as int[string] = {
 //  mob                 RF/t
@@ -126,7 +129,7 @@ val sim_chamber_multiblock = Builder.start(name, 2003)
                                     MultiblockAbility.INPUT_ENERGY,
                                     MultiblockAbility.IMPORT_ITEMS,
                                     MultiblockAbility.EXPORT_ITEMS))
-            .where("C", <minecraft:coal_block>)
+            .where("C", <contenttweaker:simulation_casing>)
             .where("G", <metastate:thermalfoundation:storage_alloy:7> /* enderium */)
             .where("-", <deepmoblearning:simulation_chamber>)
             .where("S", IBlockMatcher.controller(name))
@@ -166,7 +169,7 @@ val sim_chamber_multiblock = Builder.start(name, 2003)
                 "OGOGO",
                 "OOOOO")
             .where("O", naquadahState)
-            .where("C", <minecraft:coal_block>)
+            .where("C", <contenttweaker:simulation_casing>)
             .where("G", <metastate:thermalfoundation:storage_alloy:7> /* enderium */)
             .where("-", <deepmoblearning:simulation_chamber>)
             .where("S", IBlockInfo.controller(name))
@@ -237,3 +240,15 @@ for mob, cost in mobs {
             .buildAndRegister();
     }
 }
+
+
+//Recipe for Naquadah-Plated Dark Steel Casing
+makeShaped("simulation_casing", <contenttweaker:simulation_casing>,
+    ["SPS",
+     "PCP",
+     "SPS"],
+    { S : <metaitem:screwNaquadahAlloy>,
+      P : <metaitem:plateNaquadahAlloy>,
+      C : <deepmoblearning:machine_casing>
+      });
+
