@@ -31,3 +31,4 @@ gregtech.recipe.chance=Chance: %s%%; doubled each tier
 # Multiblock Simulation Chamber
 multiblocktweaker.machine.dml_sim_chamber.name=Simulation Supercomputer
 multiblocktweaker.multiblock.dml_sim_chamber.description=A high powered simulation device, capable of performing more complex simulations faster than ever.
+recipemap.dml_sim_chamber.name=Simulation Supercomputer
