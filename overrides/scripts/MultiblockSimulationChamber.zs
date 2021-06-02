@@ -252,3 +252,14 @@ makeShaped("simulation_casing", <contenttweaker:simulation_casing>,
       C : <deepmoblearning:machine_casing>
       });
 
+//Recipe for Controller
+makeShaped("simulation_controller", <gregtech:machine:2003>,
+    ["MHM",
+     "PCP",
+     "PEP"],
+    { M : <deepmoblearning:pristine_matter_dragon>,
+      P : <metaitem:plateNeutronium>,
+      C : <deepmoblearning:machine_casing>,
+      E : <draconicevolution:draconic_energy_core>,
+      H : <draconicevolution:dragon_heart>
+      });
