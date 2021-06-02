@@ -49,8 +49,6 @@ recipes.addShaped(<dimensionaledibles:nether_cake>, [[<gregtech:meta_item_1:2333
 recipes.addShaped(<dimensionaledibles:end_cake>, [[<ore:dustEndstone>,<ore:dustEndstone>,<ore:dustEndstone>], [<minecraft:ender_eye>, <enderio:item_material:70>, <minecraft:ender_eye>],[<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>,<gregtech:meta_item_1:12231>]]);
 
 //Void World Cake
-//recipes.addShaped(<dimensionaledibles:custom_cake>.withTag({dimID: 119, cakeName: "Void World"}), [[<actuallyadditions:item_crystal>,<actuallyadditions:item_crystal:1>,<actuallyadditions:item_crystal:4>], [<forestry:crafting_material>, <enderio:item_material:70>, <forestry:crafting_material>],[<gregtech:meta_item_1:12001>,<gregtech:meta_item_1:12001>,<gregtech:meta_item_1:12001>]]);
-
 makeShaped("of_void_cake", <dimensionaledibles:custom_cake>.withTag({dimID: 119, cakeName: "Void World"}),
 	["ABC",
 	 "DED",
