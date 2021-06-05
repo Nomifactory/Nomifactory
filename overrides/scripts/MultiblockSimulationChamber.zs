@@ -124,12 +124,12 @@ val sim_chamber_multiblock = Builder.start(name, 2003)
                 "OGCCO",
                 "OOOOO")
             .whereOr("O",
-                naquadahState as IBlockMatcher,
+                <metastate:contenttweaker:simulation_casing> as IBlockMatcher,
                 IBlockMatcher.abilityPartPredicate(
                                     MultiblockAbility.INPUT_ENERGY,
                                     MultiblockAbility.IMPORT_ITEMS,
                                     MultiblockAbility.EXPORT_ITEMS))
-            .where("C", <contenttweaker:simulation_casing>)
+            .where("C", <contenttweaker:simulation_casing_2>)
             .where("G", <metastate:thermalfoundation:storage_alloy:7> /* enderium */)
             .where("-", <deepmoblearning:simulation_chamber>)
             .where("S", IBlockMatcher.controller(name))
@@ -168,8 +168,8 @@ val sim_chamber_multiblock = Builder.start(name, 2003)
                 "OOOOO",
                 "OGOGO",
                 "OOOOO")
-            .where("O", naquadahState)
-            .where("C", <contenttweaker:simulation_casing>)
+            .where("O", <contenttweaker:simulation_casing>)
+            .where("C", <contenttweaker:simulation_casing_2>)
             .where("G", <metastate:thermalfoundation:storage_alloy:7> /* enderium */)
             .where("-", <deepmoblearning:simulation_chamber>)
             .where("S", IBlockInfo.controller(name))
@@ -263,3 +263,16 @@ makeShaped("simulation_controller", <gregtech:machine:2003>,
       E : <draconicevolution:draconic_energy_core>,
       H : <draconicevolution:dragon_heart>
       });
+
+makeShaped("simulation_casing_two", <contenttweaker:simulation_casing_2>,
+    ["III",
+     "IWI",
+     "III"],
+    { I : <metaitem:plateNaquadah>,
+      W : <ore:gtceWrenches>
+      });
+
+assembler.recipeBuilder()
+    .inputs(<metaitem:plateNaquadah> * 4)
+    .outputs(<contenttweaker:simulation_casing_2>)
+    .duration(200).EUt(30).buildAndRegister();

@@ -708,3 +708,6 @@ for smingot in smingots {
 
 var simulation_casing = VanillaFactory.createBlock("simulation_casing", <blockmaterial:iron>);
 simulation_casing.register();
+
+var simulation_casing_2 = VanillaFactory.createBlock("simulation_casing_2", <blockmaterial:iron>);
+simulation_casing_2.register();

@@ -231,3 +231,4 @@ item.contenttweaker.hand_framing_tool.desc5=Optionally, the tool can be filled w
 item.contenttweaker.hand_framing_tool.desc6=The tool can then be used to convert existing unframed drawers into framed drawers, consuming 8 sticks to do so.
 
 tile.contenttweaker.simulation_casing.name=Naquadah-Plated Dark Steel Machine Casing
+tile.contenttweaker.simulation_casing_2.name=Naquadah Casing
