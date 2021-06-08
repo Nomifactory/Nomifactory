@@ -12617,7 +12617,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Carbon Fibers§r are useful for a variety of things.\n\nTo make them, you should use an §3HV Autoclave§r or better to ensure a 100% chance of producing them, as they are a chanced output with a base success rate of 85% at MV.\n\nBecause they are a chanced output, you also need to §etake care not to let this machine\u0027s output fill up: it will continue to process, §cvoiding any outputs §ethere isn\u0027t room for!",
+          "desc:8": "§6Carbon Fibers§r are useful for a variety of things.\n\nTo make them, you should use an §3HV Autoclave§r or better to ensure a 100% chance of producing them, as they are a chanced output with a base success rate of 85% at MV.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
