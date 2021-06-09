@@ -21877,7 +21877,7 @@
           "lockedprogress:1": 1,
           "name:8": "Europium Ingot",
           "partysinglereward:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -26381,7 +26381,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All GregTech machines have one dedicated output side, which can be set by right-clicking a side with a §aGregTech Wrench§f. This is used for ejecting items into an adjacent inventory.\n\nTo enable auto-output, open the machine GUI and click one of the buttons in the bottom-left corner: §6orange§r is items and §9blue§r is fluids.\n\nIf you want to also be able to insert items into the output side, you\u0027ll have to right-click the output side with a §aGregTech Screwdriver§r.\n\nThese features can be used to chain machines together to make processing pipelines and facilitate crafting automation with §bApplied Energistics 2§f.",
+          "desc:8": "All GregTech machines have one dedicated output side, which can be set by right-clicking a side with a §aGregTech Wrench§f. This is used for ejecting items into an adjacent inventory.\n\nTo enable auto-output, open the machine GUI and click one of the buttons in the bottom-left corner: §6orange§r is items and §9blue§r is fluids.\n\nIf you want to also be able to insert items into the output side, you\u0027ll have to right-click the output side with a §aGregTech Screwdriver§r.\n\nThis can be done by directly right clicking on the output side with a screwdriver, or §6shift right-clicking§r with a screwdriver from the machine grid.\n\nThese features can be used to chain machines together to make processing pipelines and facilitate crafting automation with §bApplied Energistics 2§f.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47997,7 +47997,6 @@
     },
     "790:10": {
       "preRequisites:11": [
-        60,
         69
       ],
       "properties:10": {
@@ -49446,8 +49445,8 @@
           "id:3": 790,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -660,
-          "y:3": 372
+          "x:3": -516,
+          "y:3": 336
         }
       }
     },
