@@ -413,19 +413,6 @@ alloy.recipeBuilder()
 
 // Suit Workstation
 recipes.remove(<advancedrocketry:suitworkstation>);
-makeShaped("ar_suit_workstation_legacy",
-	<advancedrocketry:suitworkstation>, [
-		"RTR",
-		"CXC",
-		"WWW",
-	], {
-		T: <avaritia:compressed_crafting_table>, // Compressed Crafting Table
-		R: <metaitem:robot.arm.mv>, // MV Robot Arm
-		C: <ore:circuitGood>,       // T2 Circuit
-		X: <gregtech:machine:502>,  // MV Machine Hull
-		W: <forestry:worktable>,    // Worktable
-	});
-
 makeShaped("ar_suit_workstation",
 	<advancedrocketry:suitworkstation>, [
 		"RTR",

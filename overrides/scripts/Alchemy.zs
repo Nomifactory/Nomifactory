@@ -21,6 +21,8 @@ recipes.addShaped(<thermalfoundation:tool.shears_wood>, [[null,<minecraft:stick>
 //Rubber Tree
 recipes.addShapeless(<gregtech:sapling>, [<ore:treeSapling>,<gregtech:meta_item_1:32627>]);
 
+//Fertilizer 
+recipes.addShaped("actuallyadditions_fertilizer", <actuallyadditions:item_fertilizer> * 8, [[<minecraft:sand>,<gregtech:meta_item_1:8226>,<minecraft:sand>]]);
 
 recipes.remove(<dimensionaledibles:overworld_cake>);
 recipes.remove(<dimensionaledibles:nether_cake>);
