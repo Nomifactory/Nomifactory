@@ -10,7 +10,6 @@ import mods.contenttweaker.AxisAlignedBB;
 
 import mods.contenttweaker.IItemFoodEaten;
 import crafttweaker.potions.IPotion;
-import crafttweaker.oredict.IOreDict;
 
 
 var smallgearextrudershape = VanillaFactory.createItem("smallgearextrudershape");
