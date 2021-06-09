@@ -2,6 +2,8 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+import scripts.CommonVars.makeShaped as makeShaped;
+
 /*
 
   EnderIO Removals
@@ -199,7 +201,7 @@ alloy.recipeBuilder()
     .outputs([<enderio:block_dark_fused_quartz:0>])
     .duration(200)
     .EUt(32)
-    .buildAndRegister();	
+    .buildAndRegister();
 
 recipes.addShaped(compressedoctadiccap, [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
@@ -210,7 +212,7 @@ recipes.addShaped(doublecompressedoctadiccap, [
 	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
 	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
 	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap]]);
-	
+
 //Replace old compressed capacitors with functional ones
 recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccapacitor>]);
 recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
@@ -229,8 +231,17 @@ mods.jei.JEI.addItem(doublecompressedoctadiccap);
 
 var bonus = 1 as int;
 var cost  = 20000 as int;
+var capacitors as IItemStack[] = [
+    <enderio:item_basic_capacitor:1>,
+    <enderio:item_basic_capacitor:2>
+];
 
-for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IItemStack[] {
+var wafers as IItemStack[] = [
+    <gregtech:meta_item_2:32441>,
+    <gregtech:meta_item_2:32442>
+];
+
+for i, wafer in wafers {
     bonus = bonus * 2;
     cost  = cost  * 2;
 
@@ -257,6 +268,18 @@ for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IIt
         <enderio:item_alloy_ingot:1>      , <minecraft:prismarine_shard> , <enderio:item_alloy_ingot:1>
         , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
     ], cost);
+
+    // EnderIO Light
+    makeShaped("enderio_light_" + bonus, <enderio:block_electric_light> * bonus, [
+        "GGG",
+        "WDW",
+        "WCW"
+    ], {
+        W: wafer,
+        D: <ore:dustGlowstone>,
+        G: <ore:fusedQuartz>,
+        C: capacitors[i]
+    });
 }
 
 
