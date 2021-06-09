@@ -6,14 +6,17 @@
     "useAltWhenFlying": true
   },
   "rendering": {
+    "hideVBOWarning": false,
+    "hideMipmapWarning": false,
     "useQuadCache": false,
     "useCubeCache": true,
-    "hideParticleBlock": false,
     "renderingThreadCount": 2,
     "highlightStructureBox": true,
     "previewLines": false,
     "previewLineThickness": 2,
     "enableRandomDisplayTick": false,
-    "uploadToVBODirectly": true
+    "uploadToVBODirectly": true,
+    "showTooltip": true,
+    "enhancedResorting": true
   }
 }
