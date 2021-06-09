@@ -125,4 +125,4 @@ recipes.remove(<forestry:worktable>);
 recipes.addShapeless("crafting_station_legacy", <gregtech:machine:825>, [<forestry:worktable>]);
 recipes.addShapeless("pulsating_dust_legacy", <contenttweaker:pulsatingdust>, [<forestry:crafting_material:0>]);
 recipes.addShapeless("pulsating_mesh_legacy", <contenttweaker:pulsatingmesh>, [<forestry:crafting_material:1>]);
-recipes.addShapeless("fertilizer_legacy", <minecraft:dye:15>, [<forestry:fertilizer_compound>]);
+recipes.addShapeless("fertilizer_legacy", <actuallyadditions:item_fertilizer>, [<forestry:fertilizer_compound>]);
