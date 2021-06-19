@@ -41293,7 +41293,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium 235 Fuel (or §6LEU-235§r, for short). This fuel uses an 8:1 ratio of U238 to U235.\n\nThis fuel is processed in your §3Fission Reactor§r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you\u0027ll get a §6Depleted LEU-235 Fuel§r§r.\n\nKeep in mind that power generation is §nnot§r§r the goal: the duration of all fuels is quite short in §5Omnifactory§r. What you want are the next fissile materials in the chain.\n\nThe depleted fuel is separated in a regular §3Centrifuge§r, resulting in many tiny clumps of fissile materials: Uranium 238, §6Neptunium 237§r, §6§6Plutonium 239§r, and §6Plutonium 241§r.",
+          "desc:8": "When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium 235 Fuel (or §6LEU-235§r, for short). This fuel uses an 8:1 ratio of U238 to U235.\n\nThis fuel is processed in your §3Fission Reactor§r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you\u0027ll get a §6Depleted LEU-235 Fuel§r§r.\n\nThe depleted fuel is separated in a regular §3Centrifuge§r, resulting in many tiny clumps of fissile materials: Uranium 238, §6Neptunium 237§r, §6§6Plutonium 239§r, and §6Plutonium 241§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
