@@ -40,6 +40,7 @@ val mobs as int[string] = {
     "dragon":           6666,
     "shulker":          512,
     "guardian":         1024,
+    "thermal_elemental": 1024
 };
 
 val pristine_types as IItemStack[string] = {
@@ -57,7 +58,8 @@ val pristine_types as IItemStack[string] = {
     "wither":           <deepmoblearning:living_matter_extraterrestrial>,
     "dragon":           <deepmoblearning:living_matter_extraterrestrial>,
     "shulker":          <deepmoblearning:living_matter_extraterrestrial>,
-    "guardian":         <deepmoblearning:living_matter_overworldian>
+    "guardian":         <deepmoblearning:living_matter_overworldian>,
+    "thermal_elemental": <deepmoblearning:living_matter_overworldian>
 };
 
 val model_prefix = "deepmoblearning:data_model_";
