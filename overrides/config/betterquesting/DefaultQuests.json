@@ -4212,8 +4212,7 @@
     },
     "61:10": {
       "preRequisites:11": [
-        65,
-        769
+        192
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8107,8 +8106,8 @@
     },
     "118:10": {
       "preRequisites:11": [
-        101,
-        102
+        102,
+        64
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17923,9 +17922,8 @@
     },
     "265:10": {
       "preRequisites:11": [
-        54,
-        263,
-        266
+        783,
+        263
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17990,8 +17988,7 @@
     },
     "266:10": {
       "preRequisites:11": [
-        10,
-        529
+        71
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -26841,25 +26838,22 @@
       }
     },
     "410:10": {
-      "preRequisites:11": [
-        409,
-        58
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Battery Buffers§r are §bGregTech machines§r which can be filled with §aEU Batteries§r to provide §eone amp of power per battery they contain§r. These come in 1§r, 4§r, 9§r, and 16-slot§r variations.",
+          "desc:8": "",
           "globalshare:1": 0,
           "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 617,
+            "Count:3": 0,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "gregtech:machine"
+            "id:8": "minecraft:air"
           },
           "ismain:1": 0,
-          "issilent:1": 0,
-          "lockedprogress:1": 1,
-          "name:8": "Battery Buffers",
+          "issilent:1": 1,
+          "lockedprogress:1": 0,
+          "name:8": "Gap",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -26868,41 +26862,15 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "UNLOCKED"
+          "visibility:8": "HIDDEN"
         }
       },
       "questID:3": 410,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "contenttweaker:omnicoin5"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {
         "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 617,
-              "OreDict:8": "",
-              "id:8": "gregtech:machine"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     },
@@ -37201,7 +37169,8 @@
     },
     "606:10": {
       "preRequisites:11": [
-        607
+        607,
+        802
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -45588,7 +45557,8 @@
     },
     "749:10": {
       "preRequisites:11": [
-        325
+        325,
+        802
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -47006,14 +46976,14 @@
             "id:8": "minecraft:air"
           },
           "ismain:1": 0,
-          "issilent:1": 0,
+          "issilent:1": 1,
           "lockedprogress:1": 0,
           "name:8": "Diesel or Bio-Diesel",
           "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_complete:8": "",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "OR",
           "visibility:8": "ALWAYS"
@@ -47542,14 +47512,14 @@
             "id:8": "minecraft:air"
           },
           "ismain:1": 1,
-          "issilent:1": 0,
+          "issilent:1": 1,
           "lockedprogress:1": 0,
           "name:8": "\"Deuterium\" or \"I Don\u0027t Like Space\"",
           "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_complete:8": "",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
           "visibility:8": "ALWAYS"
@@ -47561,24 +47531,24 @@
     },
     "783:10": {
       "preRequisites:11": [
-        13,
-        12
+        54,
+        266
       ],
       "properties:10": {
         "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "Slightly more expensive than the §3Forestry§r Worktable is the §6Crafting Station§r from §3Gregtech§r.\n\nThe Crafting Station is similar to the Worktable in that it can store and lock recipes in it so that you can easily go back and craft those recipes later. It also has an internal inventory like the Forestry Workbench.\n\nThere are several advantages that the §6Crafting Station§r has over the Worktable though. The Crafting Station has a dedicated tool row, to store all your §3Gregtech§r tools that you will be using in recipes. In addition, the Crafting Station can pull ingredients from neighboring inventories to complete recipes. \n\nThe available ingredients from neighboring inventories are visible through the §eStorage§r tab on the Crafting Station, and you can also place items into this tab to send them to available neighboring inventories.",
+          "autoclaim:1": 1,
+          "desc:8": "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣿⣿⣿⣿⣿⣿⠿⠿⠟⠟⠛⠛⠻⠻⣿⣿⠆⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⣿⣿⣿⣿⣿⣿⣆⣆⣀⣀⣀⣀⠀⠀⣿⣿⠂⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⠻⠻⣿⣿⣿⣿⣿⣿⠅⠅⠛⠛⠋⠋⠈⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠘⢼⢼⣿⣿⣿⣿⣿⣿⣃⣃⠠⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣟⣟⡿⡿⠃⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣛⣛⣛⣛⣫⣫⡄⡄⠀⠀⢸⢸⣦⣦⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣠⣠⣴⣴⣾⣾⡆⡆⠸⠸⣿⣿⣿⣿⣿⣿⡷⡷⠂⠂⠨⠨⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣦⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⣤⣤⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⡇⡇⢀⢀⣿⣿⡿⡿⠋⠋⠁⠁⢀⢀⡶⡶⠪⠪⣉⣉⢸⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣇⠀⠀⠀⠀\n⠀⠀⢀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⡏⢸⢸⣿⣿⣷⣷⣿⣿⣿⣿⣷⣷⣦⣦⡙⡙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⡏⠀⠀⠀⠀\n⠀⠀⠈⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣇⢸⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣷⣦⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡇⠀⠀⠀⠀\n⠀⠀⢠⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡇⠀⠀⠀⠀\n⠀⠀⢸⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⣄⠀⠀\n⠀⠀⠸⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀\n⠀⠀⣠⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡿⠀⠀\n⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠃⠀⠀\n⠀⠀⢹⢹⣿⣿⣵⣵⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣯⡁⡁⠀⠀⠀⠀\n\nWe\u0027re no strangers to love,\nYou know the rules, and so do I!",
           "globalshare:1": 0,
           "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 825,
+            "Count:3": 0,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "gregtech:machine"
+            "id:8": "minecraft:air"
           },
           "ismain:1": 0,
-          "issilent:1": 0,
-          "lockedprogress:1": 1,
-          "name:8": "Better Workbench?",
+          "issilent:1": 1,
+          "lockedprogress:1": 0,
+          "name:8": "\"Arsenic\" and \"Quantum Eyes\"",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -47590,39 +47560,8 @@
         }
       },
       "questID:3": 783,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "contenttweaker:omnicoin5"
-            }
-          }
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 825,
-              "OreDict:8": "",
-              "id:8": "gregtech:machine"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      }
+      "rewards:9": {},
+      "tasks:9": {}
     },
     "784:10": {
       "preRequisites:11": [
@@ -48193,8 +48132,7 @@
     },
     "793:10": {
       "preRequisites:11": [
-        802,
-        803
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -48247,6 +48185,12 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
+              "Damage:2": 32010,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_2"
+            },
+            "1:10": {
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "minecraft:tnt"
@@ -48273,14 +48217,14 @@
             "id:8": "minecraft:air"
           },
           "ismain:1": 0,
-          "issilent:1": 0,
+          "issilent:1": 1,
           "lockedprogress:1": 0,
-          "name:8": "TNT or Dyanmite",
+          "name:8": "TNT or Dynamite",
           "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_complete:8": "",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
           "visibility:8": "ALWAYS"
@@ -48820,75 +48764,69 @@
     },
     "802:10": {
       "preRequisites:11": [
-        164,
-        165,
-        166,
-        801
+        243
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "How did you end up here?",
+          "desc:8": "§6Fusion Coils§r are the ninth and final coil material available, increasing your EBF\u0027s operating temperature to 9700K so it can process the most extreme materials.\n\nThese are also used as the core ring of the §3Mk2§r and §3Mk3 Fusion Reactor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 8,
             "OreDict:8": "",
-            "id:8": "minecraft:nether_star"
+            "id:8": "gregtech:wire_coil"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Get Your Toluene",
-          "questlogic:8": "OR",
+          "name:8": "Fusion Coils",
+          "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "HIDDEN"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 802,
-      "rewards:9": {},
-      "tasks:9": {}
-    },
-    "803:10": {
-      "preRequisites:11": [
-        352,
-        153
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "You shouldn\u0027t be here",
-          "globalshare:1": 0,
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": "",
-            "id:8": "minecraft:nether_star"
-          },
-          "ismain:1": 0,
-          "issilent:1": 0,
-          "lockedprogress:1": 1,
-          "name:8": "Gell Your Toluene",
-          "questlogic:8": "OR",
-          "repeat_relative:1": 1,
-          "repeattime:3": -1,
-          "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
-          "visibility:8": "HIDDEN"
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
         }
       },
-      "questID:3": 803,
-      "rewards:9": {},
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": "",
+              "id:8": "gregtech:wire_coil"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "804:10": {
+    "803:10": {
       "preRequisites:11": [
         286,
         107
@@ -49732,8 +49670,8 @@
           "id:3": 92,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -248,
-          "y:3": 324
+          "x:3": -180,
+          "y:3": 264
         },
         "34:10": {
           "id:3": 93,
@@ -50006,7 +49944,7 @@
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -234,
-          "y:3": 270
+          "y:3": 276
         },
         "73:10": {
           "id:3": 236,
@@ -50033,8 +49971,8 @@
           "id:3": 338,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -336,
-          "y:3": 288
+          "x:3": -288,
+          "y:3": 336
         },
         "77:10": {
           "id:3": 398,
@@ -50152,8 +50090,8 @@
           "id:3": 551,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -208,
-          "y:3": 324
+          "x:3": -180,
+          "y:3": 300
         },
         "94:10": {
           "id:3": 556,
@@ -50229,8 +50167,8 @@
           "id:3": 801,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -308,
-          "y:3": 180
+          "x:3": -336,
+          "y:3": 276
         }
       }
     },
@@ -51426,7 +51364,7 @@
           "id:3": 243,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 288,
+          "x:3": 240,
           "y:3": 336
         },
         "36:10": {
@@ -51538,7 +51476,7 @@
           "id:3": 324,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 288,
+          "x:3": 324,
           "y:3": 252
         },
         "52:10": {
@@ -51876,6 +51814,13 @@
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 168
+        },
+        "100:10": {
+          "id:3": 802,
+          "sizeX:3": 32,
+          "sizeY:3": 32,
+          "x:3": 188,
+          "y:3": 332
         }
       }
     },
@@ -52056,8 +52001,8 @@
           "id:3": 263,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -576,
-          "y:3": 96
+          "x:3": -528,
+          "y:3": 48
         },
         "23:10": {
           "id:3": 264,
@@ -52077,8 +52022,8 @@
           "id:3": 266,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -528,
-          "y:3": 48
+          "x:3": -576,
+          "y:3": 96
         },
         "26:10": {
           "id:3": 267,
@@ -52550,76 +52495,69 @@
           "y:3": 348
         },
         "93:10": {
+          "id:3": 783,
+          "sizeX:3": 0,
+          "sizeY:3": 0,
+          "x:3": -516,
+          "y:3": 108
+        },
+        "94:10": {
           "id:3": 791,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -438,
           "y:3": 42
         },
-        "94:10": {
+        "95:10": {
           "id:3": 792,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 8
         },
-        "95:10": {
+        "96:10": {
           "id:3": 793,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 120,
           "y:3": 8
         },
-        "96:10": {
+        "97:10": {
           "id:3": 794,
           "sizeX:3": 0,
           "sizeY:3": 0,
           "x:3": 84,
           "y:3": 20
         },
-        "97:10": {
+        "98:10": {
           "id:3": 795,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -216,
           "y:3": 221
         },
-        "98:10": {
+        "99:10": {
           "id:3": 796,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -216,
           "y:3": 156
         },
-        "99:10": {
+        "100:10": {
           "id:3": 797,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -180,
           "y:3": 156
         },
-        "100:10": {
+        "101:10": {
           "id:3": 798,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -432,
           "y:3": 0
         },
-        "101:10": {
-          "id:3": 802,
-          "sizeX:3": 0,
-          "sizeY:3": 0,
-          "x:3": 132,
-          "y:3": 16
-        },
         "102:10": {
-          "id:3": 803,
-          "sizeX:3": 0,
-          "sizeY:3": 0,
-          "x:3": 128,
-          "y:3": 16
-        },
-        "103:10": {
           "id:3": 804,
           "sizeX:3": 24,
           "sizeY:3": 24,
@@ -53402,6 +53340,13 @@
           "sizeY:3": 42,
           "x:3": -57,
           "y:3": -204
+        },
+        "108:10": {
+          "id:3": 802,
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -636,
+          "y:3": -138
         }
       }
     },
@@ -53663,116 +53608,102 @@
           "y:3": 330
         },
         "34:10": {
-          "id:3": 410,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": 330
-        },
-        "35:10": {
           "id:3": 415,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": 294
         },
-        "36:10": {
+        "35:10": {
           "id:3": 488,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 30,
           "y:3": 168
         },
-        "37:10": {
+        "36:10": {
           "id:3": 491,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": 60
         },
-        "38:10": {
+        "37:10": {
           "id:3": 495,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 222
         },
-        "39:10": {
+        "38:10": {
           "id:3": 496,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": -24
         },
-        "40:10": {
+        "39:10": {
           "id:3": 530,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 222
         },
-        "41:10": {
+        "40:10": {
           "id:3": 547,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 144
         },
-        "42:10": {
+        "41:10": {
           "id:3": 552,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 330
         },
-        "43:10": {
+        "42:10": {
           "id:3": 558,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -108,
           "y:3": 186
         },
-        "44:10": {
+        "43:10": {
           "id:3": 670,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -138,
           "y:3": 42
         },
-        "45:10": {
+        "44:10": {
           "id:3": 687,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -54,
           "y:3": 132
         },
-        "46:10": {
+        "45:10": {
           "id:3": 692,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 12,
           "y:3": 66
         },
-        "47:10": {
+        "46:10": {
           "id:3": 743,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -204,
           "y:3": -24
         },
-        "48:10": {
-          "id:3": 783,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": 108
-        },
-        "49:10": {
+        "47:10": {
           "id:3": 786,
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -204,
-          "y:3": 192
+          "y:3": 186
         }
       }
     },
@@ -54198,70 +54129,77 @@
           "id:3": 195,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
+          "x:3": 90,
           "y:3": 0
         },
         "1:10": {
           "id:3": 196,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
+          "x:3": 54,
           "y:3": 36
         },
         "2:10": {
           "id:3": 243,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -72,
+          "x:3": -90,
           "y:3": 0
         },
         "3:10": {
           "id:3": 258,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 96,
+          "x:3": 126,
           "y:3": -36
         },
         "4:10": {
           "id:3": 287,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -24,
+          "x:3": -54,
           "y:3": 0
         },
         "5:10": {
           "id:3": 325,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 0,
+          "x:3": -18,
           "y:3": 36
         },
         "6:10": {
           "id:3": 335,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
+          "x:3": 54,
           "y:3": -36
         },
         "7:10": {
           "id:3": 399,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 0,
+          "x:3": -18,
           "y:3": -36
         },
         "8:10": {
           "id:3": 607,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 96,
+          "x:3": 126,
           "y:3": 36
         },
         "9:10": {
           "id:3": 749,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 24,
+          "x:3": 18,
+          "y:3": 0
+        },
+        "10:10": {
+          "id:3": 802,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -18,
           "y:3": 0
         }
       }
