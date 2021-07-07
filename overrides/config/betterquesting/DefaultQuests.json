@@ -48073,7 +48073,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Dynamite§r is an explosive made from either §aNitrogen§r or §aGlycerol§r and §aNitration Mixture§r. You can throw them to blow things up, but it is primarily a crafting ingredient you can use in the §3Implosion Compressor§r.\n\n§6TNT§r is another explosive that could be made instead of Dynamite. It\u0027s a stronger explosive so you need fewer TNT per recipe it\u0027s used in relative to dynamite, but it has its own unique processing chain.",
+          "desc:8": "§6Dynamite§r is an explosive made from §9Glyceryl Trinitrate§r, which is itself made of §9Glycerol§r and §9Nitration Mixture§r. You can throw dynamite to blow things up, but it is primarily a crafting ingredient you can use in the §3Implosion Compressor§r.\n\n§6TNT§r is another explosive that could be made instead of Dynamite. It\u0027s a stronger explosive so you need fewer TNT per recipe it\u0027s used in relative to dynamite, but it has its own unique processing chain.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
