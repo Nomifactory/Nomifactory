@@ -54,7 +54,7 @@ makeShaped("of_void_cake", <dimensionaledibles:custom_cake>.withTag({dimID: 119,
 	{ A : <actuallyadditions:item_crystal:0>,	// Restonia Crystal
 	  B : <actuallyadditions:item_crystal:1>,	// Palis Crystal
 	  C : <actuallyadditions:item_crystal:4>,	// Emeradic Crystal
-	  D : <forestry:crafting_material>,			// Pulsating Dust
+	  D : <ore:dustPulsating>,			// Pulsating Dust
 	  E : <enderio:item_material:70>,			// Cake Base
 	  F : <metaitem:plateAluminium>
 	}
