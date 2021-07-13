@@ -15,13 +15,13 @@ recipes.addShaped(<contenttweaker:stonewidget>, [
 	[null, <enderio:item_material:10>, null], 
 	[null, <contenttweaker:stonewidgetdown>, null]]);
 recipes.addShaped(<contenttweaker:stonewidgetup>, [
-	[<minecraft:stone_slab>, <gregtech:meta_tool:6>, <minecraft:stone_slab>],
+	[<minecraft:stone_slab>, <ore:gtceHardHammers>, <minecraft:stone_slab>],
 	[<minecraft:stone>,<minecraft:stone>,<minecraft:stone>], 
 	[<minecraft:stone>,<minecraft:stone>,<minecraft:stone>]]);
 recipes.addShaped(<contenttweaker:stonewidgetdown>, [
 	[<minecraft:stone>,<minecraft:stone>,<minecraft:stone>], 
 	[<minecraft:stone>,<minecraft:stone>,<minecraft:stone>],
-	[<minecraft:stone_slab>, <gregtech:meta_tool:6>, <minecraft:stone_slab>]]);
+	[<minecraft:stone_slab>, <ore:gtceHardHammers>, <minecraft:stone_slab>]]);
 recipes.remove(<enderio:item_material:10>);
 recipes.addShaped(<enderio:item_material:10>,[
 	[null, <minecraft:stone>, null],
@@ -37,11 +37,11 @@ recipes.addShaped(<contenttweaker:woodenwidget>, [
 	[null,null,null]]);
 recipes.addShaped(<contenttweaker:woodwidgetleft>, [
 	[<ore:slabWood>,<ore:plankWood>,<ore:plankWood>], 
-	[<gregtech:meta_tool:5>,<ore:plankWood>,<ore:plankWood>],
+	[<ore:gtceSaws>,<ore:plankWood>,<ore:plankWood>],
 	[<ore:slabWood>, <ore:plankWood>, <ore:plankWood>]]);
 recipes.addShaped(<contenttweaker:woodwidgetright>, [
 	[<ore:plankWood>,<ore:plankWood>,<ore:slabWood>], 
-	[<ore:plankWood>,<ore:plankWood>,<gregtech:meta_tool:5>],
+	[<ore:plankWood>,<ore:plankWood>,<ore:gtceSaws>],
 	[<ore:plankWood>,<ore:plankWood>,<ore:slabWood>]]);
 recipes.remove(<enderio:item_material:9>);
 
