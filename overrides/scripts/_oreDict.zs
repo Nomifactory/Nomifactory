@@ -2451,8 +2451,6 @@ recipes.addShapeless("of_exchange_neutronium_plate",
 <ore:compressedoctadiccap>.add(compressedoctadiccap);
 
 // OreDict stuff for new Pulsating Mesh/Dust
-oreDict.get("dustPulsating");
-oreDict.get("meshPulsating");
 val pulsatingDustOre = <ore:dustPulsating>;
 val pulsatingMeshOre = <ore:meshPulsating>;
 
