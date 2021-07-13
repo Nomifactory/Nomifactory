@@ -91,3 +91,38 @@ for can in [<forestry:can:1>, <forestry:capsule:1>, <forestry:refractory:1>] as 
 		mods.jei.JEI.hide(can.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
 	}
 }
+
+// Start removal process
+
+// Deprecation tooltips
+<forestry:fertilizer_compound>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<forestry:fertilizer_compound>.addTooltip(format.red("Bone Meal works just as well for manual and AA/EIO farms."));
+
+<forestry:pipette>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<forestry:pipette>.addTooltip(format.red("EnderIO tanks and SoG Drums make for reasonable alternatives."));
+
+<forestry:crafting_material:0>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<forestry:crafting_material:0>.addTooltip(format.red("Please use the ContentTweaker variant of Pulsating Dust."));
+
+<forestry:crafting_material:1>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<forestry:crafting_material:1>.addTooltip(format.red("Please use the ContentTweaker variant of Pulsating Mesh."));
+
+<forestry:naturalist_helmet>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<forestry:naturalist_helmet>.addTooltip(format.red("Try out the Engineer's Goggles from Actually Additions instead :)"));
+
+<forestry:worktable>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<forestry:worktable>.addTooltip(format.red("Please use the GregTech Crafting Station instead."));
+
+// Recipe removals
+recipes.remove(<forestry:fertilizer_compound>);
+// recipes.addShaped(<forestry:fertilizer_compound> * 8, [[<minecraft:sand>,<gregtech:meta_item_1:8226>,<minecraft:sand>]]); this is the old recipe that was being added
+
+recipes.remove(<forestry:pipette>);
+recipes.remove(<forestry:naturalist_helmet>);
+recipes.remove(<forestry:worktable>);
+
+// Legacy conversions
+recipes.addShapeless("crafting_station_legacy", <gregtech:machine:825>, [<forestry:worktable>]);
+recipes.addShapeless("pulsating_dust_legacy", <contenttweaker:pulsatingdust>, [<forestry:crafting_material:0>]);
+recipes.addShapeless("pulsating_mesh_legacy", <contenttweaker:pulsatingmesh>, [<forestry:crafting_material:1>]);
+recipes.addShapeless("fertilizer_legacy", <actuallyadditions:item_fertilizer>, [<forestry:fertilizer_compound>]);

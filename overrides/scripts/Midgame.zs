@@ -219,7 +219,7 @@ recipes.remove(
 recipes.addShapeless(
 	<patchouli:guide_book>
 		.withTag({"patchouli:book": "deepmoblearning:book"}),
-	[<ore:book>, <forestry:crafting_material>]
+	[<ore:book>, <ore:dustPulsating>]
 );
 
 //Moon Materials

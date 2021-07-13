@@ -118,7 +118,7 @@ mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56>, [
 
 // Blank Dark Steel Upgrade
 alloy.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:12704>, <forestry:crafting_material>])
+    .inputs([<gregtech:meta_item_1:12704>, <ore:dustPulsating>])
     .outputs([<enderio:item_dark_steel_upgrade>])
     .duration(100)
     .EUt(20)

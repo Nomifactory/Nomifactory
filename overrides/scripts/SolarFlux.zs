@@ -125,20 +125,20 @@ recipes.addShaped(<deepmoblearning:machine_casing>,[
 recipes.remove(<gregtech:meta_item_2:32505>);
 alloy.recipeBuilder().inputs([<minecraft:string> * 4,<ore:dustCoal>]).outputs([<gregtech:meta_item_2:32505>]).duration(100).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<minecraft:string> * 4,<ore:dustCarbon>]).outputs([<gregtech:meta_item_2:32505>]).duration(100).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<gregtech:meta_item_2:32505>,<forestry:crafting_material> * 4]).outputs([<forestry:crafting_material:1>]).duration(200).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<forestry:crafting_material>,<minecraft:clay>]).outputs([<deepmoblearning:polymer_clay> * 4	]).duration(240).EUt(24).buildAndRegister();
+alloy.recipeBuilder().inputs([<gregtech:meta_item_2:32505>,<ore:dustPulsating> * 4]).outputs([<contenttweaker:pulsatingmesh>]).duration(200).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<ore:dustPulsating>,<minecraft:clay>]).outputs([<deepmoblearning:polymer_clay> * 4	]).duration(240).EUt(24).buildAndRegister();
 alloy.recipeBuilder().inputs([<contenttweaker:stabilizedplutonium>,<contenttweaker:stabilizedcurium>]).outputs([<advsolars:sunnarium>]).duration(2000).EUt(4000).buildAndRegister();
 
 recipes.remove(<deepmoblearning:simulation_chamber>);
 recipes.addShaped(<deepmoblearning:simulation_chamber>, [
-	[<forestry:crafting_material:1>, <minecraft:glass_pane>, <forestry:crafting_material:1>], 
+	[<ore:meshPulsating>, <minecraft:glass_pane>, <ore:meshPulsating>], 
 	[<ore:circuitBasic>, <deepmoblearning:machine_casing>, <ore:circuitBasic>], 
-	[<forestry:crafting_material:1>, <ore:circuitBasic>, <forestry:crafting_material:1>]]);
+	[<ore:meshPulsating>, <ore:circuitBasic>, <ore:meshPulsating>]]);
 
 recipes.remove(<deepmoblearning:data_model_blank>);
 recipes.addShaped(<deepmoblearning:data_model_blank>, [
 	[<ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:wireFineGold>], 
-	[<forestry:crafting_material:1>, <ore:circuitBasic>, <ore:wireFineGold>], 
+	[<ore:meshPulsating>, <ore:circuitBasic>, <ore:wireFineGold>], 
 	[<ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:wireFineGold>]]);
 
 recipes.remove(<deepmoblearning:polymer_clay>);
@@ -227,7 +227,7 @@ recipes.addShaped(<solarflux:photovoltaic_cell_5> * 6, [
 recipes.addShaped(<solarflux:photovoltaic_cell_4> * 6, [
 [<gregtech:meta_item_1:15092>,<gregtech:meta_item_1:15092>,<gregtech:meta_item_1:15092>],
 [<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>],
-[<forestry:crafting_material:1>,<forestry:crafting_material:1>,<forestry:crafting_material:1>]]);
+[<ore:meshPulsating>,<ore:meshPulsating>,<ore:meshPulsating>]]);
 
 recipes.addShaped(<solarflux:photovoltaic_cell_3> * 6, [
 [<gregtech:meta_item_1:15218>,<gregtech:meta_item_1:15218>,<gregtech:meta_item_1:15218>],

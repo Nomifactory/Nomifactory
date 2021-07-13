@@ -423,7 +423,7 @@ makeShaped("ar_suit_workstation",
 		R: <metaitem:robot.arm.mv>, // MV Robot Arm
 		C: <ore:circuitGood>,       // T2 Circuit
 		X: <gregtech:machine:502>,  // MV Machine Hull
-		W: <forestry:worktable>,    // Worktable
+		W: <gregtech:machine:825>,  // GTCE Crafting Station
 	});
 
 // Gas Charger

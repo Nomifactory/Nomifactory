@@ -2450,6 +2450,16 @@ recipes.addShapeless("of_exchange_neutronium_plate",
 // Workaround for DE Fusion Custom recipe not liking strings in the NBT
 <ore:compressedoctadiccap>.add(compressedoctadiccap);
 
+// OreDict stuff for new Pulsating Mesh/Dust
+val pulsatingDustOre = <ore:dustPulsating>;
+val pulsatingMeshOre = <ore:meshPulsating>;
+
+pulsatingDustOre.add(<contenttweaker:pulsatingdust>);
+pulsatingDustOre.add(<forestry:crafting_material:0>);
+
+pulsatingMeshOre.add(<contenttweaker:pulsatingmesh>);
+pulsatingMeshOre.add(<forestry:crafting_material:1>);
+
 /////////////////////////////////
 //  One Ingot To Rule Them All //
 /////////////////////////////////

@@ -477,7 +477,7 @@ recipes.addShaped(<gregtech:meta_item_1:12152>,[[<gregtech:meta_tool:6>],[<gregt
 
 //Resonant Clathrate
 furnace.remove(<minecraft:ender_pearl>);
-furnace.addRecipe(<forestry:crafting_material>, <thermalfoundation:material:895>, 0.0);
+furnace.addRecipe(<contenttweaker:pulsatingdust>, <thermalfoundation:material:895>, 0.0);
 
 //EnderIO Conduits
 recipes.remove(<enderio:item_power_conduit>);
@@ -749,7 +749,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_endergy_conduit:9>);
 
 
 //Ender Pearls
-alloy.recipeBuilder().inputs([<minecraft:diamond>,<forestry:crafting_material>]).outputs([<minecraft:ender_pearl>]).duration(300).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<minecraft:diamond>,<ore:dustPulsating>]).outputs([<minecraft:ender_pearl>]).duration(300).EUt(16).buildAndRegister();
 
 //Wrought Iron
 furnace.remove(<gregtech:meta_item_1:9197>);
