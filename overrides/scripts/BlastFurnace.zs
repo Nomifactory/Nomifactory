@@ -238,7 +238,7 @@ blast_furnace.recipeBuilder().inputs([<redstonearsenal:material>]).outputs([<red
 
 //EnderIO Alloys
 alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<minecraft:redstone>]).outputs([<enderio:item_alloy_ingot:4>]).duration(150).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<forestry:crafting_material>]).outputs([<enderio:item_alloy_ingot:5>]).duration(150).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<ore:dustPulsating>]).outputs([<enderio:item_alloy_ingot:5>]).duration(150).EUt(16).buildAndRegister();
 
 
 //Removed

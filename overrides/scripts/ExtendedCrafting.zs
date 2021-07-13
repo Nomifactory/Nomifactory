@@ -924,7 +924,7 @@ reactor.recipeBuilder()
 
 //Elemental Reduction
 reactor.recipeBuilder()
-    .inputs(<forestry:crafting_material>)
+    .inputs(<ore:dustPulsating>)
     .fluidInputs([<liquid:hydrofluoric_acid> * 1000])
     .fluidOutputs(<liquid:elementalreduction> * 1000)
     .duration(80).EUt(90).buildAndRegister();

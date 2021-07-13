@@ -703,3 +703,12 @@ for smingot in smingots {
 
     foodRep.register();
 }
+
+// Forestry removal items
+var pulsatingdust = VanillaFactory.createItem("pulsatingdust");
+pulsatingdust.maxStackSize = 64;
+pulsatingdust.register();
+
+var pulsatingmesh = VanillaFactory.createItem("pulsatingmesh");
+pulsatingmesh.maxStackSize = 64;
+pulsatingmesh.register();
