@@ -788,7 +788,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A \"§esubstrate§f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. §6Wood§r coated in §6Sticky Resin§r is a primitive but effective material to use as your first substrate.\n\nYou\u0027ll also need to make §6Vacuum Tubes§f, as well as some primitive §6Resistors§r. §6Paper§r will work as a material for these, for now.\n\nMake sure to code these recipes into a §3Worktable§r... you\u0027ll be making a LOT of these things.",
+          "desc:8": "A \"§esubstrate§f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. §6Wood§r coated in §6Sticky Resin§r is a primitive but effective material to use as your first substrate.\n\nYou\u0027ll also need to make §6Vacuum Tubes§f, as well as some primitive §6Resistors§r. §6Paper§r will work as a material for these, for now.\n\nMake sure to code these recipes into a §3Crafting Station§r... you\u0027ll be making a LOT of these things.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1006,18 +1006,18 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "If you try to craft each item on demand, you\u0027ll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you\u0027re doing things right, you\u0027ll likely have §ea dozen or more worktables§f in short order.\n\nLoad up the table\u0027s storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.\n\nEach worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn\u0027t ever get replaced by a different one, right-click it in the history pane to lock it.",
+          "desc:8": "If you try to craft each item only when you need it, you\u0027ll go insane. It is far more effective to §ebatch-craft§f frequently used items so you don\u0027t have to do it as often. It is very satisfying to get all the ingredients together then craft §ea stack of items§f all at once.\n\n§3Crafting Stations§f are an indispensable tool for batch-crafting. They can save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. You will want to §emake several of them§r§r for the convenience they offer.\n\nEach Crafting Station comes with some inventory space for general items, as well as a dedicated row specifically for holding §bGregTech§r tools. In addition, Crafting Stations can §einteract with adjacent inventories§r, so you can keep common materials in a container between them. This includes access points to large virtual inventories, like a §aDrawer Controller§r§r, which you will be able to make later.\n\nTo use the Crafting Station, you must either manually set up a recipe in the pattern area, or click-in a table recipe from §bJEI§r. Place the ingredients inside the Crafting Station or an adjacent container, then you can click the resulting item to craft it. Once an item is crafted, the recipe will appear on the top-right in the history pane. As usual, Shift-clicking the output item will craft up to a stack of it.\n\nEach Crafting Station will remember §eup to the last nine recipes§r you made in them, which can be recalled by clicking the item in the top-right recipe history pane. Old recipes will be cycled out, so if you want to ensure a recipe doesn\u0027t ever get replaced by a different one, §eShift-click the recipe in the history pane to lock it§r.\n\nThe available ingredients from neighboring inventories are visible through the §eStorage§r tab on the Crafting Station, and you can also place items into this tab to send them to available neighboring inventories.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 825,
             "OreDict:8": "",
-            "id:8": "forestry:worktable"
+            "id:8": "gregtech:machine"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Worktables Are Life",
+          "name:8": "Batch Crafting In Style",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -1055,9 +1055,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 4,
-              "Damage:2": 0,
+              "Damage:2": 825,
               "OreDict:8": "",
-              "id:8": "forestry:worktable"
+              "id:8": "gregtech:machine"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -2041,7 +2041,7 @@
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "forestry:crafting_material"
+            "id:8": "contenttweaker:pulsatingdust"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -2092,7 +2092,7 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "forestry:crafting_material"
+              "id:8": "contenttweaker:pulsatingdust"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -3650,7 +3650,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §3Wiremill§r is a major efficiency boost, giving you a much greater yield of §6wires§r for your ingots. But first, you\u0027ll need to make some §6Motors§r.\n\n§bGregTech§r machines are built from a number of components, many of which are shared between the machines. Motors§r are used in a great number of recipes, even including other components.\n\nMake sure to encode the recipes needed for motors into a §3Worktable§r. You\u0027ll need quite a lot of them.\n\nAfter you make the Wiremill, §econsider making a few stacks§r of LV motors. This might sound extreme, but §ebatch crafting§r in this manner is an important habit to pick up. This way you won\u0027t have to craft more for a while, and you §owill §ruse all those motors eventually, so you\u0027re not wasting materials.\n\nAs you get access to more machinery you will no longer need to craft things manually. Instead, you will engineer factories to automate the production for you. It is useful to keep a stockpile of frequently used things like circuits and components crafted so you don\u0027t have to wait for them when you need them.\n\n",
+          "desc:8": "The §3Wiremill§r is a major efficiency boost, giving you a much greater yield of §6wires§r for your ingots. But first, you\u0027ll need to make some §6Motors§r.\n\n§bGregTech§r machines are built from a number of components, many of which are shared between the machines. Motors§r are used in a great number of recipes, even including other components.\n\nMake sure to encode the recipes needed for motors into a §3Crafting Station§r. You\u0027ll need quite a lot of them.\n\nAfter you make the Wiremill, §econsider making a few stacks§r of LV motors. This might sound extreme, but §ebatch crafting§r in this manner is an important habit to pick up. This way you won\u0027t have to craft more for a while, and you §owill §ruse all those motors eventually, so you\u0027re not wasting materials.\n\nAs you get access to more machinery you will no longer need to craft things manually. Instead, you will engineer factories to automate the production for you. It is useful to keep a stockpile of frequently used things like circuits and components crafted so you don\u0027t have to wait for them when you need them.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -3973,9 +3973,12 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 32500,
+            "Damage:2": 32519,
             "OreDict:8": "",
-            "id:8": "gregtech:meta_item_1"
+            "id:8": "gregtech:meta_item_1",
+            "tag:10": {
+              "Charge:4": 80000
+            }
           },
           "ismain:1": 0,
           "issilent:1": 0,
@@ -4919,7 +4922,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -5069,7 +5072,8 @@
     },
     "73:10": {
       "preRequisites:11": [
-        72
+        72,
+        784
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5417,7 +5421,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Throwing §6Impure Piles of Sphalerite§r into Cauldrons is the first way of obtaining §6Sphalerite§r, which can be electrolyzed as a good source of §6Gallium§r. The §6Zinc§r and §6Sulfur§r you get from doing this will be quite useful as well. Sphalerite Ore§r spawns in §6Zinc§r veins. \n\nA §3Centrifuge§r instead of a Cauldron is slower and requires power, but it gets you more Gallium while separating the impure dust into Sphalerite.\n\nIf you\u0027re having trouble getting the quest to complete, check to see if you are holding §6small piles§r instead of §6tiny piles§r. If so, combine four small piles into a regular dust, then split that into tiny piles. A §3Worktable§r can help you quickly convert between pile types.",
+          "desc:8": "Throwing §6Impure Piles of Sphalerite§r into Cauldrons is the first way of obtaining §6Sphalerite§r, which can be electrolyzed as a good source of §6Gallium§r. The §6Zinc§r and §6Sulfur§r you get from doing this will be quite useful as well. Sphalerite Ore§r spawns in §6Zinc§r veins. \n\nA §3Centrifuge§r instead of a Cauldron is slower and requires power, but it gets you more Gallium while separating the impure dust into Sphalerite.\n\nIf you\u0027re having trouble getting the quest to complete, check to see if you are holding §6small piles§r instead of §6tiny piles§r. If so, combine four small piles into a regular dust, then split that into tiny piles. A §3Crafting Station§r can help you quickly convert between pile types.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -10310,7 +10314,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With tier three circuits in hand, it\u0027s time to make a §3Distillation Tower§r, which is the gatekeeper for more advanced plastics like §6Epoxy§r and doing petrochemistry.\n\nThe Distillation Tower is a highly flexible multiblock structure, able to be anywhere from §62 blocks high to up to 12 high§r (11 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. §cAny output fluids in excess of available buses are voided§r. \n\nWhat you need the Distillation Tower for initially is to break down §9Biomass§r into §9Ethanol§r and §9Water§r. This recipe only has two outputs, so a §ethree-block-high Distillation Tower§r is just fine (the quest materials are for such a tower; if you want to build it bigger, you will need §ean additional 7 casings and 1 fluid output per floor§r).\n\nAny recipe with more than two fluids (like §9Oil§r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. §eYou can swap out your Energy Input for a higher tier one when that time comes§r.\n\nThe tower we\u0027ll be building at first is 3x3x3, with a hollow center. §6Fluid Input Hatch§r §emust go in the very center of the bottom 3x3 layer§r. The §6controller§r goes in the middle of an outer edge of the bottom layer. The §6Output Bus§r and an §6Energy Input Hatch§r can go wherever you can fit them on the bottom layer. The rest of the 3x3 must be filled with §6Clean Stainless Steel Casings§r. Each level above that is a ring of 7 Clean Stainless Steel Casings, one §6Fluid Output§r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top.",
+          "desc:8": "With tier three circuits in hand, it\u0027s time to make a §3Distillation Tower§r, which is the gatekeeper for more advanced plastics like §6Epoxy§r and doing petrochemistry.\n\nThe Distillation Tower is a highly flexible multiblock structure, able to be anywhere from §62 blocks high to up to 13 high§r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. §cAny output fluids in excess of available buses are voided§r. \n\nWhat you need the Distillation Tower for initially is to break down §9Biomass§r into §9Ethanol§r and §9Water§r. This recipe only has two outputs, so a §ethree-block-high Distillation Tower§r is just fine (the quest materials are for such a tower; if you want to build it bigger, you will need §ean additional 7 casings and 1 fluid output per floor§r).\n\nAny recipe with more than two fluids (like §9Oil§r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. §eYou can swap out your Energy Input for a higher tier one when that time comes§r.\n\nThe tower we\u0027ll be building at first is 3x3x3, with a hollow center. §6Fluid Input Hatch§r §emust go in the very center of the bottom 3x3 layer§r. The §6controller§r goes in the middle of an outer edge of the bottom layer. The §6Output Bus§r and an §6Energy Input Hatch§r can go wherever you can fit them on the bottom layer. The rest of the 3x3 must be filled with §6Clean Stainless Steel Casings§r. Each level above that is a ring of 7 Clean Stainless Steel Casings, one §6Fluid Output§r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -15959,7 +15963,8 @@
     },
     "236:10": {
       "preRequisites:11": [
-        52
+        52,
+        69
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21486,7 +21491,9 @@
       }
     },
     "319:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -22718,7 +22725,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -22812,7 +22819,10 @@
             "Count:3": 1,
             "Damage:2": 32213,
             "OreDict:8": "",
-            "id:8": "gregtech:meta_item_2"
+            "id:8": "gregtech:meta_item_2",
+            "tag:10": {
+              "Charge:4": 10000000
+            }
           },
           "ismain:1": 0,
           "issilent:1": 0,
@@ -22849,7 +22859,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -22914,7 +22924,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -22943,7 +22953,10 @@
             "Count:3": 1,
             "Damage:2": 32598,
             "OreDict:8": "",
-            "id:8": "gregtech:meta_item_1"
+            "id:8": "gregtech:meta_item_1",
+            "tag:10": {
+              "Charge:4": 1000000000
+            }
           },
           "ismain:1": 0,
           "issilent:1": 0,
@@ -22980,7 +22993,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -26299,7 +26312,9 @@
       }
     },
     "402:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -26365,7 +26380,9 @@
       }
     },
     "403:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -32713,7 +32730,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With all of the components made, it\u0027s time to craft a §6Primitive Circuit§r.\n\nThis is where your §3Worktable§f setups will really shine! With the patterns encoded into a Worktable (well, really over §omany§r Worktables), you\u0027ll be able to §ebatch craft circuits quickly§f.\n\nYou\u0027ll be making a LOT§r of circuits, so take advantage of the improved crafting efficiency.",
+          "desc:8": "With all of the components made, it\u0027s time to craft a §6Primitive Circuit§r.\n\nThis is where your §3Crafting Station§f setups will really shine! With the patterns encoded into a Crafting Stations (well, really over §omany§r Crafting Stations), you\u0027ll be able to §ebatch craft circuits quickly§f.\n\nYou\u0027ll be making a LOT§r of circuits, so take advantage of the improved crafting efficiency.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33925,7 +33942,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§aMolds§r are used in a §3Fluid Solidifier§r or §3Alloy Smelter§r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape.\n\nThe Fluid Solidifier tends to be the more efficient option: for example, you can use §e8 ingots§r to make one §6Gear§r in an Alloy Smelter, but with a Fluid Extractor and Solidifier you can accomplish the same result with §e4 ingots§r.\n\nBe careful not to accidentally make §aExtruder Shapes§r. Those are for a machine you will get access to later. The two molds in this quest are ones you will find useful right away.",
+          "desc:8": "§aMolds§r are used in a §3Fluid Solidifier§r or §3Alloy Smelter§r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape.\n\nThe Fluid Solidifier tends to be the more efficient option: for example, you can use §e8 ingots§r to make one §6Gear§r in an Alloy Smelter, but with a Fluid Extractor and Solidifier you can accomplish the same result with §e4 ingots§r.\n\nBe careful not to accidentally make §aExtruder Shapes§r. Those are for a machine you will get access to later. The three molds in this quest are ones you will find useful right away.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42350,9 +42367,9 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 1,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "forestry:crafting_material"
+            "id:8": "contenttweaker:pulsatingmesh"
           },
           "ismain:1": 1,
           "issilent:1": 0,
@@ -42401,9 +42418,9 @@
             },
             "1:10": {
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "forestry:crafting_material"
+              "id:8": "contenttweaker:pulsatingmesh"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -43009,7 +43026,7 @@
             "2:10": {
               "Count:3": 1,
               "Damage:2": 8,
-              "OreDict:8": "",
+              "OreDict:8": "craftingToolWrench",
               "id:8": "gregtech:meta_tool",
               "tag:10": {
                 "GT.ToolStats:10": {
@@ -46007,7 +46024,9 @@
       }
     },
     "755:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -46645,7 +46664,9 @@
       "tasks:9": {}
     },
     "765:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -47036,7 +47057,9 @@
       }
     },
     "775:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -47533,7 +47556,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 783,
@@ -47555,7 +47578,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
           "name:8": "ME Cables",
@@ -47776,7 +47799,9 @@
       }
     },
     "788:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -47838,7 +47863,9 @@
       }
     },
     "789:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -49074,7 +49101,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 807,
@@ -49144,7 +49171,7 @@
           "snd_complete:8": "",
           "snd_update:8": "",
           "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 808,
@@ -49659,50 +49686,50 @@
           "id:3": 31,
           "sizeX:3": 32,
           "sizeY:3": 32,
-          "x:3": -264,
-          "y:3": 480
+          "x:3": -300,
+          "y:3": 516
         },
         "4:10": {
           "id:3": 32,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -300,
-          "y:3": 484
+          "x:3": -296,
+          "y:3": 448
         },
         "5:10": {
           "id:3": 35,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -340,
+          "x:3": -336,
           "y:3": 484
         },
         "6:10": {
           "id:3": 42,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -380,
+          "x:3": -376,
           "y:3": 448
         },
         "7:10": {
           "id:3": 44,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -300,
-          "y:3": 520
+          "x:3": -252,
+          "y:3": 448
         },
         "8:10": {
           "id:3": 47,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -220,
-          "y:3": 448
+          "x:3": -208,
+          "y:3": 484
         },
         "9:10": {
           "id:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -220,
-          "y:3": 520
+          "x:3": -208,
+          "y:3": 448
         },
         "10:10": {
           "id:3": 52,
@@ -49722,15 +49749,15 @@
           "id:3": 57,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -340,
+          "x:3": -336,
           "y:3": 448
         },
         "13:10": {
           "id:3": 67,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -300,
-          "y:3": 448
+          "x:3": -252,
+          "y:3": 484
         },
         "14:10": {
           "id:3": 70,
@@ -49904,7 +49931,7 @@
           "id:3": 104,
           "sizeX:3": 40,
           "sizeY:3": 40,
-          "x:3": -352,
+          "x:3": -344,
           "y:3": 380
         },
         "39:10": {
@@ -49995,7 +50022,7 @@
           "id:3": 213,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -380,
+          "x:3": -376,
           "y:3": 520
         },
         "52:10": {
@@ -50198,7 +50225,7 @@
           "id:3": 781,
           "sizeX:3": 32,
           "sizeY:3": 32,
-          "x:3": -344,
+          "x:3": -340,
           "y:3": 516
         },
         "81:10": {
@@ -52401,10 +52428,10 @@
         },
         "70:10": {
           "id:3": 522,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -372,
-          "y:3": 126
+          "sizeX:3": 32,
+          "sizeY:3": 32,
+          "x:3": -376,
+          "y:3": 128
         },
         "71:10": {
           "id:3": 523,
@@ -52499,10 +52526,10 @@
         },
         "84:10": {
           "id:3": 612,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -54,
-          "y:3": 204
+          "sizeX:3": 34,
+          "sizeY:3": 32,
+          "x:3": -58,
+          "y:3": 200
         },
         "85:10": {
           "id:3": 681,
@@ -54300,94 +54327,101 @@
           "id:3": 34,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 60,
           "y:3": -12
         },
         "1:10": {
-          "id:3": 227,
+          "id:3": 35,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
-          "y:3": -12
+          "y:3": 48
         },
         "2:10": {
+          "id:3": 227,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": -12
+        },
+        "3:10": {
           "id:3": 278,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 48
         },
-        "3:10": {
+        "4:10": {
           "id:3": 682,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
+          "x:3": 12,
           "y:3": -12
         },
-        "4:10": {
+        "5:10": {
           "id:3": 683,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 132
         },
-        "5:10": {
+        "6:10": {
           "id:3": 685,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": 48
         },
-        "6:10": {
+        "7:10": {
           "id:3": 686,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 180
         },
-        "7:10": {
+        "8:10": {
           "id:3": 688,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": 132
         },
-        "8:10": {
+        "9:10": {
           "id:3": 689,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": 180
         },
-        "9:10": {
+        "10:10": {
           "id:3": 690,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": 132
         },
-        "10:10": {
+        "11:10": {
           "id:3": 691,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": 180
         },
-        "11:10": {
+        "12:10": {
           "id:3": 728,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 132,
           "y:3": 48
         },
-        "12:10": {
+        "13:10": {
           "id:3": 780,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": 90
         },
-        "13:10": {
+        "14:10": {
           "id:3": 781,
           "sizeX:3": 24,
           "sizeY:3": 24,
@@ -54426,8 +54460,8 @@
           "id:3": 1,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -96,
-          "y:3": 480
+          "x:3": 0,
+          "y:3": 384
         },
         "2:10": {
           "id:3": 51,
@@ -54458,221 +54492,228 @@
           "y:3": 352
         },
         "6:10": {
+          "id:3": 73,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -96,
+          "y:3": 522
+        },
+        "7:10": {
           "id:3": 96,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 64,
           "y:3": 568
         },
-        "7:10": {
+        "8:10": {
           "id:3": 100,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 40,
           "y:3": 480
         },
-        "8:10": {
+        "9:10": {
           "id:3": 101,
           "sizeX:3": 40,
           "sizeY:3": 40,
           "x:3": -56,
           "y:3": 560
         },
-        "9:10": {
+        "10:10": {
           "id:3": 102,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": 480
         },
-        "10:10": {
+        "11:10": {
           "id:3": 103,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 64,
           "y:3": 392
         },
-        "11:10": {
+        "12:10": {
           "id:3": 104,
           "sizeX:3": 42,
           "sizeY:3": 42,
           "x:3": 95,
           "y:3": 559
         },
-        "12:10": {
+        "13:10": {
           "id:3": 105,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 104,
           "y:3": 480
         },
-        "13:10": {
+        "14:10": {
           "id:3": 106,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 40,
           "y:3": 616
         },
-        "14:10": {
+        "15:10": {
           "id:3": 108,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 208,
           "y:3": 568
         },
-        "15:10": {
+        "16:10": {
           "id:3": 109,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": 568
         },
-        "16:10": {
+        "17:10": {
           "id:3": 110,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 104,
           "y:3": 520
         },
-        "17:10": {
+        "18:10": {
           "id:3": 111,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 64,
           "y:3": 520
         },
-        "18:10": {
+        "19:10": {
           "id:3": 117,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 248,
           "y:3": 440
         },
-        "19:10": {
+        "20:10": {
           "id:3": 118,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": 352
         },
-        "20:10": {
+        "21:10": {
           "id:3": 119,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 200,
           "y:3": 352
         },
-        "21:10": {
+        "22:10": {
           "id:3": 120,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 232,
           "y:3": 352
         },
-        "22:10": {
+        "23:10": {
           "id:3": 122,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 248,
           "y:3": 472
         },
-        "23:10": {
+        "24:10": {
           "id:3": 123,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 248,
           "y:3": 504
         },
-        "24:10": {
+        "25:10": {
           "id:3": 124,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 248,
           "y:3": 536
         },
-        "25:10": {
+        "26:10": {
           "id:3": 140,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 520
         },
-        "26:10": {
+        "27:10": {
           "id:3": 230,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -96,
           "y:3": 384
         },
-        "27:10": {
+        "28:10": {
           "id:3": 237,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 104,
           "y:3": 384
         },
-        "28:10": {
+        "29:10": {
           "id:3": 259,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 144,
           "y:3": 392
         },
-        "29:10": {
+        "30:10": {
           "id:3": 282,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -60,
           "y:3": 420
         },
-        "30:10": {
+        "31:10": {
           "id:3": 404,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 104,
           "y:3": 616
         },
-        "31:10": {
+        "32:10": {
           "id:3": 406,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": 656
         },
-        "32:10": {
+        "33:10": {
           "id:3": 408,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": 616
         },
-        "33:10": {
+        "34:10": {
           "id:3": 494,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 208,
           "y:3": 440
         },
-        "34:10": {
+        "35:10": {
           "id:3": 729,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 208,
           "y:3": 480
         },
-        "35:10": {
+        "36:10": {
           "id:3": 730,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 208,
           "y:3": 520
         },
-        "36:10": {
+        "37:10": {
           "id:3": 784,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 8,
-          "y:3": 384
+          "x:3": -96,
+          "y:3": 480
         }
       }
     }
