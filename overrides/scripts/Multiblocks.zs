@@ -1823,7 +1823,7 @@ oildrillingrig.recipeMap
     .duration(100)
     .EUt(875)
     .inputs(<inspirations:pipe>)
-    .fluidInputs(<liquid:drilling_fluid> * 10)
+    .fluidInputs(<liquid:drilling_fluid> * 1000)
     .fluidOutputs(<liquid:oil> * 1000)
     .property("consumeChance", 1)
     .buildAndRegister();
