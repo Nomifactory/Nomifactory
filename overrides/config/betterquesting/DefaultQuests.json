@@ -22287,7 +22287,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The final form of Tier Six circuits, and the final circuit theme.\n\nUsing your §6Wetware Lifesupport Circuit Boards§r, §6Naquadah Alloy wire§r, §6ASoCs§r, and §9Sterilized Growth Medium§r, you can craft (grow?) these circuits in a ZPM or better §3Assembling Machine§r.\n\nThese are fairly slow to craft and you\u0027re going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked.",
+          "desc:8": "The final form of Tier Six circuits, and the final circuit theme.\n\nUsing your §6Wetware Circuit Boards§r, §6Naquadah Alloy wire§r, §6ASoCs§r, and §9Sterilized Growth Medium§r, you can craft (grow?) these circuits in a ZPM or better §3Assembling Machine§r.\n\nThese are fairly slow to craft and you\u0027re going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
