@@ -16368,7 +16368,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The most advanced substrate available, crafted and grown with bleeding-edge bioengineering technology.\n\n§6Wetware Lifesupport Circuit Boards§r are the basis of §6Wetware§r circuits, the final theme that spans tiers six through nine.",
+          "desc:8": "The most advanced substrate available, crafted and grown with bleeding-edge bioengineering technology.\n\n§6Wetware Circuit Boards§r are the basis of §6Wetware§r circuits, the final theme that spans tiers six through nine.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
