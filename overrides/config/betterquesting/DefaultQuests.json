@@ -13213,7 +13213,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Looks absolutely identical to Europium, but it\u0027s not the same thing, I promise.\n\nThis is fused in a §3Mark 2 Fusion Reactor§r using molten §9Titanium§r and §9Duranium§r.\n\n§6Tritanium Frames§r are needed for the §6Wetware Processor Mainframe§r.",
+          "desc:8": "Looks absolutely identical to Europium, but it\u0027s not the same thing, I promise.\n\nTo make §9Tritanium§r, you first need to make §9Duranium§r. This is done by fusing molten §9Gallium§r and §9Radon§r in a §3Fusion Reactor Mark 1§r or better.\n\nOnce you have Duranium, you can fuse Tritanium in a §3Fusion Reactor Mark 2§r using the Duranium and molten §9Titanium§r.\n\nThe principal use of Tritanium is §6Tritanium Frames§r, which are needed for the §6Wetware Processor Mainframe§r.\n\nIf you\u0027re having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the §aCrafting Calculator§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -22484,7 +22484,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The final circuit.\n\nYou\u0027ll need §6Tritanium§r for §6Tritanium Frames§r, which comes exclusively from the §3Fusion Reactor Mark 2§r or better reactor.\n\nThe §6Duranium§r needed to make Tritanium comes from the §3Fusion Reactor Mark 1§r or better.",
+          "desc:8": "The final circuit.\n\nYou\u0027ll need §6Tritanium§r for §6Tritanium Frames§r, which comes exclusively from the §3Fusion Reactor Mark 2§r or better reactor.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
