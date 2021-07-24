@@ -88,7 +88,7 @@ alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).notConsumable(<greg
 alloy.recipeBuilder().inputs([<gregtech:meta_item_1:10235>]).notConsumable(<gregtech:meta_item_1:32317>).outputs([<gregtech:meta_item_2:17235>]).duration(80).EUt(16).buildAndRegister();
 
 //Dogecoin
-alloy.recipeBuilder().inputs([<ore:plateBrass>]).notConsumable(<gregtech:meta_item_1:32304>).outputs().duration(80).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<ore:plateBrass>]).notConsumable(<gregtech:meta_item_1:32304>).outputs([<gregtech:meta_item_1:32009> * 4]).duration(80).EUt(16).buildAndRegister();
 
 //Drawers
 recipes.remove(<storagedrawers:upgrade_storage>);
