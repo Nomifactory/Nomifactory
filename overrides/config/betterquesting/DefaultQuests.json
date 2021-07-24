@@ -17437,7 +17437,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Awakened Draconium§r is a powerful material used for crafting high-grade components, items, and machines from Draconic Evolution.\n\nFive §6§6Draconium Blocks§r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five §6Awakened Draconium Blocks§r. At §e24 Billion RF per craft§r, you better have a handle on your power infrastructure.",
+          "desc:8": "§6Awakened Draconium§r is a powerful material used for crafting high-grade components, items, and machines from §bDraconic Evolution§r.\n\nFive §6§6Draconium Blocks§r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five §6Awakened Draconium Blocks§r. At §e24 Billion RF per craft§r, you better have a handle on your power infrastructure.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
