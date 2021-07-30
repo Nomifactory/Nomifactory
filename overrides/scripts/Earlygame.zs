@@ -890,31 +890,6 @@ for mat in material {
 	  	  D : <ore:gtceScrewdrivers>});
 }
 
-
-//Adding Pump recipes to the assembler
-
-val ringMaterial = [
-
-	<gregtech:meta_item_1:18152>, //Rubber Ring
-	<gregtech:meta_item_1:18398>, //Styrene-Butadiene Ring
-	<gregtech:meta_item_1:18391> // Silicone Rubber Ring
-
-] as IItemStack[];
-
-
-for ringItem in ringMaterial {
-
-assembler.recipeBuilder().
-inputs([<gregtech:meta_item_2:18071>, <gregtech:meta_item_1:17071>, <gregtech:meta_item_1:32600>, <gregtech:fluid_pipe:2095>, <gregtech:cable:5071>, ringItem * 2]).outputs([<gregtech:meta_item_1:32610>]).duration(200).EUt(16).buildAndRegister();	//lv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18095>, <gregtech:meta_item_1:17095>, <gregtech:meta_item_1:32601>, <gregtech:fluid_pipe:2184>, <gregtech:cable:5018>, ringItem * 2]).outputs([<gregtech:meta_item_1:32611>]).duration(200).EUt(16).buildAndRegister();	//mv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18184>, <gregtech:meta_item_1:17184>, <gregtech:meta_item_1:32602>, <gregtech:fluid_pipe:2183>, <gregtech:cable:5026>, ringItem * 2]).outputs([<gregtech:meta_item_1:32612>]).duration(200).EUt(16).buildAndRegister();	//hv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18183>, <gregtech:meta_item_1:17183>, <gregtech:meta_item_1:32603>, <gregtech:fluid_pipe:2072>, <gregtech:cable:5001>, ringItem * 2]).outputs([<gregtech:meta_item_1:32613>]).duration(200).EUt(16).buildAndRegister();	//ev pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18235>, <gregtech:meta_item_1:17235>, <gregtech:meta_item_1:32604>, <gregtech:fluid_pipe:2235>, <gregtech:cable:5074>, ringItem * 2]).outputs([<gregtech:meta_item_1:32614>]).duration(200).EUt(16).buildAndRegister();	//iv pump
-
-}
-
-
-
 //Vinyl Acetate
 electrolyzer.recipeBuilder()
 	.fluidInputs(<liquid:vinyl_acetate> * 12000)
