@@ -9794,7 +9794,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Another common component of any machine that uses fluids. Also usable as a cover for moving fluids between GregTech machines and adjacent tanks or machines.\n\nYou can use Paper Rings or Rubber Rings, but both will require a Knife to craft. A stick and a piece of flint will make a Knife with low durability, or check the recipe for metal ones.",
+          "desc:8": "Another common component of any machine that uses fluids. Also usable as a cover for moving fluids between §bGregTech§r machines and adjacent tanks or machines.\n\nYou can use §6Paper Rings§r or §6Rubber Rings§r, but both will require a §aKnife§r to craft. A stick and a piece of flint will make a Knife with low durability, or check the recipe for metal ones.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18256,7 +18256,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Macerators§r are useful for grinding things down, replacing the §aMortars§r you\u0027ve needed until now. This is an important machine you will be using for many things in the future.\n\nOne useful application for a Macerator in the near future is grinding down §6Clay§r or §6Terracotta§r into §6Clay Dust§f. You can also configure several of them to make a pipeline that grinds down §6Cobblestone§r into §6Gravel§r, then §6Sand§r, then §6Dust§r.\n\nBesides not having limited durability, a key advantage of Macerators over Mortars is the chance to get additional materials when grinding things down. These are called §ebyproducts§r, and HV or better Macerators have three slots instead of one so byproducts can appear.\n\nWhen reading Macerator recipes in §bJEI§r, you can tell which outputs are byproducts by seeing if §ethe tooltip tells you it has a chance to appear§r: guaranteed outputs do not list a chance. The chance displayed for Macerator recipes is always at MV, and the chance §edoubles each tier past MV§r your macerator is, up to a maximum of 100%.\n\nFor example, the primary output from crushing ores scales as follows:\n• LV: §c0%\n§r• MV: §c14%§r (as listed in §bJEI§r)\n§r• HV: §a28%\n§r• EV: §a56%\n§r• IV and better: §a100%§r\n\nFinally, a Macerator will only start processing if there is room for all guaranteed outputs. §cA recipe will continue if there is no room for byproducts§r, even if they have a 100% chance at the current tier. Make sure you empty your machines so you don\u0027t lose out on potential items.",
+          "desc:8": "§3Macerators§r are useful for grinding things down, replacing the §aMortars§r you\u0027ve needed until now. This is an important machine you will be using for many things in the future.\n\nOne useful application for a Macerator in the near future is grinding down §6Clay§r or §6Terracotta§r into §6Clay Dust§f. You can also configure several of them to make a pipeline that grinds down §6Cobblestone§r into §6Gravel§r, then §6Sand§r, then §6Dust§r.\n\nBesides not having limited durability, a key advantage of Macerators over Mortars is the chance to get additional materials when grinding things down. These are called §ebyproducts§r, and HV or better Macerators have three slots instead of one so byproducts can appear.\n\nWhen reading Macerator recipes in §bJEI§r, you can tell which outputs are byproducts by seeing if §ethe tooltip tells you it has a chance to appear§r: guaranteed outputs do not list a chance. The chance displayed for Macerator recipes is always at MV, and the chance §edoubles each tier past MV§r your macerator is, up to a maximum of 100%.\n\nFor example, the primary output from crushing ores scales as follows:\n• LV: §c0%\n§r• MV: §c14%§r (as listed in §bJEI§r)\n§r• HV: §a28%\n§r• EV: §a56%\n§r• IV and better: §a100%§r\n\nFinally, a Macerator will only start processing if there is room for all possible outputs. Make sure you empty them so they can keep working.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26319,7 +26319,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§bGregTech§r adds a very versatile way of augmenting machines with §aMachine Covers§r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. To work with covers, you\u0027ll need to make yourself a §aScrewdriver§r to configure covers, and a §aCrowbar§r to remove covers without having to break the machine.\n\nHere\u0027s a list of some covers there are in the game, and what they do:\n\n- §a§lConveyor§r: transfers items continuously to or from an adjacent inventory.\n\n- §a§lPump§r: is much like a §aConveyor§f, but for fluids.\n\n- §a§lRobotic Arm§r: is much like §aConveyor§r, but has two additional modes:\n    * §eKeep Exact§r: moves items to keep a stock of at most the specified number of items\n    * §eSupply Exact§r: transfers precisely the specified number of items per operation.\nThis cover is very useful for crafting automation.\n\n- §a§lShutter§r: prevents automation from interacting with a specific side of a machine.\n\nCovers that move items or fluids can have a §aFilter§r placed inside them. These modify the functionality of covers in ways explained in their own quests.\n",
+          "desc:8": "§bGregTech§r adds a very versatile way of augmenting machines with §aMachine Covers§r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. To work with covers, you\u0027ll need to make yourself a §aScrewdriver§r to configure covers, and a §aCrowbar§r to remove covers without having to break the machine.\n\nHere\u0027s a list of some covers there are in the game, and what they do:\n\n- §a§lConveyor§r: transfers items continuously to or from an adjacent inventory.\n\n- §a§lPump§r: is much like a §aConveyor§f, but for fluids.\n\n- §a§lRobotic Arm§r: is much like §aConveyor§r, but has two additional modes:\n    * §eKeep Exact§r: moves items to keep a stock of at most the specified number of items\n    * §eSupply Exact§r: transfers precisely the specified number of items per operation.\nThis cover is very useful for crafting automation.\n\n- §a§lFluid Regulator§r: is like a §aRobotic Arm§r, but works with fluids instead of items.\n\n- §a§lShutter§r: prevents automation from interacting with a specific side of a machine.\n\nCovers that move items or fluids can have a §aFilter§r placed inside them. These modify the functionality of covers in ways explained in their own quests.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30096,7 +30096,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need a Compressor for a variety of things, but probably most importantly is the ability to make plates from a single ingot.",
+          "desc:8": "You\u0027ll need a §3Compressor§r for a variety of things, but probably most importantly is the ability to make many kinds of plates from a single ingot.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31876,7 +31876,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Robot Arms are components of several powerful machines, and are also useful as a machine cover for precise item movement.\n\nOne of the most expensive components, as it requires motors, pistons, and a circuit.",
+          "desc:8": "§6Robot Arms§r are components of several powerful machines, and are also useful as a machine cover for precise item movement.\n\nOne of the most expensive components, as it requires motors, pistons, and a circuit.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
