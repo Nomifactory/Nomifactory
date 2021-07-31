@@ -685,18 +685,6 @@ recipes.addShaped(<enderio:item_endergy_conduit:11> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_endergy_conduit:11>.displayName = "Superconductor Energy Conduit";
 assembler.recipeBuilder().inputs([<gregtech:cable:354>* 2, <enderio:item_endergy_conduit:10>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:11> * 4]).duration(80).EUt(16).buildAndRegister();
-	
-//removing bad field generator assembling recipes
-assembler.findRecipe(30, [<ore:circuitBasic>.firstItem * 4, <ore:dustEnderPearl>.firstItem], [<liquid:osmium> * 288]).remove();
-assembler.findRecipe(30, [<ore:circuitBasic>.firstItem * 4, <ore:dustEnderPearl>.firstItem], [<liquid:osmium> * 288]).remove();
-assembler.findRecipe(120, [<ore:circuitGood>.firstItem * 4, <ore:dustEnderEye>.firstItem], [<liquid:osmium> * 576]).remove();
-assembler.findRecipe(120, [<ore:circuitGood>.firstItem * 4, <ore:dustEnderEye>.firstItem], [<liquid:osmium> * 576]).remove();
-assembler.findRecipe(480, [<ore:circuitAdvanced>.firstItem * 4, <gregtech:meta_item_1:32724>], [<liquid:osmium> * 1152]).remove();
-assembler.findRecipe(480, [<ore:circuitAdvanced>.firstItem * 4, <gregtech:meta_item_1:32724>], [<liquid:osmium> * 1152]).remove();
-assembler.findRecipe(1920, [<ore:circuitExtreme>.firstItem * 4, <gregtech:meta_item_1:2331>], [<liquid:osmium> * 2304]).remove();
-assembler.findRecipe(1920, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_item_1:2331>], [<liquid:osmium> * 2304]).remove();
-assembler.findRecipe(7680, [<ore:circuitMaster>.firstItem * 4, <gregtech:meta_item_1:32725>], [<liquid:osmium> * 4608]).remove();
-assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_item_1:32725>], [<liquid:osmium> * 4608]).remove();
 
 //Item conduit - by hand
 recipes.addShaped(<enderio:item_item_conduit> * 4, [
@@ -788,36 +776,6 @@ recipes.addShaped(<gregtech:meta_item_1:32600>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_2:16018>, <ore:stickIron>], 
 	[<gregtech:meta_item_2:16018>, <ore:stickIronMagnetic>, <gregtech:meta_item_2:16018>],
 	[<ore:stickIron>, <gregtech:meta_item_2:16018>, <ore:cableGtSingleTin>]]);
-
-//LV Motor - Assembler (iron parts)
-assembler.findRecipe(10,
-    [<ore:cableGtSingleTin>.firstItem * 2,
-     <ore:stickIron>.firstItem * 2,
-     <ore:stickIronMagnetic>.firstItem],
-    [<liquid:copper> * 288]).remove();
-
-assembler.recipeBuilder()
-    .outputs(<gregtech:meta_item_1:32600>)
-    .inputs(<ore:cableGtSingleTin> * 2,
-            <ore:stickIron> * 2,
-            <ore:stickIronMagnetic>)
-    .fluidInputs(<liquid:copper> * 144)
-    .duration(600).EUt(10).buildAndRegister();
-
-//LV Motor - Assembler (steel parts)
-assembler.findRecipe(10,
-    [<ore:cableGtSingleTin>.firstItem * 2,
-     <ore:stickSteel>.firstItem * 2,
-     <ore:stickSteelMagnetic>.firstItem],
-    [<liquid:copper> * 288]).remove();
-
-assembler.recipeBuilder()
-    .outputs(<gregtech:meta_item_1:32600>)
-    .inputs(<ore:cableGtSingleTin> * 2,
-            <ore:stickSteel> * 2,
-            <ore:stickSteelMagnetic>)
-    .fluidInputs(<liquid:copper> * 144)
-    .duration(600).EUt(10).buildAndRegister();
 
 //Diode
 recipes.remove(<metaitem:component.diode>);
