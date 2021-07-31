@@ -18,3 +18,8 @@ There are several things to be aware of when updating to Omnifactory version 1.3
 4. **Pulsating Iron Wire** has been implemented as a GregTech Community Edition item, instead of as a **ContentTweaker** item. This means that the **ContentTweaker** variant of the item will be removed in the next update, and a tempory conversion recipe has been provided to freely convert the old ContentTweaker variants into the new GregTech Community Edition variants. Any items not converted before the next update will be lost.
 5. Due to several Chemistry updates in **Gregtech Community Edition**, some existing chemistry recipes have been changed. If you are having issues, please check to see if the recipe has been changed before reporting an issue.
 6. The mod **Simple Fluid Tanks** will be removed in the next version due to general bad performace, and a plethora of substitutes. See the Gregtech multiblock tank structures if you want a similar looking replacement.
+7. The mod **Forestry** will be removed in the next version of the pack due to its minimal uses and available replacement items.
+    - Pulsating Dust has been replaced with a **Contenttweaker** version
+    - Pulsating Mesh has been replaced with a **Contenttweaker** version
+    - The Worktable has been replaced with the Crafting Station from **Gregtech Community Edition**
+All items have had conversion recipes provided.
