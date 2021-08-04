@@ -969,3 +969,40 @@ assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>]
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_steel");
 recipes.removeByRecipeName("gregtech:small_coil_copper_ferrite");
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_ferrite");
+
+//Adjust Field Generator assembler fluids to match our recipes
+assembler.findRecipe(30, [<ore:circuitBasic>.firstItem * 4, <ore:dustEnderPearl>.firstItem], [<liquid:osmium> * 288]).remove();
+assembler.findRecipe(120, [<ore:circuitGood>.firstItem * 4, <ore:dustEnderEye>.firstItem], [<liquid:osmium> * 576]).remove();
+assembler.findRecipe(480, [<ore:circuitAdvanced>.firstItem * 4, <metaitem:quantumeye>], [<liquid:osmium> * 1152]).remove();
+assembler.findRecipe(1920, [<ore:circuitExtreme>.firstItem * 4, <ore:dustNetherStar>.firstItem], [<liquid:osmium> * 2304]).remove();
+assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <metaitem:quantumstar>], [<liquid:osmium> * 4608]).remove();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitBasic>, <ore:dustEnderPearl>)
+	.fluidInputs(<liquid:conductive_iron> * 288)
+	.outputs(<metaitem:field.generator.lv>)
+	.duration(100).EUt(30).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitGood>, <ore:dustEnderEye>)
+	.fluidInputs(<liquid:energetic_alloy> * 288)
+	.outputs(<metaitem:field.generator.mv>)
+	.duration(100).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitAdvanced>, <metaitem:quantumeye>)
+	.fluidInputs(<liquid:vibrant_alloy> * 288)
+	.outputs(<metaitem:field.generator.hv>)
+	.duration(100).EUt(480).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitExtreme>, <ore:dustNetherStar>)
+	.fluidInputs(<liquid:end_steel> * 288)
+	.outputs(<metaitem:field.generator.ev>)
+	.duration(100).EUt(1920).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitElite>, <metaitem:quantumstar>)
+	.fluidInputs(<liquid:lumium> * 288)
+	.outputs(<metaitem:field.generator.iv>)
+	.duration(100).EUt(7680).buildAndRegister();
