@@ -61,6 +61,8 @@
 
 <!-- Ender Resonator -->
 
+<recipe name="Ender Resonator"><disabled/></recipe>
+
 <recipe name="Ender Resonator Omni">
     <slicing energy="20000">
       <input name="ingotSoularium"/><input name="enderio:block_enderman_skull:0"/><input name="ingotSoularium"/>
@@ -86,6 +88,8 @@
   </recipe>
 
 <!-- Z Logic Controller -->
+
+<recipe name="Controller Skull"><disabled/></recipe>
 
 <recipe name="Z Logic Controller Omni">
     <slicing energy="20000">
