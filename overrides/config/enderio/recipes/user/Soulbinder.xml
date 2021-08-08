@@ -34,7 +34,7 @@
     </soulbinding>
   </recipe>
 
-<!-- Fligh Control Unit Recipes -->
+<!-- Flight Control Unit Recipes -->
 
   <recipe name="Soul Binder: Flight Control Bat Omni" required="true">
     <soulbinding energy="75000" levels="8" logic="NONE">

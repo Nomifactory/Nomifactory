@@ -7,7 +7,7 @@
 
 <recipe name="Ender Distilation"><disabled/></recipe>
 
-<recipe name="Ender Distilation Omni" required="true">
+<recipe name="Ender Distillation Omni" required="true">
     <fermenting energy="5000">
       <inputgroup>
         <input name="itemPulsatingPowder" multiplier="2.0"/>
