@@ -249,13 +249,6 @@ recipes.addShaped(<metaitem:component.capacitor> * 4, [
 	[<gregtech:meta_item_1:19189>, <gregtech:meta_item_1:12152>, <gregtech:meta_item_1:19189>], 
 	[<gregtech:meta_item_2:16062>, null, <gregtech:meta_item_2:16062>]]);
 
-//Dew Of The Void
-mods.enderio.Vat.removeRecipe(<liquid:ender_distillation> * 1000);
-mods.enderio.Vat.addRecipe(<liquid:ender_distillation> * 1000, 0.5, <liquid:ender> * 4000, [<enderio:item_material:36>], [2], [<enderio:item_material:35>], [2]);
-
-//Ghast for Flight Controller
-mods.enderio.SoulBinder.addRecipe(<simplyjetpacks:metaitemmods:6>, <simplyjetpacks:metaitemmods:5>, ["ghast"], 75000, 300);
-
 assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:18>]).fluidInputs([<liquid:glowstone> * 4320]).outputs([<simplyjetpacks:metaitemmods:19>]).duration(2000).EUt(3000).buildAndRegister();
 assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs([<liquid:cryotheum> * 4320]).outputs([<simplyjetpacks:metaitemmods:21>]).duration(2000).EUt(8000).buildAndRegister();
 

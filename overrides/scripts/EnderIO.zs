@@ -87,29 +87,6 @@ for item in teBalls {
     recipes.remove(item);
 }
 
-// Slice'n'Splice dead-ends
-mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:40>);       // Zombie Electrode
-mods.jei.JEI.removeAndHide(<enderio:item_material:40>);                   // Zombie Electrode
-
-mods.enderio.SliceNSplice.removeRecipe(<enderio:item_capacitor_totemic>); // Totemic Capacitor
-mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);             // Totemic Capacitor
-
-
-// Restore Slice 'n' Splice recipes changed by updating Ender IO
-//Skeletal Contractor
-mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:45>); 
-mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45>, [
-    <enderio:item_alloy_ingot:7>, <minecraft:skull>, <enderio:item_alloy_ingot:7>,
-     <minecraft:rotten_flesh> , <gregtech:meta_item_2:32440> , <minecraft:rotten_flesh>
-], 20000);
-
-//Guardian Diode
-mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:56>);
-mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56>, [
-    <enderio:item_alloy_ingot:1>, <minecraft:prismarine_shard>, <enderio:item_alloy_ingot:1>,
-     <minecraft:prismarine_crystals>, <gregtech:meta_item_2:32440>, <minecraft:prismarine_crystals>
-], 20000);
-
 /*
 
   EnderIO Additions
@@ -245,30 +222,6 @@ for i, wafer in wafers {
     bonus = bonus * 2;
     cost  = cost  * 2;
 
-    // Z-Logic Controller
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:41> * bonus, [
-        <enderio:item_alloy_ingot:7> , <minecraft:skull:2>  , <enderio:item_alloy_ingot:7>
-        , wafer                      , <minecraft:redstone> , wafer
-    ], cost);
-
-    // Ender Resonator
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:43> * bonus, [
-        <enderio:item_alloy_ingot:7> , <enderio:block_enderman_skull> , <enderio:item_alloy_ingot:7>
-        , wafer                      , <enderio:item_alloy_ingot:2>   , wafer
-    ], cost);
-
-    // Skeletal Contractor
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45> * bonus, [
-        <enderio:item_alloy_ingot:7> , <minecraft:skull> , <enderio:item_alloy_ingot:7>
-        , <minecraft:rotten_flesh>   , wafer             , <minecraft:rotten_flesh>
-    ], cost);
-
-    // Guardian Diode
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56> * bonus, [
-        <enderio:item_alloy_ingot:1>      , <minecraft:prismarine_shard> , <enderio:item_alloy_ingot:1>
-        , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
-    ], cost);
-
     // EnderIO Light
     makeShaped("enderio_light_" + bonus, <enderio:block_electric_light> * bonus, [
         "GGG",
@@ -377,95 +330,6 @@ furnace.addRecipe(<enderio:item_alloy_ingot:0>, <gregtech:meta_item_1:2705>);
 furnace.remove(<gregtech:meta_item_1:10704>, <gregtech:meta_item_1:2704>);
 furnace.addRecipe(<enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:2704>);
 
-// Tokens
-
-val hostile = [
-    "minecraft:wither_skeleton",
-    "minecraft:stray",
-    "minecraft:husk",
-    "minecraft:zombie_villager",
-    "minecraft:evocation_illager",
-    "minecraft:zombie_horse",
-    "minecraft:vex",
-    "minecraft:vindication_illager",
-    "minecraft:illusion_illager",
-    "minecraft:creeper",
-    "minecraft:skeleton",
-    "minecraft:spider",
-    "minecraft:giant",
-    "minecraft:zombie",
-    "minecraft:slime",
-    "minecraft:ghast",
-    "minecraft:zombie_pigman",
-    "minecraft:enderman",
-    "minecraft:cave_spider",
-    "minecraft:silverfish",
-    "minecraft:blaze",
-    "minecraft:magma_cube",
-    "minecraft:witch",
-    "minecraft:endermite",
-    "minecraft:guardian",
-    "minecraft:shulker",
-    "thermalfoundation:blizz",
-    "thermalfoundation:blitz",
-    "thermalfoundation:basalz",
-    "draconicevolution:chaosguardian",
-    "deepmoblearning:glitch",
-    "deepmoblearning:trial_enderman",
-    "deepmoblearning:trial_spider",
-    "deepmoblearning:trial_cave_spider",
-    "deepmoblearning:trial_slime",
-    "armorplus:ender_dragon_zombie",  
-    "armorplus:ice_golem",
-    "armorplus:overlord_of_the_guardians",
-    "armorplus:skeletal_king",
-    "armorplus:witherling",
-    "armorplus:demonic_dragon",
-    "nuclearcraft:feral_ghoul"
-
-    ] as string[];
-
-val peaceful = [
-    "minecraft:donkey",
-    "minecraft:mule",
-    "minecraft:bat",
-    "minecraft:pig",
-    "minecraft:sheep",
-    "minecraft:cow",
-    "minecraft:chicken",
-    "minecraft:squid",
-    "minecraft:wolf",
-    "minecraft:mooshroom",
-    "minecraft:snowman",
-    "minecraft:ocelot",
-    "minecraft:villager_golem",
-    "minecraft:horse",
-    "minecraft:rabbit",
-    "minecraft:polar_bear",
-    "minecraft:llama",
-    "minecraft:parrot",
-    "minecraft:villager"
-
-] as string[];
-
-var combined as string[] = hostile;
-
-for mob in peaceful {
-    combined += mob;
-}
-
-//Monster Token
-mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:79>);
-mods.enderio.SoulBinder.addRecipe(<enderio:item_material:79>, <darkutils:filter:3>, hostile, 25000, 1);
-
-//Animal Token
-mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:78>);
-mods.enderio.SoulBinder.addRecipe(<enderio:item_material:78>, <darkutils:filter:4>, peaceful, 25000, 1);
-
-//Player Token
-mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:80>);
-mods.enderio.SoulBinder.addRecipe(<enderio:item_material:80>, <darkutils:filter>, combined, 25000, 1);
-
 //Fixing Multismelter output of the dusts of the GTCE variants of Ender IO ingots
 val materialList as IItemStack[][] = [
     
@@ -493,6 +357,3 @@ for dust in materialList {
 recipes.addShapeless(<enderio:block_cap_bank:1>, [<enderio:block_cap_bank:1>]);
 recipes.addShapeless(<enderio:block_cap_bank:2>, [<enderio:block_cap_bank:2>]);
 recipes.addShapeless(<enderio:block_cap_bank:3>, [<enderio:block_cap_bank:3>]);
-
-//Temporary Fix for the Flight Control Unit Recipe
-mods.enderio.SoulBinder.addRecipe(<simplyjetpacks:metaitemmods:6>, <simplyjetpacks:metaitemmods:5>, ["minecraft:bat"], 75000, 8);
