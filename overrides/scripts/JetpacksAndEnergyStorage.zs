@@ -406,8 +406,6 @@ recipes.addShaped(<enderio:block_franken_zombie_generator>, [
 	[<ore:skullZombieFrankenstein>, <enderio:block_zombie_generator>, <ore:skullZombieFrankenstein>],
 	[<gregtech:meta_item_2:26705>, <ore:ingotSoularium>, <gregtech:meta_item_2:26705>]]);
 
-mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
-
 //The Vat
 recipes.remove(<enderio:block_vat>);
 recipes.addShaped(<enderio:block_vat>, [
