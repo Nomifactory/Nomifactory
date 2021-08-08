@@ -31,8 +31,8 @@
     },
     "survival": {
       "limitAffectedBlocks": true,
-      "maxAffectedBlocks": 2,
-      "harvestLevelBlock": 1,
+      "maxAffectedBlocks": 9,
+      "harvestLevelBlock": 10,
       "editUnbreakable": false,
       "minimumTransparency": 255,
       "limitEditBlocks": false,
