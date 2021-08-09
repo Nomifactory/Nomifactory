@@ -1607,6 +1607,9 @@ mods.jei.JEI.removeAndHide(<enderio:block_solar_panel>);
 mods.jei.JEI.removeAndHide(<enderio:block_solar_panel:1>);
 mods.jei.JEI.removeAndHide(<enderio:block_solar_panel:2>);
 mods.jei.JEI.removeAndHide(<enderio:block_solar_panel:3>);
+mods.jei.JEI.removeAndHide(<enderio:block_solar_panel:4>);
+mods.jei.JEI.removeAndHide(<enderio:block_solar_panel:5>);
+mods.jei.JEI.removeAndHide(<enderio:block_solar_panel:6>);
 mods.jei.JEI.removeAndHide(<extrautils2:user>);
 mods.jei.JEI.removeAndHide(<extrautils2:contract>);
 mods.jei.JEI.removeAndHide(<enderio:block_cap_bank>);
@@ -1634,7 +1637,9 @@ mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio
 mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye"}));
 mods.jei.JEI.removeAndHide(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet"}));
 mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);
-mods.jei.JEI.removeAndHide(<enderio:item_material:40>);  
+mods.jei.JEI.removeAndHide(<enderio:item_material:40>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:81>);
+mods.jei.JEI.removeAndHide(<enderio:block_death_pouch>);
 
 
 //Extended Crafting Removals
