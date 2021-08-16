@@ -11,7 +11,6 @@ import fs from "fs";
 import upath from "upath";
 import buildConfig from "../../buildConfig";
 
-const MOJANG_MAVEN = "https://libraries.minecraft.net/";
 const FORGE_VERSION_REG = /forge-(.+)/;
 const FORGE_MAVEN = "https://files.minecraftforge.net/maven/";
 
@@ -53,7 +52,7 @@ async function getForgeURLs() {
 	/**
 	 * Parse the profile manifest.
 	 */
-	let forgeUniversalJar: Buffer, forgeProfile: ForgeProfile;
+	let forgeProfile: ForgeProfile;
 	const files = (await unzip.Open.buffer(forgeJar))?.files;
 
 	if (!files) {
@@ -62,32 +61,21 @@ async function getForgeURLs() {
 
 	for (const file of files) {
 		// Look for the installation profile.
-		if (!forgeProfile && file.path == "install_profile.json") {
+		if (!forgeProfile && file.path == "version.json") {
 			forgeProfile = JSON.parse((await file.buffer()).toString());
 		}
-
-		if (forgeUniversalJar && forgeProfile) {
-			break;
-		}
 	}
 
-	if (!(forgeProfile && forgeProfile.versionInfo && forgeProfile.versionInfo.libraries)) {
+	if (!forgeProfile || !forgeProfile.libraries) {
 		throw new Error("Malformed Forge installation profile.");
 	}
+
 	/**
 	 * Finally, fetch libraries.
 	 */
-	const libraries = forgeProfile.versionInfo.libraries.filter((x) => x.serverreq);
+	const libraries = forgeProfile.libraries.filter((x) => Boolean(x?.downloads?.artifact?.url));
 
-	return [
-		FORGE_MAVEN + forgeInstallerPath,
-		...libraries.map((library) => {
-			const libraryPath = libraryToPath(library.name) + ".jar";
-			const url = library.url || MOJANG_MAVEN;
-
-			return url + libraryPath;
-		}),
-	];
+	return [FORGE_MAVEN + forgeInstallerPath, ...libraries.map((library) => library.downloads.artifact.url)];
 }
 
 /**

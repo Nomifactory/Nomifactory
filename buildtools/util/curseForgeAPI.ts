@@ -67,7 +67,7 @@ export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgePr
 	// Augment the array of known projects with new info.
 	const fetched: CurseForgeProject[] = await request.post({
 		uri: "https://addons-ecs.forgesvc.net/api/v2/addon/",
-		json: toFetch,
+		json: unfetched,
 		fullResponse: false,
 		maxAttempts: 5,
 	});

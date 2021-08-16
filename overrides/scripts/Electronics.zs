@@ -477,7 +477,7 @@ recipes.addShaped(<gregtech:meta_item_1:12152>,[[<gregtech:meta_tool:6>],[<gregt
 
 //Resonant Clathrate
 furnace.remove(<minecraft:ender_pearl>);
-furnace.addRecipe(<forestry:crafting_material>, <thermalfoundation:material:895>, 0.0);
+furnace.addRecipe(<contenttweaker:pulsatingdust>, <thermalfoundation:material:895>, 0.0);
 
 //EnderIO Conduits
 recipes.remove(<enderio:item_power_conduit>);
@@ -685,18 +685,6 @@ recipes.addShaped(<enderio:item_endergy_conduit:11> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_endergy_conduit:11>.displayName = "Superconductor Energy Conduit";
 assembler.recipeBuilder().inputs([<gregtech:cable:354>* 2, <enderio:item_endergy_conduit:10>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:11> * 4]).duration(80).EUt(16).buildAndRegister();
-	
-//removing bad field generator assembling recipes
-assembler.findRecipe(30, [<ore:circuitBasic>.firstItem * 4, <ore:dustEnderPearl>.firstItem], [<liquid:osmium> * 288]).remove();
-assembler.findRecipe(30, [<ore:circuitBasic>.firstItem * 4, <ore:dustEnderPearl>.firstItem], [<liquid:osmium> * 288]).remove();
-assembler.findRecipe(120, [<ore:circuitGood>.firstItem * 4, <ore:dustEnderEye>.firstItem], [<liquid:osmium> * 576]).remove();
-assembler.findRecipe(120, [<ore:circuitGood>.firstItem * 4, <ore:dustEnderEye>.firstItem], [<liquid:osmium> * 576]).remove();
-assembler.findRecipe(480, [<ore:circuitAdvanced>.firstItem * 4, <gregtech:meta_item_1:32724>], [<liquid:osmium> * 1152]).remove();
-assembler.findRecipe(480, [<ore:circuitAdvanced>.firstItem * 4, <gregtech:meta_item_1:32724>], [<liquid:osmium> * 1152]).remove();
-assembler.findRecipe(1920, [<ore:circuitExtreme>.firstItem * 4, <gregtech:meta_item_1:2331>], [<liquid:osmium> * 2304]).remove();
-assembler.findRecipe(1920, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_item_1:2331>], [<liquid:osmium> * 2304]).remove();
-assembler.findRecipe(7680, [<ore:circuitMaster>.firstItem * 4, <gregtech:meta_item_1:32725>], [<liquid:osmium> * 4608]).remove();
-assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <gregtech:meta_item_1:32725>], [<liquid:osmium> * 4608]).remove();
 
 //Item conduit - by hand
 recipes.addShaped(<enderio:item_item_conduit> * 4, [
@@ -749,7 +737,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_endergy_conduit:9>);
 
 
 //Ender Pearls
-alloy.recipeBuilder().inputs([<minecraft:diamond>,<forestry:crafting_material>]).outputs([<minecraft:ender_pearl>]).duration(300).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<minecraft:diamond>,<ore:dustPulsating>]).outputs([<minecraft:ender_pearl>]).duration(300).EUt(16).buildAndRegister();
 
 //Wrought Iron
 furnace.remove(<gregtech:meta_item_1:9197>);
@@ -788,36 +776,6 @@ recipes.addShaped(<gregtech:meta_item_1:32600>, [
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_2:16018>, <ore:stickIron>], 
 	[<gregtech:meta_item_2:16018>, <ore:stickIronMagnetic>, <gregtech:meta_item_2:16018>],
 	[<ore:stickIron>, <gregtech:meta_item_2:16018>, <ore:cableGtSingleTin>]]);
-
-//LV Motor - Assembler (iron parts)
-assembler.findRecipe(10,
-    [<ore:cableGtSingleTin>.firstItem * 2,
-     <ore:stickIron>.firstItem * 2,
-     <ore:stickIronMagnetic>.firstItem],
-    [<liquid:copper> * 288]).remove();
-
-assembler.recipeBuilder()
-    .outputs(<gregtech:meta_item_1:32600>)
-    .inputs(<ore:cableGtSingleTin> * 2,
-            <ore:stickIron> * 2,
-            <ore:stickIronMagnetic>)
-    .fluidInputs(<liquid:copper> * 144)
-    .duration(600).EUt(10).buildAndRegister();
-
-//LV Motor - Assembler (steel parts)
-assembler.findRecipe(10,
-    [<ore:cableGtSingleTin>.firstItem * 2,
-     <ore:stickSteel>.firstItem * 2,
-     <ore:stickSteelMagnetic>.firstItem],
-    [<liquid:copper> * 288]).remove();
-
-assembler.recipeBuilder()
-    .outputs(<gregtech:meta_item_1:32600>)
-    .inputs(<ore:cableGtSingleTin> * 2,
-            <ore:stickSteel> * 2,
-            <ore:stickSteelMagnetic>)
-    .fluidInputs(<liquid:copper> * 144)
-    .duration(600).EUt(10).buildAndRegister();
 
 //Diode
 recipes.remove(<metaitem:component.diode>);
@@ -1011,3 +969,40 @@ assembler.findRecipe(8, [<ore:dustWood>.firstItem, <gregtech:meta_item_1:32301>]
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_steel");
 recipes.removeByRecipeName("gregtech:small_coil_copper_ferrite");
 recipes.removeByRecipeName("gregtech:small_coil_annealed_copper_ferrite");
+
+//Adjust Field Generator assembler fluids to match our recipes
+assembler.findRecipe(30, [<ore:circuitBasic>.firstItem * 4, <ore:dustEnderPearl>.firstItem], [<liquid:osmium> * 288]).remove();
+assembler.findRecipe(120, [<ore:circuitGood>.firstItem * 4, <ore:dustEnderEye>.firstItem], [<liquid:osmium> * 576]).remove();
+assembler.findRecipe(480, [<ore:circuitAdvanced>.firstItem * 4, <metaitem:quantumeye>], [<liquid:osmium> * 1152]).remove();
+assembler.findRecipe(1920, [<ore:circuitExtreme>.firstItem * 4, <ore:dustNetherStar>.firstItem], [<liquid:osmium> * 2304]).remove();
+assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <metaitem:quantumstar>], [<liquid:osmium> * 4608]).remove();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitBasic>, <ore:dustEnderPearl>)
+	.fluidInputs(<liquid:conductive_iron> * 288)
+	.outputs(<metaitem:field.generator.lv>)
+	.duration(100).EUt(30).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitGood>, <ore:dustEnderEye>)
+	.fluidInputs(<liquid:energetic_alloy> * 288)
+	.outputs(<metaitem:field.generator.mv>)
+	.duration(100).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitAdvanced>, <metaitem:quantumeye>)
+	.fluidInputs(<liquid:vibrant_alloy> * 288)
+	.outputs(<metaitem:field.generator.hv>)
+	.duration(100).EUt(480).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitExtreme>, <ore:dustNetherStar>)
+	.fluidInputs(<liquid:end_steel> * 288)
+	.outputs(<metaitem:field.generator.ev>)
+	.duration(100).EUt(1920).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:circuitElite>, <metaitem:quantumstar>)
+	.fluidInputs(<liquid:lumium> * 288)
+	.outputs(<metaitem:field.generator.iv>)
+	.duration(100).EUt(7680).buildAndRegister();

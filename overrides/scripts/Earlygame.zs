@@ -69,7 +69,7 @@ recipes.addShapeless(<minecraft:gravel>, [<minecraft:cobblestone>, <gregtech:met
 recipes.addShapeless(<minecraft:sand>, [<minecraft:gravel>, <gregtech:meta_tool:12>]);
 recipes.addShapeless(<contenttweaker:block_dust>, [<minecraft:sand>, <gregtech:meta_tool:12>]);
 recipes.addShapeless(<minecraft:clay>, [<contenttweaker:block_dust>,<minecraft:water_bucket>]);
-furnace.addRecipe(<forestry:crafting_material>, <gregtech:meta_item_1:2193>, 0.0);
+furnace.addRecipe(<contenttweaker:pulsatingdust>, <gregtech:meta_item_1:2193>, 0.0);
 recipes.addShapeless(<minecraft:gravel>, [<minecraft:cobblestone>, <gregtech:meta_tool:12>]);
 
 
@@ -117,7 +117,7 @@ recipes.addShaped(<storagedrawers:controllerslave>, [
 recipes.remove(<rangedpumps:pump>);
 recipes.addShaped(<rangedpumps:pump>, [
 	[<minecraft:obsidian>, <gregtech:meta_item_1:32610>, <minecraft:obsidian>],
-	[<gregtech:meta_item_1:32610>, <gregtech:compressed_9:14>, <gregtech:meta_item_1:32610>],
+	[<gregtech:meta_item_1:32610>, <gregtech:meta_block_compressed_13:10>, <gregtech:meta_item_1:32610>], //Ender Pearl Block
 	[<minecraft:obsidian>, <gregtech:meta_item_1:32610>, <minecraft:obsidian>]]);
 <rangedpumps:pump>.displayName = "Ender Pump";
 
@@ -125,7 +125,7 @@ recipes.remove(<enderstorage:ender_storage:1>);
 recipes.addShaped(<enderstorage:ender_storage:1>, [
 	[<minecraft:blaze_rod>, <minecraft:wool>, <minecraft:blaze_rod>],
 	[<ore:obsidian>, basictank, <ore:obsidian>],
-	[<minecraft:blaze_rod>, <gregtech:compressed_9:14>, <minecraft:blaze_rod>]]);
+	[<minecraft:blaze_rod>, <gregtech:meta_block_compressed_13:10>, <minecraft:blaze_rod>]]); //Ender Pearl Block
 recipes.addShapeless(<enderstorage:ender_storage:1>, [<enderstorage:ender_storage:1>]);
 
 
@@ -146,7 +146,7 @@ recipes.remove(<extrautils2:ingredients:7>);
 recipes.remove(<extrautils2:ingredients:8>);
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <actuallyadditions:item_crystal>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <minecraft:redstone_block>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<gregtech:compressed_9:15>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<gregtech:meta_block_compressed_13:11>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister(); // Ender Eye Block
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <minecraft:diamond> * 4]).outputs([<extrautils2:ingredients:7>]).duration(800).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot:1> * 4]).outputs([<extrautils2:ingredients:6>]).duration(400).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot> * 4]).outputs([<extrautils2:ingredients:8>]).duration(400).EUt(16).buildAndRegister();
@@ -209,19 +209,6 @@ recipes.addShaped(<gregtech:meta_item_1:32640>, [
 	[<gregtech:meta_item_1:12197>,<gregtech:meta_item_1:12197>,<gregtech:meta_item_1:12197>],
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_1:14197>,<gregtech:meta_item_1:14197>],
 	[<ore:cableGtSingleTin>, <gregtech:meta_item_1:32600>, <gregtech:meta_item_2:26197>]]);
-
-<simplefluidtanks:wrench>.displayName = "Multiblock Fluid Tank Wrench";
-<simplefluidtanks:tankitem>.displayName = "Multiblock Fluid Tank Block";
-<simplefluidtanks:valveitem>.displayName = "Multiblock Fluid Tank Valve";
-recipes.remove(<simplefluidtanks:tankitem>);
-recipes.addShaped(<simplefluidtanks:tankitem> * 4, [
-	[<gregtech:meta_item_1:12033>, <minecraft:glass>, <gregtech:meta_item_1:12033>],
-	[<minecraft:glass>, null, <minecraft:glass>],
-	[<gregtech:meta_item_1:12033>, <minecraft:glass>, <gregtech:meta_item_1:12033>]]);
-recipes.remove(<simplefluidtanks:valveitem>);
-recipes.addShaped(<simplefluidtanks:valveitem>, [
-	[null, <minecraft:lever>],
-	[<simplefluidtanks:tankitem>, <gregtech:fluid_pipe:2095>]]);
 
 //Fluid Conduit
 mods.jei.JEI.removeAndHide(<enderio:item_liquid_conduit>);
@@ -331,9 +318,6 @@ reactor.recipeBuilder()
 
 //Remove other recipe for Dimethylhydrazine
 reactor.findRecipe(480, [null], [<liquid:methanol> * 2000, <liquid:ammonia> * 2000, <liquid:hypochlorous_acid> * 1000]).remove();
-
-mods.jei.JEI.removeAndHide(<gregtech:compressed_16:13>);
-mods.jei.JEI.removeAndHide(<appliedenergistics2:facade>.withTag({damage: 13, item: "gregtech:compressed_16"}));
 
 //Lava Factory
 recipes.remove(<actuallyadditions:block_misc:7>);
@@ -471,7 +455,7 @@ wiremill.recipeBuilder().inputs([<extendedcrafting:material:32>]).outputs([<greg
 centrifuge.findRecipe(30, [<gregtech:meta_item_1:2231> * 5], [null]).remove();
 electrolyzer.findRecipe(90, [<gregtech:meta_item_1:2114> * 8], [null]).remove();
 electrolyzer.recipeBuilder().inputs([<gregtech:meta_item_1:2114> * 8]).outputs([<gregtech:meta_item_1:2035> * 3,<gregtech:meta_item_1:2062> * 3, <gregtech:meta_item_1:2065> * 2]).duration(500).EUt(32).buildAndRegister();
-electrolyzer.recipeBuilder().inputs([<ore:dustEnderPearl>]).outputs([<forestry:crafting_material>]).duration(200).EUt(1000).buildAndRegister();
+electrolyzer.recipeBuilder().inputs([<ore:dustEnderPearl>]).outputs([<contenttweaker:pulsatingdust>]).duration(200).EUt(1000).buildAndRegister();
 electrolyzer.findRecipe(60, [<gregtech:meta_item_1:2218> * 10], [null]).remove();
 
 
@@ -906,31 +890,6 @@ for mat in material {
 	  	  D : <ore:gtceScrewdrivers>});
 }
 
-
-//Adding Pump recipes to the assembler
-
-val ringMaterial = [
-
-	<gregtech:meta_item_1:18152>, //Rubber Ring
-	<gregtech:meta_item_1:18398>, //Styrene-Butadiene Ring
-	<gregtech:meta_item_1:18391> // Silicone Rubber Ring
-
-] as IItemStack[];
-
-
-for ringItem in ringMaterial {
-
-assembler.recipeBuilder().
-inputs([<gregtech:meta_item_2:18071>, <gregtech:meta_item_1:17071>, <gregtech:meta_item_1:32600>, <gregtech:fluid_pipe:2095>, <gregtech:cable:5071>, ringItem * 2]).outputs([<gregtech:meta_item_1:32610>]).duration(200).EUt(16).buildAndRegister();	//lv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18095>, <gregtech:meta_item_1:17095>, <gregtech:meta_item_1:32601>, <gregtech:fluid_pipe:2184>, <gregtech:cable:5018>, ringItem * 2]).outputs([<gregtech:meta_item_1:32611>]).duration(200).EUt(16).buildAndRegister();	//mv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18184>, <gregtech:meta_item_1:17184>, <gregtech:meta_item_1:32602>, <gregtech:fluid_pipe:2183>, <gregtech:cable:5026>, ringItem * 2]).outputs([<gregtech:meta_item_1:32612>]).duration(200).EUt(16).buildAndRegister();	//hv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18183>, <gregtech:meta_item_1:17183>, <gregtech:meta_item_1:32603>, <gregtech:fluid_pipe:2072>, <gregtech:cable:5001>, ringItem * 2]).outputs([<gregtech:meta_item_1:32613>]).duration(200).EUt(16).buildAndRegister();	//ev pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18235>, <gregtech:meta_item_1:17235>, <gregtech:meta_item_1:32604>, <gregtech:fluid_pipe:2235>, <gregtech:cable:5074>, ringItem * 2]).outputs([<gregtech:meta_item_1:32614>]).duration(200).EUt(16).buildAndRegister();	//iv pump
-
-}
-
-
-
 //Vinyl Acetate
 electrolyzer.recipeBuilder()
 	.fluidInputs(<liquid:vinyl_acetate> * 12000)
@@ -1034,17 +993,15 @@ compressor.recipeBuilder()
 	.outputs(<minecraft:bone>)
 	.duration(20).EUt(8).buildAndRegister();
 
-//Adjust the recipe of the GTCE Crafting Station
+// Adjust the recipe of the GTCE Crafting Station to the old Forestry Recipe
 recipes.removeByRecipeName("gregtech:workbench_bronze");
 makeShaped("gtce_crafting_station", <gregtech:machine:825>,
-	["CWC",
-	 "IAI",
-	 "IHI"],
+	[" B ",
+	 " T ",
+	 " C "],
 	{ C : <minecraft:chest>,
-	  W : <minecraft:crafting_table>,
-	  I : <gregtech:meta_item_1:12033>, //Iron Plate
-	  A : <forestry:worktable>, //Worktable
-	  H : <ore:gtceHardHammers> //Hammer
+	  T : <minecraft:crafting_table>,
+	  B : <minecraft:book>
 	  });
 
 //Add Decomposition Recipe for Polyphenylene Sulfide
