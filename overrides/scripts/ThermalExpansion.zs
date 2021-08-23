@@ -541,3 +541,8 @@ for blockItem in blocks {
 
     }
 }
+
+// Drill Casing
+recipes.addShapeless("drill_casing", <thermalfoundation:material:640>, [<actuallyadditions:item_misc:16>]);
+// Drill Head
+recipes.addShapeless("thermal_drill_head", <thermalfoundation:material:656>, [<gregtech:meta_item_2:8183>]);
