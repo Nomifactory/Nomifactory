@@ -15,6 +15,7 @@ furnace.remove(<appliedenergistics2:material:5>);
 furnace.remove(<thermalfoundation:material:167>, <gregtech:meta_item_1:2708>);
 furnace.remove(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>);
 furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
+furnace.remove(<ore:ingotOsmium>);
 
 //  Tier 0										Steel, Silicon
 //	Tier 1	[1000 temp]		120		Copper		Black Steel, Annealed Copper
@@ -193,6 +194,16 @@ blast_furnace.findRecipe(480, [<gregtech:meta_item_1:10045>,<gregtech:meta_item_
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2135>], [null]).remove();	
 furnace.addRecipe(<gregtech:meta_item_1:10135>, <gregtech:meta_item_1:2135>, 0.0);
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10045>,<gregtech:meta_item_1:10072>]).outputs([<gregtech:meta_item_1:11135> * 2]).property("temperature", 4500).duration(7000).EUt(120).buildAndRegister();	
+
+//Osmium [Tier 10]
+
+blast_furnace.findRecipe(120, [<metaitem:dustOsmium>], [null]).remove();
+
+blast_furnace.recipeBuilder()
+	.inputs(<metaitem:dustOsmium>)
+	.outputs(<metaitem:ingotHotOsmium>)
+	.property("temperature", 3306)
+	.duration(400).EUt(120).buildAndRegister();
 
 //Naquadah [tier 11]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2307>], [null]).remove();	
