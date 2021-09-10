@@ -16,7 +16,7 @@ autoclave.recipeBuilder()
     .outputs([<gregtech:meta_item_1:32726>])
     .duration(480).EUt(7680).buildAndRegister();
 
-makeShaped("of_sunnarium_plates", <advsolars:sunnarium_plate> * 4, 
+makeShaped("of_sunnarium_plates", <advsolars:sunnarium_plate> * 4,
     ["RRR",
      "RSR",
      "RRR"],
@@ -35,7 +35,7 @@ makeShaped("of_enriched_sunnarium_plate", <advsolars:sunnarium_enriched_plate>,
      "EPE",
      " E "],
     { E : <advsolars:sunnarium_enriched>, P : <advsolars:sunnarium_plate> });
-	
+
 electrolyzer.recipeBuilder()
     .inputs([<ore:dustSphalerite> * 3])
     .outputs([<gregtech:meta_item_1:2079>,
@@ -216,14 +216,14 @@ fluidextractor.recipeBuilder()
     .duration(1000).EUt(3000).buildAndRegister();
 
 fusion_reactor.findRecipe(4096, [null],
-    [<liquid:deuterium> * 125, <liquid:tritium> * 125]).remove();	
+    [<liquid:deuterium> * 125, <liquid:tritium> * 125]).remove();
 
 fusion_reactor.recipeBuilder()
 	.fluidInputs([<liquid:berkelium> * 16, <liquid:californium> * 16])
     .fluidOutputs(<liquid:einsteinium> * 16)
     .duration(100)
     .EUt(15360)
-    .property("eu_to_start", 400000)
+    .property("eu_to_start", 400000000)
     .buildAndRegister();
 
 // LuV Machine Casing
@@ -233,14 +233,14 @@ recipes.remove(<gregtech:machine_casing:6>);
 recipes.remove(<gregtech:machine:506>);
 
 recipes.addShaped(<gregtech:machine:506>, [
-	[<ore:platePlastic>, <ore:plateLumium>, <ore:platePlastic>], 
+	[<ore:platePlastic>, <ore:plateLumium>, <ore:platePlastic>],
 	[<ore:cableGtSingleVanadiumGallium>, <gregtech:machine_casing:6>, <ore:cableGtSingleVanadiumGallium>]]);
 
 assembler.findRecipe(16,
     [<ore:plateChrome>.firstItem * 8,
      <gregtech:meta_item_1:32766>.withTag({Configuration: 8})],
     [null]).remove();
-	
+
 assembler.recipeBuilder()
     .inputs(<ore:plateLumium> * 8)
     .outputs([<gregtech:machine_casing:6>])
@@ -382,13 +382,13 @@ recipes.addShapeless(<avaritia:resource:3>, [<gregtech:meta_item_1:9972>]);
 
 //Remove Data Orbs
 assembler.findRecipe(1200,
-    [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64, 
+    [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64,
             <gregtech:meta_item_2:32482>*32, <gregtech:meta_item_2:32485>*4,
             <gregtech:meta_item_2:32444>, <gregtech:meta_item_2:32492>],
     [<liquid:tin>*288]).remove();
 
 assembler.findRecipe(1200,
-    [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64, 
+    [<gregtech:meta_item_2:16051>*32, <gregtech:meta_item_2:32480>*64,
             <gregtech:meta_item_2:32482>*32, <gregtech:meta_item_2:32485>*4,
             <gregtech:meta_item_2:32444>, <gregtech:meta_item_2:32492>],
     [<liquid:soldering_alloy>*144]).remove();
@@ -433,7 +433,7 @@ fusion_reactor.findRecipe(8192,
 
 //Processing Array
 recipes.remove(<gregtech:machine:2507>);
-makeShaped("of_processing_array", <gregtech:machine:2507>, 
+makeShaped("of_processing_array", <gregtech:machine:2507>,
     ["CSC",
      "AHA",
      "CBC"],
@@ -441,7 +441,7 @@ makeShaped("of_processing_array", <gregtech:machine:2507>,
        H : <gregtech:machine:505>, //Machine Hull (IV)
        C : <ore:circuitMaster>, //T6 Circuit
        S : <advsolars:sunnarium>, //Sunnarium
-       B : <gregtech:machine:10697>}); //IV Tier 16x CEF 
+       B : <gregtech:machine:10697>}); //IV Tier 16x CEF
 
 
 //Restore Radon Recipe for QBit wafer
