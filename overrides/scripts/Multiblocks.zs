@@ -879,9 +879,9 @@ val naquadahreactormk1 = Builder.start(loc, id)
                         .build())
     .buildAndRegister() as Multiblock;
 
-id += 1;
+id += 1; 
 loc = "naquadahreactormk2";
-
+ 
 val naquadahreactormk2 = Builder.start(loc,id)
     .withPattern(
         FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
@@ -1209,7 +1209,7 @@ for meta in 0 .. 7 {
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockinputbus", meta)]);
 
-    recipes.addShapeless("mm_outputbus_conversion__" ~ meta,
+    recipes.addShapeless("mm_outputbus_conversion__" ~ meta, 
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockoutputbus", meta)]);
 }
@@ -1218,12 +1218,12 @@ for meta in 0 .. 7 {
 for meta in 0 .. 8 {
     // tiny returns 4 from the casing, then there's 3 more ingots per tier
     val count as int = (4 + meta * 3);
-
+    
     recipes.addShapeless("mm_fluidinput_refund_" ~ meta,
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockfluidinputhatch", meta)]);
 
-    recipes.addShapeless("mm_fluidoutput_refund_" ~ meta,
+    recipes.addShapeless("mm_fluidoutput_refund_" ~ meta, 
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockfluidoutputhatch", meta)]);
 }
@@ -1361,7 +1361,7 @@ makeShaped("lunar_mining_station", <gregtech:machine:3007>,
      "CLC"],
     { C : <ore:circuitExtreme>, //T4
       L : <gregtech:machine_casing:6>, //LuV Machine Casing
-      S : <extrautils2:screen>});
+      S : <extrautils2:screen>}); 
 
 ///////////////////////////////////////////////
 ////////////  Multiblock Recipes  /////////////
