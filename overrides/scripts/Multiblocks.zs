@@ -1428,7 +1428,7 @@ small_microverse.recipeMap
     .EUt(500)
     .inputs(<contenttweaker:tieroneship>,
             <deepmoblearning:trial_key>,
-						<deepmoblearning:pristine_matter_zombie>)
+            <deepmoblearning:pristine_matter_zombie>)
     .fluidInputs(<liquid:rocket_fuel> * 2000)
     .outputs(<deepmoblearning:glitch_heart>)
     .buildAndRegister();
