@@ -23,3 +23,4 @@ There are several things to be aware of when updating to Omnifactory version 1.3
     - Pulsating Mesh has been replaced with a **Contenttweaker** version
     - The Worktable has been replaced with the Crafting Station from **Gregtech Community Edition**
 All items have had conversion recipes provided.
+8. Due to a mandatory id remapping from **Gregtech Community Edition**, please make sure to empty you Ender Chests of **GTCE** Material Blocks, as they are not correct remapped.
