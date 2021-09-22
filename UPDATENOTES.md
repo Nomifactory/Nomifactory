@@ -1,6 +1,6 @@
 # Update Notes
 
-This document containts only the most important things required to know when updating Omnifactory to the next version. Please see the changelog for a complete desciption of everything that has been changed.
+This document contains only the most important things required to know when updating Omnifactory to the next version. Please see the changelog for a complete desciption of everything that has been changed.
 
 ## Updating to 1.3.0
 
