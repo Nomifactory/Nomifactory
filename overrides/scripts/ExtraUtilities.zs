@@ -9,8 +9,8 @@ makeShaped("machine_block",
 		"SQS",
 		"SSS",
 	], {
-		E: <metaitem:plateSteel>,
-		C: <ore:gemQuartzBlack>
+		S: <metaitem:plateSteel>,
+		Q: <ore:gemQuartzBlack>
 	});
 
 	
