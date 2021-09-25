@@ -978,31 +978,31 @@ assembler.findRecipe(1920, [<ore:circuitExtreme>.firstItem * 4, <ore:dustNetherS
 assembler.findRecipe(7680, [<ore:circuitElite>.firstItem * 4, <metaitem:quantumstar>], [<liquid:osmium> * 4608]).remove();
 
 assembler.recipeBuilder()
-	.inputs(<ore:circuitBasic>, <ore:dustEnderPearl>)
+	.inputs(<ore:circuitBasic> * 4, <ore:dustEnderPearl>)
 	.fluidInputs(<liquid:conductive_iron> * 288)
 	.outputs(<metaitem:field.generator.lv>)
 	.duration(100).EUt(30).buildAndRegister();
 
 assembler.recipeBuilder()
-	.inputs(<ore:circuitGood>, <ore:dustEnderEye>)
+	.inputs(<ore:circuitGood> * 4, <ore:dustEnderEye>)
 	.fluidInputs(<liquid:energetic_alloy> * 288)
 	.outputs(<metaitem:field.generator.mv>)
 	.duration(100).EUt(120).buildAndRegister();
 
 assembler.recipeBuilder()
-	.inputs(<ore:circuitAdvanced>, <metaitem:quantumeye>)
+	.inputs(<ore:circuitAdvanced> * 4, <metaitem:quantumeye>)
 	.fluidInputs(<liquid:vibrant_alloy> * 288)
 	.outputs(<metaitem:field.generator.hv>)
 	.duration(100).EUt(480).buildAndRegister();
 
 assembler.recipeBuilder()
-	.inputs(<ore:circuitExtreme>, <ore:dustNetherStar>)
+	.inputs(<ore:circuitExtreme> * 4, <ore:dustNetherStar>)
 	.fluidInputs(<liquid:end_steel> * 288)
 	.outputs(<metaitem:field.generator.ev>)
 	.duration(100).EUt(1920).buildAndRegister();
 
 assembler.recipeBuilder()
-	.inputs(<ore:circuitElite>, <metaitem:quantumstar>)
+	.inputs(<ore:circuitElite> * 4, <metaitem:quantumstar>)
 	.fluidInputs(<liquid:lumium> * 288)
 	.outputs(<metaitem:field.generator.iv>)
 	.duration(100).EUt(7680).buildAndRegister();
