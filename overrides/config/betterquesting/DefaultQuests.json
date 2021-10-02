@@ -5488,7 +5488,8 @@
     "79:10": {
       "preRequisites:11": [
         147,
-        21
+        21,
+        259
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5751,7 +5752,8 @@
     "83:10": {
       "preRequisites:11": [
         147,
-        21
+        21,
+        259
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -33374,7 +33376,8 @@
     "540:10": {
       "preRequisites:11": [
         147,
-        21
+        21,
+        259
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38845,7 +38848,7 @@
     },
     "632:10": {
       "preRequisites:11": [
-        71
+        260
       ],
       "properties:10": {
         "betterquesting:10": {
