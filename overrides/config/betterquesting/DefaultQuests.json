@@ -4741,7 +4741,8 @@
     },
     "68:10": {
       "preRequisites:11": [
-        35
+        35,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6350,7 +6351,8 @@
     },
     "92:10": {
       "preRequisites:11": [
-        233
+        233,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7580,7 +7582,8 @@
     "110:10": {
       "preRequisites:11": [
         105,
-        102
+        102,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19966,7 +19969,7 @@
     },
     "296:10": {
       "preRequisites:11": [
-        272
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -27000,7 +27003,8 @@
     "412:10": {
       "preRequisites:11": [
         232,
-        527
+        527,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31541,7 +31545,8 @@
     },
     "511:10": {
       "preRequisites:11": [
-        67
+        67,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31606,7 +31611,9 @@
     },
     "512:10": {
       "preRequisites:11": [
-        197
+        197,
+        296,
+        209
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -33516,7 +33523,8 @@
     },
     "542:10": {
       "preRequisites:11": [
-        197
+        197,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -34367,7 +34375,8 @@
     "553:10": {
       "preRequisites:11": [
         552,
-        59
+        59,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -47423,7 +47432,8 @@
     },
     "781:10": {
       "preRequisites:11": [
-        35
+        35,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -47745,7 +47755,8 @@
     "787:10": {
       "preRequisites:11": [
         81,
-        272
+        272,
+        296
       ],
       "properties:10": {
         "betterquesting:10": {
