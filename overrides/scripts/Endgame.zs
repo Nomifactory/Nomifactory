@@ -442,6 +442,10 @@ makeShaped("of_processing_array", <gregtech:machine:2507>,
        C : <ore:circuitMaster>, //T6 Circuit
        S : <advsolars:sunnarium>, //Sunnarium
        B : <gregtech:machine:10697>}); //IV Tier 16x CEF
+       
+//Alterative Airtight seal recipe
+val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}, false);
+recipes.addShapeless(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 12 as short}]}),[creativetank,<minecraft:book>]);
 
 
 //Restore Radon Recipe for QBit wafer
