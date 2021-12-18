@@ -6483,7 +6483,7 @@
     },
     "94:10": {
       "preRequisites:11": [
-        505
+        539
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31117,7 +31117,8 @@
     "505:10": {
       "preRequisites:11": [
         154,
-        546
+        546,
+        94
       ],
       "properties:10": {
         "betterquesting:10": {
