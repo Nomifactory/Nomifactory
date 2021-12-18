@@ -3,7 +3,7 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2855",
+        "id": "forge-14.23.5.2860",
         "primary": true
       }
     ]
@@ -16,8 +16,8 @@
   "externalDependencies": [
     {
       "name": "Applied Energistics 2 Trousers Edition",
-      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/omni-fixes-v47/appliedenergistics2-rv6-stable-7.omni-fixes-v47.jar",
-      "sha": "99305243e3eb8703d37f36914e4ea1d119e22ac4"
+      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/Experimental-v49/appliedenergistics2-rv6-stable-7.omni-fixes-v49n.jar",
+      "sha": "55f455ab190db44ad5b5f887f235a8730d2e5d40"
     }
   ],
   "files": [
@@ -303,12 +303,12 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3383242,
+      "fileID": 3478825,
       "required": true
     },
     {
       "projectID": 246996,
-      "fileID": 2722575,
+      "fileID": 3440963,
       "required": true
     },
     {
@@ -413,7 +413,7 @@
     },
     {
       "projectID": 293327,
-      "fileID": 3388082,
+      "fileID": 3478805,
       "required": true
     },
     {
@@ -473,7 +473,7 @@
     },
     {
       "projectID": 316751,
-      "fileID": 3406210,
+      "fileID": 3482687,
       "required": true
     },
     {
@@ -578,7 +578,7 @@
     },
     {
       "projectID": 398267,
-      "fileID": 3146463,
+      "fileID": 3477735,
       "required": true
     },
     {
@@ -593,7 +593,7 @@
     },
     {
       "projectID": 257814,
-      "fileID": 3321760,
+      "fileID": 3467576,
       "required": true
     },
     {
@@ -603,7 +603,7 @@
     },
     {
       "projectID": 257818,
-      "fileID": 3351491,
+      "fileID": 3475272,
       "required": true
     },
     {

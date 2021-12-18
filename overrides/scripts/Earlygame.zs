@@ -276,7 +276,9 @@ mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2307>,<enderio:item_material:20> * 4,<contenttweaker:grainsofinnocence>,<enderio:item_material:36>]).fluidInputs([<liquid:pulsating_iron> * 576, <liquid:neptunium> * 144]).outputs(<gregtech:meta_item_1:2309>).EUt(8000).duration(400).buildAndRegister();
 mixer.recipeBuilder().inputs([<gregtech:meta_item_1:2308>,<enderio:item_material:34>,<enderio:item_material:35>*4,<enderio:item_material:37>]).fluidInputs([<liquid:enderium> * 576, <liquid:curium> * 144]).outputs(<gregtech:meta_item_1:2310>).EUt(30000).duration(400).buildAndRegister();
 mixer.recipeBuilder().inputs([<ore:dustSteel> * 3,<ore:dustBlackBronze> * 2,<actuallyadditions:item_crystal:3> * 2,<extrautils2:ingredients:4> * 2]).outputs(<gregtech:meta_item_1:2231>  * 9).EUt(15).duration(200).buildAndRegister();
-recipes.remove(<gregtech:meta_item_1:2231>);
+recipes.removeShapeless(<gregtech:meta_item_1:2231>, [<ore:dustNickel>, <ore:dustBlackBronze>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>]);
+mixer.findRecipe(8, [<ore:dustTinySteel>.firstItem * 3, <ore:dustTinyNickel>.firstItem, <ore:dustTinyBlackBronze>.firstItem], [null]).remove();
+mixer.findRecipe(8, [<ore:dustSmallSteel>.firstItem * 3, <ore:dustSmallNickel>.firstItem, <ore:dustSmallBlackBronze>.firstItem], [null]).remove();
 furnace.addRecipe(<actuallyadditions:item_misc:5>, <actuallyadditions:block_misc:3>, 0.0);
 
 reactor.recipeBuilder().inputs([<minecraft:quartz>]).fluidInputs([<liquid:glowstone> * 288]).outputs(<thermalfoundation:material:894>).EUt(100).duration(100).buildAndRegister();

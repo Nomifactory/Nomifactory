@@ -884,9 +884,15 @@ recipes.addShapeless(<advancedrocketry:landingpad>, [
 
 // Station Light
 recipes.remove(<advancedrocketry:circlelight>);
-recipes.addShapeless(<advancedrocketry:circlelight>, [
-	<ore:plateIron>, <minecraft:glowstone>
-]);
+makeShaped("ar_circlelight",
+	<advancedrocketry:circlelight> * 4, [
+		" P ",
+		"PGP",
+		" P ",
+	], {
+		P: <ore:plateIron>,  // Iron Plate
+		G: <minecraft:glowstone>, // Glowstone
+	});
 
 // Atmosphere Detector
 recipes.remove(<advancedrocketry:oxygendetection>);
