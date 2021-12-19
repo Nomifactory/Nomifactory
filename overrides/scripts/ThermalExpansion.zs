@@ -389,7 +389,7 @@ recipes.addShaped(<thermalexpansion:frame>, [
 [<gregtech:meta_item_1:12183>,<gregtech:meta_item_1:12183>,<gregtech:meta_item_1:12183>],
 [<gregtech:meta_item_1:12183>,<thermalexpansion:frame:64>,<gregtech:meta_item_1:12183>],
 [<gregtech:meta_item_1:12183>,<gregtech:meta_item_1:12183>,<gregtech:meta_item_1:12183>]]);
-<thermalexpansion:frame:64>.displayName = "Thermal Machine Casing";
+<thermalexpansion:frame>.displayName = "Thermal Machine Casing";
 
 recipes.remove(<thermalexpansion:frame:64>);
 recipes.addShaped(<thermalexpansion:frame:64>, [
