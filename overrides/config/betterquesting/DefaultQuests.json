@@ -49279,7 +49279,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 1,
-          "desc:8": "§6Sulfur Ore§r is a the only source of §6Sulfur Dust§r that\u0027s currently available to you.\n\nYou may want to spend a few §dOmnicoins§r to jumpstart your power storage.\n\nOtherwise, it\u0027s only available in §athe Nether§r that can only be travelled to using §6Nether Cake§r. Oh no!",
+          "desc:8": "§6Sulfur Ore§r is the only source of §6Sulfur Dust§r that\u0027s currently available to you.\n\nYou may want to spend a few §dOmnicoins§r on the ore to jumpstart your power storage.\n\nOtherwise the ore is only available in §athe Nether§r, and the only way to get there is with a §6Nether Cake§r. Oh no!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
