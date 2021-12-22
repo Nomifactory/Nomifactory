@@ -18656,7 +18656,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r.\n\nAlternatively, you can combine §6Phosphorous Pentoxide§r and Water for a much faster reaction, or §6Apatite Dust§r and §9Sulfuric Acid§r and Water if you don\u0027t want to rely on electrolysis.",
+          "desc:8": "§9Phosphoric Acid§r is a key component of §6Luminessence§r, which will be used extensively throughout the game. Primarily, for §6Nether Stars§r.\n\nIt can be made using several equially viable recipes.\n\n§9Phosphorus§r, §9Oxygen§r and §9Water§r combine together into §9Phosphoric Acid§r. Alternatively, you can combine §6Phosphorus Pentoxide§r and Water for a much faster reaction.\n\nOtherwise, §6Apatite Dust§r, §9Sulfuric Acid§r and Water can be used if you don\u0027t want to deal with Phosphorus.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33299,7 +33299,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Phosphorous§r can be obtained by processing §6Tricalcium Phosphate Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r vein.",
+          "desc:8": "§6Phosphorus§r can be obtained by processing §6Tricalcium Phosphate Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r veins.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50103,8 +50103,8 @@
           "id:3": 94,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -432,
-          "y:3": 256
+          "x:3": -480,
+          "y:3": 296
         },
         "35:10": {
           "id:3": 95,
@@ -50299,8 +50299,8 @@
           "id:3": 504,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -480,
-          "y:3": 296
+          "x:3": -432,
+          "y:3": 256
         },
         "63:10": {
           "id:3": 505,
