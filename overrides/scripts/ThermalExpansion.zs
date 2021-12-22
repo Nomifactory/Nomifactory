@@ -506,7 +506,6 @@ mods.jei.JEI.addDescription(<appliedenergistics2:material:10>, "Made in the Crys
 mods.jei.JEI.addDescription(<appliedenergistics2:material:11>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
 mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
 
-
 val liquids as int[][ILiquidStack] = {
     
     //Fluid : duration, power
@@ -541,3 +540,8 @@ for blockItem in blocks {
 
     }
 }
+
+//Add Rubber Trees to Phytogenic Insolator. Why would you use this?
+mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 6, <gregtech:sapling>, <thermalfoundation:fertilizer:0>, 9600, <gregtech:sapling>, 100);
+mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 12, <gregtech:sapling>, <thermalfoundation:fertilizer:1>, 14400, <gregtech:sapling>, 125);
+mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 18, <gregtech:sapling>, <thermalfoundation:fertilizer:2>, 19200, <gregtech:sapling>, 150);
