@@ -18656,7 +18656,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9Phosphoric Acid§r is a key component of §6Luminessence§r, which will be used extensively throughout the game. Primarily, for §6Nether Stars§r.\n\nIt can be made using several equially viable recipes.\n\n§9Phosphorus§r, §9Oxygen§r and §9Water§r combine together into §9Phosphoric Acid§r. Alternatively, you can combine §6Phosphorus Pentoxide§r and Water for a much faster reaction.\n\nOtherwise, §6Apatite Dust§r, §9Sulfuric Acid§r and Water can be used if you don\u0027t want to deal with Phosphorus.",
+          "desc:8": "§9Phosphoric Acid§r is a key component of §6Luminessence§r, which will be used extensively for such things as §6Nether Stars§r, §6Lumium Blend§r, and §bExtended Crafting§r components.\n\nIt can be made using several equally viable recipes:\n\n§6Phosphorus§r, §9Oxygen§r, and §9Water§r can be chemically reacted to produce §9Phosphoric Acid§r.\n\nAlternatively, you can combine §6Phosphorus Pentoxide§r and Water for a much faster reaction.\n\nOtherwise, you can react §6Apatite Dust§r, §9Sulfuric Acid§r, and Water to get Phosphoric Acid, §9Hydrochloric Acid§r, and a whole bunch of §6Gypsum Dust§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
