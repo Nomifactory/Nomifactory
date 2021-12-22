@@ -16,7 +16,7 @@ SET MIN_RAM={{minRAM}}
 SET MAX_RAM={{maxRAM}}
 
 :: DO NOT EDIT ANYTHING PAST THIS LINE
-SET LAUNCHPARAMS=-server -Xms%MIN_RAM% -Xmx%MAX_RAM% %JAVA_PARAMETERS% -jar %FORGEJAR% nogui
+SET LAUNCHPARAMS=-server -Xms%MIN_RAM% -Xmx%MAX_RAM% %JAVA_PARAMETERS% -Dlog4j.configurationFile=log4j2_112-116.xml -jar %FORGEJAR% nogui
 echo Checking java version...
 echo.
 java -version

@@ -232,3 +232,6 @@ item.contenttweaker.hand_framing_tool.desc6=The tool can then be used to convert
 
 item.contenttweaker.pulsatingdust.name=Pulsating Dust
 item.contenttweaker.pulsatingmesh.name=Pulsating Mesh
+
+tile.contenttweaker.simulation_casing.name=Naquadah-Plated Dark Steel Machine Casing
+tile.contenttweaker.simulation_casing_2.name=Naquadah Machine Casing

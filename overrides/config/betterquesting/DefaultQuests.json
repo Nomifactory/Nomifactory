@@ -47786,7 +47786,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -48465,7 +48465,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 798,
@@ -48858,7 +48858,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §a§r§3Assembly Line§r is a particuarly unusual multiblock from an automation standpoint. Up until now, it has been possible to dump ingredients into a single input bus. Clearly, this won\u0027t work for the Assembly line, since it has a whole bunch of ULV inputs buses that hold one item stack each.\n\nYou might be tempted to dump everything into a chest and route items around to specific buses with §aItem Conduits§r. You\u0027ll probably find this to be slow, prone to jamming, and inflexible when you want to run different recipes.\n\nIf you\u0027ve unlocked §3§3The Empowerer§r§r, you might have considered §aPhantomfaces§r. These would certainly be an improvement over item conduits, but there\u0027s an even better solution.\n\nEnter §aItem Laser Relays§r§r: these handy tools from §bActually Additions§r allow you to create a virtual inventory out of multiple real ones; that is, you can use them to make other automation think that all of the input buses are the same inventory.\n\n§eOne important thing to note is that lasers appear to be \"placed\" on a particular block but they will interact with all adjacent (non-laser) blocks.§r Take this into account when placing them.\n\nTo start, place a laser on each of the input buses. Then, place the §a§aItem Interface§r adjacent to the laser on the first input bus. This will serve as the access point to the virtual inventory where you can connect things like an §3Unpackager§r or §aME Interface§r.\n\nTake your §aLaser Wrench§r and right click the first laser relay, then the second laser relay, to link them together. Repeat this with the second and third relays, third and fourth relays, etc. until they have all been linked together. Now you have a laser network virtualizing all of the input buses!\n\n§cWarning: be careful not to place a second laser on a laser network adjacent to the network\u0027s Item Interface. This will immediately crash your game because it creates a cycle in the network. You will have to either restore from backup or edit the level.dat directly to remove the block to play again.§r\n\nIf you need to do recipes with an §6§6Integrated Circuit§r, you can leave it in an input bus and skip placing a laser there. Remember to always use §eBlocking Mode§r when connecting the laser network to on-demand crafting. As long as you do, you can have §edifferent circuits in the Assembly Line without recipe conflicts§r. If you don\u0027t use Blocking Mode, you are likely to accidentally craft something else and jam your Assembly Line.",
+          "desc:8": "The §a§r§3Assembly Line§r is a particularly unusual multiblock from an automation standpoint. Up until now, it has been possible to dump ingredients into a single input bus. Clearly, this won\u0027t work for the Assembly line, since it has a whole bunch of ULV inputs buses that hold one item stack each.\n\nYou might be tempted to dump everything into a chest and route items around to specific buses with §aItem Conduits§r. You\u0027ll probably find this to be slow, prone to jamming, and inflexible when you want to run different recipes.\n\nIf you\u0027ve unlocked §3§3The Empowerer§r§r, you might have considered §aPhantomfaces§r. These would certainly be an improvement over item conduits, but there\u0027s an even better solution.\n\nEnter §aItem Laser Relays§r§r: these handy tools from §bActually Additions§r allow you to create a virtual inventory out of multiple real ones; that is, you can use them to make other automation think that all of the input buses are the same inventory.\n\n§eOne important thing to note is that lasers appear to be \"placed\" on a particular block but they will interact with all adjacent (non-laser) blocks.§r Take this into account when placing them.\n\nTo start, place a laser on each of the input buses. Then, place the §a§aItem Interface§r adjacent to the laser on the first input bus. This will serve as the access point to the virtual inventory where you can connect things like an §3Unpackager§r or §aME Interface§r.\n\nTake your §aLaser Wrench§r and right click the first laser relay, then the second laser relay, to link them together. Repeat this with the second and third relays, third and fourth relays, etc. until they have all been linked together. Now you have a laser network virtualizing all of the input buses!\n\n§cWarning: be careful not to place a second laser on a laser network adjacent to the network\u0027s Item Interface. This will immediately crash your game because it creates a cycle in the network. You will have to either restore from backup or edit the level.dat directly to remove the block to play again.§r\n\nIf you need to do recipes with an §6§6Integrated Circuit§r, you can leave it in an input bus and skip placing a laser there. Remember to always use §eBlocking Mode§r when connecting the laser network to on-demand crafting. As long as you do, you can have §edifferent circuits in the Assembly Line without recipe conflicts§r. If you don\u0027t use Blocking Mode, you are likely to accidentally craft something else and jam your Assembly Line.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -49124,6 +49124,93 @@
         "0:10": {
           "index:3": 0,
           "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "809:10": {
+      "preRequisites:11": [
+        367
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §3Simulation Supercomputer§r is a multiblock structure that performs §bDeep Mob Learning§r simulations like the §3Simulation Chamber§r, but is capable of overclocking these simulations to incredible speeds.\n\nOne of these structures can perform the equivalent work of hundreds of individual Simulation Chambers more efficiently. This will make it far easier to generate pristine matter you\u0027ll need for things like §6Dragon Lair Data§r. You\u0027ll probably need several §3Loot Fabricators§r to keep up with it.\n\nThe data model you place in the input bus will increment the iteration count and level up the same as if it were running in a regular Simulation Chamber. §eOverclocking does not alter the chances of pristines§r: those come at fixed rates per iteration based on the level of the data model. Training a fresh data model up to Self-Aware for 30% rates can be done very quickly though.\n\nAs a §dCreative Tier§r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second §dHeart of a Universe§r.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 2003,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Simulation Supercomputer",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 809,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 2003,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:simulation_casing_2"
+            },
+            "2:10": {
+              "Count:3": 70,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:simulation_casing"
+            },
+            "3:10": {
+              "Count:3": 26,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "extendedcrafting:storage"
+            },
+            "4:10": {
+              "Count:3": 17,
+              "Damage:2": 7,
+              "OreDict:8": "",
+              "id:8": "thermalfoundation:storage_alloy"
+            },
+            "5:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "enderio:block_fused_glass"
+            },
+            "6:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "deepmoblearning:simulation_chamber"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       }
     }
@@ -53382,6 +53469,13 @@
           "sizeY:3": 36,
           "x:3": -636,
           "y:3": -138
+        },
+        "109:10": {
+          "id:3": 809,
+          "sizeX:3": 72,
+          "sizeY:3": 72,
+          "x:3": -228,
+          "y:3": -240
         }
       }
     },

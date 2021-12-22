@@ -3,7 +3,7 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2855",
+        "id": "forge-14.23.5.2860",
         "primary": true
       }
     ]
@@ -16,19 +16,14 @@
   "externalDependencies": [
     {
       "name": "Applied Energistics 2 Trousers Edition",
-      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/omni-fixes-v46/appliedenergistics2-rv6-stable-7.omni-fixes-v46i.jar",
-      "sha": "fe8a26378a223a6a84326f598b8e250b9a538a0e"
+      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/Experimental-v49/appliedenergistics2-rv6-stable-7.omni-fixes-v49n.jar",
+      "sha": "55f455ab190db44ad5b5f887f235a8730d2e5d40"
     }
   ],
   "files": [
     {
       "projectID": 238403,
       "fileID": 2691084,
-      "required": true
-    },
-    {
-      "projectID": 282963,
-      "fileID": 2532663,
       "required": true
     },
     {
@@ -84,7 +79,8 @@
     {
       "projectID": 243478,
       "fileID": 2745657,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 222880,
@@ -179,7 +175,8 @@
     {
       "projectID": 272515,
       "fileID": 2685984,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 299815,
@@ -244,7 +241,8 @@
     {
       "projectID": 251407,
       "fileID": 2624712,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 223565,
@@ -284,7 +282,8 @@
     {
       "projectID": 271492,
       "fileID": 2469710,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 304920,
@@ -299,16 +298,17 @@
     {
       "projectID": 267602,
       "fileID": 2915363,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 239197,
-      "fileID": 3383242,
+      "fileID": 3478825,
       "required": true
     },
     {
       "projectID": 246996,
-      "fileID": 2722575,
+      "fileID": 3440963,
       "required": true
     },
     {
@@ -324,7 +324,8 @@
     {
       "projectID": 226406,
       "fileID": 2857869,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 254268,
@@ -334,7 +335,8 @@
     {
       "projectID": 284904,
       "fileID": 2568865,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 74924,
@@ -364,12 +366,14 @@
     {
       "projectID": 250398,
       "fileID": 2857064,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 226447,
       "fileID": 2477566,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 271009,
@@ -413,7 +417,7 @@
     },
     {
       "projectID": 293327,
-      "fileID": 3388082,
+      "fileID": 3478805,
       "required": true
     },
     {
@@ -424,7 +428,8 @@
     {
       "projectID": 238747,
       "fileID": 2739582,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 252676,
@@ -473,7 +478,7 @@
     },
     {
       "projectID": 316751,
-      "fileID": 3406210,
+      "fileID": 3482687,
       "required": true
     },
     {
@@ -578,13 +583,14 @@
     },
     {
       "projectID": 398267,
-      "fileID": 3146463,
+      "fileID": 3477735,
       "required": true
     },
     {
       "projectID": 282313,
       "fileID": 2689835,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 262823,
@@ -593,17 +599,18 @@
     },
     {
       "projectID": 257814,
-      "fileID": 3321760,
+      "fileID": 3467576,
       "required": true
     },
     {
       "projectID": 271740,
       "fileID": 2707353,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 257818,
-      "fileID": 3351491,
+      "fileID": 3475272,
       "required": true
     },
     {
@@ -619,7 +626,8 @@
     {
       "projectID": 60089,
       "fileID": 2671937,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 284007,
@@ -764,7 +772,8 @@
     {
       "projectID": 383632,
       "fileID": 3056455,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 318255,
