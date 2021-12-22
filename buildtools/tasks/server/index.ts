@@ -179,15 +179,17 @@ async function downloadMinecraftServer() {
  * Downloads mods according to manifest.json and checks hashes.
  */
 async function downloadMods() {
-	if (modpackManifest.files.length > 0) {
-		log(`Fetching ${modpackManifest.files.length} mods...`);
+	const toFetch = modpackManifest.files.filter((f) => !f.sides || f.sides.includes("server"));
+
+	if (toFetch.length > 0) {
+		log(`Fetching ${toFetch.length} mods...`);
 
 		const modsPath = upath.join(serverDestDirectory, "mods");
 		await fs.promises.mkdir(modsPath, { recursive: true });
 
 		let fetched = 0;
 		return Bluebird.map(
-			modpackManifest.files,
+			toFetch,
 			async (file) => {
 				const fileInfo = await fetchFileInfo(file.projectID, file.fileID);
 
@@ -201,13 +203,9 @@ async function downloadMods() {
 				fetched += 1;
 
 				if (modFile.reason == RetrievedFileDefReason.Downloaded) {
-					log(`Downloaded ${upath.basename(fileInfo.downloadUrl)}... (${fetched} / ${modpackManifest.files.length})`);
+					log(`Downloaded ${upath.basename(fileInfo.downloadUrl)}... (${fetched} / ${toFetch.length})`);
 				} else if (modFile.reason == RetrievedFileDefReason.CacheHit) {
-					log(
-						`Fetched ${upath.basename(fileInfo.downloadUrl)} from cache... (${fetched} / ${
-							modpackManifest.files.length
-						})`,
-					);
+					log(`Fetched ${upath.basename(fileInfo.downloadUrl)} from cache... (${fetched} / ${toFetch.length})`);
 				}
 
 				await fs.promises.writeFile(upath.join(serverDestDirectory, "mods", fileInfo.fileName), modFile.contents);
