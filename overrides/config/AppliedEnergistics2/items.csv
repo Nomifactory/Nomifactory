@@ -1328,12 +1328,12 @@ thermalexpansion:frame:0, Machine Frame
 thermalexpansion:frame:64, Thermal Device Casing
 thermalexpansion:frame:128, Energy Cell Frame
 thermalexpansion:frame:129, Hardened Cell Frame
-thermalexpansion:frame:130, Microminer Engine Frame
-thermalexpansion:frame:131, Signalum Microminer Engine Frame
-thermalexpansion:frame:132, Enderium Microminer Engine Frame
-thermalexpansion:frame:146, Microminer Engine Core
-thermalexpansion:frame:147, Signalum Microminer Engine Core
-thermalexpansion:frame:148, Enderium Microminer Engine Core
+thermalexpansion:frame:130, Micro Miner Engine Frame
+thermalexpansion:frame:131, Signalum Micro Miner Engine Frame
+thermalexpansion:frame:132, Enderium Micro Miner Engine Frame
+thermalexpansion:frame:146, Micro Miner Engine Core
+thermalexpansion:frame:147, Signalum Micro Miner Engine Core
+thermalexpansion:frame:148, Enderium Micro Miner Engine Core
 thermalexpansion:augment:128, Augment: Auxiliary Reception Coil
 thermalexpansion:augment:129, Augment: Auxiliary Sieve
 thermalexpansion:augment:130, Augment: Nullification Chamber
@@ -14077,7 +14077,7 @@ contenttweaker:stabilizedberkelium, Stabilized Berkelium
 contenttweaker:hotdraconiumingot, Hot Draconium Ingot
 contenttweaker:unpreparedspaceleggings, Unprepared Space Leggings
 contenttweaker:solidifiedfluorine, Solidified Fluorine
-contenttweaker:t1guidance, Basic Microminer Guidance System
+contenttweaker:t1guidance, Basic Micro Miner Guidance System
 contenttweaker:block_dust, Dust Block
 contenttweaker:knightslimeingot, Knightslime Ingot
 contenttweaker:stabilizedcalifornium, Stabilized Californium

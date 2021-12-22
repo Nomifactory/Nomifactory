@@ -879,9 +879,9 @@ val naquadahreactormk1 = Builder.start(loc, id)
                         .build())
     .buildAndRegister() as Multiblock;
 
-id += 1; 
+id += 1;
 loc = "naquadahreactormk2";
- 
+
 val naquadahreactormk2 = Builder.start(loc,id)
     .withPattern(
         FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.BACK, RelativeDirection.UP)
@@ -1209,7 +1209,7 @@ for meta in 0 .. 7 {
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockinputbus", meta)]);
 
-    recipes.addShapeless("mm_outputbus_conversion__" ~ meta, 
+    recipes.addShapeless("mm_outputbus_conversion__" ~ meta,
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockoutputbus", meta)]);
 }
@@ -1218,12 +1218,12 @@ for meta in 0 .. 7 {
 for meta in 0 .. 8 {
     // tiny returns 4 from the casing, then there's 3 more ingots per tier
     val count as int = (4 + meta * 3);
-    
+
     recipes.addShapeless("mm_fluidinput_refund_" ~ meta,
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockfluidinputhatch", meta)]);
 
-    recipes.addShapeless("mm_fluidoutput_refund_" ~ meta, 
+    recipes.addShapeless("mm_fluidoutput_refund_" ~ meta,
         <ore:ingotMicroversium>.firstItem * count,
         [itemUtils.getItem("modularmachinery:blockfluidoutputhatch", meta)]);
 }
@@ -1361,7 +1361,7 @@ makeShaped("lunar_mining_station", <gregtech:machine:3007>,
      "CLC"],
     { C : <ore:circuitExtreme>, //T4
       L : <gregtech:machine_casing:6>, //LuV Machine Casing
-      S : <extrautils2:screen>}); 
+      S : <extrautils2:screen>});
 
 ///////////////////////////////////////////////
 ////////////  Multiblock Recipes  /////////////
@@ -1369,7 +1369,7 @@ makeShaped("lunar_mining_station", <gregtech:machine:3007>,
 
 // Small Microverse Projector
 
-// Tier 1 Steel Microminer: Mission 1 - Early Game Ores
+// Tier 1 Steel Micro Miner: Mission 1 - Early Game Ores
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(500)
@@ -1392,7 +1392,7 @@ small_microverse.recipeMap
              <gregtech:ore_salt_0> * 64)
     .buildAndRegister();
 
-// Tier 1 Steel Microminer: Mission 2 - Exquisite Diamonds and Gem Ores
+// Tier 1 Steel Micro Miner: Mission 2 - Exquisite Diamonds and Gem Ores
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(500)
@@ -1410,7 +1410,7 @@ small_microverse.recipeMap
              <gregtech:ore_quartzite_0> * 64)
     .buildAndRegister();
 
-// Tier 1 Steel Microminer: Mission 3 - Stellar Creation Data
+// Tier 1 Steel Micro Miner: Mission 3 - Stellar Creation Data
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(100)
@@ -1421,7 +1421,7 @@ small_microverse.recipeMap
     .outputs(<contenttweaker:stellarcreationdata>)
     .buildAndRegister();
 
-// Tier 2 Titanium Microminer - Mission 1: Radium and Early/Midgame Ores
+// Tier 2 Titanium Micro Miner - Mission 1: Radium and Early/Midgame Ores
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(600)
@@ -1446,7 +1446,7 @@ small_microverse.recipeMap
              <gregtech:ore_cassiterite_0:1> * 64)
     .buildAndRegister();
 
-// Tier 2 Titanium Microminer - Mission 2: Stellar Creation Data
+// Tier 2 Titanium Micro Miner - Mission 2: Stellar Creation Data
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(120)
@@ -1457,7 +1457,7 @@ small_microverse.recipeMap
     .outputs(<contenttweaker:stellarcreationdata> * 4)
     .buildAndRegister();
 
-// Tier 3: Tungsten Carbide Microminer - Mission 1: Exquisite Gems
+// Tier 3: Tungsten Carbide Micro Miner - Mission 1: Exquisite Gems
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(700)
@@ -1483,7 +1483,7 @@ small_microverse.recipeMap
              <gregtech:ore_silver_0:6> * 64)
     .buildAndRegister();
 
-// Tier 3: Tungsten Carbide Microminer - Mission 2: Midgame Ores
+// Tier 3: Tungsten Carbide Micro Miner - Mission 2: Midgame Ores
 small_microverse.recipeMap
     .recipeBuilder()
     .duration(700)
@@ -1510,7 +1510,7 @@ small_microverse.recipeMap
 
 // Medium Microverse Projector
 
-// Tier 4: Signalum Microminer - Mission 1: Dense Oil / Infinity Blocks
+// Tier 4: Signalum Micro Miner - Mission 1: Dense Oil / Infinity Blocks
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(800)
@@ -1524,7 +1524,7 @@ medium_microverse.recipeMap
              <enderio:block_infinity> * 16)
     .buildAndRegister();
 
-// Tier 4: Signalum Microminer - Mission 2: Dense Gem Ores
+// Tier 4: Signalum Micro Miner - Mission 2: Dense Gem Ores
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(800)
@@ -1541,7 +1541,7 @@ medium_microverse.recipeMap
              <densemetals:dense_redstone_ore> * 16)
     .buildAndRegister();
 
-// Tier 4: Signalum Microminer - Mission 3: Osmium / Iridium
+// Tier 4: Signalum Micro Miner - Mission 3: Osmium / Iridium
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(800)
@@ -1555,7 +1555,7 @@ medium_microverse.recipeMap
              <gregtech:ore_osmium_0> * 16)
     .buildAndRegister();
 
-// Tier 5: Iridium Microminer - Mission 1: Marble Ores
+// Tier 5: Iridium Micro Miner - Mission 1: Marble Ores
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(1000)
@@ -1577,7 +1577,7 @@ medium_microverse.recipeMap
              <gregtech:ore_beryllium_0:12> * 64)
     .buildAndRegister();
 
-// Tier 5: Iridium Microminer - Mission 2: Naquadah
+// Tier 5: Iridium Micro Miner - Mission 2: Naquadah
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(1000)
@@ -1591,7 +1591,7 @@ medium_microverse.recipeMap
              <gregtech:meta_item_1:2307> * 64)
     .buildAndRegister();
 
-// Tier 6: Enderium Microminer - Mission 1: Uranium / Osmium / Iridium
+// Tier 6: Enderium Micro Miner - Mission 1: Uranium / Osmium / Iridium
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(1250)
@@ -1611,7 +1611,7 @@ medium_microverse.recipeMap
              <gregtech:ore_iridium_0:10> * 64)
     .buildAndRegister();
 
-// Tier 6: Enderium Microminer - Mission 2: Stabilized Einsteinium
+// Tier 6: Enderium Micro Miner - Mission 2: Stabilized Einsteinium
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(1250)
@@ -1623,7 +1623,7 @@ medium_microverse.recipeMap
     .outputs(<contenttweaker:stabilizedeinsteinium> * 32)
     .buildAndRegister();
 
-// Tier 6: Enderium Microminer - Mission 3: Dragon Eggs
+// Tier 6: Enderium Micro Miner - Mission 3: Dragon Eggs
 medium_microverse.recipeMap
     .recipeBuilder()
     .duration(1250)
@@ -1637,7 +1637,7 @@ medium_microverse.recipeMap
 
 // Large Microverse Projector
 
-// Tier 7: Draconium Microminer - Mission 1: Dragon Hearts
+// Tier 7: Draconium Micro Miner - Mission 1: Dragon Hearts
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(1500)
@@ -1665,7 +1665,7 @@ large_microverse.recipeMap
              <gregtech:meta_block_compressed_3:3> * 64) //Platinum Block
     .buildAndRegister();
 
-// Tier 7: Draconium Microminer - Mission 2: Lair of the Chaos Guardian Data
+// Tier 7: Draconium Micro Miner - Mission 2: Lair of the Chaos Guardian Data
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(1500)
@@ -1681,7 +1681,7 @@ large_microverse.recipeMap
     .outputs(<contenttweaker:lairofthechaosguardiandata>)
     .buildAndRegister();
 
-// Tier 8: Crystal Microminer - Mission 1: Gravi Star et al.
+// Tier 8: Crystal Micro Miner - Mission 1: Gravi Star et al.
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(2000)
@@ -1701,7 +1701,7 @@ large_microverse.recipeMap
              <gregtech:meta_item_1:32726>)
     .buildAndRegister();
 
-// Tier 8: Crystal Microminer - Mission 2: Chaos Shards
+// Tier 8: Crystal Micro Miner - Mission 2: Chaos Shards
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(1500)
@@ -1720,7 +1720,7 @@ large_microverse.recipeMap
              <minecraft:dragon_egg> * 64)
     .buildAndRegister();
 
-// Tier 9: QFE Microminer - Mission 1: Neutronium Stuff
+// Tier 9: QFE Micro Miner - Mission 1: Neutronium Stuff
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(3000)
@@ -1740,7 +1740,7 @@ large_microverse.recipeMap
              <avaritia:resource:3> * 64)
     .buildAndRegister();
 
-// Tier 9: QFE Microminer - Mission 2: Universe Creation Data
+// Tier 9: QFE Micro Miner - Mission 2: Universe Creation Data
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(3000)
@@ -1754,7 +1754,7 @@ large_microverse.recipeMap
     .outputs(<contenttweaker:universecreationdata>)
     .buildAndRegister();
 
-// Tier 10: Neutronium Microminer - Heart of A Universe
+// Tier 10: Neutronium Micro Miner - Heart of A Universe
 large_microverse.recipeMap
     .recipeBuilder()
     .duration(6000)
