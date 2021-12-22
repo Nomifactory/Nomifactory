@@ -29,7 +29,34 @@ async function createClientDirs() {
  */
 async function exportModpackManifest() {
 	const manifestPath = upath.join(clientDestDirectory, "manifest.json");
-	return fs.promises.writeFile(manifestPath, JSON.stringify(modpackManifest, null, "  "));
+
+	// Filter client side files only and prune build-specific fields.
+	const newFiles = modpackManifest.files
+		.map((file) => {
+			if (file.sides) {
+				if (!file.sides.includes("client")) return;
+
+				const newFile = Object.assign({}, file);
+				delete newFile.sides;
+
+				return newFile;
+			}
+
+			return file;
+		})
+		.filter(Boolean);
+
+	return fs.promises.writeFile(
+		manifestPath,
+		JSON.stringify(
+			{
+				...modpackManifest,
+				files: newFiles,
+			},
+			null,
+			"  ",
+		),
+	);
 }
 
 /**
