@@ -352,7 +352,7 @@ makeFluid("moltenempoweredpalis",       "0026ff",   false,  10000,      "COMMON"
 makeFluid("moltenempoweredenori",       "e6e6e6",   false,  10000,      "COMMON",   15);
 makeFluid("moltenempowereddiamatine",   "00fbff",   false,  10000,      "COMMON",   15);
 makeFluid("moltenempoweredemeradic",    "00ff00",   false,  10000,      "COMMON",   15);
-makeFluid("moltenempoweredvoid",        "e0e0e0",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempoweredvoid",        "0e0e0e",   false,  10000,      "COMMON",   15);
 
 var universalnavigator = VanillaFactory.createItem("universalnavigator");
 universalnavigator.maxStackSize = 64;
