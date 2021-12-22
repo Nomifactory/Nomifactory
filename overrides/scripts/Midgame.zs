@@ -1,6 +1,8 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.data.IData;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
@@ -13,12 +15,9 @@ recipes.addShaped(<enderio:block_attractor_obelisk>, [[null, <ore:itemAttractorC
 
 //Tower Processing
 tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
-tower.findRecipe(400, [], [<liquid:biomass> * 1000]).remove();
 tower.recipeBuilder().fluidInputs([<liquid:biomass> * 1000]).fluidOutputs([<liquid:bio.ethanol> * 700, <liquid:water> * 300]).duration(120).EUt(120).buildAndRegister();
 
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();	
-distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:biomass> * 1000]).remove();	
+distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:biomass> * 1000]).remove();
 distillery.findRecipe(100, [<gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:biomass> * 1000]).remove();	
 
 recipes.addShaped(<gregtech:machine:2200>, [[<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>],[<gregtech:meta_item_1:12235>, <minecraft:bucket>, <gregtech:meta_item_1:12235>], [<gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>, <gregtech:meta_item_1:12235>]]);
@@ -144,70 +143,44 @@ lathe.recipeBuilder().inputs([<gregtech:meta_item_1:14299> * 2]).outputs([<gregt
 lathe.recipeBuilder().inputs([<ore:stickMicroversium> * 2]).outputs([<ore:stickLongMicroversium>.firstItem]).duration(200).EUt(30).buildAndRegister();
 
 //Neutronium Round
-recipes.remove(<gtadditions:ga_meta_item:2972>);	
 lathe.findRecipe(8, [<gregtech:meta_item_1:9972>], [null]).remove();	
-lathe.recipeBuilder().inputs([<avaritia:resource:3>]).outputs([<gtadditions:ga_meta_item:2972>]).duration(5000).EUt(8).buildAndRegister();
+lathe.recipeBuilder().inputs([<avaritia:resource:3>]).outputs([<gtadditions:ga_meta_item:2972>]).duration(100).EUt(8).buildAndRegister();
+//Neutronium Round by Hand
+recipes.remove(<gtadditions:ga_meta_item:2972>);
+makeShaped("neutronium_round", <gtadditions:ga_meta_item:2972>,
+	["FN ",
+	 "N  ",
+	 "   "],
+	{ F : <ore:craftingToolFile>.firstItem.withEmptyTag(),
+	  N : <avaritia:resource:3> //Neutronium Nugget
+	  });
 
-//HSS-E Round
-lathe.findRecipe(8, [<gregtech:meta_item_1:9303>], [null]).remove();	
-lathe.recipeBuilder().inputs([<gregtech:meta_item_1:9303>]).outputs([<gtadditions:ga_meta_item:2303>]).duration(1480).EUt(8).buildAndRegister();
 
 	
 //Brewery
-	
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:water> * 180]).remove();
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:for.honey> * 180]).remove();		
-brewer.findRecipe(3, [<gregtech:meta_item_2:32570>], [<liquid:juice> * 180]).remove();		
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:1>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:2>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:3>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:4>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling:5>], [<liquid:water> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:for.honey> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:sapling>], [<liquid:juice> * 100]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:potato>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:juice> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:for.honey> * 20]).remove();
-brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice> * 20]).remove();
+for recipe in brewer.recipes {
+	recipe.remove();
+}
 
+var customBrewerRecipes as int[IIngredient] = {
+	<gregtech:meta_item_2:32570> : 180 , // Plant Ball
+	<ore:treeSapling>            : 100 ,
+	<minecraft:reeds>            : 100 ,
+	<minecraft:potato>           : 80  ,
+	<minecraft:beetroot>         : 60  ,
+	<minecraft:carrot>           : 60  ,
+	<minecraft:cactus>           : 60  ,
+	<minecraft:brown_mushroom>   : 60  ,
+	<minecraft:red_mushroom>     : 60
+};
 
-brewer.recipeBuilder().inputs(<gregtech:meta_item_2:32570>).fluidInputs([<liquid:water> * 180]).fluidOutputs([<liquid:biomass> * 180]).duration(1440).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<ore:treeSapling>).fluidInputs([<liquid:water> * 100]).fluidOutputs([<liquid:biomass> * 100]).duration(800).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:potato>).fluidInputs([<liquid:water> * 80]).fluidOutputs([<liquid:biomass> * 80]).duration(640).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:beetroot>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:carrot>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:cactus>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:reeds>).fluidInputs([<liquid:water> * 100]).fluidOutputs([<liquid:biomass> * 100]).duration(800).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:brown_mushroom>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-brewer.recipeBuilder().inputs(<minecraft:red_mushroom>).fluidInputs([<liquid:water> * 60]).fluidOutputs([<liquid:biomass> * 60]).duration(480).EUt(3).buildAndRegister();
-
+for ingredient, amount in customBrewerRecipes {
+	brewer.recipeBuilder()
+		.inputs(ingredient)
+		.fluidInputs([<liquid:water> * amount])
+		.fluidOutputs([<liquid:biomass> * amount])
+		.duration(amount * 8).EUt(3).buildAndRegister();
+}
 
 //Fermenter
 fermenter.recipeBuilder().fluidInputs([<liquid:canolaoil> * 100]).fluidOutputs([<liquid:refinedcanolaoil> * 100]).duration(400).EUt(2).buildAndRegister();
@@ -246,7 +219,7 @@ recipes.remove(
 recipes.addShapeless(
 	<patchouli:guide_book>
 		.withTag({"patchouli:book": "deepmoblearning:book"}),
-	[<ore:book>, <forestry:crafting_material>]
+	[<ore:book>, <ore:dustPulsating>]
 );
 
 //Moon Materials
@@ -276,13 +249,6 @@ recipes.addShaped(<metaitem:component.capacitor> * 4, [
 	[<gregtech:meta_item_1:19189>, <gregtech:meta_item_1:12152>, <gregtech:meta_item_1:19189>], 
 	[<gregtech:meta_item_2:16062>, null, <gregtech:meta_item_2:16062>]]);
 
-//Dew Of The Void
-mods.enderio.Vat.removeRecipe(<liquid:ender_distillation> * 1000);
-mods.enderio.Vat.addRecipe(<liquid:ender_distillation> * 1000, 0.5, <liquid:ender> * 4000, [<enderio:item_material:36>], [2], [<enderio:item_material:35>], [2]);
-
-//Ghast for Flight Controller
-mods.enderio.SoulBinder.addRecipe(<simplyjetpacks:metaitemmods:6>, <simplyjetpacks:metaitemmods:5>, ["ghast"], 75000, 300);
-
 assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:18>]).fluidInputs([<liquid:glowstone> * 4320]).outputs([<simplyjetpacks:metaitemmods:19>]).duration(2000).EUt(3000).buildAndRegister();
 assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs([<liquid:cryotheum> * 4320]).outputs([<simplyjetpacks:metaitemmods:21>]).duration(2000).EUt(8000).buildAndRegister();
 
@@ -301,23 +267,6 @@ assembler.recipeBuilder()
 
 //Engine Intake
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18072> * 4, <gregtech:fluid_pipe:2072> * 2, <gregtech:metal_casing:6>]).outputs([<gregtech:multiblock_casing>]).duration(400).EUt(16).buildAndRegister();
-
-
-//Pumps Via Assembler
-
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18071>, <gregtech:meta_item_1:17071>, <gregtech:meta_item_1:32600>, <gregtech:fluid_pipe:2095>, <gregtech:cable:5071>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32610>]).duration(200).EUt(16).buildAndRegister();	//lv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18095>, <gregtech:meta_item_1:17095>, <gregtech:meta_item_1:32601>, <gregtech:fluid_pipe:2184>, <gregtech:cable:5018>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32611>]).duration(200).EUt(16).buildAndRegister();	//mv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18184>, <gregtech:meta_item_1:17184>, <gregtech:meta_item_1:32602>, <gregtech:fluid_pipe:2183>, <gregtech:cable:5026>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32612>]).duration(200).EUt(16).buildAndRegister();	//hv pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18183>, <gregtech:meta_item_1:17183>, <gregtech:meta_item_1:32603>, <gregtech:fluid_pipe:2072>, <gregtech:cable:5001>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32613>]).duration(200).EUt(16).buildAndRegister();	//ev pump
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18235>, <gregtech:meta_item_1:17235>, <gregtech:meta_item_1:32604>, <gregtech:fluid_pipe:2235>, <gregtech:cable:5074>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32614>]).duration(200).EUt(16).buildAndRegister();	//iv pump
-
-//Lapotron Crystals
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesslapis");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedlazurite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedlapis");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesssodalite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapedsodalite");
-recipes.removeByRecipeName("gtadditions:lapotron_crystal_shapelesslazurite");
 
 
 assembler.findRecipe(2, [<gregtech:meta_item_1:12197> * 5, <minecraft:trapped_chest>], [null]).remove();	
@@ -365,19 +314,9 @@ recipes.addShaped(<enderio:item_material:41>, [
 //Rose Gold Plate
 compressor.recipeBuilder().inputs([<gregtech:meta_item_1:10228>]).outputs([<gregtech:meta_item_1:12228>]).duration(100).EUt(10).buildAndRegister();
 
-
-// Fixes #357: CO2 output should be 4 buckets
-reactor.findRecipe(480,
-    [<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>],
-    [<liquid:chlorine> * 4000])
-    .remove();
-
-reactor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2012> * 2, <gregtech:meta_item_1:2122>])
-    .fluidInputs([<liquid:chlorine> * 4000])
-    .fluidOutputs([<liquid:carbon_monoxide> * 4000, <liquid:titanium_tetrachloride> * 1000])
-    .duration(500)
-    .EUt(480)
-    .buildAndRegister();
-// end Fix for #357
+fluid_canner.recipeBuilder()
+	.inputs(<minecraft:glass_bottle>)
+	.fluidInputs(<liquid:xpjuice> * 500)
+	.outputs(<minecraft:experience_bottle>)
+	.duration(1500).EUt(4).buildAndRegister();
 

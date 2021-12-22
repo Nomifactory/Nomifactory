@@ -423,7 +423,7 @@ makeShaped("ar_suit_workstation",
 		R: <metaitem:robot.arm.mv>, // MV Robot Arm
 		C: <ore:circuitGood>,       // T2 Circuit
 		X: <gregtech:machine:502>,  // MV Machine Hull
-		W: <forestry:worktable>,    // Worktable
+		W: <gregtech:machine:825>,  // GTCE Crafting Station
 	});
 
 // Gas Charger
@@ -884,9 +884,15 @@ recipes.addShapeless(<advancedrocketry:landingpad>, [
 
 // Station Light
 recipes.remove(<advancedrocketry:circlelight>);
-recipes.addShapeless(<advancedrocketry:circlelight>, [
-	<ore:plateIron>, <minecraft:glowstone>
-]);
+makeShaped("ar_circlelight",
+	<advancedrocketry:circlelight> * 4, [
+		" P ",
+		"PGP",
+		" P ",
+	], {
+		P: <ore:plateIron>,  // Iron Plate
+		G: <minecraft:glowstone>, // Glowstone
+	});
 
 // Atmosphere Detector
 recipes.remove(<advancedrocketry:oxygendetection>);
@@ -938,7 +944,7 @@ makeShaped("ar_hovercraft",
 		E: <advancedrocketry:rocketmotor>,    // Liquid Engine
 		C: <ore:circuitGood>,    // T2 Circuit
 		M: <extrautils2:screen>, // ExU2 Screen
-		D: <ore:gemDilithium>,   // Dilithium Crystal
+		D: <ore:crystalDilithium>,   // Dilithium Crystal
 	});
 
 // Planet Selector
@@ -1053,6 +1059,58 @@ assembler.recipeBuilder()
 	.EUt(100)
 	.buildAndRegister();
 
+//Bipropellant engine
+recipes.remove(<advancedrocketry:bipropellantrocketmotor>);
+makeShaped("ar_biprop_engine",
+	<advancedrocketry:bipropellantrocketmotor>, [
+		" S ",
+		"STS",
+		"RRR",
+	], {
+		S: <contenttweaker:steelplating>,
+		R: <simplyjetpacks:metaitemmods:7>,
+		T: hardenedtankIng
+	});
+
+//Advanced Bipropellant engine
+recipes.remove(<advancedrocketry:advbipropellantrocketmotor>);
+makeShaped("ar_advanced_biprop_engine",
+	<advancedrocketry:advbipropellantrocketmotor>, [
+		" S ",
+		"STS",
+		"RRR",
+	], {
+		S: <contenttweaker:tungstencarbideplating>,
+		R: <simplyjetpacks:metaitemmods:8>,
+		T: reinforcedtankIng
+	});
+
+//Bipropellant Fuel Tank
+recipes.remove(<advancedrocketry:bipropellantfueltank>);
+makeShaped("ar_biprop_fuel_tank",
+	<advancedrocketry:bipropellantfueltank>, [
+		"PNP",
+		"PTP",
+		"P P",
+	], {
+		P: <metaitem:plateStainlessSteel>,
+		N: <ore:pipeLargeStainlessSteel>,
+		T: reinforcedtankIng
+	});
+
+//Oxidizer Tank
+recipes.remove(<advancedrocketry:oxidizerfueltank>);
+makeShaped("ar_oxidizer_tank",
+	<advancedrocketry:oxidizerfueltank>, [
+		"P P",
+		"PTP",
+		"PNP",
+	], {
+		P: <metaitem:plateStainlessSteel>,
+		N: <ore:pipeLargeStainlessSteel>,
+		T: reinforcedtankIng
+	});
+
 /*
 
   Removals
@@ -1066,6 +1124,9 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:landingfloat>); // Landing Float
 mods.jei.JEI.removeAndHide(<advancedrocketry:airlock_door>); // Airlock Door (Technical Block)
 mods.jei.JEI.removeAndHide(<advancedrocketry:lightsource>);  // Light source (Technical Block)
 mods.jei.JEI.removeAndHide(<advancedrocketry:astrobed>);     // Astrobed     (Technical Block)
+
+//AR Rocket fuel, unusable
+mods.jei.JEI.removeAndHide(<forge:bucketfilled>.withTag({FluidName: "rocketfuel", Amount: 1000}));
 
 // Various unused satellite sensors
 mods.jei.JEI.removeAndHide(<advancedrocketry:satelliteprimaryfunction:2>);

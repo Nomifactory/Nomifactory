@@ -630,7 +630,7 @@ makeShaped("of_extendedcrafting_pedestal", <extendedcrafting:pedestal>,
      "BCB"],
     { A : <gregtech:meta_item_1:10231>,
       B : <gregtech:meta_item_1:12231>,
-      C : <gregtech:compressed_10:11> });
+      C : <gregtech:meta_block_compressed_14:8> }); //Red Steel Block
 
 <extendedcrafting:material:19>.displayName = "Conflux Component";
 recipes.remove(<extendedcrafting:material:19>);
@@ -787,7 +787,7 @@ makeExtremeRecipe5(<extendedcrafting:table_elite>,
      "CBABC"],
     { A : <extendedcrafting:material:10>,
       B : <gregtech:meta_item_1:12231>,
-      C : <gregtech:compressed_0>,
+      C : <gregtech:meta_block_compressed_0:1>,
       D : <extendedcrafting:material:16>,
       T : <extendedcrafting:table_advanced> });
 <extendedcrafting:table_elite>.displayName = "Elite Extended Crafting Table";
@@ -924,7 +924,7 @@ reactor.recipeBuilder()
 
 //Elemental Reduction
 reactor.recipeBuilder()
-    .inputs(<forestry:crafting_material>)
+    .inputs(<ore:dustPulsating>)
     .fluidInputs([<liquid:hydrofluoric_acid> * 1000])
     .fluidOutputs(<liquid:elementalreduction> * 1000)
     .duration(80).EUt(90).buildAndRegister();
@@ -1053,9 +1053,6 @@ makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
       K : <moreplates:empowered_restonia_gear>,
       L : <moreplates:empowered_void_gear> });
 <contenttweaker:eternalcatalyst>.addTooltip(format.darkGray(format.italic("Gaze into the Abyss...")));
-<gregtech:meta_item_1:32725>.clearTooltip();
-<gregtech:meta_item_1:32725>.addTooltip(format.darkPurple("Quantum Star"));
-<gregtech:meta_item_1:32725>.displayName = "Quantum Star";
 
 
 ////////////////////////// Infinity Ingot ///////////////////////
@@ -1159,7 +1156,8 @@ makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
       T : creativetank.only(isCreative),
       U : <appliedenergistics2:creative_energy_cell>,
       W : <thermalcultivation:watering_can:32000>.withTag({Water: 0, Mode: 4}, false),
-      X : <thermalexpansion:capacitor:32000> });
+      X : <thermalexpansion:capacitor:32000>.withTag({Energy: 250000000}, false)
+    });
 
 solidifier.recipeBuilder()
     .fluidInputs([<liquid:moltencreativeportabletank> * 144])
@@ -1434,7 +1432,7 @@ makeExtremeRecipe9(creativejetpack,
      K: darksoulariumjetplate });
 
 // Creative Flux Capacitor
-makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
+makeExtremeRecipe9(<thermalexpansion:capacitor:32000>.withTag({Energy: 250000000}),
     ["ABCDEDCBA",
      "BCDEFEDCB",
      "CDEFGFEDC",

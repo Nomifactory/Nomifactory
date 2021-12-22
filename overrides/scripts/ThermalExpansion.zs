@@ -141,7 +141,7 @@ recipes.addShaped(<thermalfoundation:upgrade>, [
 recipes.remove(<thermalfoundation:upgrade:1>);
 recipes.addShaped(<thermalfoundation:upgrade:1>, [
 	[<gregtech:meta_item_2:26112>, <gregtech:meta_item_1:12112>, <gregtech:meta_item_2:26112>],
-	[<gregtech:meta_item_1:12112>, <gregtech:compressed_0>, <gregtech:meta_item_1:12112>],
+	[<gregtech:meta_item_1:12112>, <gregtech:meta_block_compressed_0:1>, <gregtech:meta_item_1:12112>],
 	[<gregtech:meta_item_2:26112>, <gregtech:meta_item_1:12112>, <gregtech:meta_item_2:26112>]]);
 
 //sig upgrade
@@ -392,7 +392,6 @@ recipes.addShaped(<thermalexpansion:frame>, [
 <thermalexpansion:frame:64>.displayName = "Thermal Machine Casing";
 
 recipes.remove(<thermalexpansion:frame:64>);
-recipes.remove(<nuclearcraft:compound:2>);
 recipes.addShaped(<thermalexpansion:frame:64>, [
 	[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>],
 	[<thermalfoundation:material:136>, null, <thermalfoundation:material:136>],
@@ -506,6 +505,41 @@ mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:12>, <ap
 mods.jei.JEI.addDescription(<appliedenergistics2:material:10>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
 mods.jei.JEI.addDescription(<appliedenergistics2:material:11>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
 mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
+
+val liquids as int[][ILiquidStack] = {
+    
+    //Fluid : duration, power
+    <liquid:water> * 73 : [1568, 30],
+    <liquid:distilled_water> * 55 : [1019, 30],
+    <liquid:lubricant> * 18 : [392, 30]
+
+};
+
+val blocks = [
+
+    //Enderium
+    [<thermalfoundation:storage_alloy:7>, <thermalfoundation:material:359> * 9],
+    //Lumium
+    [<thermalfoundation:storage_alloy:6>, <thermalfoundation:material:358> * 9],
+    //Signalum
+    [<thermalfoundation:storage_alloy:5>, <thermalfoundation:material:357> * 9],
+    //Mana Infused
+    [<thermalfoundation:storage:8>, <thermalfoundation:material:328> * 9]
+
+] as IItemStack[][];
+
+for blockItem in blocks {
+
+    for liquid, values in liquids {
+   
+        saw.recipeBuilder()
+            .inputs(blockItem[0])
+            .fluidInputs(liquid)
+            .outputs(blockItem[1])
+            .duration(values[0]).EUt(values[1]).buildAndRegister();
+
+    }
+}
 
 //Add Rubber Trees to Phytogenic Insolator. Why would you use this?
 mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 6, <gregtech:sapling>, <thermalfoundation:fertilizer:0>, 9600, <gregtech:sapling>, 100);

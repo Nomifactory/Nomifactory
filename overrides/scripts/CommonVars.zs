@@ -41,6 +41,8 @@ global fluidextractor    as RecipeMap = RecipeMap.getByName("fluid_extractor");
 global forming           as RecipeMap = RecipeMap.getByName("forming_press");
 global freezer           as RecipeMap = RecipeMap.getByName("vacuum_freezer");
 global fusion_reactor    as RecipeMap = RecipeMap.getByName("fusion_reactor");
+//Recipe Map for Gregtech Furnace recipes, different from vanilla furnace map
+global GTfurnace         as RecipeMap = RecipeMap.getByName("furnace");
 global hammer            as RecipeMap = RecipeMap.getByName("forge_hammer");
 global implosion         as RecipeMap = RecipeMap.getByName("implosion_compressor");
 global lathe             as RecipeMap = RecipeMap.getByName("lathe");
@@ -54,6 +56,7 @@ global sifter            as RecipeMap = RecipeMap.getByName("sifter");
 global solidifier        as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 global thermal_sep       as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 global tower             as RecipeMap = RecipeMap.getByName("distillation_tower");
+global unpackager        as RecipeMap = RecipeMap.getByName("unpacker");
 global wiremill          as RecipeMap = RecipeMap.getByName("wiremill");
 
 global isBasic      as IItemCondition = function(stack as IItemStack) { return stack.tag has {Level: 0 as byte} as IData && !(stack.tag has {Creative: 1 as byte} as IData); };
@@ -116,6 +119,8 @@ global armoredhardenedjetpack   as IItemStack  = <simplyjetpacks:itemjetpack:15>
 global armoredreinforcedjetpack as IItemStack  = <simplyjetpacks:itemjetpack:16>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 global armoredresonantjetpack   as IItemStack  = <simplyjetpacks:itemjetpack:17>.withTag({Energy: 0, JetpackParticleType: 0}, false);
 global fluxinfusedjetplate      as IItemStack  = <simplyjetpacks:itemjetpack:18>.withTag({Energy: 0, JetpackParticleType: 0}, false);
+
+
 
 /*
  Converts a text representation of a crafting grid recipe into an array of

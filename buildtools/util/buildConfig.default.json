@@ -1,0 +1,21 @@
+{
+	"downloaderMaxRetries": 5,
+	"downloaderConcurrency": 50,
+	"downloaderCheckHashes": true,
+	"downloaderCacheDirectory": "../.cache",
+	"launchscriptsMinRAM": "2048M",
+	"launchscriptsMaxRAM": "2048M",
+	"launchscriptsJVMArgs": "",
+	"copyOverridesServerGlobs": [
+		"config/**/*",
+		"mods/**/*",
+		"scripts/**/*"
+	],
+	"copyOverridesClientGlobs": [
+		"**/*"
+	],
+	"buildDestinationDirectory": "../build",
+	"buildSourceDirectory": "../",
+	"nightlyHookAvatar": "",
+	"nightlyHookName": ""
+}

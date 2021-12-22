@@ -113,7 +113,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:compound:1>), // Crystal Binder
     Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
     Removal(<nuclearcraft:compound:4>), // Potassium Fluoride
-    Removal(<nuclearcraft:compound:5>), // Sodium Hydroxide
     Removal(<nuclearcraft:compound:6>), // Potassium Hydroxide
     Removal(<nuclearcraft:compound:7>), // Borax
     Removal(<nuclearcraft:compound:8>), // Dimensional Blend
@@ -143,7 +142,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:gem:6>),
     Removal(<nuclearcraft:gem_dust:4>), // Hexagonal Boron Nitride
     Removal(<nuclearcraft:gem_dust:5>), // Crushed Fluorite
-    Removal(<nuclearcraft:gem_dust:6>), // Sulfur
     Removal(<nuclearcraft:gem_dust:8>), // Crushed Villiaumite
     Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
     Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic
@@ -659,7 +657,7 @@ makeShaped("of_nc_rtg_uranium", <nuclearcraft:rtg_uranium>,
      "ABA"],
     { A : <ore:plateBasic>,
       B : <ore:ingotGraphite>,
-      C : <gregtech:compressed_3:12> });
+      C : <gregtech:meta_block_compressed_4:11> }); //Uranium Block
 
 // Basic Plating
 recipes.remove(<nuclearcraft:part>);
@@ -861,7 +859,7 @@ recipes.removeByRecipeName("gregtech:nugget_assembling_uranium235");
 makeCompacting3("gregtech_nugget_assembling_uranium235", <gregtech:meta_item_1:10076>, <gregtech:meta_item_1:9076>);
 
 recipes.removeByRecipeName("gregtech:block_compress_uranium235");
-makeCompacting3("gregtech_block_compress_uranium235", <gregtech:compressed_3:13>, <gregtech:meta_item_1:10076>);
+makeCompacting3("gregtech_block_compress_uranium235", <gregtech:meta_block_compressed_4:12>, <gregtech:meta_item_1:10076>); //Uranium 235 Block
 
 recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.uranium._235");
 makeCompacting3("nuclearcraft_item.nuclearcraft.uranium._235", <nuclearcraft:uranium:4>, <nuclearcraft:uranium:6>);
@@ -874,7 +872,7 @@ recipes.removeByRecipeName("gregtech:nugget_assembling_plutonium241");
 makeCompacting3("gregtech_nugget_assembling_plutonium241", <gregtech:meta_item_1:10053>, <gregtech:meta_item_1:9053>);
 
 recipes.removeByRecipeName("gregtech:block_compress_plutonium241");
-makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:compressed_2:8>, <gregtech:meta_item_1:10053>);
+makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:meta_block_compressed_3:5>, <gregtech:meta_item_1:10053>); //Plutonium 241 block
 
 recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.plutonium._241");
 makeCompacting3("nuclearcraft_item.nuclearcraft.plutonium._235", <nuclearcraft:plutonium:8>, <nuclearcraft:plutonium:10>);
@@ -1151,7 +1149,7 @@ fluid_extractor.recipeBuilder()
 
 //Plutonium 244 Block (GTCE)
 fluid_extractor.recipeBuilder()
-    .inputs(<gregtech:compressed_2:7>)
+    .inputs(<gregtech:meta_block_compressed_3:4>) //Plutonium Block
     .fluidOutputs(<liquid:plutonium> * 1296)
     .duration(720).EUt(32).buildAndRegister();
 
