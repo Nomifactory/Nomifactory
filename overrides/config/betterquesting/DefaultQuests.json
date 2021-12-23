@@ -37223,7 +37223,7 @@
           "lockedprogress:1": 1,
           "name:8": "Neutronium Ingot",
           "partysinglereward:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
