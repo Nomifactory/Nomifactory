@@ -9,11 +9,11 @@ import buildConfig from "../../buildConfig";
 import Bluebird from "bluebird";
 import { ForgeProfile } from "../../types/forgeProfile";
 import { FileDef } from "../../types/fileDef";
-import { fetchFileInfo } from "../../util/curseForgeAPI";
-import { downloadOrRetrieveFileDef, getVersionManifest, libraryToPath, RetrievedFileDefReason } from "../../util/util";
+import { downloadOrRetrieveFileDef, getVersionManifest, libraryToPath } from "../../util/util";
 import { modpackManifest, overridesFolder, serverDestDirectory, sharedDestDirectory } from "../../globals";
 import del from "del";
 import { VersionManifest } from "../../types/versionManifest";
+import { fetchMods } from "../../util/curseForgeAPI";
 
 const FORGE_VERSION_REG = /forge-(.+)/;
 const FORGE_MAVEN = "https://files.minecraftforge.net/maven/";
@@ -179,42 +179,10 @@ async function downloadMinecraftServer() {
  * Downloads mods according to manifest.json and checks hashes.
  */
 async function downloadMods() {
-	const toFetch = modpackManifest.files.filter((f) => !f.sides || f.sides.includes("server"));
-
-	if (toFetch.length > 0) {
-		log(`Fetching ${toFetch.length} mods...`);
-
-		const modsPath = upath.join(serverDestDirectory, "mods");
-		await fs.promises.mkdir(modsPath, { recursive: true });
-
-		let fetched = 0;
-		return Bluebird.map(
-			toFetch,
-			async (file) => {
-				const fileInfo = await fetchFileInfo(file.projectID, file.fileID);
-
-				if (!fileInfo) console.log(file);
-				const fileDef: FileDef = {
-					url: fileInfo.downloadUrl,
-					hashes: [{ id: "murmurhash", hashes: fileInfo.packageFingerprint }],
-				};
-
-				const modFile = await downloadOrRetrieveFileDef(fileDef);
-				fetched += 1;
-
-				if (modFile.reason == RetrievedFileDefReason.Downloaded) {
-					log(`Downloaded ${upath.basename(fileInfo.downloadUrl)}... (${fetched} / ${toFetch.length})`);
-				} else if (modFile.reason == RetrievedFileDefReason.CacheHit) {
-					log(`Fetched ${upath.basename(fileInfo.downloadUrl)} from cache... (${fetched} / ${toFetch.length})`);
-				}
-
-				await fs.promises.writeFile(upath.join(serverDestDirectory, "mods", fileInfo.fileName), modFile.contents);
-			},
-			{ concurrency: buildConfig.downloaderConcurrency },
-		);
-	} else {
-		log("No mods to fetch.");
-	}
+	return fetchMods(
+		modpackManifest.files.filter((f) => !f.sides || f.sides.includes("server")),
+		serverDestDirectory,
+	);
 }
 
 /**
