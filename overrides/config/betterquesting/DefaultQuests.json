@@ -48308,7 +48308,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §6Naquadah-Doped Boule§r is the final boule type and produces the most wafers per boule. It also is relatively cheap, due to the abundance of Naqudah that is gained from the §eTier 5 Microminer Mission§r.\n\nThis boule also allows the production of §6System on Chip§r and §6§6Advanced System on Chip§r wafers, which are used to make the final forms of the circuits very cheaply. However, you might not be able to take advantage of the §6Advanced System on Chip§r yet, due to the power requirements.",
+          "desc:8": "The §6Naquadah-Doped Boule§r is the final boule type and produces the most wafers per boule. It also is relatively cheap, due to the abundance of Naqudah that is gained from the §eTier 5 Micro Miner Mission§r.\n\nThis boule also allows the production of §6System on Chip§r and §6§6Advanced System on Chip§r wafers, which are used to make the final forms of the circuits very cheaply. However, you might not be able to take advantage of the §6Advanced System on Chip§r yet, due to the power requirements.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
