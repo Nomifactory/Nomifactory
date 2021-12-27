@@ -71,46 +71,48 @@ export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgePr
 		}
 	});
 
-	// Augment the array of known projects with new info.
-	const fetched: CurseForgeProject[] = await request.post({
-		uri: "https://addons-ecs.forgesvc.net/api/v2/addon/",
-		json: unfetched,
-		fullResponse: false,
-		maxAttempts: 5,
-	});
-
-	modInfos.push(...fetched);
-
-	// Cache fetched stuff.
-	fetched.forEach((mi) => {
-		curseForgeProjectCache[mi.id] = mi;
-	});
-
-	// In case we haven't received the proper amount of mod infos,
-	// try requesting them individually.
-	if (unfetched.length !== toFetch.length) {
-		const modInfoIDs = new Set(modInfos.map((mi) => mi.id));
-		const toFetchMissing = [...new Set(toFetch.filter((x) => !modInfoIDs.has(x)))];
-
-		log.warn(`Couldn't fetch next project IDs in bulk: ${toFetchMissing.join(", ")}`);
-
-		// Try fetching mods individually, in case they've been deleted.
-		let count = 0;
-		const missingModInfos: CurseForgeProject[] = await bluebird.map(toFetchMissing, async (id) => {
-			log.info(`Fetching project ID ${id} directly... (${++count} / ${toFetchMissing.length})`);
-
-			try {
-				// In case something fails to download; catch, rewrite, rethrow.
-				return await fetchProject(id);
-			} catch (err) {
-				err.message = `Couldn't fetch project ID ${id}. ${err.message || "Unknown error"}`;
-				throw err;
-			}
+	if (unfetched.length > 0) {
+		// Augment the array of known projects with new info.
+		const fetched: CurseForgeProject[] = await request.post({
+			uri: "https://addons-ecs.forgesvc.net/api/v2/addon/",
+			json: unfetched,
+			fullResponse: false,
+			maxAttempts: 5,
 		});
 
-		// The code above is expected to throw and terminate the further execution,
-		// so we can just do this.
-		modInfos.push(...missingModInfos);
+		modInfos.push(...fetched);
+
+		// Cache fetched stuff.
+		fetched.forEach((mi) => {
+			curseForgeProjectCache[mi.id] = mi;
+		});
+
+		// In case we haven't received the proper amount of mod infos,
+		// try requesting them individually.
+		if (unfetched.length !== toFetch.length) {
+			const modInfoIDs = new Set(modInfos.map((mi) => mi.id));
+			const toFetchMissing = [...new Set(toFetch.filter((x) => !modInfoIDs.has(x)))];
+
+			log.warn(`Couldn't fetch next project IDs in bulk: ${toFetchMissing.join(", ")}`);
+
+			// Try fetching mods individually, in case they've been deleted.
+			let count = 0;
+			const missingModInfos: CurseForgeProject[] = await bluebird.map(toFetchMissing, async (id) => {
+				log.info(`Fetching project ID ${id} directly... (${++count} / ${toFetchMissing.length})`);
+
+				try {
+					// In case something fails to download; catch, rewrite, rethrow.
+					return await fetchProject(id);
+				} catch (err) {
+					err.message = `Couldn't fetch project ID ${id}. ${err.message || "Unknown error"}`;
+					throw err;
+				}
+			});
+
+			// The code above is expected to throw and terminate the further execution,
+			// so we can just do this.
+			modInfos.push(...missingModInfos);
+		}
 	}
 
 	return modInfos;
