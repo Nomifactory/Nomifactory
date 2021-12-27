@@ -85,10 +85,10 @@ item.contenttweaker.tiertenship.name=Neutronium Plated Micro Universe Harvester 
 item.contenttweaker.moondust.name=Moon Dust
 item.contenttweaker.quantumflux.name=Quantum Flux
 
-item.contenttweaker.t1guidance.name=Basic Microminer Guidance System
+item.contenttweaker.t1guidance.name=Basic Micro Miner Guidance System
 item.contenttweaker.t1laser.name=Basic Mining Laser
 item.contenttweaker.t2laser.name=Reinforced Mining Laser
-item.contenttweaker.t2guidance.name=Advanced Microminer Guidance System
+item.contenttweaker.t2guidance.name=Advanced Micro Miner Guidance System
 item.contenttweaker.t3engine.name=Supercharged Thruster Jet
 item.contenttweaker.t3laser.name=Supercharged Laser Array
 

@@ -18,6 +18,7 @@ export interface ModpackManifestFile {
 	projectID: number;
 	fileID: number;
 	required: boolean;
+	sides?: ("client" | "server")[];
 }
 
 export interface ModpackManifest {

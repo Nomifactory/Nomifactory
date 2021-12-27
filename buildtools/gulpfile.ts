@@ -34,3 +34,6 @@ export const deployReleases = deployReleasesTask;
 
 import fireNightlyWebhookTask from "./tasks/misc/webhook";
 export const fireNightlyWebhook = fireNightlyWebhookTask;
+
+import { downloadClientMods as downloadClientModsTask } from "./tasks/client/misc";
+export const downloadClientMods = downloadClientModsTask;

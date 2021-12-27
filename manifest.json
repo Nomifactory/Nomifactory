@@ -27,11 +27,6 @@
       "required": true
     },
     {
-      "projectID": 282963,
-      "fileID": 2532663,
-      "required": true
-    },
-    {
       "projectID": 232838,
       "fileID": 3368712,
       "required": true
@@ -84,7 +79,8 @@
     {
       "projectID": 243478,
       "fileID": 2745657,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 222880,
@@ -179,7 +175,8 @@
     {
       "projectID": 272515,
       "fileID": 2685984,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 299815,
@@ -244,7 +241,8 @@
     {
       "projectID": 251407,
       "fileID": 2624712,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 223565,
@@ -279,7 +277,8 @@
     {
       "projectID": 271492,
       "fileID": 2469710,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 304920,
@@ -294,7 +293,8 @@
     {
       "projectID": 267602,
       "fileID": 2915363,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 239197,
@@ -319,7 +319,8 @@
     {
       "projectID": 226406,
       "fileID": 2857869,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 254268,
@@ -329,7 +330,8 @@
     {
       "projectID": 284904,
       "fileID": 2568865,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 74924,
@@ -359,12 +361,14 @@
     {
       "projectID": 250398,
       "fileID": 2857064,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 226447,
       "fileID": 2477566,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 271009,
@@ -419,7 +423,8 @@
     {
       "projectID": 238747,
       "fileID": 2739582,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 252676,
@@ -579,7 +584,8 @@
     {
       "projectID": 282313,
       "fileID": 2689835,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 262823,
@@ -594,7 +600,8 @@
     {
       "projectID": 271740,
       "fileID": 2707353,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 257818,
@@ -614,7 +621,8 @@
     {
       "projectID": 60089,
       "fileID": 2671937,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 284007,
@@ -759,7 +767,8 @@
     {
       "projectID": 383632,
       "fileID": 3056455,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 318255,

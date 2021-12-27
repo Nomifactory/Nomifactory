@@ -2,6 +2,13 @@ import bluebird from "bluebird";
 import { CurseForgeFetchedFileInfo, CurseForgeModInfo as CurseForgeProject } from "../types/curseForge";
 import log from "fancy-log";
 import request from "requestretry";
+import { ModpackManifestFile } from "../types/modpackManifest";
+import Bluebird from "bluebird";
+import buildConfig from "../buildConfig";
+import upath from "upath";
+import fs from "fs";
+import { FileDef } from "../types/fileDef";
+import { downloadOrRetrieveFileDef, RetrievedFileDefReason } from "./util";
 
 const curseForgeProjectCache: { [key: number]: CurseForgeProject } = {};
 export async function fetchProject(toFetch: number): Promise<CurseForgeProject> {
@@ -107,4 +114,40 @@ export async function fetchProjectsBulk(toFetch: number[]): Promise<CurseForgePr
 	}
 
 	return modInfos;
+}
+
+export async function fetchMods(toFetch: ModpackManifestFile[], destination: string): Promise<void[]> {
+	if (toFetch.length > 0) {
+		log(`Fetching ${toFetch.length} mods...`);
+
+		const modsPath = upath.join(destination, "mods");
+		await fs.promises.mkdir(modsPath, { recursive: true });
+
+		let fetched = 0;
+		return Bluebird.map(
+			toFetch,
+			async (file) => {
+				const fileInfo = await fetchFileInfo(file.projectID, file.fileID);
+
+				const fileDef: FileDef = {
+					url: fileInfo.downloadUrl,
+					hashes: [{ id: "murmurhash", hashes: fileInfo.packageFingerprint }],
+				};
+
+				const modFile = await downloadOrRetrieveFileDef(fileDef);
+				fetched += 1;
+
+				if (modFile.reason == RetrievedFileDefReason.Downloaded) {
+					log(`Downloaded ${upath.basename(fileInfo.downloadUrl)}... (${fetched} / ${toFetch.length})`);
+				} else if (modFile.reason == RetrievedFileDefReason.CacheHit) {
+					log(`Fetched ${upath.basename(fileInfo.downloadUrl)} from cache... (${fetched} / ${toFetch.length})`);
+				}
+
+				await fs.promises.writeFile(upath.join(destination, "mods", fileInfo.fileName), modFile.contents);
+			},
+			{ concurrency: buildConfig.downloaderConcurrency },
+		);
+	} else {
+		log("No mods to fetch.");
+	}
 }

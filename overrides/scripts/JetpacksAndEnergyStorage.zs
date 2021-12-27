@@ -257,7 +257,7 @@ recipes.addShaped(fluxinfusedjetplate, [
 /* Fix Armored Jetpacks */
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe15"); // conductive iron
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe17"); // electrical steel
-recipes.removeByRecipeName("simplyjetpacks:upgraderecipe19"); // energetic 
+recipes.removeByRecipeName("simplyjetpacks:upgraderecipe19"); // energetic
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe21"); // vibrant
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshapeless0"); // leadstone
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshapeless1"); // conductive
@@ -583,12 +583,12 @@ recipes.addShaped(<enderio:block_xp_vacuum>, [
 
 //<thermalexpansion:frame:128>.displayName = "Leadstone Energy Cell Frame";
 //<thermalexpansion:cell>.displayName = "Leadstone Energy Cell";
-<thermalexpansion:frame:130>.displayName = "Microminer Engine Frame";
-<thermalexpansion:frame:146>.displayName = "Microminer Engine Core";
-<thermalexpansion:frame:131>.displayName = "Signalum Microminer Engine Frame";
-<thermalexpansion:frame:147>.displayName = "Signalum Microminer Engine Core";
-<thermalexpansion:frame:132>.displayName = "Enderium Microminer Engine Frame";
-<thermalexpansion:frame:148>.displayName = "Enderium Microminer Engine Core";
+<thermalexpansion:frame:130>.displayName = "Micro Miner Engine Frame";
+<thermalexpansion:frame:146>.displayName = "Micro Miner Engine Core";
+<thermalexpansion:frame:131>.displayName = "Signalum Micro Miner Engine Frame";
+<thermalexpansion:frame:147>.displayName = "Signalum Micro Miner Engine Core";
+<thermalexpansion:frame:132>.displayName = "Enderium Micro Miner Engine Frame";
+<thermalexpansion:frame:148>.displayName = "Enderium Micro Miner Engine Core";
 
 recipes.addShaped(<thermalexpansion:frame:130>, [
 	[<gregtech:meta_item_1:12112>, <gregtech:meta_item_1:14112>, <gregtech:meta_item_1:12112>],
@@ -605,19 +605,19 @@ recipes.addShaped(<thermalexpansion:frame:132>, [
 	[<gregtech:meta_item_1:14708>, null, <gregtech:meta_item_1:14708>],
 	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14708>, <thermalfoundation:material:359>]]);
 
-// redstone cell frame (filled) => "microminer engine core"
+// redstone cell frame (filled) => "micro miner engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:130>, <minecraft:redstone_block> * 2])
     .outputs([<thermalexpansion:frame:146>])
     .duration(500).EUt(480).buildAndRegister();
 
-// signalum cell frame (filled) => "signalum microminer engine core"
+// signalum cell frame (filled) => "signalum micro miner engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:131>, <minecraft:redstone_block> * 4])
     .outputs([<thermalexpansion:frame:147>])
     .duration(1000).EUt(2000).buildAndRegister();
 
-// resonant cell frame (filled) => "enderium microminer engine core"
+// resonant cell frame (filled) => "enderium micro miner engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:132>, <minecraft:redstone_block> * 8])
     .outputs([<thermalexpansion:frame:148>])
@@ -733,4 +733,3 @@ mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_soul_binder>, [
 	[<enderio:item_alloy_ingot:7>, <minecraft:skull:4>,          <ore:itemSoulMachineChassi>,   <minecraft:skull:2>,         <enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>, <gregtech:meta_item_1:12235>, <minecraft:skull>,             <gregtech:meta_item_1:12235>,<enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:7>,  <enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>]]);
-
