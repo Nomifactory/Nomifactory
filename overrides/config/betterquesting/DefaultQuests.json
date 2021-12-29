@@ -49371,7 +49371,7 @@
           "issilent:1": 1,
           "lockedprogress:1": 0,
           "name:8": "\"Distillation Tower\" or \"I Don\u0027t Need No Stinkin\u0027 Tower\"",
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -54972,7 +54972,7 @@
       "livesdef:3": 3,
       "livesmax:3": 10,
       "pack_name:8": "Omnifactory",
-      "pack_version:3": 10,
+      "pack_version:3": 11,
       "party_enable:1": 1
     }
   }
