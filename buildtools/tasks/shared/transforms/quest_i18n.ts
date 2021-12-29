@@ -58,5 +58,5 @@ export default async function transfomLang(): Promise<void> {
 
 	await fs.promises.mkdir(questLangLocation, { recursive: true });
 	await fs.promises.writeFile(upath.join(questLangLocation, "en_us.lang"), lines.join("\n"));
-	return fs.promises.writeFile(questDatabasePath, JSON.stringify(questBook, null, 4));
+	return fs.promises.writeFile(questDatabasePath, JSON.stringify(questBook));
 }
