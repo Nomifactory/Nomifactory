@@ -12,6 +12,7 @@ import {
 	getChangeLog,
 	getFileAtRevision,
 	getLastGitTag,
+	relative,
 } from "../../util/util";
 
 async function sharedCleanUp() {
@@ -74,9 +75,12 @@ async function fetchExternalDependencies() {
 		return Bluebird.map(
 			depDefs,
 			async (depDef) => {
-				const file = (await downloadOrRetrieveFileDef(depDef)).contents;
+				const dest = upath.join(destDirectory, upath.basename(depDef.url));
+				const cachePath = (await downloadOrRetrieveFileDef(depDef)).cachePath;
 
-				await fs.promises.writeFile(upath.join(destDirectory, upath.basename(depDef.url)), file);
+				const rel = relative(dest, cachePath);
+
+				await fs.promises.symlink(rel, dest);
 			},
 			{ concurrency: buildConfig.downloaderConcurrency },
 		);

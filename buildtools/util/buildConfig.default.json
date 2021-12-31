@@ -6,13 +6,13 @@
 	"launchscriptsMinRAM": "2048M",
 	"launchscriptsMaxRAM": "2048M",
 	"launchscriptsJVMArgs": "",
-	"copyOverridesServerGlobs": [
-		"config/**/*",
-		"mods/**/*",
-		"scripts/**/*"
+	"copyFromSharedServerGlobs": [
+		"overrides/config/**/*.*",
+		"overrides/mods/**/*.*",
+		"overrides/scripts/**/*.*"
 	],
-	"copyOverridesClientGlobs": [
-		"**/*"
+	"copyFromSharedClientGlobs": [
+		"overrides/**/*.*"
 	],
 	"buildDestinationDirectory": "../build",
 	"buildSourceDirectory": "../",

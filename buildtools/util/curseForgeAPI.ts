@@ -8,7 +8,7 @@ import buildConfig from "../buildConfig";
 import upath from "upath";
 import fs from "fs";
 import { FileDef } from "../types/fileDef";
-import { downloadOrRetrieveFileDef, RetrievedFileDefReason } from "./util";
+import { downloadOrRetrieveFileDef, relative, RetrievedFileDefReason } from "./util";
 
 const curseForgeProjectCache: { [key: number]: CurseForgeProject } = {};
 export async function fetchProject(toFetch: number): Promise<CurseForgeProject> {
@@ -145,7 +145,9 @@ export async function fetchMods(toFetch: ModpackManifestFile[], destination: str
 					log(`Fetched ${upath.basename(fileInfo.downloadUrl)} from cache... (${fetched} / ${toFetch.length})`);
 				}
 
-				await fs.promises.writeFile(upath.join(destination, "mods", fileInfo.fileName), modFile.contents);
+				const dest = upath.join(destination, "mods", fileInfo.fileName);
+
+				await fs.promises.symlink(relative(dest, modFile.cachePath), dest);
 			},
 			{ concurrency: buildConfig.downloaderConcurrency },
 		);

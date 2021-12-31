@@ -1,29 +1,36 @@
 import { clientDestDirectory, mmcDestDirectory, modpackManifest } from "../../globals";
 import { fetchMods } from "../../util/curseForgeAPI";
 import * as upath from "upath";
-import { dest, series, src } from "gulp";
+import { dest, series, src, symlink, tree } from "gulp";
 import * as fs from "fs";
 
-async function mmcCleanUp() {
+async function mmcCleanUp(cb) {
 	if (fs.existsSync(mmcDestDirectory)) {
-		return fs.promises.rm(mmcDestDirectory, { recursive: true });
+		await fs.promises.rm(mmcDestDirectory, { recursive: true });
 	}
+
+	cb();
 }
 
 /**
  * Checks and creates all necessary directories so we can build the client safely.
  */
-async function createMMCDirs() {
+async function createMMCDirs(cb) {
 	if (!fs.existsSync(mmcDestDirectory)) {
-		return fs.promises.mkdir(mmcDestDirectory, { recursive: true });
+		await fs.promises.mkdir(mmcDestDirectory, { recursive: true });
 	}
+
+	cb();
 }
 
 /**
  * Copies modpack overrides.
  */
 function copyOverrides() {
-	return src(upath.join(clientDestDirectory, "**/*"), { base: clientDestDirectory }).pipe(dest(mmcDestDirectory));
+	return src(upath.join(clientDestDirectory, "**/*.*"), {
+		nodir: true,
+		resolveSymlinks: false,
+	}).pipe(symlink(upath.join(mmcDestDirectory)));
 }
 
 /**

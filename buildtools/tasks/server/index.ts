@@ -3,14 +3,14 @@ import unzip from "unzipper";
 import through from "through2";
 import mustache from "mustache";
 import log from "fancy-log";
-import gulp, { src, dest } from "gulp";
+import gulp, { src, dest, symlink } from "gulp";
 import fs from "fs";
 import buildConfig from "../../buildConfig";
 import Bluebird from "bluebird";
 import { ForgeProfile } from "../../types/forgeProfile";
 import { FileDef } from "../../types/fileDef";
-import { downloadOrRetrieveFileDef, getVersionManifest, libraryToPath } from "../../util/util";
-import { modpackManifest, overridesFolder, serverDestDirectory, sharedDestDirectory } from "../../globals";
+import { downloadOrRetrieveFileDef, getVersionManifest, libraryToPath, relative } from "../../util/util";
+import { modpackManifest, serverDestDirectory, sharedDestDirectory } from "../../globals";
 import del from "del";
 import { VersionManifest } from "../../types/versionManifest";
 import { fetchMods } from "../../util/curseForgeAPI";
@@ -62,11 +62,13 @@ async function downloadForge() {
 	/**
 	 * Fetch the Forge installer
 	 */
-	const forgeJar = (
-		await downloadOrRetrieveFileDef({
-			url: FORGE_MAVEN + forgeInstallerPath,
-		})
-	).contents;
+	const forgeJar = await fs.promises.readFile(
+		(
+			await downloadOrRetrieveFileDef({
+				url: FORGE_MAVEN + forgeInstallerPath,
+			})
+		).cachePath,
+	);
 
 	/**
 	 * Parse the profile manifest.
@@ -136,8 +138,9 @@ async function downloadForge() {
 			}
 
 			const destPath = upath.join(serverDestDirectory, "libraries", libraryPath);
+
 			await fs.promises.mkdir(upath.dirname(destPath), { recursive: true });
-			await fs.promises.writeFile(destPath, (await downloadOrRetrieveFileDef(def)).contents);
+			await fs.promises.symlink(relative(destPath, (await downloadOrRetrieveFileDef(def)).cachePath), destPath);
 		},
 		{ concurrency: buildConfig.downloaderConcurrency },
 	);
@@ -158,21 +161,17 @@ async function downloadMinecraftServer() {
 	 *
 	 * Pass SHA1 hash to compare against the downloaded file.
 	 */
-	const serverJar = (
-		await downloadOrRetrieveFileDef({
-			url: versionManifest.downloads.server.url,
-			hashes: [{ id: "sha1", hashes: versionManifest.downloads.server.sha1 }],
-		})
-	).contents;
+	const serverJar = await downloadOrRetrieveFileDef({
+		url: versionManifest.downloads.server.url,
+		hashes: [{ id: "sha1", hashes: versionManifest.downloads.server.sha1 }],
+	});
 
 	if (!(versionManifest.downloads && versionManifest.downloads.server)) {
 		throw new Error(`No server jar file found for ${versionManifest.id}`);
 	}
 
-	return fs.promises.writeFile(
-		upath.join(serverDestDirectory, `minecraft_server.${versionManifest.id}.jar`),
-		serverJar,
-	);
+	const dest = upath.join(serverDestDirectory, `minecraft_server.${versionManifest.id}.jar`);
+	await fs.promises.symlink(relative(dest, serverJar.cachePath), dest);
 }
 
 /**
@@ -189,11 +188,11 @@ async function downloadMods() {
  * Copies modpack overrides.
  */
 function copyServerOverrides() {
-	const basedir = upath.join(sharedDestDirectory, overridesFolder);
-	return src(
-		buildConfig.copyOverridesServerGlobs.map((glob) => upath.join(basedir, glob)),
-		{ base: basedir },
-	).pipe(dest(serverDestDirectory));
+	return src(buildConfig.copyFromSharedServerGlobs, {
+		nodir: true,
+		base: sharedDestDirectory,
+		followSymlinks: true,
+	}).pipe(symlink(serverDestDirectory));
 }
 
 /**

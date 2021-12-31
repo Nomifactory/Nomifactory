@@ -83,22 +83,10 @@ function copyClientChangelog() {
 /**
  * Copies modpack overrides.
  */
-async function copyClientOverrides() {
-	const baseDir = upath.join(sharedDestDirectory, overridesFolder);
-	const globs = buildConfig.copyOverridesClientGlobs.map((glob) => {
-		if (glob.startsWith("!")) {
-			return "!" + upath.join(baseDir, glob.substr(1));
-		} else {
-			return upath.join(baseDir, glob);
-		}
-	});
-
-	return new Promise((resolve) => {
-		gulp
-			.src(globs)
-			.pipe(gulp.dest(upath.join(clientDestDirectory, overridesFolder)))
-			.on("end", resolve);
-	});
+function copyClientOverrides() {
+	return gulp
+		.src(buildConfig.copyFromSharedClientGlobs, { nodir: true, cwd: sharedDestDirectory, allowEmpty: true })
+		.pipe(gulp.symlink(upath.join(clientDestDirectory, "overrides")));
 }
 
 /**

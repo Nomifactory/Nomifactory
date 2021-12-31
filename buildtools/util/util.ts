@@ -53,7 +53,7 @@ export enum RetrievedFileDefReason {
 
 export interface RetrievedFileDef {
 	reason: RetrievedFileDefReason;
-	contents: Buffer;
+	cachePath: string;
 }
 
 /**
@@ -72,7 +72,7 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Retri
 		if (file.length !== 0) {
 			const rFileDef = {
 				reason: RetrievedFileDefReason.CacheHit,
-				contents: file,
+				cachePath: cachedFilePath,
 			};
 
 			// Check hashes.
@@ -133,7 +133,7 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Retri
 
 		return {
 			reason: RetrievedFileDefReason.Downloaded,
-			contents: data,
+			cachePath: cachedFilePath,
 		};
 	} catch (err) {
 		if (handle && (await handle.stat()).isFile()) {
@@ -345,4 +345,21 @@ export async function getVersionManifest(minecraftVersion: string): Promise<Vers
 	});
 
 	return versionManifest;
+}
+
+/**
+ * Returns a relative posix path from the first argument to the second.
+ */
+export function relative(from: string, to: string): string {
+	const broken = [from.split(upath.sep), to.split(upath.sep)];
+
+	while (broken.every((x) => x.length > 0) && broken[0][0] == broken[1][0]) {
+		broken.forEach((x) => x.shift());
+	}
+
+	if (broken.some((x) => x.length === 0)) {
+		throw new Error("Paths are not relative.");
+	}
+
+	return upath.join(...Array(broken[0].length - 1).fill(".."), ...broken[1]);
 }

@@ -23,17 +23,24 @@ async function zipFolder(path: string, zipName: string = upath.basename(path) + 
 }
 
 function makeZipper(src: string, artifactName: string) {
-	return () => {
+	const zipFn = () => {
 		return zipFolder(
 			upath.join(src),
 			sanitize((makeArtifactNameBody(modpackManifest.name) + `-${artifactName}.zip`).toLowerCase()),
 		);
 	};
+
+	Object.defineProperty(zipFn, "name", {
+		value: `zip${artifactName}`,
+		configurable: true,
+	});
+
+	return zipFn;
 }
 
-export const zipServer = makeZipper(serverDestDirectory, "server");
-export const zipClient = makeZipper(clientDestDirectory, "client");
-export const zipLang = makeZipper(langDestDirectory, "lang");
-export const zipMMC = makeZipper(mmcDestDirectory, "mmc");
+export const zipServer = makeZipper(serverDestDirectory, "Server");
+export const zipClient = makeZipper(clientDestDirectory, "Client");
+export const zipLang = makeZipper(langDestDirectory, "Lang");
+export const zipMMC = makeZipper(mmcDestDirectory, "MMC");
 
 export const zipAll = gulp.series(zipServer, zipClient, zipLang);
