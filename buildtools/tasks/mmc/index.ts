@@ -74,6 +74,14 @@ async function createMMCManifest() {
 		formatVersion: 1,
 	};
 
+	manifest.components.push({
+		cachedName: "Minecraft",
+		cachedVersion: modpackManifest.minecraft.version,
+		important: true,
+		uid: "net.minecraft",
+		version: modpackManifest.minecraft.version,
+	});
+
 	const forgeLoader = modpackManifest.minecraft.modLoaders
 		.map((x) => x.id.match(/forge-(.+)/))
 		.filter(Boolean)
@@ -95,14 +103,6 @@ async function createMMCManifest() {
 			version: ver,
 		});
 	}
-
-	manifest.components.push({
-		cachedName: "Minecraft",
-		cachedVersion: modpackManifest.minecraft.version,
-		important: true,
-		uid: "net.minecraft",
-		version: modpackManifest.minecraft.version,
-	});
 
 	return fs.promises.writeFile(upath.join(mmcDestDirectory, "mmc-pack.json"), JSON.stringify(manifest, null, "\t"));
 }
