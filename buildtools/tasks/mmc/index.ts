@@ -1,7 +1,7 @@
 import { clientDestDirectory, mmcDestDirectory, modpackManifest } from "../../globals";
 import { fetchMods } from "../../util/curseForgeAPI";
 import * as upath from "upath";
-import { dest, series, src, symlink, tree } from "gulp";
+import { series, src, symlink } from "gulp";
 import * as fs from "fs";
 
 async function mmcCleanUp(cb) {
