@@ -1192,3 +1192,7 @@ thermal_sep.recipeBuilder()
     .inputs(<gregtech:meta_item_1:2053>)
     .outputs(<nuclearcraft:plutonium:8>)
     .duration(3200).EUt(48).buildAndRegister();
+
+//Recipe for the Hyperspace disc
+recipes.remove(<nuclearcraft:record_hyperspace>);
+recipes.addShapeless("of_nc_record_hyperspace", <nuclearcraft:record_hyperspace>, [<ore:record>, <enderio:item_material:20>]);
