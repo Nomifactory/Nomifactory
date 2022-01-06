@@ -271,7 +271,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome to §5Omnifactory§f!\n\nThis pack is intended to be played in a §bLost Cities / Overworld dimension§f.\n\nIf you\u0027re playing with friends, don\u0027t forget to invite them to the §equestbook party§f.\n\n§fIf you wish to build your base in a skyblock world, place the §6Void World Cake§f down on the ground, and eat a slice to be sent to the void. Please note that you\u0027ll still need to return to the Lost Cities / Overworld dimension to mine, but you can freely build in complete safety in the §eVoid World§f.",
+          "desc:8": "Welcome to §5Nomifactory§f!\n\nThis pack is intended to be played in a §bLost Cities / Overworld dimension§f.\n\nIf you\u0027re playing with friends, don\u0027t forget to invite them to the §equestbook party§f.\n\n§fIf you wish to build your base in a skyblock world, place the §6Void World Cake§f down on the ground, and eat a slice to be sent to the void. Please note that you\u0027ll still need to return to the Lost Cities / Overworld dimension to mine, but you can freely build in complete safety in the §eVoid World§f.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -339,7 +339,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§c§rOres in §5Omnifactory§f exist in large clusters, or \u0027§eveins§f\u0027. These veins are scattered around the world, and are relatively common. The §aScanner§f in your inventory can detect any ore within 16 blocks of you, so digging down and scanning should show you any nearby veins. Try scanning now by holding §6right-click§f until the progress meter completes.\n\nWhile the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making a §aFlux Capacitor§f to charge tools in your inventory.\n\nIn order to proceed, you\u0027ll need to locate a source of §6Iron§f. You have a few options. §6Magnetite§f veins are higher up and contain large amounts of iron, as well as some §6Vanadium§f and §6Gold§f. Another good source of iron is §6Limonite§f veins, which contain several types of iron. Finally, §6Pyrite§f can be found paired with §6Copper§f in several types of veins.\n\n§6Wrought Iron§f is obtained simply by §esmelting Iron a second time§f. It has more durability than Iron, so it is better for making tools, but §cdo not convert your entire Iron supply over to Wrought Iron§f. The two materials are not interchangeable and you\u0027ll need Iron or Wrought Iron as demanded by various recipes.",
+          "desc:8": "§c§rOres in §5Nomifactory§f exist in large clusters, or \u0027§eveins§f\u0027. These veins are scattered around the world, and are relatively common. The §aScanner§f in your inventory can detect any ore within 16 blocks of you, so digging down and scanning should show you any nearby veins. Try scanning now by holding §6right-click§f until the progress meter completes.\n\nWhile the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making a §aFlux Capacitor§f to charge tools in your inventory.\n\nIn order to proceed, you\u0027ll need to locate a source of §6Iron§f. You have a few options. §6Magnetite§f veins are higher up and contain large amounts of iron, as well as some §6Vanadium§f and §6Gold§f. Another good source of iron is §6Limonite§f veins, which contain several types of iron. Finally, §6Pyrite§f can be found paired with §6Copper§f in several types of veins.\n\n§6Wrought Iron§f is obtained simply by §esmelting Iron a second time§f. It has more durability than Iron, so it is better for making tools, but §cdo not convert your entire Iron supply over to Wrought Iron§f. The two materials are not interchangeable and you\u0027ll need Iron or Wrought Iron as demanded by various recipes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -684,7 +684,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It\u0027s a habit most of us pick up.\n\n§eYou shouldn\u0027t feel any pressure to do that in Omnifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What\u0027s more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.\n\nObvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can\u0027t find it. Those are worth doubling, if possible.\n\nBut at least for now, you shouldn\u0027t feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until you have Medium Voltage machines or even later.§r",
+          "desc:8": "In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It\u0027s a habit most of us pick up.\n\n§eYou shouldn\u0027t feel any pressure to do that in Nomifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What\u0027s more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.\n\nObvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can\u0027t find it. Those are worth doubling, if possible.\n\nBut at least for now, you shouldn\u0027t feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until you have Medium Voltage machines or even later.§r",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9558,7 +9558,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "While there are no types of veins that are extremely rare, you\u0027re likely to struggle with finding at least one of the less common vein types. This isn\u0027t really avoidable.\n\nYou will accumulate a lot of §dOmnicoins§f from quest turn-ins while playing Omnifactory. Do not be hesitant to spend them on things you need! \n\nSearch for various ores (generally the first one listed in §bJEI§f) to find the coin recipes for them. Alternatively, hover your cursor over a coin and press §6U§f to see what you can buy with it.\n\n§aDon\u0027t be a hoarder!",
+          "desc:8": "While there are no types of veins that are extremely rare, you\u0027re likely to struggle with finding at least one of the less common vein types. This isn\u0027t really avoidable.\n\nYou will accumulate a lot of §dOmnicoins§f from quest turn-ins while playing Nomifactory. Do not be hesitant to spend them on things you need! \n\nSearch for various ores (generally the first one listed in §bJEI§f) to find the coin recipes for them. Alternatively, hover your cursor over a coin and press §6U§f to see what you can buy with it.\n\n§aDon\u0027t be a hoarder!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24315,7 +24315,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You win.\n\nCongratulations.\n\nI hope you enjoyed playing §5Omnifactory§r.",
+          "desc:8": "You win.\n\nCongratulations.\n\nI hope you enjoyed playing §5Nomifactory§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26720,7 +26720,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in §5Omnifactory§r is to allow you to automate extended crafting recipes.\n\nApplied Energistics 2 stores recipes in §aPatterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §aPackage Recipe Holders§r, which don\u0027t have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Package Recipe Encoder§r.\n\nIn the vast majority of situations you\u0027ll need two identically-encoded Holders, as the following machines work together.\n\nThe §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).\n\nThe §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.\n\nWhen both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your §aTerminal§r.\n\nUp to 8 §3Packager Extensions§r can optionally be added to the Packager to speed up package creation. Place the Packager Extensions in a plane surrounding the Packager, creating a 3 by 3 structure with the Packager in the center when all 8 Packager Extensions are placed.",
+          "desc:8": "§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in §5Nomifactory§r is to allow you to automate extended crafting recipes.\n\nApplied Energistics 2 stores recipes in §aPatterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §aPackage Recipe Holders§r, which don\u0027t have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Package Recipe Encoder§r.\n\nIn the vast majority of situations you\u0027ll need two identically-encoded Holders, as the following machines work together.\n\nThe §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).\n\nThe §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.\n\nWhen both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your §aTerminal§r.\n\nUp to 8 §3Packager Extensions§r can optionally be added to the Packager to speed up package creation. Place the Packager Extensions in a plane surrounding the Packager, creating a 3 by 3 structure with the Packager in the center when all 8 Packager Extensions are placed.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33437,7 +33437,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Overclocking aside, as you continue to progress in §5Omnifactory§f, materials made in the §3Electric Blast Furnace§f will take longer to complete. §eMore advanced coils do not give speed bonuses§f, only allowing for the furnace to §eget hot enough to process more advanced materials§f.\n\nConsequently, you\u0027ll need to continually expand your smelting and power generation infrastructure.\n\nYou don\u0027t have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack.",
+          "desc:8": "Overclocking aside, as you continue to progress in §5Nomifactory§f, materials made in the §3Electric Blast Furnace§f will take longer to complete. §eMore advanced coils do not give speed bonuses§f, only allowing for the furnace to §eget hot enough to process more advanced materials§f.\n\nConsequently, you\u0027ll need to continually expand your smelting and power generation infrastructure.\n\nYou don\u0027t have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44749,7 +44749,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aDraconic Evolution Information Tablet§r contains useful information about the mod as well as diagrams for valid Fusion Crafting block placement.\n\nYou might also be interested in the §oDraconic Evolution Fusion Core Automation§r guide linked to in §9#omnicompendium§r in the official §5Omnifactory§r Discord server.",
+          "desc:8": "The §aDraconic Evolution Information Tablet§r contains useful information about the mod as well as diagrams for valid Fusion Crafting block placement.\n\nYou might also be interested in the §oDraconic Evolution Fusion Core Automation§r guide linked to in §9#omnicompendium§r in the official §5Nomifactory§r Discord server.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -45696,7 +45696,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Aqueous Accumulators§r in §5Omnifactory§r are infinite water sources; they §l§ndo not§r require any water blocks nearby.\n\nThis machine can produce §9Water§r as fast as you can extract it (the only downside being that it makes some annoying noises).\n\nFriendship with §aEndervoirs§r ended.",
+          "desc:8": "§3Aqueous Accumulators§r in §5Nomifactory§r are infinite water sources; they §l§ndo not§r require any water blocks nearby.\n\nThis machine can produce §9Water§r as fast as you can extract it (the only downside being that it makes some annoying noises).\n\nFriendship with §aEndervoirs§r ended.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -46661,7 +46661,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Progression tab was added so you can keep track of the important bits of the pack.\n\nCircuits are the baseline of the entire Omnifactory progression, so keep climbing!",
+          "desc:8": "The Progression tab was added so you can keep track of the important bits of the pack.\n\nCircuits are the baseline of the entire Nomifactory progression, so keep climbing!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47799,7 +47799,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §6Smart Item Filter§r from §3GregTech§r is an important tool when automating otherwise troublesome machines. It is a cover which filters item transfer based on whether a valid recipe exists for those items in a specified machine.\n\nThis is powerful in combination with movement covers like the §6Robot Arm§r. If you place this filter on the §eElectrolyzer§r mode in a Robot Arm set to §eSupply Exact§r mode, the Robot Arm will transfer precisely the right amounts of all valid items into an §3Electrolyzer§r so it will operate without clogging. There\u0027s no other way to accomplish this feat!\n\nThis filter also has §eSifter§r and §eCentrifuge§r§r modes for use with those machines (though §3Sifters§r are not in §5Omnifactory§r). It does not have modes for any other machines.\n\nThe §eDefault§r button lets you click it to §eIgnore Fluids§r, which is useful when you have recipes that also require fluids (like §9Hydrogen§r in an Electrolyzer). Since Robot Arms can\u0027t move fluids, it would otherwise prevent the cover from working.\n",
+          "desc:8": "The §6Smart Item Filter§r from §3GregTech§r is an important tool when automating otherwise troublesome machines. It is a cover which filters item transfer based on whether a valid recipe exists for those items in a specified machine.\n\nThis is powerful in combination with movement covers like the §6Robot Arm§r. If you place this filter on the §eElectrolyzer§r mode in a Robot Arm set to §eSupply Exact§r mode, the Robot Arm will transfer precisely the right amounts of all valid items into an §3Electrolyzer§r so it will operate without clogging. There\u0027s no other way to accomplish this feat!\n\nThis filter also has §eSifter§r and §eCentrifuge§r§r modes for use with those machines (though §3Sifters§r are not in §5Nomifactory§r). It does not have modes for any other machines.\n\nThe §eDefault§r button lets you click it to §eIgnore Fluids§r, which is useful when you have recipes that also require fluids (like §9Hydrogen§r in an Electrolyzer). Since Robot Arms can\u0027t move fluids, it would otherwise prevent the cover from working.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -49087,7 +49087,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§5Omnifactory§r has an official Discord server which serves as a useful community resource.\n\nOn the server, the dev team posts links to in-depth guides on a variety of topics related to the pack, makes development announcements, assists with tech support questions, and investigates possible bug reports.\n\nYou can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have.\n\nTo join the server, you can use the button on the Main Menu to go to the join URL, or if you\u0027re not into Discord you can find our projects on GitHub at our organization page: §9https://github.com/OmnifactoryDevs§r.\n\nIssue tracking and development, including many community-submitted guides, is handled on our respective GitHub project repositories.",
+          "desc:8": "§5Nomifactory§r has an official Discord server which serves as a useful community resource.\n\nOn the server, the dev team posts links to in-depth guides on a variety of topics related to the pack, makes development announcements, assists with tech support questions, and investigates possible bug reports.\n\nYou can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have.\n\nTo join the server, you can use the button on the Main Menu to go to the join URL, or if you\u0027re not into Discord you can find our projects on GitHub at our organization page: §9https://github.com/Nomifactory§r.\n\nIssue tracking and development, including many community-submitted guides, is handled on our respective GitHub project repositories.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -51410,7 +51410,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress.",
+          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Nomifactory§r.\n\nCircuits are the primary measure of your progress.",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -53664,7 +53664,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Welcome to §5Omnifactory§r, I\u0027ll be your guide.",
+          "desc:8": "Welcome to §5Nomifactory§r, I\u0027ll be your guide.",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 32487,
@@ -54971,7 +54971,7 @@
       "home_offset_y:3": 0,
       "livesdef:3": 3,
       "livesmax:3": 10,
-      "pack_name:8": "Omnifactory",
+      "pack_name:8": "Nomifactory",
       "pack_version:3": 11,
       "party_enable:1": 1
     }

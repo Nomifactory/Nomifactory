@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Crashes or unintended behaviors arising from Omnifactory's mods, configurations,
+about: Crashes or unintended behaviors arising from Nomifactory's mods, configurations,
   or custom scripts
 title: ''
 labels: ''
@@ -23,7 +23,7 @@ Replace this text with a clear and concise description of what the correct behav
 Replace this text with steps to reproduce the behavior, if applicable. We need to know how to encounter this bug ourselves to we can diagnose it.
 
 **Crash Log:**
-If your client crashed as a result of this bug, please upload the generated crash log. This is found in your launcher's Omnifactory profile (aka instance) in a folder called `crash-reports`. If there was no crash, but instead an error screen, please upload your `latest.log` instead.
+If your client crashed as a result of this bug, please upload the generated crash log. This is found in your launcher's Nomifactory profile (aka instance) in a folder called `crash-reports`. If there was no crash, but instead an error screen, please upload your `latest.log` instead.
 
 **Screenshots:**
 If applicable, add screenshots to help explain your problem.

@@ -21,8 +21,8 @@ function transformKeyPairs(
 
 		const properties = item["properties:10"]["betterquesting:10"];
 
-		const titleKey = `omnifactory.quest.${namespace}.${storeKey}.title`;
-		const descKey = `omnifactory.quest.${namespace}.${storeKey}.desc`;
+		const titleKey = `nomifactory.quest.${namespace}.${storeKey}.title`;
+		const descKey = `nomifactory.quest.${namespace}.${storeKey}.desc`;
 
 		// Push lang file lines.
 		lines.push(

@@ -1,6 +1,6 @@
 # Update Notes
 
-This document contains only the most important things required to know when updating Omnifactory to the next version. Please see the changelog for a complete desciption of everything that has been changed.
+This document contains only the most important things required to know when updating Nomifactory to the next version. Please see the changelog for a complete desciption of everything that has been changed.
 
 **Do not skip versions when updating!** We have tested to ensure that each version is safe to update to from the previous version, but skipping versions may result in problems. Please update to each version in order and refer to the Update Notes for that version to know what you should do to safely update to the next version.
 
