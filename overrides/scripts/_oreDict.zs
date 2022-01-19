@@ -1008,9 +1008,7 @@ for oreDictEntry, items in miscDisabled {
 
 <ore:gemDilithium>.remove(<libvulpes:productgem>);
 <ore:crystalDilithium>.add(<libvulpes:productgem>);
-
 <ore:blockWarpCoreRim>.add(<gregtech:compressed_3:10>);
-
 
 ////////////////////////////////
 //			Removals          //

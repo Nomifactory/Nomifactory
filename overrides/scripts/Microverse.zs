@@ -106,7 +106,7 @@ val energyInputHatches as IItemStack[] = [
 
 for meta,input in energyInputHatches {
 	val item as IItemStack = itemUtils.getItem("modularmachinery:blockenergyinputhatch", meta);
-	makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item, 
+	makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item,
 		[" M ",
 		 "MAM",
 		 " M "],
@@ -370,7 +370,7 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiersevenship>, 
+makeExtremeRecipe9(<contenttweaker:tiersevenship>,
 	[" L  D  L ",
 	 " DDDGDDD ",
 	 "LDDDDDDDL",
@@ -404,7 +404,7 @@ makeShaped("of_warpengine", <contenttweaker:warpengine>,
 
 /////////////	 Tier Eight Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiereightship>, 
+makeExtremeRecipe9(<contenttweaker:tiereightship>,
 	[" G C C G ",
 	 " WCCLCCW ",
 	 " WCIIICW ",
@@ -461,7 +461,7 @@ makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiertenship>, 
+makeExtremeRecipe9(<contenttweaker:tiertenship>,
 	["  N   N  ",
 	 " NUN NUN ",
 	 " NNN NNN ",
@@ -875,7 +875,7 @@ makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4
 	  X : <deepmoblearning:living_matter_extraterrestrial> });
 
 // Dragon Lair Data
-makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>, 
+makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 	["IHH",
 	 "HHH",
 	 "HHH"],
@@ -884,7 +884,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 );
 
 // Wither Realm Data
-makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>, 
+makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 	["IXX",
 	 "XXX",
 	 "XXX"],
