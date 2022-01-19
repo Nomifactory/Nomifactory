@@ -736,7 +736,7 @@ macerator.recipeBuilder()
 autoclave.recipeBuilder()
 	.inputs([<ore:dustDilithium> * 4])
 	.fluidInputs(<liquid:deuterium> * 1000)
-	.outputs([<ore:gemDilithium>.firstItem * 4])
+	.outputs([<ore:crystalDilithium>.firstItem * 4])
 	.duration(400)
 	.EUt(110)
 	.buildAndRegister();
