@@ -7,9 +7,8 @@
 	"launchscriptsMaxRAM": "2048M",
 	"launchscriptsJVMArgs": "",
 	"copyFromSharedServerGlobs": [
-		"overrides/config/**/*.*",
-		"overrides/mods/**/*.*",
-		"overrides/scripts/**/*.*"
+		"overrides/**/*.*",
+		"!overrides/resources/**/*.*"
 	],
 	"copyFromSharedClientGlobs": [
 		"overrides/**/*.*"

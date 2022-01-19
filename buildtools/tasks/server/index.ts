@@ -188,11 +188,9 @@ async function downloadMods() {
  * Copies modpack overrides.
  */
 function copyServerOverrides() {
-	return src(buildConfig.copyFromSharedServerGlobs, {
-		nodir: true,
-		base: sharedDestDirectory,
-		followSymlinks: true,
-	}).pipe(symlink(serverDestDirectory));
+	return gulp
+		.src(buildConfig.copyFromSharedServerGlobs, { nodir: true, cwd: sharedDestDirectory, allowEmpty: true })
+		.pipe(symlink(upath.join(serverDestDirectory)));
 }
 
 /**
