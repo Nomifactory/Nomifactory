@@ -13,7 +13,7 @@
       "type": "spotlight",
       "item": "deepmoblearning:data_model_guardian",
       "anchor": "data_models",
-      "text": "All of the $(item)Data Models$() start at the \"$(a)Basic$()\" tier, this tier goes up as the $(item)Data Models$() gather more $(item)Data$().$(br2)Unlike many packs, you don't have to kill mobs to level up your models in Omnifactory: a freshly crafted $(item)Data Model$() is ready to be put inside a $(l:1_machines/0_simulation_chamber)Simulation chamber$() immediately."
+      "text": "All of the $(item)Data Models$() start at the \"$(a)Basic$()\" tier, this tier goes up as the $(item)Data Models$() gather more $(item)Data$().$(br2)Unlike many packs, you don't have to kill mobs to level up your models in Nomifactory: a freshly crafted $(item)Data Model$() is ready to be put inside a $(l:1_machines/0_simulation_chamber)Simulation chamber$() immediately."
     },
     {
       "type": "text",

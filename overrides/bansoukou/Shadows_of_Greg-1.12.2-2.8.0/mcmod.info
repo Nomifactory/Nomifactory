@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gtadditions",
+  "name": "Shadows of Greg",
+  "description": "The big spook takes your lunch money.  Who reads these?",
+  "version": "1.12.2-2.8.0_fix2",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Shadows_of_Fire", "TheEmosewaPixel","Bartz24"],
+  "credits": "The creators of GTCE, GT5U and most importantly, GregoriusT.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["gregtech"]
+}
+]

@@ -271,7 +271,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome to §5Omnifactory§f!\n\nThis pack is intended to be played in a §bLost Cities / Overworld dimension§f.\n\nIf you\u0027re playing with friends, don\u0027t forget to invite them to the §equestbook party§f.\n\n§fIf you wish to build your base in a skyblock world, place the §6Void World Cake§f down on the ground, and eat a slice to be sent to the void. Please note that you\u0027ll still need to return to the Lost Cities / Overworld dimension to mine, but you can freely build in complete safety in the §eVoid World§f.",
+          "desc:8": "Welcome to §5Nomifactory§f!\n\nThis pack is intended to be played in a §bLost Cities / Overworld dimension§f.\n\nIf you\u0027re playing with friends, don\u0027t forget to invite them to the §equestbook party§f.\n\n§fIf you wish to build your base in a skyblock world, place the §6Void World Cake§f down on the ground, and eat a slice to be sent to the void. Please note that you\u0027ll still need to return to the Lost Cities / Overworld dimension to mine, but you can freely build in complete safety in the §eVoid World§f.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -339,7 +339,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§c§rOres in §5Omnifactory§f exist in large clusters, or \u0027§eveins§f\u0027. These veins are scattered around the world, and are relatively common. The §aScanner§f in your inventory can detect any ore within 16 blocks of you, so digging down and scanning should show you any nearby veins. Try scanning now by holding §6right-click§f until the progress meter completes.\n\nWhile the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making a §aFlux Capacitor§f to charge tools in your inventory.\n\nIn order to proceed, you\u0027ll need to locate a source of §6Iron§f. You have a few options. §6Magnetite§f veins are higher up and contain large amounts of iron, as well as some §6Vanadium§f and §6Gold§f. Another good source of iron is §6Limonite§f veins, which contain several types of iron. Finally, §6Pyrite§f can be found paired with §6Copper§f in several types of veins.\n\n§6Wrought Iron§f is obtained simply by §esmelting Iron a second time§f. It has more durability than Iron, so it is better for making tools, but §cdo not convert your entire Iron supply over to Wrought Iron§f. The two materials are not interchangable and you\u0027ll need Iron or Wrought Iron as demanded by various recipes.",
+          "desc:8": "§c§rOres in §5Nomifactory§f exist in large clusters, or \u0027§eveins§f\u0027. These veins are scattered around the world, and are relatively common. The §aScanner§f in your inventory can detect any ore within 16 blocks of you, so digging down and scanning should show you any nearby veins. Try scanning now by holding §6right-click§f until the progress meter completes.\n\nWhile the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making a §aFlux Capacitor§f to charge tools in your inventory.\n\nIn order to proceed, you\u0027ll need to locate a source of §6Iron§f. You have a few options. §6Magnetite§f veins are higher up and contain large amounts of iron, as well as some §6Vanadium§f and §6Gold§f. Another good source of iron is §6Limonite§f veins, which contain several types of iron. Finally, §6Pyrite§f can be found paired with §6Copper§f in several types of veins.\n\n§6Wrought Iron§f is obtained simply by §esmelting Iron a second time§f. It has more durability than Iron, so it is better for making tools, but §cdo not convert your entire Iron supply over to Wrought Iron§f. The two materials are not interchangable and you\u0027ll need Iron or Wrought Iron as demanded by various recipes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -683,7 +683,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It\u0027s a habit most of us pick up.\n\n§eYou shouldn\u0027t feel any pressure to do that in Omnifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What\u0027s more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.\n\nObvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can\u0027t find it. Those are worth doubling, if possible.\n\nBut at least for now, you shouldn\u0027t feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until you have Medium Voltage machines or even later.§r",
+          "desc:8": "In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It\u0027s a habit most of us pick up.\n\n§eYou shouldn\u0027t feel any pressure to do that in Nomifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What\u0027s more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.\n\nObvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can\u0027t find it. Those are worth doubling, if possible.\n\nBut at least for now, you shouldn\u0027t feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until you have Medium Voltage machines or even later.§r",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1842,7 +1842,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This quest is repeatable once per hour and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips.\n\n§dNote: Travel to the Void World appears to be bugged for many players. The issue is being worked on. If you can\u0027t get the Void Cake to work right, you can simply play in Lost Cities or Overworld instead without issue... lack of access to the Void World will not block your progression in any way.",
+          "desc:8": "This quest is repeatable once per hour and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -8787,7 +8787,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Next up are §6SMD Diodes§r, which are fairly simple.\n\nA §6Small Pile of Gallium Dust§r and four §6Fine Electrum Wire§r net you half a stack.",
+          "desc:8": "Next up are §6SMD Diodes§r, which are fairly simple.\n\nA §6Small Pile of Gallium Dust§r and four §6Fine Platinum Wire§r net you half a stack.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9546,7 +9546,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "While there are no types of veins that are extremely rare, you\u0027re likely to struggle with finding at least one of the less common vein types. This isn\u0027t really avoidable.\n\nYou will accumulate a lot of §dOmnicoins§f from quest turn-ins while playing Omnifactory. Do not be hesitant to spend them on things you need! \n\nSearch for various ores (generally the first one listed in §bJEI§f) to find the coin recipes for them. Alternatively, hover your cursor over a coin and press §6U§f to see what you can buy with it.\n\n§aDon\u0027t be a hoarder!",
+          "desc:8": "While there are no types of veins that are extremely rare, you\u0027re likely to struggle with finding at least one of the less common vein types. This isn\u0027t really avoidable.\n\nYou will accumulate a lot of §dOmnicoins§f from quest turn-ins while playing Nomifactory. Do not be hesitant to spend them on things you need! \n\nSearch for various ores (generally the first one listed in §bJEI§f) to find the coin recipes for them. Alternatively, hover your cursor over a coin and press §6U§f to see what you can buy with it.\n\n§aDon\u0027t be a hoarder!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13148,7 +13148,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "FUSION!\n\nThis baby can do any fusion recipe, notably giving you access to §6Neutronium§r.\n\nThe multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitions permitted.\n\nObviously though, this one uses §6Fusion Machine Casing Mk II§r and only works with §aUV Energy Input Hatches§r.",
+          "desc:8": "FUSION!\n\nThis baby can do any fusion recipe, notably giving you access to §6Neutronium§r.\n\nThe multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitutions permitted.\n\nObviously though, this one uses §6Fusion Machine Casing Mk II§r and only works with §aUV Energy Input Hatches§r.\n\nThe §3Mark 3 Fusion Reactor§r has an energy buffer of §e640M EU§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19400,7 +19400,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Time to get fusing!\n\nThe §3Fusion Reactor§r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows.\n\nThe §bJEI§r preview shows §e§eall valid hatch locations§r, but you don\u0027t actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §6LuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It\u0027s possible to use input/output hatches in every valid location, if you prefer.\n\nBecause of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you\u0027ll need to craft an additional §a28 casings§r.\n\nEach §aEnergy Input Hatch§r increases the reactor\u0027s power buffer. The \"Energy to Start\" value of a recipe is drained instantly when the reactor switches from the previous recipe it ran (or no previous recipe) to a different recipe. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes.\n\nIf you can\u0027t provide sufficient starting power or continuous energy, §cthe craft might be voided§r. Make sure you have enough power to start up the reactor and to run the recipe to completion.\n\nFusion Reactors don\u0027t overclock, and they gate the next tier of materials, so you will eventually want to make more than one.",
+          "desc:8": "Time to get fusing!\n\nThe §3Fusion Reactor§r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. §6Sneak-right click§r the controller to enable the in-world preview.\n\nThe §bJEI§r preview shows §e§eall valid hatch locations§r, but you don\u0027t actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §6LuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It\u0027s possible to use input/output hatches in every valid location, if you prefer.\n\nBecause of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you\u0027ll need to craft an additional §a28 casings§r.\n\nEach §aEnergy Input Hatch§r increases the reactor\u0027s power buffer. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes and give a power buffer of §e160M EU§r.\n\nIn addition to the recipe power drain, Fusion Reactors have a §eheat§r mechanic related to the recipe\u0027s §e\"Eu to Start\"§r. This amount of power is drained from the reactor\u0027s buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe\u0027s EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe.\n\nIf the reactor stops processing, it will §erapidly lose heat§r, even if you pause it with a soft hammer. On the other hand, if the reactor is already at the required temperature for a recipe, §eno additional power§r is required to heat up the reactor! This is true even if you switch between different recipes. This mechanic incentivizes continuous use of the reactor.\n\nIf you switch to a recipe that requires more heat, §eonly the difference§r in heat values is consumed as EU to reach the target heat (up to a maximum heat equal to the reactor\u0027s current buffer).\n\nFusion Reactors don\u0027t overclock, and they gate the next tier of materials, so you will eventually want to make more than one.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24364,7 +24364,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You win.\n\nCongratulations.\n\nI hope you enjoyed playing §5Omnifactory§r.",
+          "desc:8": "You win.\n\nCongratulations.\n\nI hope you enjoyed playing §5Nomifactory§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26756,7 +26756,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in §5Omnifactory§r is to allow you to automate extended crafting recipes.\n\nApplied Energistics 2 stores recipes in §aPatterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §aPackage Recipe Holders§r, which don\u0027t have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Package Recipe Encoder§r.\n\nIn the vast majority of situations you\u0027ll need two identically-encoded Holders, as the following machines work together.\n\nThe §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).\n\nThe §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.\n\nWhen both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your §aTerminal§r.\n\n",
+          "desc:8": "§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in §5Nomifactory§r is to allow you to automate extended crafting recipes.\n\nApplied Energistics 2 stores recipes in §aPatterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §aPackage Recipe Holders§r, which don\u0027t have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Package Recipe Encoder§r.\n\nIn the vast majority of situations you\u0027ll need two identically-encoded Holders, as the following machines work together.\n\nThe §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).\n\nThe §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.\n\nWhen both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your §aTerminal§r.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33528,7 +33528,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Overclocking aside, as you continue to progress in §5Omnifactory§f, materials made in the §3Electric Blast Furnace§f will take longer to complete. §eMore advanced coils do not give speed bonuses§f, only allowing for the furnace to §eget hot enough to process more advanced materials§f.\n\nConsequently, you\u0027ll need to continually expand your smelting and power generation infrastructure.\n\nYou don\u0027t have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack.",
+          "desc:8": "Overclocking aside, as you continue to progress in §5Nomifactory§f, materials made in the §3Electric Blast Furnace§f will take longer to complete. §eMore advanced coils do not give speed bonuses§f, only allowing for the furnace to §eget hot enough to process more advanced materials§f.\n\nConsequently, you\u0027ll need to continually expand your smelting and power generation infrastructure.\n\nYou don\u0027t have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34173,7 +34173,7 @@
             },
             "6:10": {
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 3,
               "OreDict:8": "",
               "id:8": "modularmachinery:blockenergyinputhatch"
             },
@@ -41338,7 +41338,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium 235 Fuel (or §6LEU-235§r, for short). This fuel uses an 8:1 ratio of U238 to U235.\n\nThis fuel is processed in your §3Fission Reactor§r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you\u0027ll get a §6Depleted LEU-235 Fuel§r§r.\n\nKeep in mind that power generation is §nnot§r§r the goal: the duration of all fuels is quite short in §5Omnifactory§r. What you want are the next fissile materials in the chain.\n\nThe depleted fuel is separated in a regular §3Centrifuge§r, resulting in many tiny clumps of fissile materials: Uranium 238, §6Neptunium 237§r, §6§6Plutonium 239§r, and §6Plutonium 241§r.",
+          "desc:8": "When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium 235 Fuel (or §6LEU-235§r, for short). This fuel uses an 8:1 ratio of U238 to U235.\n\nThis fuel is processed in your §3Fission Reactor§r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you\u0027ll get a §6Depleted LEU-235 Fuel§r§r.\n\nKeep in mind that power generation is §nnot§r§r the goal: the duration of all fuels is quite short in §5Nomifactory§r. What you want are the next fissile materials in the chain.\n\nThe depleted fuel is separated in a regular §3Centrifuge§r, resulting in many tiny clumps of fissile materials: Uranium 238, §6Neptunium 237§r, §6§6Plutonium 239§r, and §6Plutonium 241§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44814,7 +44814,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aDraconic Evolution Information Tablet§r contains useful information about the mod as well as diagrams for valid Fusion Crafting block placement.\n\nYou might also be interested in the §oDraconic Evolution Fusion Core Automation§r guide linked to in §9#omnicompendium§r in the official §5Omnifactory§r Discord server.",
+          "desc:8": "The §aDraconic Evolution Information Tablet§r contains useful information about the mod as well as diagrams for valid Fusion Crafting block placement.\n\nYou might also be interested in the §oDraconic Evolution Fusion Core Automation§r guide linked to in §9#omnicompendium§r in the official §5Nomifactory§r Discord server.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -45609,7 +45609,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Upgrade time! \n...or building a new one, which is probably better.\n\nYet again this quest asks for the minimal amount of casings. Make an extra 28 if you don\u0027t want more than §a2 Fluid Inputs§r§r and §a1 Fluid Output§r.\n\nIf you insist on upgrading instead of making a new one, don\u0027t dismantle the current one before you\u0027re sure you\u0027ve got everything you need to upgrade it, or you might end up having to rebuild the §3Mark 1 Fusion Reactor§r again.",
+          "desc:8": "Upgrade time! \n...or building a new one, which is probably better.\n\nYet again this quest asks for the minimal number of casings. Make an extra 28 if you don\u0027t want more than §a2 Fluid Inputs§r§r and §a1 Fluid Output§r.\n\nIf you insist on upgrading instead of making a new one, don\u0027t dismantle the current one before you\u0027re sure you\u0027ve got everything you need to upgrade it, or you might end up having to rebuild the §3Mark 1 Fusion Reactor§r again.\n\nThe §3Mark 2 Fusion Reactor§r has an energy buffer of §e320M EU§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -45757,7 +45757,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Aqueous Accumulators§r in §5Omnifactory§r are infinite water sources; they §l§ndo not§r require any water blocks nearby.\n\nThis machine can produce §9Water§r as fast as you can extract it (the only downside being that it makes some annoying noises).\n\nFriendship with §aEndervoirs§r ended.",
+          "desc:8": "§3Aqueous Accumulators§r in §5Nomifactory§r are infinite water sources; they §l§ndo not§r require any water blocks nearby.\n\nThis machine can produce §9Water§r as fast as you can extract it (the only downside being that it makes some annoying noises).\n\nFriendship with §aEndervoirs§r ended.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -46718,7 +46718,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Progression tab was added so you can keep track of the important bits of the pack.\n\nCircuits are the baseline of the entire Omnifactory progression, so keep climbing!",
+          "desc:8": "The Progression tab was added so you can keep track of the important bits of the pack.\n\nCircuits are the baseline of the entire Nomifactory progression, so keep climbing!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47038,6 +47038,117 @@
       "questID:3": 773,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "774:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Whether or not you (or your server admin) picked the default §bLost Cities§r overworld type, you have the option of teleporting yourself to the §eLost Cities Dimension§r. This is useful if you like other world types but want to still be able to explore cities for things like §eloot and spawners§r§r.\n\nTo create a portal, you must place a §aBed§r§r down on two §6Blocks of Diamond§r. Then, you surround the bed with any kind of §eMonster Skulls§r. Sleep in this bed and you will be teleported there.\n\n§cDon\u0027t forget to have a way to get back!§r§r You can use the §e/sethome§r§r command to register where your house is, and §e/home§r§r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some §erestrictions§r on this though: §eit takes a few seconds of standing still to activate§r and there is a §ecooldown§r between uses.\n\nLater on you\u0027ll have other means of teleportation.\n\nMonster Skulls might take a little while to get if you\u0027re playing in §ePeaceful§r§r. §6Skeleton Skulls§r would be the way to go in that case.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 10,
+            "OreDict:8": "",
+            "id:8": "minecraft:bed"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Lost Cities and Registering Homes",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 774,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 1,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": "itemSkull",
+              "id:8": "minecraft:skull"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "bed",
+              "id:8": "minecraft:bed"
+            },
+            "2:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:diamond_block"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "775:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§bMultiblock Tweaker§r adds an §einteractive in-world preview§r for all §bGregTech§r multiblocks! §6Shift-right-click§r a placed controller to activate a hologram depicting the default layout of the structure to help you with building. As you place blocks, the structure will be validated and the §efirst incorrect block§r it detects will be highlighted in red.\n\n§6Sneak-right-click§r to cycle from the full view through each layer. When on the final layer of the preview, this will remove the preview.\n\n§6Sneak-left-click§r to go back to the previous layer, or close the preview from the full view.\n\nIn the §eJEI previews§r for multiblocks, §6left-click§r and drag the mouse to rotate the preview horizontally. §6Shift-left-click§r to rotate it vertically.\n\nAdditionally, you can §6right-click§r and drag the mouse to pan the preview or §6shift-right-click§r and drag to zoom in or out.\n\nSome blocks in the multiblock preview have additional tooltips to provide more information on how the multiblock can form.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": "",
+            "id:8": "gregtech:frame_steel"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Multiblock Machine Previews",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 775,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -47358,15 +47469,15 @@
           "id:3": 402,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -881,
-          "y:3": 52
+          "x:3": -904,
+          "y:3": 84
         },
         "43:10": {
           "id:3": 403,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": -881,
-          "y:3": 12
+          "x:3": -904,
+          "y:3": 44
         },
         "44:10": {
           "id:3": 413,
@@ -47552,10 +47663,17 @@
         },
         "70:10": {
           "id:3": 755,
-          "sizeX:3": 35,
-          "sizeY:3": 35,
-          "x:3": -881,
-          "y:3": 92
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -864,
+          "y:3": 84
+        },
+        "71:10": {
+          "id:3": 775,
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -863,
+          "y:3": 44
         }
       }
     },
@@ -49204,7 +49322,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Omnifactory§r.\n\nCircuits are the primary measure of your progress.",
+          "desc:8": "It\u0027s always rewarding to take a step forward.\n\nThis tab outlines the progression of various things in §5Nomifactory§r.\n\nCircuits are the primary measure of your progress.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -51381,7 +51499,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Welcome to §5Omnifactory§r, I\u0027ll be your guide.",
+          "desc:8": "Welcome to §5Nomifactory§r, I\u0027ll be your guide.",
           "icon:10": {
             "Count:3": 0,
             "Damage:2": 0,
@@ -51728,6 +51846,13 @@
           "sizeY:3": 36,
           "x:3": -204,
           "y:3": -24
+        },
+        "48:10": {
+          "id:3": 774,
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": -204,
+          "y:3": 186
         }
       }
     },
@@ -52135,8 +52260,8 @@
       "home_offset_y:3": 0,
       "livesdef:3": 3,
       "livesmax:3": 10,
-      "pack_name:8": "Omnifactory",
-      "pack_version:3": 1,
+      "pack_name:8": "Nomifactory",
+      "pack_version:3": 10,
       "party_enable:1": 1
     }
   }

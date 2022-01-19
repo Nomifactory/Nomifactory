@@ -3,23 +3,24 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2847",
+        "id": "forge-14.23.5.2860",
         "primary": true
       }
     ]
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "Omnifactory - 1.2.2 - Community Update",
-  "version": "1.2.2",
-  "author": "OmnifactoryDevs",
-  "projectID": 313440,
-  "files": [
+  "name": "Nomifactory",
+  "author": "Nomifactory",
+  "projectID": 563950,
+  "externalDependencies": [
     {
-      "projectID": 310812,
-      "fileID": 2783832,
-      "required": true
-    },
+      "name": "Applied Energistics 2 Trousers Edition",
+      "url": "https://github.com/PrototypeTrousers/Applied-Energistics-2/releases/download/Experimental-v49/appliedenergistics2-rv6-stable-7.omni-fixes-v49n.jar",
+      "sha": "55f455ab190db44ad5b5f887f235a8730d2e5d40"
+    }
+  ],
+  "files": [
     {
       "projectID": 238403,
       "fileID": 2691084,
@@ -81,14 +82,10 @@
       "required": true
     },
     {
-      "projectID": 244023,
-      "fileID": 2463886,
-      "required": true
-    },
-    {
       "projectID": 243478,
       "fileID": 2745657,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 222880,
@@ -193,7 +190,8 @@
     {
       "projectID": 272515,
       "fileID": 2685984,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 299815,
@@ -258,7 +256,8 @@
     {
       "projectID": 251407,
       "fileID": 2624712,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 223565,
@@ -291,14 +290,15 @@
       "required": true
     },
     {
-      "projectID": 75423,
-      "fileID": 2756655,
+      "projectID": 519952,
+      "fileID": 3436951,
       "required": true
     },
     {
       "projectID": 271492,
       "fileID": 2469710,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 304920,
@@ -313,11 +313,12 @@
     {
       "projectID": 267602,
       "fileID": 2915363,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 239197,
-      "fileID": 2926879,
+      "fileID": 3036787,
       "required": true
     },
     {
@@ -338,7 +339,8 @@
     {
       "projectID": 226406,
       "fileID": 2857869,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 312195,
@@ -348,7 +350,8 @@
     {
       "projectID": 254268,
       "fileID": 2829232,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 284904,
@@ -383,12 +386,14 @@
     {
       "projectID": 250398,
       "fileID": 2857064,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 226447,
       "fileID": 2477566,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 271009,
@@ -426,8 +431,8 @@
       "required": true
     },
     {
-      "projectID": 78320,
-      "fileID": 2627678,
+      "projectID": 391401,
+      "fileID": 3418767,
       "required": true
     },
     {
@@ -443,7 +448,8 @@
     {
       "projectID": 238747,
       "fileID": 2739582,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 252676,
@@ -531,8 +537,8 @@
       "required": true
     },
     {
-      "projectID": 280570,
-      "fileID": 2697259,
+      "projectID": 431982,
+      "fileID": 3334507,
       "required": true
     },
     {
@@ -548,16 +554,6 @@
     {
       "projectID": 258881,
       "fileID": 2512758,
-      "required": true
-    },
-    {
-      "projectID": 223794,
-      "fileID": 2747063,
-      "required": true
-    },
-    {
-      "projectID": 297878,
-      "fileID": 2767592,
       "required": true
     },
     {
@@ -606,14 +602,15 @@
       "required": true
     },
     {
-      "projectID": 268387,
-      "fileID": 2777071,
+      "projectID": 398267,
+      "fileID": 3049327,
       "required": true
     },
     {
       "projectID": 282313,
       "fileID": 2689835,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 262823,
@@ -628,7 +625,8 @@
     {
       "projectID": 271740,
       "fileID": 2707353,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 257818,
@@ -648,7 +646,8 @@
     {
       "projectID": 60089,
       "fileID": 2671937,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 284007,
@@ -753,6 +752,36 @@
     {
       "projectID": 376351,
       "fileID": 2936064,
+      "required": true
+    },
+    {
+      "projectID": 254317,
+      "fileID": 2932048,
+      "required": true
+    },
+    {
+      "projectID": 296057,
+      "fileID": 2573063,
+      "required": true
+    },
+    {
+      "projectID": 490698,
+      "fileID": 3337685,
+      "required": true
+    },
+    {
+      "projectID": 285612,
+      "fileID": 3133651,
+      "required": true
+    },
+    {
+      "projectID": 434344,
+      "fileID": 3231405,
+      "required": true
+    },
+    {
+      "projectID": 386188,
+      "fileID": 3083943,
       "required": true
     }
   ],

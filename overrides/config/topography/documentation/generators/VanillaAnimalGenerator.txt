@@ -1,8 +1,0 @@
-This file is for the VanillaAnimalGenerator. This generates animals.
-
-
-
-Constructor:
-    Notes:
-        This constructs a VanillaAnimalGenerator.
-

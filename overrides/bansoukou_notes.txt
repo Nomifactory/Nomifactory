@@ -1,0 +1,35 @@
+Bugfix patches for mods, applied via Bansoukou:
+
+Source code is available (or will be shortly) for the modifications in forks
+of the respective mod under https://www.github.com/Exaxxion/, unless otherwise
+stated.
+
+Patches are applied during game load to the original jar so you don't have to
+install custom jars for these fixes anymore. Hooray!
+
+    Backported fixes for GregTechCE 1.8.4.419:
+        + Fix Robot Arms and Machine Covers losing configuration on world reloads
+        + Fix assembler programmable circuit lag / inputs dirty after craft
+        + Fix log spam from recipe validation (e.g. multismelter)
+        + Correct the inputs for the Sodium Hydroxide recipe
+        + Compatibility fixes for Quantum Chests and AE2 storage buses
+        + Fix random crash caused by breaking fluid pipes
+        + Fix turbines being obstructed by ghost blocks like feral flare lantern lights
+        + Fix NPE crash during worldgen arising from blockstate
+        + Performance improvement: disable GT pump pipe rendering
+        + "fix getting wrong crushed ore variant when washing it"
+          See: https://github.com/GregTechCE/GregTech/issues/880 for more info
+        + otherwise identical to 1.8.4.419 to avoid breaking things in the pack
+
+    Backported fixes for Shadows of Greg 2.8.0:
+        + Blood-Asp's fixes for Fusion Reactor energy values
+            - Note: recipe starting power is 100x the previous values, but
+              hatches also provide 100x as well. These are intended values.
+        + Phantamanta's Fusion Reactor code rewrite
+            - Fixes exploits and makes it work far more sensibly
+            - See: https://github.com/Shadows-of-Fire/Shadows-of-Greg/pull/77
+        + otherwise identical to 2.8.0 to avoid breaking things in the pack
+
+    Custom Patch for BetterQuesting 3.5.323:
+        + Sort objects during "/bq_admin default save" before overwriting DefaultQuests.json
+        + https://github.com/Funwayguy/BetterQuesting/pull/704
