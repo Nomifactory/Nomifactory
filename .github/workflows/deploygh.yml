@@ -54,9 +54,13 @@ jobs:
           CURSEFORGE_PROJECT_ID: ${{ secrets.CURSEFORGE_PROJECT_ID }}
           CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
 
-      - name: "Build everything and prune cache"
+      - name: "Build everything"
         working-directory: ./buildtools
-        run: npx gulp buildAllAndPrune
+        run: npx gulp buildAll
+
+      - name: "Prune cache"
+        working-directory: ./buildtools
+        run: npx gulp pruneCache
 
       - name: "Zip everything"
         working-directory: ./buildtools
