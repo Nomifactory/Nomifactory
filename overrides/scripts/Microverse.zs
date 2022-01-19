@@ -106,7 +106,7 @@ val energyInputHatches as IItemStack[] = [
 
 for meta,input in energyInputHatches {
 	val item as IItemStack = itemUtils.getItem("modularmachinery:blockenergyinputhatch", meta);
-	makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item, 
+	makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item,
 		[" M ",
 		 "MAM",
 		 " M "],
@@ -370,7 +370,7 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiersevenship>, 
+makeExtremeRecipe9(<contenttweaker:tiersevenship>,
 	[" L  D  L ",
 	 " DDDGDDD ",
 	 "LDDDDDDDL",
@@ -404,7 +404,7 @@ makeShaped("of_warpengine", <contenttweaker:warpengine>,
 
 /////////////	 Tier Eight Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiereightship>, 
+makeExtremeRecipe9(<contenttweaker:tiereightship>,
 	[" G C C G ",
 	 " WCCLCCW ",
 	 " WCIIICW ",
@@ -461,7 +461,7 @@ makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiertenship>, 
+makeExtremeRecipe9(<contenttweaker:tiertenship>,
 	["  N   N  ",
 	 " NUN NUN ",
 	 " NNN NNN ",
@@ -740,8 +740,8 @@ mmRecipe("large_microverse_draconium_1", "large_microverse", 1500)
 	.addEnergyPerTickInput(125000)
 	.addItemInput(<contenttweaker:tiersevenship>)
 	.addItemInput(<contenttweaker:quantumflux> * 32)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
 	.addItemInput(<contenttweaker:dragonlairdata> * 32)
 	.addItemOutput(<draconicevolution:dragon_heart> * 32)
 	.addItemOutput(<minecraft:dragon_egg> * 64)
@@ -765,8 +765,8 @@ mmRecipe("large_microverse_draconium_1", "large_microverse", 1500)
 mmRecipe("large_microverse_draconium_2", "large_microverse", 1500)
 	.addEnergyPerTickInput(125000)
 	.addItemInput(<contenttweaker:tiersevenship>)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
 	.addItemInput(<contenttweaker:gemsensor>)
 	.addItemInput(<contenttweaker:dragonlairdata> * 64)
 	.addItemInput(<contenttweaker:dragonlairdata> * 64)
@@ -782,10 +782,10 @@ mmRecipe("large_microverse_crystal_1", "large_microverse", 2000)
 	.addEnergyPerTickInput(250000)
 	.addItemInput(<contenttweaker:tiereightship>)
 	.addItemInput(<contenttweaker:quantumflux> * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
 	.addItemInput(<contenttweaker:witherrealmdata> * 64)
 	.addItemInput(<contenttweaker:witherrealmdata> * 64)
 	.addItemOutput(<gregtech:meta_item_1:32725> * 32)
@@ -800,10 +800,10 @@ mmRecipe("large_microverse_crystal_2", "large_microverse", 1500)
 	.addEnergyPerTickInput(250000)
 	.addItemInput(<contenttweaker:tiereightship>)
 	.addItemInput(<contenttweaker:quantumflux> * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
-	.addItemInput(<ore:gemDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
+	.addItemInput(<ore:crystalDilithium>.firstItem * 64)
 	.addItemInput(<contenttweaker:lairofthechaosguardiandata>)
 	.addItemOutput(<draconicevolution:chaos_shard> * 4)
 	.addItemOutput(<minecraft:dragon_egg> * 64)
@@ -875,7 +875,7 @@ makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4
 	  X : <deepmoblearning:living_matter_extraterrestrial> });
 
 // Dragon Lair Data
-makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>, 
+makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 	["IHH",
 	 "HHH",
 	 "HHH"],
@@ -884,7 +884,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 );
 
 // Wither Realm Data
-makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>, 
+makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 	["IXX",
 	 "XXX",
 	 "XXX"],
