@@ -1,6 +1,6 @@
 [![Curseforge](http://cf.way2muchnoise.eu/full_563950_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/nomifactory) [![Curseforge](http://cf.way2muchnoise.eu/versions/For%20MC_563950_all.svg)](https://www.curseforge.com/minecraft/modpacks/nomifactory)
 
-\[[Download Dev Snapshots Here](https://nightly.link/Nomifactory/Nomifactory/workflows/nightly/dev)] \[[Learn How to Install or Update to Dev Snapshots Here](https://github.com/Nomifactory/NomifactoryGuides/blob/latest/guides/PlayingOnDev.md)]
+\[[Download Dev Snapshots Here](https://nightly.link/Nomifactory/Nomifactory/workflows/nightly/dev)] \[[Learn How to Install or Update to Dev Snapshots Here](https://github.com/Nomifactory/Guides/blob/latest/guides/PlayingOnDev.md)]
 
 Nomifactory is a quest-driven, expert-style tech modpack focused on automating large-scale factories. It features a custom take on GregTechCE-centered progression that we hope everyone will enjoy.
 
