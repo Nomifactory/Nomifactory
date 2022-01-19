@@ -1,8 +1,7 @@
 {
 	"copyFromSharedServerGlobs": [
-		"overrides/config/**/*.*",
-		"overrides/mods/**/*.*",
-		"overrides/scripts/**/*.*"
+		"overrides/**/*.*",
+		"!overrides/resources/**/*.*"
 	],
 	"copyFromSharedClientGlobs": [
 		"overrides/**/*.*",
