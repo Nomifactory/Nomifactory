@@ -1,7 +1,5 @@
 [![Curseforge](http://cf.way2muchnoise.eu/full_563950_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/nomifactory) [![Curseforge](http://cf.way2muchnoise.eu/versions/For%20MC_563950_all.svg)](https://www.curseforge.com/minecraft/modpacks/nomifactory)
 
-\[[Download Dev Snapshots Here](https://nightly.link/Nomifactory/Nomifactory/workflows/nightly/dev)] \[[Learn How to Install or Update to Dev Snapshots Here](https://github.com/Nomifactory/NomifactoryGuides/blob/latest/guides/PlayingOnDev.md)]
-
 Nomifactory is a quest-driven, expert-style tech modpack focused on automating large-scale factories. It features a custom take on GregTechCE-centered progression that we hope everyone will enjoy.
 
 This modpack is based on Omnifactory 1.2.1 by Damien Reave, released in 2019. Exaxxion was appointed the maintainer of Omnifactory in January 2020, and the pack was published on GitHub as LGPLv3 with express permission at that time. Fellow community members wanted to help maintain the beloved pack, resulting in the formation of the dev team and the April 2020 release of "The Community Update".
