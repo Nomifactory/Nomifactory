@@ -43,11 +43,13 @@ async function getForgeURLs() {
 	/**
 	 * Fetch the Forge installer
 	 */
-	const forgeJar = (
-		await downloadOrRetrieveFileDef({
-			url: FORGE_MAVEN + forgeInstallerPath,
-		})
-	).contents;
+	const forgeJar = await fs.promises.readFile(
+		(
+			await downloadOrRetrieveFileDef({
+				url: FORGE_MAVEN + forgeInstallerPath,
+			})
+		).cachePath,
+	);
 
 	/**
 	 * Parse the profile manifest.

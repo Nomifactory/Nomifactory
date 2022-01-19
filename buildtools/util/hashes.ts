@@ -20,8 +20,8 @@ import _sha1 from "sha1";
  * @author <a href="mailto:aappleby@gmail.com">Austin Appleby</a>
  * @see http://sites.google.com/site/murmurhash/
  */
-function murmurhash2_32_gc(arr, seed) {
-	let l = arr.length,
+function murmurhash2_32_gc(arr, seed, len = arr.length) {
+	let l = len,
 		h = seed ^ l,
 		i = 0,
 		k;
@@ -62,7 +62,7 @@ function murmurhash2_32_gc(arr, seed) {
  * This is what Twitch is using to fingerprint mod files.
  */
 export const murmurhash = (inputBuffer: Buffer, seed = 1): string => {
-	const output = Array.from(inputBuffer).fill(0);
+	const output = new Uint8Array(inputBuffer.length);
 
 	let pos = 0;
 	for (let i = 0; i < inputBuffer.length; i++) {
@@ -73,7 +73,7 @@ export const murmurhash = (inputBuffer: Buffer, seed = 1): string => {
 		}
 	}
 
-	return String(murmurhash2_32_gc(output.slice(0, pos), seed));
+	return String(murmurhash2_32_gc(output, seed, pos));
 };
 
 import { HashDef } from "../types/hashDef";

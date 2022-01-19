@@ -73,9 +73,7 @@ async function deployReleases(): Promise<void> {
 			...repo,
 
 			// Dumb workaround thanks to broken typings.
-			data: ((await fs.promises.readFile(
-				upath.join(buildConfig.buildDestinationDirectory, file),
-			)) as unknown) as string,
+			data: (await fs.promises.readFile(upath.join(buildConfig.buildDestinationDirectory, file))) as unknown as string,
 		});
 	});
 
