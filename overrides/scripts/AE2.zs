@@ -330,3 +330,9 @@ recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
 	[<gregtech:meta_item_1:32724>, null, <gregtech:meta_item_1:32724>],
 	[null, <appliedenergistics2:material:41>, null],
 	[null, null, null]]);
+
+//Bleeding-edge PAE2 Features we don't want in this release
+mods.jei.JEI.removeAndHide(<appliedenergistics2:part:222>); // Oredict Storage Bus
+mods.jei.JEI.removeAndHide(<appliedenergistics2:part:341>); // Extended Pattern Terminal
+mods.jei.JEI.removeAndHide(<appliedenergistics2:part:470>); // P2P - GTEU P2P
+
