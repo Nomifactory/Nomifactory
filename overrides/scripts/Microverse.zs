@@ -465,11 +465,11 @@ fluid_extractor.recipeBuilder()
 <contenttweaker:tiersixship>.addTooltip(format.white(
 	format.italic("Harvests extremely rare materials from every concievable reality.")));
 <contenttweaker:tiersevenship>.addTooltip(format.white(
-	format.italic("Hunts Wyrms and End Dragons from the microverse")));
+	format.italic("Hunts Wyrms and End Dragons from the microverse.")));
 <contenttweaker:tiersevenship>.addTooltip(format.white(
 	format.italic("and returns with parts from their carapaces.")));
 <contenttweaker:tiereightship>.addTooltip(format.white(
-	format.italic("Hunts inconcievable monstrosities from beyond the End")));
+	format.italic("Hunts inconcievable monstrosities from beyond the End.")));
 <contenttweaker:tiereightship>.addTooltip(format.white(
 	format.italic("and returns with bizzare trinkets.")));
 <contenttweaker:tiernineship>.addTooltip(format.white(
