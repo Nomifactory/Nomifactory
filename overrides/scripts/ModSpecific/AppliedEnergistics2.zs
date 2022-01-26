@@ -20,6 +20,9 @@ import scripts.CommonVars.makeShaped as makeShaped;
 <appliedenergistics2:part:461>.addTooltip(format.green(format.italic(
 	"Made by right-clicking ME P2P Tunnel with redstone dust.")));
 
+<appliedenergistics2:part:470>.addTooltip(format.green(format.italic(
+        "Made by right-clicking ME P2P Tunnel with a GregTech wire or cable.")));
+
 /*
   Channel-specific adjustments.
  */
