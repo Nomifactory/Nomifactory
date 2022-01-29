@@ -2259,7 +2259,7 @@ solidifier.recipeBuilder()
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32303>], [<liquid:neutronium> * 576]).remove();
 solidifier.recipeBuilder()
 	.outputs([<gregtech:meta_item_2:26972>])
-	.fluidInputs(<liquid:neutronium> * 144)
+	.fluidInputs(<liquid:neutronium> * 576)
 	.notConsumable(<gregtech:meta_item_1:32303>)
 	.duration(200).EUt(30).buildAndRegister();
 
