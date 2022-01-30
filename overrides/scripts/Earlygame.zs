@@ -346,9 +346,10 @@ compressor.recipeBuilder().inputs(<gregtech:meta_item_1:2011> * 2).outputs(<mine
 compressor.recipeBuilder().inputs(<minecraft:dye:15> * 3).outputs(<minecraft:bone>).duration(20).EUt(8).buildAndRegister();
 compressor.recipeBuilder().inputs(<minecraft:bone> * 4).outputs(<minecraft:skull>).duration(20).EUt(16).buildAndRegister();
 
-
+//Macerate vanilla stones
 macerator.findRecipe(8, [<minecraft:cobblestone>], [null]).remove();
 macerator.findRecipe(8, [<minecraft:gravel>], [null]).remove();
+macerator.findRecipe(8, [<minecraft:netherrack>], [null]).remove();
 macerator.recipeBuilder().inputs([<minecraft:stone>]).outputs([<gregtech:meta_item_1:2328>]).duration(16).EUt(10).buildAndRegister();
 macerator.recipeBuilder().inputs([<minecraft:cobblestone>]).outputs([<minecraft:gravel>]).duration(16).EUt(10).buildAndRegister();
 macerator.recipeBuilder().inputs([<minecraft:gravel>]).outputs([<minecraft:sand>]).duration(16).EUt(10).buildAndRegister();
