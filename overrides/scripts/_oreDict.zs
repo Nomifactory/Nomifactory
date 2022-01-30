@@ -2230,16 +2230,55 @@ recipes.addShapeless(<extendedcrafting:material:32>, [<gregtech:meta_item_1:1070
 <ore:ingotNeutronium>.add(<avaritia:resource:4>);
 <ore:nuggetNeutronium>.add(<avaritia:resource:3>);
 <ore:blockNeutronium>.add(<avaritia:block_resource>);
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [<liquid:neutronium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32317>], [<liquid:neutronium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [<liquid:neutronium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32301>], [<liquid:neutronium> * 144]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32303>], [<liquid:neutronium> * 576]).remove();
-solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:neutronium> * 1296]).remove();
-solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 144).notConsumable(<gregtech:meta_item_1:32309>).outputs([<avaritia:resource:3> * 9]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 144).notConsumable(<gregtech:meta_item_1:32301>).outputs([<moreplates:neutronium_plate>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<avaritia:resource:4>]).duration(200).EUt(30).buildAndRegister();
-solidifier.recipeBuilder().fluidInputs(<liquid:neutronium> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<avaritia:block_resource>]).duration(200).EUt(30).buildAndRegister();
+
+// Neutronium Nuggets
+solidifier.findRecipe(8, [<metaitem:shape.mold.nugget>], [<liquid:neutronium> * 144]).remove();
+solidifier.recipeBuilder()
+	.outputs([<avaritia:resource:3> * 9])
+	.fluidInputs(<liquid:neutronium> * 144)
+	.notConsumable(<metaitem:shape.mold.nugget>)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Neutronium Ingot
+solidifier.findRecipe(8, [<metaitem:shape.mold.ingot>], [<liquid:neutronium> * 144]).remove();
+solidifier.recipeBuilder()
+	.outputs([<avaritia:resource:4>])
+	.fluidInputs(<liquid:neutronium> * 144)
+	.notConsumable(<metaitem:shape.mold.ingot>)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Neutronium Block
+solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:neutronium> * 1296]).remove();
+solidifier.recipeBuilder()
+	.outputs([<avaritia:block_resource>])
+	.fluidInputs(<liquid:neutronium> * 1296)
+	.notConsumable(<metaitem:shape.mold.block>)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Neutronium Gear
+solidifier.findRecipe(8, [<metaitem:shape.mold.gear>], [<liquid:neutronium> * 576]).remove();
+solidifier.recipeBuilder()
+	.outputs([<metaitem:gearNeutronium>])
+	.fluidInputs(<liquid:neutronium> * 576)
+	.notConsumable(<metaitem:shape.mold.gear>)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Neutronium Small Gear
+solidifier.findRecipe(8, [<metaitem:shape.mold.gear.small>], [<liquid:neutronium> * 144]).remove();
+solidifier.recipeBuilder()
+	.outputs([<metaitem:gearSmallNeutronium>])
+	.fluidInputs(<liquid:neutronium> * 144)
+	.notConsumable(<metaitem:shape.mold.gear.small>)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Neutronium Plate
+solidifier.findRecipe(8, [<metaitem:shape.mold.plate>], [<liquid:neutronium> * 144]).remove();
+solidifier.recipeBuilder()
+	.outputs([<moreplates:neutronium_plate>])
+	.fluidInputs(<liquid:neutronium> * 144)
+	.notConsumable(<metaitem:shape.mold.plate>)
+	.duration(200).EUt(30).buildAndRegister();
+
 recipes.addShapeless(<avaritia:resource:4>, [<gregtech:meta_item_1:10972>]);
 
 // Signalum Plate
