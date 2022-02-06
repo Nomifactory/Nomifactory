@@ -409,8 +409,7 @@
     {
       "projectID": 254268,
       "fileID": 2829232,
-      "required": true,
-      "sides": ["client"]
+      "required": true
     },
     {
       "projectID": 254317,
@@ -605,7 +604,8 @@
     {
       "projectID": 284904,
       "fileID": 2568865,
-      "required": true
+      "required": true,
+      "sides": ["client"]
     },
     {
       "projectID": 285612,
