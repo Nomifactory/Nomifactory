@@ -266,7 +266,7 @@ makeShaped("simulation_controller", <gregtech:machine:2003>,
       H : <contenttweaker:heartofauniverse>
       });
 
-makeShaped("simulation_casing_two", <contenttweaker:simulation_casing_2>,
+makeShaped("simulation_casing_two", <contenttweaker:simulation_casing_2> * 2,
     ["III",
      "IWI",
      "III"],
