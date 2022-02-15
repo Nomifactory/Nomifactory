@@ -9,4 +9,7 @@
 <recipe name="Gear, Stone" disabled="true" />
 <recipe name="Gear, Stone, Upgrade" disabled="true" />
 
+
+ <recipe name="Smelting: Osmium Dust" disabled="true"/>
+
 </enderio:recipes>

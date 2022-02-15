@@ -15,7 +15,6 @@ furnace.remove(<appliedenergistics2:material:5>);
 furnace.remove(<thermalfoundation:material:167>, <gregtech:meta_item_1:2708>);
 furnace.remove(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>);
 furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
-furnace.remove(<ore:ingotOsmium>);
 
 //  Tier 0										Steel, Silicon
 //	Tier 1	[1000 temp]		120		Copper		Black Steel, Annealed Copper
