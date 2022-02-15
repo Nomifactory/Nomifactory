@@ -14,10 +14,10 @@ material.omnium=Omnium
 material.draconium=Draconium
 material.microversium=Microversium
 
-item.contenttweaker.omnicoin.name=Omnipenny [1]
-item.contenttweaker.omnicoin5.name=Omninickel [5]
-item.contenttweaker.omnicoin25.name=Omniquarter [25]
-item.contenttweaker.omnicoin100.name=Omnidollar [100]
+item.contenttweaker.omnicoin.name=Nomipenny [1]
+item.contenttweaker.omnicoin5.name=Nominickel [5]
+item.contenttweaker.omnicoin25.name=Nomiquarter [25]
+item.contenttweaker.omnicoin100.name=Nomidollar [100]
 
 item.contenttweaker.woodenwidget.name=Wooden Widget
 item.contenttweaker.stonewidget.name=Stone Widget

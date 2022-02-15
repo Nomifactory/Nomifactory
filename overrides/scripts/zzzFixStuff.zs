@@ -101,7 +101,7 @@ recipes.addShapeless("of_crystal_matrix_decomp", <avaritia:resource:1> * 9, [<av
 
 
 /*
-    Airtight Seal books for the low price of 900 omnicoins!
+    Airtight Seal books for the low price of 900 nomicoins!
  */
 recipes.addShaped("of_craft_airtight_seal",
     <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 12 as short}]}),
