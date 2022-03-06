@@ -74,3 +74,21 @@ recipes.removeShaped(<gregtech:meta_tool:32>, [
 <gregtech:meta_item_2:32498>.removeTooltip("You have a feeling like it's watching you");
 <gregtech:meta_item_2:32499>.removeTooltip("Can run Minecraft");
 //<gregtech:meta_item_1:32725>.removeTooltip("Quantum Star");
+
+var hideCategories = [
+"armorplus:workbench",
+"armorplus:high_tech_bench",
+"armorplus:ulti_tech_bench",
+"armorplus:lava_infuser_infusing",
+"Avatitia.Extreme",
+"AlloySmelter",
+"CombustionGenerator",
+"SagMill",
+"GrindingBall",
+"SolarPanel",
+"StirlingGenerator",
+];
+
+for category in hideCategories {
+    mods.jei.JEI.hideCategory(category);
+}
