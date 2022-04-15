@@ -320,3 +320,18 @@ fluid_canner.recipeBuilder()
 	.outputs(<minecraft:experience_bottle>)
 	.duration(1500).EUt(4).buildAndRegister();
 
+// Re-add recipes related to Resonating Redstone Crystal, broken when 'gemRedstone' removed
+mods.thermalexpansion.Compactor.addGearRecipe(<extrautils2:ingredients:1>, <extrautils2:ingredients:0> * 4, 4000);
+
+mods.thermalexpansion.Compactor.addStorageRecipe(<metaitem:plateRedstone>, <extrautils2:ingredients:0>, 4000);
+
+fluid_extractor.recipeBuilder()
+    .fluidOutputs([<liquid:redstone> * 144])
+    .inputs([<extrautils2:ingredients:0>])
+    .duration(80).EUt(32).buildAndRegister();
+
+macerator.recipeBuilder()
+    .outputs([<minecraft:redstone>])
+    .inputs([<extrautils2:ingredients:0>])
+    .duration(30).EUt(8).buildAndRegister();
+

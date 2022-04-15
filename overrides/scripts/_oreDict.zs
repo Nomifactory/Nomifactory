@@ -2506,6 +2506,9 @@ pulsatingDustOre.add(<forestry:crafting_material:0>);
 pulsatingMeshOre.add(<contenttweaker:pulsatingmesh>);
 pulsatingMeshOre.add(<forestry:crafting_material:1>);
 
+// Fix smashing enchant giving resonating redstone crystals
+<ore:gemRedstone>.remove(<extrautils2:ingredients:0>);
+
 /////////////////////////////////
 //  One Ingot To Rule Them All //
 /////////////////////////////////
