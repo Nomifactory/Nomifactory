@@ -19,6 +19,30 @@
     {
       "dimID": 100,
       "dimName": "Moon"
+    },
+    {
+      "dimID": 101,
+      "dimName": "Mercury"
+    },
+    {
+      "dimID": 102,
+      "dimName": "Venus"
+    },
+    {
+      "dimID": 103,
+      "dimName": "Mars"
+    },
+    {
+      "dimID": 105,
+      "dimName": "Io"
+    },
+    {
+      "dimID": 106,
+      "dimName": "Europa"
+    },
+    {
+      "dimID": 108,
+      "dimName": "Titan"
     }
   ]
 }

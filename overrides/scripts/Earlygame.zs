@@ -442,10 +442,11 @@ recipes.addShaped(<gregtech:machine:210>, [
 
 furnace.addRecipe(<gregtech:meta_item_1:2063>, <gregtech:meta_item_1:2155>, 0.0);
 furnace.addRecipe(<ore:ingotCopper>.firstItem,<ore:oreCopper>);
-furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:0>);
-furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:1>);
-furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:2>);
-furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:3>);
+// these appear to be a no-op
+// furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:0>);
+// furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:1>);
+// furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:2>);
+// furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:3>);
 furnace.addRecipe(<gregtech:meta_item_1:10018>, <gregtech:meta_item_1:2100>, 0.0);
 
 furnace.remove(<minecraft:iron_nugget> * 3, <gregtech:meta_item_1:3148>);
