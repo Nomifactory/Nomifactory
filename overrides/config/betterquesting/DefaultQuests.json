@@ -6537,20 +6537,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "sulfuric_acid"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "sulfuric_acid"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -6611,20 +6604,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "plastic"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "plastic"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -10230,20 +10216,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "titanium_tetrachloride"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "titanium_tetrachloride"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -10793,50 +10772,25 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "sulfuric_heavy_fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "sulfuric_heavy_fuel"
             },
             "1:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "sulfuric_light_fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "sulfuric_light_fuel"
             },
             "2:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "sulfuric_naphtha"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "sulfuric_naphtha"
             },
             "3:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "sulfuric_gas"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "sulfuric_gas"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -10896,20 +10850,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "gas"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "gas"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11078,20 +11025,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "heavy_fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "heavy_fuel"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11151,20 +11091,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "light_fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "light_fuel"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11224,20 +11157,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "naphtha"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "naphtha"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11297,20 +11223,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "hydrogen_sulfide"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "hydrogen_sulfide"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11371,20 +11290,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "fuel"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11671,20 +11583,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "glycerol"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "glycerol"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11745,20 +11650,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "nitrogen"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "nitrogen"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11883,20 +11781,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "argon"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "argon"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -11956,20 +11847,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "nitrogen_dioxide"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "nitrogen_dioxide"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -12029,20 +11913,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "nitric_acid"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "nitric_acid"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -12103,20 +11980,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "tetranitromethane"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "tetranitromethane"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -12177,20 +12047,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "nitro_fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "nitro_fuel"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -12250,20 +12113,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "ethenone"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "ethenone"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -12323,20 +12179,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "acetic_acid"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "acetic_acid"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -12397,20 +12246,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "epichlorhydrin"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "epichlorhydrin"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -14916,20 +14758,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "rocket_fuel"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "rocket_fuel"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -14990,20 +14825,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "dimethylhidrazine"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "dimethylhidrazine"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -15064,20 +14892,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "dimethylamine"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "dimethylamine"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -15138,20 +14959,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "chloramine"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "chloramine"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -15211,20 +15025,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "ammonia"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "ammonia"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -15284,20 +15091,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "methanol"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "methanol"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -15357,20 +15157,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "hypochlorous_acid"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "hypochlorous_acid"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -15953,20 +15746,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "mana"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "mana"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -18110,20 +17896,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "radon"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "radon"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -18707,20 +18486,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "phosphoric_acid"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "phosphoric_acid"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -20891,20 +20663,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "elementalreduction"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "elementalreduction"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -26219,21 +25984,14 @@
           "consume:1": 0,
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
-          "index:3": 1,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "index:3": 0,
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "deuterium"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "deuterium"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -27330,20 +27088,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "fish_oil"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "fish_oil"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -30705,20 +30456,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "soldering_alloy"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "soldering_alloy"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -31183,20 +30927,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "bio.ethanol"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "bio.ethanol"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -31293,20 +31030,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "chlorine"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "chlorine"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -33240,20 +32970,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "sterilized_growth_medium"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "sterilized_growth_medium"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -48657,50 +48380,25 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "charcoal_byproducts"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "charcoal_byproducts"
             },
             "1:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "wood_tar"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "wood_tar"
             },
             "2:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "wood_gas"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "wood_gas"
             },
             "3:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "wood_vinegar"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "wood_vinegar"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -48997,20 +48695,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "allyl_chloride"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "allyl_chloride"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
@@ -49066,20 +48757,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "requiredFluids:9": {
             "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "forge:bucketfilled",
-              "tag:10": {
-                "Amount:3": 1000,
-                "FluidName:8": "seed_oil"
-              }
+              "Amount:3": 1000,
+              "FluidName:8": "seed_oil"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:fluid"
         }
       }
     },
