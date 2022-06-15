@@ -4287,7 +4287,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Access all of your items on a single screen. Soon, anyway.\n\nPlease note that all four variants of §6ME Terminals§r are §emicroparts§r, which means they need to be attached to an §6ME Cable§r (not conduit) to function.",
+          "desc:8": "Access all of your items on a single screen. Soon, anyway.\n\nPlease note that all five variants of §6ME Terminals§r are §emicroparts§r, which means they need to be attached to an §6ME Cable§r (not conduit) to function.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -49085,6 +49085,70 @@
       "questID:3": 812,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "813:10": {
+      "preRequisites:11": [
+        408
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§bPackagedAuto§r is cool, but check this out!\n\nThe §aExtended Processing Pattern Terminal§r is a new device which allows you to encode regular §bApplied Energistics§r patterns with processing recipes that have §eup to 16 ingredients and 6 outputs§r.\n\nThese are extremely useful for automating recipes for complex multiblocks like the §3Assembly Line§r, and avoid some of the pitfalls of §bPackagedAuto§r like round-robin being really awkward since §3Unpackagers§r have internal buffers.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 341,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:part"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Extended Processing Pattern Terminal",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 813,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 341,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:part"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -52564,6 +52628,13 @@
           "sizeY:3": 24,
           "x:3": -330,
           "y:3": 216
+        },
+        "102:10": {
+          "id:3": 813,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -276,
+          "y:3": -48
         }
       }
     },
@@ -54657,6 +54728,13 @@
           "sizeY:3": 24,
           "x:3": -96,
           "y:3": 480
+        },
+        "38:10": {
+          "id:3": 813,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 208,
+          "y:3": 616
         }
       }
     }
