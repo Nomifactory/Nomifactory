@@ -12832,7 +12832,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "The First Tier Five Circuit",
+          "name:8": "The First Tier Five Circuits",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -18887,9 +18887,9 @@
     },
     "283:10": {
       "preRequisites:11": [
+        531,
         138,
-        199,
-        531
+        199
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -32394,8 +32394,8 @@
     },
     "529:10": {
       "preRequisites:11": [
-        198,
-        524
+        524,
+        198
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46483,9 +46483,9 @@
     },
     "767:10": {
       "preRequisites:11": [
-        8,
         89,
         203,
+        8,
         500
       ],
       "properties:10": {
@@ -46521,9 +46521,9 @@
     "768:10": {
       "preRequisites:11": [
         132,
-        264,
         520,
-        525
+        525,
+        264
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46557,10 +46557,10 @@
     },
     "769:10": {
       "preRequisites:11": [
-        155,
         192,
+        523,
         268,
-        523
+        155
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46594,10 +46594,10 @@
     },
     "770:10": {
       "preRequisites:11": [
+        524,
         269,
         292,
-        332,
-        524
+        332
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46631,9 +46631,9 @@
     },
     "771:10": {
       "preRequisites:11": [
-        333,
         531,
-        534
+        534,
+        333
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46667,8 +46667,8 @@
     },
     "772:10": {
       "preRequisites:11": [
-        334,
-        535
+        535,
+        334
       ],
       "properties:10": {
         "betterquesting:10": {
