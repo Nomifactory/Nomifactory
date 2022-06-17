@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.material.MaterialRegistry;
 import crafttweaker.item.IItemStack;
+import mods.jei.JEI;
 import scripts.CommonVars.makeShaped as makeShaped;
 
 //Plantball
@@ -147,9 +148,9 @@ recipes.remove(<extrautils2:ingredients:8>);
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <actuallyadditions:item_crystal>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:endershard>, <minecraft:redstone_block>]).outputs([<extrautils2:ingredients>]).duration(180).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<gregtech:meta_block_compressed_13:11>, <actuallyadditions:block_crystal> * 4]).outputs([<extrautils2:ingredients:2>]).duration(800).EUt(16).buildAndRegister(); // Ender Eye Block
-alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <minecraft:diamond> * 4]).outputs([<extrautils2:ingredients:7>]).duration(800).EUt(16).buildAndRegister();
 alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot:1> * 4]).outputs([<extrautils2:ingredients:6>]).duration(400).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<extrautils2:ingredients:9>, <enderio:item_alloy_ingot> * 4]).outputs([<extrautils2:ingredients:8>]).duration(400).EUt(16).buildAndRegister();
+JEI.hide(<extrautils2:ingredients:7>);
+JEI.hide(<extrautils2:ingredients:8>);
 
 //Redstone Gear
 recipes.remove(<extrautils2:ingredients:1>);
