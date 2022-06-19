@@ -13,6 +13,7 @@ Please be sure to read and address all of the following points as applicable.
 ### Before You Update
 
 1. **GregTech Community Edition**, as part of fixing a significant bug with block ID mappings, will remap the IDs of specific items from worlds created with a sufficiently old version of the mod. Please make sure to move all **GTCE** Material Blocks (e.g. "Block of Polyethylene" or "Block of Stainless Steel") out of Ender Chests (from the **Ender Storage** mod) before updating, as they are inaccessible to the remapping process. If these items are left in an Ender Chest, after updating the items may become broken and could cause issues.
+2. Ensure that all **Modular Machinery** structures have finished running their current crafts. Structures will un-form and consequently any ongoing craft will be voided. More on this in the following section.
 
 ### After You Update
 
