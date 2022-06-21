@@ -32729,6 +32729,11 @@
       }
     },
     "534:10": {
+      "preRequisiteTypes:7": [
+        1,
+        0,
+        0
+      ],
       "preRequisites:11": [
         288,
         292,
