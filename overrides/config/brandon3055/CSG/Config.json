@@ -1,6 +1,6 @@
 {
   "inventory": {
-    "0:4": "questbook:itemquestbook",
+    "0:4": "betterquesting:quest_book",
     "1:2": "minecraft:leather_chestplate",
     "0:0": "minecraft:sapling,16",
     "1:0": "minecraft:leather_boots",

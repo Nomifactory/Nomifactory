@@ -1,4 +1,5 @@
 {
+  "build:8": "4.0.5",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -51197,7 +51198,7 @@
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "questbook:itemquestbook"
+            "id:8": "betterquesting:quest_book"
           },
           "name:8": "Progression",
           "visibility:8": "ALWAYS"
