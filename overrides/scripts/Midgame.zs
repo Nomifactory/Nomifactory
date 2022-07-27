@@ -26,20 +26,6 @@ recipes.addShaped(<gregtech:machine:2199>, [[<gregtech:meta_item_1:12072>, <greg
 recipes.addShaped(<gregtech:machine:2197>, [[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],[<gregtech:meta_item_1:12184>, <minecraft:bucket>, <gregtech:meta_item_1:12184>], [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>]]);
 recipes.addShaped(<gregtech:machine:2196>, [[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>],[<gregtech:meta_item_1:12095>, <minecraft:bucket>, <gregtech:meta_item_1:12095>], [<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>]]);
 
-recipes.remove(<thermalexpansion:satchel:2>);
-recipes.addShaped("test", <thermalexpansion:satchel:2>, [
-	[null, <gregtech:meta_item_1:9112>, null],
-	[<gregtech:meta_item_1:10001>, <thermalexpansion:satchel:1>.marked("satchel"), <gregtech:meta_item_1:10001>], 
-	[<gregtech:meta_item_1:9112>, null, <gregtech:meta_item_1:9112>]],
-	function(out, ins, cInfo) {
-    var tag = {} as IData;
-    # This if is here to keep the tinkers workbench from screwing up JEI autocomplete
-    if(ins has "satchel" && !isNull(ins.satchel) && ins.satchel.hasTag) {
-        tag = ins.satchel.tag;
-    }
-    return out.withTag(tag);
-}, null);
-
 //red lens
 lathe.findRecipe(16, [<gregtech:meta_item_1:12154>], [null]).remove();	
 autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8243>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
