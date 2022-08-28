@@ -6,6 +6,9 @@
 :: Added java version check by t0suj4, Public Domain
 :: https://github.com/t0su4
 
+:: Set language to English 
+SET LANG=en_US
+
 :: DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING
 @ECHO OFF
 SET FORGEJAR={{forgeJar}}
