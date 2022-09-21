@@ -255,5 +255,44 @@ alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<ore:dustPulsating>]).outpu
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2310>], [null]).remove();		//Naquadriah
 furnace.addRecipe(<gregtech:meta_item_1:10310>, <gregtech:meta_item_1:2310>, 0.0);
 
+// Fluxed Electrum Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<redstonearsenal:material:0> * 9])
+    .inputs([<metaitem:dustElectrum> * 6, <thermalfoundation:material:102>, <thermalfoundation:material:101>, <thermalfoundation:material:1028>])
+    .duration(400).EUt(30).buildAndRegister();
 
+// Lumium Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<thermalfoundation:material:102> * 4])
+    .inputs([<metaitem:dustTinAlloy> * 4, <metaitem:dustSterlingSilver> * 2, <extendedcrafting:material:7> * 2, <thermalfoundation:material:894>])
+    .duration(400).EUt(30).buildAndRegister();
+
+// Signalum Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<thermalfoundation:material:101> * 4])
+    .inputs([<metaitem:dustAnnealedCopper> * 4, <metaitem:dustArdite> * 2, <metaitem:dustRedAlloy> * 2, <thermalfoundation:material:893>])
+    .duration(400).EUt(30).buildAndRegister();
+
+// Enderium Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<thermalfoundation:material:103> * 4])
+    .fluidInputs([<liquid:lead> * 576])
+    .inputs([<metaitem:dustPlatinum> * 2, <metaitem:dustBlueSteel>, <metaitem:dustOsmium>, <thermalfoundation:material:895>])
+    .duration(400).EUt(30).buildAndRegister();
+
+// Mixer recipes for HSS-G/E/S
+mixer.recipeBuilder()
+    .outputs([<metaitem:dustHssg> * 9])
+    .inputs([<metaitem:dustTungstenSteel> * 5, <metaitem:dustChrome>, <metaitem:dustMolybdenum> * 2, <metaitem:dustVanadium>])
+    .duration(900).EUt(8).buildAndRegister();
+
+mixer.recipeBuilder()
+    .outputs([<metaitem:dustHsse> * 9])
+    .inputs([<metaitem:dustHssg> * 6, <metaitem:dustCobalt>, <metaitem:dustManganese>, <metaitem:dustSilicon>])
+    .duration(900).EUt(8).buildAndRegister();
+
+mixer.recipeBuilder()
+    .outputs([<metaitem:dustHsss> * 9])
+    .inputs([<metaitem:dustHssg> * 6, <metaitem:dustIridium> * 2, <metaitem:dustOsmium>])
+    .duration(900).EUt(8).buildAndRegister();
 
