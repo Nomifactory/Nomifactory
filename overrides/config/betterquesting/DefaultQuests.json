@@ -1,5 +1,5 @@
 {
-  "build:8": "4.0.5",
+  "build:8": "4.0.6",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -49167,6 +49167,57 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "814:10": {
+      "preRequisites:11": [
+        108
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "A variant of the §aInterface Terminal§r which allows you to view and edit the stocking slots of interfaces on your network, as well as highlight them in-world.\n\nUseful for managing passive automation setups, and finding them when your base gets large.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 521,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:part"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Configuration Interface Terminal",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 814,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 521,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:part"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -54753,6 +54804,13 @@
           "sizeY:3": 24,
           "x:3": 208,
           "y:3": 616
+        },
+        "39:10": {
+          "id:3": 814,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 248,
+          "y:3": 568
         }
       }
     }
