@@ -1,5 +1,4 @@
-{
-  "build:8": "4.0.6",
+#{
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -18,6 +17,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:charger"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -95,6 +95,7 @@
             "OreDict:8": "",
             "id:8": "ae2stuff:grower"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -205,6 +206,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -280,6 +282,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:crafting_table"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -348,6 +351,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -419,6 +423,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:tool.hammer_iron"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -471,6 +476,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:redstone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -561,6 +567,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:cable"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -627,6 +634,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -693,6 +701,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -733,6 +742,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tiertwoship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -798,6 +808,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -880,6 +891,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1016,6 +1028,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1081,6 +1094,7 @@
             "OreDict:8": "",
             "id:8": "morefurnaces:furnaceblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1146,6 +1160,7 @@
             "OreDict:8": "",
             "id:8": "morefurnaces:furnaceblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1211,6 +1226,7 @@
             "OreDict:8": "",
             "id:8": "morefurnaces:furnaceblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1276,6 +1292,7 @@
             "OreDict:8": "",
             "id:8": "morefurnaces:furnaceblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1341,6 +1358,7 @@
             "OreDict:8": "",
             "id:8": "morefurnaces:furnaceblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1406,6 +1424,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1471,6 +1490,7 @@
             "OreDict:8": "",
             "id:8": "morefurnaces:furnaceblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1536,6 +1556,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1601,6 +1622,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1709,6 +1731,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:obsidian"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1782,6 +1805,7 @@
               "RSControl:1": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1853,6 +1877,7 @@
             "OreDict:8": "",
             "id:8": "dimensionaledibles:overworld_cake"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1915,6 +1940,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1980,6 +2006,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2045,6 +2072,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:pulsatingdust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2116,6 +2144,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2188,6 +2217,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2257,6 +2287,7 @@
               "enderio:energy:3": 25000000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2326,6 +2357,7 @@
               "enderio:energy:3": 5000000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2394,6 +2426,7 @@
               "enderio:energy:3": 1000000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2460,6 +2493,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2525,6 +2559,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2588,6 +2623,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -2627,6 +2663,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2712,6 +2749,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2783,6 +2821,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_item_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2848,6 +2887,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_power_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2913,6 +2953,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_power_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2979,6 +3020,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_power_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3042,6 +3084,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -3082,6 +3125,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_basic_capacitor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3151,6 +3195,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3215,6 +3260,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -3260,6 +3306,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3331,6 +3378,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3398,6 +3446,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3463,6 +3512,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_liquid_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3530,6 +3580,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:inscriber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3595,6 +3646,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3660,6 +3712,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3731,6 +3784,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3797,6 +3851,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3862,6 +3917,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3914,6 +3970,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_liquid_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -3982,6 +4039,7 @@
               "Charge:4": 80000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4047,6 +4105,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4124,6 +4183,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4231,6 +4291,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:gemsensor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4296,6 +4357,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4361,6 +4423,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:chest"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4427,6 +4490,7 @@
             "id:8": "appliedenergistics2:storage_cell_1k",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4505,6 +4569,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tierthreeship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4570,6 +4635,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4690,6 +4756,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_basic_capacitor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4756,6 +4823,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_experience_obelisk"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4821,6 +4889,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4890,6 +4959,7 @@
               "Charge:4": 400000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -4956,6 +5026,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5023,6 +5094,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5089,6 +5161,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_me_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5154,6 +5227,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_misc"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5225,6 +5299,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5290,6 +5365,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:combinationcircuit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5356,6 +5432,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5433,6 +5510,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5506,6 +5584,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5571,6 +5650,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5637,6 +5717,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5703,6 +5784,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5770,6 +5852,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5837,6 +5920,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5918,6 +6002,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -5959,6 +6044,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6025,6 +6111,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:electronicprocessor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6091,6 +6178,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6169,6 +6257,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:electronicprocessorarray"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6235,6 +6324,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6300,6 +6390,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6366,6 +6457,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_farmer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6432,6 +6524,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6501,6 +6594,7 @@
               "FluidName:8": "sulfuric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6568,6 +6662,7 @@
               "FluidName:8": "ethylene"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6630,6 +6725,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6695,6 +6791,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6766,6 +6863,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6837,6 +6935,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_ultimate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6908,6 +7007,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6975,6 +7075,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:drive"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7040,6 +7141,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7105,6 +7207,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7190,6 +7293,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7255,6 +7359,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7321,6 +7426,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7386,6 +7492,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_atomic_reconstructor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7451,6 +7558,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7516,6 +7624,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:interface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7583,6 +7692,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:crafting_unit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7654,6 +7764,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7719,6 +7830,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7790,6 +7902,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:resonator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7855,6 +7968,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:passivegenerator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7921,6 +8035,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:ingredients"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -7987,6 +8102,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8052,6 +8168,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8118,6 +8235,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8183,6 +8301,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8248,6 +8367,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8313,6 +8433,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8378,6 +8499,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8443,6 +8565,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8508,6 +8631,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8573,6 +8697,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:passivegenerator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8641,6 +8766,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8716,6 +8842,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -8753,6 +8880,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -8793,6 +8921,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8858,6 +8987,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8924,6 +9054,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8990,6 +9121,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:refinedprocessormainframe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9057,6 +9189,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:refinedcircuit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9123,6 +9256,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9189,6 +9323,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:refinedprocessor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9254,6 +9389,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9317,6 +9453,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -9357,6 +9494,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9422,6 +9560,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9487,6 +9626,7 @@
             "OreDict:8": "",
             "id:8": "ae2stuff:inscriber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9553,6 +9693,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:omnicoin"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9590,6 +9731,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -9627,6 +9769,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -9666,6 +9809,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9731,6 +9875,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9796,6 +9941,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9861,6 +10007,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9926,6 +10073,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -9992,6 +10140,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10044,6 +10193,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10110,6 +10260,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10180,6 +10331,7 @@
               "FluidName:8": "titanium_tetrachloride"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10242,6 +10394,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10309,6 +10462,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10406,6 +10560,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalcircuit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10472,6 +10627,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10537,6 +10693,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10602,6 +10759,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10667,6 +10825,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10736,6 +10895,7 @@
               "FluidName:8": "sulfuric_heavy_fuel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10814,6 +10974,7 @@
               "FluidName:8": "gas"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10877,6 +11038,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_canola_press"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10946,6 +11108,7 @@
               "FluidName:8": "canolaoil"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10989,6 +11152,7 @@
               "FluidName:8": "heavy_fuel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11055,6 +11219,7 @@
               "FluidName:8": "light_fuel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11121,6 +11286,7 @@
               "FluidName:8": "naphtha"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11187,6 +11353,7 @@
               "FluidName:8": "hydrogen_sulfide"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11254,6 +11421,7 @@
               "FluidName:8": "fuel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11316,6 +11484,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11381,6 +11550,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11447,6 +11617,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11547,6 +11718,7 @@
               "FluidName:8": "glycerol"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11614,6 +11786,7 @@
               "FluidName:8": "nitrogen"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11676,6 +11849,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11745,6 +11919,7 @@
               "FluidName:8": "argon"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11811,6 +11986,7 @@
               "FluidName:8": "nitrogen_dioxide"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11877,6 +12053,7 @@
               "FluidName:8": "nitric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11944,6 +12121,7 @@
               "FluidName:8": "tetranitromethane"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12011,6 +12189,7 @@
               "FluidName:8": "nitro_fuel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12077,6 +12256,7 @@
               "FluidName:8": "ethenone"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12143,6 +12323,7 @@
               "FluidName:8": "acetone"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12210,6 +12391,7 @@
               "FluidName:8": "epichlorhydrin"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12272,6 +12454,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12348,6 +12531,7 @@
               "FluidName:8": "oil_medium"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12400,6 +12584,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12465,6 +12650,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12531,6 +12717,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12596,6 +12783,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12659,6 +12847,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -12699,6 +12888,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12765,6 +12955,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:microcircuit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12830,6 +13021,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:microprocessormainframe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12893,6 +13085,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -12933,6 +13126,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12999,6 +13193,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13070,6 +13265,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13135,6 +13331,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13200,6 +13397,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13267,6 +13465,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13330,6 +13529,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -13369,6 +13569,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13435,6 +13636,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:rocketmotor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13519,6 +13721,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:refinedprocessorarray"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13584,6 +13787,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:spacehelmet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13668,6 +13872,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:suitworkstation"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13746,6 +13951,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13811,6 +14017,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13877,6 +14084,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:rocketbuilder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13954,6 +14162,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:table_advanced"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14019,6 +14228,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:steelplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14084,6 +14294,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:planetidchip"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14150,6 +14361,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:fuelingstation"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14227,6 +14439,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14298,6 +14511,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:moondust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14363,6 +14577,7 @@
             "OreDict:8": "",
             "id:8": "rangedpumps:pump"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14436,6 +14651,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14551,6 +14767,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tieroneship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14614,6 +14831,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -14653,6 +14871,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_travel_anchor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14722,6 +14941,7 @@
               "FluidName:8": "rocket_fuel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14789,6 +15009,7 @@
               "FluidName:8": "dimethylhidrazine"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14856,6 +15077,7 @@
               "FluidName:8": "dimethylamine"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14923,6 +15145,7 @@
               "FluidName:8": "chloramine"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -14989,6 +15212,7 @@
               "FluidName:8": "ammonia"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15055,6 +15279,7 @@
               "FluidName:8": "methanol"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15121,6 +15346,7 @@
               "FluidName:8": "hypochlorous_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15183,6 +15409,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15248,6 +15475,7 @@
             "OreDict:8": "",
             "id:8": "snad:snad"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15331,6 +15559,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:angelring"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15384,6 +15613,7 @@
             "id:8": "appliedenergistics2:energy_cell",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15450,6 +15680,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_reservoir"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15524,6 +15755,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:btm_moon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15589,6 +15821,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_phantomface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15641,6 +15874,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15710,6 +15944,7 @@
               "FluidName:8": "mana"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15773,6 +16008,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15838,6 +16074,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:sky_compass"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15914,6 +16151,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tiereightship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15980,6 +16218,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:chaos_shard"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16048,6 +16287,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tiernineship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16114,6 +16354,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalmatrixplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16179,6 +16420,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16244,6 +16486,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16311,6 +16554,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:reactor_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16376,6 +16620,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:titaniumplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16441,6 +16686,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tungstencarbideplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16504,6 +16750,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -16543,6 +16790,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:stationbuilder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16621,6 +16869,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:warpcore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16723,6 +16972,7 @@
             "OreDict:8": "",
             "id:8": "libvulpes:productgem"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16790,6 +17040,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tierfourship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16855,6 +17106,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tierfiveship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16920,6 +17172,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16985,6 +17238,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tiersixship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17050,6 +17304,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17117,6 +17372,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tiersevenship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17183,6 +17439,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:draconiumplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17248,6 +17505,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:draconic_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17313,6 +17571,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17378,6 +17637,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17469,6 +17729,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17535,6 +17796,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17600,6 +17862,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17667,6 +17930,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17733,6 +17997,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17798,6 +18063,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17867,6 +18133,7 @@
               "FluidName:8": "radon"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17929,6 +18196,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:quantumprocessor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17995,6 +18263,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:quantumprocessorarray"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18060,6 +18329,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18126,6 +18396,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:reactor_component"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18191,6 +18462,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_basic_capacitor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18256,6 +18528,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18321,6 +18594,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:dragon_heart"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18387,6 +18661,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18457,6 +18732,7 @@
               "FluidName:8": "phosphoric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18517,6 +18793,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -18556,6 +18833,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:data_model_blank"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18621,6 +18899,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:dragon_egg"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18741,6 +19020,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_ultimate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18791,6 +19071,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -18830,6 +19111,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:energy_acceptor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18903,6 +19185,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -18966,6 +19249,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -19005,6 +19289,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19072,6 +19357,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19192,6 +19478,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19289,6 +19576,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:draconium_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19354,6 +19642,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19417,6 +19706,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -19457,6 +19747,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19522,6 +19813,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19588,6 +19880,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:chaotic_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19640,6 +19933,7 @@
             "OreDict:8": "",
             "id:8": "moreplates:empowered_restonia_gear"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19694,6 +19988,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:crafting_injector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19765,6 +20060,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19837,6 +20133,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19911,6 +20208,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19976,6 +20274,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20041,6 +20340,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20106,6 +20406,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20171,6 +20472,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20236,6 +20538,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20301,6 +20604,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20367,6 +20671,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:blazepowder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20433,6 +20738,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20499,6 +20805,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20565,6 +20872,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20634,6 +20942,7 @@
               "FluidName:8": "elementalreduction"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20710,6 +21019,7 @@
               ]
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20789,6 +21099,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20854,6 +21165,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20919,6 +21231,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20985,6 +21298,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:iridiumalloyplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21052,6 +21366,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:signalumplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21117,6 +21432,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:enderiumplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21182,6 +21498,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:quantumfluxedeterniumplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21251,6 +21568,7 @@
               "FluidName:8": "epoxid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21290,6 +21608,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:diamond_hoe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21361,6 +21680,7 @@
             "OreDict:8": "",
             "id:8": "moreplates:empowered_void_gear"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21413,6 +21733,7 @@
             "OreDict:8": "",
             "id:8": "moreplates:empowered_palis_gear"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21465,6 +21786,7 @@
             "OreDict:8": "",
             "id:8": "moreplates:empowered_emeradic_gear"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21518,6 +21840,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21583,6 +21906,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21648,6 +21972,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21711,6 +22036,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -21750,6 +22076,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:draconicstemcells"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21815,6 +22142,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21880,6 +22208,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:crafting_injector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -21945,6 +22274,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:crafting_injector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22011,6 +22341,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:crafting_injector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22078,6 +22409,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22144,6 +22476,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22209,6 +22542,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22275,6 +22609,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22341,6 +22676,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:draconium_dust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22407,6 +22743,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:draconic_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22475,6 +22812,7 @@
               "Charge:4": 1600000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22541,6 +22879,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22609,6 +22948,7 @@
               "Charge:4": 10000000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22674,6 +23014,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22743,6 +23084,7 @@
               "Charge:4": 1000000000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22806,6 +23148,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -22845,6 +23188,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_empowerer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22916,6 +23260,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:wyvern_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22979,6 +23324,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -23020,6 +23366,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23083,6 +23430,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -23120,6 +23468,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -23159,6 +23508,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fission_controller_new_fixed"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23260,6 +23610,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23326,6 +23677,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23392,6 +23744,7 @@
             "OreDict:8": "",
             "id:8": "openglider:hang_glider_basic"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23457,6 +23810,7 @@
             "OreDict:8": "",
             "id:8": "moreplates:empowered_enori_gear"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23517,6 +23871,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:eternalcatalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23571,6 +23926,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23623,6 +23979,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23676,6 +24033,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:infinity_helmet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23729,6 +24087,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:infinity_chestplate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23782,6 +24141,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:infinity_pants"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23835,6 +24195,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:infinity_boots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23887,6 +24248,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:the_ultimate_helmet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23939,6 +24301,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:the_ultimate_chestplate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -23991,6 +24354,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:the_ultimate_boots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24043,6 +24407,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:the_ultimate_leggings"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24098,6 +24463,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:upgrade_creative"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24155,6 +24521,7 @@
               "RSControl:1": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24212,6 +24579,7 @@
             "OreDict:8": "",
             "id:8": "hooked:hook"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24275,6 +24643,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24314,6 +24683,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:coal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24378,6 +24748,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24447,6 +24818,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24484,6 +24856,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24521,6 +24894,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24558,6 +24932,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24595,6 +24970,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24632,6 +25008,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24669,6 +25046,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24706,6 +25084,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24743,6 +25122,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24780,6 +25160,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24817,6 +25198,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24854,6 +25236,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -24894,6 +25277,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -24959,6 +25343,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25025,6 +25410,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:table_elite"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25090,6 +25476,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25156,6 +25543,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25223,6 +25611,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:table_ultimate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25302,6 +25691,7 @@
               ]
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25385,6 +25775,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:nether_star"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25480,6 +25871,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25514,6 +25906,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:chunkloader"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25557,6 +25950,7 @@
               "Energy:3": 10000000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25632,6 +26026,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:quantumflux"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25695,6 +26090,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -25734,6 +26130,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:creative_rf_source"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25787,6 +26184,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25858,6 +26256,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -25956,6 +26355,7 @@
               "FluidName:8": "deuterium"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26018,6 +26418,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:anvil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26083,6 +26484,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26156,6 +26558,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26196,6 +26599,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:book"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26235,6 +26639,7 @@
             "OreDict:8": "",
             "id:8": "jecalculation:item_calculator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26290,6 +26695,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:interface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26386,6 +26792,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26496,6 +26903,7 @@
             "OreDict:8": "",
             "id:8": "packagedauto:package"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26579,6 +26987,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26616,6 +27025,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -26656,6 +27066,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26765,6 +27176,7 @@
             "OreDict:8": "",
             "id:8": "armorplus:btm_moon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26879,6 +27291,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26942,6 +27355,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -26984,6 +27398,7 @@
               "Energy:3": 40000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27053,6 +27468,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:fish"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27122,6 +27538,7 @@
             "OreDict:8": "",
             "id:8": "packagedexcrafting:combination_crafter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27191,6 +27608,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27228,6 +27646,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27265,6 +27684,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27302,6 +27722,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27339,6 +27760,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27376,6 +27798,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27413,6 +27836,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27450,6 +27874,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27487,6 +27912,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27524,6 +27950,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27561,6 +27988,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27598,6 +28026,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27635,6 +28064,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27672,6 +28102,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27709,6 +28140,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27746,6 +28178,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27783,6 +28216,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27820,6 +28254,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27857,6 +28292,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27894,6 +28330,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27931,6 +28368,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -27968,6 +28406,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28005,6 +28444,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28042,6 +28482,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28079,6 +28520,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28116,6 +28558,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28153,6 +28596,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28190,6 +28634,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28227,6 +28672,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28264,6 +28710,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28301,6 +28748,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28338,6 +28786,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28375,6 +28824,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28412,6 +28862,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28449,6 +28900,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28486,6 +28938,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28523,6 +28976,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28560,6 +29014,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28597,6 +29052,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28634,6 +29090,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28671,6 +29128,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28708,6 +29166,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28745,6 +29204,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28782,6 +29242,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28819,6 +29280,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28856,6 +29318,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28893,6 +29356,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28930,6 +29394,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -28967,6 +29432,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29004,6 +29470,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29041,6 +29508,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29078,6 +29546,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29115,6 +29584,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29152,6 +29622,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29189,6 +29660,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29226,6 +29698,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29263,6 +29736,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29300,6 +29774,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29337,6 +29812,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29374,6 +29850,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29411,6 +29888,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29448,6 +29926,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29485,6 +29964,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29522,6 +30002,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29559,6 +30040,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29596,6 +30078,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29633,6 +30116,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29670,6 +30154,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29707,6 +30192,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29744,6 +30230,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -29786,6 +30273,7 @@
               "Accessible:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -29854,6 +30342,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -29919,6 +30408,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -29984,6 +30474,7 @@
             "OreDict:8": "",
             "id:8": "lumberjack:iron_lumberaxe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30052,6 +30543,7 @@
               "Energy:3": 250000
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30118,6 +30610,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -30157,6 +30650,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30222,6 +30716,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30287,6 +30782,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:framingtable"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30358,6 +30854,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:compdrawers"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30427,6 +30924,7 @@
               "FluidName:8": "soldering_alloy"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30489,6 +30987,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30556,6 +31055,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30645,6 +31145,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:exoticmaterialscatalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30698,6 +31199,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30763,6 +31265,7 @@
             "OreDict:8": "",
             "id:8": "simplyjetpacks:metaitemmods"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30828,6 +31331,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30898,6 +31402,7 @@
               "FluidName:8": "bio.ethanol"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30958,6 +31463,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -31001,6 +31507,7 @@
               "FluidName:8": "chlorine"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31063,6 +31570,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:knightslimeingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31128,6 +31636,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:cable"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31197,6 +31706,7 @@
               "FluidName:8": "ender_distillation"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31283,6 +31793,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_vat"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31350,6 +31861,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_slice_and_splice"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31415,6 +31927,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31478,6 +31991,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -31515,6 +32029,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -31554,6 +32069,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31620,6 +32136,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31683,6 +32200,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -31722,6 +32240,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:spatial_pylon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31818,6 +32337,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:microprocessorarray"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31885,6 +32405,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -31951,6 +32472,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32017,6 +32539,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:nanoprocessorarray"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32082,6 +32605,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:nanoprocessormainframe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32147,6 +32671,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32213,6 +32738,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32278,6 +32804,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32343,6 +32870,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32409,6 +32937,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32475,6 +33004,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32548,6 +33078,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:quantumprocessormainframe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32613,6 +33144,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32679,6 +33211,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32751,6 +33284,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalprocessorarray"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32816,6 +33350,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:crystalprocessormainframe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32881,6 +33416,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -32950,6 +33486,7 @@
               "FluidName:8": "raw_growth_medium"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33010,6 +33547,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33049,6 +33587,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33116,6 +33655,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33187,6 +33727,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33253,6 +33794,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_soul_binder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33318,6 +33860,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33387,6 +33930,7 @@
               "Accessible:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33471,6 +34015,7 @@
               "Accessible:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33551,6 +34096,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33616,6 +34162,7 @@
             "OreDict:8": "",
             "id:8": "scannable:module_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33681,6 +34228,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33770,6 +34318,7 @@
               "FluidName:8": "oil"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33905,6 +34454,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_miner"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -33970,6 +34520,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_phantom_booster"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34039,6 +34590,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34114,6 +34666,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34187,6 +34740,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34256,6 +34810,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:fertilizer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34322,6 +34877,7 @@
             "OreDict:8": "",
             "id:8": "bountiful:bountyboarditem"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34372,6 +34928,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34411,6 +34968,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:augment"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34476,6 +35034,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:augment"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34526,6 +35085,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34563,6 +35123,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34600,6 +35161,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34637,6 +35199,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34676,6 +35239,7 @@
             "OreDict:8": "",
             "id:8": "solarflux:solar_panel_neutronium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34739,6 +35303,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34776,6 +35341,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34813,6 +35379,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34850,6 +35417,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34887,6 +35455,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34924,6 +35493,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34961,6 +35531,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -34998,6 +35569,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35035,6 +35607,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35072,6 +35645,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35109,6 +35683,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35146,6 +35721,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35183,6 +35759,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35220,6 +35797,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35257,6 +35835,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35296,6 +35875,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35359,6 +35939,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35398,6 +35979,7 @@
             "OreDict:8": "",
             "id:8": "redstonearsenal:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35463,6 +36045,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35528,6 +36111,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35593,6 +36177,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35659,6 +36244,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35724,6 +36310,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35790,6 +36377,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35855,6 +36443,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35918,6 +36507,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -35957,6 +36547,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36022,6 +36613,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36087,6 +36679,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36153,6 +36746,7 @@
             "OreDict:8": "ingotMicroversium",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36218,6 +36812,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36283,6 +36878,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36348,6 +36944,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36413,6 +37010,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36479,6 +37077,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36545,6 +37144,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36610,6 +37210,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36675,6 +37276,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36740,6 +37342,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36805,6 +37408,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:heartofauniverse"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36859,6 +37463,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:tiertenship"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36912,6 +37517,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:neutroniumplating"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -36965,6 +37571,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37030,6 +37637,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:cable"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37096,6 +37704,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37161,6 +37770,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37226,6 +37836,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37291,6 +37902,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37357,6 +37969,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedhydrogen"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37422,6 +38035,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedhelium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37487,6 +38101,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37552,6 +38167,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37617,6 +38233,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37682,6 +38299,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:misc"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37748,6 +38366,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiednitrogen"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37814,6 +38433,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedoxygen"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37879,6 +38499,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedfluorine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37944,6 +38565,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedneon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38009,6 +38631,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38074,6 +38697,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38139,6 +38763,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38204,6 +38829,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38269,6 +38895,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38334,6 +38961,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38399,6 +39027,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedchlorine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38464,6 +39093,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedargon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38529,6 +39159,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38594,6 +39225,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38659,6 +39291,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38724,6 +39357,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38789,6 +39423,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38854,6 +39489,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38919,6 +39555,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38984,6 +39621,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:iron_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39049,6 +39687,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39114,6 +39753,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39179,6 +39819,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39244,6 +39885,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39309,6 +39951,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39374,6 +40017,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39439,6 +40083,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedkrypton"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39504,6 +40149,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39569,6 +40215,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39634,6 +40281,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39699,6 +40347,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39764,6 +40413,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39830,6 +40480,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39895,6 +40546,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedxenon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -39960,6 +40612,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40025,6 +40678,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40090,6 +40744,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40155,6 +40810,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40220,6 +40876,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:gold_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40285,6 +40942,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedmercury"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40350,6 +41008,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solidifiedradon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40415,6 +41074,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedthorium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40480,6 +41140,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizeduranium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40545,6 +41206,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedneptunium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40610,6 +41272,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedplutonium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40675,6 +41338,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedamericium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40740,6 +41404,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedcurium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40805,6 +41470,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedberkelium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40870,6 +41536,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedcalifornium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -40936,6 +41603,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:stabilizedeinsteinium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41001,6 +41669,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_uranium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41072,6 +41741,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_ultimate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41124,6 +41794,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_thorium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41201,6 +41872,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:uranium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41272,6 +41944,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_neptunium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41355,6 +42028,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:uranium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41427,6 +42101,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_plutonium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41511,6 +42186,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_curium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41594,6 +42270,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_americium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41677,6 +42354,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_berkelium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41760,6 +42438,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fuel_californium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41844,6 +42523,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:warning_sign"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41897,6 +42577,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -41969,6 +42650,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:simulation_chamber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42043,6 +42725,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:living_matter_overworldian"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42108,6 +42791,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:pulsatingmesh"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42181,6 +42865,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:extraction_chamber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42246,6 +42931,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:data_model_zombie"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42353,6 +43039,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:water_source"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42418,6 +43105,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:living_matter_hellish"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42483,6 +43171,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:data_model_blaze"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42560,6 +43249,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:living_matter_extraterrestrial"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42625,6 +43315,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:data_model_enderman"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42709,6 +43400,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_yeta_wrench"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42796,6 +43488,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42866,6 +43559,7 @@
             "OreDict:8": "",
             "id:8": "extrautils2:angelring"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -42936,6 +43630,7 @@
               "JetpackParticleType:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -43005,6 +43700,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:storage"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -43080,6 +43776,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43117,6 +43814,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43154,6 +43852,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43191,6 +43890,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43228,6 +43928,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43265,6 +43966,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43302,6 +44004,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43339,6 +44042,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43376,6 +44080,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43413,6 +44118,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43450,6 +44156,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43487,6 +44194,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43524,6 +44232,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43561,6 +44270,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43598,6 +44308,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43635,6 +44346,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43672,6 +44384,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43709,6 +44422,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43746,6 +44460,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43783,6 +44498,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43820,6 +44536,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43857,6 +44574,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43894,6 +44612,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43931,6 +44650,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43968,6 +44688,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44005,6 +44726,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44042,6 +44764,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44079,6 +44802,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44116,6 +44840,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44153,6 +44878,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44192,6 +44918,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44231,6 +44958,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -44296,6 +45024,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:fluid_interface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -44361,6 +45090,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44400,6 +45130,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44439,6 +45170,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -44504,6 +45236,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:info_tablet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -44567,6 +45300,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44604,6 +45338,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44641,6 +45376,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44678,6 +45414,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44715,6 +45452,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44752,6 +45490,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44789,6 +45528,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44826,6 +45566,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44863,6 +45604,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -44902,6 +45644,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:book"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44941,6 +45684,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45012,6 +45756,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45091,6 +45836,7 @@
               ]
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45171,6 +45917,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_enchanter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45236,6 +45983,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:augment"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45303,6 +46051,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45386,6 +46135,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45464,6 +46214,7 @@
               ]
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45543,6 +46294,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:augment"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45618,6 +46370,7 @@
               "Accessible:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45699,6 +46452,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_tele_pad"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45788,6 +46542,7 @@
               "mode:8": "BuildToMe"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45878,6 +46633,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45930,6 +46686,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:skull"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -45995,6 +46752,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:dragon_egg"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46070,6 +46828,7 @@
               "FluidName:8": "fire_water"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46155,6 +46914,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:chorus_flower"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46226,6 +46986,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:dislocator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46285,6 +47046,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:ender_pearl"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46325,6 +47087,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_rod_of_return"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46392,6 +47155,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46426,6 +47190,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:book"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46468,6 +47233,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46505,6 +47271,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46542,6 +47309,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46579,6 +47347,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46616,6 +47385,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46652,6 +47422,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46687,6 +47458,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46722,6 +47494,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -46755,6 +47528,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46820,6 +47594,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:frame_steel"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46859,6 +47634,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:awakened_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46924,6 +47700,7 @@
             "OreDict:8": "",
             "id:8": "moreplates:empowered_diamatine_gear"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -46976,6 +47753,7 @@
             "OreDict:8": "",
             "id:8": "draconicevolution:energy_storage_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47047,6 +47825,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:cobblestone_generator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47112,6 +47891,7 @@
             "OreDict:8": "",
             "id:8": "dimensionaledibles:nether_cake"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47184,6 +47964,7 @@
               "RSControl:1": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47262,6 +48043,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -47296,6 +48078,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -47329,6 +48112,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47397,6 +48181,7 @@
               "FluidName:8": "silicon_rubber"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47461,6 +48246,7 @@
             "OreDict:8": "",
             "id:8": "effortlessbuilding:reach_upgrade1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47501,6 +48287,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_farm_station"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47565,6 +48352,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47629,6 +48417,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47705,6 +48494,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47770,6 +48560,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47841,6 +48632,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47905,6 +48697,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:tnt"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -47976,6 +48769,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -48010,6 +48804,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -48074,6 +48869,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -48138,6 +48934,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -48203,6 +49000,7 @@
             "OreDict:8": "",
             "id:8": "advsolars:sunnarium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48271,6 +49069,7 @@
               "Accessible:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48339,6 +49138,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -48376,6 +49176,7 @@
               "FluidName:8": "charcoal_byproducts"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -48449,6 +49250,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:wire_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48513,6 +49315,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:bed"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48590,6 +49393,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_laser_relay_item"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -48666,6 +49470,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:nether_star"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 1,
@@ -48704,6 +49509,7 @@
               "FluidName:8": "allyl_chloride"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48753,6 +49559,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:wheat_seeds"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48814,6 +49621,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:knowledge_book"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48852,6 +49660,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:machine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48941,6 +49750,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -49006,6 +49816,7 @@
             "OreDict:8": "",
             "id:8": "gregtech:ore_sulfur_0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -49086,6 +49897,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:air"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -49119,6 +49931,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49183,6 +49996,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
