@@ -448,11 +448,6 @@ furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:2>);
 furnace.addRecipe(<ore:ingotCopper>.firstItem,<gregtech:ore_copper_0:3>);
 furnace.addRecipe(<gregtech:meta_item_1:10018>, <gregtech:meta_item_1:2100>, 0.0);
 
-furnace.remove(<minecraft:iron_nugget> * 3, <gregtech:meta_item_1:3148>);
-furnace.remove(<minecraft:iron_nugget> * 3, <gregtech:meta_item_1:2148>);
-furnace.addRecipe(<minecraft:iron_ingot>, <gregtech:meta_item_1:2148>, 0.0);
-furnace.addRecipe(<minecraft:iron_ingot>, <gregtech:meta_item_1:3148>, 0.0);
-
 wiremill.recipeBuilder().inputs([<extendedcrafting:material:32>]).outputs([<gregtech:cable:709> * 2]).duration(100).EUt(50000).buildAndRegister();
 
 centrifuge.findRecipe(30, [<gregtech:meta_item_1:2231> * 5], [null]).remove();
