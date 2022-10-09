@@ -1,4 +1,4 @@
-#{
+{
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -18820,7 +18820,8 @@
     },
     "278:10": {
       "preRequisites:11": [
-        682
+        682,
+        30
       ],
       "properties:10": {
         "betterquesting:10": {
