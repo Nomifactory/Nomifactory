@@ -17707,6 +17707,12 @@
               "Damage:2": 2061,
               "OreDict:8": "",
               "id:8": "gregtech:meta_item_1"
+            },
+            "5:10": {
+              "Count:3": 1,
+              "Damage:2": 2063,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
             }
           },
           "taskID:8": "bq_standard:retrieval"
