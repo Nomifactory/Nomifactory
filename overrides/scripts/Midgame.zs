@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.data.IData;
 import scripts.CommonVars.makeShaped as makeShaped;
+import scripts.CommonVars.makeShapedF as makeShapedF;
 
 recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemIlluminatedPanel>, <actuallyadditions:item_laser_wrench>]);
 
@@ -25,6 +26,22 @@ recipes.addShaped(<gregtech:machine:2198>, [[<gregtech:meta_item_1:12183>, <greg
 recipes.addShaped(<gregtech:machine:2199>, [[<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>],[<gregtech:meta_item_1:12072>, <minecraft:bucket>, <gregtech:meta_item_1:12072>], [<gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>, <gregtech:meta_item_1:12072>]]);
 recipes.addShaped(<gregtech:machine:2197>, [[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],[<gregtech:meta_item_1:12184>, <minecraft:bucket>, <gregtech:meta_item_1:12184>], [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>]]);
 recipes.addShaped(<gregtech:machine:2196>, [[<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>],[<gregtech:meta_item_1:12095>, <minecraft:bucket>, <gregtech:meta_item_1:12095>], [<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>]]);
+
+recipes.removeByRecipeName("thermalexpansion:satchel_3");
+makeShapedF("nf_reinforced_satchel",
+            <thermalexpansion:satchel:2>,
+            [" N ",
+             "ISI",
+             "N N"],
+            { N : <metaitem:nuggetElectrum>,
+              I : <metaitem:ingotAluminium>,
+              S : <thermalexpansion:satchel:1>.marked("satchel") },
+            function(out, ins, cinfo) {
+                if(ins.satchel.hasTag) {
+                    return out.withTag(ins.satchel.tag);
+                }
+                return out;
+            });
 
 //red lens
 lathe.findRecipe(16, [<gregtech:meta_item_1:12154>], [null]).remove();	
