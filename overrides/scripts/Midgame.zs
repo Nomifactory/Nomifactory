@@ -190,14 +190,14 @@ fermenter.recipeBuilder().fluidInputs([<liquid:canolaoil> * 100]).fluidOutputs([
 
 //Canola
 
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:canolaoil> * 1000,<liquid:methanol> * 6000]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:canolaoil> * 1000,<liquid:bio.ethanol> * 6000]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:refinedcanolaoil> * 750,<liquid:methanol> * 4500]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:refinedcanolaoil> * 750,<liquid:bio.ethanol> * 4500]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:crystaloil> * 500,<liquid:methanol> * 3000]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:crystaloil> * 500,<liquid:bio.ethanol> * 3000]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:empoweredoil> * 250,<liquid:methanol> * 1500]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
-reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:empoweredoil> * 250,<liquid:bio.ethanol> * 1500]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:canolaoil> * 6000,<liquid:methanol> * 1000]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:canolaoil> * 6000,<liquid:bio.ethanol> * 1000]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:refinedcanolaoil> * 4500,<liquid:methanol> * 750]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:refinedcanolaoil> * 4500,<liquid:bio.ethanol> * 750]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000,]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:crystaloil> * 3000,<liquid:methanol> * 500]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:crystaloil> * 3000,<liquid:bio.ethanol> * 500]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:empoweredoil> * 1500,<liquid:methanol> * 250]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
+reactor.recipeBuilder().inputs(<gregtech:meta_item_1:373>).fluidInputs([<liquid:empoweredoil> * 1500,<liquid:bio.ethanol> * 250]).fluidOutputs([<liquid:glycerol> * 1000,<liquid:bio_diesel> * 6000]).duration(300).EUt(30).buildAndRegister();
 
 reactor.recipeBuilder().inputs(<actuallyadditions:item_misc:23>).fluidInputs([<liquid:canolaoil> * 1000]).fluidOutputs([<liquid:crystaloil> * 1000]).duration(100).EUt(120).buildAndRegister();
 reactor.recipeBuilder().inputs(<actuallyadditions:item_misc:24>).fluidInputs([<liquid:canolaoil> * 1000]).fluidOutputs([<liquid:empoweredoil> * 1000]).duration(100).EUt(500).buildAndRegister();
