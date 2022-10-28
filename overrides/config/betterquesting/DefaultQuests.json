@@ -4278,8 +4278,15 @@
       }
     },
     "61:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1,
+        0
+      ],
       "preRequisites:11": [
-        192
+        192,
+        253,
+        255
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17033,6 +17040,7 @@
     },
     "251:10": {
       "preRequisites:11": [
+        246,
         315,
         386,
         407
@@ -17172,11 +17180,11 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Iridium§r is an advanced material used for Micro Miner plating, §6ZPM Machine Hulls§r, and for alloying with §6Osmium§r into §6Osmiridium§r.\n\n§6Iridium Ore§r is available renewably from the Tier Four and Tier Six micro miners.\n\nIt can also be reliably obtained from purifying §6Platinum§r or Osmium§r in a §3Chemical Bath§r, as well as from ore processing Osmium generally.",
+          "desc:8": "§6Iridium§r is an advanced material used for Micro Miner plating, §6ZPM Machine Hulls§r, and for alloying with §6Osmium§r into §6Osmiridium§r. Osmium is also used much later for §eUltimate Voltage Machines.\n\n§6Iridium Ore§r and §6Osmium Ore§r are available renewably from the Tier Four and Tier Six micro miners. Processing each of these ores yields the other material as a byproduct.\n\nIridium can also be obtained as a byproduct of §6Platinum Ore§r. You can get even more by using a §3Chemical Bath§r for the washing step.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 10032,
+            "Damage:2": 10207,
             "OreDict:8": "",
             "id:8": "gregtech:meta_item_1"
           },
@@ -17184,7 +17192,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Iridium",
+          "name:8": "Osmium and Iridium",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -17223,6 +17231,18 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 10032,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 10047,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 10207,
               "OreDict:8": "",
               "id:8": "gregtech:meta_item_1"
             }
@@ -17797,7 +17817,8 @@
     "262:10": {
       "preRequisites:11": [
         385,
-        387
+        387,
+        253
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25611,9 +25632,9 @@
     },
     "389:10": {
       "preRequisites:11": [
-        251,
         262,
-        386
+        386,
+        253
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -26694,8 +26715,6 @@
     },
     "406:10": {
       "preRequisites:11": [
-        209,
-        386,
         389,
         408
       ],
