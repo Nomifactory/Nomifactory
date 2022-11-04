@@ -2348,6 +2348,12 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:wireGtSinglePulsatingIron>.add(<contenttweaker:pulsatingwire>);
 <ore:dustEndstone>.add(<contenttweaker:endstonedust>);
 
+//Crafting Lenses
+<ore:craftingLensRed>.add(<contenttweaker:lensred>);
+<ore:craftingLensLime>.add(<contenttweaker:lensgreen>);
+<ore:craftingLensBlue>.add(<contenttweaker:lensblue>);
+<ore:craftingLensMagenta>.add(<contenttweaker:lensdraconium>);
+
 //Removals
 <ore:craftingLensLime>.remove(<gregtech:meta_item_1:15219>);
 <ore:craftingLensWhite>.remove(<gregtech:meta_item_1:15111>);
@@ -2487,6 +2493,35 @@ recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust
 recipes.addShapeless(<ore:wireGtSinglePulsatingIron>.firstItem, [<contenttweaker:pulsatingwire>]);
 <contenttweaker:pulsatingwire>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
 <contenttweaker:pulsatingwire>.addTooltip(format.red("Please use the GregTech variant of Pulsating Iron Wire."));
+
+// Temporary recipes to convert crafting lenses
+recipes.addShapeless(<contenttweaker:lensred>, [<ore:lensRuby>.firstItem]);
+<ore:lensRuby>.firstItem.clearTooltip();
+<ore:lensRuby>.firstItem.displayName = "Red Lens";
+<ore:lensRuby>.firstItem.addTooltip("Red Lens");
+<ore:lensRuby>.firstItem.addTooltip(format.red("This item is obsolete and will be disabled in the next update."));
+<ore:lensRuby>.firstItem.addTooltip(format.red("Please use the ContentTweaker variant of Red Lens."));
+
+recipes.addShapeless(<contenttweaker:lensgreen>, [<ore:lensEmerald>.firstItem]);
+<ore:lensEmerald>.firstItem.clearTooltip();
+<ore:lensEmerald>.firstItem.displayName = "Green Lens";
+<ore:lensEmerald>.firstItem.addTooltip("Green Lens");
+<ore:lensEmerald>.firstItem.addTooltip(format.red("This item is obsolete and will be disabled in the next update."));
+<ore:lensEmerald>.firstItem.addTooltip(format.red("Please use the ContentTweaker variant of Green Lens."));
+
+recipes.addShapeless(<contenttweaker:lensblue>, [<ore:lensBlueTopaz>.firstItem]);
+<ore:lensBlueTopaz>.firstItem.clearTooltip();
+<ore:lensBlueTopaz>.firstItem.displayName = "Blue Lens";
+<ore:lensBlueTopaz>.firstItem.addTooltip("Blue Lens");
+<ore:lensBlueTopaz>.firstItem.addTooltip(format.red("This item is obsolete and will be disabled in the next update."));
+<ore:lensBlueTopaz>.firstItem.addTooltip(format.red("Please use the ContentTweaker variant of Blue Lens."));
+
+recipes.addShapeless(<contenttweaker:lensdraconium>, [<ore:lensAmethyst>.firstItem]);
+<ore:lensAmethyst>.firstItem.clearTooltip();
+<ore:lensAmethyst>.firstItem.displayName = "Draconium Lens";
+<ore:lensAmethyst>.firstItem.addTooltip("Draconium Lens");
+<ore:lensAmethyst>.firstItem.addTooltip(format.red("This item is obsolete and will be disabled in the next update."));
+<ore:lensAmethyst>.firstItem.addTooltip(format.red("Please use the ContentTweaker variant of Draconium Lens."));
 
 //neutronium plate exchange
 recipes.addShapeless("of_exchange_neutronium_plate",

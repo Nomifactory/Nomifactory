@@ -6132,9 +6132,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 15154,
+              "Damage:2": 0,
               "OreDict:8": "craftingLensRed",
-              "id:8": "gregtech:meta_item_1"
+              "id:8": "contenttweaker:lensred"
             },
             "1:10": {
               "Count:3": 1,

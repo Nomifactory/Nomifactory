@@ -235,3 +235,8 @@ item.contenttweaker.pulsatingmesh.name=Pulsating Mesh
 
 tile.contenttweaker.simulation_casing.name=Naquadah-Plated Dark Steel Machine Casing
 tile.contenttweaker.simulation_casing_2.name=Naquadah Machine Casing
+
+item.contenttweaker.lensred.name=Red Lens
+item.contenttweaker.lensgreen.name=Green Lens
+item.contenttweaker.lensblue.name=Blue Lens
+item.contenttweaker.lensdraconium.name=Draconium Lens

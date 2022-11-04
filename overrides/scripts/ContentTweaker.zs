@@ -721,3 +721,15 @@ simulation_casing.register();
 
 var simulation_casing_2 = VanillaFactory.createBlock("simulation_casing_2", <blockmaterial:iron>);
 simulation_casing_2.register();
+
+var lensred = VanillaFactory.createItem("lensred");
+lensred.register();
+
+var lensgreen = VanillaFactory.createItem("lensgreen");
+lensgreen.register();
+
+var lensblue = VanillaFactory.createItem("lensblue");
+lensblue.register();
+
+var lensdraconium = VanillaFactory.createItem("lensdraconium");
+lensdraconium.register();
