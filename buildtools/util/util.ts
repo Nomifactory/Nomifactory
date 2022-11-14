@@ -161,6 +161,10 @@ export function makeArtifactNameBody(baseName: string): string {
 		const shortCommit = process.env.GITHUB_SHA.substr(0, 7);
 		const branch = /refs\/heads\/(.+)/.exec(process.env.GITHUB_REF);
 		return `${baseName}-${branch[1]}-${shortCommit}`;
+	}
+	// RC.
+	else if (process.env.RC_VERSION) {
+		return `${baseName}-${process.env.RC_VERSION.replace(/^v/, "")}-rc`;
 	} else {
 		return baseName;
 	}
