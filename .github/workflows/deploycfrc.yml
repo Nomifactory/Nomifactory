@@ -15,7 +15,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to CurseForge (RC) (${{ github.event.inputs.tag }})
+    name: Deploy to CurseForge (RC) (${{ github.event.inputs.version }})
     runs-on: ubuntu-latest
     env:
       GITHUB_BRANCH: ${{ github.event.inputs.branch }}
