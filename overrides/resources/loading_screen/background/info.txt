@@ -1,0 +1,2 @@
+All of these were taken from /resources/minecraft/textures/gui/title/background/.
+The ones in this folder don't have any credits in their filenames for the reason of that it would be impossible to implement a slideshow in the loading screen with them in place.
