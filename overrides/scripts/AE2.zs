@@ -374,7 +374,7 @@ recipes.addShaped("nf_terminal_expanded_processing", <appliedenergistics2:part:3
 ]);
 
 // Configuration Fluid Interface Terminal
-recipes.removeByRecipeName("appliedenergistics2:network/parts/terminal_expanded_processing");
+recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals_fluid_interface_configuration");
 recipes.addShapeless("nf_configuration_fluid_interface_terminal", <appliedenergistics2:part:522>, [
     <appliedenergistics2:part:520>,
     <appliedenergistics2:material:24>,
