@@ -2,8 +2,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.contenttweaker.Fluid;
 import crafttweaker.recipes.IRecipeFunction;
+import mods.contenttweaker.Fluid;
 
 import mods.gregtech.recipe.RecipeMap;
 
@@ -12,24 +12,6 @@ import scripts.CommonVars.makeShapedF as makeShapedF;
 //////////////////////////////////////////////////////////////
 /////////////       Thermal Expansion       //////////////////
 //////////////////////////////////////////////////////////////
-
-//mods.jei.JEI.removeAndHide(<thermalfoundation:storage_resource:1>);
-//mods.jei.JEI.removeAndHide(<thermalfoundation:material:802>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:288>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:256>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:257>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:258>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:273>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:303>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:304>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:336>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:369>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:324>);
-//mods.jei.JEI.removeAndHide(<extendedcrafting:material:128>);
-recipes.removeByRecipeName("extendedcrafting:diamond_nugget_to");
-mods.jei.JEI.removeAndHide(<extendedcrafting:material:129>);
-recipes.removeByRecipeName("extendedcrafting:emerald_nugget_to");
-recipes.removeByRecipeName("actuallyadditions:recipes146");
 
 //Redstone Servo
 recipes.addShaped(<thermalfoundation:material:512>, [
@@ -236,11 +218,11 @@ recipes.addShaped(<thermalexpansion:augment:337>, [
 
 
 //Pyroconvective Loop
-recipes.remove(<thermalexpansion:augment:352>);
-recipes.addShaped(<thermalexpansion:augment:352>, [
-	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
-	[<thermalfoundation:material:328>, <minecraft:lava_bucket>, <thermalfoundation:material:328>],
-	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
+//recipes.remove(<thermalexpansion:augment:352>);
+//recipes.addShaped(<thermalexpansion:augment:352>, [
+//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
+//	[<thermalfoundation:material:328>, <minecraft:lava_bucket>, <thermalfoundation:material:328>],
+//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
 
 //Flux Linkage Concentrator
 recipes.remove(<thermalexpansion:augment:400>);
@@ -264,11 +246,11 @@ recipes.addShaped(<thermalexpansion:augment:514>, [
 	[<minecraft:iron_ingot>, <gregtech:meta_item_1:12033>, <minecraft:iron_ingot>]]);
 
 //Reagent Recovery
-recipes.remove(<thermalexpansion:augment:448>);
-recipes.addShaped(<thermalexpansion:augment:448>, [
-	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
-	[<thermalfoundation:material:328>, <minecraft:dye:4>, <thermalfoundation:material:328>],
-	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
+//recipes.remove(<thermalexpansion:augment:448>);
+//recipes.addShaped(<thermalexpansion:augment:448>, [
+//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
+//	[<thermalfoundation:material:328>, <minecraft:dye:4>, <thermalfoundation:material:328>],
+//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
 
 //Isentropic Reservoir
 recipes.remove(<thermalexpansion:augment:656>);
