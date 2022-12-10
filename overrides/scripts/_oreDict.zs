@@ -1955,8 +1955,6 @@ mods.jei.JEI.removeAndHide(<thermalexpansion:augment:273>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:288>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:303>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:304>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:324>);
-//mods.jei.JEI.removeAndHide(<thermalexpansion:augment:336>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:368>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:369>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:416>);
@@ -1964,7 +1962,6 @@ mods.jei.JEI.removeAndHide(<thermalexpansion:augment:432>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:433>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:673>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:674>);
-//mods.jei.JEI.removeAndHide(<thermalfoundation:storage_resource:1>);
 
 
 //Custom Materials Removals

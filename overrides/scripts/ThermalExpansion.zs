@@ -216,14 +216,6 @@ recipes.addShaped(<thermalexpansion:augment:337>, [
 	[<thermalfoundation:material:328>, <gregtech:meta_item_2:26111>, <thermalfoundation:material:328>],
 	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
 
-
-//Pyroconvective Loop
-//recipes.remove(<thermalexpansion:augment:352>);
-//recipes.addShaped(<thermalexpansion:augment:352>, [
-//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
-//	[<thermalfoundation:material:328>, <minecraft:lava_bucket>, <thermalfoundation:material:328>],
-//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
-
 //Flux Linkage Concentrator
 recipes.remove(<thermalexpansion:augment:400>);
 recipes.addShaped(<thermalexpansion:augment:400>, [
@@ -244,13 +236,6 @@ recipes.addShaped(<thermalexpansion:augment:514>, [
 	[<minecraft:iron_ingot>, <gregtech:meta_item_1:12033>, <minecraft:iron_ingot>],
 	[<gregtech:meta_item_1:12033>, <minecraft:hopper>, <gregtech:meta_item_1:12033>],
 	[<minecraft:iron_ingot>, <gregtech:meta_item_1:12033>, <minecraft:iron_ingot>]]);
-
-//Reagent Recovery
-//recipes.remove(<thermalexpansion:augment:448>);
-//recipes.addShaped(<thermalexpansion:augment:448>, [
-//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
-//	[<thermalfoundation:material:328>, <minecraft:dye:4>, <thermalfoundation:material:328>],
-//	[<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
 
 //Isentropic Reservoir
 recipes.remove(<thermalexpansion:augment:656>);
