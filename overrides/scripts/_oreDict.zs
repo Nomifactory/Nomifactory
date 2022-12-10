@@ -1955,11 +1955,13 @@ mods.jei.JEI.removeAndHide(<thermalexpansion:augment:273>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:288>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:303>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:304>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:352>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:368>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:369>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:416>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:432>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:433>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:448>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:673>);
 mods.jei.JEI.removeAndHide(<thermalexpansion:augment:674>);
 
