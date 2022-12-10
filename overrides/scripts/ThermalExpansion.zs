@@ -3,15 +3,11 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
+import crafttweaker.recipes.IRecipeFunction;
 
 import mods.gregtech.recipe.RecipeMap;
 
-/*
-[[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>],
-[<>, <>, <>, <>, <>, <>]]); */
+import scripts.CommonVars.makeShapedF as makeShapedF;
 
 //////////////////////////////////////////////////////////////
 /////////////       Thermal Expansion       //////////////////
@@ -51,41 +47,51 @@ recipes.addShaped(basictank, [
 	[<ore:blockGlassHardened>,null,<ore:blockGlassHardened>],
 	[<gregtech:meta_item_1:12018>, <thermalfoundation:material:512>, <gregtech:meta_item_1:12018>]]);
 
-recipes.addShaped(hardenedtank, [
-	[<actuallyadditions:item_crystal:1>, <gregtech:meta_item_1:12126>, <actuallyadditions:item_crystal:1>],
-	[<gregtech:meta_item_1:12126>,basictank.marked("tank"),<gregtech:meta_item_1:12126>],
-	[<actuallyadditions:item_crystal:1>, <gregtech:meta_item_1:12126>, <actuallyadditions:item_crystal:1>]],
-	function(out, ins, cInfo){
-		return ins.tank.updateTag({Level: 1 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+function updateTank(level as byte) as IRecipeFunction {
+    return function(out, ins, cInfo) as IItemStack {
+        return ins.tank.updateTag({Level: level});
+    };
+}
 
-recipes.addShaped(reinforcedtank, [
-	[<thermalfoundation:material:1026>, <gregtech:meta_item_1:12112>, <thermalfoundation:material:1026>],
-	[<gregtech:meta_item_1:12112>,hardenedtank.marked("tank"),<gregtech:meta_item_1:12112>],
-	[<thermalfoundation:material:1026>, <gregtech:meta_item_1:12112>, <thermalfoundation:material:1026>]],
-	function(out, ins, cInfo) {
-		return ins.tank.updateTag({Level: 2 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+var tankShape as string[] = ["ABA",
+                             "BCB",
+                             "ABA"];
 
-recipes.addShaped(signalumtank, [
-	[<thermalfoundation:material:1027>, <thermalfoundation:material:357>, <thermalfoundation:material:1027>],
-	[<thermalfoundation:material:357>,reinforcedtank.marked("tank"),<thermalfoundation:material:357>],
-	[<thermalfoundation:material:1027>, <thermalfoundation:material:357>, <thermalfoundation:material:1027>]],
-	function(out, ins, cInfo){
-		return ins.tank.updateTag({Level: 3 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+makeShapedF("of_hardenedtank",
+    hardenedtank,
+    tankShape,
+    { A : <actuallyadditions:item_crystal:1>,
+      B : <gregtech:meta_item_1:12126>,
+      C : basictankIng.marked("tank")},
+    updateTank(1)
+);
 
-recipes.addShaped(resonanttank, [
-	[<thermalfoundation:material:1024>, <thermalfoundation:material:359>, <thermalfoundation:material:1024>],
-	[<thermalfoundation:material:359>,signalumtank.marked("tank"),<thermalfoundation:material:359>],
-	[<thermalfoundation:material:1024>, <thermalfoundation:material:359>, <thermalfoundation:material:1024>]],
-	function(out, ins, cInfo){
-		return ins.tank.updateTag({Level: 4 as byte});
-	} as crafttweaker.recipes.IRecipeFunction
-	);
+makeShapedF("of_reinforcedtank",
+    reinforcedtank,
+    tankShape,
+    { A : <thermalfoundation:material:1026>,
+      B : <gregtech:meta_item_1:12112>,
+      C : hardenedtankIng.marked("tank")},
+    updateTank(2)
+);
+
+makeShapedF("of_signalumtank",
+    signalumtank,
+    tankShape,
+    { A : <thermalfoundation:material:1027>,
+      B : <thermalfoundation:material:357>,
+      C : reinforcedtankIng.marked("tank")},
+    updateTank(3)
+);
+
+makeShapedF("of_resonanttank",
+    resonanttank,
+    tankShape,
+    { A : <thermalfoundation:material:1024>,
+      B : <thermalfoundation:material:359>,
+      C : signalumtankIng.marked("tank")},
+    updateTank(4)
+);
 
 
 mods.jei.JEI.addItem(basictank);
@@ -328,9 +334,6 @@ recipes.addShaped(<contenttweaker:excitationcoil>, [
 
 <contenttweaker:excitationcoil>.addTooltip(format.darkGray(format.italic("Crafting component only.")));
 
-//Remove Disjunctive Extraction
-recipes.remove(<thermalexpansion:augment:704>);
-
 //Numismatic Press
 recipes.remove(<thermalexpansion:augment:336>);
 recipes.addShaped(<thermalexpansion:augment:336>, [
@@ -365,6 +368,7 @@ recipes.addShaped(<thermalfoundation:material:1028> * 4,[
 	[<thermalfoundation:material:1025>, <gregtech:meta_item_1:2111>, <thermalfoundation:material:1024>],
 	[<thermalfoundation:material:1025>, <thermalfoundation:material:1027>, <thermalfoundation:material:1027>]]);
 
+
 <thermalfoundation:material:72>.displayName = "Mana Infused Metal Dust";
 blast_furnace.recipeBuilder().inputs([<thermalfoundation:material:72>]).fluidInputs(<liquid:mana> * 250).outputs(<thermalfoundation:material:136>).property("temperature", 2141).duration(400).EUt(400).buildAndRegister();
 
@@ -376,7 +380,6 @@ recipes.addShaped(<thermalexpansion:frame>, [
 <thermalexpansion:frame:64>.displayName = "Thermal Machine Casing";
 
 recipes.remove(<thermalexpansion:frame:64>);
-recipes.remove(<nuclearcraft:compound:2>);
 recipes.addShaped(<thermalexpansion:frame:64>, [
 	[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>],
 	[<thermalfoundation:material:136>, null, <thermalfoundation:material:136>],
@@ -489,7 +492,42 @@ mods.thermalexpansion.Insolator.addRecipe(<appliedenergistics2:material:12>, <ap
 
 mods.jei.JEI.addDescription(<appliedenergistics2:material:10>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
 mods.jei.JEI.addDescription(<appliedenergistics2:material:11>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
-mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft."); 
+mods.jei.JEI.addDescription(<appliedenergistics2:material:12>, "Made in the Crystal Growth Chamber or in a Phytogenic Insolator. If made in the Phytogenic Insolator, make sure to unlock the Fertilizer slot. Augments do not work for this craft.");
+
+val liquids as int[][ILiquidStack] = {
+    
+    //Fluid : duration, power
+    <liquid:water> * 73 : [1568, 30],
+    <liquid:distilled_water> * 55 : [1019, 30],
+    <liquid:lubricant> * 18 : [392, 30]
+
+};
+
+val blocks = [
+
+    //Enderium
+    [<thermalfoundation:storage_alloy:7>, <thermalfoundation:material:359> * 9],
+    //Lumium
+    [<thermalfoundation:storage_alloy:6>, <thermalfoundation:material:358> * 9],
+    //Signalum
+    [<thermalfoundation:storage_alloy:5>, <thermalfoundation:material:357> * 9],
+    //Mana Infused
+    [<thermalfoundation:storage:8>, <thermalfoundation:material:328> * 9]
+
+] as IItemStack[][];
+
+for blockItem in blocks {
+
+    for liquid, values in liquids {
+   
+        saw.recipeBuilder()
+            .inputs(blockItem[0])
+            .fluidInputs(liquid)
+            .outputs(blockItem[1])
+            .duration(values[0]).EUt(values[1]).buildAndRegister();
+
+    }
+}
 
 //Add Rubber Trees to Phytogenic Insolator. Why would you use this?
 mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 6, <gregtech:sapling>, <thermalfoundation:fertilizer:0>, 9600, <gregtech:sapling>, 100);
