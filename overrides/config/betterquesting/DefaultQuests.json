@@ -12572,7 +12572,7 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 724,
+              "Damage:2": 10669,
               "OreDict:8": "",
               "id:8": "gregtech:machine"
             }
