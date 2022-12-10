@@ -2,6 +2,7 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
+import crafttweaker.recipes.ICraftingInfo;
 import scripts.CommonVars.makeShaped as makeShaped;
 
 //Conductive Iron Thruster
@@ -185,66 +186,78 @@ recipes.addShaped(leadstonejetpack, [
 	[<ore:plateLead>,                  <simplyjetpacks:metaitem:4>,  <ore:plateLead>],
 	[<simplyjetpacks:metaitemmods:26>, null,                         <simplyjetpacks:metaitemmods:26>]]);
 
+val transferTag as IRecipeFunction = function(out as IItemStack, ins as IItemStack[string], cInfo as ICraftingInfo) as IItemStack {
+    return out.withTag(ins.jetpack.tag);
+};
+
 //Electrical Steel Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe2");
 recipes.addShaped(electricalsteeljetpack, [
-	[<ore:plateElectricalSteel>,      <enderio:item_basic_capacitor:1>, <ore:plateElectricalSteel>],
-	[<ore:plateElectricalSteel>,      conductiveironjetpack,            <ore:plateElectricalSteel>],
-	[<simplyjetpacks:metaitemmods:8>, null,                             <simplyjetpacks:metaitemmods:8>]]);
+	[<ore:plateElectricalSteel>,      <enderio:item_basic_capacitor:1>,        <ore:plateElectricalSteel>],
+	[<ore:plateElectricalSteel>,      conductiveironjetpack.marked("jetpack"), <ore:plateElectricalSteel>],
+	[<simplyjetpacks:metaitemmods:8>, null,                                    <simplyjetpacks:metaitemmods:8>]],
+	transferTag);
 
 //Hardened Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe31");
 recipes.addShaped(hardenedjetpack, [
-	[<ore:plateInvar>,                 <thermalexpansion:capacitor:1>, <ore:plateInvar>],
-	[<ore:plateInvar>,                 leadstonejetpack,               <ore:plateInvar>],
-	[<simplyjetpacks:metaitemmods:27>, null,                           <simplyjetpacks:metaitemmods:27>]]);
+	[<ore:plateInvar>,                 <thermalexpansion:capacitor:1>,     <ore:plateInvar>],
+	[<ore:plateInvar>,                 leadstonejetpack.marked("jetpack"), <ore:plateInvar>],
+	[<simplyjetpacks:metaitemmods:27>, null,                               <simplyjetpacks:metaitemmods:27>]],
+	transferTag);
 
 //Energetic Alloy Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe3");
 recipes.addShaped(energeticjetpack, [
-	[<ore:plateEnergeticAlloy>,       <enderio:item_basic_capacitor:2>, <ore:plateEnergeticAlloy>],
-	[<ore:plateEnergeticAlloy>,       electricalsteeljetpack,           <ore:plateEnergeticAlloy>],
-	[<simplyjetpacks:metaitemmods:9>, null,                             <simplyjetpacks:metaitemmods:9>]]);
+	[<ore:plateEnergeticAlloy>,       <enderio:item_basic_capacitor:2>,         <ore:plateEnergeticAlloy>],
+	[<ore:plateEnergeticAlloy>,       electricalsteeljetpack.marked("jetpack"), <ore:plateEnergeticAlloy>],
+	[<simplyjetpacks:metaitemmods:9>, null,                                     <simplyjetpacks:metaitemmods:9>]],
+	transferTag);
 
 //Reinforced Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe32");
 recipes.addShaped(reinforcedjetpack, [
-	[<ore:plateElectrum>,              <thermalexpansion:capacitor:2>, <ore:plateElectrum>],
-	[<ore:plateElectrum>,              hardenedjetpack,                <ore:plateElectrum>],
-	[<simplyjetpacks:metaitemmods:28>, null,                           <simplyjetpacks:metaitemmods:28>]]);
+	[<ore:plateElectrum>,              <thermalexpansion:capacitor:2>,    <ore:plateElectrum>],
+	[<ore:plateElectrum>,              hardenedjetpack.marked("jetpack"), <ore:plateElectrum>],
+	[<simplyjetpacks:metaitemmods:28>, null,                              <simplyjetpacks:metaitemmods:28>]],
+	transferTag);
 
 //Vibrant Alloy Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe4");
 recipes.addShaped(vibrantjetpack, [
-	[<gregtech:meta_item_1:12702>,     compressedoctadiccap, <gregtech:meta_item_1:12702>],
-	[<gregtech:meta_item_1:12702>,     energeticjetpack,     <gregtech:meta_item_1:12702>],
-	[<simplyjetpacks:metaitemmods:10>, null,                 <simplyjetpacks:metaitemmods:10>]]);
+	[<gregtech:meta_item_1:12702>,     compressedoctadiccap,               <gregtech:meta_item_1:12702>],
+	[<gregtech:meta_item_1:12702>,     energeticjetpack.marked("jetpack"), <gregtech:meta_item_1:12702>],
+	[<simplyjetpacks:metaitemmods:10>, null,                               <simplyjetpacks:metaitemmods:10>]],
+	transferTag);
 
 //Resonant Jetpack
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe33");
 recipes.addShaped(resonantjetpack, [
-	[<ore:plateEnderium>,              <thermalexpansion:capacitor:4>, <ore:plateEnderium>],
-	[<ore:plateEnderium>,              reinforcedjetpack,              <ore:plateEnderium>],
-	[<simplyjetpacks:metaitemmods:29>, null,                           <simplyjetpacks:metaitemmods:29>]]);
+	[<ore:plateEnderium>,              <thermalexpansion:capacitor:4>,      <ore:plateEnderium>],
+	[<ore:plateEnderium>,              reinforcedjetpack.marked("jetpack"), <ore:plateEnderium>],
+	[<simplyjetpacks:metaitemmods:29>, null,                                <simplyjetpacks:metaitemmods:29>]],
+	transferTag);
 
 //Dark Soularium JetPlate
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe5");
 recipes.addShaped(darksoulariumjetplate, [
-	[<enderio:item_material:16>,       <extrautils2:angelring:*>,  <enderio:item_material:16>],
-	[<simplyjetpacks:metaitemmods:4>,  armoredvibrantjetpack,      <simplyjetpacks:metaitemmods:4>],
-	[<simplyjetpacks:metaitemmods:11>, doublecompressedoctadiccap, <simplyjetpacks:metaitemmods:11>]]);
+	[<enderio:item_material:16>,       <extrautils2:angelring:*>,               <enderio:item_material:16>],
+	[<simplyjetpacks:metaitemmods:4>,  armoredvibrantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:4>],
+	[<simplyjetpacks:metaitemmods:11>, doublecompressedoctadiccap,              <simplyjetpacks:metaitemmods:11>]],
+	transferTag);
 
 //Flux-Infused Jetplate
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe34");
 recipes.addShaped(fluxinfusedjetplate, [
-	[compressedoctadiccap,             <extrautils2:angelring:*>,          compressedoctadiccap],
-	[<simplyjetpacks:metaitemmods:21>, armoredresonantjetpack,             <simplyjetpacks:metaitemmods:21>],
-	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>, <simplyjetpacks:metaitemmods:30>]]);
+	[compressedoctadiccap,             <extrautils2:angelring:*>,                compressedoctadiccap],
+	[<simplyjetpacks:metaitemmods:21>, armoredresonantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:21>],
+	[<simplyjetpacks:metaitemmods:30>, <redstonearsenal:armor.plate_flux>,       <simplyjetpacks:metaitemmods:30>]],
+	transferTag);
 
 /* Fix Armored Jetpacks */
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe15"); // conductive iron
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe17"); // electrical steel
-recipes.removeByRecipeName("simplyjetpacks:upgraderecipe19"); // energetic 
+recipes.removeByRecipeName("simplyjetpacks:upgraderecipe19"); // energetic
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipe21"); // vibrant
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshapeless0"); // leadstone
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshapeless1"); // conductive
@@ -253,35 +266,43 @@ recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshapeless3"); // resonan
 
 recipes.addShapeless("armored_conductive_iron_jetpack",
                      armoredconductiveironjetpack,
-                     [conductiveironjetpack, <simplyjetpacks:metaitemmods:12>]);
+                     [conductiveironjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:12>],
+                     transferTag);
 
 recipes.addShapeless("armored_electrical_steel_jetpack",
                      armoredelectricalsteeljetpack,
-                     [electricalsteeljetpack, <simplyjetpacks:metaitemmods:13>]);
+                     [electricalsteeljetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:13>],
+                     transferTag);
 
 recipes.addShapeless("armored_energetic_jetpack",
                      armoredenergeticjetpack,
-                     [energeticjetpack, <simplyjetpacks:metaitemmods:14>]);
+                     [energeticjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:14>],
+                     transferTag);
 
 recipes.addShapeless("armored_vibrant_jetpack",
                      armoredvibrantjetpack,
-                     [vibrantjetpack, <simplyjetpacks:metaitemmods:15>]);
+                     [vibrantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:15>],
+                     transferTag);
 
 recipes.addShapeless("armored_leadstone_jetpack",
                      armoredleadstonejetpack,
-                     [leadstonejetpack, <simplyjetpacks:metaitemmods:22>]);
+                     [leadstonejetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:22>],
+                     transferTag);
 
 recipes.addShapeless("armored_hardened_jetpack",
                      armoredhardenedjetpack,
-                     [hardenedjetpack, <simplyjetpacks:metaitemmods:23>]);
+                     [hardenedjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:23>],
+                     transferTag);
 
 recipes.addShapeless("armored_reinforced_jetpack",
                      armoredreinforcedjetpack,
-                     [reinforcedjetpack, <simplyjetpacks:metaitemmods:24>]);
+                     [reinforcedjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:24>],
+                     transferTag);
 
 recipes.addShapeless("armored_resonant_jetpack",
                      armoredresonantjetpack,
-                     [resonantjetpack, <simplyjetpacks:metaitemmods:25>]);
+                     [resonantjetpack.marked("jetpack"), <simplyjetpacks:metaitemmods:25>],
+                     transferTag);
 
 //Add Jetpack Nbt Resetting recipes
 
@@ -385,8 +406,6 @@ recipes.addShaped(<enderio:block_franken_zombie_generator>, [
 	[<ore:skullZombieFrankenstein>, <enderio:block_zombie_generator>, <ore:skullZombieFrankenstein>],
 	[<gregtech:meta_item_2:26705>, <ore:ingotSoularium>, <gregtech:meta_item_2:26705>]]);
 
-mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
-
 //The Vat
 recipes.remove(<enderio:block_vat>);
 recipes.addShaped(<enderio:block_vat>, [
@@ -426,7 +445,7 @@ recipes.addShaped(<enderio:block_wired_charger>	, [
 //Coordinate Selector
 recipes.remove(<enderio:item_coord_selector>);
 recipes.addShaped(<enderio:item_coord_selector>	, [
-	[<gregtech:meta_item_1:32681>, <gregtech:compressed_9:15>, <gregtech:meta_item_1:12705>],
+	[<gregtech:meta_item_1:32681>, <gregtech:meta_block_compressed_13:11>, <gregtech:meta_item_1:12705>], //Ender Eye Block
 	[null, <enderio:item_material:13>, <gregtech:meta_item_1:12705>],
 	[null,null,<gregtech:meta_item_1:12705>]]);
 
@@ -564,12 +583,12 @@ recipes.addShaped(<enderio:block_xp_vacuum>, [
 
 //<thermalexpansion:frame:128>.displayName = "Leadstone Energy Cell Frame";
 //<thermalexpansion:cell>.displayName = "Leadstone Energy Cell";
-<thermalexpansion:frame:130>.displayName = "Microminer Engine Frame";
-<thermalexpansion:frame:146>.displayName = "Microminer Engine Core";
-<thermalexpansion:frame:131>.displayName = "Signalum Microminer Engine Frame";
-<thermalexpansion:frame:147>.displayName = "Signalum Microminer Engine Core";
-<thermalexpansion:frame:132>.displayName = "Enderium Microminer Engine Frame";
-<thermalexpansion:frame:148>.displayName = "Enderium Microminer Engine Core";
+<thermalexpansion:frame:130>.displayName = "Micro Miner Engine Frame";
+<thermalexpansion:frame:146>.displayName = "Micro Miner Engine Core";
+<thermalexpansion:frame:131>.displayName = "Signalum Micro Miner Engine Frame";
+<thermalexpansion:frame:147>.displayName = "Signalum Micro Miner Engine Core";
+<thermalexpansion:frame:132>.displayName = "Enderium Micro Miner Engine Frame";
+<thermalexpansion:frame:148>.displayName = "Enderium Micro Miner Engine Core";
 
 recipes.addShaped(<thermalexpansion:frame:130>, [
 	[<gregtech:meta_item_1:12112>, <gregtech:meta_item_1:14112>, <gregtech:meta_item_1:12112>],
@@ -586,19 +605,19 @@ recipes.addShaped(<thermalexpansion:frame:132>, [
 	[<gregtech:meta_item_1:14708>, null, <gregtech:meta_item_1:14708>],
 	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14708>, <thermalfoundation:material:359>]]);
 
-// redstone cell frame (filled) => "microminer engine core"
+// redstone cell frame (filled) => "micro miner engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:130>, <minecraft:redstone_block> * 2])
     .outputs([<thermalexpansion:frame:146>])
     .duration(500).EUt(480).buildAndRegister();
 
-// signalum cell frame (filled) => "signalum microminer engine core"
+// signalum cell frame (filled) => "signalum micro miner engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:131>, <minecraft:redstone_block> * 4])
     .outputs([<thermalexpansion:frame:147>])
     .duration(1000).EUt(2000).buildAndRegister();
 
-// resonant cell frame (filled) => "enderium microminer engine core"
+// resonant cell frame (filled) => "enderium micro miner engine core"
 alloy.recipeBuilder()
     .inputs([<thermalexpansion:frame:132>, <minecraft:redstone_block> * 8])
     .outputs([<thermalexpansion:frame:148>])
@@ -608,7 +627,7 @@ alloy.recipeBuilder()
 recipes.remove(<thermalexpansion:frame:128>);
 recipes.addShaped(<thermalexpansion:frame:128>, [
 	[<gregtech:meta_item_1:12035>, <gregtech:meta_item_1:14035>, <gregtech:meta_item_1:12035>],
-	[<gregtech:meta_item_1:14035>, <enderio:block_cap_bank:3>.withTag({"enderio:energy": 0}), <gregtech:meta_item_1:14035>],
+	[<gregtech:meta_item_1:14035>, <enderio:block_cap_bank:3>.withTag({"enderio:energy": 0}, false), <gregtech:meta_item_1:14035>],
 	[<gregtech:meta_item_1:12035>, <gregtech:meta_item_1:14035>, <gregtech:meta_item_1:12035>]]);
 
 // Leadstone Energy Cell
@@ -630,7 +649,7 @@ alloy.recipeBuilder()
 // basic => reinforced
 recipes.addShapeless("basic_to_reinforced_energy_cell_conversion",
     reinforcedcell,
-    [basiccell.marked("cell"),<thermalfoundation:upgrade:33>],
+    [basiccellIng.marked("cell"),<thermalfoundation:upgrade:33>],
     function(out, ins, cInfo) {
         return ins.cell.updateTag({Level: 2 as byte, Creative: 0 as byte});
     } as IRecipeFunction
@@ -639,7 +658,7 @@ recipes.addShapeless("basic_to_reinforced_energy_cell_conversion",
 // basic => signalum
 recipes.addShapeless("basic_to_signalum_energy_cell_conversion",
     signalumcell,
-    [basiccell.marked("cell"),<thermalfoundation:upgrade:34>],
+    [basiccellIng.marked("cell"),<thermalfoundation:upgrade:34>],
     function(out, ins, cInfo) {
         return ins.cell.updateTag({Level: 3 as byte, Creative: 0 as byte});
     } as IRecipeFunction
@@ -648,7 +667,7 @@ recipes.addShapeless("basic_to_signalum_energy_cell_conversion",
 // basic => resonant
 recipes.addShapeless("basic_to_resonant_energy_cell_conversion",
     resonantcell,
-    [basiccell.marked("cell"),<thermalfoundation:upgrade:35>],
+    [basiccellIng.marked("cell"),<thermalfoundation:upgrade:35>],
     function(out, ins, cInfo) {
         return ins.cell.updateTag({Level: 4 as byte, Creative: 0 as byte});
     } as IRecipeFunction
@@ -665,25 +684,25 @@ val upgradeTierByOne as IRecipeFunction =
 // Upgrade Kit
 recipes.addShapeless("basic_to_hardened_energy_cell_upgrade",
     hardenedcell,
-    [basiccell.marked("cell"), <thermalfoundation:upgrade>],
+    [basiccellIng.marked("cell"), <thermalfoundation:upgrade>],
     upgradeTierByOne
 );
 
 recipes.addShapeless("hardened_to_reinforced_energy_cell_upgrade",
     reinforcedcell,
-    [hardenedcell.marked("cell"), <thermalfoundation:upgrade:1>],
+    [hardenedcellIng.marked("cell"), <thermalfoundation:upgrade:1>],
     upgradeTierByOne
 );
 
 recipes.addShapeless("reinforced_to_signalum_energy_cell_upgrade",
     signalumcell,
-    [reinforcedcell.marked("cell"), <thermalfoundation:upgrade:2>],
+    [reinforcedcellIng.marked("cell"), <thermalfoundation:upgrade:2>],
     upgradeTierByOne
 );
 
 recipes.addShapeless("signalum_to_resonant_energy_cell_upgrade",
     resonantcell,
-    [signalumcell.marked("cell"), <thermalfoundation:upgrade:3>],
+    [signalumcellIng.marked("cell"), <thermalfoundation:upgrade:3>],
     upgradeTierByOne
 );
 
@@ -714,4 +733,3 @@ mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_soul_binder>, [
 	[<enderio:item_alloy_ingot:7>, <minecraft:skull:4>,          <ore:itemSoulMachineChassi>,   <minecraft:skull:2>,         <enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>, <gregtech:meta_item_1:12235>, <minecraft:skull>,             <gregtech:meta_item_1:12235>,<enderio:item_alloy_ingot:7>],
 	[<enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:7>,  <enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>]]);
-

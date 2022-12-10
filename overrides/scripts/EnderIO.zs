@@ -2,6 +2,8 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+import scripts.CommonVars.makeShaped as makeShaped;
+
 /*
 
   EnderIO Removals
@@ -85,13 +87,6 @@ for item in teBalls {
     recipes.remove(item);
 }
 
-// Slice'n'Splice dead-ends
-mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:40>);       // Zombie Electrode
-mods.jei.JEI.removeAndHide(<enderio:item_material:40>);                   // Zombie Electrode
-
-mods.enderio.SliceNSplice.removeRecipe(<enderio:item_capacitor_totemic>); // Totemic Capacitor
-mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);             // Totemic Capacitor
-
 /*
 
   EnderIO Additions
@@ -100,7 +95,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_capacitor_totemic>);             // Tot
 
 // Blank Dark Steel Upgrade
 alloy.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:12704>, <forestry:crafting_material>])
+    .inputs([<gregtech:meta_item_1:12704>, <ore:dustPulsating>])
     .outputs([<enderio:item_dark_steel_upgrade>])
     .duration(100)
     .EUt(20)
@@ -155,17 +150,23 @@ recipes.addShapeless(
 
 */
 
-// Enlightened Quite Clear Glass
+// Enlightened Clear Glass
 alloy.recipeBuilder()
-    .inputs([<enderio:block_fused_glass:0>, <minecraft:glowstone>])
+    .inputs([<enderio:block_fused_glass:*>, <minecraft:glowstone>])
     .outputs([<enderio:block_enlightened_fused_glass:0>])
     .duration(160)
     .EUt(16)
     .buildAndRegister();
 
+//Dark Clear Glass
+alloy.recipeBuilder()
+    .inputs([<enderio:block_fused_glass:*>, <actuallyadditions:item_misc:5>])
+    .outputs(<enderio:block_dark_fused_glass>)
+    .duration(200).EUt(32).buildAndRegister();
+
 // Enlightened Fused Quartz
 alloy.recipeBuilder()
-    .inputs([<enderio:block_fused_quartz:0>, <minecraft:glowstone>])
+    .inputs([<enderio:block_fused_quartz:*>, <minecraft:glowstone>])
     .outputs([<enderio:block_enlightened_fused_quartz:0>])
     .duration(160)
     .EUt(16)
@@ -173,11 +174,11 @@ alloy.recipeBuilder()
 
 //Dark Fused Quarz
 alloy.recipeBuilder()
-    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_glass:*>])
+    .inputs([<actuallyadditions:item_misc:5>, <enderio:block_fused_quartz:*>])
     .outputs([<enderio:block_dark_fused_quartz:0>])
     .duration(200)
     .EUt(32)
-    .buildAndRegister();	
+    .buildAndRegister();
 
 recipes.addShaped(compressedoctadiccap, [
 	[<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>,<enderio:item_basic_capacitor:2>],
@@ -188,7 +189,7 @@ recipes.addShaped(doublecompressedoctadiccap, [
 	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
 	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap],
 	[compressedoctadiccap,compressedoctadiccap,compressedoctadiccap]]);
-	
+
 //Replace old compressed capacitors with functional ones
 recipes.addShapeless(compressedoctadiccap, [<contenttweaker:compressedoctadiccapacitor>]);
 recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompressedoctadiccapacitor>]);
@@ -207,34 +208,31 @@ mods.jei.JEI.addItem(doublecompressedoctadiccap);
 
 var bonus = 1 as int;
 var cost  = 20000 as int;
+var capacitors as IItemStack[] = [
+    <enderio:item_basic_capacitor:1>,
+    <enderio:item_basic_capacitor:2>
+];
 
-for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IItemStack[] {
+var wafers as IItemStack[] = [
+    <gregtech:meta_item_2:32441>,
+    <gregtech:meta_item_2:32442>
+];
+
+for i, wafer in wafers {
     bonus = bonus * 2;
     cost  = cost  * 2;
 
-    // Z-Logic Controller
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:41> * bonus, [
-        <enderio:item_alloy_ingot:7> , <minecraft:skull:2>  , <enderio:item_alloy_ingot:7>
-        , wafer                      , <minecraft:redstone> , wafer
-    ], cost);
-
-    // Ender Resonator
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:43> * bonus, [
-        <enderio:item_alloy_ingot:7> , <enderio:block_enderman_skull> , <enderio:item_alloy_ingot:7>
-        , wafer                      , <enderio:item_alloy_ingot:2>   , wafer
-    ], cost);
-
-    // Skeletal Contractor
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:45> * bonus, [
-        <enderio:item_alloy_ingot:7> , <minecraft:skull> , <enderio:item_alloy_ingot:7>
-        , <minecraft:rotten_flesh>   , wafer             , <minecraft:rotten_flesh>
-    ], cost);
-
-    // Guardian Diode
-    mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:56> * bonus, [
-        <enderio:item_alloy_ingot:1>      , <minecraft:prismarine_shard> , <enderio:item_alloy_ingot:1>
-        , <minecraft:prismarine_crystals> , wafer                        , <minecraft:prismarine_crystals>
-    ], cost);
+    // EnderIO Light
+    makeShaped("enderio_light_" + bonus, <enderio:block_electric_light> * bonus, [
+        "GGG",
+        "WDW",
+        "WCW"
+    ], {
+        W: wafer,
+        D: <ore:dustGlowstone>,
+        G: <ore:fusedQuartz>,
+        C: capacitors[i]
+    });
 }
 
 
@@ -331,3 +329,31 @@ furnace.addRecipe(<enderio:item_alloy_ingot:0>, <gregtech:meta_item_1:2705>);
 //Dark Steel
 furnace.remove(<gregtech:meta_item_1:10704>, <gregtech:meta_item_1:2704>);
 furnace.addRecipe(<enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:2704>);
+
+//Fixing Multismelter output of the dusts of the GTCE variants of Ender IO ingots
+val materialList as IItemStack[][] = [
+    
+    [<gregtech:meta_item_1:2705>, <enderio:item_alloy_ingot>],
+    [<gregtech:meta_item_1:2701>, <enderio:item_alloy_ingot:1>],
+    [<gregtech:meta_item_1:2702>, <enderio:item_alloy_ingot:2>],
+    [<gregtech:meta_item_1:2704>, <enderio:item_alloy_ingot:6>],
+    [<gregtech:meta_item_1:2712>, <enderio:item_alloy_ingot:8>],
+    [<gregtech:meta_item_1:2703>, <enderio:item_alloy_ingot:5>],
+    [<gregtech:meta_item_1:2700>, <enderio:item_alloy_ingot:4>]
+
+
+] as IItemStack[][];
+
+
+for dust in materialList {
+
+    GTfurnace.recipeBuilder()
+    .inputs(dust[0])
+    .outputs(dust[1])
+    .duration(128).EUt(4).buildAndRegister();
+
+}
+
+recipes.addShapeless(<enderio:block_cap_bank:1>, [<enderio:block_cap_bank:1>]);
+recipes.addShapeless(<enderio:block_cap_bank:2>, [<enderio:block_cap_bank:2>]);
+recipes.addShapeless(<enderio:block_cap_bank:3>, [<enderio:block_cap_bank:3>]);

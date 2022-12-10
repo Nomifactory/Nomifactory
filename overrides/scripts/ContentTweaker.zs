@@ -8,6 +8,9 @@ import mods.contenttweaker.Fluid;
 
 import mods.contenttweaker.AxisAlignedBB;
 
+import mods.contenttweaker.IItemFoodEaten;
+import crafttweaker.potions.IPotion;
+
 
 var smallgearextrudershape = VanillaFactory.createItem("smallgearextrudershape");
 smallgearextrudershape.maxStackSize = 64;
@@ -349,7 +352,7 @@ makeFluid("moltenempoweredpalis",       "0026ff",   false,  10000,      "COMMON"
 makeFluid("moltenempoweredenori",       "e6e6e6",   false,  10000,      "COMMON",   15);
 makeFluid("moltenempowereddiamatine",   "00fbff",   false,  10000,      "COMMON",   15);
 makeFluid("moltenempoweredemeradic",    "00ff00",   false,  10000,      "COMMON",   15);
-makeFluid("moltenempoweredvoid",        "e0e0e0",   false,  10000,      "COMMON",   15);
+makeFluid("moltenempoweredvoid",        "0e0e0e",   false,  10000,      "COMMON",   15);
 
 var universalnavigator = VanillaFactory.createItem("universalnavigator");
 universalnavigator.maxStackSize = 64;
@@ -661,3 +664,60 @@ microverse_casing.register();
 
 var microverse_vent = VanillaFactory.createBlock("microverse_vent", <blockmaterial:iron>);
 microverse_vent.register();
+
+//Smores
+
+var smingots as string[] = [
+    "eightsmore",
+    "sixteensmore",
+    "thirtytwosmore",
+    "sixtyfoursmore"
+] as string[];
+
+function getItemFoodEaten(duration as int) as IItemFoodEaten {
+    return function(stack, world, player) {
+        val potions = [ // These can't resolve when the script is run, so resolve them within the function.
+            <potion:minecraft:absorption>,
+            <potion:minecraft:speed>,
+            <potion:minecraft:haste>,
+            <potion:minecraft:saturation>,
+            <potion:minecraft:health_boost>
+        ] as IPotion[];
+        for potion in potions {
+            player.addPotionEffect(potion.makePotionEffect(duration, 1));
+        }
+    } as IItemFoodEaten;
+}
+
+var heal = 44;
+var saturation = 8.6 as float;
+var potionDuration = 1200;
+
+for smingot in smingots {
+    heal = (heal * 2) + 4;
+    saturation = (saturation * 2) + 1;
+    potionDuration = potionDuration * 2;
+
+    val foodRep = VanillaFactory.createItemFood(smingot, heal);
+    foodRep.saturation = saturation;
+    foodRep.alwaysEdible = true;
+    foodRep.onItemFoodEaten = getItemFoodEaten(potionDuration);
+
+    foodRep.register();
+}
+
+// Forestry removal items
+var pulsatingdust = VanillaFactory.createItem("pulsatingdust");
+pulsatingdust.maxStackSize = 64;
+pulsatingdust.register();
+
+var pulsatingmesh = VanillaFactory.createItem("pulsatingmesh");
+pulsatingmesh.maxStackSize = 64;
+pulsatingmesh.register();
+
+
+var simulation_casing = VanillaFactory.createBlock("simulation_casing", <blockmaterial:iron>);
+simulation_casing.register();
+
+var simulation_casing_2 = VanillaFactory.createBlock("simulation_casing_2", <blockmaterial:iron>);
+simulation_casing_2.register();

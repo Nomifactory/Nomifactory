@@ -318,5 +318,27 @@
 			"draconicevolution:chaos_shard",
 			"draconicevolution:chaos_shard"
 		]
-	}
+	},
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:dislocator_advanced",
+        "catalyst": "draconicevolution:dislocator"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:dislocator_advanced,1,0,{}",
+        "catalyst": "draconicevolution:dislocator",
+        "energy": 10000000,
+        "tier": 2,
+        "ingredients": [
+            "ore:enderpearl",
+            "ore:ingotDraconium",
+            "ore:enderpearl",
+            "ore:ingotDraconium",
+            "ore:enderpearl",
+            "ore:ingotDraconium",
+            "ore:dragonEgg",
+            "ore:ingotDraconium"
+        ]
+    }
 ]

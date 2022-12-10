@@ -76,8 +76,8 @@ makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
 );
 
 <contenttweaker:tieroneship>.addTooltip(
-	format.italic(
-		format.white("Harvests Titanium and other light metals from asteroids in the microverse.")));
+	format.white(
+		format.italic("Harvests Titanium and other light metals from asteroids in the microverse.")));
 
 // Tier 1 Guidance
 makeShaped("of_t1guidance", <contenttweaker:t1guidance>,
@@ -248,11 +248,6 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 	  T : <simplyjetpacks:metaitemmods:29> }
 );
 
-<gregtech:meta_item_1:32724>.displayName = "Quantum Eye";
-<gregtech:meta_item_1:32724>.clearTooltip();
-<gregtech:meta_item_1:32724>.addTooltip(format.darkPurple("Quantum Eye"));
-
-
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
 makeExtremeRecipe9(<contenttweaker:tiersevenship>,
@@ -407,7 +402,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 	 "HHH",
 	 "HHH"],
 	{ I : <contenttweaker:impossiblerealmdata>,
-	  H : <deepmoblearning:living_matter_hellish> }
+	  H : <deepmoblearning:living_matter_extraterrestrial> }
 );
 
 // Wither Realm Data
@@ -416,7 +411,7 @@ makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 	 "XXX",
 	 "XXX"],
 	{ I : <contenttweaker:impossiblerealmdata>,
-	  X : <deepmoblearning:living_matter_extraterrestrial> }
+	  X : <deepmoblearning:living_matter_hellish> }
 );
 
 // Quantum Flux Recipes
@@ -447,29 +442,42 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 	  B : <gregtech:machine:322> }
 );
 <actuallyadditions:item_solidified_experience>.addTooltip(
-	format.green("Can be made in an Experience Solidifier."));
+	format.green("Drops from monsters, and can be made in"));
+<actuallyadditions:item_solidified_experience>.addTooltip(
+	format.green("a Fluid Solidifier or Experience Solidifier."));
 
+// Solidified Experience
+solidifier.recipeBuilder()
+    .fluidInputs([<liquid:xpjuice> * 160])
+    .notConsumable(<gregtech:meta_item_1:32307>)
+    .outputs(<actuallyadditions:item_solidified_experience>)
+    .duration(500).EUt(16).buildAndRegister();
+
+fluid_extractor.recipeBuilder()
+	.inputs(<actuallyadditions:item_solidified_experience>)
+	.fluidOutputs(<liquid:xpjuice> * 160)
+	.duration(80).EUt(32).buildAndRegister();
 
 <contenttweaker:tierfourship>.addTooltip(format.white(
 	format.italic("Harvests ultra cold materials from the deepest parts of empty space.")));
 <contenttweaker:tierfiveship>.addTooltip(format.white(
 	format.italic("Harvests strange materials from End microverses.")));
-<contenttweaker:tiersixship>.addTooltip(format.italic(
-	format.white("Harvests extremely rare materials from every concievable reality.")));
+<contenttweaker:tiersixship>.addTooltip(format.white(
+	format.italic("Harvests extremely rare materials from every concievable reality.")));
 <contenttweaker:tiersevenship>.addTooltip(format.white(
-	format.italic("Hunts Wyrms and End Dragons from the microverse")));
+	format.italic("Hunts Wyrms and End Dragons from the microverse.")));
 <contenttweaker:tiersevenship>.addTooltip(format.white(
 	format.italic("and returns with parts from their carapaces.")));
-<contenttweaker:tiereightship>.addTooltip(format.italic(
-	format.white("Hunts inconcievable monstrosities from beyond the End")));
-<contenttweaker:tiereightship>.addTooltip(format.italic(
-	format.white("and returns with bizzare trinkets.")));
-<contenttweaker:tiernineship>.addTooltip(format.italic(
-	format.white("Collapses microverse stars and harvests their delicious neutronium cores.")));
-<contenttweaker:tiertenship>.addTooltip(format.italic(
-	format.white("Collapses an entire microverse and harvests it whole.")));
-<contenttweaker:tiertenship>.addTooltip(format.italic(
-	format.white("Try to aim for uninhabited ones.")));
+<contenttweaker:tiereightship>.addTooltip(format.white(
+	format.italic("Hunts inconcievable monstrosities from beyond the End.")));
+<contenttweaker:tiereightship>.addTooltip(format.white(
+	format.italic("and returns with bizzare trinkets.")));
+<contenttweaker:tiernineship>.addTooltip(format.white(
+	format.italic("Collapses microverse stars and harvests their delicious neutronium cores.")));
+<contenttweaker:tiertenship>.addTooltip(format.white(
+	format.italic("Collapses an entire microverse and harvests it whole.")));
+<contenttweaker:tiertenship>.addTooltip(format.white(
+	format.italic("Try to aim for uninhabited ones.")));
 
 
 // Dense Hydrogen

@@ -268,6 +268,12 @@ solidifier.recipeBuilder()
     .duration(500).EUt(16).buildAndRegister();
 
 solidifier.recipeBuilder()
+    .fluidInputs([<liquid:plutonium241> * 144])
+    .notConsumable(<gregtech:meta_item_1:32307>)
+    .outputs(<contenttweaker:stabilizedplutonium> * 2)
+    .duration(500).EUt(16).buildAndRegister();
+
+solidifier.recipeBuilder()
     .fluidInputs([<liquid:plutonium2> * 144])
     .notConsumable(<gregtech:meta_item_1:32307>)
     .outputs(<contenttweaker:stabilizedplutonium> * 2)
@@ -372,16 +378,6 @@ fluid_extractor.recipeBuilder()
     .duration(20).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
-    .inputs([<nuclearcraft:uranium:4>])
-    .fluidOutputs([<liquid:uranium235> * 144])
-    .duration(180).EUt(16).buildAndRegister();
-
-fluid_extractor.recipeBuilder()
-    .inputs([<nuclearcraft:uranium:6>])
-    .fluidOutputs([<liquid:uranium235> * 16])
-    .duration(20).EUt(16).buildAndRegister();
-
-fluid_extractor.recipeBuilder()
     .inputs([<nuclearcraft:uranium:8>])
     .fluidOutputs([<liquid:uranium> * 144])
     .duration(180).EUt(16).buildAndRegister();
@@ -411,11 +407,6 @@ fluid_extractor.recipeBuilder()
     .fluidOutputs([<liquid:neptunium> * 16])
     .duration(20).EUt(16).buildAndRegister();
 
-fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:10052>], []).remove();
-fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:10053>], []).remove();
-fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:9052>], []).remove();
-fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:9053>], []).remove();
-
 fluid_extractor.recipeBuilder()
     .inputs([<nuclearcraft:plutonium>])
     .fluidOutputs([<liquid:plutonium2> * 144])
@@ -437,16 +428,6 @@ fluid_extractor.recipeBuilder()
     .duration(20).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
-    .inputs([<nuclearcraft:plutonium:8>])
-    .fluidOutputs([<liquid:plutonium2> * 144])
-    .duration(180).EUt(16).buildAndRegister();
-
-fluid_extractor.recipeBuilder()
-    .inputs([<nuclearcraft:plutonium:10>])
-    .fluidOutputs([<liquid:plutonium2> * 16])
-    .duration(20).EUt(16).buildAndRegister();
-
-fluid_extractor.recipeBuilder()
     .inputs([<nuclearcraft:plutonium:12>])
     .fluidOutputs([<liquid:plutonium2> * 144])
     .duration(180).EUt(16).buildAndRegister();
@@ -458,22 +439,12 @@ fluid_extractor.recipeBuilder()
 
 fluid_extractor.recipeBuilder()
     .inputs([<gregtech:meta_item_1:10052>])
-    .fluidOutputs([<liquid:plutonium2> * 144])
-    .duration(180).EUt(16).buildAndRegister();
-
-fluid_extractor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:10053>])
-    .fluidOutputs([<liquid:plutonium2> * 144])
+    .fluidOutputs([<liquid:plutonium> * 144])
     .duration(180).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
     .inputs([<gregtech:meta_item_1:9052>])
-    .fluidOutputs([<liquid:plutonium2> * 16])
-    .duration(20).EUt(16).buildAndRegister();
-
-fluid_extractor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:9053>])
-    .fluidOutputs([<liquid:plutonium2> * 16])
+    .fluidOutputs([<liquid:plutonium> * 16])
     .duration(20).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
@@ -659,7 +630,7 @@ makeShaped("of_extendedcrafting_pedestal", <extendedcrafting:pedestal>,
      "BCB"],
     { A : <gregtech:meta_item_1:10231>,
       B : <gregtech:meta_item_1:12231>,
-      C : <gregtech:compressed_10:11> });
+      C : <gregtech:meta_block_compressed_14:8> }); //Red Steel Block
 
 <extendedcrafting:material:19>.displayName = "Conflux Component";
 recipes.remove(<extendedcrafting:material:19>);
@@ -816,7 +787,7 @@ makeExtremeRecipe5(<extendedcrafting:table_elite>,
      "CBABC"],
     { A : <extendedcrafting:material:10>,
       B : <gregtech:meta_item_1:12231>,
-      C : <gregtech:compressed_0>,
+      C : <gregtech:meta_block_compressed_0:1>,
       D : <extendedcrafting:material:16>,
       T : <extendedcrafting:table_advanced> });
 <extendedcrafting:table_elite>.displayName = "Elite Extended Crafting Table";
@@ -953,7 +924,7 @@ reactor.recipeBuilder()
 
 //Elemental Reduction
 reactor.recipeBuilder()
-    .inputs(<forestry:crafting_material>)
+    .inputs(<ore:dustPulsating>)
     .fluidInputs([<liquid:hydrofluoric_acid> * 1000])
     .fluidOutputs(<liquid:elementalreduction> * 1000)
     .duration(80).EUt(90).buildAndRegister();
@@ -1082,9 +1053,6 @@ makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
       K : <moreplates:empowered_restonia_gear>,
       L : <moreplates:empowered_void_gear> });
 <contenttweaker:eternalcatalyst>.addTooltip(format.darkGray(format.italic("Gaze into the Abyss...")));
-<gregtech:meta_item_1:32725>.clearTooltip();
-<gregtech:meta_item_1:32725>.addTooltip(format.darkPurple("Quantum Star"));
-<gregtech:meta_item_1:32725>.displayName = "Quantum Star";
 
 
 ////////////////////////// Infinity Ingot ///////////////////////
@@ -1132,7 +1100,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>,
      <actuallyadditions:item_crystal_empowered:5>,
      <enderio:item_material:16>,
      <enderio:item_material:15>,
-     <ore:gemDilithium>.firstItem,
+     <ore:crystalDilithium>.firstItem,
      <enderio:item_material:17>,
      <enderio:item_material:18>,
      <enderio:item_material:19>,
@@ -1157,9 +1125,9 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_gem>,
 
 
 ////////////////////////// Creative Vending Upgrade ///////////////////////
-val creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 500000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 250000});
-val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte});
-val creativebuffer = <appliedenergistics2:creative_energy_cell>;
+val creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 500000000, Creative: 1 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Level: 4 as byte, Send: 250000}, false);
+val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}, false);
+val creativejetpack = <simplyjetpacks:itemjetpack>.withTag({JetpackParticleType: 3}, false);
 
 makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
     ["ABBBBBBBA",
@@ -1174,21 +1142,22 @@ makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
     { A : <storagedrawers:upgrade_creative>,
       B : <avaritia:resource:6>,
       C : <draconicevolution:creative_rf_source>,
-      D : creativecell,
+      D : creativecell.only(isCreative),
       E : <extrautils2:creativeenergy>,
       F : <extrautils2:drum:4>,
       G : <extrautils2:passivegenerator:6>,
       H : <avaritia:infinity_helmet>,
       I : <avaritia:infinity_chestplate>,
-      J : <simplyjetpacks:itemjetpack>,
+      J : creativejetpack,
       K : <avaritia:infinity_sword>,
       L : <avaritia:infinity_pants>,
       M : <avaritia:infinity_boots>,
       S : <solarflux:solar_panel_infinity>,
-      T : creativetank,
-      U : creativebuffer,
-      W : <thermalcultivation:watering_can:32000>,
-      X : <thermalexpansion:capacitor:32000> });
+      T : creativetank.only(isCreative),
+      U : <appliedenergistics2:creative_energy_cell>,
+      W : <thermalcultivation:watering_can:32000>.withTag({Water: 0, Mode: 4}, false),
+      X : <thermalexpansion:capacitor:32000>.withTag({Energy: 250000000}, false)
+    });
 
 solidifier.recipeBuilder()
     .fluidInputs([<liquid:moltencreativeportabletank> * 144])
@@ -1243,7 +1212,7 @@ makeExtremeRecipe9(<avaritia:infinity_sword>,
       D : <armorplus:super_star_sword>,
       E : <armorplus:ender_dragon_sword>,
       F : <draconicevolution:wyvern_sword>,
-      G : <draconicevolution:draconic_sword>,
+      G : <draconicevolution:draconic_sword>.withTag({Energy: 0}, false),
       H : <avaritia:skullfire_sword>,
       N : <avaritia:resource:5> });
 
@@ -1295,11 +1264,11 @@ makeExtremeRecipe9(creativecell,
      "ABCDEDCBA",
      "AABCDCBAA",
      "AAABCBAAA"],
-    { A : basiccell,
-      B : hardenedcell,
-      C : reinforcedcell,
-      D : signalumcell,
-      E : resonantcell,
+    { A : basiccellIng,
+      B : hardenedcellIng,
+      C : reinforcedcellIng,
+      D : signalumcellIng,
+      E : resonantcellIng,
       F : <contenttweaker:ultimate_power_storage>,
       G : <avaritia:resource:5> });
 
@@ -1341,7 +1310,7 @@ makeExtremeRecipe9(<extrautils2:drum:4>,
       F : <gregtech:machine:2200> });
 
 
-makeExtremeRecipe9(creativebuffer,
+makeExtremeRecipe9(<appliedenergistics2:creative_energy_cell>,
     ["IBCDEDCBI",
      "BCDEFEDCB",
      "CDEFGFEDC",
@@ -1371,11 +1340,11 @@ makeExtremeRecipe9(<thermalcultivation:watering_can:32000>,
      "   DDBBB ",
      "    CCC  ",
      "         "],
-    { A : <thermalcultivation:watering_can>.withTag({Water:0, Mode:0}),
-      B : <thermalcultivation:watering_can:1>.withTag({Water:0, Mode:0}),
-      C : <thermalcultivation:watering_can:2>.withTag({Water:0, Mode:0}),
-      D : <thermalcultivation:watering_can:3>.withTag({Water:0, Mode:0}),
-      E : <thermalcultivation:watering_can:4>.withTag({Water:0, Mode:0}),
+    { A : <thermalcultivation:watering_can>.withTag({Water:0, Mode:0}, false),
+      B : <thermalcultivation:watering_can:1>.withTag({Water:0, Mode:0}, false),
+      C : <thermalcultivation:watering_can:2>.withTag({Water:0, Mode:0}, false),
+      D : <thermalcultivation:watering_can:3>.withTag({Water:0, Mode:0}, false),
+      E : <thermalcultivation:watering_can:4>.withTag({Water:0, Mode:0}, false),
       I : <avaritia:resource:5>});
 
 makeExtremeRecipe9(<solarflux:solar_panel_infinity>,
@@ -1440,7 +1409,7 @@ makeShaped("sj2_Enderium_plating",
            plateShape, { P : <ore:plateEnderium> });
 
 // Creative Jetpack
-makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
+makeExtremeRecipe9(creativejetpack,
     ["  A   E  ",
      " AAA EEE ",
      " ABAIEFE ",
@@ -1463,7 +1432,7 @@ makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
      K: darksoulariumjetplate });
 
 // Creative Flux Capacitor
-makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
+makeExtremeRecipe9(<thermalexpansion:capacitor:32000>.withTag({Energy: 250000000}),
     ["ABCDEDCBA",
      "BCDEFEDCB",
      "CDEFGFEDC",
@@ -1473,11 +1442,11 @@ makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
      "CDEFGFEDC",
      "BCDEFEDCB",
      "ABCDEDCBA"],
-    { A: <thermalexpansion:capacitor>,
-      B: <thermalexpansion:capacitor:1>,
-      C: <thermalexpansion:capacitor:2>,
-      D: <thermalexpansion:capacitor:3>,
-      E: <thermalexpansion:capacitor:4>,
+    { A: <thermalexpansion:capacitor>.withTag({Energy: 0}, false),
+      B: <thermalexpansion:capacitor:1>.withTag({Energy: 0}, false),
+      C: <thermalexpansion:capacitor:2>.withTag({Energy: 0}, false),
+      D: <thermalexpansion:capacitor:3>.withTag({Energy: 0}, false),
+      E: <thermalexpansion:capacitor:4>.withTag({Energy: 0}, false),
       F: <draconicevolution:draconium_capacitor>,
       G: <draconicevolution:draconium_capacitor:1>,
       H: <contenttweaker:ultimate_power_storage>,
@@ -1519,15 +1488,20 @@ var xu13 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_ice"});
 var xu14 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_death"});
 var xu15 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"});
 var xu16 = <extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"});
-var dynamo0 = <thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
-var dynamo1 = <thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
-var dynamo3 = <thermalexpansion:dynamo:3>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
-var dynamo5 = <thermalexpansion:dynamo:5>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []});
+var dynamo0 = <thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
+var dynamo1 = <thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
+var dynamo3 = <thermalexpansion:dynamo:3>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
+var dynamo5 = <thermalexpansion:dynamo:5>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, Augments: []}, false);
 
 recipes.addShapeless(dynamo0, [<thermalexpansion:dynamo>,<thermalfoundation:upgrade:35>]);
 recipes.addShapeless(dynamo1, [<thermalexpansion:dynamo:1>,<thermalfoundation:upgrade:35>]);
 recipes.addShapeless(dynamo3, [<thermalexpansion:dynamo:3>,<thermalfoundation:upgrade:35>]);
 recipes.addShapeless(dynamo5, [<thermalexpansion:dynamo:5>,<thermalfoundation:upgrade:35>]);
+
+dynamo0 = dynamo0.only(isResonant);
+dynamo1 = dynamo1.only(isResonant);
+dynamo3 = dynamo3.only(isResonant);
+dynamo5 = dynamo5.only(isResonant);
 
 //Ultimate Collections
 

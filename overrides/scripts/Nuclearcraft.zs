@@ -1,6 +1,7 @@
 import crafttweaker.game.IGame;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.mods.IMod;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Fluid;
@@ -8,6 +9,8 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.Recipe;
 
 import scripts.CommonVars.makeShaped as makeShaped;
+import scripts.CommonVars.makeShapeless3 as makeShapeless3;
+import scripts.CommonVars.makeCompacting3 as makeCompacting3;
 
 //////////////////////////////////////////////////////////////
 /////////////////       Nuclearcraft       ///////////////////
@@ -106,19 +109,15 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:boron:2>),
     Removal(<nuclearcraft:boron:3>),
     Removal(<nuclearcraft:chest_hazmat>),
-    Removal(<nuclearcraft:cocoa_butter>),
-    Removal(<nuclearcraft:cocoa_solids>),
     Removal(<nuclearcraft:compound:0>), // Calcium Sulfate
     Removal(<nuclearcraft:compound:1>), // Crystal Binder
     Removal(<nuclearcraft:compound:3>), // Sodium Fluoride
     Removal(<nuclearcraft:compound:4>), // Potassium Fluoride
-    Removal(<nuclearcraft:compound:5>), // Sodium Hydroxide
     Removal(<nuclearcraft:compound:6>), // Potassium Hydroxide
     Removal(<nuclearcraft:compound:7>), // Borax
     Removal(<nuclearcraft:compound:8>), // Dimensional Blend
     Removal(<nuclearcraft:compound:9>), // Carbon-Manganese Blend
     Removal(<nuclearcraft:compound:10>), // Alugentum Dust
-    Removal(<nuclearcraft:dark_chocolate>),
     Removal(<nuclearcraft:decay_generator>),
     Removal(<nuclearcraft:dry_earth>),
     Removal(<nuclearcraft:dust:10>), // Zirconium Dust
@@ -134,7 +133,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:fusion_electromagnet_idle>),
     Removal(<nuclearcraft:fusion_electromagnet_transparent_idle>),
     Removal(<nuclearcraft:geiger_counter>),
-    Removal(<nuclearcraft:gelatin>),
     Removal(<nuclearcraft:gem:0>), // all NC gems
     Removal(<nuclearcraft:gem:1>),
     Removal(<nuclearcraft:gem:2>),
@@ -144,13 +142,10 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:gem:6>),
     Removal(<nuclearcraft:gem_dust:4>), // Hexagonal Boron Nitride
     Removal(<nuclearcraft:gem_dust:5>), // Crushed Fluorite
-    Removal(<nuclearcraft:gem_dust:6>), // Sulfur
     Removal(<nuclearcraft:gem_dust:8>), // Crushed Villiaumite
     Removal(<nuclearcraft:gem_dust:9>), // Crushed Carobbiite
     Removal(<nuclearcraft:gem_dust:10>),// Crushed Arsenic
     Removal(<nuclearcraft:gem_dust:11>),// Crushed End Stone
-    Removal(<nuclearcraft:graham_cracker>),
-    Removal(<nuclearcraft:ground_cocoa_nibs>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_copper>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_hard_carbon>),
     Removal(<nuclearcraft:heat_exchanger_condenser_tube_thermoconducting>),
@@ -179,9 +174,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:lithium_ion_battery_du>),
     Removal(<nuclearcraft:lithium_ion_battery_elite>),
     Removal(<nuclearcraft:lithium_ion_cell>),
-    Removal(<nuclearcraft:marshmallow>),
-    Removal(<nuclearcraft:milk_chocolate>),
-    Removal(<nuclearcraft:moresmore>),
     Removal(<nuclearcraft:part:5>),  // Magnesium Diboride Solenoid
     Removal(<nuclearcraft:part:6>),  // Bioplastic
     Removal(<nuclearcraft:part:11>), // Empty Frame
@@ -193,7 +185,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:rad_shielding:1>), // Medium Rad Shielding
     Removal(<nuclearcraft:rad_shielding:2>), // Heavy Rad Shielding
     Removal(<nuclearcraft:rad_x>),
-    Removal(<nuclearcraft:roasted_cocoa_beans>, true),
     Removal(<nuclearcraft:salt_fission_beam>),
     Removal(<nuclearcraft:salt_fission_computer_port>),
     Removal(<nuclearcraft:salt_fission_distributor>),
@@ -206,7 +197,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:salt_fission_vent>),
     Removal(<nuclearcraft:salt_fission_vessel>),
     Removal(<nuclearcraft:salt_fission_wall>),
-    Removal(<nuclearcraft:smore>),
     Removal(<nuclearcraft:solar_panel_advanced>),
     Removal(<nuclearcraft:solar_panel_basic>),
     Removal(<nuclearcraft:solar_panel_du>),
@@ -230,7 +220,6 @@ val removals as Removal[] = [
     Removal(<nuclearcraft:turbine_rotor_shaft>),
     Removal(<nuclearcraft:turbine_rotor_stator>),
     Removal(<nuclearcraft:turbine_wall>),
-    Removal(<nuclearcraft:unsweetened_chocolate>),
     Removal(<nuclearcraft:upgrade:0>), // Speed Upgrade (NC Machines)
     Removal(<nuclearcraft:upgrade:1>), // Energy Upgrade (NC Machines)
     Removal(<nuclearcraft:voltaic_pile_advanced>),
@@ -380,10 +369,7 @@ val ncFluids as string[] = [
     "boron11",
     "boron_nitride_solution",
     "calcium_sulfate_solution",
-    "chocolate_liquor",
-    "cocoa_butter",
     "condensate_water",
-    "dark_chocolate",
     "diborane",
     "ethanol",
     "ethene",
@@ -392,10 +378,8 @@ val ncFluids as string[] = [
     "flibe",
     "fluorite_water",
     "fluoromethane",
-    "gelatin",
     "hard_carbon",
     "high_pressure_steam",
-    "hydrated_gelatin",
     "hydrofluoric_acid",
     "koh",
     "lif",
@@ -407,9 +391,7 @@ val ncFluids as string[] = [
     "low_pressure_steam",
     "low_quality_steam",
     "manganese_dioxide",
-    "marshmallow",
     "milk",
-    "milk_chocolate",
     "nak",
     "nak_hot",
     "naoh",
@@ -424,10 +406,8 @@ val ncFluids as string[] = [
     "sic_vapor",
     "sodium_fluoride_solution",
     "sodium_hydroxide_solution",
-    "sugar",
     "sulfur",
-    "tough",
-    "unsweetened_chocolate"
+    "tough"
 ] as string[];
 
 for fluid in ncFluids {
@@ -474,7 +454,11 @@ for fluid in sharedFluids {
     }
 }
 
-// End of mass removals, now for replacements:
+// End of mass removals.
+
+mods.jei.JEI.addItem(<nuclearcraft:foursmore>); // This disappeared apparently.
+
+// Now for replacements:
 
 recipes.remove(<nuclearcraft:compound:2>);
 mixer.recipeBuilder()
@@ -496,17 +480,7 @@ alloy.recipeBuilder()
 
 alloy.recipeBuilder()
     .outputs([<nuclearcraft:alloy:1> * 2])
-    .inputs([<ore:dustFerroboron>, <ore:ingotLithium>])
-    .duration(300).EUt(16).buildAndRegister();
-
-alloy.recipeBuilder()
-    .outputs([<nuclearcraft:alloy:1> * 2])
     .inputs([<ore:ingotFerroboron>, <ore:dustLithium>])
-    .duration(300).EUt(16).buildAndRegister();
-
-alloy.recipeBuilder()
-    .outputs([<nuclearcraft:alloy:1> * 2])
-    .inputs([<ore:dustFerroboron>, <ore:dustLithium>])
     .duration(300).EUt(16).buildAndRegister();
 
 // permutations of steel and boron ingots/dusts
@@ -673,7 +647,7 @@ makeShaped("of_nc_rtg_uranium", <nuclearcraft:rtg_uranium>,
      "ABA"],
     { A : <ore:plateBasic>,
       B : <ore:ingotGraphite>,
-      C : <gregtech:compressed_3:12> });
+      C : <gregtech:meta_block_compressed_4:11> }); //Uranium Block
 
 // Basic Plating
 recipes.remove(<nuclearcraft:part>);
@@ -825,8 +799,8 @@ thermal_sep.recipeBuilder()
 
 // Add tiny fuel clumps to the GTCE Packager
 var clumps = [
-    
-    [<nuclearcraft:thorium:2> , <nuclearcraft:thorium>], 
+
+    [<nuclearcraft:thorium:2> , <nuclearcraft:thorium>],
     [<nuclearcraft:thorium:6> , <nuclearcraft:thorium:4> ],
     [<nuclearcraft:uranium:2> , <nuclearcraft:uranium>],
     [<nuclearcraft:uranium:6> , <nuclearcraft:uranium:4> ],
@@ -855,12 +829,360 @@ var clumps = [
 
 
 for iso in clumps {
-    
+
     packager.recipeBuilder()
         .inputs(iso[0]*9)
         .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
         .outputs(iso[1])
         .duration(10).EUt(12).buildAndRegister();
 
-    
 }
+
+packager.findRecipe(12, [<ore:nuggetUranium235>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
+packager.findRecipe(12, [<ore:nuggetPlutonium241>.firstItem * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 1, not_consumed: 1 as byte})], [null]).remove();
+
+
+/*  Remove NC/GTCE overlapping block and nugget recipes and replace with non-oredict ones */
+
+// U235
+recipes.removeByRecipeName("gregtech:nugget_assembling_uranium235");
+makeCompacting3("gregtech_nugget_assembling_uranium235", <gregtech:meta_item_1:10076>, <gregtech:meta_item_1:9076>);
+
+recipes.removeByRecipeName("gregtech:block_compress_uranium235");
+makeCompacting3("gregtech_block_compress_uranium235", <gregtech:meta_block_compressed_4:12>, <gregtech:meta_item_1:10076>); //Uranium 235 Block
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.uranium._235");
+makeCompacting3("nuclearcraft_item.nuclearcraft.uranium._235", <nuclearcraft:uranium:4>, <nuclearcraft:uranium:6>);
+
+recipes.removeByRecipeName("gregtech:nugget_disassembling_uranium235");
+recipes.addShapeless("gregtech_nugget_disassembling_uranium235", <gregtech:meta_item_1:9076> * 9, [<gregtech:meta_item_1:10076>]);
+
+// Pu241
+recipes.removeByRecipeName("gregtech:nugget_assembling_plutonium241");
+makeCompacting3("gregtech_nugget_assembling_plutonium241", <gregtech:meta_item_1:10053>, <gregtech:meta_item_1:9053>);
+
+recipes.removeByRecipeName("gregtech:block_compress_plutonium241");
+makeCompacting3("gregtech_block_compress_plutonium241", <gregtech:meta_block_compressed_3:5>, <gregtech:meta_item_1:10053>); //Plutonium 241 block
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.plutonium._241");
+makeCompacting3("nuclearcraft_item.nuclearcraft.plutonium._235", <nuclearcraft:plutonium:8>, <nuclearcraft:plutonium:10>);
+
+recipes.removeByRecipeName("gregtech:nugget_disassembling_plutonium241");
+recipes.addShapeless("gregtech_nugget_disassembling_plutonium241", <gregtech:meta_item_1:9053> * 9, [<gregtech:meta_item_1:10053>]);
+
+// Also fix the fuels since those use oredict...
+function makeLEFuel(name as string,
+                    output as IItemStack,
+                    replacements as IIngredient[string]) {
+    makeShapeless3(name, output, ["ABB","BBB","BBB"], replacements);
+}
+
+function makeHEFuel(name as string,
+                    output as IItemStack,
+                    replacements as IIngredient[string]) {
+    makeShapeless3(name, output, ["AAA","ABB","BBB"], replacements);
+}
+
+var U235 as IIngredient[string] = {"A":<nuclearcraft:uranium:4>, "B":<nuclearcraft:uranium:8>};
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_uranium.leu_235");
+makeLEFuel("nuclearcraft_item.nuclearcraft.fuel_uranium.leu_235", <nuclearcraft:fuel_uranium:4>, U235);
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_uranium.heu_235");
+makeHEFuel("nuclearcraft_item.nuclearcraft.fuel_uranium.heu_235", <nuclearcraft:fuel_uranium:6>, U235);
+
+
+var P241 as IIngredient[string] = {"A":<nuclearcraft:plutonium:8>, "B":<nuclearcraft:plutonium:12>};
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_plutonium.lep_241");
+makeLEFuel("nuclearcraft_item.nuclearcraft.fuel_plutonium.lep_241", <nuclearcraft:fuel_plutonium:4>, P241);
+
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.fuel_plutonium.hep_241");
+makeHEFuel("nuclearcraft_item.nuclearcraft.fuel_plutonium.hep_241", <nuclearcraft:fuel_plutonium:6>, P241);
+
+
+
+// Oh yeah it's S'more time
+
+// Graham Crackers
+compressor.recipeBuilder()
+    .outputs(<nuclearcraft:graham_cracker>)
+    .inputs([<ore:dustWheat> * 2])
+    .duration(400).EUt(2).buildAndRegister();
+
+// Gelatin from meat
+macerator.recipeBuilder()
+    .outputs(<nuclearcraft:gelatin>)
+    .inputs([<ore:dustSmallMeat>])
+    .duration(40).EUt(30).buildAndRegister();
+
+// Gelatin from fish
+var fishes as IItemStack[] = [
+    <minecraft:fish>,
+    <minecraft:fish:1>,
+    <minecraft:fish:2>,
+    <minecraft:fish:3>
+] as IItemStack[];
+
+for fish in fishes {
+    macerator.recipeBuilder()
+        .outputs(<nuclearcraft:gelatin> * 4)
+        .inputs([fish])
+        .duration(160).EUt(30).buildAndRegister();
+}
+
+// Hydrated gelatin
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:hydrated_gelatin> * 144)
+    .fluidInputs([<fluid:gelatin> * 144, <fluid:water> * 500])
+    .duration(50).EUt(8).buildAndRegister();
+
+// Molten sugar
+fluid_extractor.recipeBuilder()
+    .fluidOutputs(<fluid:sugar> * 144)
+    .inputs(<ore:dustSugar>)
+    .duration(32).EUt(2).buildAndRegister();
+
+// Marshmallow fluid
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:marshmallow> * 144)
+    .fluidInputs(<fluid:sugar> * 72, <fluid:hydrated_gelatin> * 144)
+    .duration(100).EUt(30).buildAndRegister();
+
+// Cocoa nibs
+macerator.recipeBuilder()
+    .outputs(<nuclearcraft:ground_cocoa_nibs>)
+    .inputs(<nuclearcraft:roasted_cocoa_beans>)
+    .duration(100).EUt(20).buildAndRegister();
+
+// Cocoa butter
+fluid_extractor.recipeBuilder()
+    .fluidOutputs(<fluid:cocoa_butter> * 144)
+    .outputs(<nuclearcraft:cocoa_solids>)
+    .inputs([<nuclearcraft:ground_cocoa_nibs>])
+    .duration(32).EUt(2).buildAndRegister();
+
+// Chocolate liquor
+blast_furnace.recipeBuilder()
+    .fluidOutputs(<fluid:chocolate_liquor> * 144)
+    .outputs(<ore:dustTinyCarbon>.firstItem)
+    .inputs([<nuclearcraft:ground_cocoa_nibs>])
+    .property("temperature", 307) // ah yes, blast furnace temperatures
+    .duration(100).EUt(120).buildAndRegister();
+
+// Unsweetened chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:unsweetened_chocolate> * 288)
+    .fluidInputs([<fluid:cocoa_butter> * 144, <fluid:chocolate_liquor> * 144])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Dark (best) chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:dark_chocolate> * 144)
+    .fluidInputs([<fluid:unsweetened_chocolate> * 144, <fluid:sugar> * 72])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Milk chocolate
+mixer.recipeBuilder()
+    .fluidOutputs(<fluid:milk_chocolate> * 288)
+    .fluidInputs([<fluid:dark_chocolate> * 144, <fluid:milk> * 250])
+    .duration(100).EUt(30).buildAndRegister();
+
+// Solidification and Fluid Extraction
+function smoreIngredient(
+            stack as IItemStack,
+            fluid as ILiquidStack,
+            mold as IItemStack) {
+    // Solidification
+    solidifier.recipeBuilder()
+        .outputs(stack)
+        .notConsumable(mold)
+        .fluidInputs(fluid * 144)
+        .duration(100).EUt(16).buildAndRegister();
+
+    // Fluid Extraction
+    fluid_extractor.recipeBuilder()
+        .fluidOutputs(fluid * 144)
+        .inputs(stack)
+        .duration(100).EUt(16).buildAndRegister();
+}
+
+var ballMold  as IItemStack = <gregtech:meta_item_1:32307>;
+var plateMold as IItemStack = <gregtech:meta_item_1:32301>;
+var ingotMold as IItemStack = <gregtech:meta_item_1:32306>;
+
+smoreIngredient(<nuclearcraft:marshmallow>, <fluid:marshmallow>, ballMold);
+smoreIngredient(<nuclearcraft:milk_chocolate>, <fluid:milk_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:dark_chocolate>, <fluid:dark_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:unsweetened_chocolate>, <fluid:unsweetened_chocolate>, plateMold);
+smoreIngredient(<nuclearcraft:gelatin>, <fluid:gelatin>, plateMold);
+smoreIngredient(<nuclearcraft:cocoa_butter>, <fluid:cocoa_butter>, ingotMold);
+
+// Advanced *S'more *S'mingots
+
+var smingots as IItemStack[] = [
+    <nuclearcraft:foursmore>,
+    <contenttweaker:eightsmore>,
+    <contenttweaker:sixteensmore>,
+    <contenttweaker:thirtytwosmore>,
+    <contenttweaker:sixtyfoursmore>
+] as IItemStack[];
+
+var i = 1;
+while i < smingots.length {
+    var inSmingot = smingots[i - 1];
+    var outSmingot = smingots[i];
+
+    makeShaped(outSmingot.definition.id.replaceAll(":", "_"), outSmingot,
+        ["PC",
+         "MP"],
+        { P: inSmingot,
+          C: <nuclearcraft:milk_chocolate>,
+          M: <nuclearcraft:marshmallow> });
+
+    i += 1;
+}
+
+
+//Dust smelting into ingot
+furnace.remove(<gregtech:meta_item_1:10052>);
+//Tiny pile smelting into nugget
+furnace.remove(<gregtech:meta_item_1:9052>);
+//Solidifying into block
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 1296]).remove();
+//Solidifying into nugget
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
+//Solidifying into plates
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32301>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
+//Solidifying into ingots
+solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>.withTag({not_consumed: 1 as byte})], [<liquid:plutonium> * 144]).remove();
+
+recipes.removeByRecipeName("chisel:uncraft_blockuranium");
+
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_uranium>)
+    .fluidOutputs(<liquid:uranium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+val liq as int[][ILiquidStack] = {
+    
+    //Fluid : duration, power
+    <liquid:water> * 178 : [3808, 30],
+    <liquid:distilled_water> * 134 : [2475, 30],
+    <liquid:lubricant> * 44 : [952, 30]
+
+};
+
+val blocks = [
+
+    //Uranium
+    [<nuclearcraft:block_depleted_uranium>, <gregtech:meta_item_1:12075> * 9],
+    //Americium
+    [<nuclearcraft:block_depleted_americium>, <gregtech:meta_item_1:12002> * 9],
+    //Thorium
+    [<nuclearcraft:block_depleted_thorium>, <gregtech:meta_item_1:12069> * 9]
+
+] as IItemStack[][];
+
+for blockItem in blocks {
+
+    for liquid, values in liq {
+   
+        saw.recipeBuilder()
+            .inputs(blockItem[0])
+            .fluidInputs(liquid)
+            .outputs(blockItem[1])
+            .duration(values[0]).EUt(values[1]).buildAndRegister();
+
+    }
+}
+
+//NC Thorium 230 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_thorium>)
+    .fluidOutputs(<liquid:thorium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Californium 252 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_californium>)
+    .fluidOutputs(<liquid:californium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Berklium 247 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_berkelium>)
+    .fluidOutputs(<liquid:berkelium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Curium 246 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_curium>)
+    .fluidOutputs(<liquid:curium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Americium 243 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_americium>)
+    .fluidOutputs(<liquid:americium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Neptunium 237 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_neptunium>)
+    .fluidOutputs(<liquid:neptunium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Plutonium 242 Block
+fluid_extractor.recipeBuilder()
+    .inputs(<nuclearcraft:block_depleted_plutonium>)
+    .fluidOutputs(<liquid:plutonium2> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Plutonium 244 Block (GTCE)
+fluid_extractor.recipeBuilder()
+    .inputs(<gregtech:meta_block_compressed_3:4>) //Plutonium Block
+    .fluidOutputs(<liquid:plutonium> * 1296)
+    .duration(720).EUt(32).buildAndRegister();
+
+//Remove Duping Thorium via extra Thorium230 tiny Pile
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:2069>], [null]).remove();
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:10069>], [null]).remove();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2069>)
+    .outputs(<nuclearcraft:thorium:4>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10069>)
+    .outputs(<nuclearcraft:thorium:4>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+//Remove Duping Uranium via extra Uranium 235 tiny Pile
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:2075>], [null]).remove();
+thermal_sep.findRecipe(48, [<gregtech:meta_item_1:10075>], [null]).remove();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2075>)
+    .outputs(<nuclearcraft:uranium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10075>)
+    .outputs(<nuclearcraft:uranium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+//Adding Thermal Centrifuge Recipes for GTCE Pu241 -> NC Pu241
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10053>)
+    .outputs(<nuclearcraft:plutonium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+thermal_sep.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2053>)
+    .outputs(<nuclearcraft:plutonium:8>)
+    .duration(3200).EUt(48).buildAndRegister();
+
+//Recipe for the Hyperspace disc
+recipes.remove(<nuclearcraft:record_hyperspace>);
+recipes.addShapeless("of_nc_record_hyperspace", <nuclearcraft:record_hyperspace>, [<ore:record>, <enderio:item_material:20>]);

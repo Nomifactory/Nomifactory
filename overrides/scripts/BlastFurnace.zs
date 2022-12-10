@@ -53,9 +53,17 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2231>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2231>]).outputs([<gregtech:meta_item_1:10231>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 //Annealed Copper [tier 1]
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10018>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<gregtech:meta_item_1:10087>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
+//Remove Annealed Copper recipes from Copper dust and ingot
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2018>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10018>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:oxygen> * 1000]).remove();
+//Adjusting the Temperature and duration of Annealed Copper
+blast_furnace.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:10018>])
+	.fluidInputs([<liquid:oxygen> * 1000])
+	.circuit(1)
+	.outputs([<gregtech:meta_item_1:10087>])
+	.property("temperature", 1000)
+	.duration(200).EUt(120).buildAndRegister();
 
 //HSLA - unused
 //blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<nuclearcraft:alloy:15>]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
@@ -91,10 +99,10 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2232>], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2232>]).outputs([<gregtech:meta_item_1:10232>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nickel Zinc Ferrite [tier 3]
+//Furnace Recipe from NZF dust
 furnace.addRecipe(<gregtech:meta_item_1:10424>, <gregtech:meta_item_1:2424>, 0.0);
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2423>], [<liquid:oxygen> * 2000]).remove();	
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2424>], [null]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2423>]).fluidInputs([<liquid:oxygen> * 2000]).outputs([<gregtech:meta_item_1:10424>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+//Remove the recipe from NZF dust
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2424>], [null]).remove();
 
 //Stainless Steel [tier 3]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2183>], [null]).remove();	
@@ -123,9 +131,8 @@ furnace.addRecipe(<gregtech:meta_item_1:10133>, <gregtech:meta_item_1:2133>, 0.0
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10044> * 4,<gregtech:meta_item_1:10016>]).outputs([<gregtech:meta_item_1:11133> * 5]).property("temperature", 2100).duration(800).EUt(480).buildAndRegister();
 
 //Titanium [tier 4]
-blast_furnace.findRecipe(480, [<gregtech:meta_item_1:2038> * 2], [<liquid:titanium_tetrachloride> * 1000]).remove();
-blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2072>], [null]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2038> * 2]).fluidInputs([<liquid:titanium_tetrachloride> * 1000]).outputs([<gregtech:meta_item_1:11072>,<gregtech:meta_item_1:2125> * 6]).property("temperature", 2100).duration(800).EUt(480).buildAndRegister();
+blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2072>], [null]).remove();
+
 
 //Yttrium [tier 4]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2078>], [null]).remove();	
@@ -134,7 +141,11 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2078>]).outputs([<gr
 //Tungstencarbide [tier 5]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2300>], [null]).remove();	
 blast_furnace.findRecipe(480, [<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>], [null]).remove();
-blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>]).outputs([<gregtech:meta_item_1:11300>]).property("temperature", 2700).duration(500).EUt(480).buildAndRegister();	
+blast_furnace.recipeBuilder()
+	.inputs([<gregtech:meta_item_1:10074>,<gregtech:meta_item_1:2012>])
+	.outputs([<gregtech:meta_item_1:11300> * 2])
+	.property("temperature", 2700)
+	.duration(500).EUt(480).buildAndRegister();	
 furnace.addRecipe(<gregtech:meta_item_1:10300>, <gregtech:meta_item_1:2300>, 0.0);
 
 //Tungstensteel [tier 5]
@@ -183,18 +194,27 @@ blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2135>], [null]).remove();
 furnace.addRecipe(<gregtech:meta_item_1:10135>, <gregtech:meta_item_1:2135>, 0.0);
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10045>,<gregtech:meta_item_1:10072>]).outputs([<gregtech:meta_item_1:11135> * 2]).property("temperature", 4500).duration(7000).EUt(120).buildAndRegister();	
 
+//Osmium [Tier 10]
+
+blast_furnace.findRecipe(120, [<metaitem:dustOsmium>], [null]).remove();
+
+blast_furnace.recipeBuilder()
+	.inputs(<metaitem:dustOsmium>)
+	.outputs(<metaitem:ingotHotOsmium>)
+	.property("temperature", 3306)
+	.duration(400).EUt(120).buildAndRegister();
+
 //Naquadah [tier 11]
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2307>], [null]).remove();	
-freezer.findRecipe(120, [<gregtech:meta_item_1:11307>], [null]).remove();
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:11307>);	
-furnace.addRecipe(<gregtech:meta_item_1:10307>, <gregtech:meta_item_1:2307>, 0.0);
-
-//Enriched Naquadah
-//FIXME: [ERROR] Invalid amount of recipe inputs. Actual: 7. Should be between 1 and 3 inclusive. // blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2307>,<enderio:item_material:20>,<enderio:item_material:37>,<enderio:item_material:36>,<enderio:item_material:35>,<enderio:item_material:34>,<contenttweaker:grainsofinnocence>]).fluidInputs([<liquid:ender_distillation> * 1000]).outputs([<gregtech:meta_item_1:2309>]).property("temperature", 5400).duration(3600).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:2307>)
+	.outputs(<gregtech:meta_item_1:11307>)
+	.property("temperature", 5400)
+	.EUt(1920).duration(200).buildAndRegister();
 
 //Naquadah Doped Boule [tier 11]
-blast_furnace.findRecipe(1920, [<gregtech:compressed_2:15> * 9, <gregtech:meta_item_1:10307>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:argon> * 8000]).remove();	
-blast_furnace.recipeBuilder().inputs([<gregtech:compressed_2:15> * 9, <gregtech:meta_item_1:10307>]).fluidInputs([<liquid:argon> * 16000]).outputs([<gregtech:meta_item_2:32438>]).property("temperature", 5400).duration(1440).EUt(8000).buildAndRegister();
+blast_furnace.findRecipe(1920, [<gregtech:meta_block_compressed_3:13> * 9, <gregtech:meta_item_1:10307>, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:argon> * 8000]).remove();	
+blast_furnace.recipeBuilder().inputs([<gregtech:meta_block_compressed_3:13> * 9, <gregtech:meta_item_1:10307>]).fluidInputs([<liquid:argon> * 16000]).outputs([<gregtech:meta_item_2:32438>]).property("temperature", 5400).duration(1440).EUt(8000).buildAndRegister();
 	
 //Osiridium [tier 12]		DISABLED IN FAVOR OF VANILLA RECIPE
 //blast_furnace.findRecipe(1920, [<gregtech:meta_item_1:10032> * 3, <gregtech:meta_item_1:10047>], [<liquid:helium>*1000]).remove();
@@ -228,12 +248,51 @@ blast_furnace.recipeBuilder().inputs([<redstonearsenal:material>]).outputs([<red
 
 //EnderIO Alloys
 alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<minecraft:redstone>]).outputs([<enderio:item_alloy_ingot:4>]).duration(150).EUt(16).buildAndRegister();
-alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<forestry:crafting_material>]).outputs([<enderio:item_alloy_ingot:5>]).duration(150).EUt(16).buildAndRegister();
+alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<ore:dustPulsating>]).outputs([<enderio:item_alloy_ingot:5>]).duration(150).EUt(16).buildAndRegister();
 
 
 //Removed
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:2310>], [null]).remove();		//Naquadriah
 furnace.addRecipe(<gregtech:meta_item_1:10310>, <gregtech:meta_item_1:2310>, 0.0);
 
+// Fluxed Electrum Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<redstonearsenal:material:0> * 9])
+    .inputs([<metaitem:dustElectrum> * 6, <thermalfoundation:material:102>, <thermalfoundation:material:101>, <thermalfoundation:material:1028>])
+    .duration(400).EUt(30).buildAndRegister();
 
+// Lumium Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<thermalfoundation:material:102> * 4])
+    .inputs([<metaitem:dustTinAlloy> * 4, <metaitem:dustSterlingSilver> * 2, <extendedcrafting:material:7> * 2, <thermalfoundation:material:894>])
+    .duration(400).EUt(30).buildAndRegister();
+
+// Signalum Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<thermalfoundation:material:101> * 4])
+    .inputs([<metaitem:dustAnnealedCopper> * 4, <metaitem:dustArdite> * 2, <metaitem:dustRedAlloy> * 2, <thermalfoundation:material:893>])
+    .duration(400).EUt(30).buildAndRegister();
+
+// Enderium Blend (Mixer)
+mixer.recipeBuilder()
+    .outputs([<thermalfoundation:material:103> * 4])
+    .fluidInputs([<liquid:lead> * 576])
+    .inputs([<metaitem:dustPlatinum> * 2, <metaitem:dustBlueSteel>, <metaitem:dustOsmium>, <thermalfoundation:material:895>])
+    .duration(400).EUt(30).buildAndRegister();
+
+// Mixer recipes for HSS-G/E/S
+mixer.recipeBuilder()
+    .outputs([<metaitem:dustHssg> * 9])
+    .inputs([<metaitem:dustTungstenSteel> * 5, <metaitem:dustChrome>, <metaitem:dustMolybdenum> * 2, <metaitem:dustVanadium>])
+    .duration(900).EUt(8).buildAndRegister();
+
+mixer.recipeBuilder()
+    .outputs([<metaitem:dustHsse> * 9])
+    .inputs([<metaitem:dustHssg> * 6, <metaitem:dustCobalt>, <metaitem:dustManganese>, <metaitem:dustSilicon>])
+    .duration(900).EUt(8).buildAndRegister();
+
+mixer.recipeBuilder()
+    .outputs([<metaitem:dustHsss> * 9])
+    .inputs([<metaitem:dustHssg> * 6, <metaitem:dustIridium> * 2, <metaitem:dustOsmium>])
+    .duration(900).EUt(8).buildAndRegister();
 

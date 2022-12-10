@@ -73,7 +73,23 @@ recipes.remove(<appliedenergistics2:part:16>);
 alloy.recipeBuilder().inputs([<appliedenergistics2:material:8>, <appliedenergistics2:part:140>]).outputs(<appliedenergistics2:part:16> * 2).duration(50).EUt(16).buildAndRegister();	
 
 //Covered Cable
-assembler.recipeBuilder().inputs([<appliedenergistics2:part:16>]).fluidInputs(<liquid:rubber> * 144).outputs(<appliedenergistics2:part:36>).duration(20).EUt(16).buildAndRegister();	
+assembler.recipeBuilder()
+	.inputs([<appliedenergistics2:part:16>])
+	.fluidInputs(<liquid:rubber> * 144)
+	.outputs(<appliedenergistics2:part:36>)
+	.duration(20).EUt(16).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs([<appliedenergistics2:part:16>])
+	.fluidInputs(<liquid:styrene_butadiene_rubber> * 96)
+	.outputs(<appliedenergistics2:part:36>)
+	.duration(20).EUt(16).buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs([<appliedenergistics2:part:16>])
+	.fluidInputs(<liquid:silicon_rubber> * 72)
+	.outputs(<appliedenergistics2:part:36>)
+	.duration(20).EUt(16).buildAndRegister();
 	
 //ME Conduit
 recipes.remove(<enderio:item_me_conduit>);	
@@ -193,10 +209,10 @@ Inscriber.removeRecipe(<appliedenergistics2:material:14>);
 Inscriber.removeRecipe(<appliedenergistics2:material:13>); 	
 Inscriber.removeRecipe(<appliedenergistics2:material:19>); 	
 Inscriber.removeRecipe(<appliedenergistics2:material:15>); 	
-engraver.recipeBuilder().inputs([<gregtech:compressed_0>]).notConsumable(<ore:craftingLensRed>).outputs([<appliedenergistics2:material:14>]).EUt(120).duration(1600).buildAndRegister();
-engraver.recipeBuilder().inputs([<gregtech:compressed_0>]).notConsumable(<ore:craftingLensBlue>).outputs([<appliedenergistics2:material:13>]).EUt(120).duration(1600).buildAndRegister();
-engraver.recipeBuilder().inputs([<gregtech:compressed_0>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<appliedenergistics2:material:19>]).EUt(120).duration(1600).buildAndRegister();
-engraver.recipeBuilder().inputs([<gregtech:compressed_0>]).notConsumable(<ore:craftingLensLime>).outputs([<appliedenergistics2:material:15>]).EUt(120).duration(1600).buildAndRegister();
+engraver.recipeBuilder().inputs([<gregtech:meta_block_compressed_0:1>]).notConsumable(<ore:craftingLensRed>).outputs([<appliedenergistics2:material:14>]).EUt(120).duration(1600).buildAndRegister();
+engraver.recipeBuilder().inputs([<gregtech:meta_block_compressed_0:1>]).notConsumable(<ore:craftingLensBlue>).outputs([<appliedenergistics2:material:13>]).EUt(120).duration(1600).buildAndRegister();
+engraver.recipeBuilder().inputs([<gregtech:meta_block_compressed_0:1>]).notConsumable(<gregtech:meta_item_1:15111>).outputs([<appliedenergistics2:material:19>]).EUt(120).duration(1600).buildAndRegister();
+engraver.recipeBuilder().inputs([<gregtech:meta_block_compressed_0:1>]).notConsumable(<ore:craftingLensLime>).outputs([<appliedenergistics2:material:15>]).EUt(120).duration(1600).buildAndRegister();
  
 recipes.addShapeless(<appliedenergistics2:part:120>, [<gregtech:meta_item_1:16184>]); 
  
@@ -330,3 +346,37 @@ recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
 	[<gregtech:meta_item_1:32724>, null, <gregtech:meta_item_1:32724>],
 	[null, <appliedenergistics2:material:41>, null],
 	[null, null, null]]);
+
+//skystone and skystone dust
+alloy.recipeBuilder()
+	.outputs(<appliedenergistics2:sky_stone_block>)
+	.inputs(<minecraft:stone>, <minecraft:end_stone>)
+	.duration(200).EUt(16).buildAndRegister();
+
+macerator.recipeBuilder()
+	.outputs(<appliedenergistics2:material:45>)
+	.inputs(<appliedenergistics2:sky_stone_block>)
+	.duration(45).EUt(8).buildAndRegister();
+
+// Oredict Storage Bus
+recipes.removeByRecipeName("appliedenergistics2:network/parts/oredict_storage_bus");
+recipes.removeByRecipeName("appliedenergistics2:network/parts/oredict_storage_bus_alt");
+recipes.addShapeless("nf_oredict_storage_bus",
+	<appliedenergistics2:part:222>,
+	[<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
+
+// Extended Processing Pattern Terminal
+recipes.removeByRecipeName("appliedenergistics2:network/parts/terminal_expanded_processing");
+recipes.addShaped("nf_terminal_expanded_processing", <appliedenergistics2:part:341>, [
+    [null, <appliedenergistics2:part:340>, null],
+    [null, <ore:circuitExtreme>, null],
+    [null, <packagedauto:encoder>, null]
+]);
+
+// Configuration Fluid Interface Terminal
+recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals_fluid_interface_configuration");
+recipes.addShapeless("nf_configuration_fluid_interface_terminal", <appliedenergistics2:part:522>, [
+    <appliedenergistics2:part:520>,
+    <appliedenergistics2:material:24>,
+    <appliedenergistics2:fluid_interface>.or(<appliedenergistics2:part:441>)
+]);

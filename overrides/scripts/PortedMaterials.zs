@@ -54,7 +54,7 @@ enderium.setCableProperties(131072, 1, 0);
 draconium.setCableProperties(524288, 1, 0);
 omnium.setCableProperties(2147483647, 1, 0);
 
-val microversium = MaterialRegistry.createIngotMaterial(715, "microversium", 0x837793, "metallic", 2);
+val microversium = MaterialRegistry.createIngotMaterial(976, "microversium", 0x837793, "metallic", 2);
 microversium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_GEAR", "GENERATE_LONG_ROD"]);
 
 /*
@@ -67,4 +67,7 @@ microversium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_GEAR", "GENER
  Components generated from these IDs will have a metadata value following a
  pattern: the prefix number for that part's range, followed by the material
  ID (such as: 711, 1711, 2711, 9711, 26711 for the material with ID 711).
+ 
+ Note that Shadows of Greg adds a material at ID 975, so all materials registered
+ including and after microversium should take on IDs in the range 975 < x <= 1000.
  */

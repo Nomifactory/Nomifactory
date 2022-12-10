@@ -17,22 +17,12 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_restonia_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <gregtech:meta_item_1:8085>, <gregtech:meta_item_1:10237>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "sulfuric_acid", Amount: 1000}}), <extendedcrafting:material:19>, 1000000, 400);
 
-//Empowered Restonia Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_restonia_gear>, <moreplates:restonia_gear>, <gregtech:compressed_4:1>, <gregtech:compressed_10:15>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "tritium", Amount: 1000}}), <extendedcrafting:material:13>, 1000000, 400);
-
-
-
 
 //Empowered Palis 
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:1>);
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:1>);
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_palis_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal:1>, <gregtech:meta_item_1:8157>, <thermalfoundation:material:136>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <extendedcrafting:material:16>, 1000000, 400);
-
-//Empowered Palis Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_palis_gear>, <moreplates:palis_gear>, <gregtech:compressed_7:11>, <thermalfoundation:storage:8>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "osmiridium", Amount: 1000}}), <extendedcrafting:material:10>, 1000000, 400);
-
-
 
 
 //Empowered Enori
@@ -41,11 +31,6 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_enori_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <gregtech:meta_item_1:8226>, <enderio:item_alloy_ingot:8>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "helium", Amount: 1000}}), <extendedcrafting:material:14>, 1000000, 400);
 
-//Empowered Enori Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_enori_gear>, <moreplates:enori_gear>, <gregtech:compressed_10:5>, <enderio:block_alloy:8>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "helium3", Amount: 1000}}), <extendedcrafting:material:8>, 1000000, 400);
-
-
-
 
 //Empowered Void Crystal
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
@@ -53,21 +38,12 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_void_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <actuallyadditions:item_misc:5>, <enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "carbon", Amount: 1000}}), <extendedcrafting:material:15>, 1000000, 400);
 
-//Empowered Void Crystal Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_void_gear>, <moreplates:void_gear>, <actuallyadditions:block_misc:2>, <enderio:block_alloy:6>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "naquadria", Amount: 1000}}), <extendedcrafting:material:9>, 1000000, 400);
-
-
-
 
 //Empowered Diamatine
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:2>);
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:2>);
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_diamatine_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <extendedcrafting:material:40>, <extendedcrafting:material:24>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "nitrogen_dioxide", Amount: 1000}}), <extendedcrafting:material:18>, 1000000, 400);
-
-//Empowered Diamatine Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_diamatine_gear>, <moreplates:diamatine_gear>, <extendedcrafting:storage:6>, <extendedcrafting:storage:3>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "noble_gases", Amount: 1000}}), <extendedcrafting:material:12>, 1000000, 400);
-
 
 
 
@@ -77,8 +53,6 @@ mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_e
 mods.actuallyadditions.Empowerer.removeRecipe(<moreplates:empowered_emeradic_gear>);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <contenttweaker:stabilizeduranium>, <enderio:item_alloy_ingot:2>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "argon", Amount: 1000}}), <extendedcrafting:material:17>, 1000000, 400);
 
-//Empowered Emerald Gear
-mods.actuallyadditions.Empowerer.addRecipe(<moreplates:empowered_emeradic_gear>, <moreplates:emeradic_gear>, <gregtech:compressed_3:12>, <enderio:block_alloy:2>, <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "krypton", Amount: 1000}}), <extendedcrafting:material:11>, 1000000, 400);
 	
 //Snad	
 recipes.remove(<snad:snad>);
@@ -99,7 +73,7 @@ recipes.remove(<actuallyadditions:block_misc:6>);
 recipes.remove(<actuallyadditions:block_phantomface>);	
 recipes.addShaped(<actuallyadditions:block_phantomface>, [
 [null, <ore:chestWood>, null], 
-[<actuallyadditions:item_crystal_empowered:2>, <gregtech:compressed_9:14>, <actuallyadditions:item_crystal_empowered:2>], 
+[<actuallyadditions:item_crystal_empowered:2>, <gregtech:meta_block_compressed_13:10>, <actuallyadditions:item_crystal_empowered:2>], 
 [null, <actuallyadditions:item_misc:8>, null]]);
 	
 //AA Iron Casing
@@ -194,7 +168,7 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_la
 	[redPlate, furnGen, redPlate]]);
 	
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_redstone"}), [
-	[redPlate, <gregtech:compressed_11>, redPlate], 
+	[redPlate, <gregtech:meta_block_compressed_14:14>, redPlate], 
 	[redPlate, <extrautils2:machine>, redPlate], 
 	[redPlate, <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}), redPlate]]);
 	
@@ -219,7 +193,7 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ov
 	[redPlate, <extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}), redPlate]]);
 	
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}), [
-	[<gregtech:meta_item_1:12701>,<gregtech:compressed_14:14>,<gregtech:meta_item_1:12701>], 
+	[<gregtech:meta_item_1:12701>,<gregtech:meta_block_compressed_20:5>,<gregtech:meta_item_1:12701>], 
 	[<gregtech:meta_item_1:12701>,<extrautils2:machine>,<gregtech:meta_item_1:12701>], 
 	[redPlate, furnGen, redPlate]]);
 	
@@ -251,12 +225,12 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ic
 recipes.addShaped(<draconicevolution:generator>, [
 	[<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>], 
 	[<draconicevolution:draconium_ingot>,<extrautils2:machine>,<draconicevolution:draconium_ingot>], 
-	[<gregtech:compressed_11>, furnGen, <gregtech:compressed_11>]]);
+	[<gregtech:meta_block_compressed_14:14>, furnGen, <gregtech:meta_block_compressed_14:14>]]);
 		
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), [
 	[<gregtech:meta_item_1:12331>,<gregtech:meta_item_1:12331>,<gregtech:meta_item_1:12331>], 
 	[<gregtech:meta_item_1:12331>,<extrautils2:machine>,<gregtech:meta_item_1:12331>], 
-	[<gregtech:compressed_11>, <draconicevolution:generator>, <gregtech:compressed_11>]]);
+	[<gregtech:meta_block_compressed_14:14>, <draconicevolution:generator>, <gregtech:meta_block_compressed_14:14>]]);
 	
 	
 	
@@ -286,7 +260,7 @@ recipes.addShaped(<actuallyadditions:item_drill:3>, [
 //Drill Core
 recipes.remove(<actuallyadditions:item_misc:16>);
 <actuallyadditions:item_misc:16>.addTooltip(format.red("Acquired by exploration of Lost Cities buildings or vanilla dungeons."));
-<actuallyadditions:item_misc:16>.addTooltip(format.red("Also can be purchased for Omnicoins."));
+<actuallyadditions:item_misc:16>.addTooltip(format.red("Also can be purchased for Nomicoins."));
 
 //Vertical Digger	
 recipes.remove(<actuallyadditions:block_miner>);
@@ -375,7 +349,7 @@ recipes.addShaped(<extrautils2:chunkloader>, [
 
 //Dragon Mill
 recipes.addShaped(<extrautils2:passivegenerator:8>, [
-	[<gregtech:compressed_3:10>,<gregtech:compressed_3:10>,<gregtech:compressed_3:10>], 
+	[<gregtech:meta_block_compressed_4:8>,<gregtech:meta_block_compressed_4:8>,<gregtech:meta_block_compressed_4:8>], 
 	[<extrautils2:ingredients:2>, <extendedcrafting:storage:2>, <extrautils2:ingredients:2>], 
 	[<extrautils2:decorativesolid:3>, <extrautils2:ingredients:2>, <extrautils2:decorativesolid:3>]]);
 	
@@ -410,26 +384,8 @@ recipes.addShaped(<actuallyadditions:block_furnace_solar>, [
 	
 	
 	
+mods.jei.JEI.addDescription(<actuallyadditions:item_misc:13>, "Canola can be turned into Canola Oil via a Canola Press. This is a somewhat slow machine and requres RF to function");
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	print("--- ActuallyAdditions.zs initialized ---");
+print("--- ActuallyAdditions.zs initialized ---");
+

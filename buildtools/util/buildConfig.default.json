@@ -1,0 +1,21 @@
+{
+	"cfCoreApiEndpoint": "https://curseforge.neeve.workers.dev",
+	"downloaderMaxRetries": 5,
+	"downloaderConcurrency": 50,
+	"downloaderCheckHashes": true,
+	"downloaderCacheDirectory": "../.cache",
+	"launchscriptsMinRAM": "2048M",
+	"launchscriptsMaxRAM": "2048M",
+	"launchscriptsJVMArgs": "",
+	"copyFromSharedServerGlobs": [
+		"overrides/**/*",
+		"!overrides/resources/**/*"
+	],
+	"copyFromSharedClientGlobs": [
+		"overrides/**/*"
+	],
+	"buildDestinationDirectory": "../build",
+	"buildSourceDirectory": "../",
+	"nightlyHookAvatar": "",
+	"nightlyHookName": ""
+}
