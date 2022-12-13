@@ -1280,6 +1280,7 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:item_medium_to_large_crate_upgrade
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_booklet>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:21>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:22>);
+recipes.removeByRecipeName("actuallyadditions:recipes146");
 
 
 //Advanced Rocketry Removals
@@ -1646,12 +1647,13 @@ mods.jei.JEI.removeAndHide(<enderio:block_death_pouch>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:storage:7>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:ender_alternator>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:ender_crafter>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:2>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:36>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:37>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:41>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:48>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:material:128>);
-mods.jei.JEI.removeAndHide(<extendedcrafting:material:2>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:129>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:singularity>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:singularity:1>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:singularity:2>);
@@ -1686,6 +1688,8 @@ mods.jei.JEI.removeAndHide(<extendedcrafting:singularity:30>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:singularity:29>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:singularity:28>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:singularity:27>);
+recipes.removeByRecipeName("extendedcrafting:diamond_nugget_to");
+recipes.removeByRecipeName("extendedcrafting:emerald_nugget_to");
 
 
 //Extra Utils 2 Removals
@@ -1944,6 +1948,24 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_invar>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:rockwool:*>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:864>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:865>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:256>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:257>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:258>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:273>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:288>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:303>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:304>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:352>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:368>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:369>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:416>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:432>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:433>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:448>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:672>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:673>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:674>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:704>);
 
 
 //Custom Materials Removals
