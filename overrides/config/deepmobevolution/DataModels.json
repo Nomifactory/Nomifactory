@@ -3,6 +3,7 @@
     "id": "blaze",
     "displayName": "Blaze",
     "livingMatter": "hellish",
+    "simulationRFCost": 1024,
     "craftingIngredients": [
       "minecraft:blaze_powder",
       "deepmoblearning:living_matter_hellish",
