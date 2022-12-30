@@ -71,6 +71,40 @@ mods.jei.JEI.removeAndHide(<solarflux:traversal_upgrade>);
 mods.jei.JEI.removeAndHide(<solarflux:dispersive_upgrade>);
 mods.jei.JEI.removeAndHide(<solarflux:furnace_upgrade>);
 
+//Remove Data Module Recipes
+recipes.remove(<deepmoblearning:data_model_zombie>);
+recipes.remove(<deepmoblearning:data_model_skeleton>);
+recipes.remove(<deepmoblearning:data_model_creeper>);
+recipes.remove(<deepmoblearning:data_model_spider>);
+recipes.remove(<deepmoblearning:data_model_slime>);
+recipes.remove(<deepmoblearning:data_model_witch>);
+recipes.remove(<deepmoblearning:data_model_blaze>);
+recipes.remove(<deepmoblearning:data_model_wither_skeleton>);
+recipes.remove(<deepmoblearning:data_model_enderman>);
+recipes.remove(<deepmoblearning:data_model_wither>);
+recipes.remove(<deepmoblearning:data_model_dragon>);
+recipes.remove(<deepmoblearning:data_model_shulker>);
+recipes.remove(<deepmoblearning:data_model_guardian>);
+recipes.remove(<deepmoblearning:data_model_ghast>);
+recipes.remove(<deepmoblearning:data_model_thermal_elemental>);
+
+
+recipes.addShapeless(<deepmoblearning:data_model_zombie>,[<deepmoblearning:data_model_blank>, <minecraft:rotten_flesh>]);
+recipes.addShapeless(<deepmoblearning:data_model_skeleton>, [<deepmoblearning:data_model_blank>, <minecraft:bone>]);
+recipes.addShapeless(<deepmoblearning:data_model_creeper>, [<deepmoblearning:data_model_blank>, <minecraft:gunpowder>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>]);
+recipes.addShapeless(<deepmoblearning:data_model_spider>, [<deepmoblearning:data_model_blank>, <minecraft:web>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>]);
+recipes.addShapeless(<deepmoblearning:data_model_slime>, [<deepmoblearning:data_model_blank>, <minecraft:slime_ball>]);
+recipes.addShapeless(<deepmoblearning:data_model_witch>, [<deepmoblearning:data_model_blank>, <minecraft:glass_bottle>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>]);
+recipes.addShapeless(<deepmoblearning:data_model_blaze>, [<deepmoblearning:data_model_blank>, <minecraft:blaze_powder>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>]);
+recipes.addShapeless(<deepmoblearning:data_model_ghast>, [<deepmoblearning:data_model_blank>, <minecraft:ghast_tear>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>]);
+recipes.addShapeless(<deepmoblearning:data_model_wither_skeleton>, [<deepmoblearning:data_model_blank>, <minecraft:skull:1>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>, <deepmoblearning:living_matter_hellish>]);
+recipes.addShapeless(<deepmoblearning:data_model_enderman>, [<deepmoblearning:data_model_blank>, <minecraft:ender_pearl>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>]);
+recipes.addShapeless(<deepmoblearning:data_model_wither>, [<deepmoblearning:data_model_blank>, <minecraft:nether_star>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>]);
+recipes.addShapeless(<deepmoblearning:data_model_dragon>, [<deepmoblearning:data_model_blank>, <contenttweaker:dragonlairdata>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>]);
+recipes.addShapeless(<deepmoblearning:data_model_shulker>, [<deepmoblearning:data_model_blank>, <minecraft:diamond>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>, <deepmoblearning:living_matter_extraterrestrial>]);
+recipes.addShapeless(<deepmoblearning:data_model_guardian>, [<deepmoblearning:data_model_blank>, <minecraft:prismarine_shard>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>]);
+recipes.addShapeless(<deepmoblearning:data_model_thermal_elemental>, [<deepmoblearning:data_model_blank>, <thermalfoundation:material:1025> | <thermalfoundation:material:1026> | <thermalfoundation:material:1027>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>]);
+
 recipes.remove(<deepmoblearning:data_model_thermal_elemental>);
 recipes.addShapeless(<deepmoblearning:data_model_thermal_elemental>.withTag({simulationCount: 0, tier: 0, killCount: 0, totalKillCount: 0}), [<deepmoblearning:data_model_blank>, <thermalfoundation:material:1025> | <thermalfoundation:material:1026> | <thermalfoundation:material:1027>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>, <deepmoblearning:living_matter_overworldian>]);
 
