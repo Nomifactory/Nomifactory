@@ -506,7 +506,7 @@
     "id": "zombie",
     "displayName": "Zombie",
     "livingMatter": "overworldian",
-    "simulationRFCost": 80,
+    "simulationRFCost": 64,
     "craftingIngredients": [
       "minecraft:rotten_flesh"
     ],
