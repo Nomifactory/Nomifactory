@@ -5,14 +5,7 @@
     "livingMatter": "hellish",
     "simulationRFCost": 1024,
     "craftingIngredients": [
-      "minecraft:blaze_powder",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish"
+      "minecraft:blaze_powder"
     ],
     "associatedMobs": [
       "minecraft:blaze"
@@ -41,14 +34,7 @@
     "livingMatter": "overworldian",
     "simulationRFCost": 64,
     "craftingIngredients": [
-      "minecraft:gunpowder",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian"
+      "minecraft:gunpowder"
     ],
     "associatedMobs": [
       "minecraft:creeper"
@@ -76,14 +62,7 @@
     "livingMatter": "extraterrestrial",
     "simulationRFCost": 6666,
     "craftingIngredients": [
-      "contenttweaker:dragonlairdata",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial"
+      "contenttweaker:dragonlairdata"
     ],
     "associatedMobs": [
       "minecraft:ender_dragon"
@@ -112,14 +91,7 @@
     "livingMatter": "extraterrestrial",
     "simulationRFCost": 2048,
     "craftingIngredients": [
-      "minecraft:ender_pearl",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial"
+      "minecraft:ender_pearl"
     ],
     "associatedMobs": [
       "minecraft:enderman",
@@ -154,14 +126,7 @@
     "livingMatter": "hellish",
     "simulationRFCost": 1024,
     "craftingIngredients": [
-      "minecraft:ghast_tear",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish"
+      "minecraft:ghast_tear"
     ],
     "associatedMobs": [
       "minecraft:ghast"
@@ -188,14 +153,7 @@
     "livingMatter": "overworldian",
     "simulationRFCost": 1024,
     "craftingIngredients": [
-      "minecraft:prismarine_shard",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian"
+      "minecraft:prismarine_shard"
     ],
     "associatedMobs": [
       "minecraft:guardian",
@@ -228,14 +186,7 @@
     "livingMatter": "extraterrestrial",
     "simulationRFCost": 512,
     "craftingIngredients": [
-      "minecraft:diamond",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial"
+      "minecraft:diamond"
     ],
     "associatedMobs": [
       "minecraft:shulker"
@@ -340,14 +291,7 @@
     "livingMatter": "overworldian",
     "simulationRFCost": 64,
     "craftingIngredients": [
-      "minecraft:web",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian"
+      "minecraft:web"
     ],
     "associatedMobs": [
       "minecraft:spider",
@@ -390,14 +334,7 @@
     "livingMatter": "overworldian",
     "simulationRFCost": 512,
     "craftingIngredients": [
-      "minecraft:glass_bottle",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian"
+      "minecraft:glass_bottle"
     ],
     "associatedMobs": [
       "minecraft:witch"
@@ -431,14 +368,7 @@
     "livingMatter": "extraterrestrial",
     "simulationRFCost": 6666,
     "craftingIngredients": [
-      "minecraft:nether_star",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial",
-      "deepmoblearning:living_matter_extraterrestrial"
+      "minecraft:nether_star"
     ],
     "associatedMobs": [
       "minecraft:wither"
@@ -467,14 +397,7 @@
     "livingMatter": "hellish",
     "simulationRFCost": 1024,
     "craftingIngredients": [
-      "minecraft:skull",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish",
-      "deepmoblearning:living_matter_hellish"
+      "minecraft:skull"
 
     ],
     "associatedMobs": [
@@ -555,14 +478,7 @@
     "livingMatter": "overworldian",
     "simulationRFCost": 1024,
     "craftingIngredients": [
-      "thermalfoundation:material,1,1025",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian",
-      "deepmoblearning:living_matter_overworldian"
+      "thermalfoundation:material,1,1025"
     ],
     "associatedMobs": [
       "thermalfoundation:blizz",
