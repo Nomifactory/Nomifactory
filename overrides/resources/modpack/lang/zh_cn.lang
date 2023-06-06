@@ -12,3 +12,5 @@ metaitem.circuit.wetware_assembly.name=Wetware Processor
 metaitem.circuit.wetware_super_computer.name=Wetware Processor Array
 metaitem.circuit.wetware_mainframe.name=Wetware Processor Mainframe
 metaitem.quantumstar.name=§5Quantum Star
+
+nomifactory.nonetherportals=在§5Nomifactory§r中，下界传送门被禁用。按照任务书的指引解锁§6下界蛋糕§r！
