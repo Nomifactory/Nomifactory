@@ -14,3 +14,8 @@ metaitem.circuit.wetware_mainframe.name=Wetware Processor Mainframe
 metaitem.quantumstar.name=§5Quantum Star
 
 nomifactory.nonetherportals=在§5Nomifactory§r中，下界传送门被禁用。按照任务书的指引解锁§6下界蛋糕§r！
+
+item.ruby.lens=红色透镜
+item.emerald.lens=绿色透镜
+item.blue_topaz.lens=蓝色透镜
+item.amethyst.lens=龙透镜

@@ -14,3 +14,8 @@ metaitem.circuit.wetware_mainframe.name=Wetware Processor Mainframe
 metaitem.quantumstar.name=§5Quantum Star
 
 nomifactory.nonetherportals=Порталы Нижнего мира отключены в §5Nomifactory§r, вам необходимо создать §6Торт Нижнего мираs§r. Используйте квест-бук!
+
+item.ruby.lens=Линза (Красная)
+item.emerald.lens=Линза (Зелёная)
+item.blue_topaz.lens=Линза (Синяя)
+item.amethyst.lens=Линза (Дракониевая)

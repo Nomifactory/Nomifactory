@@ -14,3 +14,8 @@ metaitem.circuit.wetware_mainframe.name=Wetware Processor Mainframe
 metaitem.quantumstar.name=§5Quantum Star
 
 nomifactory.nonetherportals=Nether portals are disabled in §5Nomifactory§r. Follow the quest book to unlock §6Nether Cakes§r!
+
+item.ruby.lens=Red Lens
+item.emerald.lens=Green Lens
+item.blue_topaz.lens=Blue Lens
+item.amethyst.lens=Draconium Lens
