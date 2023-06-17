@@ -155,9 +155,9 @@ async function compressMainMenuImages() {
 		);
 
 		// Fill the config with image paths using the weird "namespace:path" scheme.
-		mainMenuConfig.other.background.slideshow.images = mainMenuImages.map(
-			(img) => bgImageNamespace + ":" + upath.join(bgImagePath, img),
-		);
+		mainMenuConfig.other.background.slideshow.images = mainMenuImages
+			.map((img) => bgImageNamespace + ":" + upath.join(bgImagePath, img))
+			.sort();
 
 		// Write it back.
 		return fs.promises.writeFile(
