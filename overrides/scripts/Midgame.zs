@@ -43,36 +43,59 @@ makeShapedF("nf_reinforced_satchel",
                 return out;
             });
 
-//red lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12154>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8243>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8154>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8206>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8122>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8085>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15154>]).duration(200).EUt(16).buildAndRegister();
+// AE2 Certus -> Regular Certus
 autoclave.recipeBuilder().inputs([<appliedenergistics2:material:2>]).fluidInputs([<liquid:water> * 200]).outputs([<appliedenergistics2:material>]).duration(50).EUt(16).buildAndRegister();
-<gregtech:meta_item_1:15154>.clearTooltip();
-<gregtech:meta_item_1:15154>.displayName = "Red Lens";
-<gregtech:meta_item_1:15154>.addTooltip("Red Lens");
 
-//green lens
+// Red Lens
+lathe.findRecipe(16, [<gregtech:meta_item_1:12154>], [null]).remove();	
+
+// Almandine, Rutile, Ruby, Jasper, Red Garnet
+val redLenses as int[] = [8085, 8122, 8154, 8206, 8243] as int[]; 
+
+for lens in redLenses {
+	autoclave.recipeBuilder()
+	.inputs([itemUtils.getItem("gregtech:meta_item_1", lens)])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15154>]) // Ruby Lens -> Red Lens
+	.duration(200).EUt(16).buildAndRegister();
+}
+
+// Green Lens
 lathe.findRecipe(16, [<gregtech:meta_item_1:12219>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8117>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15113>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<minecraft:emerald>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15113>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8212>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15113>]).duration(200).EUt(16).buildAndRegister();
-<gregtech:meta_item_1:15113>.clearTooltip();
-<gregtech:meta_item_1:15113>.displayName = "Green Lens";
-<gregtech:meta_item_1:15113>.addTooltip("Green Lens");
 
-//blue lens
-lathe.findRecipe(16, [<gregtech:meta_item_1:12092>], [null]).remove();	
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8092>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8213>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<minecraft:dye:4>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-autoclave.recipeBuilder().inputs([<gregtech:meta_item_1:8157>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15092>]).duration(200).EUt(16).buildAndRegister();
-<gregtech:meta_item_1:15092>.clearTooltip();
-<gregtech:meta_item_1:15092>.displayName = "Blue Lens";
-<gregtech:meta_item_1:15092>.addTooltip("Blue Lens");
+// Green Sapphire, Olivine, Emerald
+val greenLenses as IIngredient[] = [
+	<gregtech:meta_item_1:8117>,
+	<gregtech:meta_item_1:8212>,
+	<minecraft:emerald>
+] as IIngredient[];
+
+for lens in greenLenses {
+	autoclave.recipeBuilder()
+	.inputs([lens])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15113>]) // Emerald Lens -> Green Lens
+	.duration(200).EUt(16).buildAndRegister();
+}
+
+// Blue Lens
+lathe.findRecipe(16, [<gregtech:meta_item_1:12092>], [null]).remove();
+
+// Blue Topaz, Sapphire, Opal, Lapis
+val blueLenses as IIngredient[] = [
+	<gregtech:meta_item_1:8092>,
+	<gregtech:meta_item_1:8157>,
+	<gregtech:meta_item_1:8213>,
+	<minecraft:dye:4>	
+] as IIngredient[];
+
+for lens in blueLenses {
+	autoclave.recipeBuilder()
+	.inputs([lens])
+	.fluidInputs([<liquid:water> * 1000])
+	.outputs([<gregtech:meta_item_1:15092>]) // Blue Topaz Lens -> Blue Lens
+	.duration(200).EUt(16).buildAndRegister();	
+}
 
 //Diamond Lens
 lathe.findRecipe(16, [<gregtech:meta_item_1:12111>], [null]).remove();	
@@ -111,20 +134,11 @@ autoclave.recipeBuilder().inputs([<minecraft:ender_pearl>]).fluidInputs([<liquid
 //Endereye Lens
 autoclave.recipeBuilder().inputs([<minecraft:ender_eye>]).fluidInputs([<liquid:water> * 1000]).outputs([<gregtech:meta_item_1:15219>]).duration(800).EUt(16).buildAndRegister();
 
-//Draconium Lens
+//Draconium Lens (remapped from Amethyst)
 lathe.findRecipe(16, [<gregtech:meta_item_1:12214>], [null]).remove();	
-engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15190>], [null]).remove();	
+engraver.findRecipe(1920, [<metaitem:wafer.naquadah>,<gregtech:meta_item_1:15190>], [null]).remove();
 autoclave.recipeBuilder().inputs([<draconicevolution:draconium_block>]).fluidInputs([<liquid:mana> * 1000]).outputs([<gregtech:meta_item_1:15214>]).duration(1200).EUt(1960).buildAndRegister();
 engraver.recipeBuilder().inputs([<metaitem:wafer.naquadah>]).notConsumable(<gregtech:meta_item_1:15214>).outputs([<metaitem:wafer.advanced_system_on_chip>]).duration(200).EUt(1920).buildAndRegister();
-<gregtech:meta_item_1:15214>.clearTooltip();
-<gregtech:meta_item_1:15214>.displayName = "Draconium Lens";
-<gregtech:meta_item_1:15214>.addTooltip("Draconium Lens");
-//Fix Draconium Lens Pulverization
-macerator.findRecipe(8, [<gregtech:meta_item_1:15214>], [null]).remove();
-macerator.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:15214>)
-	.outputs(<gregtech:meta_item_1:1710> * 3)
-	.EUt(8).duration(22).buildAndRegister();
 
 //Ender Star
 recipes.remove(<actuallyadditions:item_misc:19>);	
