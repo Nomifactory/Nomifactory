@@ -2150,7 +2150,11 @@ mods.jei.JEI.removeAndHide(<lumberjack:infinity_lumberaxe>);
 mods.jei.JEI.removeAndHide(<lumberjack:endsteel_lumberaxe>);
 mods.jei.JEI.removeAndHide(<lumberjack:stellaralloy_lumberaxe>);
 
-
+// Useless Mold/Shape Removal
+mods.jei.JEI.removeAndHide(<metaitem:shape.mold.cylinder>);
+mods.jei.JEI.removeAndHide(<metaitem:shape.mold.credit>);
+mods.jei.JEI.removeAndHide(<metaitem:shape.mold.bottle>);
+mods.jei.JEI.removeAndHide(<metaitem:shape.extruder.bottle>);
 
 //Ingots to Proper Ingots
 recipes.addShapeless(<thermalfoundation:material:167>, [<gregtech:meta_item_1:10708>]);
