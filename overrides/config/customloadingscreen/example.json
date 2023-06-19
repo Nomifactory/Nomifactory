@@ -1,0 +1,443 @@
+{
+    "renders": [
+        {
+            "image": {
+                "parent": "builtin/slideshow",
+                "image": "loading_screen:background/#.jpg",
+                "frame": "slideshow_frame(transition_duration, frame_count)",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "colour": "0xFFFFFFFF",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width + 1",
+                    "height": "screen_height + 1"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/slideshow",
+                "image": "loading_screen:background/#.jpg",
+                "frame": "slideshow_frame(0, frame_count)",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "colour": "0xFFFFFF | (0xFF000000 & (0x01000000 * floor(0xFF * min(1, ((transition_duration <= 0.01) ? (0) : (time/transition_duration)) % image_interval))))",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width + 1",
+                    "height": "screen_height + 1"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "loading_screen:logo.png",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "colour": "0xFFFFFFFF",
+                "texture":{
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                },
+                "position":{
+                    "x": "0",
+                    "y": "0",
+                    "width": "300",
+                    "height": "76"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "0x6F000000",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "0x6F1144CC",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width * percentage",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "text": "(floor(percentage * 100)) + '%'",
+                "position_type": "BOTTOM_RIGHT",
+                "offset_pos": "BOTTOM_RIGHT",
+                "position": {
+                    "x": -3, "y": -1
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "text": "forge_progress_bar_message(0)",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "position": {
+                    "x": 3, "y": -1
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "showSecond ? 0x6F000000 : 0x00000000",
+                "position": {
+                    "x": "0",
+                    "y": "-12",
+                    "width": "screen_width",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "showSecond ? 0x6F04AFC2 : 0x0004AFC2",
+                "position": {
+                    "x": "0",
+                    "y": "-12",
+                    "width": "screen_width * forge_progress_bar_percent(1)",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "colour": "0xFFFFFFFF",
+                "text": "showSecond ? floor(forge_progress_bar_percent(1) * 100) + '%' : ''",
+                "position_type": "BOTTOM_RIGHT",
+                "offset_pos": "BOTTOM_RIGHT",
+                "position": {
+                    "x": -3, "y": -13
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "colour": "0xFFFFFFFF",
+                "text": "showSecond ? forge_progress_bar_message(1) : ''",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "position": {
+                    "x": 3, "y": -13
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "showThird ? 0x6F000000 : 0x00000000",
+                "position": {
+                    "x": "0",
+                    "y": "-24",
+                    "width": "screen_width",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "showThird ? 0x6F02C730 : 0x0002C730",
+                "position": {
+                    "x": "0",
+                    "y": "-24",
+                    "width": "screen_width * forge_progress_bar_percent(2)",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "colour": "0xFFFFFFFF",
+                "text": "showThird ? floor(forge_progress_bar_percent(2) * 100) + '%' : ''",
+                "position_type": "BOTTOM_RIGHT",
+                "offset_pos": "BOTTOM_RIGHT",
+                "position": {
+                    "x": -3, "y": -25
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "colour": "0xFFFFFFFF",
+                "text": "showThird ? forge_progress_bar_message(2) : ''",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "position": {
+                    "x": 3, "y": -25
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "showFourth ? 0x6F000000 : 0x00000000",
+                "position": {
+                    "x": "0",
+                    "y": "-36",
+                    "width": "screen_width",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "showFourth ? 0x6FD68102 : 0x00D68102",
+                "position": {
+                    "x": "0",
+                    "y": "-36",
+                    "width": "screen_width * forge_progress_bar_percent(3)",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "colour": "0xFFFFFFFF",
+                "text": "showFourth ? floor(forge_progress_bar_percent(3) * 100) + '%' : ''",
+                "position_type": "BOTTOM_RIGHT",
+                "offset_pos": "BOTTOM_RIGHT",
+                "position": {
+                    "x": -3, "y": -37
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "colour": "0xFFFFFFFF",
+                "text": "showFourth ? forge_progress_bar_message(3) : ''",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "position": {
+                    "x": 3, "y": -37, "width": "screen_width - 25"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "TOP_LEFT",
+                "offset_pos": "TOP_LEFT",
+                "colour": "0x6F000000",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:textures/generic/white.png",
+                "position_type": "TOP_LEFT",
+                "offset_pos": "TOP_LEFT",
+                "colour": "memFloorPercent > 50 ? (memFloorPercent > 90 ? 0x6FC40222 : 0x6FBCD102) : 0x6F11BD02",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width * memPercent",
+                    "height": 12
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "position_type": "TOP_LEFT",
+                "offset_pos": "TOP_LEFT",
+                "text": "'RAM: ' + memory_used() + '/' + memory_max() + ' MiB'",
+                "position": {
+                    "x": 3, "y": 2
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "position_type": "TOP_RIGHT",
+                "offset_pos": "TOP_RIGHT",
+                "text": "memFloorPercent + '%'",
+                "position": {
+                    "x": -3, "y": 2
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "textures/font/ascii.png",
+                "position_type": "TOP_RIGHT",
+                "offset_pos": "TOP_RIGHT",
+                "text": "floor(time / 60) + 'm ' + floor((time % 60) / 10) + floor(time % 60 % 10) + 's elapsed'",
+                "position": {
+                    "x": -3, "y": 16
+                }
+            }
+        }
+    ],
+    "functions": {
+        "slideshow_frame_inner(float timeSub)": "floor((time - timeSub) / image_interval)",
+        "slideshow_frame(float timeSub, int count)": "random_slide_order ? ( random_int( slideshow_seed, slideshow_frame_inner(timeSub), count ) ) : slideshow_frame_inner(timeSub)"
+    },
+    "constants": {
+        "image_interval": 10.0,
+        "transition_duration": 1,
+        "tip_interval": 8.0,
+        "random_slide_order": false,
+
+        "tip_seed": "generate_seed()",
+        "slideshow_seed": "generate_seed()"
+    },
+    "variables": {
+        "showFourth": "forge_progress_bar_count() > 3",
+        "showThird": "forge_progress_bar_count() > 2",
+        "showSecond": "forge_progress_bar_count() > 1",
+        "memPercent": "((floor(memory_used() * 100) + 0.0) / (floor(memory_max() * 100) + 0.0))",
+        "memFloorPercent": "floor(memPercent * 100)"
+    },
+    "factories": [
+
+    ],
+    "actions": [
+
+    ]
+}
