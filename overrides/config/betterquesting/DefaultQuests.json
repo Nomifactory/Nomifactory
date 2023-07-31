@@ -50254,6 +50254,75 @@
       "questID:3": 817,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "818:10": {
+      "preRequisites:11": [
+        404
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "As you progress you may find that you have to update your §6Processing Patterns§r regularly. Sometimes sending a single craft worth of ingredients won\u0027t take full advantage of the speed of higher-tier machines, or the parallel processing power of the §3Processing Array§r or §3Multi-Smelter§r, so you pull out the patterns and multiply them one-by-one.\n\nYou might also have multiple §3Pattern Terminals§r around your base and keep forgetting which you have your §6Blank Patterns§r stored in, or find yourself upgrading some infrastructure and lacking inventory space to transport all those encoded patterns along with the machinery.\n\nWouldn\u0027t it be great if things were more convenient? That\u0027s where the the §6Pattern Multi-Tool§r comes in.\n\nThis handy gadget allows you to store large quantities of Blank Patterns which you can §euse directly from its inventory to encode new patterns§r at any Pattern Terminal. You can increase the Multi-Tool\u0027s capacity by opening the tool and adding §6§6Capacity Cards§r to its upgrade slots.\n\nYou can also store a whole bunch of encoded patterns, and §ebulk multiply/divide/add/subtract§r the input and output quantities of Processing Patterns, or §eclear all the patterns§r inside of the Multi-Tool back to Blank Patterns.\n\nThe device shows up to the side of any §3ME Interface§r, §3ME Interface Terminal§r, or Pattern Terminal you open as long as you have the tool on you. It\u0027s also a §ebauble§r, so you can wear it instead of keeping it in your inventory.\n\nShift-left-clicking patterns while the Multi-Tool is open will conveniently move them between the tool and the device\u0027s slots where possible rather than your inventory.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "nae2:pattern_multiplier",
+            "tag:10": {
+              "inv:10": {
+                "Items:9": {
+                  "0:10": {
+                    "Count:3": 37,
+                    "Damage:2": 52,
+                    "Slot:3": 0,
+                    "id:8": "appliedenergistics2:material"
+                  }
+                },
+                "Size:3": 36
+              },
+              "upgrades:10": {
+                "Items:9": {},
+                "Size:3": 3
+              }
+            }
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Pattern Multi-Tool",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 818,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "nae2:pattern_multiplier"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -55861,6 +55930,13 @@
           "sizeY:3": 24,
           "x:3": -104,
           "y:3": 520
+        },
+        "42:10": {
+          "id:3": 818,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 104,
+          "y:3": 656
         }
       }
     }
