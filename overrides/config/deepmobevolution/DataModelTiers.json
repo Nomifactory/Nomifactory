@@ -1,6 +1,20 @@
 [
   {
     "tier": 0,
+    "displayName": "Faulty",
+    "displayColor": "dark_gray",
+    "killMultiplier": 1,
+    "dataToNext": 0,
+    "pristineChance": 0,
+    "trial": {
+      "pristine": 0,
+      "maxWave": 1,
+      "affixes": 0,
+      "glitchChance": 1
+    }
+  },
+  {
+    "tier": 1,
     "displayName": "Basic",
     "displayColor": "green",
     "killMultiplier": 1,
@@ -14,7 +28,7 @@
     }
   },
   {
-    "tier": 1,
+    "tier": 2,
     "displayName": "Advanced",
     "displayColor": "blue",
     "killMultiplier": 1,
@@ -28,7 +42,7 @@
     }
   },
   {
-    "tier": 2,
+    "tier": 3,
     "displayName": "Superior",
     "displayColor": "light_purple",
     "killMultiplier": 1,
@@ -42,7 +56,7 @@
     }
   },
   {
-    "tier": 3,
+    "tier": 4,
     "displayName": "Self-Aware",
     "displayColor": "gold",
     "pristineChance": 30,
