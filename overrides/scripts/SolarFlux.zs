@@ -72,6 +72,11 @@ mods.jei.JEI.removeAndHide(<solarflux:furnace_upgrade>);
 recipes.removeByRecipeName("forestry:silk_wisp_to_web");
 recipes.removeByRecipeName("darkutils:soulsand");
 
+alloy.recipeBuilder()
+	.outputs([<advsolars:sunnarium>])
+	.inputs([<contenttweaker:stabilizedplutonium>, <contenttweaker:stabilizedcurium>])
+	.duration(2000).EUt(4000).buildAndRegister();
+
 recipes.addShaped(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:zombie"}), [
 	[null,<minecraft:skull:2>,null],
 	[<minecraft:skull:2>,<enderio:item_soul_vial>,<minecraft:skull:2>],
