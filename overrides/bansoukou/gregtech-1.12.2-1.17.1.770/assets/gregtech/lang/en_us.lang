@@ -2843,6 +2843,12 @@ gregtech.machine.fluid_hatch.export.zpm.name=Output Hatch (ZPM)
 gregtech.machine.fluid_hatch.export.uv.name=Output Hatch (UV)
 gregtech.machine.fluid_hatch.export.max.name=Output Hatch (MAX)
 
+gregtech.machine.fluid_multi_hatch.capacity=Fluid Capacity: %,d mb (x%,d)
+gregtech.machine.fluid_multi_hatch.import.4x.name=Quadruple Fluid Input Hatch
+gregtech.machine.fluid_multi_hatch.import.9x.name=Nonuple Fluid Input Hatch
+gregtech.machine.fluid_multi_hatch.export.4x.name=Quadruple Fluid Output Hatch
+gregtech.machine.fluid_multi_hatch.export.9x.name=Nonuple Fluid Output Hatch
+
 gregtech.machine.energy_hatch.input.tooltip=Energy Input for Multiblocks
 
 gregtech.machine.energy_hatch.input.ulv.name=Energy Input Hatch (ULV)

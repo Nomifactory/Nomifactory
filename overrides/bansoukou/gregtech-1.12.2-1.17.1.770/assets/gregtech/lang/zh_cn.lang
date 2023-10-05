@@ -2737,6 +2737,12 @@ gregtech.machine.fluid_hatch.export.zpm.name=输出仓(ZPM)
 gregtech.machine.fluid_hatch.export.uv.name=输出仓(UV)
 gregtech.machine.fluid_hatch.export.max.name=输出仓(MAX)
 
+gregtech.machine.fluid_multi_hatch.capacity=流体储量: %d 升 (x%d)
+gregtech.machine.fluid_multi_hatch.import.4x.name=四重输入仓
+gregtech.machine.fluid_multi_hatch.import.9x.name=九重输入仓
+gregtech.machine.fluid_multi_hatch.export.4x.name=四重输出仓
+gregtech.machine.fluid_multi_hatch.export.9x.name=九重输出仓
+
 gregtech.machine.energy_hatch.input.tooltip=为多方块结构提供能量
 
 gregtech.machine.energy_hatch.input.ulv.name=能源仓(ULV)

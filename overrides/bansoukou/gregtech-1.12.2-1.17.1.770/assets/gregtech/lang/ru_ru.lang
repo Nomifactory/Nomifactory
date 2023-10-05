@@ -781,7 +781,7 @@ item.material.oreprefix.wireFine=%s (Проволока)
 item.material.oreprefix.rotor=%s (Ротор)
 item.material.oreprefix.gearSmall=%s (Маленькая шестерня)
 item.material.oreprefix.gear=%s (Шестерня)
-item.material.oreprefix.lens=Линза (%s)
+item.material.oreprefix.lens=%s (Линза)
 item.material.oreprefix.cellPlasma=%s (Плазменная ячейка)
 item.material.oreprefix.cell=%s (Ячейка)
 item.material.oreprefix.bucket=%s (Ведро)
@@ -2757,6 +2757,12 @@ gregtech.machine.fluid_hatch.export.luv.name=Жидкостный выходно
 gregtech.machine.fluid_hatch.export.zpm.name=Жидкостный выходной люк (ZPM)
 gregtech.machine.fluid_hatch.export.uv.name=Жидкостный выходной люк (UV)
 gregtech.machine.fluid_hatch.export.max.name=Жидкостный выходной люк (Макс.)
+
+gregtech.machine.fluid_multi_hatch.capacity=Объем жидкости: %d Л (x%d)
+gregtech.machine.fluid_multi_hatch.import.4x.name=Четверной входной люк
+gregtech.machine.fluid_multi_hatch.import.9x.name=Девятерной входной люк
+gregtech.machine.fluid_multi_hatch.export.4x.name=Четверной выходной люк
+gregtech.machine.fluid_multi_hatch.export.9x.name=Девятерной выходной люк
 
 gregtech.machine.energy_hatch.input.tooltip=Разъем для подключения кабелей к агрегату
 
