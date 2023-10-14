@@ -1379,12 +1379,12 @@ small_microverse.recipeMap
             <minecraft:chest>)
     .fluidInputs(<liquid:rocket_fuel> * 8000)
     .outputs(<densemetals:dense_iron_ore> * 64,
-             <gregtech:ore_cassiterite_0:3> * 64,
+             <gregtech:ore_cassiterite_0> * 64,
              <gregtech:ore_redstone_0> * 64,
              <gregtech:ore_nickel_0> * 64,
              <gregtech:ore_rutile_0> * 64,
              <gregtech:ore_rutile_0> * 64,
-             <gregtech:ore_uraninite_0:3> * 64,
+             <gregtech:ore_uraninite_0> * 64,
              <gregtech:ore_galena_0> * 64,
              <gregtech:ore_galena_0> * 64,
              <advancedrocketry:moonturf> * 64,
@@ -1429,21 +1429,21 @@ small_microverse.recipeMap
     .inputs(<contenttweaker:tiertwoship>,
             <contenttweaker:quantumflux> * 2)
     .fluidInputs(<liquid:rocket_fuel> * 12000)
-    .outputs(<gregtech:ore_bauxite_0:1> * 64,
-             <gregtech:ore_bauxite_0:1> * 64,
-             <gregtech:ore_niobium_0:1> * 64,
-             <gregtech:ore_copper_0:1> * 64,
-             <gregtech:ore_sphalerite_0:1> * 64,
-             <gregtech:ore_sphalerite_0:1> * 64,
-             <gregtech:ore_scheelite_0:1> * 64,
-             <gregtech:ore_scheelite_0:1> * 64,
-             <gregtech:ore_scheelite_0:1> * 64,
-             <gregtech:ore_tungstate_0:1> * 64,
-             <gregtech:ore_tungstate_0:1> * 64,
-             <gregtech:ore_tungstate_0:1> * 64,
+    .outputs(<gregtech:ore_bauxite_0> * 64,
+             <gregtech:ore_bauxite_0> * 64,
+             <gregtech:ore_niobium_0> * 64,
+             <gregtech:ore_copper_0> * 64,
+             <gregtech:ore_sphalerite_0> * 64,
+             <gregtech:ore_sphalerite_0> * 64,
+             <gregtech:ore_scheelite_0> * 64,
+             <gregtech:ore_scheelite_0> * 64,
+             <gregtech:ore_scheelite_0> * 64,
+             <gregtech:ore_tungstate_0> * 64,
+             <gregtech:ore_tungstate_0> * 64,
+             <gregtech:ore_tungstate_0> * 64,
              <contenttweaker:radiumsalt> * 64,
              <contenttweaker:radiumsalt> * 64,
-             <gregtech:ore_cassiterite_0:1> * 64)
+             <gregtech:ore_cassiterite_0> * 64)
     .buildAndRegister();
 
 // Tier 2 Titanium Micro Miner - Mission 2: Stellar Creation Data
@@ -1478,9 +1478,9 @@ small_microverse.recipeMap
              <gregtech:meta_item_2:25154> * 16,
              <gregtech:meta_item_2:25154> * 16,
              <gregtech:meta_item_2:25154> * 16,
-             <gregtech:ore_sapphire_0:6> * 64,
-             <gregtech:ore_gold_0:6> * 64,
-             <gregtech:ore_silver_0:6> * 64)
+             <gregtech:ore_sapphire_0> * 64,
+             <gregtech:ore_gold_0> * 64,
+             <gregtech:ore_silver_0> * 64)
     .buildAndRegister();
 
 // Tier 3: Tungsten Carbide Micro Miner - Mission 2: Midgame Ores
@@ -1492,20 +1492,20 @@ small_microverse.recipeMap
             <contenttweaker:quantumflux> * 4,
             <gregtech:machine:1010>)
     .fluidInputs(<liquid:rocket_fuel> * 20000)
-    .outputs(<gregtech:ore_scheelite_0:6> * 64,
-             <gregtech:ore_scheelite_0:6> * 64,
-             <gregtech:ore_scheelite_0:6> * 64,
-             <gregtech:ore_tungstate_0:6> * 64,
-             <gregtech:ore_tungstate_0:6> * 64,
-             <gregtech:ore_tungstate_0:6> * 64,
-             <gregtech:ore_rutile_0:6> * 64,
-             <gregtech:ore_vanadium_magnetite_0:6> * 64,
-             <gregtech:ore_tetrahedrite_0:6> * 64,
-             <gregtech:ore_cassiterite_0:6> * 64,
-             <gregtech:ore_tin_0:6> * 64,
-             <gregtech:ore_redstone_0:6> * 64,
-             <gregtech:ore_certus_quartz_0:6> * 64,
-             <gregtech:ore_almandine_0:6> * 64)
+    .outputs(<gregtech:ore_scheelite_0> * 64,
+             <gregtech:ore_scheelite_0> * 64,
+             <gregtech:ore_scheelite_0> * 64,
+             <gregtech:ore_tungstate_0> * 64,
+             <gregtech:ore_tungstate_0> * 64,
+             <gregtech:ore_tungstate_0> * 64,
+             <gregtech:ore_rutile_0> * 64,
+             <gregtech:ore_vanadium_magnetite_0> * 64,
+             <gregtech:ore_tetrahedrite_0> * 64,
+             <gregtech:ore_cassiterite_0> * 64,
+             <gregtech:ore_tin_0> * 64,
+             <gregtech:ore_redstone_0> * 64,
+             <gregtech:ore_certus_quartz_0> * 64,
+             <gregtech:ore_almandine_0> * 64)
     .buildAndRegister();
 
 // Medium Microverse Projector
@@ -1563,18 +1563,18 @@ medium_microverse.recipeMap
     .inputs(<contenttweaker:tierfiveship>,
             <contenttweaker:quantumflux> * 16,
             <contenttweaker:stabilizeduranium> * 32)
-    .outputs(<gregtech:ore_uranium_0:12> * 64,
-             <gregtech:ore_palladium_0:12> * 64,
-             <gregtech:ore_tennantite_0:12> * 64,
-             <gregtech:ore_bastnasite_0:12> * 64,
-             <gregtech:ore_sphalerite_0:12> * 64,
-             <gregtech:ore_monazite_0:12> * 64,
+    .outputs(<gregtech:ore_uranium_0> * 64,
+             <gregtech:ore_palladium_0> * 64,
+             <gregtech:ore_tennantite_0> * 64,
+             <gregtech:ore_bastnasite_0> * 64,
+             <gregtech:ore_sphalerite_0> * 64,
+             <gregtech:ore_monazite_0> * 64,
              <gregtech:meta_block_compressed_13:10> * 64, //Ender Pearl Block
-             <gregtech:ore_osmium_0:12> * 16,
+             <gregtech:ore_osmium_0> * 16,
              <gregtech:meta_item_1:2009> * 64,
-             <gregtech:ore_molybdenite_0:12> * 64,
-             <gregtech:ore_beryllium_0:12> * 64,
-             <gregtech:ore_beryllium_0:12> * 64)
+             <gregtech:ore_molybdenite_0> * 64,
+             <gregtech:ore_beryllium_0> * 64,
+             <gregtech:ore_beryllium_0> * 64)
     .buildAndRegister();
 
 // Tier 5: Iridium Micro Miner - Mission 2: Naquadah
@@ -1600,15 +1600,15 @@ medium_microverse.recipeMap
             <contenttweaker:quantumflux> * 16,
             <contenttweaker:stabilizeduranium> * 32,
             <contenttweaker:witherrealmdata> * 16)
-    .outputs(<gregtech:ore_uranium_0:10> * 64,
-             <gregtech:ore_uranium_0:10> * 64,
-             <gregtech:ore_uranium_0:10> * 64,
-             <gregtech:ore_uranium_0:10> * 64,
-             <gregtech:ore_osmium_0:10> * 64,
-             <gregtech:ore_osmium_0:10> * 64,
-             <gregtech:ore_osmium_0:10> * 64,
-             <gregtech:ore_iridium_0:10> * 64,
-             <gregtech:ore_iridium_0:10> * 64)
+    .outputs(<gregtech:ore_uranium_0> * 64,
+             <gregtech:ore_uranium_0> * 64,
+             <gregtech:ore_uranium_0> * 64,
+             <gregtech:ore_uranium_0> * 64,
+             <gregtech:ore_osmium_0> * 64,
+             <gregtech:ore_osmium_0> * 64,
+             <gregtech:ore_osmium_0> * 64,
+             <gregtech:ore_iridium_0> * 64,
+             <gregtech:ore_iridium_0> * 64)
     .buildAndRegister();
 
 // Tier 6: Enderium Micro Miner - Mission 2: Stabilized Einsteinium
