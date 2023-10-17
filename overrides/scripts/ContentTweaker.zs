@@ -345,6 +345,8 @@ makeFluid("awakeneddraconium",          "ff890c",   false,  2000,       "COMMON"
 makeFluid("moltencrystalmatrix",        "4cffed",   false,  2000,       "COMMON",   0);
 makeFluid("moltensoularium",            "6b4411",   false,  1000,       "COMMON",   0);
 makeFluid("moltendarksoularium",        "422805",   false,  1000,       "COMMON",   0);
+makeFluid("moltenmanainfusedmetal",     "75baec",   false,  1000,       "COMMON",   0);
+makeFluid("moltenfluxedelectrum",       "7e3b94d",   false,  1000,       "COMMON",   0);
 makeFluid("moltennetherstar",           "f2f2d8",   false,  100,        "COMMON",   15);
 
 makeFluid("moltenempoweredrestonia",    "ff0000",   false,  10000,      "COMMON",   15);

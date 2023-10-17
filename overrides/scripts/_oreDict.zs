@@ -2219,7 +2219,17 @@ solidifier.recipeBuilder().fluidInputs(<liquid:moltensoularium> * 144).notConsum
 fluidextractor.recipeBuilder().inputs(<enderio:item_alloy_ingot:7>).fluidOutputs([<liquid:moltensoularium> * 144]).duration(20).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<enderio:block_alloy:7>).fluidOutputs([<liquid:moltensoularium> * 1296]).duration(200).EUt(30).buildAndRegister();
 
+//Molten mana infused metal
+solidifier.recipeBuilder().fluidInputs(<liquid:moltenmanainfusedmetal> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<thermalfoundation:storage:8>]).duration(400).EUt(30).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs(<liquid:moltenmanainfusedmetal> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<thermalfoundation:material:136>]).duration(40).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<ore:ingotMithril>).fluidOutputs([<liquid:moltenmanainfusedmetal> * 144]).duration(20).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<ore:blockMithril>).fluidOutputs([<liquid:moltenmanainfusedmetal> * 1296]).duration(200).EUt(30).buildAndRegister();
 
+//Molten fluxed electrum
+solidifier.recipeBuilder().fluidInputs(<liquid:moltenfluxedelectrum> * 1296).notConsumable(<gregtech:meta_item_1:32308>).outputs([<redstonearsenal:storage>]).duration(400).EUt(30).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs(<liquid:moltenfluxedelectrum> * 144).notConsumable(<gregtech:meta_item_1:32306>).outputs([<redstonearsenal:material:32>]).duration(40).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<ore:ingotElectrumFlux>).fluidOutputs([<liquid:moltenfluxedelectrum> * 144]).duration(20).EUt(30).buildAndRegister();
+fluidextractor.recipeBuilder().inputs(<ore:blockElectrumFlux>).fluidOutputs([<liquid:moltenfluxedelectrum> * 1296]).duration(200).EUt(30).buildAndRegister();
 
 //Omnium
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10709>);
