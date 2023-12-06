@@ -1887,6 +1887,8 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:21072>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_tool:32>.withTag({"GT.ToolStats": {Material: "darmstadtium"}}));
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32016>);
 
+// Extended Crafting Removals
+mods.jei.JEI.removeAndHide(<extendedcrafting:crafting_table>);
 
 //Inspirations Removals
 mods.jei.JEI.removeAndHide(<inspirations:stone_crook>);
