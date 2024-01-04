@@ -1,5 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.appliedenergistics2.Inscriber;
+import scripts.CommonVars.makeShaped as makeShaped;
 
 //Silicon
 Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
@@ -339,7 +340,59 @@ recipes.addShaped(<appliedenergistics2:material:38>, [
 	[<appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <appliedenergistics2:material:22>],
 	[<appliedenergistics2:material:37>, <ore:circuitExtreme>, <appliedenergistics2:material:37>],
 	[<appliedenergistics2:material:22>, <appliedenergistics2:material:37>, <appliedenergistics2:material:22>]]);
-	
+
+// 256k Storage Component
+recipes.remove(<nae2:material:1>);
+makeShaped("nf_256k", <nae2:material:1>,
+	["ABA",
+	 "CDC",
+	 "ACA"],
+	{
+		A : <appliedenergistics2:material:22>, // logic
+		B : <appliedenergistics2:material:24>, // engineering
+		C : <appliedenergistics2:material:38>, // 64k
+		D : <ore:circuitElite>, // t5 circuit
+	});
+
+// 1024k Storage Component
+recipes.remove(<nae2:material:2>);
+makeShaped("nf_1024k", <nae2:material:2>,
+	["ABA",
+	 "CDC",
+	 "ACA"],
+	{
+		A : <appliedenergistics2:material:22>, // logic
+		B : <appliedenergistics2:material:24>, // engineering
+		C : <nae2:material:1>, // 256k
+		D : <ore:circuitMaster>, // t6 circuit
+	});
+
+// 4096k Storage Component
+recipes.remove(<nae2:material:3>);
+makeShaped("nf_4096k", <nae2:material:3>,
+	["ABA",
+	 "CDC",
+	 "ACA"],
+	{
+		A : <appliedenergistics2:material:22>, // logic
+		B : <appliedenergistics2:material:24>, // engineering
+		C : <nae2:material:2>, // 1024k
+		D : <ore:circuitUltimate>, // t7 circuit
+	});
+
+// 16384k Storage
+recipes.remove(<nae2:material:4>);
+makeShaped("nf_16384k", <nae2:material:4>,
+	["ABA",
+	 "CDC",
+	 "ACA"],
+	{
+		A : <appliedenergistics2:material:22>, // logic
+		B : <appliedenergistics2:material:24>, // engineering
+		C : <nae2:material:3>, // 4096k
+		D : <ore:circuitSuperconductor>, // t8 circuit
+	});
+
 //AE2 Wireless Terminal, Infinity Booster Card
 recipes.removeByRecipeName("ae2wtlib:booster_card_old");
 recipes.addShaped(<ae2wtlib:infinity_booster_card>, [
