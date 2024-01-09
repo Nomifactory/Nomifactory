@@ -1,0 +1,70 @@
+[
+  {
+    "tier": 0,
+    "displayName": "Faulty",
+    "displayColor": "dark_gray",
+    "killMultiplier": 1,
+    "dataToNext": 0,
+    "pristineChance": 0,
+    "trial": {
+      "pristine": 0,
+      "maxWave": 1,
+      "affixes": 0,
+      "glitchChance": 1
+    }
+  },
+  {
+    "tier": 1,
+    "displayName": "Basic",
+    "displayColor": "green",
+    "killMultiplier": 1,
+    "dataToNext": 50,
+    "pristineChance": 5,
+    "trial": {
+      "pristine": 5,
+      "maxWave": 2,
+      "affixes": 1,
+      "glitchChance": 1
+    }
+  },
+  {
+    "tier": 2,
+    "displayName": "Advanced",
+    "displayColor": "blue",
+    "killMultiplier": 1,
+    "dataToNext": 250,
+    "pristineChance": 10,
+    "trial": {
+      "pristine": 8,
+      "maxWave": 4,
+      "affixes": 1,
+      "glitchChance": 3
+    }
+  },
+  {
+    "tier": 3,
+    "displayName": "Superior",
+    "displayColor": "light_purple",
+    "killMultiplier": 1,
+    "dataToNext": 500,
+    "pristineChance": 20,
+    "trial": {
+      "pristine": 12,
+      "maxWave": 5,
+      "affixes": 2,
+      "glitchChance": 6
+    }
+  },
+  {
+    "tier": 4,
+    "displayName": "Self-Aware",
+    "displayColor": "gold",
+    "pristineChance": 30,
+    "trial": {
+      "pristine": 18,
+      "maxWave": 7,
+      "affixes": 3,
+      "glitchChance": 11
+    }
+  }
+]
