@@ -182,7 +182,7 @@ val sim_chamber_multiblock = Builder.start(name, 2003)
             .where("E", MetaTileEntities.ENERGY_INPUT_HATCH[2], IFacing.west())
             .build())
     .withRecipeMap(dml_recipe_map)
-    .withTexture(ICubeRenderer.sided("deepmoblearning:blocks/machine_base_up"))
+    .withTexture(ICubeRenderer.sided("deepmoblearning:blocks/machine_base_dme"))
     .buildAndRegister();
 
 val DATA_MODEL_MAXIMUM_TIER = 4;
