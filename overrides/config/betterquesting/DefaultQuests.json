@@ -50452,6 +50452,68 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "821:10": {
+      "preRequisites:11": [
+        820
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Energy §6P2P Tunnels§r come in two forms: FE (RF power) and GTEU (GregTech power). These function largely the same as regular tunnels, but there is an §eenergy tax§r imposed on them.\n\n§6FE P2P Tunnels§r transfer RF power and 5% of the energy sent through them is deducted from the §aME Network§r\u0027s §einternal power buffer§r. Be sure to add enough §6Energy Cells§r to compensate for this.\n\n§6GTEU P2P Tunnels§r transfer amps of GregTech power (EU) and §eimpose the 5% energy tax on the amps directly§r. For example, an amp of 32 EU is taxed 5% and becomes 30 EU on the other end of the tunnel. Similarly an amp of 8192 EU is taxed 5% and becomes 7782 EU.\n\nBecause of these taxes, energy tunnels should be used strategically for sending energy across large distances or dimensions, rather than a replacement for normal cabling.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 470,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:part"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Energy P2P Tunnels",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 821,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 469,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:part"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 470,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:part"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "1:10": {
+          "index:3": 2,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -56080,6 +56142,13 @@
           "sizeY:3": 24,
           "x:3": 248,
           "y:3": 616
+        },
+        "45:10": {
+          "id:3": 821,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 248,
+          "y:3": 656
         }
       }
     }
