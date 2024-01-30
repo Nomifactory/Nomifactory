@@ -50323,6 +50323,67 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "819:10": {
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "preRequisites:11": [
+        148,
+        132,
+        105,
+        784
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6ME Beam Former§r is a device that creates a beam between two points to connect networks over empty space or transparent blocks. You\u0027ll need two devices to set up a link.\n\nThe beam updates in real-time based on changes to the blocks along its path. §eIf a non-transparent block gets in the way, the connection breaks§r. This makes it useful not only for linking networks together, but also for detecting arbitrary block updates if necessary.\n\nThe beam\u0027s color matches the cable color of the Beam Former it originates from. If the two devices have different cable colors, the color of the first activated Beam Former takes precedence.\n\nThe maximum distance the beam can cover is 32 blocks, or 34 blocks if you include the Beam Formers themselves.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "nae2:part"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Beam Former",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 819,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "nae2:part"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -55937,6 +55998,13 @@
           "sizeY:3": 24,
           "x:3": 104,
           "y:3": 656
+        },
+        "43:10": {
+          "id:3": 819,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -200,
+          "y:3": 520
         }
       }
     }
