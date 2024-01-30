@@ -50384,6 +50384,74 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "820:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "preRequisites:11": [
+        98,
+        100,
+        105,
+        89
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Point to Point Tunnels, or §6P2P Tunnels§r for short, are devices used to instantly move things from one place to another via an §bME Network§r, without entering that network\u0027s storage.\n\nTunnels have a single §einput§r and one to many §eoutputs§r. This is achieved by linking them together on a shared §efrequency§r using a §aMemory Card§r.\n\nTo do this, place a P2P Tunnel on an §6ME Cable§r to serve as the §einput tunnel§r. Sneak-right-click the P2P Tunnel with a Memory Card to assign the tunnel a new frequency§r. The Memory Card used will record the frequency and type of the input tunnel.\n\nYou can then place down a second P2P Tunnel on ME Cable and right-click it with the Memory Card. This will create an §eoutput tunnel§r by assigning it the same frequency and transforming it into the same type of P2P Tunnel as the input tunnel. Repeat this as many times as you need to make more output tunnels.\n\nThe basic ME P2P Tunnel is used for channel mechanics, which is outside of the scope of this pack, but can be converted into various alternative tunnels by clicking it with a certain type of item (see the tooltip for each tunnel type in §3JEI§r).\n\nSimple P2P Tunnels exist for items, fluids, redstone, and light. You put the corresponding type of thing in the input tunnel and it will come out of a linked output tunnel.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 460,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:part"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "P2P Tunnels",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 820,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 460,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:part"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:memory_card",
+              "tag:10": {}
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -56005,6 +56073,13 @@
           "sizeY:3": 24,
           "x:3": -200,
           "y:3": 520
+        },
+        "44:10": {
+          "id:3": 820,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 248,
+          "y:3": 616
         }
       }
     }
