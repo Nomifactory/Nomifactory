@@ -779,7 +779,6 @@ recipes.addShaped(<gregtech:machine:273>, [
 
 recipes.addShapeless(<gregtech:meta_item_1:2700>, [<gregtech:meta_item_1:2033>,<minecraft:redstone>]);
 recipes.addShapeless(<minecraft:flint>, [<gregtech:meta_tool:12>, <minecraft:gravel:*>, <minecraft:gravel:*>]);
-mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:flint>, <gregtech:meta_item_1:2159>, 1000);
 
 furnace.addRecipe(<minecraft:iron_nugget> * 3, <gregtech:meta_item_1:2255>, 0.0);
 furnace.addRecipe(<minecraft:iron_nugget> * 2, <gregtech:meta_item_1:3255>, 0.0);

@@ -387,5 +387,7 @@ recipes.addShaped(<actuallyadditions:block_furnace_solar>, [
 mods.jei.JEI.addDescription(<actuallyadditions:item_misc:13>, "Canola can be turned into Canola Oil via a Canola Press. This is a somewhat slow machine and requres RF to function");
 	
 	
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:flint>, <gregtech:meta_item_1:2159>, 1000);
+
 print("--- ActuallyAdditions.zs initialized ---");
 
