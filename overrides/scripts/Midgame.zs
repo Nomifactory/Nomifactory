@@ -267,7 +267,7 @@ recipes.addShaped(<metaitem:component.capacitor> * 4, [
 	[<gregtech:meta_item_2:16062>, null, <gregtech:meta_item_2:16062>]]);
 
 assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:18>]).fluidInputs([<liquid:glowstone> * 4320]).outputs([<simplyjetpacks:metaitemmods:19>]).duration(2000).EUt(3000).buildAndRegister();
-assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs([<liquid:cryotheum> * 4320]).outputs([<simplyjetpacks:metaitemmods:21>]).duration(2000).EUt(8000).buildAndRegister();
+assembler.recipeBuilder().inputs([<simplyjetpacks:metaitemmods:20>]).fluidInputs([<liquid:cryotheum> * 5000]).outputs([<simplyjetpacks:metaitemmods:21>]).duration(2000).EUt(8000).buildAndRegister();
 
 
 //Gear Boxes Via Assembler
