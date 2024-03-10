@@ -1210,6 +1210,10 @@ mods.chisel.Carving.addVariation("basalt", <gregtech:mineral:2>);
 <ore:gtceWireCutters>.addItems([
 	<gregtech:meta_tool:13>.withEmptyTag()]);
 
+<ore:gtceMiningDrills>.addItems([
+	<gregtech:meta_tool:23>.withEmptyTag(),
+	<gregtech:meta_tool:24>.withEmptyTag(),
+	<gregtech:meta_tool:25>.withEmptyTag()]);
 
 //Setting Item Max Stacksize
 <minecraft:snowball>.maxStackSize=64;

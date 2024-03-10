@@ -500,3 +500,8 @@ for blockItem in blocks {
 mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 6, <gregtech:sapling>, <thermalfoundation:fertilizer:0>, 9600, <gregtech:sapling>, 100);
 mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 12, <gregtech:sapling>, <thermalfoundation:fertilizer:1>, 14400, <gregtech:sapling>, 125);
 mods.thermalexpansion.Insolator.addRecipeSaplingInfuser(<gregtech:log> * 18, <gregtech:sapling>, <thermalfoundation:fertilizer:2>, 19200, <gregtech:sapling>, 150);
+
+// Drill Casing
+recipes.addShapeless("drill_casing", <thermalfoundation:material:640>, [<actuallyadditions:item_misc:16>]);
+// Drill Head
+recipes.addShapeless("thermal_drill_head", <thermalfoundation:material:656>, [<gregtech:meta_item_2:8183>]);
