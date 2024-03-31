@@ -1914,7 +1914,7 @@ gregtech.machine.chemical_reactor.ev.name=进阶化学反应釜 III
 gregtech.machine.compressor.lv.name=基础压缩机
 gregtech.machine.compressor.mv.name=进阶压缩机
 gregtech.machine.compressor.hv.name=进阶压缩机 II
-gregtech.machine.compressor.ev.name=奇点压缩机
+gregtech.machine.compressor.ev.name=进阶压缩机 III
 
 gregtech.machine.cutter.lv.name=基础板材切割机
 gregtech.machine.cutter.mv.name=进阶板材切割机
@@ -1943,7 +1943,7 @@ gregtech.machine.electromagnetic_separator.ev.name=进阶电磁选矿机 III
 gregtech.machine.extractor.lv.name=基础提取机
 gregtech.machine.extractor.mv.name=进阶提取机
 gregtech.machine.extractor.hv.name=进阶提取机 II
-gregtech.machine.extractor.ev.name=真空提取机
+gregtech.machine.extractor.ev.name=进阶提取机 III
 
 gregtech.machine.extruder.tooltip=金属处理的通用机器
 
@@ -2202,7 +2202,7 @@ gregtech.machine.quantum_tank.iv.name=黑洞量子缸 III
 gregtech.machine.air_collector.lv.name=基础空气收集器
 gregtech.machine.air_collector.mv.name=进阶空气收集器
 gregtech.machine.air_collector.hv.name=进阶空气收集器 II
-gregtech.machine.air_collector.ev.name=大气收集器 III
+gregtech.machine.air_collector.ev.name=进阶空气收集器 III
 gregtech.machine.air_collector.tooltip=从临近方块中收集空气
 
 #Tesla Coil

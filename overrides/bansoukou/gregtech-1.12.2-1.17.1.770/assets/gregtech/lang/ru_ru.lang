@@ -1927,7 +1927,7 @@ gregtech.machine.chemical_reactor.ev.name=Улучшеный химически�
 gregtech.machine.compressor.lv.name=Базовый компрессор
 gregtech.machine.compressor.mv.name=Улучшеный компрессор
 gregtech.machine.compressor.hv.name=Улучшеный компрессор II
-gregtech.machine.compressor.ev.name=Сингулярный компрессор
+gregtech.machine.compressor.ev.name=Улучшеный компрессор III
 
 gregtech.machine.cutter.lv.name=Базовая резочная машина
 gregtech.machine.cutter.mv.name=Улучшеная резочная машина
@@ -1956,7 +1956,7 @@ gregtech.machine.electromagnetic_separator.ev.name=Улучшеный элект
 gregtech.machine.extractor.lv.name=Базовый экстрактор
 gregtech.machine.extractor.mv.name=Улучшеный экстрактор
 gregtech.machine.extractor.hv.name=Улучшеный экстрактор II
-gregtech.machine.extractor.ev.name=Вакуумный экстрактор
+gregtech.machine.extractor.ev.name=Улучшеный экстрактор III
 
 gregtech.machine.extruder.tooltip=Универсальный станок для металлообработки
 
@@ -2214,7 +2214,7 @@ gregtech.machine.quantum_tank.iv.name=Квантовый резервуар на
 gregtech.machine.air_collector.lv.name=Базовый воздухосборник
 gregtech.machine.air_collector.mv.name=Улучшеный воздухосборник
 gregtech.machine.air_collector.hv.name=Улучшеный воздухосборник II
-gregtech.machine.air_collector.ev.name=Атмосферный коллектор
+gregtech.machine.air_collector.ev.name=Улучшеный воздухосборник III
 gregtech.machine.air_collector.tooltip=Собирает воздух из соседних блоков
 
 # Катушка Тесла
