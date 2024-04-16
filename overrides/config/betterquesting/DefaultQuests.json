@@ -11868,7 +11868,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Note: this quest accepts LV/MV/HV/EV §3Air Collectors§r.\n\nAn §3Air Collector§r will suck up air at a decent rate, provided the top side is unobstructed. The collected Air is automatically ejected into an adjacent tank via the output face.\n\nIV and LuV air collectors are not part of this quest, but for reference they exist and are called §3Atmosphere Collectors§r.\n\n",
+          "desc:8": "Note: this quest accepts LV/MV/HV/EV §3Air Collectors§r.\n\nAn §3Air Collector§r will suck up air at a decent rate, provided the top side is unobstructed. The collected Air is automatically ejected into an adjacent tank via the output face.\n\nIV and LuV air collectors are not part of this quest, but they are also available.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
