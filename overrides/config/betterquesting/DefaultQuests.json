@@ -51570,6 +51570,58 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "838:10": {
+      "preRequisites:11": [
+        837
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Recipes dispatched by an §aME Interface§r with a §aJob Auto-Complete Card§r will complete without waiting for any specified outputs.\n\n§d\"Well that\u0027s kind of odd, why would I want that?\"§r\nGreat question!\n\nThere\u0027s an old trick called the \"paper trick\" where people would rename a paper in an anvil to create a unique item, set that as the output of a processing pattern, and cycle the paper out and back into the network after depositing the ingredients to trick §bAE2§r into \"completing\" the craft. §eThis card achieves the same thing but without item cycling§r.\n\nThis is frequently used for ordering an entire multiblock\u0027s components to dump into a chest for convenient building, which obviously doesn\u0027t have an output item as it\u0027s not a conventional craft.\n\nAnother common use is to send off a §6Micro Miner§r mission for resources that are dumped into a processing pipeline (so you don\u0027t need to wait for it to actually finish). In this case it\u0027s also §esafer to use the trick, as you can inadvertently create cycles in the crafting tree if you\u0027re not careful§r. The Naquadah mission, for example, can end up depending on itself if the system is told the Miner mission outputs Naquadah dust.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": "",
+            "id:8": "nae2:upgrade"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Job Auto-Complete Card",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 838,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "nae2:upgrade"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -57323,6 +57375,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
+          "y:3": 656
+        },
+        "62:10": {
+          "id:3": 838,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
           "y:3": 656
         }
       }
