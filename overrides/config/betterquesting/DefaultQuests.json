@@ -51512,6 +51512,64 @@
           "taskID:8": "bq_standard:optional_retrieval"
         }
       }
+    },
+    "837:10": {
+      "preRequisites:11": [
+        836
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§aCrafting Cards§r are a useful tool for automation.\n\nThis card will generate crafting requests from the machine it is augmenting. In the case of an §aME Interface§r, crafting requests will be generated to keep the items in its stocking slots filled to the specified number. §eNote that you can expose these stocked items back to the network with a§r §aStorage Bus§r.\n\nRequests are made just like when you order them manually, except it will prioritize using the §osmallest§r available valid crafting computer.\n\nFor this reason you should consider adding a separate §31k Crafting Storage§r as its own computer each time you use one of these cards, to prevent your main computers from being tied up with these crafting requests. If your craft doesn\u0027t fit into that, maybe reconsider using a crafting card for that item.\n\nThis card has been maligned for producing lag and performing poorly, which was definitely true in §bAE2§r back in 2020. §eHowever, these issues have long since been addressed in §r§bAE2-UEL§r§e, and are no longer a problem§r.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 53,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:material"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Crafting Card",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 837,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 53,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:material"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:crafting_storage_1k"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -57258,6 +57316,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 40,
+          "y:3": 656
+        },
+        "61:10": {
+          "id:3": 837,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
           "y:3": 656
         }
       }
