@@ -7,6 +7,7 @@ import crafttweaker.recipes.IRecipeFunction;
 
 import mods.gregtech.recipe.RecipeMap;
 
+import scripts.CommonVars.makeShaped as makeShaped;
 import scripts.CommonVars.makeShapedF as makeShapedF;
 
 //////////////////////////////////////////////////////////////
@@ -20,14 +21,18 @@ recipes.addShaped(<thermalfoundation:material:512>, [
 	[<extrautils2:ingredients>,<gregtech:meta_item_1:12705>, <extrautils2:ingredients>]]);
 
 // remove the wonky 2-tag version from JEI
-mods.jei.JEI.removeAndHide(<thermalexpansion:tank>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}));
 
 // replace tank recipe with 3-tag version
 recipes.remove(<thermalexpansion:tank>);
-recipes.addShaped(basictank, [
-	[<gregtech:meta_item_1:12018>, <ore:blockGlassHardened>, <gregtech:meta_item_1:12018>],
-	[<ore:blockGlassHardened>,null,<ore:blockGlassHardened>],
-	[<gregtech:meta_item_1:12018>, <thermalfoundation:material:512>, <gregtech:meta_item_1:12018>]]);
+makeShaped("of_basictank",
+    basictank,
+    ["PGP",
+     "G G",
+     "PSP"],
+    { G : <ore:blockGlassHardened>,
+      P : <ore:plateCopper>,
+      S : <thermalfoundation:material:512> }); // servo
 
 function updateTank(level as byte) as IRecipeFunction {
     return function(out, ins, cInfo) as IItemStack {
