@@ -4,10 +4,28 @@ item.shears.name=Iron Shears
 
 // Actually Additions
 tile.actuallyadditions.block_misc_iron_casing.name=Aluminium Casing
+item.actuallyadditions.item_misc_drill_core.tooltip1=§cAcquired by exploration of Lost Cities buildings or vanilla dungeons.
+item.actuallyadditions.item_misc_drill_core.tooltip2=§cAlso can be purchased for Nomicoins.
+tile.actuallyadditions.block_canola_press.tooltip=§aTurns Canola into Canola Oil. Requires RF.
+item.actuallyadditions.item_solidified_experience.tooltip1=§aDrops from monsters, and can be made in
+item.actuallyadditions.item_solidified_experience.tooltip2=§aa Fluid Solidifier or Experience Solidifier.
 
 
 // Advanced Rocketry
 tile.fuelStation.name=Fueling Station
+
+
+// Applied Energistics 2
+item.appliedenergistics2.material.purified_certus_quartz_crystal.tooltip=§cMade in a Crystal Growth Chamber from a Certus Quartz Seed.
+item.appliedenergistics2.material.purified_nether_quartz_crystal.tooltip=§cMade in a Crystal Growth Chamber from a Nether Quartz Seed.
+item.appliedenergistics2.material.purified_fluix_crystal.tooltip=§cMade in a Crystal Growth Chamber from a Fluix Seed.
+item.appliedenergistics2.p2p_fe.tooltip=§a§oMade by right-clicking ME P2P Tunnel with an energy conduit.
+item.appliedenergistics2.p2p_fluid.tooltip=§a§oMade by right-clicking ME P2P Tunnel with a bucket.
+item.appliedenergistics2.p2p_item.tooltip=§a§oMade by right-clicking ME P2P Tunnel with a chest.
+item.appliedenergistics2.p2p_light.tooltip=§a§oMade by right-clicking ME P2P Tunnel with a torch.
+item.appliedenergistics2.p2p_redstone.tooltip=§a§oMade by right-clicking ME P2P Tunnel with redstone dust.
+item.appliedenergistics2.p2p_gteu.tooltip=§a§oMade by right-clicking ME P2P Tunnel with a GregTech wire or cable.
+item.appliedenergistics2.material.certus_quartz_crystal_charged.tooltip=§b§oObtained by charging with RF power in the AE2 Charger.
 
 
 // ArmorPlus
@@ -21,9 +39,14 @@ item.armorplus.coal_boots.name=Carbon Plated Boots
 item.star_fragment.name=Nether Star Tip North
 
 
-// Deep Mob Evolution
+// Dark Utils
+item.darkutils.ender_tether.tooltip=§7Blocks Endermen from teleporting
+
+
+// Deep Mob Learning
 tile.deepmoblearning.machine_casing.name=Dark Steel Machine Hull
 item.deepmoblearning.polymer_clay.name=Pulsating Polymer Clay
+item.deepmoblearning.glitch_fragment.tooltip=§b§oObtained by crushing Glitch Hearts against Obsidian.
 
 
 // EnderIO
@@ -128,6 +151,17 @@ metaitem.circuit.wetware_super_computer.tooltip=§b§oThis is the second and fin
 metaitem.circuit.wetware_mainframe.tooltip=§b§oThis is the first and only Tier Nine circuit.
 
 
+// JEI
+jei.ae2_facades.tooltip=§3Facades can be crafted from most blocks, but are hidden from JEI to reduce clutter
+jei.gtce_facades.tooltip=§3GTCE Cable facades can be made from most non-tile-entites, and craft into different amounts based on the metal used.
+
+
+// Logistics Pipes
+tile.logisticspipes.crafting_table.tooltip=§7Used for autocrafting with Logistics
+tile.logisticspipes.crafting_table_fuzzy.tooltip=§7Used for oredict autocrafting with Logistics
+item.logisticspipes.pipe_request_table.tooltip=§7This is your Logistics Crafting Terminal
+
+
 // NoNetherPortals
 nomifactory.nonetherportals=Nether portals are disabled in §5Nomifactory§r. Follow the quest book to unlock §6Nether Cakes§r!
 
@@ -168,3 +202,21 @@ item.wrench.name=Multiblock Fluid Tank Wrench
 
 // SimplyJetpacks
 item.simplyjetpacks.armor_Plating_EIO1.name=Wrought Iron Armor Plating
+
+
+// xTones
+tile.xtones.lamp_flat.tooltip=§eRequires a redstone signal to light.
+
+
+// Deprecation tooltips
+obsolete.tooltip=§cThis item is obsolete and will be removed in the next update.
+item.contenttweaker.endstonedust.tooltip=§cPlease use the GregTech variant of Endstone Dust.
+item.contenttweaker.pulsatingwire.tooltip=§cPlease use the GregTech variant of Endstone Dust.
+item.for.fertilizer_compound.tooltip=§cBone Meal works just as well for manual and AA/EIO farms.
+item.for.pipette.tooltip=§cEnderIO tanks and SoG Drums make for reasonable alternatives.
+item.for.crafting_material.pulsating_dust.tooltip=§cPlease use the ContentTweaker variant of Pulsating Dust.
+item.for.crafting_material.pulsating_mesh.tooltip=§cPlease use the ContentTweaker variant of Pulsating Mesh.
+item.for.naturalist_helmet.tooltip=§cTry out the Engineer's Goggles from Actually Additions instead :)
+item.for.worktable.tooltip=§cPlease use the GregTech Crafting Station instead.
+tile.modularmachinery.blockcontroller.tooltip1=§cModular Machinery is getting removed in a future update.
+tile.modularmachinery.blockcontroller.tooltip2=§cPlease use the new GregTech multiblocks instead. ('@Multiblock' in JEI)

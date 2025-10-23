@@ -15,8 +15,8 @@ import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 
 // Controller
 recipes.remove(<modularmachinery:blockcontroller>);
-<modularmachinery:blockcontroller>.addTooltip(format.red("Modular Machinery is getting removed in a future update."));
-<modularmachinery:blockcontroller>.addTooltip(format.red("Please use the new GregTech multiblocks instead. ('@Multiblock' in JEI)"));
+<modularmachinery:blockcontroller>.addAdvancedTooltip(function(item) { return game.localize("tile.modularmachinery.blockcontroller.tooltip1"); });
+<modularmachinery:blockcontroller>.addAdvancedTooltip(function(item) { return game.localize("tile.modularmachinery.blockcontroller.tooltip2"); });
 
 <ore:multiblockController>.add(<modularmachinery:blockcontroller>);
 
@@ -74,9 +74,7 @@ makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
 	  M : <gregtech:machine:480> }
 );
 
-<contenttweaker:tieroneship>.addTooltip(
-	format.white(
-		format.italic("Harvests Titanium and other light metals from asteroids in the microverse.")));
+<contenttweaker:tieroneship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tieroneship.tooltip"); });
 
 // Tier 1 Guidance
 makeShaped("of_t1guidance", <contenttweaker:t1guidance>,
@@ -118,9 +116,7 @@ makeExtremeRecipe5(<contenttweaker:tiertwoship>,
 	  T : <simplyjetpacks:metaitemmods:8> }
 );
 
-<contenttweaker:tiertwoship>.addTooltip(
-	format.white(
-		format.italic("Harvests Tungsten and other heavy metals from asteroids in the microverse.")));
+<contenttweaker:tiertwoship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiertwoship.tooltip"); });
 
 
 /////////////	 Tier Three Space Ship  	  //////////////////
@@ -159,9 +155,7 @@ makeExtremeRecipe5(<contenttweaker:t2laser>,
 	  R : <minecraft:redstone_block> }
 );
 
-<contenttweaker:tierthreeship>.addTooltip(
-	format.white(
-		format.italic("Harvests ultra hot metals and gems from Nether microverses.")));
+<contenttweaker:tierthreeship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tierthreeship.tooltip"); });
 
 // Rocket Engine
 recipes.remove(<advancedrocketry:advrocketmotor>);
@@ -336,7 +330,7 @@ makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 	  B : <gtadditions:ga_meta_item:32015>,
 	  C : <gregtech:meta_item_2:32501> }
 );
-<contenttweaker:universalnavigator>.addTooltip(format.blue("See you later, navigator!"));
+<contenttweaker:universalnavigator>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.universalnavigator.tooltip"); });
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
@@ -428,10 +422,8 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 	{ A : <gregtech:meta_item_1:12702>,
 	  B : <gregtech:machine:322> }
 );
-<actuallyadditions:item_solidified_experience>.addTooltip(
-	format.green("Drops from monsters, and can be made in"));
-<actuallyadditions:item_solidified_experience>.addTooltip(
-	format.green("a Fluid Solidifier or Experience Solidifier."));
+<actuallyadditions:item_solidified_experience>.addAdvancedTooltip(function(item) { return game.localize("item.actuallyadditions.item_solidified_experience.tooltip1"); });
+<actuallyadditions:item_solidified_experience>.addAdvancedTooltip(function(item) { return game.localize("item.actuallyadditions.item_solidified_experience.tooltip2"); });
 
 // Solidified Experience
 solidifier.recipeBuilder()
@@ -445,26 +437,16 @@ fluid_extractor.recipeBuilder()
 	.fluidOutputs(<liquid:xpjuice> * 160)
 	.duration(80).EUt(32).buildAndRegister();
 
-<contenttweaker:tierfourship>.addTooltip(format.white(
-	format.italic("Harvests ultra cold materials from the deepest parts of empty space.")));
-<contenttweaker:tierfiveship>.addTooltip(format.white(
-	format.italic("Harvests strange materials from End microverses.")));
-<contenttweaker:tiersixship>.addTooltip(format.white(
-	format.italic("Harvests extremely rare materials from every concievable reality.")));
-<contenttweaker:tiersevenship>.addTooltip(format.white(
-	format.italic("Hunts Wyrms and End Dragons from the microverse.")));
-<contenttweaker:tiersevenship>.addTooltip(format.white(
-	format.italic("and returns with parts from their carapaces.")));
-<contenttweaker:tiereightship>.addTooltip(format.white(
-	format.italic("Hunts inconcievable monstrosities from beyond the End.")));
-<contenttweaker:tiereightship>.addTooltip(format.white(
-	format.italic("and returns with bizzare trinkets.")));
-<contenttweaker:tiernineship>.addTooltip(format.white(
-	format.italic("Collapses microverse stars and harvests their delicious neutronium cores.")));
-<contenttweaker:tiertenship>.addTooltip(format.white(
-	format.italic("Collapses an entire microverse and harvests it whole.")));
-<contenttweaker:tiertenship>.addTooltip(format.white(
-	format.italic("Try to aim for uninhabited ones.")));
+<contenttweaker:tierfourship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tierfourship.tooltip"); });
+<contenttweaker:tierfiveship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tierfiveship.tooltip"); });
+<contenttweaker:tiersixship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiersixship.tooltip"); });
+<contenttweaker:tiersevenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiersevenship.tooltip1"); });
+<contenttweaker:tiersevenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiersevenship.tooltip2"); });
+<contenttweaker:tiereightship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiereightship.tooltip1"); });
+<contenttweaker:tiereightship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiereightship.tooltip2"); });
+<contenttweaker:tiernineship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiernineship.tooltip"); });
+<contenttweaker:tiertenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiertenship.tooltip1"); });
+<contenttweaker:tiertenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiertenship.tooltip2"); });
 
 
 // Dense Hydrogen

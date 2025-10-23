@@ -1036,7 +1036,7 @@ makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
       J : <moreplates:empowered_palis_gear>,
       K : <moreplates:empowered_restonia_gear>,
       L : <moreplates:empowered_void_gear> });
-<contenttweaker:eternalcatalyst>.addTooltip(format.darkGray(format.italic("Gaze into the Abyss...")));
+<contenttweaker:eternalcatalyst>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.eternalcatalyst.tooltip"); });
 
 
 ////////////////////////// Infinity Ingot ///////////////////////
@@ -1105,7 +1105,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(2, <contenttweaker:ultimate_gem
      <redstonearsenal:material:160>,
      <minecraft:diamond>,
      <thermalfoundation:material:895>]);
-<contenttweaker:ultimate_gem>.addTooltip(format.yellow("Recipe is shapeless."));
+<contenttweaker:ultimate_gem>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.ultimate_gem.tooltip"); });
 
 
 ////////////////////////// Creative Vending Upgrade ///////////////////////
@@ -1499,7 +1499,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(4, <contenttweaker:ultimate_gen
 <gregtech:machine:518>, <gregtech:machine:485>, xu13, xu12, xu11, xu10, xu09, <gregtech:machine:492>, <gregtech:machine:520>,
 <solarflux:solar_panel_1>, <solarflux:solar_panel_4>, <gregtech:machine:486>, <gregtech:machine:487>, <gregtech:machine:519>, <gregtech:machine:490>, <gregtech:machine:491>, <solarflux:solar_panel_chaotic>, <solarflux:solar_panel_draconic>,
 <solarflux:solar_panel_2>, <solarflux:solar_panel_3>, <solarflux:solar_panel_5>, <solarflux:solar_panel_6>, <extrautils2:passivegenerator>, <solarflux:solar_panel_7>, <solarflux:solar_panel_8>, <solarflux:solar_panel_wyvern>, <solarflux:solar_panel_neutronium>]);
-<contenttweaker:ultimate_generator>.addTooltip(format.yellow("Recipe is shapeless."));
+<contenttweaker:ultimate_generator>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.ultimate_generator.tooltip"); });
 
 
 //Ultimate Power Storage

@@ -39,7 +39,7 @@ print("--- loading Darkutils.zs ---");
 	rh(<darkutils:trap_move_hyper>);
 
 	# Tweaks
-	<darkutils:ender_tether>.addTooltip("Blocks Endermen from teleporting");
+	<darkutils:ender_tether>.addAdvancedTooltip(function(item) { return game.localize("item.darkutils.ender_tether.tooltip"); });
 	recipes.remove(<darkutils:ender_tether>);
 	recipes.addShapedMirrored("Ender Tether", 
 	<darkutils:ender_tether>, 

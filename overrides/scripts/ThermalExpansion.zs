@@ -304,7 +304,7 @@ recipes.addShaped(<contenttweaker:excitationcoil>, [
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>],
 	[<gregtech:meta_item_1:12237>, <thermalfoundation:material:515>, <gregtech:meta_item_1:12237>]]);
 
-<contenttweaker:excitationcoil>.addTooltip(format.darkGray(format.italic("Crafting component only.")));
+<contenttweaker:excitationcoil>.addAdvancedTooltip(function(item) { return game.localize("tile.contenttweaker.excitationcoil.tooltip"); });
 
 //Numismatic Press
 recipes.remove(<thermalexpansion:augment:336>);

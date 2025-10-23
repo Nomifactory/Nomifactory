@@ -49,9 +49,9 @@ print("--- loading Logipipes.zs ---");
 	#mods.jei.JEI.hide(<logisticspipes:remote_orderer:16>);
 
 	#Tooltips
-	<logisticspipes:crafting_table>.addTooltip("Used for autocrafting with Logistics");
-	<logisticspipes:crafting_table_fuzzy>.addTooltip("Used for oredict autocrafting with Logistics");
-	<logisticspipes:pipe_request_table>.addTooltip("This is your Logistics Crafting Terminal");
+	<logisticspipes:crafting_table>.addAdvancedTooltip(function(item) { return game.localize("tile.logisticspipes.crafting_table.tooltip"); });
+	<logisticspipes:crafting_table_fuzzy>.addAdvancedTooltip(function(item) { return game.localize("tile.logisticspipes.crafting_table_fuzzy.tooltip"); });
+	<logisticspipes:pipe_request_table>.addAdvancedTooltip(function(item) { return game.localize("item.logisticspipes.pipe_request_table.tooltip"); }); 
 
 	#FPGA Chip
 	recipes.remove(<logisticspipes:chip_fpga_raw>);

@@ -2508,13 +2508,13 @@ recipes.addShapeless(<gregtech:meta_item_1:8357> * 9, [<thermalfoundation:storag
 
 // Temporary recipe to convert endstone dusts
 recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
-<contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
+<contenttweaker:endstonedust>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<contenttweaker:endstonedust>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.endstonedust.tooltip"); });
 
 // Temporary recipe to convert pulsating iron wire that is probably unnecessary anyway.
 recipes.addShapeless(<ore:wireGtSinglePulsatingIron>.firstItem, [<contenttweaker:pulsatingwire>]);
-<contenttweaker:pulsatingwire>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<contenttweaker:pulsatingwire>.addTooltip(format.red("Please use the GregTech variant of Pulsating Iron Wire."));
+<contenttweaker:pulsatingwire>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<contenttweaker:pulsatingwire>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.pulsatingwire.tooltip"); });
 
 //neutronium plate exchange
 recipes.addShapeless("of_exchange_neutronium_plate",
