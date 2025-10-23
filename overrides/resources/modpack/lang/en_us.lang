@@ -115,6 +115,17 @@ item.emerald.lens=Green Lens
 item.blue_topaz.lens=Blue Lens
 item.amethyst.lens=Draconium Lens
 tile.turbine_casing.steel_turbine_casing.name=Magnalium Turbine Casing
+metaitem.circuit.energy_flow.tooltip=§b§oThis is the third Tier Six circuit.
+metaitem.circuit.quantum_processor.tooltip=§b§oThis is the fourth and final Tier Four circuit.
+metaitem.circuit.nano_processor_assembly.tooltip=§b§oThis is the third Tier Four circuit.
+metaitem.circuit.nano_processor.tooltip=§b§oThis is the fourth and final Tier Three circuit.
+metaitem.circuit.processor_assembly.tooltip=§b§oThis is the third Tier Three circuit.
+metaitem.circuit.basic_electronic.tooltip=§b§oThis is the second Tier One circuit.
+metaitem.circuit.basic.tooltip=§b§oThis is the first Tier One circuit.
+metaitem.circuit.wetware_processor.tooltip=§b§oThis is the fourth and final Tier Six circuit.
+metaitem.circuit.wetware_assembly.tooltip=§b§oThis is the third and final Tier Seven circuit.
+metaitem.circuit.wetware_super_computer.tooltip=§b§oThis is the second and final Tier Eight circuit.
+metaitem.circuit.wetware_mainframe.tooltip=§b§oThis is the first and only Tier Nine circuit.
 
 
 // NoNetherPortals
@@ -157,5 +168,3 @@ item.wrench.name=Multiblock Fluid Tank Wrench
 
 // SimplyJetpacks
 item.simplyjetpacks.armor_Plating_EIO1.name=Wrought Iron Armor Plating
-
-
