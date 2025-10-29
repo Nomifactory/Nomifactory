@@ -3,15 +3,6 @@
 import scripts.CommonVars.makeShaped as makeShaped;
 
 /*
-  P2P Tunnel tooltips.
- */
-<appliedenergistics2:part:469>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.p2p_fe.tooltip"); });
-<appliedenergistics2:part:463>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.p2p_fluid.tooltip"); });
-<appliedenergistics2:part:462>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.p2p_item.tooltip"); });
-<appliedenergistics2:part:467>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.p2p_light.tooltip"); });
-<appliedenergistics2:part:461>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.p2p_redstone.tooltip"); });
-<appliedenergistics2:part:470>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.p2p_gteu.tooltip"); });
-/*
   Channel-specific adjustments.
  */
 if (<appliedenergistics2:controller> as bool) {

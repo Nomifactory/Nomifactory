@@ -57,7 +57,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metait
 
 //Refined Circuit
 
-<contenttweaker:refinedcircuit>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.refinedcircuit.tooltip"); });
 
 assembler.findRecipe(60, [<metaitem:plate.central_processing_unit> * 4, <metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <ore:wireFineCopper>.firstItem * 2, <metaitem:board.plastic>], [<liquid:tin> * 144]).remove();
 assembler.findRecipe(60, [<metaitem:plate.central_processing_unit> * 4, <metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineCopper>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
@@ -137,7 +136,6 @@ recipes.addShaped(<gregtech:machine:2039>, [
 
 //Primitive Processor
 
-<contenttweaker:combinationcircuit>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.combinationcircuit.tooltip"); });
 
 recipes.remove(<metaitem:circuit.good>);
 recipes.addShaped(<contenttweaker:combinationcircuit>, [
@@ -149,7 +147,6 @@ recipes.addShaped(<contenttweaker:combinationcircuit>, [
 	
 //Electronic Processor	
 
-<contenttweaker:electronicprocessor>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.electronicprocessor.tooltip"); });
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32489>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32490>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32507>);
@@ -169,7 +166,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metait
 
 //Refined Processor	
 
-<contenttweaker:refinedprocessor>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.refinedprocessor.tooltip"); });
 
 assembler.findRecipe(60, [<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.plastic>, <metaitem:plate.central_processing_unit>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:tin> * 144]).remove();
 assembler.findRecipe(60, [<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.plastic>, <metaitem:plate.central_processing_unit>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
@@ -188,7 +184,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metait
 
 //Microcircuit
 
-<contenttweaker:microcircuit>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.microcircuit.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit> * 2, <metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microcircuit> * 4]).duration(100).EUt(400).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit> * 2, <metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microcircuit> * 4]).duration(100).EUt(400).buildAndRegister();
@@ -204,7 +199,6 @@ assembler.recipeBuilder().inputs([<metaitem:plate.system_on_chip>, <metaitem:boa
 
 //Electronic Processor Array
 
-<contenttweaker:electronicprocessorarray>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.electronicprocessorarray.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
@@ -215,7 +209,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metait
 
 //Refined Processor Array
 
-<contenttweaker:refinedprocessorarray>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.refinedprocessorarray.tooltip"); });
 
 assembler.findRecipe(4, [<ore:circuitGood>.firstItem * 4, <ore:plateStainlessSteel>.firstItem * 2], [null]).remove();
 assembler.recipeBuilder().inputs([<ore:circuitGood> * 4, <ore:ingotStainlessSteel> * 2]).outputs([<gtadditions:ga_meta_item:32131>]).duration(20).EUt(4).buildAndRegister(); //deconflicting blank schematic
@@ -263,7 +256,6 @@ assembler.recipeBuilder().inputs([<metaitem:board.fiber_reinforced>, <metaitem:p
 
 //Refined Processor Mainframe
 
-<contenttweaker:refinedprocessormainframe>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.refinedprocessormainframe.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 6, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.diode> * 4, <contenttweaker:refinedprocessorarray> * 2, <gregtech:frame_stainless_steel> * 4, <ore:wireGtSingleVibrantAlloy> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessormainframe>]).duration(500).EUt(110).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 6, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.diode> * 4, <contenttweaker:refinedprocessorarray> * 2, <gregtech:frame_stainless_steel> * 4, <ore:wireGtSingleVibrantAlloy> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessormainframe>]).duration(500).EUt(110).buildAndRegister();
@@ -272,7 +264,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metai
 
 //Microprocessor Array
 
-<contenttweaker:microprocessorarray>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.microprocessorarray.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(360).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(360).buildAndRegister();
@@ -309,7 +300,6 @@ assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, 
 
 //Microprocessor Mainframe
 
-<contenttweaker:microprocessormainframe>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.microprocessormainframe.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 12, <metaitem:component.smd.capacitor> * 16, <metaitem:component.smd.diode> * 8, <contenttweaker:microprocessorarray> * 2, <gregtech:frame_titanium> * 4, <ore:wireGtSingleEndSteel> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessormainframe>]).duration(500).EUt(500).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 12, <metaitem:component.smd.capacitor> * 16, <metaitem:component.smd.diode> * 8, <contenttweaker:microprocessorarray> * 2, <gregtech:frame_titanium> * 4, <ore:wireGtSingleEndSteel> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessormainframe>]).duration(500).EUt(500).buildAndRegister();
@@ -318,7 +308,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metai
 
 //Nanoprocessor Array
 
-<contenttweaker:nanoprocessorarray>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.nanoprocessorarray.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.nano_processor_assembly> * 4, <metaitem:board.fiber_reinforced>, <ore:plateTungstenSteel> * 2, <ore:wireGtSingleLumium> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:nanoprocessorarray>]).duration(200).EUt(2000).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.nano_processor_assembly> * 4, <metaitem:board.fiber_reinforced>, <ore:plateTungstenSteel> * 2, <ore:wireGtSingleLumium> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:nanoprocessorarray>]).duration(200).EUt(2000).buildAndRegister();
@@ -326,7 +315,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:
 
 //Quantum Processor
 
-<contenttweaker:quantumprocessor>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.quantumprocessor.tooltip"); });
 
 assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.quantum_processor> * 2, <ore:wireFinePlatinum>.firstItem * 6], [<liquid:tin> * 288]).remove();
 assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.quantum_processor> * 2, <ore:wireFinePlatinum>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
@@ -339,7 +327,6 @@ recipes.addShapeless(<contenttweaker:quantumprocessor>, [<gregtech:meta_item_2:3
 
 //Crystal Circuit
 
-<contenttweaker:crystalcircuit>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.crystalcircuit.tooltip"); });
 
 assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:tin> * 144]).remove();
 assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
@@ -358,7 +345,6 @@ assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, 
 
 //Nanoprocessor Mainframe
 
-<contenttweaker:nanoprocessormainframe>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.nanoprocessormainframe.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metaitem:plate.random_access_memory> * 12, <metaitem:component.smd.transistor> * 16, <metaitem:component.smd.capacitor> * 20, <metaitem:component.smd.diode> * 12, <contenttweaker:nanoprocessorarray> * 2, <gregtech:frame_tungsten_steel> * 4, <ore:wireGtSingleLumium> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:nanoprocessormainframe>]).duration(500).EUt(2000).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metaitem:plate.random_access_memory> * 12, <metaitem:component.smd.transistor> * 16, <metaitem:component.smd.capacitor> * 20, <metaitem:component.smd.diode> * 12, <contenttweaker:nanoprocessorarray> * 2, <gregtech:frame_tungsten_steel> * 4, <ore:wireGtSingleLumium> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:nanoprocessormainframe>]).duration(500).EUt(2000).buildAndRegister();
@@ -366,7 +352,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metai
 
 //Quantum Processor Array
 
-<contenttweaker:quantumprocessorarray>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.quantumprocessorarray.tooltip"); });
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.power_integrated_circuit> * 4, <metaitem:component.smd.transistor> * 8, <contenttweaker:quantumprocessor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <gregtech:meta_item_1:32724>, <ore:plateChrome> * 2, <ore:wireGtSingleSignalum> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:quantumprocessorarray>]).duration(200).EUt(6000).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.power_integrated_circuit> * 4, <metaitem:component.smd.transistor> * 8, <contenttweaker:quantumprocessor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <gregtech:meta_item_1:32724>, <ore:plateChrome> * 2, <ore:wireGtSingleSignalum> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:quantumprocessorarray>]).duration(200).EUt(6000).buildAndRegister();
@@ -395,14 +380,12 @@ assembler.recipeBuilder().inputs([<gregtech:meta_item_2:32476> * 4, <gregtech:ca
 
 //Quantum Processor Mainframe
 
-<contenttweaker:quantumprocessormainframe>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.quantumprocessormainframe.tooltip"); });
 
 assembly_line.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 32, <metaitem:plate.power_integrated_circuit> * 8, <metaitem:component.smd.transistor> * 24, <metaitem:component.smd.capacitor> * 28, <metaitem:component.smd.diode> * 16, <gregtech:meta_item_1:32725>, <contenttweaker:quantumprocessorarray> * 2, <gregtech:frame_hssg> * 4, <ore:wireGtSingleSignalum> * 8]).fluidInputs(<liquid:soldering_alloy> * 1440).outputs([<contenttweaker:quantumprocessormainframe>]).duration(500).EUt(8000).buildAndRegister();
 
 
 //Crystal Processor Array
 
-<contenttweaker:crystalprocessorarray>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.crystalprocessorarray.tooltip"); });
 
 assembly_line.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.high_power_integrated_circuit>, <metaitem:component.smd.transistor> * 8, <metaitem:circuit.energy_flow> * 4, <metaitem:board.multilayer.fiber_reinforced>, <gregtech:meta_item_1:32724>, <ore:plateDraconium> * 2, <ore:wireGtSingleEnderium> * 4]).fluidInputs(<liquid:soldering_alloy> * 720).outputs([<contenttweaker:crystalprocessorarray>]).duration(300).EUt(30000).buildAndRegister();
 
@@ -417,7 +400,6 @@ assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 16, <gregtec
  
 //Crystal Processor Mainframe
 
-<contenttweaker:crystalprocessormainframe>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.crystalprocessormainframe.tooltip"); });
 
 assembly_line.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 48, <gregtech:meta_item_2:32479>, <metaitem:component.smd.transistor> * 36, <metaitem:component.smd.capacitor> * 32, <metaitem:component.smd.diode> * 24, <enderio:item_material:19> * 4, <extendedcrafting:material:18> * 8, <contenttweaker:crystalprocessorarray> * 2, <gregtech:frame_hsse> * 4, <ore:wireGtSingleEnderium> * 8]).fluidInputs(<liquid:soldering_alloy> * 1440).outputs([<contenttweaker:crystalprocessormainframe>]).duration(500).EUt(30000).buildAndRegister();
  

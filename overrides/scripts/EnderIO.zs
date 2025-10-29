@@ -197,8 +197,6 @@ recipes.addShapeless(doublecompressedoctadiccap, [<contenttweaker:doublecompress
 //An attempt to do the same in JEI
 mods.jei.JEI.addItem(compressedoctadiccap);
 mods.jei.JEI.addItem(doublecompressedoctadiccap);
-<contenttweaker:compressedoctadiccapacitor>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.compressedcapacitor.tooltip"); });
-<contenttweaker:doublecompressedoctadiccapacitor>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.compressedcapacitor.tooltip"); });
 
 /*
 

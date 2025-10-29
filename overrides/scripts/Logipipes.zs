@@ -48,11 +48,6 @@ print("--- loading Logipipes.zs ---");
 	#mods.jei.JEI.hide(<logisticspipes:remote_orderer:15>);
 	#mods.jei.JEI.hide(<logisticspipes:remote_orderer:16>);
 
-	#Tooltips
-	<logisticspipes:crafting_table>.addAdvancedTooltip(function(item) { return game.localize("tile.logisticspipes.crafting_table.tooltip"); });
-	<logisticspipes:crafting_table_fuzzy>.addAdvancedTooltip(function(item) { return game.localize("tile.logisticspipes.crafting_table_fuzzy.tooltip"); });
-	<logisticspipes:pipe_request_table>.addAdvancedTooltip(function(item) { return game.localize("item.logisticspipes.pipe_request_table.tooltip"); }); 
-
 	#FPGA Chip
 	recipes.remove(<logisticspipes:chip_fpga_raw>);
 	recipes.addShapedMirrored("Raw FPGA", 

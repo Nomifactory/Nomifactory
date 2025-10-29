@@ -2,10 +2,6 @@ import crafttweaker.item.IIngredient;
 import mods.gregtech.recipe.RecipeMap;
 import scripts.CommonVars.makeShaped as makeShaped;
 
-<deepmoblearning:glitch_fragment>.addAdvancedTooltip(function(item) { return game.localize("item.deepmoblearning.glitch_fragment.tooltip"); });
-
-<appliedenergistics2:material:1>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.material.certus_quartz_crystal_charged.tooltip"); });
-
 //Gravistar
 autoclave.findRecipe(7680, [<minecraft:nether_star>], [<liquid:neutronium> * 288]).remove();
 autoclave.recipeBuilder()

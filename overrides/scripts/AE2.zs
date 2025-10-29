@@ -309,9 +309,6 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_16k");
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_64k");
 
-<appliedenergistics2:material:10>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.material.purified_certus_quartz_crystal.tooltip"); });
-<appliedenergistics2:material:11>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.material.purified_nether_quartz_crystal.tooltip"); });
-<appliedenergistics2:material:12>.addAdvancedTooltip(function(item) { return game.localize("item.appliedenergistics2.material.purified_fluix_crystal.tooltip"); });
 	
 // 1k Storage
 recipes.remove(<appliedenergistics2:material:35>);	

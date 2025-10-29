@@ -15,8 +15,6 @@ import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 
 // Controller
 recipes.remove(<modularmachinery:blockcontroller>);
-<modularmachinery:blockcontroller>.addAdvancedTooltip(function(item) { return game.localize("tile.modularmachinery.blockcontroller.tooltip1"); });
-<modularmachinery:blockcontroller>.addAdvancedTooltip(function(item) { return game.localize("tile.modularmachinery.blockcontroller.tooltip2"); });
 
 <ore:multiblockController>.add(<modularmachinery:blockcontroller>);
 
@@ -74,7 +72,7 @@ makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
 	  M : <gregtech:machine:480> }
 );
 
-<contenttweaker:tieroneship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tieroneship.tooltip"); });
+
 
 // Tier 1 Guidance
 makeShaped("of_t1guidance", <contenttweaker:t1guidance>,
@@ -116,7 +114,7 @@ makeExtremeRecipe5(<contenttweaker:tiertwoship>,
 	  T : <simplyjetpacks:metaitemmods:8> }
 );
 
-<contenttweaker:tiertwoship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiertwoship.tooltip"); });
+
 
 
 /////////////	 Tier Three Space Ship  	  //////////////////
@@ -155,7 +153,7 @@ makeExtremeRecipe5(<contenttweaker:t2laser>,
 	  R : <minecraft:redstone_block> }
 );
 
-<contenttweaker:tierthreeship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tierthreeship.tooltip"); });
+
 
 // Rocket Engine
 recipes.remove(<advancedrocketry:advrocketmotor>);
@@ -330,7 +328,7 @@ makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 	  B : <gtadditions:ga_meta_item:32015>,
 	  C : <gregtech:meta_item_2:32501> }
 );
-<contenttweaker:universalnavigator>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.universalnavigator.tooltip"); });
+
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
@@ -422,8 +420,8 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 	{ A : <gregtech:meta_item_1:12702>,
 	  B : <gregtech:machine:322> }
 );
-<actuallyadditions:item_solidified_experience>.addAdvancedTooltip(function(item) { return game.localize("item.actuallyadditions.item_solidified_experience.tooltip1"); });
-<actuallyadditions:item_solidified_experience>.addAdvancedTooltip(function(item) { return game.localize("item.actuallyadditions.item_solidified_experience.tooltip2"); });
+
+
 
 // Solidified Experience
 solidifier.recipeBuilder()
@@ -436,18 +434,6 @@ fluid_extractor.recipeBuilder()
 	.inputs(<actuallyadditions:item_solidified_experience>)
 	.fluidOutputs(<liquid:xpjuice> * 160)
 	.duration(80).EUt(32).buildAndRegister();
-
-<contenttweaker:tierfourship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tierfourship.tooltip"); });
-<contenttweaker:tierfiveship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tierfiveship.tooltip"); });
-<contenttweaker:tiersixship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiersixship.tooltip"); });
-<contenttweaker:tiersevenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiersevenship.tooltip1"); });
-<contenttweaker:tiersevenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiersevenship.tooltip2"); });
-<contenttweaker:tiereightship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiereightship.tooltip1"); });
-<contenttweaker:tiereightship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiereightship.tooltip2"); });
-<contenttweaker:tiernineship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiernineship.tooltip"); });
-<contenttweaker:tiertenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiertenship.tooltip1"); });
-<contenttweaker:tiertenship>.addAdvancedTooltip(function(item) { return game.localize("item.contenttweaker.tiertenship.tooltip2"); });
-
 
 // Dense Hydrogen
 makeShaped("of_densehydrogen", <contenttweaker:densehydrogen>,

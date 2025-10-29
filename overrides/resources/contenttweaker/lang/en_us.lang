@@ -230,7 +230,8 @@ item.contenttweaker.stabilizedthorium.name=Stabilized Thorium
 
 item.contenttweaker.compressedoctadiccapacitor.name=Compressed Octadic Capacitor
 item.contenttweaker.doublecompressedoctadiccapacitor.name=Double Compressed Octadic Capacitor
-item.contenttweaker.compressedcapacitor.tooltip=§rPut the item into a crafting window if it has no lore
+item.contenttweaker.compressedoctadiccapacitor.tooltip=§rPut the item into a crafting window if it has no lore
+item.contenttweaker.doublecompressedoctadiccapacitor.tooltip=§rPut the item into a crafting window if it has no lore
 item.contenttweaker.ultimate_circuit.name=Ultimate Circuit
 item.contenttweaker.ultimate_power_storage.name=Ultimate Power Storage
 item.contenttweaker.ultimate_generator.name=Ultimate Generator

@@ -207,7 +207,6 @@ recipes.addShaped(<actuallyadditions:block_canola_press>, [
 	[<gregtech:meta_item_1:12184>, <actuallyadditions:block_crystal:5>, <gregtech:meta_item_1:12184>], 
 	[<gregtech:meta_item_1:32641>, null, <gregtech:meta_item_1:32641>], 
 	[<gregtech:meta_item_1:12184>, <actuallyadditions:item_misc:8>, <gregtech:meta_item_1:12184>]]);
-<actuallyadditions:block_canola_press>.addAdvancedTooltip(function(item) { return game.localize("tile.actuallyadditions.block_canola_press.tooltip"); });
 
 //Deep Learner
 recipes.remove(<deepmoblearning:deep_learner>);
