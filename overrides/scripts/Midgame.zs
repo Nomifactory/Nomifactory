@@ -321,14 +321,14 @@ makeShaped("of_small_gear_extruder_shape", <contenttweaker:smallgearextrudershap
      " B ",
      "   "],
     { A : <metaitem:shape.empty>,
-      B : <ore:craftingToolWireCutter> });
+      B : <gregtech:meta_tool:13> }); // Wire Cutter
 
 makeShaped("of_creative_tank_mold", <contenttweaker:creativeportabletankmold>,
     ["  B",
      " A ",
      "   "],
     { A : <metaitem:shape.empty>,
-      B : <ore:craftingToolHardHammer> });
+      B : <gregtech:meta_tool:6> }); // Hard Hammer
 
 extruder.recipeBuilder().inputs([<gregtech:meta_item_1:10184>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17184>]).duration(130).EUt(64).buildAndRegister();	//steel	small gear
 extruder.recipeBuilder().inputs([<gregtech:meta_item_1:10001>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17001>]).duration(130).EUt(64).buildAndRegister();	//aluminium	small gear
