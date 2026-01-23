@@ -3,7 +3,7 @@ import upath from "path";
 import mustache from "mustache";
 import { modpackManifest, overridesFolder, sharedDestDirectory } from "../../../globals";
 
-const randomPatchesConfigFile = "config/randompatches.cfg";
+const universalTweaksConfigFile = "config/Universal Tweaks - Tweaks.cfg";
 
 /**
  * Transform the version field of manifest.json.
@@ -51,12 +51,12 @@ export default async function transformManifestVersion(): Promise<void> {
 
 	modpackManifest.name = versionTitle;
 
-	const randomPatchesConfigFilePath = upath.join(sharedDestDirectory, overridesFolder, randomPatchesConfigFile);
-	const randomPatchesFile = (await fs.promises.readFile(randomPatchesConfigFilePath)).toString();
+	const universalTweaksConfigFilePath = upath.join(sharedDestDirectory, overridesFolder, universalTweaksConfigFile);
+	const universalTweaksFile = (await fs.promises.readFile(universalTweaksConfigFilePath)).toString();
 
 	return fs.promises.writeFile(
-		randomPatchesConfigFilePath,
-		mustache.render(randomPatchesFile, {
+		universalTweaksConfigFilePath,
+		mustache.render(universalTweaksFile, {
 			title: versionTitle,
 		}),
 	);
