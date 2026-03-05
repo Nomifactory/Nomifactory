@@ -1210,6 +1210,8 @@ mods.chisel.Carving.addVariation("basalt", <gregtech:mineral:2>);
 <ore:gtceWireCutters>.addItems([
 	<gregtech:meta_tool:13>.withEmptyTag()]);
 
+// Fix Fluxed Electrum Shovel not working as hoe in Farming Station
+<ore:toolHoe>.add(<redstonearsenal:tool.shovel_flux>);
 
 //Setting Item Max Stacksize
 <minecraft:snowball>.maxStackSize=64;
