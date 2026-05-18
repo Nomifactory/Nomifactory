@@ -35139,7 +35139,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §aAuxiliary Transmission Coil §ris an augment that will work in all types of dynamos. It will consume fuel faster to produce a correspondingly higher RF per tick.\n\nEach augment increases both base power production and fuel consumption by 100%, additively (so the second is 200%, third is 300%, etc.).\n\nConsider the tradeoffs however, as you could just make another dynamo, and you miss out on §aFuel Catalyzer§r augments that make fuels burn longer for more total RF generated. The Auxiliary Transmission Coil will put additional stress your fuel production infrastructure.\n\nIf that\u0027s an acceptable tradeoff, then Auxiliary Transmission Coils are a cheap and effective way to boost your power production.",
+          "desc:8": "The §aAuxiliary Transmission Coil §ris an augment that will work in all types of dynamos. It will consume fuel faster to produce a correspondingly higher RF per tick.\n\nEach augment increases both base power production and fuel consumption by 100%, additively (so the second is 200%, third is 300%, etc.).\n\nConsider the tradeoffs however, as you could just make another dynamo, and you miss out on §aFuel Catalyzer§r augments that make fuels burn longer for more total RF generated. The Auxiliary Transmission Coil will put additional stress on your fuel production infrastructure.\n\nIf that\u0027s an acceptable tradeoff, then Auxiliary Transmission Coils are a cheap and effective way to boost your power production.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 2,
