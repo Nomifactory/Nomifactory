@@ -15,8 +15,6 @@ import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 
 // Controller
 recipes.remove(<modularmachinery:blockcontroller>);
-<modularmachinery:blockcontroller>.addTooltip(format.red("Modular Machinery is getting removed in a future update."));
-<modularmachinery:blockcontroller>.addTooltip(format.red("Please use the new GregTech multiblocks instead. ('@Multiblock' in JEI)"));
 
 <ore:multiblockController>.add(<modularmachinery:blockcontroller>);
 
@@ -74,9 +72,7 @@ makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
 	  M : <gregtech:machine:480> }
 );
 
-<contenttweaker:tieroneship>.addTooltip(
-	format.white(
-		format.italic("Harvests Titanium and other light metals from asteroids in the microverse.")));
+
 
 // Tier 1 Guidance
 makeShaped("of_t1guidance", <contenttweaker:t1guidance>,
@@ -118,9 +114,7 @@ makeExtremeRecipe5(<contenttweaker:tiertwoship>,
 	  T : <simplyjetpacks:metaitemmods:8> }
 );
 
-<contenttweaker:tiertwoship>.addTooltip(
-	format.white(
-		format.italic("Harvests Tungsten and other heavy metals from asteroids in the microverse.")));
+
 
 
 /////////////	 Tier Three Space Ship  	  //////////////////
@@ -159,9 +153,7 @@ makeExtremeRecipe5(<contenttweaker:t2laser>,
 	  R : <minecraft:redstone_block> }
 );
 
-<contenttweaker:tierthreeship>.addTooltip(
-	format.white(
-		format.italic("Harvests ultra hot metals and gems from Nether microverses.")));
+
 
 // Rocket Engine
 recipes.remove(<advancedrocketry:advrocketmotor>);
@@ -336,7 +328,7 @@ makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 	  B : <gtadditions:ga_meta_item:32015>,
 	  C : <gregtech:meta_item_2:32501> }
 );
-<contenttweaker:universalnavigator>.addTooltip(format.blue("See you later, navigator!"));
+
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
@@ -428,10 +420,8 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 	{ A : <gregtech:meta_item_1:12702>,
 	  B : <gregtech:machine:322> }
 );
-<actuallyadditions:item_solidified_experience>.addTooltip(
-	format.green("Drops from monsters, and can be made in"));
-<actuallyadditions:item_solidified_experience>.addTooltip(
-	format.green("a Fluid Solidifier or Experience Solidifier."));
+
+
 
 // Solidified Experience
 solidifier.recipeBuilder()
@@ -444,28 +434,6 @@ fluid_extractor.recipeBuilder()
 	.inputs(<actuallyadditions:item_solidified_experience>)
 	.fluidOutputs(<liquid:xpjuice> * 160)
 	.duration(80).EUt(32).buildAndRegister();
-
-<contenttweaker:tierfourship>.addTooltip(format.white(
-	format.italic("Harvests ultra cold materials from the deepest parts of empty space.")));
-<contenttweaker:tierfiveship>.addTooltip(format.white(
-	format.italic("Harvests strange materials from End microverses.")));
-<contenttweaker:tiersixship>.addTooltip(format.white(
-	format.italic("Harvests extremely rare materials from every concievable reality.")));
-<contenttweaker:tiersevenship>.addTooltip(format.white(
-	format.italic("Hunts Wyrms and End Dragons from the microverse.")));
-<contenttweaker:tiersevenship>.addTooltip(format.white(
-	format.italic("and returns with parts from their carapaces.")));
-<contenttweaker:tiereightship>.addTooltip(format.white(
-	format.italic("Hunts inconcievable monstrosities from beyond the End.")));
-<contenttweaker:tiereightship>.addTooltip(format.white(
-	format.italic("and returns with bizzare trinkets.")));
-<contenttweaker:tiernineship>.addTooltip(format.white(
-	format.italic("Collapses microverse stars and harvests their delicious neutronium cores.")));
-<contenttweaker:tiertenship>.addTooltip(format.white(
-	format.italic("Collapses an entire microverse and harvests it whole.")));
-<contenttweaker:tiertenship>.addTooltip(format.white(
-	format.italic("Try to aim for uninhabited ones.")));
-
 
 // Dense Hydrogen
 makeShaped("of_densehydrogen", <contenttweaker:densehydrogen>,

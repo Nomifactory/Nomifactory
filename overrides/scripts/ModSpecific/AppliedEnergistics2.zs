@@ -3,27 +3,6 @@
 import scripts.CommonVars.makeShaped as makeShaped;
 
 /*
-  P2P Tunnel tooltips.
- */
-<appliedenergistics2:part:469>.addTooltip(format.green(format.italic(
-	"Made by right-clicking ME P2P Tunnel with an energy conduit.")));
-
-<appliedenergistics2:part:463>.addTooltip(format.green(format.italic(
-	"Made by right-clicking ME P2P Tunnel with a bucket.")));
-
-<appliedenergistics2:part:462>.addTooltip(format.green(format.italic(
-	"Made by right-clicking ME P2P Tunnel with a chest.")));
-
-<appliedenergistics2:part:467>.addTooltip(format.green(format.italic(
-	"Made by right-clicking ME P2P Tunnel with a torch.")));
-
-<appliedenergistics2:part:461>.addTooltip(format.green(format.italic(
-	"Made by right-clicking ME P2P Tunnel with redstone dust.")));
-
-<appliedenergistics2:part:470>.addTooltip(format.green(format.italic(
-        "Made by right-clicking ME P2P Tunnel with a GregTech wire or cable.")));
-
-/*
   Channel-specific adjustments.
  */
 if (<appliedenergistics2:controller> as bool) {

@@ -10,7 +10,7 @@ if(!isNull(sft)) {
 	val sftItems as IItemStack[] = sft.items;
 
 	for item in sftItems {
-		item.addTooltip(format.red("This item will be removed in the next update"));
+		item.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
 	}
 
 }

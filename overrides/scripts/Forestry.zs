@@ -95,23 +95,25 @@ for can in [<forestry:can:1>, <forestry:capsule:1>, <forestry:refractory:1>] as 
 // Start removal process
 
 // Deprecation tooltips
-<forestry:fertilizer_compound>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<forestry:fertilizer_compound>.addTooltip(format.red("Bone Meal works just as well for manual and AA/EIO farms."));
 
-<forestry:pipette>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<forestry:pipette>.addTooltip(format.red("EnderIO tanks and SoG Drums make for reasonable alternatives."));
+// Forestry has tooltip language keys but they span 3 lines, so the tooltips here are renamed to span 2 lines for readability.
+<forestry:fertilizer_compound>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<forestry:fertilizer_compound>.addAdvancedTooltip(function(item) { return game.localize("item.for.fertilizer_compound.tooltip1"); });
 
-<forestry:crafting_material:0>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<forestry:crafting_material:0>.addTooltip(format.red("Please use the ContentTweaker variant of Pulsating Dust."));
+<forestry:pipette>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<forestry:pipette>.addAdvancedTooltip(function(item) { return game.localize("item.for.pipette.tooltip1"); });
 
-<forestry:crafting_material:1>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<forestry:crafting_material:1>.addTooltip(format.red("Please use the ContentTweaker variant of Pulsating Mesh."));
+<forestry:crafting_material:0>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<forestry:crafting_material:0>.addAdvancedTooltip(function(item) { return game.localize("item.for.crafting_material.pulsating_dust.tooltip1"); });
 
-<forestry:naturalist_helmet>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<forestry:naturalist_helmet>.addTooltip(format.red("Try out the Engineer's Goggles from Actually Additions instead :)"));
+<forestry:crafting_material:1>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<forestry:crafting_material:1>.addAdvancedTooltip(function(item) { return game.localize("item.for.crafting_material.pulsating_mesh.tooltip1"); });
 
-<forestry:worktable>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
-<forestry:worktable>.addTooltip(format.red("Please use the GregTech Crafting Station instead."));
+<forestry:naturalist_helmet>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<forestry:naturalist_helmet>.addAdvancedTooltip(function(item) { return game.localize("item.for.naturalist_helmet.tooltip1"); });
+
+<forestry:worktable>.addAdvancedTooltip(function(item) { return game.localize("obsolete.tooltip"); });
+<forestry:worktable>.addAdvancedTooltip(function(item) { return game.localize("item.for.worktable.tooltip1"); });
 
 // Recipe removals
 recipes.remove(<forestry:fertilizer_compound>);

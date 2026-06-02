@@ -20,7 +20,7 @@ if(!isNull(ae2)) {
 
             if(item.displayName has "Block of Omnium") {
 
-                item.addTooltip(format.darkAqua("Facades can be crafted from most blocks, but are hidden from JEI to reduce clutter"));
+                item.addAdvancedTooltip(function(item) { return game.localize("jei.ae2_facades.tooltip"); });
             }
             else {
                mods.jei.JEI.hide(item); 
@@ -33,7 +33,7 @@ if(!isNull(ae2)) {
 mods.jei.JEI.hide(<appliedenergistics2:facade>.withTag({damage: 5, item: "gregtech:meta_block_compressed_44"}));
 
 //Adding a tooltop to the GTCE facade
-<gregtech:meta_item_2:32509>.withTag({Facade: {id: "minecraft:stone", Count: 1 as byte, Damage: 0 as short}}).addTooltip(format.darkAqua("GTCE Cable facades can be made from most non-tile-entites, and craft into different amounts based on the metal used."));
+<gregtech:meta_item_2:32509>.withTag({Facade: {id: "minecraft:stone", Count: 1 as byte, Damage: 0 as short}}).addAdvancedTooltip(function(item) { return game.localize("jei.gtce_facades.tooltip"); });
 
 
 /* Hide filled ceramics clay buckets from JEI */

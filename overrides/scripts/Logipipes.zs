@@ -48,11 +48,6 @@ print("--- loading Logipipes.zs ---");
 	#mods.jei.JEI.hide(<logisticspipes:remote_orderer:15>);
 	#mods.jei.JEI.hide(<logisticspipes:remote_orderer:16>);
 
-	#Tooltips
-	<logisticspipes:crafting_table>.addTooltip("Used for autocrafting with Logistics");
-	<logisticspipes:crafting_table_fuzzy>.addTooltip("Used for oredict autocrafting with Logistics");
-	<logisticspipes:pipe_request_table>.addTooltip("This is your Logistics Crafting Terminal");
-
 	#FPGA Chip
 	recipes.remove(<logisticspipes:chip_fpga_raw>);
 	recipes.addShapedMirrored("Raw FPGA", 
