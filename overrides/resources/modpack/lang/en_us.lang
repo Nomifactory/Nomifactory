@@ -159,3 +159,6 @@ item.wrench.name=Multiblock Fluid Tank Wrench
 item.simplyjetpacks.armor_Plating_EIO1.name=Wrought Iron Armor Plating
 
 
+// NAE2
+nae2.jei.missing.partialcraft.2=Hold Ctrl to bypass.
+nae2.jei.missing.bypasscraft.2=Hold Ctrl to bypass.
