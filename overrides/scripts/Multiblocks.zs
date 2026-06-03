@@ -871,7 +871,7 @@ val naquadahreactormk1 = Builder.start(loc, id)
             .where('P', <metastate:appliedenergistics2:spatial_pylon:0>)
             .where('O', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.west())
             .where('I', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-            .where('E', MetaTileEntities.ENERGY_OUTPUT_HATCH[4], IFacing.east())
+            .where('E', MetaTileEntities.ENERGY_OUTPUT_HATCH[7], IFacing.east())
             .where('B', <metastate:extendedcrafting:trimmed:5>)
             .build())
     .withZoom(0.9f)
@@ -1802,7 +1802,7 @@ cryodist.recipeMap
 naquadahreactormk1.recipeMap
     .recipeBuilder()
     .duration(3000)
-    .EUt(-81875)
+    .EUt(-327680)
     .inputs(<gregtech:meta_item_1:16309>)
     .outputs(<gregtech:meta_item_1:16035>)
     .buildAndRegister();
@@ -1810,7 +1810,7 @@ naquadahreactormk1.recipeMap
 naquadahreactormk1.recipeMap
     .recipeBuilder()
     .duration(12000)
-    .EUt(-81875)
+    .EUt(-327680)
     .inputs(<gregtech:meta_item_1:16310>)
     .outputs(<gregtech:meta_item_1:16035>)
     .buildAndRegister();
@@ -1819,7 +1819,7 @@ naquadahreactormk1.recipeMap
 naquadahreactormk2.recipeMap
     .recipeBuilder()
     .duration(3000)
-    .EUt(-655000)
+    .EUt(-1310720)
     .inputs(<gregtech:meta_item_1:16309>)
     .outputs(<gregtech:meta_item_1:16035>)
     .buildAndRegister();
@@ -1827,7 +1827,7 @@ naquadahreactormk2.recipeMap
 naquadahreactormk2.recipeMap
     .recipeBuilder()
     .duration(12000)
-    .EUt(-655000)
+    .EUt(-1310720)
     .inputs(<gregtech:meta_item_1:16310>)
     .outputs(<gregtech:meta_item_1:16035>)
     .buildAndRegister();

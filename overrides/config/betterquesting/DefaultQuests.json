@@ -32330,11 +32330,13 @@
     "519:10": {
       "preRequisiteTypes:7": [
         0,
+        1,
         1
       ],
       "preRequisites:11": [
         99,
-        337
+        337,
+        536
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -32419,7 +32421,7 @@
             },
             "5:10": {
               "Count:3": 1,
-              "Damage:2": 765,
+              "Damage:2": 775,
               "OreDict:8": "",
               "id:8": "gregtech:machine"
             }
