@@ -52036,6 +52036,120 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "844:10": {
+      "preRequisites:11": [
+        58,
+        98
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Electric versions of various §bGregTech§r tools are now available!\n\n§oNote: this quest accepts any material of each tool.§r\n\nElectric Tools have improved durability and breaking speed compared to their non-electric counterparts. Higher tier versions of these tools with better stats will become available when you can make §6Titanium§r and §6Tungstensteel§r.\n\nElectric tools must be charged to use them. You can charge your tools in your base directly with a §aBattery Charger§r, or with a §bGregTech§r battery. §eSneak + Right-click§r to allow the battery to discharge, then keep it in your inventory to charge your tools on the go.\n\nIf the tool\u0027s tip breaks, a §6Power Unit§r is returned and you can apply a new tip to it in the crafting grid. You can also repair these tools in an §aAnvil§r just like their non-electric versions.\n\nBesides the obvious §aWrenches§r and §aScrewdrivers§r:\n§aDrills§r are an upgrade to §aPickaxes§r.\n§aChainsaws§r are an upgrade to §aAxes§r and §aSaws§r.\n§aBuzzsaws§r are an upgrade to §aSaws§r alone and can\u0027t break blocks.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 34,
+            "OreDict:8": "",
+            "id:8": "gregtech:meta_tool",
+            "tag:10": {
+              "Charge:4": 100000,
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            }
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Electric Tools",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 844,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 29,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_tool",
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "wrought_iron"
+                },
+                "MaxCharge:4": 200000
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 34,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_tool",
+              "tag:10": {
+                "Charge:4": 0,
+                "GT.ToolStats:10": {
+                  "Material:8": "wrought_iron"
+                },
+                "MaxCharge:4": 200000
+              }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 23,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_tool",
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "wrought_iron"
+                },
+                "MaxCharge:4": 200000
+              }
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 26,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_tool",
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "wrought_iron"
+                },
+                "MaxCharge:4": 200000
+              }
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 33,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_tool",
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "wrought_iron"
+                },
+                "MaxCharge:4": 200000
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -53114,6 +53228,13 @@
           "sizeY:3": 32,
           "x:3": -640,
           "y:3": 400
+        },
+        "87:10": {
+          "id:3": 844,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -292,
+          "y:3": 280
         }
       }
     },
