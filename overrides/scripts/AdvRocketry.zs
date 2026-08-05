@@ -771,6 +771,13 @@ makeShaped("ar_station_id_chip",
 		C: <ore:circuitExtreme>,   // T4 Circuit
 	});
 
+// Copying Station ID chip
+recipes.addShapeless("ar_copy_station_id_chip", <advancedrocketry:spacestationchip>, [
+	<advancedrocketry:spacestationchip>.withTag({}).marked('source').reuse(), <advancedrocketry:spacestationchip>
+], function(o, inputs, c){
+	return inputs.source;
+}, null);
+
 // Warp Monitor
 recipes.remove(<advancedrocketry:warpmonitor>);
 makeShaped("ar_warp_monitor",
