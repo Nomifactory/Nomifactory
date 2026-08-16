@@ -22624,8 +22624,13 @@
       }
     },
     "334:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
       "preRequisites:11": [
-        333
+        333,
+        325
       ],
       "properties:10": {
         "betterquesting:10": {
