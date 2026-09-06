@@ -8,6 +8,9 @@
 # Fixed and added java version check by t0suj4, Public Domain
 # https://github.com/t0suj4
 
+# Set language to English
+export LANG=en_US.UTF-8
+
 # DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING
 FORGEJAR='{{{forgeJar}}}'
 JAVA_PARAMETERS='{{{jvmArgs}}}'
