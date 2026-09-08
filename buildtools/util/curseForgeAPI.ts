@@ -199,7 +199,7 @@ export async function fetchMods(toFetch: ModpackManifestFile[], destination: str
 					log(`Fetched ${upath.basename(fileDef.url)} from cache... (${fetched} / ${toFetch.length})`);
 				}
 
-				const dest = upath.join(destination, "mods", fileInfo.fileName);
+				const dest = upath.join(destination, "mods", fileInfo.fileName + (file.required === false ? '.disabled' : ''));
 
 				await fs.promises.symlink(relative(dest, modFile.cachePath), dest);
 			},
