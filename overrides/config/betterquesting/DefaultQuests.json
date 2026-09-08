@@ -51350,10 +51350,17 @@
       }
     },
     "834:10": {
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        0,
+        1
+      ],
       "preRequisites:11": [
         267,
         391,
-        148
+        148,
+        120
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -51882,13 +51889,15 @@
         1,
         1,
         1,
+        0,
         0
       ],
       "preRequisites:11": [
         64,
         102,
         105,
-        834
+        101,
+        849
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -51946,12 +51955,6 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "nae2:material"
-            },
-            "1:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "appliedenergistics2:cell_workbench"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -52150,6 +52153,382 @@
                 },
                 "MaxCharge:4": 200000
               }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "845:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1,
+        1
+      ],
+      "preRequisites:11": [
+        63,
+        119,
+        100
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§3Security Terminals§r are nominally used to control who has access to your ME Network using §6Biometric Cards§r, but more importantly they are used to link §aWireless Terminals§r.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:security_station"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Security Terminal",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 845,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:security_station"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
+    },
+    "846:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "preRequisites:11": [
+        845,
+        62,
+        106,
+        108,
+        111,
+        494
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§aWireless Terminals§r are devices you can carry around to access your ME Network as though you clicked on the corresponding type of Terminal.\n\nThey need to be linked to your network by dropping them into the input slot of a §3Security Terminal§r.\n\nThey rely on nearby §3Wireless Access Points§r to provide signal. The range of individual access points can be extended using §6Wireless Boosters§r, in exchange for more passive energy drain.\n\nWireless Terminals from §bAE2§r are §eBaubles§r, and can be opened using a configurable §eHotkey§r.\n\nThese terminals use power, so keep a §aFlux Capacitor§r handy to charge them.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:wireless_crafting_terminal",
+            "tag:10": {
+              "internalCurrentPower:6": 1600000.0,
+              "internalMaxPower:6": 1600000.0
+            }
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Wireless Terminals",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 846,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:wireless_terminal",
+              "tag:10": {}
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:wireless_crafting_terminal",
+              "tag:10": {}
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:wireless_pattern_terminal",
+              "tag:10": {}
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:wireless_fluid_terminal",
+              "tag:10": {}
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:wireless_interface_terminal",
+              "tag:10": {}
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "847:10": {
+      "preRequisites:11": [
+        846,
+        848
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Quantum Link Card§r is an upgrade placed inside of a §3Quantum Link Chamber§r to provide wireless terminals access to your ME Network from anywhere and everywhere.\n\nIt replaces §3Wireless Access Points§r entirely.\n\nUnlike bridging the network which uses a pair of link chambers and §6Quantum Entangled Singularities§r, only a single Quantum Link Chamber is needed for this upgrade to function.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 59,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:material"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Quantum Link Card",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 847,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 59,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:material"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "848:10": {
+      "preRequisites:11": [
+        834
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "A §aQuantum Link Chamber§r is a multiblock structure primarily used to wirelessly bridge an ME Network across vast distances or dimensions.\n\nThe structure consists of a central §6ME Quantum Link Chamber§r block surrounded by a ring of eight §6Quantum Link Ring§r.\n\nTo bridge a network, you need to make two of these, and place a §6Quantum Entangled Singularity§r from a pair in each of them. You should place an energy buffer like a §aDense Energy Cell§r on the far end to ensure that it has enough energy to reconnect properly when you restart the game.\n\nNote also that glass cables only connect to the sides and not the corners of the ring structure.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 48,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:material"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Quantum Link Chamber",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 848,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin25"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:quantum_link"
+            },
+            "1:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:quantum_ring"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "849:10": {
+      "preRequisites:11": [
+        105
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §aCell Workbench§r is used to §epartition§r cells, determining what items or fluids are allowed to go into them.\n\nPlace a cell in the top and set the filter, then remove the cell and it will be partitioned.\n\nYou can use the buttons along the left side to clear the existing partition from a cell, load the current contents of the cell into the filter, or switch the workbench between standard and copying modes.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:cell_workbench"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Cell Workbench",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 849,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:cell_workbench"
             }
           },
           "taskID:8": "bq_standard:retrieval"
